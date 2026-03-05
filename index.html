@@ -64,6 +64,12 @@
             inset: 0;
             z-index: 1;
         }
+        /* Pulsing glow on CTA button */
+        @keyframes btnGlow {
+            0%, 100% { box-shadow: 0 0 8px rgba(84,147,30,0.3); }
+            50% { box-shadow: 0 0 20px rgba(84,147,30,0.55), 0 0 40px rgba(84,147,30,0.15); }
+        }
+        .btn-glow { animation: btnGlow 3s ease-in-out infinite; }
     </style>
 </head>
 <body class="bg-white text-gray-700">
@@ -627,7 +633,7 @@
 
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-center font-semibold py-3.5 px-10 rounded-xl transition text-sm md:text-base min-w-[240px]">
+                    <a href="https://www.geneticmatrix.com/register/" class="btn-glow bg-gm-green hover:bg-gm-green-dark text-white text-center font-semibold py-3.5 px-10 rounded-xl transition text-sm md:text-base min-w-[240px]">
                         Create Free Account
                     </a>
                     <a href="https://www.geneticmatrix.com/plans-features/" class="border-2 border-white text-white text-center font-semibold py-3.5 px-10 rounded-xl hover:bg-white hover:text-gm-dark transition text-sm md:text-base min-w-[240px]">
