@@ -40,38 +40,57 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
         body { font-family: 'Inter', sans-serif; }
-        /* Hero starfield */
-        .hero-stars {
-            background-image:
-                radial-gradient(2px 2px at 10% 15%, rgba(255,255,255,0.95) 0%, transparent 100%),
-                radial-gradient(1.5px 1.5px at 25% 60%, rgba(255,255,255,0.8) 0%, transparent 100%),
-                radial-gradient(2.5px 2.5px at 40% 20%, rgba(255,255,255,1) 0%, transparent 100%),
-                radial-gradient(1.5px 1.5px at 55% 75%, rgba(255,255,255,0.7) 0%, transparent 100%),
-                radial-gradient(2px 2px at 70% 35%, rgba(255,255,255,0.85) 0%, transparent 100%),
-                radial-gradient(2.5px 2.5px at 85% 55%, rgba(255,255,255,0.9) 0%, transparent 100%),
-                radial-gradient(1.5px 1.5px at 15% 80%, rgba(255,255,255,0.75) 0%, transparent 100%),
-                radial-gradient(2px 2px at 50% 10%, rgba(255,255,255,0.85) 0%, transparent 100%),
-                radial-gradient(1.5px 1.5px at 90% 85%, rgba(255,255,255,0.8) 0%, transparent 100%),
-                radial-gradient(2px 2px at 35% 45%, rgba(255,255,255,0.9) 0%, transparent 100%),
-                radial-gradient(1.5px 1.5px at 65% 90%, rgba(255,255,255,0.7) 0%, transparent 100%),
-                radial-gradient(2px 2px at 80% 12%, rgba(255,255,255,0.85) 0%, transparent 100%),
-                radial-gradient(2px 2px at 5% 50%, rgba(255,255,255,0.8) 0%, transparent 100%),
-                radial-gradient(1.5px 1.5px at 48% 42%, rgba(255,255,255,0.65) 0%, transparent 100%),
-                radial-gradient(2px 2px at 72% 65%, rgba(255,255,255,0.8) 0%, transparent 100%),
-                radial-gradient(2.5px 2.5px at 20% 30%, rgba(172,148,216,1) 0%, transparent 100%),
-                radial-gradient(2.5px 2.5px at 75% 50%, rgba(172,148,216,0.85) 0%, transparent 100%),
-                radial-gradient(2px 2px at 60% 15%, rgba(232,150,29,0.7) 0%, transparent 100%),
-                radial-gradient(1.5px 1.5px at 92% 30%, rgba(255,255,255,0.75) 0%, transparent 100%),
-                radial-gradient(2px 2px at 8% 35%, rgba(172,148,216,0.8) 0%, transparent 100%),
-                radial-gradient(1.5px 1.5px at 45% 88%, rgba(232,150,29,0.6) 0%, transparent 100%),
-                radial-gradient(2px 2px at 30% 5%, rgba(255,255,255,0.9) 0%, transparent 100%),
-                radial-gradient(1.5px 1.5px at 58% 52%, rgba(255,255,255,0.7) 0%, transparent 100%);
-            animation: heroStarsTwinkle 4s ease-in-out infinite alternate;
+        /* Hero starfield — 3 independent layers for visible twinkling */
+        .hero-stars-1, .hero-stars-2, .hero-stars-3 {
+            position: absolute; inset: 0; pointer-events: none;
         }
-        @keyframes heroStarsTwinkle {
-            0% { opacity: 0.7; }
+        .hero-stars-1 {
+            background-image:
+                radial-gradient(2.5px 2.5px at 10% 15%, rgba(255,255,255,0.95) 0%, transparent 100%),
+                radial-gradient(2px 2px at 40% 20%, rgba(255,255,255,1) 0%, transparent 100%),
+                radial-gradient(2.5px 2.5px at 85% 55%, rgba(255,255,255,0.9) 0%, transparent 100%),
+                radial-gradient(2px 2px at 50% 10%, rgba(255,255,255,0.85) 0%, transparent 100%),
+                radial-gradient(2px 2px at 35% 45%, rgba(255,255,255,0.9) 0%, transparent 100%),
+                radial-gradient(2px 2px at 80% 12%, rgba(255,255,255,0.85) 0%, transparent 100%),
+                radial-gradient(2.5px 2.5px at 20% 30%, rgba(172,148,216,1) 0%, transparent 100%),
+                radial-gradient(2px 2px at 30% 5%, rgba(255,255,255,0.9) 0%, transparent 100%);
+            animation: twinkle1 3s ease-in-out infinite;
+        }
+        .hero-stars-2 {
+            background-image:
+                radial-gradient(1.5px 1.5px at 25% 60%, rgba(255,255,255,0.85) 0%, transparent 100%),
+                radial-gradient(2px 2px at 70% 35%, rgba(255,255,255,0.9) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 15% 80%, rgba(255,255,255,0.8) 0%, transparent 100%),
+                radial-gradient(2px 2px at 5% 50%, rgba(255,255,255,0.85) 0%, transparent 100%),
+                radial-gradient(2px 2px at 72% 65%, rgba(255,255,255,0.85) 0%, transparent 100%),
+                radial-gradient(2.5px 2.5px at 75% 50%, rgba(172,148,216,0.9) 0%, transparent 100%),
+                radial-gradient(2px 2px at 60% 15%, rgba(232,150,29,0.75) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 58% 52%, rgba(255,255,255,0.75) 0%, transparent 100%);
+            animation: twinkle2 4s ease-in-out infinite;
+        }
+        .hero-stars-3 {
+            background-image:
+                radial-gradient(1.5px 1.5px at 55% 75%, rgba(255,255,255,0.75) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 90% 85%, rgba(255,255,255,0.85) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 65% 90%, rgba(255,255,255,0.75) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 48% 42%, rgba(255,255,255,0.7) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 92% 30%, rgba(255,255,255,0.8) 0%, transparent 100%),
+                radial-gradient(2px 2px at 8% 35%, rgba(172,148,216,0.85) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 45% 88%, rgba(232,150,29,0.65) 0%, transparent 100%);
+            animation: twinkle3 5s ease-in-out infinite;
+        }
+        @keyframes twinkle1 {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        @keyframes twinkle2 {
+            0%, 100% { opacity: 0.4; }
             50% { opacity: 1; }
-            100% { opacity: 0.8; }
+        }
+        @keyframes twinkle3 {
+            0%, 100% { opacity: 0.9; }
+            35% { opacity: 0.25; }
+            70% { opacity: 1; }
         }
         @keyframes twinkle {
             0%, 100% { filter: brightness(1); }
@@ -190,8 +209,10 @@
                 <text x="112" y="45" fill="white" font-size="11" text-anchor="middle" opacity="0.9">♓</text>
             </svg>
         </div>
-        <!-- Stars layer -->
-        <div class="hero-stars absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+        <!-- Stars layers — 3 independent layers for visible twinkling -->
+        <div class="hero-stars-1" aria-hidden="true"></div>
+        <div class="hero-stars-2" aria-hidden="true"></div>
+        <div class="hero-stars-3" aria-hidden="true"></div>
         <!-- Warm glow overlay -->
         <div class="absolute inset-0 pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse at 60% 40%, rgba(172,148,216,0.2) 0%, transparent 60%), radial-gradient(ellipse at 30% 70%, rgba(232,150,29,0.1) 0%, transparent 50%);"></div>
         <!-- Content -->
