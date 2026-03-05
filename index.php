@@ -337,7 +337,7 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                    <a href="definition/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Variables & Arrows Card -->
