@@ -295,7 +295,7 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                    <a href="channels/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Gates & Lines Card -->
@@ -305,11 +305,11 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Gates & Lines</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                There are 64 Gates in the Bodygraph, each with 6 Lines — derived from the 64 hexagrams of the I Ching. Gates are the specific archetypal energies activated in your chart by planetary positions.
+                                There are 64 Gates in the Bodygraph, each with 6 Lines, derived from the 64 hexagrams of the I Ching. Gates are the specific archetypal energies activated in your chart by planetary positions.
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                    <a href="gates/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Circuits Card -->
@@ -320,6 +320,20 @@
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Circuits</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
                                 Channels group into three Circuit families — Individual, Collective, and Tribal — each with a distinct purpose. Understanding your dominant circuitry reveals how you share energy with others.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+                <!-- Definition Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-definition.svg" alt="Definition" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Definition</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Definition describes how your defined Centers connect to each other. Single, Split, Triple Split, Quadruple Split, or No Definition - each type shapes how you process energy and relate to others.
                             </p>
                         </div>
                     </div>
