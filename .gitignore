@@ -1,0 +1,22 @@
+# Claude Code local config
+.claude/
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+
+# Design reference images (not needed for deploy)
+*.png
+*.psd
+*.ai
+
+# Python
+__pycache__/
+*.pyc

@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 12 Profiles in Human Design - Lines, Roles & Life Purpose | Genetic Matrix</title>
+    <meta name="description" content="Explore all 12 Human Design Profiles - from 1/3 Investigator/Martyr to 6/3 Role Model/Martyr. Learn how the 6 Profile Lines shape your personality, role, and life purpose.">
+    <link rel="canonical" href="https://geneticmatrix.com/learn/profiles/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gm-purple': '#6E5898',
+                        'gm-purple-light': '#9080B1',
+                        'gm-purple-soft': '#AC94D8',
+                        'gm-dark': '#3C2864',
+                        'gm-darker': '#2e1f4d',
+                        'gm-green': '#54931E',
+                        'gm-green-dark': '#468018',
+                        'gm-green-light': '#8EB86A',
+                        'gm-pink': '#F66378',
+                        'gm-orange': '#E8961D',
+                        'gm-gray': '#707070',
+                        'gm-light': '#F7F8F9',
+                        'gm-card': '#FAFBFC',
+                        'gm-card-active': '#F4F0FC',
+                        'gm-border': '#D8D4E4',
+                        'gm-warning': '#F8F8E8',
+                        'gm-text-dark': '#1A1A2E',
+                        'gm-text': '#444444',
+                        'gm-text-light': '#949494',
+                    },
+                    fontFamily: {
+                        'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        details summary { cursor: pointer; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+        details[open] summary::after { content: '\2212'; }
+        details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+
+    <!-- FAQ JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is a Profile in Human Design?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Your Profile is a combination of two numbers derived from the line positions of your conscious and unconscious Sun & Earth. It describes your role, personality, and life arc. There are 12 Profile combinations, each made up of two of the six hexagram lines."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How is my Profile calculated?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Your Profile comes from the line of your conscious Sun/Earth (Personality, black) and the line of your unconscious Sun/Earth (Design, red). For example, if your conscious Sun/Earth is Line 1 and your unconscious Sun/Earth is Line 3, your Profile is 1/3."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the 6 Profile Lines?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Line 1: Investigator (deep research). Line 2: Hermit (natural gifts, solitude). Line 3: Martyr (trial and error). Line 4: Opportunist (community, networking). Line 5: Heretic (projection, practical solutions). Line 6: Role Model (three-phase life, wisdom)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does my Profile change based on my Type?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No - your Profile is fixed at birth. However, the same Profile expresses differently through different Types. A 3/5 Generator lives out trial and error very differently from a 3/5 Projector. Your Type is the vehicle; your Profile is the role."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the difference between conscious and unconscious lines?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The first number (conscious) is what you identify with and recognize in yourself. The second number (unconscious) operates below awareness - others often see it in you more than you see it yourself."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are Personal Destiny, Transpersonal Karma, and Fixed Fate?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "These describe the geometry of your Profile. Right Angle (Personal Destiny): self-focused journey. Left Angle (Transpersonal Karma): purpose through serving others. Juxtaposition (Fixed Fate): a rigid, determined life path. Only the 4/1 is Fixed Fate."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the lower and upper trigrams?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Lines 1-3 form the lower trigram (personal, introspective). Lines 4-6 form the upper trigram (transpersonal, interpersonal). Your Profile's combination of these determines whether your orientation is more personal or relational."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why does the 6th line have three life phases?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The 6th line (Role Model) experiences life in three stages: experimentation (~0-30, living as a 3rd line), observation (~30-50, going on the roof), and wisdom (~50+, coming off the roof as a living example). This unique arc means the 6th line matures and transforms more dramatically than any other line."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- ==================== NAV BAR ==================== -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <!-- Logo -->
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14">
+            </a>
+
+            <!-- Right Nav: LOGGED OUT (default for static pages) -->
+            <div class="flex items-center gap-8">
+                <!-- Report Icon -->
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Reports">
+                    <img src="../assets/icon-report.svg" alt="Reports" class="h-9 w-9">
+                </a>
+                <!-- Talking Chart Icon -->
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Talking Charts">
+                    <img src="../assets/icon-talking-chart.svg" alt="Talking Charts" class="h-7 w-7">
+                </a>
+                <!-- Free Chart (popup on live site - Shafik to wire up) -->
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Free Chart</a>
+                <!-- Our Plans -->
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Our Plans</a>
+                <!-- Cart -->
+                <a href="https://www.geneticmatrix.com/cart/" title="Cart">
+                    <img src="../assets/icon-cart.svg" alt="Cart" class="h-8 w-auto">
+                </a>
+                <!-- Language Selector -->
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>English</span>
+                    <img src="../assets/icon-english.svg" alt="English" class="h-5 w-7">
+                </div>
+                <!-- Sign In (popup on live site - Shafik to wire up) -->
+                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Sign In</a>
+                <!-- Register -->
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+        <div class="max-w-3xl mx-auto px-6">
+            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-green hover:bg-gm-green-dark text-white text-xs font-semibold tracking-wide px-5 py-2 rounded-full mb-6 transition">
+                Try free with Starter plan
+            </a>
+            <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Foundation &middot; Profiles</p>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">The 12 Profiles</h1>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
+                Your Profile is your role - the costume you wear, how you engage with the world, and the arc of your life purpose. Built from two lines of the I Ching hexagram, it shapes 70% of how your Type expresses itself.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== HIGHLIGHT BOX ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-gm-card-active rounded-2xl p-8 md:p-10">
+                <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+                    <span class="text-gm-purple">|</span> Tools, not doctrine.
+                </h2>
+                <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                    The Human Design System was transmitted through Ra Uru Hu beginning in 1987. Genetic Matrix provides these tools for your own exploration and experiment. Your Profile works within your Type and Authority - it does not override them.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT IS A PROFILE? ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> What Is a Profile?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                In Human Design, your Profile is a combination of two numbers - like 1/3 or 5/2 - derived from the <strong>line positions of your conscious and unconscious Sun &amp; Earth</strong>. The first number comes from the line of your Personality Sun/Earth (shown in black on the bodygraph). The second comes from the line of your Design Sun/Earth (shown in red). Together, these two lines create your Profile.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                The six lines come from the <strong>I Ching hexagram</strong> - a stack of six horizontal lines that has been used for millennia to describe the patterns of change in human experience. Each line carries a specific archetype, and the combination of your two lines creates a unique role that shapes how you move through life.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Your Profile describes your <strong>personality, your role, and your life arc</strong>. It influences how you learn, how you relate, how you find your purpose, and how others experience you. Two people with the same Type can live very differently based on their Profile - it is one of the most individualizing elements of the chart.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== THE 6 PROFILE LINES ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> The 6 Profile Lines
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Line 1 -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <div class="text-4xl font-bold text-gm-purple mb-1">1</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">The Investigator</h3>
+                    <p class="text-xs font-semibold text-gm-text-light uppercase tracking-wide mb-3">Lower Trigram &middot; Personal</p>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Driven by a deep need for knowledge and security. The Investigator must understand the foundation before they can feel comfortable. Thorough, curious, and research-oriented - they dig until they find solid ground.
+                    </p>
+                </div>
+
+                <!-- Line 2 -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <div class="text-4xl font-bold text-gm-purple mb-1">2</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">The Hermit</h3>
+                    <p class="text-xs font-semibold text-gm-text-light uppercase tracking-wide mb-3">Lower Trigram &middot; Personal</p>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Carries natural, innate gifts that may not be consciously recognized. The Hermit needs solitude to develop and integrate, yet depends on others to call out their talents. The introverted extrovert - gifted in ways they may not see.
+                    </p>
+                </div>
+
+                <!-- Line 3 -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <div class="text-4xl font-bold text-gm-purple mb-1">3</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">The Martyr</h3>
+                    <p class="text-xs font-semibold text-gm-text-light uppercase tracking-wide mb-3">Lower Trigram &middot; Personal</p>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Learns exclusively through trial and error. The Martyr must experience everything directly - reading about it is not enough. Bonds made and broken, experiments run and failed. Deeply resilient, forged by experience.
+                    </p>
+                </div>
+
+                <!-- Line 4 -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <div class="text-4xl font-bold text-gm-purple mb-1">4</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">The Opportunist</h3>
+                    <p class="text-xs font-semibold text-gm-text-light uppercase tracking-wide mb-3">Upper Trigram &middot; Transpersonal</p>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Finds opportunity through community and relationships. The Opportunist's network is their foundation - opportunities come through people they know, not through strangers. Influential, relational, and trust-dependent.
+                    </p>
+                </div>
+
+                <!-- Line 5 -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <div class="text-4xl font-bold text-gm-purple mb-1">5</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">The Heretic</h3>
+                    <p class="text-xs font-semibold text-gm-text-light uppercase tracking-wide mb-3">Upper Trigram &middot; Transpersonal</p>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Carries a powerful projection field - others see practical solutions and project their needs onto the 5th line. The Heretic is either savior or scapegoat, depending on whether the projection is met. Universalizing and impactful.
+                    </p>
+                </div>
+
+                <!-- Line 6 -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <div class="text-4xl font-bold text-gm-purple mb-1">6</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">The Role Model</h3>
+                    <p class="text-xs font-semibold text-gm-text-light uppercase tracking-wide mb-3">Upper Trigram &middot; Transpersonal</p>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Lives through three distinct phases: experimentation (~0&ndash;30), observation from the roof (~30&ndash;50), and stepping into wisdom (~50+). The Role Model becomes a living example - their authority comes from lived experience, not theory.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ALL 12 PROFILES ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+                <span class="text-gm-purple">|</span> All 12 Profiles
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Each Profile combines a conscious line (how you see yourself) with an unconscious line (how others see you). Click any Profile to explore its full mechanics, relationships, and famous examples.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                <!-- 1/3 -->
+                <a href="profile-1-3.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">1/3</span>
+                        <span class="text-xs text-gm-text-light">H.G. Wells, Reflector</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Investigator / Martyr</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Deep researcher who tests everything through direct experience. Builds foundations of knowledge, then verifies through trial and error.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gm-text-light">Line 1 Conscious &middot; Line 3 Unconscious</span>
+                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 1/4 -->
+                <a href="profile-1-4.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">1/4</span>
+                        <span class="text-xs text-gm-text-light">Jerry Seinfeld, Emotional Manifestor</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Investigator / Opportunist</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Deep researcher who shares discoveries through their network. Builds solid foundations and influences their community.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gm-text-light">Line 1 Conscious &middot; Line 4 Unconscious</span>
+                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 2/4 -->
+                <a href="profile-2-4.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">2/4</span>
+                        <span class="text-xs text-gm-text-light">Henry Cavill, Pure MG</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Hermit / Opportunist</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Naturally gifted introvert who thrives through their network. Innate talents need others to call them out.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gm-text-light">Line 2 Conscious &middot; Line 4 Unconscious</span>
+                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 2/5 -->
+                <a href="profile-2-5.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">2/5</span>
+                        <span class="text-xs text-gm-text-light">Rostropovich, Pure Generator</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Hermit / Heretic</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Naturally gifted recluse with a projected reputation. Called out of hermit state to deliver practical solutions.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gm-text-light">Line 2 Conscious &middot; Line 5 Unconscious</span>
+                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 3/5 -->
+                <a href="profile-3-5.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">3/5</span>
+                        <span class="text-xs text-gm-text-light">Ju Wenjun, Reflector</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Martyr / Heretic</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Experiential learner with universalizing impact. Discovers through trial and error, then delivers transformative solutions.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gm-text-light">Line 3 Conscious &middot; Line 5 Unconscious</span>
+                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 3/6 -->
+                <a href="profile-3-6.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">3/6</span>
+                        <span class="text-xs text-gm-text-light">Wolfgang Pauli, Heart Manifestor</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Martyr / Role Model</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Experiential learner who becomes a wise example. Lives through chaos, observation, then emerges as an authentic role model.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gm-text-light">Line 3 Conscious &middot; Line 6 Unconscious</span>
+                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 4/6 -->
+                <a href="profile-4-6.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">4/6</span>
+                        <span class="text-xs text-gm-text-light">Alan Turing, Pure Generator</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Opportunist / Role Model</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Networker who becomes a wise example. Influences through relationships and matures into a trusted guide.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gm-text-light">Line 4 Conscious &middot; Line 6 Unconscious</span>
+                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 4/1 -->
+                <a href="profile-4-1.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <div class="flex items-center gap-3">
+                            <span class="text-3xl font-bold text-gm-purple">4/1</span>
+                            <span class="inline-block bg-gm-pink/10 text-gm-pink text-[10px] font-bold px-2.5 py-0.5 rounded-full">Fixed Fate</span>
+                        </div>
+                        <span class="text-xs text-gm-text-light">Buzz Aldrin, Splenic Manifestor</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Opportunist / Investigator</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Networker with deep foundational knowledge. Fixed Fate profile - once they find their direction, nearly immovable.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gm-text-light">Line 4 Conscious &middot; Line 1 Unconscious</span>
+                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 5/1 -->
+                <a href="profile-5-1.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <div class="flex items-center gap-3">
+                            <span class="text-3xl font-bold text-gm-purple">5/1</span>
+                            <span class="inline-block bg-gm-pink/10 text-gm-pink text-[10px] font-bold px-2.5 py-0.5 rounded-full">Fixed Fate</span>
+                        </div>
+                        <span class="text-xs text-gm-text-light">Napoleon, Self-Proj. Projector</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Heretic / Investigator</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Practical problem-solver with deep research. Attracts projections and delivers universalizing solutions backed by investigation.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gm-text-light">Line 5 Conscious &middot; Line 1 Unconscious</span>
+                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 5/2 -->
+                <a href="profile-5-2.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">5/2</span>
+                        <span class="text-xs text-gm-text-light">Franz Schubert, Emotional Manifestor</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Heretic / Hermit</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Projected problem-solver who needs retreat. Attracts expectations while carrying natural gifts that need solitude.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gm-text-light">Line 5 Conscious &middot; Line 2 Unconscious</span>
+                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 6/2 -->
+                <a href="profile-6-2.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">6/2</span>
+                        <span class="text-xs text-gm-text-light">Mark Zuckerberg, Splenic Projector</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Role Model / Hermit</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Wise example with natural gifts. Lives through three life phases and carries innate talents that emerge through the right calling.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gm-text-light">Line 6 Conscious &middot; Line 2 Unconscious</span>
+                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 6/3 -->
+                <a href="profile-6-3.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">6/3</span>
+                        <span class="text-xs text-gm-text-light">Marc Chagall, Emotional MG</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Role Model / Martyr</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Wise example forged through relentless experience. Spends the first 30 years as a double 3rd line before ascending to role model wisdom.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gm-text-light">Line 6 Conscious &middot; Line 3 Unconscious</span>
+                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROFILE GEOMETRY ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+                <span class="text-gm-purple">|</span> Profile Geometry: Destiny, Karma &amp; Fate
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                The 12 Profiles fall into three geometrical categories based on the angle formed by the conscious and unconscious lines. This geometry describes how your Profile interacts with the larger patterns of your life.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Right Angle -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">Right Angle</h3>
+                    <p class="text-xs font-semibold text-gm-purple uppercase tracking-wide mb-3">Personal Destiny</p>
+                    <p class="text-gm-text text-sm leading-relaxed mb-4">
+                        Self-absorbed in their own process. Their life unfolds through personal experience rather than interaction with others. They are focused on their own journey.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">1/3</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">1/4</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">2/4</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">2/5</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">3/5</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">3/6</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">4/6</span>
+                    </div>
+                </div>
+
+                <!-- Juxtaposition -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">Juxtaposition</h3>
+                    <p class="text-xs font-semibold text-gm-pink uppercase tracking-wide mb-3">Fixed Fate</p>
+                    <p class="text-gm-text text-sm leading-relaxed mb-4">
+                        A fixed and determined life path that cannot easily be redirected. The lines cross the trigram boundary, creating a rigid configuration with a singular direction.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="inline-block bg-gm-pink/10 text-gm-pink text-xs font-semibold px-3 py-1 rounded-full">4/1</span>
+                    </div>
+                </div>
+
+                <!-- Left Angle -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">Left Angle</h3>
+                    <p class="text-xs font-semibold text-gm-orange uppercase tracking-wide mb-3">Transpersonal Karma</p>
+                    <p class="text-gm-text text-sm leading-relaxed mb-4">
+                        Here to interact with and serve others. Their purpose is fulfilled through relationships and their impact on the collective. Life is shaped by karmic interactions.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">5/1</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">5/2</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">6/2</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">6/3</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONSCIOUS AND UNCONSCIOUS ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Conscious and Unconscious
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                The first number in your Profile is your <strong>conscious line</strong> - the part of your personality you are most aware of and identify with. This comes from your Personality Sun &amp; Earth, the black column on your bodygraph. You can usually recognize this line in yourself easily.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                The second number is your <strong>unconscious line</strong> - operating below your awareness, often more visible to others than to yourself. This comes from your Design Sun &amp; Earth, the red column on your bodygraph. Others may see this line in you before you see it yourself.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                The dynamic between these two lines creates the interplay that defines your Profile. They are not separate - they work together, sometimes in harmony and sometimes in creative tension. Understanding both lines, and how they interact, is essential to living your Profile correctly.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ACCORDION ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Common Questions
+            </h2>
+            <div class="space-y-3">
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        What is a Profile in Human Design?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Your Profile is a combination of two numbers derived from the line positions of your conscious and unconscious Sun &amp; Earth. It describes your role, personality, and life arc. There are 12 Profile combinations, each made up of two of the six hexagram lines.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        How is my Profile calculated?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Your Profile comes from the line of your conscious Sun/Earth (Personality, black) and the line of your unconscious Sun/Earth (Design, red). For example, if your conscious Sun/Earth is Line 1 and your unconscious Sun/Earth is Line 3, your Profile is 1/3.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        What are the 6 Profile Lines?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Line 1: Investigator (deep research). Line 2: Hermit (natural gifts, solitude). Line 3: Martyr (trial and error). Line 4: Opportunist (community, networking). Line 5: Heretic (projection, practical solutions). Line 6: Role Model (three-phase life, wisdom).
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Does my Profile change based on my Type?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        No - your Profile is fixed at birth. However, the same Profile expresses differently through different Types. A 3/5 Generator lives out trial and error very differently from a 3/5 Projector. Your Type is the vehicle; your Profile is the role.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        What is the difference between conscious and unconscious lines?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        The first number (conscious) is what you identify with and recognize in yourself. The second number (unconscious) operates below awareness - others often see it in you more than you see it yourself.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        What are Personal Destiny, Transpersonal Karma, and Fixed Fate?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        These describe the geometry of your Profile. Right Angle (Personal Destiny): self-focused journey. Left Angle (Transpersonal Karma): purpose through serving others. Juxtaposition (Fixed Fate): a rigid, determined life path. Only the 4/1 is Fixed Fate.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        What are the lower and upper trigrams?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Lines 1&ndash;3 form the lower trigram (personal, introspective). Lines 4&ndash;6 form the upper trigram (transpersonal, interpersonal). Your Profile's combination of these determines whether your orientation is more personal or relational.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Why does the 6th line have three life phases?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        The 6th line (Role Model) experiences life in three stages: experimentation (~0&ndash;30, living as a 3rd line), observation (~30&ndash;50, going on the roof), and wisdom (~50+, coming off the roof as a living example). This unique arc means the 6th line matures and transforms more dramatically than any other line.
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CROSS-LINKS / CONTINUE LEARNING ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Continue Learning
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="#" class="bg-gm-light rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">The 5 Types &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Strategy, Authority, and aura mechanics for all Human Design Types.</p>
+                </a>
+                <a href="#" class="bg-gm-light rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">Variables &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">The Four Transformations - Determination, Environment, Perspective, Motivation.</p>
+                </a>
+                <a href="#" class="bg-gm-light rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">Sleep Design &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">How your design transforms during sleep and the power of your sleeping aura.</p>
+                </a>
+                <a href="../index.php" class="bg-gm-light rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">Learn Hub &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">All Human Design educational content - foundations, advanced topics, and tools.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Discover Your Profile</h2>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+                Generate a free Foundation chart to see your Profile - the two lines that shape your role, personality, and life purpose.
+            </p>
+            <a href="#" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+                Get Your Free Chart &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+
+                <!-- Left: Logo & Copyright -->
+                <div class="text-center md:text-left">
+                    <img src="../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">All right reserved.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Privacy, Terms and Conditions</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+
+                <!-- Center: Newsletter (Shafik to wire up form backend) -->
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Subscribe to Our Newsletter</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Sign up to our newsletter to receive updates, offers,
+                        new releases, and everything related to Genetic Matrix.
+                    </p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input
+                            type="email"
+                            placeholder="Your Email Address"
+                            class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400"
+                        >
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Social & Contact -->
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connect With Us</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener">
+                            <img src="../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
+                        </a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener">
+                            <img src="../assets/icon-x.svg" alt="X" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener">
+                            <img src="../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener">
+                            <img src="../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
+                        </a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Get in Touch</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

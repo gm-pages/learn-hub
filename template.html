@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{PAGE_TITLE}} | Genetic Matrix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gm-purple': '#6E5898',
+                        'gm-purple-light': '#9080B1',
+                        'gm-purple-soft': '#AC94D8',
+                        'gm-dark': '#3C2864',
+                        'gm-darker': '#2e1f4d',
+                        'gm-green': '#54931E',
+                        'gm-green-dark': '#468018',
+                        'gm-green-light': '#8EB86A',
+                        'gm-pink': '#F66378',
+                        'gm-orange': '#E8961D',
+                        'gm-gray': '#707070',
+                        'gm-light': '#F7F8F9',
+                        'gm-card': '#FAFBFC',
+                        'gm-card-active': '#F4F0FC',
+                        'gm-border': '#D8D4E4',
+                        'gm-warning': '#F8F8E8',
+                        'gm-text-dark': '#1A1A2E',
+                        'gm-text': '#444444',
+                        'gm-text-light': '#949494',
+                    },
+                    fontFamily: {
+                        'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        /* FAQ Accordion */
+        details summary { cursor: pointer; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+        details[open] summary::after { content: '−'; }
+        details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- ==================== NAV BAR ==================== -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <!-- Logo -->
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14">
+            </a>
+
+            <!-- Right Nav: LOGGED OUT (default for static pages) -->
+            <div class="flex items-center gap-8">
+                <!-- Report Icon -->
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Reports">
+                    <img src="assets/icon-report.svg" alt="Reports" class="h-9 w-9">
+                </a>
+                <!-- Talking Chart Icon -->
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Talking Charts">
+                    <img src="assets/icon-talking-chart.svg" alt="Talking Charts" class="h-7 w-7">
+                </a>
+                <!-- Free Chart (popup on live site - Shafik to wire up) -->
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Free Chart</a>
+                <!-- Our Plans -->
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Our Plans</a>
+                <!-- Cart -->
+                <a href="https://www.geneticmatrix.com/cart/" title="Cart">
+                    <img src="assets/icon-cart.svg" alt="Cart" class="h-8 w-auto">
+                </a>
+                <!-- Language Selector -->
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>English</span>
+                    <img src="assets/icon-english.svg" alt="English" class="h-5 w-7">
+                </div>
+                <!-- Sign In (popup on live site - Shafik to wire up) -->
+                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Sign In</a>
+                <!-- Register -->
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+        <div class="max-w-3xl mx-auto px-6">
+            <!-- Green CTA pill at top of hero -->
+            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-green hover:bg-gm-green-dark text-white text-xs font-semibold tracking-wide px-5 py-2 rounded-full mb-6 transition">
+                {{HERO_CTA_TEXT}}
+            </a>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">{{PAGE_TITLE}}</h1>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
+                {{HERO_SUBTITLE}}
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== INTRO PARAGRAPH ==================== -->
+    <!-- Brief intro text below hero on white background -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                {{INTRO_TEXT}}
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== HIGHLIGHT BOX (Tools, Not Doctrine style) ==================== -->
+    <!-- Full-width callout box with lavender background -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-gm-card-active rounded-2xl p-8 md:p-10">
+                <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+                    <span class="text-gm-purple">|</span> &#9881;&#65039; {{HIGHLIGHT_HEADING}}
+                </h2>
+                <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                    {{HIGHLIGHT_TEXT}}
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CARD GRID SECTION ==================== -->
+    <!-- Available Calculation Methods style — small cards in a grid -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> &#128218; {{CARD_GRID_HEADING}}
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Regular card -->
+                <a href="#" class="bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition text-center">
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">{{CARD_TITLE}}</h3>
+                    <p class="text-gray-400 text-xs">{{CARD_SUBTITLE}}</p>
+                </a>
+                <!-- Active / highlighted card (current page) -->
+                <a href="#" class="bg-gm-purple text-white rounded-lg border border-gm-purple p-4 hover:shadow-md transition text-center">
+                    <h3 class="text-sm font-bold mb-1">{{CARD_TITLE}}</h3>
+                    <p class="text-purple-200 text-xs">{{CARD_SUBTITLE}}</p>
+                    <span class="inline-block bg-gm-green text-white text-[10px] font-bold px-2 py-0.5 rounded-full mt-1">Current</span>
+                </a>
+                <!-- Repeat cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTENT SECTION + HIGHLIGHT BOX ==================== -->
+    <!-- Standard text section with optional callout box inside -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> &#128300; {{SECTION_HEADING}}
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                {{SECTION_BODY_TEXT}}
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                {{SECTION_BODY_TEXT_2}}
+            </p>
+
+            <!-- Highlight / Example Box (purple left border) -->
+            <div class="bg-gm-light border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
+                <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Everyday Example</p>
+                <p class="text-gm-text text-sm leading-relaxed">
+                    {{EXAMPLE_TEXT}}
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURE CARDS (Three Variants style) ==================== -->
+    <!-- Three-column comparison cards with large stat numbers -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> &#128302; {{FEATURE_HEADING}}
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Feature Card -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 text-center">
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">{{FEATURE_TITLE}}</h3>
+                    <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">{{FEATURE_SUBTITLE}}</p>
+                    <p class="text-3xl font-bold text-gm-purple mb-4">{{FEATURE_STAT}}</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        {{FEATURE_DESCRIPTION}}
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg border border-gm-border p-6 text-center">
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">{{FEATURE_TITLE}}</h3>
+                    <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">{{FEATURE_SUBTITLE}}</p>
+                    <p class="text-3xl font-bold text-gm-purple mb-4">{{FEATURE_STAT}}</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        {{FEATURE_DESCRIPTION}}
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg border border-gm-border p-6 text-center">
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">{{FEATURE_TITLE}}</h3>
+                    <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">{{FEATURE_SUBTITLE}}</p>
+                    <p class="text-3xl font-bold text-gm-purple mb-4">{{FEATURE_STAT}}</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        {{FEATURE_DESCRIPTION}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== DATA TABLE (simple two-column) ==================== -->
+    <!-- Table with purple header and pill-styled values -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> &#128142; {{TABLE_HEADING}}
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                {{TABLE_INTRO_TEXT}}
+            </p>
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-gm-dark text-white text-left">
+                            <th class="py-3 px-4 text-sm font-semibold rounded-tl-lg">{{COL_1_HEADER}}</th>
+                            <th class="py-3 px-4 text-sm font-semibold rounded-tr-lg">{{COL_2_HEADER}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gm-border">
+                            <td class="py-3 px-4 text-sm text-gray-700">Tropical</td>
+                            <td class="py-3 px-4"><span class="inline-block bg-gm-card-active text-gm-purple text-sm font-semibold px-3 py-1 rounded-full">0&deg;</span></td>
+                        </tr>
+                        <tr class="border-b border-gm-border bg-gm-light">
+                            <td class="py-3 px-4 text-sm text-gray-700">Sidereal (std)</td>
+                            <td class="py-3 px-4"><span class="inline-block bg-gm-card-active text-gm-purple text-sm font-semibold px-3 py-1 rounded-full">~24&deg;</span></td>
+                        </tr>
+                        <tr class="border-b border-gm-border">
+                            <td class="py-3 px-4 text-sm text-gray-700">True Sidereal-C</td>
+                            <td class="py-3 px-4"><span class="inline-block bg-gm-pink/10 text-gm-pink text-sm font-semibold px-3 py-1 rounded-full">~24.8&deg;</span></td>
+                        </tr>
+                        <tr class="border-b border-gm-border bg-gm-light">
+                            <td class="py-3 px-4 text-sm text-gray-700">True Sidereal-M</td>
+                            <td class="py-3 px-4"><span class="inline-block bg-gm-pink/10 text-gm-pink text-sm font-semibold px-3 py-1 rounded-full">~25.0&deg;</span></td>
+                        </tr>
+                        <tr class="border-b border-gm-border">
+                            <td class="py-3 px-4 text-sm text-gray-700">True Sidereal-K</td>
+                            <td class="py-3 px-4"><span class="inline-block bg-gm-pink/10 text-gm-pink text-sm font-semibold px-3 py-1 rounded-full">~25.2&deg;</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== DATA TABLE (multi-column with status pills) ==================== -->
+    <!-- Table with colored status indicators -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> &#128736;&#65039; {{TABLE_HEADING_2}}
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                {{TABLE_INTRO_TEXT_2}}
+            </p>
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse bg-white rounded-lg overflow-hidden">
+                    <thead>
+                        <tr class="bg-gm-dark text-white text-left">
+                            <th class="py-3 px-4 text-sm font-semibold">{{COL_1_HEADER}}</th>
+                            <th class="py-3 px-4 text-sm font-semibold">{{COL_2_HEADER}}</th>
+                            <th class="py-3 px-4 text-sm font-semibold">{{COL_3_HEADER}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Status pill colors: green = unlikely, orange = possible, pink = likely -->
+                        <tr class="border-b border-gm-border">
+                            <td class="py-3 px-4 text-sm font-medium text-gray-800">Gate</td>
+                            <td class="py-3 px-4"><span class="inline-block bg-gm-pink/10 text-gm-pink text-xs font-semibold px-3 py-1 rounded-full">Very likely to change</span></td>
+                            <td class="py-3 px-4"><span class="inline-block bg-gm-orange/10 text-gm-orange text-xs font-semibold px-3 py-1 rounded-full">Unlikely</span></td>
+                        </tr>
+                        <tr class="border-b border-gm-border">
+                            <td class="py-3 px-4 text-sm font-medium text-gray-800">Line</td>
+                            <td class="py-3 px-4"><span class="inline-block bg-gm-orange/10 text-gm-orange text-xs font-semibold px-3 py-1 rounded-full">Very likely to change</span></td>
+                            <td class="py-3 px-4"><span class="inline-block bg-gm-orange/10 text-gm-orange text-xs font-semibold px-3 py-1 rounded-full">Possible but less likely</span></td>
+                        </tr>
+                        <tr class="border-b border-gm-border">
+                            <td class="py-3 px-4 text-sm font-medium text-gray-800">Tone</td>
+                            <td class="py-3 px-4"><span class="inline-block bg-gm-green/10 text-gm-green text-xs font-semibold px-3 py-1 rounded-full">Almost certain to change</span></td>
+                            <td class="py-3 px-4"><span class="inline-block bg-gm-orange/10 text-gm-orange text-xs font-semibold px-3 py-1 rounded-full">Likely</span></td>
+                        </tr>
+                        <tr class="border-b border-gm-border">
+                            <td class="py-3 px-4 text-sm font-medium text-gray-800">Base</td>
+                            <td class="py-3 px-4"><span class="inline-block bg-gm-green/10 text-gm-green text-xs font-semibold px-3 py-1 rounded-full">Almost certain to change</span></td>
+                            <td class="py-3 px-4"><span class="inline-block bg-gm-orange/10 text-gm-orange text-xs font-semibold px-3 py-1 rounded-full">Possible</span></td>
+                        </tr>
+                        <tr class="border-b border-gm-border">
+                            <td class="py-3 px-4 text-sm font-medium text-gray-800">Profile</td>
+                            <td class="py-3 px-4"><span class="inline-block bg-gm-orange/10 text-gm-orange text-xs font-semibold px-3 py-1 rounded-full">Not likely to change</span></td>
+                            <td class="py-3 px-4"><span class="inline-block bg-gm-green/10 text-gm-green text-xs font-semibold px-3 py-1 rounded-full">Possible</span></td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm font-medium text-gray-800">Type</td>
+                            <td class="py-3 px-4"><span class="inline-block bg-gm-green/10 text-gm-green text-xs font-semibold px-3 py-1 rounded-full">Possible</span></td>
+                            <td class="py-3 px-4"><span class="inline-block bg-gm-green/10 text-gm-green text-xs font-semibold px-3 py-1 rounded-full">Unlikely</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Important Context / Warning Box -->
+            <div class="bg-gm-warning border-l-4 border-gm-orange rounded-r-lg p-5 mt-8">
+                <p class="text-xs font-semibold text-gm-orange uppercase tracking-widest mb-2">Important Context</p>
+                <p class="text-gm-text text-sm leading-relaxed">
+                    {{WARNING_TEXT}}
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BLOCKQUOTE ==================== -->
+    <!-- Styled quote with attribution -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <blockquote class="border-l-4 border-gm-purple-soft pl-6 py-2">
+                <p class="text-gm-text text-sm md:text-base leading-relaxed italic">
+                    &ldquo;{{QUOTE_TEXT}}&rdquo;
+                </p>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- ==================== TEXT SECTION (Who Is This For? / bullet list) ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> &#128101; {{SECTION_HEADING}}
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                {{SECTION_BODY_TEXT}}
+            </p>
+            <!-- Bullet list style -->
+            <ul class="space-y-2 text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                <li class="flex items-start gap-2">
+                    <span class="text-gm-purple mt-1">&#9679;</span>
+                    <span>{{LIST_ITEM}}</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-gm-purple mt-1">&#9679;</span>
+                    <span>{{LIST_ITEM}}</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-gm-purple mt-1">&#9679;</span>
+                    <span>{{LIST_ITEM}}</span>
+                </li>
+            </ul>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                {{SECTION_BODY_TEXT_2}}
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ACCORDION ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> &#10067; Common Questions
+            </h2>
+            <div class="space-y-3">
+                <!-- FAQ Item (closed) -->
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        {{FAQ_QUESTION}}
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        {{FAQ_ANSWER}}
+                    </div>
+                </details>
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        {{FAQ_QUESTION}}
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        {{FAQ_ANSWER}}
+                    </div>
+                </details>
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        {{FAQ_QUESTION}}
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        {{FAQ_ANSWER}}
+                    </div>
+                </details>
+                <!-- FAQ Item (open by default — last one to show answer example) -->
+                <details open class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        {{FAQ_QUESTION}}
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        {{FAQ_ANSWER}}
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EXPLORE OTHER / CROSS-LINKS ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> &#128279; {{CROSS_LINKS_HEADING}}
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Cross-link card with emoji icon -->
+                <a href="#" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
+                    <span class="text-lg flex-shrink-0 w-8 h-8 bg-gm-card-active rounded-full flex items-center justify-center">&#9670;</span>
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-800">{{LINK_TITLE}}</h3>
+                        <p class="text-gray-400 text-xs">{{LINK_SUBTITLE}}</p>
+                    </div>
+                </a>
+                <a href="#" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
+                    <span class="text-lg flex-shrink-0 w-8 h-8 bg-gm-card-active rounded-full flex items-center justify-center">&#9670;</span>
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-800">{{LINK_TITLE}}</h3>
+                        <p class="text-gray-400 text-xs">{{LINK_SUBTITLE}}</p>
+                    </div>
+                </a>
+                <a href="#" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
+                    <span class="text-lg flex-shrink-0 w-8 h-8 bg-gm-card-active rounded-full flex items-center justify-center">&#9733;</span>
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-800">{{LINK_TITLE}}</h3>
+                        <p class="text-gray-400 text-xs">{{LINK_SUBTITLE}}</p>
+                    </div>
+                </a>
+                <a href="#" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
+                    <span class="text-lg flex-shrink-0 w-8 h-8 bg-gm-card-active rounded-full flex items-center justify-center">&#9790;</span>
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-800">{{LINK_TITLE}}</h3>
+                        <p class="text-gray-400 text-xs">{{LINK_SUBTITLE}}</p>
+                    </div>
+                </a>
+                <!-- Repeat as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Explore {{PAGE_TITLE}}</h2>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+                {{CTA_TEXT}}
+            </p>
+            <a href="#" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+                Upgrade to Pro
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+
+                <!-- Left: Logo & Copyright -->
+                <div class="text-center md:text-left">
+                    <img src="assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">All right reserved.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Privacy, Terms and Conditions</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+
+                <!-- Center: Newsletter (Shafik to wire up form backend) -->
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Subscribe to Our Newsletter</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Sign up to our newsletter to receive updates, offers,
+                        new releases, and everything related to Genetic Matrix.
+                    </p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input
+                            type="email"
+                            placeholder="Your Email Address"
+                            class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400"
+                        >
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Social & Contact -->
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connect With Us</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener">
+                            <img src="assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
+                        </a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener">
+                            <img src="assets/icon-x.svg" alt="X" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener">
+                            <img src="assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener">
+                            <img src="assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
+                        </a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Get in Touch</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
