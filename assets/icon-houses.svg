@@ -1,5 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92">
-  <circle cx="46" cy="46" r="44" fill="#ebeef6"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="6 6 80 80">
   <!-- Wheel divided into 12 houses -->
   <circle cx="46" cy="46" r="32" fill="none" stroke="#6d5797" stroke-width="2.5"/>
   <circle cx="46" cy="46" r="20" fill="none" stroke="#6d5797" stroke-width="1.5"/>

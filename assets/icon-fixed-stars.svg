@@ -1,5 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92">
-  <circle cx="46" cy="46" r="44" fill="#ebeef6"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="6 6 80 80">
   <!-- Large central star (4-point) -->
   <path d="M46,18 L50,39 L70,44 L50,49 L46,70 L42,49 L22,44 L42,39 Z" fill="#6d5797"/>
   <!-- Small stars scattered -->
