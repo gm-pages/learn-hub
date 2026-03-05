@@ -38,7 +38,7 @@
         }
     </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
         /* Hero starfield — 3 independent layers for visible twinkling */
         .hero-stars-1, .hero-stars-2, .hero-stars-3 {
@@ -217,7 +217,7 @@
         <div class="absolute inset-0 pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse at 60% 40%, rgba(172,148,216,0.2) 0%, transparent 60%), radial-gradient(ellipse at 30% 70%, rgba(232,150,29,0.1) 0%, transparent 50%);"></div>
         <!-- Content -->
         <div class="relative z-10 max-w-3xl mx-auto px-6">
-            <h1 class="text-3xl md:text-4xl font-bold text-white mb-4" style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 600;">Learn Human Design &amp; Astrology</h1>
+            <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">Learn Human Design &amp; Astrology</h1>
             <p class="text-gray-300 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
                 Free educational resources to deepen your understanding of Human Design,
                 astrology, and the tools available on Genetic Matrix. No login required.
