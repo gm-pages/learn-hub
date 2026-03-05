@@ -42,10 +42,10 @@
         body { font-family: 'Inter', sans-serif; }
         @keyframes twinkle {
             0%, 100% { filter: brightness(1); }
-            40% { filter: brightness(1.15) drop-shadow(0 0 3px rgba(110,88,152,0.25)); }
-            70% { filter: brightness(0.92); }
+            45% { filter: brightness(1.1) drop-shadow(0 0 2px rgba(110,88,152,0.15)); }
+            75% { filter: brightness(0.95); }
         }
-        .icon-twinkle { animation: twinkle 5s ease-in-out infinite; }
+        .icon-twinkle { animation: twinkle 8s ease-in-out infinite; }
         /* Card reveal animation */
         @keyframes cardPopUp {
             from { opacity: 0; transform: translateY(24px); }
@@ -331,7 +331,7 @@
                 </div>
                 <!-- Planet Transit Animation (right side, md+ screens) -->
                 <div class="hidden md:block flex-shrink-0">
-                    <svg width="420" height="160" viewBox="0 0 420 160" fill="none" style="overflow:visible" aria-hidden="true">
+                    <svg width="340" height="130" viewBox="0 0 420 160" fill="none" style="overflow:visible" aria-hidden="true">
                         <!-- Three orbit rings (inner → outer) -->
                         <ellipse cx="210" cy="80" rx="75" ry="30" stroke="#6E5898" stroke-width="0.8" opacity="0.16" stroke-dasharray="3 5"/>
                         <ellipse cx="210" cy="80" rx="140" ry="52" stroke="#6E5898" stroke-width="1.1" opacity="0.20" stroke-dasharray="4 5"/>
