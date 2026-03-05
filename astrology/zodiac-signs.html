@@ -45,6 +45,50 @@
  details[open] summary::after { content: '\2212'; }
  details[open] > div { animation: fadeIn 0.2s ease-in-out; }
  @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+ /* Milky Way drift */
+ .milky-way {
+     position: absolute;
+     width: 200%;
+     height: 100%;
+     background: linear-gradient(135deg, transparent 30%, rgba(255,255,255,0.03) 45%, rgba(172,148,216,0.05) 50%, rgba(255,255,255,0.03) 55%, transparent 70%);
+     animation: milkyDrift 30s linear infinite;
+ }
+ @keyframes milkyDrift {
+     0% { transform: translateX(-25%); }
+     100% { transform: translateX(25%); }
+ }
+
+ /* Starfield for astro hero */
+ .astro-stars {
+     position: absolute; inset: 0; pointer-events: none;
+     background-image:
+         radial-gradient(1.5px 1.5px at 10% 20%, rgba(255,255,255,0.8) 0%, transparent 100%),
+         radial-gradient(2px 2px at 30% 50%, rgba(255,255,255,0.9) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 50% 15%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 70% 60%, rgba(255,255,255,0.85) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 85% 30%, rgba(255,255,255,0.75) 0%, transparent 100%),
+         radial-gradient(2px 2px at 15% 70%, rgba(172,148,216,0.8) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 60% 80%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 90% 85%, rgba(232,150,29,0.5) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 40% 90%, rgba(255,255,255,0.6) 0%, transparent 100%),
+         radial-gradient(2px 2px at 25% 40%, rgba(255,255,255,0.8) 0%, transparent 100%);
+     animation: astroTwinkle 4s ease-in-out infinite alternate;
+ }
+ @keyframes astroTwinkle {
+     0% { opacity: 0.7; }
+     100% { opacity: 1; }
+ }
+
+ /* Background zodiac wheel rotation */
+ @keyframes slowSpin {
+     from { transform: rotate(0deg); }
+     to { transform: rotate(360deg); }
+ }
+
+ /* FAQ hover */
+ details { transition: background-color 0.2s ease; }
+ details:hover { background-color: #F4F0FC; }
  </style>
  <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"The 12 Zodiac Signs (Plus the 13th Sign) | Astrology Signs Explained","description":"Explore all 12 zodiac signs plus the controversial 13th sign Ophiuchus. Learn what each sign means, how planets express differently in each sign, and what it means to have planets in specific houses.","publisher":{"@type":"Organization","name":"Genetic Matrix","url":"https://geneticmatrix.com"},"mainEntityOfPage":"https://geneticmatrix.com/learn/astrology/zodiac-signs/"}
@@ -96,11 +140,15 @@
     </div>
 
  <!-- ==================== HERO BANNER ==================== -->
- <section class="bg-gm-dark text-white text-center py-12 md:py-16">
-     <div class="max-w-3xl mx-auto px-6">
+ <section class="relative overflow-hidden text-white text-center py-12 md:py-16" style="background: linear-gradient(135deg, #1e1240 0%, #3C2864 35%, #4a3070 55%, #3C2864 75%, #1a0e38 100%);">
+     <!-- Milky Way band -->
+     <div class="milky-way"></div>
+     <!-- Star dots -->
+     <div class="astro-stars"></div>
+     <div class="max-w-3xl mx-auto px-6 relative z-10">
          <span class="inline-block bg-gm-purple text-white text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">Astrology</span>
          <h1 class="text-3xl md:text-4xl font-bold mb-3">The 12 Zodiac Signs (Plus the 13th Sign)</h1>
-         <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-xl mx-auto">Explore all 12 zodiac signs plus the controversial 13th sign Ophiuchus. Learn what each sign means, how planets express differently in each sign, and what it means to have planets in specific houses.</p>
+         <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-xl mx-auto">Explore all 12 zodiac signs plus the controversial 13th sign Ophiuchus. Learn what each sign means, how planets express differently in each sign, and what it means to have planets in specific houses.</p>
      </div>
  </section>
 
@@ -123,31 +171,111 @@
  </section>
 
  <!-- ==================== THE 12 ZODIAC SIGNS ==================== -->
- <section class="py-10 md:py-14 bg-gm-light" id="the-12-zodiac-signs">
-     <div class="max-w-4xl mx-auto px-6">
+ <section class="py-10 md:py-14 bg-gm-light relative overflow-hidden" id="the-12-zodiac-signs">
+     <!-- Background zodiac wheel -->
+     <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+         <svg class="w-[800px] h-[800px] opacity-[0.04]" viewBox="0 0 400 400" fill="none" stroke="#6E5898" stroke-width="0.8" style="animation: slowSpin 120s linear infinite;">
+             <!-- Outer circle -->
+             <circle cx="200" cy="200" r="190"/>
+             <!-- Inner circle -->
+             <circle cx="200" cy="200" r="140"/>
+             <!-- Center circle -->
+             <circle cx="200" cy="200" r="50"/>
+             <!-- 12 division lines -->
+             <line x1="200" y1="10" x2="200" y2="60"/>
+             <line x1="295" y1="52.7" x2="262.5" y2="82.7"/>
+             <line x1="347.3" y1="105" x2="317.3" y2="130"/>
+             <line x1="390" y1="200" x2="340" y2="200"/>
+             <line x1="347.3" y1="295" x2="317.3" y2="270"/>
+             <line x1="295" y1="347.3" x2="262.5" y2="317.3"/>
+             <line x1="200" y1="390" x2="200" y2="340"/>
+             <line x1="105" y1="347.3" x2="137.5" y2="317.3"/>
+             <line x1="52.7" y1="295" x2="82.7" y2="270"/>
+             <line x1="10" y1="200" x2="60" y2="200"/>
+             <line x1="52.7" y1="105" x2="82.7" y2="130"/>
+             <line x1="105" y1="52.7" x2="137.5" y2="82.7"/>
+             <!-- Small sign marks on outer ring -->
+             <circle cx="200" cy="25" r="4"/>
+             <circle cx="290" cy="58" r="4"/>
+             <circle cx="342" cy="110" r="4"/>
+             <circle cx="375" cy="200" r="4"/>
+             <circle cx="342" cy="290" r="4"/>
+             <circle cx="290" cy="342" r="4"/>
+             <circle cx="200" cy="375" r="4"/>
+             <circle cx="110" cy="342" r="4"/>
+             <circle cx="58" cy="290" r="4"/>
+             <circle cx="25" cy="200" r="4"/>
+             <circle cx="58" cy="110" r="4"/>
+             <circle cx="110" cy="58" r="4"/>
+         </svg>
+     </div>
+     <div class="max-w-4xl mx-auto px-6 relative z-10">
          <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> The 12 Zodiac Signs</h2>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Aries (March 21 - April 19)</h3>
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-3">
+             <svg class="w-7 h-7 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="#6E5898" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                 <path d="M5 18C5 12 8 6 12 3c4 3 7 9 7 15"/>
+                 <path d="M12 3v18"/>
+             </svg>
+             Aries (March 21 - April 19)
+         </h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Fire | <strong class="text-gray-800">Modality:</strong> Cardinal | <strong class="text-gray-800">Ruler:</strong> Mars</p>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Aries is the first sign of the zodiac and carries the energy of initiation, courage, and direct action. Aries energy is competitive, independent, and impulsive. It wants to be first, to lead, and to pioneer. At its best, Aries is brave, honest, and energizing. At its most challenging, it can be impatient, aggressive, and self-centered. Aries rules the head and face.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Taurus (April 20 - May 20)</h3>
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-3">
+             <svg class="w-7 h-7 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="#6E5898" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                 <circle cx="12" cy="16" r="6"/>
+                 <path d="M4 4c2 4 5 5 8 5s6-1 8-5"/>
+             </svg>
+             Taurus (April 20 - May 20)
+         </h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Earth | <strong class="text-gray-800">Modality:</strong> Fixed | <strong class="text-gray-800">Ruler:</strong> Venus</p>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Taurus is the sign of stability, sensuality, and material comfort. Taurus energy is patient, reliable, and deeply connected to the physical world -- food, touch, nature, money, beauty. It values security above almost everything and can be extraordinarily persistent. At its most challenging, Taurus becomes stubborn, possessive, and resistant to change. Taurus rules the throat and neck.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Gemini (May 21 - June 20)</h3>
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-3">
+             <svg class="w-7 h-7 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="#6E5898" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                 <path d="M6 4h12"/>
+                 <path d="M6 20h12"/>
+                 <path d="M8 4v16"/>
+                 <path d="M16 4v16"/>
+             </svg>
+             Gemini (May 21 - June 20)
+         </h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Air | <strong class="text-gray-800">Modality:</strong> Mutable | <strong class="text-gray-800">Ruler:</strong> Mercury</p>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Gemini is the sign of communication, curiosity, and mental agility. Gemini energy wants to learn everything, talk to everyone, and juggle multiple interests simultaneously. It is adaptable, witty, and socially versatile. At its most challenging, Gemini can be superficial, inconsistent, and scattered. Gemini rules the hands, arms, and lungs.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Cancer (June 21 - July 22)</h3>
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-3">
+             <svg class="w-7 h-7 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="#6E5898" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                 <circle cx="7" cy="9" r="3"/>
+                 <circle cx="17" cy="15" r="3"/>
+                 <path d="M10 9c4 0 10 0 10 6"/>
+                 <path d="M14 15c-4 0-10 0-10-6"/>
+             </svg>
+             Cancer (June 21 - July 22)
+         </h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Water | <strong class="text-gray-800">Modality:</strong> Cardinal | <strong class="text-gray-800">Ruler:</strong> Moon</p>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Cancer is the sign of nurturing, emotional depth, and home. Cancer energy is protective, intuitive, and deeply attached to family and the past. It creates safety for those it loves and has powerful emotional memory. At its most challenging, Cancer can be moody, clingy, and manipulative through guilt. Cancer rules the chest, breasts, and stomach.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Leo (July 23 - August 22)</h3>
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-3">
+             <svg class="w-7 h-7 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="#6E5898" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                 <circle cx="9" cy="16" r="4"/>
+                 <path d="M13 16c0-6-2-9 1-12 3 3 5 4 6 1"/>
+             </svg>
+             Leo (July 23 - August 22)
+         </h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Fire | <strong class="text-gray-800">Modality:</strong> Fixed | <strong class="text-gray-800">Ruler:</strong> Sun</p>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Leo is the sign of creativity, self-expression, and personal magnetism. Leo energy is warm, generous, dramatic, and wants to be seen and appreciated. It has natural leadership qualities and a genuine desire to bring joy to others. At its most challenging, Leo can be egocentric, attention-seeking, and prideful. Leo rules the heart and upper back.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Virgo (August 23 - September 22)</h3>
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-3">
+             <svg class="w-7 h-7 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="#6E5898" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                 <path d="M4 4v12c0 2 1 4 3 4"/>
+                 <path d="M4 10h0c0-4 4-6 4-6v12c0 2 1 4 3 4"/>
+                 <path d="M8 10h0c0-4 4-6 4-6v12"/>
+                 <path d="M12 10c0-4 4-6 4-6v9c0 2 1 4 4 3"/>
+                 <path d="M16 16l2 4"/>
+             </svg>
+             Virgo (August 23 - September 22)
+         </h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Earth | <strong class="text-gray-800">Modality:</strong> Mutable | <strong class="text-gray-800">Ruler:</strong> Mercury</p>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Virgo is the sign of analysis, service, and practical improvement. Virgo energy is meticulous, health-conscious, and driven to make things work better. It notices what others miss and finds purpose in being useful. At its most challenging, Virgo can be overly critical, anxious, and perfectionist to the point of paralysis. Virgo rules the digestive system and intestines.</p>
 
@@ -156,27 +284,71 @@
              <p class="text-gm-text text-sm leading-relaxed italic">Each zodiac sign rules a part of the body, creating a map from head (Aries) to feet (Pisces). This ancient correspondence connects celestial patterns to physical experience, reflecting astrology's holistic view that the macrocosm is mirrored in the microcosm.</p>
          </div>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Libra (September 23 - October 22)</h3>
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-3">
+             <svg class="w-7 h-7 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="#6E5898" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                 <path d="M4 18h16"/>
+                 <path d="M4 13h16"/>
+                 <path d="M7 13c0-3 2-5 5-5s5 2 5 5"/>
+             </svg>
+             Libra (September 23 - October 22)
+         </h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Air | <strong class="text-gray-800">Modality:</strong> Cardinal | <strong class="text-gray-800">Ruler:</strong> Venus</p>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Libra is the sign of balance, partnership, and aesthetic harmony. Libra energy seeks fairness, beauty, and meaningful one-to-one connection. It is diplomatic, charming, and socially graceful. At its most challenging, Libra can be indecisive, people-pleasing, and conflict-avoidant to the point of dishonesty. Libra rules the kidneys, lower back, and skin.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Scorpio (October 23 - November 21)</h3>
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-3">
+             <svg class="w-7 h-7 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="#6E5898" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                 <path d="M4 4v12c0 2 1 4 3 4"/>
+                 <path d="M4 10h0c0-4 4-6 4-6v12c0 2 1 4 3 4"/>
+                 <path d="M8 10h0c0-4 4-6 4-6v12c0 2 1 4 3 4h1"/>
+                 <path d="M17 17l3 3m0 0l-2-1m2 1l-1-2"/>
+             </svg>
+             Scorpio (October 23 - November 21)
+         </h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Water | <strong class="text-gray-800">Modality:</strong> Fixed | <strong class="text-gray-800">Rulers:</strong> Mars (traditional), Pluto (modern)</p>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Scorpio is the sign of transformation, intensity, and psychological depth. Scorpio energy is penetrating, passionate, and unafraid of the dark side of life. It seeks truth at any cost and has remarkable resilience. At its most challenging, Scorpio can be controlling, jealous, secretive, and vindictive. Scorpio rules the reproductive organs.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Sagittarius (November 22 - December 21)</h3>
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-3">
+             <svg class="w-7 h-7 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="#6E5898" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                 <path d="M5 19L19 5"/>
+                 <path d="M12 5h7v7"/>
+                 <path d="M8 15l-3 3"/>
+                 <path d="M10.5 17.5l-3 3"/>
+             </svg>
+             Sagittarius (November 22 - December 21)
+         </h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Fire | <strong class="text-gray-800">Modality:</strong> Mutable | <strong class="text-gray-800">Ruler:</strong> Jupiter</p>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Sagittarius is the sign of exploration, philosophy, and the search for meaning. Sagittarius energy is optimistic, adventurous, and intellectually expansive. It wants freedom, truth, and the big picture. At its most challenging, Sagittarius can be reckless, dogmatic, and commitment-phobic. Sagittarius rules the hips, thighs, and liver.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Capricorn (December 22 - January 19)</h3>
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-3">
+             <svg class="w-7 h-7 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="#6E5898" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                 <path d="M5 4l5 10h4c2 0 3 1 3 3s-1 3-3 3"/>
+                 <path d="M10 14l5-10"/>
+                 <circle cx="19" cy="19" r="2"/>
+                 <path d="M17 17l-3-3"/>
+             </svg>
+             Capricorn (December 22 - January 19)
+         </h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Earth | <strong class="text-gray-800">Modality:</strong> Cardinal | <strong class="text-gray-800">Ruler:</strong> Saturn</p>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Capricorn is the sign of ambition, discipline, and long-term achievement. Capricorn energy is strategic, responsible, and willing to work harder and longer than anyone else to reach the top. It respects tradition, hierarchy, and mastery through effort. At its most challenging, Capricorn can be rigid, cold, status-obsessed, and workaholic. Capricorn rules the bones, knees, and joints.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Aquarius (January 20 - February 18)</h3>
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-3">
+             <svg class="w-7 h-7 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="#6E5898" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                 <path d="M3 9l3 2 3-2 3 2 3-2 3 2 3-2"/>
+                 <path d="M3 15l3 2 3-2 3 2 3-2 3 2 3-2"/>
+             </svg>
+             Aquarius (January 20 - February 18)
+         </h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Air | <strong class="text-gray-800">Modality:</strong> Fixed | <strong class="text-gray-800">Rulers:</strong> Saturn (traditional), Uranus (modern)</p>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Aquarius is the sign of innovation, humanitarianism, and individual freedom within the collective. Aquarius energy is progressive, intellectual, and often ahead of its time. It values independence, originality, and social causes. At its most challenging, Aquarius can be emotionally detached, contrarian, and aloof. Aquarius rules the ankles and circulatory system.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Pisces (February 19 - March 20)</h3>
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-3">
+             <svg class="w-7 h-7 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="#6E5898" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                 <path d="M6 4c4 4 4 12 0 16"/>
+                 <path d="M18 4c-4 4-4 12 0 16"/>
+                 <path d="M4 12h16"/>
+             </svg>
+             Pisces (February 19 - March 20)
+         </h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Water | <strong class="text-gray-800">Modality:</strong> Mutable | <strong class="text-gray-800">Rulers:</strong> Jupiter (traditional), Neptune (modern)</p>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Pisces is the last sign of the zodiac, carrying the energy of dissolution, compassion, and spiritual transcendence. Pisces energy is empathic, imaginative, and deeply connected to the unseen realms -- dreams, intuition, art, and the collective unconscious. At its most challenging, Pisces can be escapist, boundary-less, and prone to victimhood or martyrdom. Pisces rules the feet and the lymphatic system.</p>
      </div>
@@ -312,7 +484,7 @@
  <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
      <div class="max-w-2xl mx-auto px-6">
          <h2 class="text-2xl md:text-3xl font-bold mb-4">Explore Your Chart</h2>
-         <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">See your full astrology chart with all the tools discussed on this page — planets, signs, houses, aspects, and more.</p>
+         <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">See your full astrology chart with all the tools discussed on this page - planets, signs, houses, aspects, and more.</p>
          <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">Try free with Starter plan &rarr;</a>
      </div>
  </section>
