@@ -92,6 +92,44 @@
             35% { opacity: 0.25; }
             70% { opacity: 1; }
         }
+        /* Neutrino stream animation */
+        .neutrino-stream {
+            position: absolute;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .neutrino-stream::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 80px;
+            background: linear-gradient(to bottom, transparent, rgba(172,148,216,0.8), rgba(255,255,255,1), rgba(172,148,216,0.8), transparent);
+            animation: neutrino 3s linear infinite;
+            border-radius: 2px;
+        }
+        .neutrino-stream.n1 { left: 8%; top: 0; height: 100%; transform: rotate(15deg); }
+        .neutrino-stream.n1::after { animation-delay: 0s; animation-duration: 2.5s; }
+        .neutrino-stream.n2 { right: 10%; top: 0; height: 100%; transform: rotate(-12deg); }
+        .neutrino-stream.n2::after { animation-delay: 1.2s; animation-duration: 3s; }
+        .neutrino-stream.n3 { left: 15%; top: 0; height: 100%; transform: rotate(8deg); }
+        .neutrino-stream.n3::after { animation-delay: 2s; animation-duration: 3.5s; width: 1.5px; height: 40px; }
+        @keyframes neutrino {
+            0% { top: -60px; opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { top: 100%; opacity: 0; }
+        }
+        /* Bodygraph float */
+        .bodygraph-float {
+            animation: bgFloat 8s ease-in-out infinite;
+        }
+        .bodygraph-float-alt {
+            animation: bgFloat 10s ease-in-out infinite reverse;
+        }
+        @keyframes bgFloat {
+            0%, 100% { transform: translateY(-50%) translateX(0); }
+            50% { transform: translateY(-52%) translateX(3px); }
+        }
         @keyframes twinkle {
             0%, 100% { filter: brightness(1); }
             45% { filter: brightness(1.1) drop-shadow(0 0 2px rgba(110,88,152,0.15)); }
@@ -209,6 +247,243 @@
                 <text x="112" y="45" fill="white" font-size="11" text-anchor="middle" opacity="0.9">♓</text>
             </svg>
         </div>
+        <!-- Bodygraph — left side -->
+        <div class="absolute pointer-events-none hidden md:block bodygraph-float" style="left: 3%; top: 50%; transform: translateY(-50%);" aria-hidden="true">
+            <svg class="w-[200px] h-[300px] lg:w-[260px] lg:h-[390px] opacity-[0.35]" viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Head — triangle pointing up -->
+                <polygon points="60,8 48,28 72,28" stroke="white" stroke-width="1.8" fill="none"/>
+                <!-- Ajna — triangle pointing down -->
+                <polygon points="60,52 48,32 72,32" stroke="white" stroke-width="1.8" fill="none"/>
+                <!-- Channel: Head to Ajna -->
+                <line x1="60" y1="28" x2="60" y2="32" stroke="white" stroke-width="1.2"/>
+                <!-- Throat — square -->
+                <rect x="48" y="56" width="24" height="20" stroke="white" stroke-width="1.8" fill="none"/>
+                <!-- Channel: Ajna to Throat -->
+                <line x1="60" y1="52" x2="60" y2="56" stroke="white" stroke-width="1.2"/>
+                <!-- G Center — diamond -->
+                <polygon points="60,82 72,96 60,110 48,96" stroke="white" stroke-width="1.8" fill="none"/>
+                <!-- Channel: Throat to G -->
+                <line x1="60" y1="76" x2="60" y2="82" stroke="white" stroke-width="1.2"/>
+                <!-- Heart/Will — small triangle (right) -->
+                <polygon points="88,88 78,80 78,96" stroke="white" stroke-width="1.5" fill="none"/>
+                <!-- Channel: Throat to Heart -->
+                <line x1="72" y1="70" x2="78" y2="88" stroke="white" stroke-width="1"/>
+                <!-- Channel: Heart to G -->
+                <line x1="78" y1="88" x2="72" y2="96" stroke="white" stroke-width="1"/>
+                <!-- Spleen — triangle (left) -->
+                <polygon points="32,130 42,120 42,140" stroke="white" stroke-width="1.5" fill="none"/>
+                <!-- Solar Plexus — triangle (right) -->
+                <polygon points="88,130 78,120 78,140" stroke="white" stroke-width="1.5" fill="none"/>
+                <!-- Sacral — square -->
+                <rect x="48" y="120" width="24" height="20" stroke="white" stroke-width="1.8" fill="none"/>
+                <!-- Channel: G to Sacral -->
+                <line x1="60" y1="110" x2="60" y2="120" stroke="white" stroke-width="1.2"/>
+                <!-- Channels to Spleen & SP -->
+                <line x1="48" y1="130" x2="42" y2="130" stroke="white" stroke-width="1"/>
+                <line x1="72" y1="130" x2="78" y2="130" stroke="white" stroke-width="1"/>
+                <!-- Root — square -->
+                <rect x="48" y="154" width="24" height="20" stroke="white" stroke-width="1.8" fill="none"/>
+                <!-- Channel: Sacral to Root -->
+                <line x1="60" y1="140" x2="60" y2="154" stroke="white" stroke-width="1.2"/>
+                <!-- Channels: Spleen/SP to Root -->
+                <line x1="42" y1="140" x2="48" y2="164" stroke="white" stroke-width="1"/>
+                <line x1="78" y1="140" x2="72" y2="164" stroke="white" stroke-width="1"/>
+            </svg>
+        </div>
+        <!-- Bodygraph — right side (slightly smaller, tilted) -->
+        <div class="absolute pointer-events-none hidden md:block bodygraph-float-alt" style="right: 4%; top: 50%; transform: translateY(-50%) rotate(6deg);" aria-hidden="true">
+            <svg class="w-[170px] h-[260px] lg:w-[220px] lg:h-[330px] opacity-[0.25]" viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Head -->
+                <polygon points="60,8 48,28 72,28" stroke="white" stroke-width="1.8" fill="none"/>
+                <!-- Ajna -->
+                <polygon points="60,52 48,32 72,32" stroke="white" stroke-width="1.8" fill="none"/>
+                <line x1="60" y1="28" x2="60" y2="32" stroke="white" stroke-width="1.2"/>
+                <!-- Throat -->
+                <rect x="48" y="56" width="24" height="20" stroke="white" stroke-width="1.8" fill="none"/>
+                <line x1="60" y1="52" x2="60" y2="56" stroke="white" stroke-width="1.2"/>
+                <!-- G Center -->
+                <polygon points="60,82 72,96 60,110 48,96" stroke="white" stroke-width="1.8" fill="none"/>
+                <line x1="60" y1="76" x2="60" y2="82" stroke="white" stroke-width="1.2"/>
+                <!-- Heart -->
+                <polygon points="88,88 78,80 78,96" stroke="white" stroke-width="1.5" fill="none"/>
+                <line x1="72" y1="70" x2="78" y2="88" stroke="white" stroke-width="1"/>
+                <line x1="78" y1="88" x2="72" y2="96" stroke="white" stroke-width="1"/>
+                <!-- Spleen -->
+                <polygon points="32,130 42,120 42,140" stroke="white" stroke-width="1.5" fill="none"/>
+                <!-- Solar Plexus -->
+                <polygon points="88,130 78,120 78,140" stroke="white" stroke-width="1.5" fill="none"/>
+                <!-- Sacral -->
+                <rect x="48" y="120" width="24" height="20" stroke="white" stroke-width="1.8" fill="none"/>
+                <line x1="60" y1="110" x2="60" y2="120" stroke="white" stroke-width="1.2"/>
+                <line x1="48" y1="130" x2="42" y2="130" stroke="white" stroke-width="1"/>
+                <line x1="72" y1="130" x2="78" y2="130" stroke="white" stroke-width="1"/>
+                <!-- Root -->
+                <rect x="48" y="154" width="24" height="20" stroke="white" stroke-width="1.8" fill="none"/>
+                <line x1="60" y1="140" x2="60" y2="154" stroke="white" stroke-width="1.2"/>
+                <line x1="42" y1="140" x2="48" y2="164" stroke="white" stroke-width="1"/>
+                <line x1="78" y1="140" x2="72" y2="164" stroke="white" stroke-width="1"/>
+            </svg>
+        </div>
+        <!-- Living things — every animate being -->
+        <!-- Dog/Animal — upper left area -->
+        <div class="absolute pointer-events-none hidden lg:block" style="left: 22%; top: 18%; opacity: 0.22;" aria-hidden="true">
+            <svg class="w-[55px] h-[55px]" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Dog outline -->
+                <path d="M8,36 L8,24 C8,20 10,16 14,14 L16,10 L18,14 L22,12 L26,12 L30,14 L32,10 L34,14 C38,16 40,20 40,24 L40,36" stroke="white" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="18" cy="22" r="1.5" fill="white"/>
+                <circle cx="30" cy="22" r="1.5" fill="white"/>
+                <ellipse cx="24" cy="27" rx="3" ry="2" stroke="white" stroke-width="1.2" fill="none"/>
+                <!-- Tail -->
+                <path d="M40,30 C44,26 44,22 42,20" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <!-- Legs -->
+                <line x1="14" y1="36" x2="14" y2="42" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="22" y1="36" x2="22" y2="42" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="26" y1="36" x2="26" y2="42" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="34" y1="36" x2="34" y2="42" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <!-- Sleeping figure — lower right -->
+        <div class="absolute pointer-events-none hidden lg:block" style="right: 26%; bottom: 15%; opacity: 0.2;" aria-hidden="true">
+            <svg class="w-[60px] h-[40px]" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Sleeping person lying down -->
+                <circle cx="12" cy="16" r="6" stroke="white" stroke-width="1.8" fill="none"/>
+                <!-- Body lying horizontal -->
+                <path d="M18,18 C22,22 26,24 32,24 L50,24" stroke="white" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                <!-- Blanket -->
+                <path d="M24,24 L24,32 C24,34 26,36 28,36 L48,36 C50,36 50,34 50,32 L50,24" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- Zzz -->
+                <text x="20" y="10" fill="white" font-size="8" font-weight="bold" opacity="0.9">z</text>
+                <text x="27" y="6" fill="white" font-size="6" font-weight="bold" opacity="0.7">z</text>
+                <text x="32" y="3" fill="white" font-size="5" font-weight="bold" opacity="0.5">z</text>
+            </svg>
+        </div>
+        <!-- Tree — right side, between bodygraph and center -->
+        <div class="absolute pointer-events-none hidden lg:block" style="right: 28%; top: 20%; opacity: 0.18;" aria-hidden="true">
+            <svg class="w-[45px] h-[60px]" viewBox="0 0 40 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Tree trunk -->
+                <line x1="20" y1="56" x2="20" y2="30" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <!-- Canopy layers -->
+                <polygon points="20,4 8,22 32,22" stroke="white" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+                <polygon points="20,12 6,30 34,30" stroke="white" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+                <polygon points="20,20 4,38 36,38" stroke="white" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+                <!-- Roots -->
+                <path d="M16,56 C14,54 12,54 10,55" stroke="white" stroke-width="1" fill="none" stroke-linecap="round"/>
+                <path d="M24,56 C26,54 28,54 30,55" stroke="white" stroke-width="1" fill="none" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <!-- Fish — lower left -->
+        <div class="absolute pointer-events-none hidden lg:block" style="left: 24%; bottom: 18%; opacity: 0.2;" aria-hidden="true">
+            <svg class="w-[55px] h-[30px]" viewBox="0 0 56 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Fish body -->
+                <ellipse cx="28" cy="15" rx="18" ry="10" stroke="white" stroke-width="1.8" fill="none"/>
+                <!-- Tail -->
+                <polygon points="46,15 56,6 56,24" stroke="white" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+                <!-- Eye -->
+                <circle cx="18" cy="13" r="2" fill="white"/>
+                <!-- Gill line -->
+                <path d="M24,8 C22,15 24,22 24,22" stroke="white" stroke-width="1" fill="none" stroke-linecap="round"/>
+                <!-- Fin -->
+                <path d="M30,5 C32,1 36,2 34,5" stroke="white" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                <!-- Bottom fin -->
+                <path d="M32,25 C34,29 37,28 36,25" stroke="white" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <!-- Cat — near left bodygraph -->
+        <div class="absolute pointer-events-none hidden lg:block" style="left: 16%; top: 15%; opacity: 0.22;" aria-hidden="true">
+            <svg class="w-[40px] h-[40px]" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8,14 L4,4 L12,10" stroke="white" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+                <path d="M32,14 L36,4 L28,10" stroke="white" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+                <ellipse cx="20" cy="22" rx="14" ry="12" stroke="white" stroke-width="1.5" fill="none"/>
+                <circle cx="14" cy="19" r="1.5" fill="white"/>
+                <circle cx="26" cy="19" r="1.5" fill="white"/>
+                <path d="M18,24 L20,26 L22,24" stroke="white" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                <line x1="10" y1="24" x2="2" y2="22" stroke="white" stroke-width="0.8" opacity="0.7"/>
+                <line x1="10" y1="26" x2="2" y2="27" stroke="white" stroke-width="0.8" opacity="0.7"/>
+                <line x1="30" y1="24" x2="38" y2="22" stroke="white" stroke-width="0.8" opacity="0.7"/>
+                <line x1="30" y1="26" x2="38" y2="27" stroke="white" stroke-width="0.8" opacity="0.7"/>
+            </svg>
+        </div>
+        <!-- Horse — far left mid -->
+        <div class="absolute pointer-events-none hidden xl:block" style="left: 14%; bottom: 20%; opacity: 0.18;" aria-hidden="true">
+            <svg class="w-[55px] h-[50px]" viewBox="0 0 56 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14,18 C14,10 18,4 24,4 L28,4 C30,4 32,6 32,8 L34,6 L36,8 L34,12 C38,14 42,18 42,24 L42,34" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14,18 C10,20 8,24 8,28 L8,34" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <line x1="14" y1="34" x2="14" y2="44" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="22" y1="34" x2="22" y2="44" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="34" y1="34" x2="34" y2="44" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="42" y1="34" x2="42" y2="44" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                <ellipse cx="24" cy="28" rx="12" ry="8" stroke="white" stroke-width="1.5" fill="none"/>
+                <circle cx="28" cy="10" r="1" fill="white"/>
+                <path d="M20,6 C18,8 16,12 16,16" stroke="white" stroke-width="1" fill="none" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <!-- Bird — upper area floating -->
+        <div class="absolute pointer-events-none hidden lg:block" style="left: 34%; top: 8%; opacity: 0.22;" aria-hidden="true">
+            <svg class="w-[40px] h-[22px]" viewBox="0 0 44 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22,18 C16,18 10,14 4,6 C10,10 16,12 22,10 C28,12 34,10 40,6 C34,14 28,18 22,18Z" stroke="white" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+                <circle cx="12" cy="12" r="1.2" fill="white"/>
+                <path d="M4,6 L0,4" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M40,6 C42,4 44,2 44,0" stroke="white" stroke-width="1" fill="none" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <!-- Snake — lower right area -->
+        <div class="absolute pointer-events-none hidden lg:block" style="right: 18%; bottom: 10%; opacity: 0.19;" aria-hidden="true">
+            <svg class="w-[65px] h-[28px]" viewBox="0 0 70 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4,20 C8,8 16,8 20,16 C24,24 32,24 36,16 C40,8 48,8 52,16 C56,22 60,20 64,16 L68,14" stroke="white" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                <ellipse cx="68" cy="14" rx="4" ry="3" stroke="white" stroke-width="1.5" fill="none" transform="rotate(-10,68,14)"/>
+                <circle cx="69" cy="12.5" r="0.8" fill="white"/>
+                <path d="M72,14 L75,12 M72,14 L75,16" stroke="white" stroke-width="0.8" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <!-- Butterfly — mid left bottom -->
+        <div class="absolute pointer-events-none hidden lg:block" style="left: 30%; bottom: 8%; opacity: 0.2;" aria-hidden="true">
+            <svg class="w-[42px] h-[36px]" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="22" y1="8" x2="22" y2="36" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+                <ellipse cx="12" cy="16" rx="10" ry="8" stroke="white" stroke-width="1.5" fill="none" transform="rotate(-10,12,16)"/>
+                <ellipse cx="32" cy="16" rx="10" ry="8" stroke="white" stroke-width="1.5" fill="none" transform="rotate(10,32,16)"/>
+                <ellipse cx="14" cy="28" rx="7" ry="6" stroke="white" stroke-width="1.3" fill="none" transform="rotate(10,14,28)"/>
+                <ellipse cx="30" cy="28" rx="7" ry="6" stroke="white" stroke-width="1.3" fill="none" transform="rotate(-10,30,28)"/>
+                <path d="M22,8 C18,2 16,0 14,0" stroke="white" stroke-width="1" fill="none" stroke-linecap="round"/>
+                <path d="M22,8 C26,2 28,0 30,0" stroke="white" stroke-width="1" fill="none" stroke-linecap="round"/>
+                <circle cx="14" cy="0" r="1.2" fill="white"/>
+                <circle cx="30" cy="0" r="1.2" fill="white"/>
+            </svg>
+        </div>
+        <!-- Turtle — far right mid -->
+        <div class="absolute pointer-events-none hidden xl:block" style="right: 15%; top: 58%; opacity: 0.18;" aria-hidden="true">
+            <svg class="w-[48px] h-[34px]" viewBox="0 0 52 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="26" cy="18" rx="18" ry="12" stroke="white" stroke-width="1.5" fill="none"/>
+                <path d="M16,8 L20,28" stroke="white" stroke-width="0.8" opacity="0.6"/>
+                <path d="M26,6 L26,30" stroke="white" stroke-width="0.8" opacity="0.6"/>
+                <path d="M36,8 L32,28" stroke="white" stroke-width="0.8" opacity="0.6"/>
+                <circle cx="46" cy="16" r="4" stroke="white" stroke-width="1.3" fill="none"/>
+                <circle cx="47.5" cy="15" r="0.8" fill="white"/>
+                <path d="M12,26 L8,32" stroke="white" stroke-width="1.3" stroke-linecap="round"/>
+                <path d="M12,10 L8,4" stroke="white" stroke-width="1.3" stroke-linecap="round"/>
+                <path d="M38,26 L42,32" stroke="white" stroke-width="1.3" stroke-linecap="round"/>
+                <path d="M38,10 L42,4" stroke="white" stroke-width="1.3" stroke-linecap="round"/>
+                <path d="M8,18 L2,20" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <!-- Crystal/Rock — upper right area -->
+        <div class="absolute pointer-events-none hidden lg:block" style="right: 20%; top: 25%; opacity: 0.2;" aria-hidden="true">
+            <svg class="w-[40px] h-[45px]" viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Crystal cluster -->
+                <polygon points="20,2 14,20 26,20" stroke="white" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+                <polygon points="12,8 6,28 18,28" stroke="white" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+                <polygon points="30,10 24,26 36,26" stroke="white" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+                <!-- Base rock -->
+                <path d="M4,28 L2,38 C2,40 4,42 8,42 L32,42 C36,42 38,40 38,38 L36,28" stroke="white" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+                <!-- Facet lines -->
+                <line x1="20" y1="8" x2="20" y2="20" stroke="white" stroke-width="0.8" opacity="0.6"/>
+                <line x1="12" y1="14" x2="12" y2="28" stroke="white" stroke-width="0.8" opacity="0.6"/>
+                <line x1="30" y1="16" x2="30" y2="26" stroke="white" stroke-width="0.8" opacity="0.6"/>
+            </svg>
+        </div>
+        <!-- Neutrino streams -->
+        <div class="neutrino-stream n1 hidden md:block" aria-hidden="true"></div>
+        <div class="neutrino-stream n2 hidden md:block" aria-hidden="true"></div>
+        <div class="neutrino-stream n3 hidden md:block" aria-hidden="true"></div>
         <!-- Stars layers — 3 independent layers for visible twinkling -->
         <div class="hero-stars-1" aria-hidden="true"></div>
         <div class="hero-stars-2" aria-hidden="true"></div>
