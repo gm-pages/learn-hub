@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92">
+  <circle cx="46" cy="46" r="44" fill="#ebeef6"/>
+  <!-- Sun-like planet -->
+  <circle cx="46" cy="44" r="16" fill="none" stroke="#6d5797" stroke-width="2.5"/>
+  <circle cx="46" cy="44" r="7" fill="#6d5797"/>
+  <!-- Orbit ring -->
+  <ellipse cx="46" cy="44" rx="32" ry="12" fill="none" stroke="#6d5797" stroke-width="1.8" transform="rotate(-20 46 44)"/>
+  <!-- Small orbiting planet -->
+  <circle cx="74" cy="34" r="4.5" fill="#6d5797"/>
+  <!-- Small moon -->
+  <circle cx="26" cy="66" r="3" fill="#6d5797"/>
+  <circle cx="70" cy="60" r="2" fill="#6d5797"/>
+</svg>

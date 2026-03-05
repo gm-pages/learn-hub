@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92">
+  <circle cx="46" cy="46" r="44" fill="#ebeef6"/>
+  <!-- Two overlapping circles representing tropical vs sidereal -->
+  <circle cx="36" cy="48" r="22" fill="none" stroke="#6d5797" stroke-width="2.5"/>
+  <circle cx="56" cy="48" r="22" fill="none" stroke="#6d5797" stroke-width="2.5" stroke-dasharray="5 4"/>
+  <!-- Double-headed arrow showing offset -->
+  <line x1="18" y1="22" x2="72" y2="22" stroke="#6d5797" stroke-width="2"/>
+  <polyline points="22,18 18,22 22,26" fill="none" stroke="#6d5797" stroke-width="2"/>
+  <polyline points="68,18 72,22 68,26" fill="none" stroke="#6d5797" stroke-width="2"/>
+  <!-- Degree label -->
+  <text x="36" y="21" font-size="10" fill="#6d5797" font-family="Arial" font-weight="bold">24°</text>
+  <!-- Center dot in overlap -->
+  <circle cx="46" cy="48" r="3" fill="#6d5797"/>
+</svg>

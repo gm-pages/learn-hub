@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92">
+  <circle cx="46" cy="46" r="44" fill="#ebeef6"/>
+  <!-- Yin-Yang symbol -->
+  <circle cx="46" cy="46" r="28" fill="none" stroke="#6d5797" stroke-width="2.5"/>
+  <!-- Yin-yang inner shape -->
+  <path d="M46,18 A28,28 0 0,1 46,74 A14,14 0 0,1 46,46 A14,14 0 0,0 46,18" fill="#6d5797"/>
+  <!-- Yin dot -->
+  <circle cx="46" cy="32" r="4.5" fill="#ebeef6"/>
+  <!-- Yang dot -->
+  <circle cx="46" cy="60" r="4.5" fill="#6d5797"/>
+  <!-- 12 small marks around for 12 animals -->
+  <circle cx="46" cy="10" r="2.5" fill="#6d5797"/>
+  <circle cx="60" cy="12.5" r="2.5" fill="#6d5797"/>
+  <circle cx="71" cy="22" r="2.5" fill="#6d5797"/>
+  <circle cx="76" cy="36" r="2.5" fill="#6d5797"/>
+  <circle cx="76" cy="56" r="2.5" fill="#6d5797"/>
+  <circle cx="71" cy="70" r="2.5" fill="#6d5797"/>
+  <circle cx="60" cy="79.5" r="2.5" fill="#6d5797"/>
+  <circle cx="46" cy="82" r="2.5" fill="#6d5797"/>
+  <circle cx="32" cy="79.5" r="2.5" fill="#6d5797"/>
+  <circle cx="21" cy="70" r="2.5" fill="#6d5797"/>
+  <circle cx="16" cy="56" r="2.5" fill="#6d5797"/>
+  <circle cx="16" cy="36" r="2.5" fill="#6d5797"/>
+</svg>
