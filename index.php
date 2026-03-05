@@ -665,7 +665,7 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a><!-- Sabian page TBD -->
+                    <a href="astrology/sabian-symbols.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Astro Tarot Card -->
