@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Three circuit groups as connected nodes -->
+  <!-- Individual circuit (top) -->
+  <circle cx="32" cy="10" r="6" stroke="#6E5898" stroke-width="2" fill="#F4F0FC"/>
+  <!-- Collective circuit (bottom-left) -->
+  <circle cx="12" cy="50" r="6" stroke="#6E5898" stroke-width="2" fill="#F4F0FC"/>
+  <!-- Tribal circuit (bottom-right) -->
+  <circle cx="52" cy="50" r="6" stroke="#6E5898" stroke-width="2" fill="#F4F0FC"/>
+  <!-- Connecting paths -->
+  <line x1="27" y1="15" x2="16" y2="45" stroke="#6E5898" stroke-width="2" stroke-linecap="round"/>
+  <line x1="37" y1="15" x2="48" y2="45" stroke="#6E5898" stroke-width="2" stroke-linecap="round"/>
+  <line x1="18" y1="50" x2="46" y2="50" stroke="#6E5898" stroke-width="2" stroke-linecap="round"/>
+  <!-- Center hub -->
+  <circle cx="32" cy="38" r="4" fill="#6E5898"/>
+  <line x1="32" y1="16" x2="32" y2="34" stroke="#6E5898" stroke-width="2" stroke-linecap="round"/>
+  <line x1="16" y1="46" x2="28" y2="39" stroke="#6E5898" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="48" y1="46" x2="36" y2="39" stroke="#6E5898" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
