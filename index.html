@@ -46,16 +46,23 @@
             75% { filter: brightness(0.95); }
         }
         .icon-twinkle { animation: twinkle 8s ease-in-out infinite; }
-        /* Card reveal animation */
-        @keyframes cardPopUp {
-            from { opacity: 0; transform: translateY(36px) scale(0.96); }
-            to { opacity: 1; transform: translateY(0) scale(1); }
-        }
+        /* Card reveal animation — CSS transition (works both directions) */
         .card-reveal {
             opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
         }
         .card-reveal.visible {
-            animation: cardPopUp 0.65s ease-out forwards;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Stretched link — entire card clickable */
+        .card-link { position: relative; cursor: pointer; }
+        .card-link .card-link-target::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: 1;
         }
     </style>
 </head>
@@ -129,7 +136,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- Type Card -->
-                <div class="card-reveal bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-type.svg" alt="Type" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -139,11 +146,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="types/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="types/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Profile Card -->
-                <div class="card-reveal bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-profile.svg" alt="Profile" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -153,11 +160,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="profiles/index.php" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="profiles/index.php" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Centers Card -->
-                <div class="card-reveal bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-centres.svg" alt="Centers" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -167,11 +174,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Variables & Arrows Card -->
-                <div class="card-reveal bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-arrows.svg" alt="Variables & Arrows" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -181,11 +188,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Sleep Design Card -->
-                <div class="card-reveal bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-moon.svg" alt="Sleep Design" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -195,11 +202,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Animal Human Design Card -->
-                <div class="card-reveal bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-paw.svg" alt="Animal Human Design" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -209,7 +216,7 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
             </div>
@@ -234,7 +241,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- J2000 Card -->
-                <div class="card-reveal bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-gm-pink flex flex-col">
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-gm-pink flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-rhombus.svg" alt="J2000" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -245,11 +252,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Sidereal Calculation Card -->
-                <div class="card-reveal bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#2ea89e] flex flex-col">
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#2ea89e] flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-windrose.svg" alt="Sidereal" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -260,11 +267,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Draconic Zodiac Card -->
-                <div class="card-reveal bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#c94040] flex flex-col">
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#c94040] flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-dragon.svg" alt="Draconic" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -275,11 +282,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- True Sidereal Variants Card -->
-                <div class="card-reveal bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#d46ba3] flex flex-col">
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#d46ba3] flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-star.svg" alt="True Sidereal" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -290,11 +297,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- 13-Sign Sidereal Card -->
-                <div class="card-reveal bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#3d5a96] flex flex-col">
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#3d5a96] flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-ophiuchus.svg" alt="13-Sign Sidereal" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -305,7 +312,7 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
             </div>
@@ -386,7 +393,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- Zodiac Signs Card -->
-                <div class="card-reveal bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-zodiac.svg" alt="Zodiac Signs" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -396,11 +403,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="astrology/zodiac-signs.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="astrology/zodiac-signs.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Planets Card -->
-                <div class="card-reveal bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-planets.svg" alt="Planets" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -410,11 +417,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="astrology/planets.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="astrology/planets.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Houses Card -->
-                <div class="card-reveal bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-houses.svg" alt="Houses" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -424,11 +431,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="astrology/houses.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="astrology/houses.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Aspects Card -->
-                <div class="card-reveal bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-aspects.svg" alt="Aspects" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -438,11 +445,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="astrology/aspects.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="astrology/aspects.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Asteroids Card -->
-                <div class="card-reveal bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-asteroids.svg" alt="Asteroids" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -452,11 +459,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="astrology/asteroids.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="astrology/asteroids.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Fixed Stars Card -->
-                <div class="card-reveal bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-fixed-stars.svg" alt="Fixed Stars" class="w-16 h-16 flex-shrink-0 icon-twinkle">
                         <div>
@@ -466,11 +473,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="astrology/fixed-stars.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="astrology/fixed-stars.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Sabian Symbols Card -->
-                <div class="card-reveal bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-sabian.svg" alt="Sabian Symbols" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -480,11 +487,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a><!-- Sabian page TBD -->
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a><!-- Sabian page TBD -->
                 </div>
 
                 <!-- Astro Tarot Card -->
-                <div class="card-reveal bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-tarot.svg" alt="Astro Tarot" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -494,11 +501,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="astrology/astro-tarot.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="astrology/astro-tarot.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Ayanamsha Card -->
-                <div class="card-reveal bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-ayanamsha.svg" alt="Ayanamsha" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -508,11 +515,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="astrology/ayanamsha.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="astrology/ayanamsha.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Chinese Astrology Card -->
-                <div class="card-reveal bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-chinese.svg" alt="Chinese Astrology" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -522,7 +529,7 @@
                             </p>
                         </div>
                     </div>
-                    <a href="astrology/chinese-astrology.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="astrology/chinese-astrology.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
             </div>
@@ -661,20 +668,23 @@
     <!-- Card reveal on scroll -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const grids = document.querySelectorAll('.grid');
+            const cards = document.querySelectorAll('.card-reveal');
+            // Assign stagger delay per card within its grid row
+            document.querySelectorAll('.grid').forEach(grid => {
+                grid.querySelectorAll('.card-reveal').forEach((card, i) => {
+                    card.style.transitionDelay = `${(i % 3) * 0.12}s`;
+                });
+            });
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        const cards = entry.target.querySelectorAll('.card-reveal');
-                        cards.forEach((card, i) => {
-                            card.style.animationDelay = `${i * 0.15}s`;
-                            card.classList.add('visible');
-                        });
-                        observer.unobserve(entry.target);
+                        entry.target.classList.add('visible');
+                    } else {
+                        entry.target.classList.remove('visible');
                     }
                 });
-            }, { threshold: 0.2 });
-            grids.forEach(grid => observer.observe(grid));
+            }, { threshold: 0.1 });
+            cards.forEach(card => observer.observe(card));
         });
     </script>
 </body>
