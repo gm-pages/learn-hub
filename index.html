@@ -40,6 +40,12 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
+        @keyframes twinkle {
+            0%, 100% { filter: brightness(1); }
+            40% { filter: brightness(1.15) drop-shadow(0 0 3px rgba(110,88,152,0.25)); }
+            70% { filter: brightness(0.92); }
+        }
+        .icon-twinkle { animation: twinkle 5s ease-in-out infinite; }
     </style>
 </head>
 <body class="bg-white text-gray-700">
@@ -441,7 +447,7 @@
                 <!-- Fixed Stars Card -->
                 <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-fixed-stars.svg" alt="Fixed Stars" class="w-16 h-16 flex-shrink-0">
+                        <img src="assets/icon-fixed-stars.svg" alt="Fixed Stars" class="w-16 h-16 flex-shrink-0 icon-twinkle">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Fixed Stars</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
