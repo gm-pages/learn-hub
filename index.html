@@ -43,29 +43,35 @@
         /* Hero starfield */
         .hero-stars {
             background-image:
-                radial-gradient(1px 1px at 10% 15%, rgba(255,255,255,0.7) 0%, transparent 100%),
-                radial-gradient(1px 1px at 25% 60%, rgba(255,255,255,0.5) 0%, transparent 100%),
-                radial-gradient(1.5px 1.5px at 40% 20%, rgba(255,255,255,0.8) 0%, transparent 100%),
-                radial-gradient(1px 1px at 55% 75%, rgba(255,255,255,0.4) 0%, transparent 100%),
-                radial-gradient(1px 1px at 70% 35%, rgba(255,255,255,0.6) 0%, transparent 100%),
-                radial-gradient(1.5px 1.5px at 85% 55%, rgba(255,255,255,0.7) 0%, transparent 100%),
-                radial-gradient(1px 1px at 15% 80%, rgba(255,255,255,0.45) 0%, transparent 100%),
-                radial-gradient(1px 1px at 50% 10%, rgba(255,255,255,0.55) 0%, transparent 100%),
-                radial-gradient(1px 1px at 90% 85%, rgba(255,255,255,0.5) 0%, transparent 100%),
-                radial-gradient(1.2px 1.2px at 35% 45%, rgba(255,255,255,0.65) 0%, transparent 100%),
-                radial-gradient(1px 1px at 65% 90%, rgba(255,255,255,0.4) 0%, transparent 100%),
-                radial-gradient(1px 1px at 80% 12%, rgba(255,255,255,0.55) 0%, transparent 100%),
-                radial-gradient(1.3px 1.3px at 5% 50%, rgba(255,255,255,0.6) 0%, transparent 100%),
-                radial-gradient(1px 1px at 48% 42%, rgba(255,255,255,0.35) 0%, transparent 100%),
-                radial-gradient(1px 1px at 72% 65%, rgba(255,255,255,0.5) 0%, transparent 100%),
-                radial-gradient(1.5px 1.5px at 20% 30%, rgba(172,148,216,0.8) 0%, transparent 100%),
-                radial-gradient(1.5px 1.5px at 75% 50%, rgba(172,148,216,0.6) 0%, transparent 100%),
-                radial-gradient(1.2px 1.2px at 60% 15%, rgba(232,150,29,0.4) 0%, transparent 100%);
-            animation: heroStarsTwinkle 6s ease-in-out infinite alternate;
+                radial-gradient(2px 2px at 10% 15%, rgba(255,255,255,0.95) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 25% 60%, rgba(255,255,255,0.8) 0%, transparent 100%),
+                radial-gradient(2.5px 2.5px at 40% 20%, rgba(255,255,255,1) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 55% 75%, rgba(255,255,255,0.7) 0%, transparent 100%),
+                radial-gradient(2px 2px at 70% 35%, rgba(255,255,255,0.85) 0%, transparent 100%),
+                radial-gradient(2.5px 2.5px at 85% 55%, rgba(255,255,255,0.9) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 15% 80%, rgba(255,255,255,0.75) 0%, transparent 100%),
+                radial-gradient(2px 2px at 50% 10%, rgba(255,255,255,0.85) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 90% 85%, rgba(255,255,255,0.8) 0%, transparent 100%),
+                radial-gradient(2px 2px at 35% 45%, rgba(255,255,255,0.9) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 65% 90%, rgba(255,255,255,0.7) 0%, transparent 100%),
+                radial-gradient(2px 2px at 80% 12%, rgba(255,255,255,0.85) 0%, transparent 100%),
+                radial-gradient(2px 2px at 5% 50%, rgba(255,255,255,0.8) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 48% 42%, rgba(255,255,255,0.65) 0%, transparent 100%),
+                radial-gradient(2px 2px at 72% 65%, rgba(255,255,255,0.8) 0%, transparent 100%),
+                radial-gradient(2.5px 2.5px at 20% 30%, rgba(172,148,216,1) 0%, transparent 100%),
+                radial-gradient(2.5px 2.5px at 75% 50%, rgba(172,148,216,0.85) 0%, transparent 100%),
+                radial-gradient(2px 2px at 60% 15%, rgba(232,150,29,0.7) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 92% 30%, rgba(255,255,255,0.75) 0%, transparent 100%),
+                radial-gradient(2px 2px at 8% 35%, rgba(172,148,216,0.8) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 45% 88%, rgba(232,150,29,0.6) 0%, transparent 100%),
+                radial-gradient(2px 2px at 30% 5%, rgba(255,255,255,0.9) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 58% 52%, rgba(255,255,255,0.7) 0%, transparent 100%);
+            animation: heroStarsTwinkle 4s ease-in-out infinite alternate;
         }
         @keyframes heroStarsTwinkle {
-            0% { opacity: 0.8; }
-            100% { opacity: 1; }
+            0% { opacity: 0.7; }
+            50% { opacity: 1; }
+            100% { opacity: 0.8; }
         }
         @keyframes twinkle {
             0%, 100% { filter: brightness(1); }
@@ -148,27 +154,27 @@
     <section class="relative overflow-hidden py-16 md:py-20 text-center" style="background: linear-gradient(135deg, #1e1240 0%, #3C2864 35%, #4a3070 55%, #3C2864 75%, #1a0e38 100%);">
         <!-- Zodiac wheel — decorative SVG -->
         <div class="absolute inset-0 flex items-center justify-center pointer-events-none" aria-hidden="true">
-            <svg class="w-[500px] h-[500px] md:w-[600px] md:h-[600px] opacity-[0.07]" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-[500px] h-[500px] md:w-[650px] md:h-[650px] opacity-[0.18]" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- Outer ring -->
-                <circle cx="200" cy="200" r="190" stroke="white" stroke-width="0.8"/>
-                <circle cx="200" cy="200" r="170" stroke="white" stroke-width="0.5"/>
-                <circle cx="200" cy="200" r="150" stroke="white" stroke-width="0.3"/>
+                <circle cx="200" cy="200" r="190" stroke="white" stroke-width="1.2"/>
+                <circle cx="200" cy="200" r="170" stroke="white" stroke-width="0.8"/>
+                <circle cx="200" cy="200" r="150" stroke="white" stroke-width="0.5"/>
                 <!-- 12 division lines (zodiac houses) -->
-                <line x1="200" y1="10" x2="200" y2="50" stroke="white" stroke-width="0.6"/>
-                <line x1="295" y1="27.7" x2="275" y2="62.3" stroke="white" stroke-width="0.6"/>
-                <line x1="372.3" y1="105" x2="337.7" y2="125" stroke="white" stroke-width="0.6"/>
-                <line x1="390" y1="200" x2="350" y2="200" stroke="white" stroke-width="0.6"/>
-                <line x1="372.3" y1="295" x2="337.7" y2="275" stroke="white" stroke-width="0.6"/>
-                <line x1="295" y1="372.3" x2="275" y2="337.7" stroke="white" stroke-width="0.6"/>
-                <line x1="200" y1="390" x2="200" y2="350" stroke="white" stroke-width="0.6"/>
-                <line x1="105" y1="372.3" x2="125" y2="337.7" stroke="white" stroke-width="0.6"/>
-                <line x1="27.7" y1="295" x2="62.3" y2="275" stroke="white" stroke-width="0.6"/>
-                <line x1="10" y1="200" x2="50" y2="200" stroke="white" stroke-width="0.6"/>
-                <line x1="27.7" y1="105" x2="62.3" y2="125" stroke="white" stroke-width="0.6"/>
-                <line x1="105" y1="27.7" x2="125" y2="62.3" stroke="white" stroke-width="0.6"/>
+                <line x1="200" y1="10" x2="200" y2="50" stroke="white" stroke-width="0.8"/>
+                <line x1="295" y1="27.7" x2="275" y2="62.3" stroke="white" stroke-width="0.8"/>
+                <line x1="372.3" y1="105" x2="337.7" y2="125" stroke="white" stroke-width="0.8"/>
+                <line x1="390" y1="200" x2="350" y2="200" stroke="white" stroke-width="0.8"/>
+                <line x1="372.3" y1="295" x2="337.7" y2="275" stroke="white" stroke-width="0.8"/>
+                <line x1="295" y1="372.3" x2="275" y2="337.7" stroke="white" stroke-width="0.8"/>
+                <line x1="200" y1="390" x2="200" y2="350" stroke="white" stroke-width="0.8"/>
+                <line x1="105" y1="372.3" x2="125" y2="337.7" stroke="white" stroke-width="0.8"/>
+                <line x1="27.7" y1="295" x2="62.3" y2="275" stroke="white" stroke-width="0.8"/>
+                <line x1="10" y1="200" x2="50" y2="200" stroke="white" stroke-width="0.8"/>
+                <line x1="27.7" y1="105" x2="62.3" y2="125" stroke="white" stroke-width="0.8"/>
+                <line x1="105" y1="27.7" x2="125" y2="62.3" stroke="white" stroke-width="0.8"/>
                 <!-- Inner detail rings -->
-                <circle cx="200" cy="200" r="120" stroke="white" stroke-width="0.3"/>
-                <circle cx="200" cy="200" r="80" stroke="white" stroke-width="0.2"/>
+                <circle cx="200" cy="200" r="120" stroke="white" stroke-width="0.5"/>
+                <circle cx="200" cy="200" r="80" stroke="white" stroke-width="0.3"/>
                 <!-- Zodiac symbols (simplified glyphs) -->
                 <text x="200" y="25" fill="white" font-size="11" text-anchor="middle" opacity="0.9">♈</text>
                 <text x="290" y="45" fill="white" font-size="11" text-anchor="middle" opacity="0.9">♉</text>
@@ -187,7 +193,7 @@
         <!-- Stars layer -->
         <div class="hero-stars absolute inset-0 pointer-events-none" aria-hidden="true"></div>
         <!-- Warm glow overlay -->
-        <div class="absolute inset-0 pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse at 60% 40%, rgba(172,148,216,0.12) 0%, transparent 60%), radial-gradient(ellipse at 30% 70%, rgba(232,150,29,0.06) 0%, transparent 50%);"></div>
+        <div class="absolute inset-0 pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse at 60% 40%, rgba(172,148,216,0.2) 0%, transparent 60%), radial-gradient(ellipse at 30% 70%, rgba(232,150,29,0.1) 0%, transparent 50%);"></div>
         <!-- Content -->
         <div class="relative z-10 max-w-3xl mx-auto px-6">
             <h1 class="text-3xl md:text-4xl font-bold text-white mb-4" style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 600;">Learn Human Design &amp; Astrology</h1>
