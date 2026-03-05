@@ -415,7 +415,7 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                    <a href="calculations/tropical.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- J2000 Card -->
@@ -430,7 +430,7 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                    <a href="calculations/j2000.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Sidereal Calculation Card -->
@@ -445,7 +445,7 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                    <a href="calculations/sidereal.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Draconic Zodiac Card -->
@@ -460,7 +460,7 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                    <a href="calculations/draconic.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- True Sidereal Variants Card -->
@@ -475,7 +475,7 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                    <a href="calculations/true-sidereal.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- 13-Sign Sidereal Card -->
@@ -490,7 +490,7 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                    <a href="calculations/13-sign-sidereal.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
             </div>

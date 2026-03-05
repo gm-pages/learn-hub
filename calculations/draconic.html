@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draconic Zodiac | Mean & True Node - Genetic Matrix</title>
+    <meta name="description" content="Understand Draconic calculations in Human Design. Learn what the Draconic zodiac is, how lunar nodes anchor it, and the difference between Mean and True Node variants.">
+    <meta name="keywords" content="draconic zodiac, draconic chart, human design draconic, mean node, true node, lunar nodes, dragon's head, dragon's tail, rahu, ketu, draconic calculation, human design calculation methods, genetic matrix">
+    <link rel="canonical" href="https://geneticmatrix.com/learn/calculations/draconic/">
+    <meta property="og:title" content="Draconic Zodiac | Mean & True Node - Genetic Matrix">
+    <meta property="og:description" content="Understand Draconic calculations in Human Design. Learn what the Draconic zodiac is, how lunar nodes anchor it, and the difference between Mean and True Node variants.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://geneticmatrix.com/learn/calculations/draconic/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gm-purple': '#6E5898',
+                        'gm-purple-light': '#9080B1',
+                        'gm-purple-soft': '#AC94D8',
+                        'gm-dark': '#3C2864',
+                        'gm-darker': '#2e1f4d',
+                        'gm-green': '#54931E',
+                        'gm-green-dark': '#468018',
+                        'gm-green-light': '#8EB86A',
+                        'gm-pink': '#F66378',
+                        'gm-orange': '#E8961D',
+                        'gm-gray': '#707070',
+                        'gm-light': '#F7F8F9',
+                        'gm-card': '#FAFBFC',
+                        'gm-card-active': '#F4F0FC',
+                        'gm-border': '#D8D4E4',
+                        'gm-warning': '#F8F8E8',
+                        'gm-text-dark': '#1A1A2E',
+                        'gm-text': '#444444',
+                        'gm-text-light': '#949494',
+                    },
+                    fontFamily: {
+                        'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        details summary { cursor: pointer; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+        details[open] summary::after { content: '\2212'; }
+        details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+
+    <!-- Article JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Draconic Zodiac | Mean & True Node - Human Design Calculation Methods",
+        "description": "Understand Draconic calculations in Human Design. Learn what the Draconic zodiac is, how lunar nodes anchor it, and the difference between Mean and True Node variants.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Genetic Matrix",
+            "url": "https://geneticmatrix.com"
+        },
+        "mainEntityOfPage": "https://geneticmatrix.com/learn/calculations/draconic/"
+    }
+    </script>
+
+    <!-- FAQ JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What does the Draconic chart represent?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "In Western astrological tradition, the Draconic chart is often interpreted as showing the soul's inherent orientation or deeper purpose - the motivational layer beneath the personality shown in the Tropical chart. Some astrologers describe it as a karmic or past-life chart; others see it as the chart of one's highest aspirations. We make no claims about what it represents in Human Design terms - that is an open question for practitioners and researchers to explore."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Should I use Mean or True Node?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For most purposes, the Mean Node is the more traditional choice and produces more stable results. If you prefer astronomical precision and want to capture the node's actual instantaneous position at your birth, use the True Node. The difference between the two is small - typically under 2 degrees - but can affect fine-grained Human Design decoding. We recommend trying both and comparing your results."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why is my Draconic chart so different from my Tropical chart?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The size of the difference between your Tropical and Draconic charts depends on where your natal North Node falls. If it is far from 0 degrees Aries (e.g. near 15 degrees Libra, which would create a roughly 195 degree shift), your Draconic chart will look very different. If it falls near 0 degrees Aries (a roughly 0 degree shift), the charts will be similar. There is no single typical difference - it is unique to your nodal position."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I use Draconic for transit calculations?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, but with care. A Draconic transit chart would use the current North Node position as 0 degrees Aries, creating a shifted zodiac that moves through the nodal cycle. This is a specialist technique. If you are working with Draconic transits, ensure you are using the same node variant (Mean or True) for both natal and transit calculations for consistency."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does the 18.6-year node cycle affect my Draconic chart over time?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Your natal Draconic chart is fixed - it is calculated from the North Node position at your birth, which does not change. What changes over time is the current transiting node position. The Draconic natal chart remains a snapshot of the nodal axis at birth, just like the rest of your natal chart remains fixed even as the planets continue moving."
+                }
+            }
+        ]
+    }
+    </script>
+
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- ==================== NAV BAR ==================== -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <!-- Logo -->
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14">
+            </a>
+
+            <!-- Right Nav: LOGGED OUT (default for static pages) -->
+            <div class="flex items-center gap-8">
+                <!-- Report Icon -->
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Reports">
+                    <img src="../assets/icon-report.svg" alt="Reports" class="h-9 w-9">
+                </a>
+                <!-- Talking Chart Icon -->
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Talking Charts">
+                    <img src="../assets/icon-talking-chart.svg" alt="Talking Charts" class="h-7 w-7">
+                </a>
+                <!-- Free Chart (popup on live site - Shafik to wire up) -->
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Free Chart</a>
+                <!-- Our Plans -->
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Our Plans</a>
+                <!-- Cart -->
+                <a href="https://www.geneticmatrix.com/cart/" title="Cart">
+                    <img src="../assets/icon-cart.svg" alt="Cart" class="h-8 w-auto">
+                </a>
+                <!-- Language Selector -->
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>English</span>
+                    <img src="../assets/icon-english.svg" alt="English" class="h-5 w-7">
+                </div>
+                <!-- Sign In (popup on live site - Shafik to wire up) -->
+                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Sign In</a>
+                <!-- Register -->
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== BREADCRUMB ==================== -->
+    <div class="bg-gm-light border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-6 py-3">
+            <a href="../index.html" class="text-gm-purple hover:text-gm-dark text-sm font-medium transition">&larr; Back to Learn Hub</a>
+        </div>
+    </div>
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+        <div class="max-w-3xl mx-auto px-6">
+            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-green hover:bg-gm-green-dark text-white text-xs font-semibold tracking-wide px-5 py-2 rounded-full mb-6 transition">
+                Try free with Starter plan
+            </a>
+            <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Calculation Methods &middot; Draconic</p>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">The Draconic Zodiac</h1>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
+                Anchored to the Moon's North Node - a zodiac of soul purpose and karmic orientation. Mean and True Node variants explained.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== TOOLS NOT DOCTRINE BOX ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-gm-card-active rounded-2xl p-8 md:p-10">
+                <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+                    <span class="text-gm-purple">|</span> Tools, not doctrine.
+                </h2>
+                <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                    Genetic Matrix offers the Draconic zodiac as an exploratory tool. It was not part of Ra Uru Hu's original Human Design system. The Draconic zodiac has a long history in Western astrology, where it is often associated with soul purpose, karmic themes, and the deeper motivational layer beneath the personality. We provide it for those who wish to explore that perspective in the context of Human Design.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== INTRO ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> A Different Kind of Zodiac
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                The Draconic zodiac is unlike any other calculation method in Genetic Matrix. Rather than anchoring to the Sun's relationship with Earth (Tropical), to the fixed stars (Sidereal), or to a historical epoch (J2000), the Draconic zodiac anchors to the Moon's North Node - the point where the Moon's orbit crosses the ecliptic heading north. The result is a zodiac that rotates with the nodal cycle and describes a different dimension of the chart entirely.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== AVAILABLE CALCULATION METHODS ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Available Calculation Methods
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                <div class="bg-white rounded-xl border border-gm-border p-4">
+                    <div class="text-sm font-bold text-gray-800">Tropical</div>
+                    <p class="text-xs text-gray-500 mt-1">Traditional seasonal zodiac</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-4">
+                    <div class="text-sm font-bold text-gray-800">Tropical (J2000)</div>
+                    <p class="text-xs text-gray-500 mt-1">Fixed reference frame</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-4">
+                    <div class="text-sm font-bold text-gray-800">Sidereal</div>
+                    <p class="text-xs text-gray-500 mt-1">Star-based zodiac</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-4">
+                    <div class="text-sm font-bold text-gray-800">13-Sign Sidereal</div>
+                    <p class="text-xs text-gray-500 mt-1">Includes Ophiuchus</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-4">
+                    <div class="text-sm font-bold text-gray-800">True Sidereal</div>
+                    <p class="text-xs text-gray-500 mt-1">Kanatas, Chimenti, Midpoint</p>
+                </div>
+                <div class="bg-gm-card-active rounded-xl border border-gm-purple p-4">
+                    <div class="text-sm font-bold text-gm-purple">Draconic</div>
+                    <p class="text-xs text-gm-purple mt-1">Based on lunar nodes</p>
+                    <span class="inline-block bg-gm-green text-white text-[10px] font-bold rounded px-2 py-0.5 mt-2 uppercase">This page</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== THE LUNAR NODES ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> The Lunar Nodes: Dragon's Head and Tail
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                The Moon's orbit is tilted about 5 degrees relative to the ecliptic - the Sun's apparent path through the sky. The two points where the Moon's orbit crosses the ecliptic are called the <strong>lunar nodes</strong>.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                The <strong>North Node</strong> (also called Caput Draconis, the Dragon's Head, or Rahu in Vedic astrology) is where the Moon crosses the ecliptic moving northward. The <strong>South Node</strong> (Cauda Draconis, the Dragon's Tail, or Ketu) is the opposite point.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                The nodes move slowly retrograde through the zodiac, completing a full cycle in approximately 18.6 years - the same cycle that causes eclipses to repeat at regular intervals. This is why the nodes are deeply connected to eclipses in both Western and Vedic astrological traditions.
+            </p>
+
+            <!-- Node Diagram -->
+            <div class="bg-gm-dark rounded-2xl p-8 mb-6">
+                <div class="flex justify-center items-center gap-8 md:gap-16 flex-wrap">
+                    <div class="text-center text-white">
+                        <span class="block text-4xl mb-2">&#9738;</span>
+                        <div class="font-bold text-sm text-gray-200">North Node</div>
+                        <div class="text-xs text-gray-400 mt-1 leading-relaxed">Caput Draconis<br>Dragon's Head<br>Rahu</div>
+                    </div>
+                    <div class="text-2xl text-gray-500">&#8596;</div>
+                    <div class="text-center text-white">
+                        <span class="block text-4xl mb-2">&#9739;</span>
+                        <div class="font-bold text-sm text-gray-200">South Node</div>
+                        <div class="text-xs text-gray-400 mt-1 leading-relaxed">Cauda Draconis<br>Dragon's Tail<br>Ketu</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Everyday Example -->
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-xs font-bold tracking-widest text-gm-purple uppercase mb-2">Everyday Example</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Imagine two train tracks that cross at a grade crossing - the moment a train on one track crosses the other is the equivalent of an eclipse. The lunar nodes are those crossing points in the sky. The Draconic zodiac sets its starting point at one of those crossings - the North Node - making the entire zodiac lunar-orbit-relative rather than Sun-orbit-relative.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT IS THE DRACONIC ZODIAC ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> What Is the Draconic Zodiac?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                The Draconic zodiac is constructed by setting 0 degrees Aries at the position of the natal North Node. Every planet's longitude is then recalculated relative to this shifted reference point.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                In practice, this means subtracting the natal North Node longitude from all planetary longitudes. If your North Node is at 15 degrees Scorpio in your Tropical chart, then 15 degrees Scorpio becomes 0 degrees Aries in your Draconic chart - and all other positions shift accordingly.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                The result is a chart that describes planetary patterns relative to your own nodal axis, rather than relative to the universal seasonal cycle. In Western astrology, this is often interpreted as showing the soul's deeper orientation - the underlying motivational pattern beneath the surface personality shown in the Tropical chart.
+            </p>
+
+            <!-- Insight box -->
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    "The Draconic chart is not a different sky - it is the same sky seen from the Moon's own axis. A chart of what you are reaching toward."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MEAN NODE VS TRUE NODE ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Mean Node vs True Node: What's the Difference?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                The lunar nodes do not move in a perfectly smooth retrograde motion. The True Node oscillates - it wobbles slightly forward and backward as it moves, influenced by the complex gravitational interactions of the Sun-Earth-Moon system. The Mean Node is a mathematical average that smooths out this wobbling motion to show the overall retrograde trend.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Both are used in astrological practice. The difference between them at any given moment is typically less than 2 degrees. In Human Design, this difference can affect Color, Tone, and Base decoding - and occasionally Line or Gate.
+            </p>
+
+            <!-- Variant Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <div class="bg-white rounded-xl border border-gm-border border-t-4 border-t-gm-purple p-6">
+                    <div class="text-lg font-bold text-gray-800 mb-1">Draconic Tropical (Mean)</div>
+                    <p class="text-xs text-gray-500 mb-4">Based on the Mean North Node</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                        Uses the mathematically averaged position of the North Node - smoothed across the nodal oscillation cycle. This is the most commonly used node calculation in traditional Western astrology and is the more stable of the two values.
+                    </p>
+                    <div class="bg-gm-card-active rounded-lg px-4 py-3 text-sm font-semibold text-gm-dark">
+                        Smoother, more stable. Best for long-term pattern work.
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border border-t-4 border-t-gm-orange p-6">
+                    <div class="text-lg font-bold text-gray-800 mb-1">Draconic Tropical (True)</div>
+                    <p class="text-xs text-gray-500 mb-4">Based on the True North Node</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                        Uses the actual, instantaneous position of the North Node at the moment of birth, including its natural oscillation. This is more astronomically precise but will vary slightly from the Mean Node at any given moment - sometimes ahead, sometimes behind.
+                    </p>
+                    <div class="bg-gm-card-active rounded-lg px-4 py-3 text-sm font-semibold text-gm-dark">
+                        More precise. Shows the node's actual position moment-to-moment.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm border-collapse bg-white rounded-xl overflow-hidden border border-gm-border">
+                    <thead>
+                        <tr class="bg-gm-purple text-white">
+                            <th class="text-left px-5 py-3 font-semibold">Feature</th>
+                            <th class="text-left px-5 py-3 font-semibold">Mean Node</th>
+                            <th class="text-left px-5 py-3 font-semibold">True Node</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-600">
+                        <tr class="border-b border-gm-border">
+                            <td class="px-5 py-3 font-semibold text-gray-800">Motion</td>
+                            <td class="px-5 py-3">Smooth retrograde average</td>
+                            <td class="px-5 py-3">Oscillating retrograde with wobble</td>
+                        </tr>
+                        <tr class="border-b border-gm-border bg-gm-card">
+                            <td class="px-5 py-3 font-semibold text-gray-800">Stability</td>
+                            <td class="px-5 py-3">More stable day-to-day</td>
+                            <td class="px-5 py-3">Varies more day-to-day</td>
+                        </tr>
+                        <tr class="border-b border-gm-border">
+                            <td class="px-5 py-3 font-semibold text-gray-800">Astronomical precision</td>
+                            <td class="px-5 py-3">Mathematical model</td>
+                            <td class="px-5 py-3">Actual instantaneous position</td>
+                        </tr>
+                        <tr class="border-b border-gm-border bg-gm-card">
+                            <td class="px-5 py-3 font-semibold text-gray-800">Max difference from Mean</td>
+                            <td class="px-5 py-3">-</td>
+                            <td class="px-5 py-3">Up to ~1.7 degrees</td>
+                        </tr>
+                        <tr class="border-b border-gm-border">
+                            <td class="px-5 py-3 font-semibold text-gray-800">Common usage</td>
+                            <td class="px-5 py-3">Traditional Western astrology default</td>
+                            <td class="px-5 py-3">Modern computational astrology</td>
+                        </tr>
+                        <tr>
+                            <td class="px-5 py-3 font-semibold text-gray-800">HD impact</td>
+                            <td class="px-5 py-3">Base/Tone/Color level differences</td>
+                            <td class="px-5 py-3">Occasionally Line level differences</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT CHANGES IN YOUR HD CHART ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> What Changes in Your Human Design Chart?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Because the Draconic zodiac rotates the entire reference frame by the North Node longitude - which varies from person to person and changes over approximately 18.6 years - the shift is completely individual. Unlike Sidereal (which shifts everyone by a fixed ~24 degrees), the Draconic shift is unique to your birth chart.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                Someone born when the North Node was near 0 degrees Aries will have a Draconic chart almost identical to their Tropical chart. Someone born when the North Node was near 15 degrees Scorpio will have a Draconic chart shifted by about 195 degrees - a very different chart indeed.
+            </p>
+
+            <!-- Key Insight Box -->
+            <div class="bg-gm-warning border-l-4 border-gm-orange rounded-r-xl p-5">
+                <p class="text-gm-text text-sm leading-relaxed">
+                    <strong>Key insight:</strong> The Draconic shift is personal, not universal. It depends entirely on where your natal North Node falls. This makes Draconic unique among all the calculation methods - two people born on the same day but with different North Node positions will have different Draconic charts even if their Tropical charts are nearly identical.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHO IS THIS FOR ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Who Is the Draconic Option For?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                <strong>Astrologers working with nodal themes</strong> - soul purpose, karmic patterns, past life influences - who want to see how a node-anchored zodiac interacts with Human Design's gate and channel system.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                <strong>Practitioners exploring depth layers</strong> in a chart - comparing the Tropical "personality layer" with the Draconic "soul layer" to understand the relationship between surface expression and deeper orientation.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                <strong>Curious researchers</strong> who want to see how personal reference frames (anchored to your own chart) differ from universal reference frames (anchored to seasonal or stellar cycles).
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                As with all alternative methods in Genetic Matrix, Draconic is provided as a tool for exploration. It is not part of Ra's original Human Design system and is not taught in mainstream Human Design schools.
+            </p>
+
+            <!-- Everyday Example -->
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-xs font-bold tracking-widest text-gm-purple uppercase mb-2">Everyday Example</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Imagine two maps of the same city. One is oriented with north at the top - the universal convention. The other is oriented so that your front door faces straight ahead, regardless of compass direction. The city is the same; the buildings are in the same places. But the second map shows the city from your personal perspective, relative to where you stand. The Draconic chart is the second map - the zodiac rotated so that your own nodal axis is the "north."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ACCORDION ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Common Questions
+            </h2>
+            <div class="space-y-3">
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        What does the Draconic chart represent?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        In Western astrological tradition, the Draconic chart is often interpreted as showing the soul's inherent orientation or deeper purpose - the motivational layer beneath the personality shown in the Tropical chart. Some astrologers describe it as a karmic or past-life chart; others see it as the chart of one's highest aspirations. We make no claims about what it represents in Human Design terms - that is an open question for practitioners and researchers to explore.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Should I use Mean or True Node?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        For most purposes, the Mean Node is the more traditional choice and produces more stable results. If you prefer astronomical precision and want to capture the node's actual instantaneous position at your birth, use the True Node. The difference between the two is small - typically under 2 degrees - but can affect fine-grained Human Design decoding. We recommend trying both and comparing your results.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Why is my Draconic chart so different from my Tropical chart?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        The size of the difference between your Tropical and Draconic charts depends on where your natal North Node falls. If it is far from 0 degrees Aries (e.g. near 15 degrees Libra, which would create a ~195 degree shift), your Draconic chart will look very different. If it falls near 0 degrees Aries (a ~0 degree shift), the charts will be similar. There is no single "typical" difference - it is unique to your nodal position.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Can I use Draconic for transit calculations?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Yes, but with care. A Draconic transit chart would use the current North Node position as 0 degrees Aries, creating a shifted zodiac that moves through the nodal cycle. This is a specialist technique. If you are working with Draconic transits, ensure you are using the same node variant (Mean or True) for both natal and transit calculations for consistency.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Does the 18.6-year node cycle affect my Draconic chart over time?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Your natal Draconic chart is fixed - it is calculated from the North Node position at your birth, which does not change. What changes over time is the current transiting node position. The Draconic natal chart remains a snapshot of the nodal axis at birth, just like the rest of your natal chart remains fixed even as the planets continue moving.
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTINUE LEARNING ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Continue Learning
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="../calculations/tropical.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Tropical &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Ra's original seasonal method - the default calculation in Human Design.</p>
+                </a>
+                <a href="../calculations/sidereal.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Sidereal &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Star-anchored zodiac - the fixed-star alternative to the seasonal Tropical system.</p>
+                </a>
+                <a href="../calculations/true-sidereal.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">True Sidereal &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Kanatas, Chimenti, and Midpoint - constellation-boundary approaches.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Explore Your Draconic Chart</h2>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+                Generate your Human Design chart using the Draconic zodiac and see how lunar-node-anchored calculations change your activations.
+            </p>
+            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+                Get Your Free Chart &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+
+                <!-- Left: Logo & Copyright -->
+                <div class="text-center md:text-left">
+                    <img src="../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">All right reserved.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Privacy, Terms and Conditions</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+
+                <!-- Center: Newsletter (Shafik to wire up form backend) -->
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Subscribe to Our Newsletter</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Sign up to our newsletter to receive updates, offers,
+                        new releases, and everything related to Genetic Matrix.
+                    </p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input
+                            type="email"
+                            placeholder="Your Email Address"
+                            class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400"
+                        >
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Social & Contact -->
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connect With Us</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener">
+                            <img src="../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
+                        </a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener">
+                            <img src="../assets/icon-x.svg" alt="X" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener">
+                            <img src="../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener">
+                            <img src="../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
+                        </a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Get in Touch</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
