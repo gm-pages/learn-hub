@@ -112,7 +112,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- Type Card -->
-                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition flex flex-col">
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-type.svg" alt="Type" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -122,11 +122,11 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="types/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
                 </div>
 
                 <!-- Profile Card -->
-                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition flex flex-col">
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-profile.svg" alt="Profile" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -140,7 +140,7 @@
                 </div>
 
                 <!-- Centers Card -->
-                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition flex flex-col">
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-centres.svg" alt="Centers" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -154,7 +154,7 @@
                 </div>
 
                 <!-- Variables & Arrows Card -->
-                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition flex flex-col">
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-arrows.svg" alt="Variables & Arrows" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -168,7 +168,7 @@
                 </div>
 
                 <!-- Sleep Design Card -->
-                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition flex flex-col">
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-moon.svg" alt="Sleep Design" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -182,7 +182,7 @@
                 </div>
 
                 <!-- Animal Human Design Card -->
-                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition flex flex-col">
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-paw.svg" alt="Animal Human Design" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -217,7 +217,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- J2000 Card -->
-                <div class="bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md transition border-t-4 border-t-gm-pink flex flex-col">
+                <div class="bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-gm-pink flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-rhombus.svg" alt="J2000" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -232,7 +232,7 @@
                 </div>
 
                 <!-- Sidereal Calculation Card -->
-                <div class="bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md transition border-t-4 border-t-[#2ea89e] flex flex-col">
+                <div class="bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#2ea89e] flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-windrose.svg" alt="Sidereal" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -247,7 +247,7 @@
                 </div>
 
                 <!-- Draconic Zodiac Card -->
-                <div class="bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md transition border-t-4 border-t-[#c94040] flex flex-col">
+                <div class="bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#c94040] flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-dragon.svg" alt="Draconic" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -262,7 +262,7 @@
                 </div>
 
                 <!-- True Sidereal Variants Card -->
-                <div class="bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md transition border-t-4 border-t-[#d46ba3] flex flex-col">
+                <div class="bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#d46ba3] flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-star.svg" alt="True Sidereal" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -277,7 +277,7 @@
                 </div>
 
                 <!-- 13-Sign Sidereal Card -->
-                <div class="bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md transition border-t-4 border-t-[#3d5a96] flex flex-col">
+                <div class="bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#3d5a96] flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-ophiuchus.svg" alt="13-Sign Sidereal" class="w-16 h-16 flex-shrink-0">
                         <div>
@@ -298,31 +298,187 @@
     <!-- ==================== ASTROLOGY SECTION ==================== -->
     <section class="bg-gm-light py-12 md:py-16">
         <div class="max-w-6xl mx-auto px-6">
-            <!-- Section Header -->
-            <div class="mb-2">
-                <span class="text-xs font-semibold tracking-widest text-gray-400 uppercase">Astrology</span>
+            <!-- Section Header with Planet Transit Animation -->
+            <div class="relative mb-10">
+                <!-- Planet Transit Orbit (md+ screens) -->
+                <svg class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[45%] w-[105%] max-w-[750px] pointer-events-none hidden md:block" viewBox="0 0 800 130" fill="none" aria-hidden="true">
+                    <!-- Orbit ring (subtle dashed ellipse) -->
+                    <ellipse cx="400" cy="65" rx="390" ry="58" stroke="#6E5898" stroke-width="0.8" opacity="0.1" stroke-dasharray="4 8"/>
+                    <!-- Planet with glow + Saturn-style ring -->
+                    <g>
+                        <animateMotion dur="20s" repeatCount="indefinite">
+                            <mpath href="#transit-path"/>
+                        </animateMotion>
+                        <circle r="12" fill="#6E5898" opacity="0.06"/>
+                        <circle r="4.5" fill="#6E5898" opacity="0.55"/>
+                        <ellipse rx="8" ry="2" fill="none" stroke="#6E5898" stroke-width="0.8" opacity="0.3" transform="rotate(-25)"/>
+                    </g>
+                    <!-- Small moon (faster orbit, offset start) -->
+                    <circle r="2" fill="#9080B1" opacity="0.35">
+                        <animateMotion dur="13s" begin="-4s" repeatCount="indefinite">
+                            <mpath href="#transit-path"/>
+                        </animateMotion>
+                    </circle>
+                    <!-- Orbit path definition -->
+                    <path id="transit-path" d="M 10,65 A 390,58 0 1,1 790,65 A 390,58 0 1,1 10,65"/>
+                </svg>
+                <!-- Section text (above orbit layer) -->
+                <div class="relative z-10">
+                    <div class="mb-2">
+                        <span class="text-xs font-semibold tracking-widest text-gray-400 uppercase">Astrology</span>
+                    </div>
+                    <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-3">
+                        <span class="text-gm-purple">|</span> Astrology Tools & Resources
+                    </h2>
+                    <p class="text-gray-500 text-sm md:text-base max-w-3xl">
+                        Genetic Matrix bridges Human Design and astrology. Explore tools that bring additional depth to your chart readings.
+                    </p>
+                </div>
             </div>
-            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-3">
-                <span class="text-gm-purple">|</span> Astrology Tools & Resources
-            </h2>
-            <p class="text-gray-500 text-sm md:text-base max-w-3xl mb-10">
-                Genetic Matrix bridges Human Design and astrology. Explore tools that bring additional depth to your chart readings.
-            </p>
 
-            <!-- Single Card -->
+            <!-- Cards Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition flex flex-col">
+
+                <!-- Zodiac Signs Card -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-zodiac.svg" alt="Zodiac Signs" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Zodiac Signs</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                The 12 zodiac signs — plus the controversial 13th sign Ophiuchus. Explore each sign's element, modality, ruling planet, and core characteristics.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/zodiac-signs.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                </div>
+
+                <!-- Planets Card -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-planets.svg" alt="Planets" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Planets</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                From personal planets like the Sun and Moon to outer planets like Pluto — understand what each planetary body represents in your birth chart.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/planets.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                </div>
+
+                <!-- Houses Card -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-houses.svg" alt="Houses" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Houses & House Systems</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                The 12 houses represent areas of life. Explore 10 house systems supported by Genetic Matrix — from Placidus and Koch to Whole Sign and Equal.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/houses.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                </div>
+
+                <!-- Aspects Card -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-aspects.svg" alt="Aspects" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Aspects & Orbs</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Angular relationships between planets — conjunctions, trines, squares, and more. Includes Genetic Matrix's exclusive True Astrology aspect analysis.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/aspects.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                </div>
+
+                <!-- Asteroids Card -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-asteroids.svg" alt="Asteroids" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Asteroids & Planetoids</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Ceres, Pallas, Juno, Vesta, and beyond — asteroids add nuance and specificity to chart readings, tracked in both tropical and sidereal coordinates.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/asteroids.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                </div>
+
+                <!-- Fixed Stars Card -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-fixed-stars.svg" alt="Fixed Stars" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Fixed Stars</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                When planets conjunct fixed stars they add intensity and specificity. Explore the Royal Stars, Sirius, Spica, Algol, and hundreds more.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/fixed-stars.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                </div>
+
+                <!-- Sabian Symbols Card -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
                         <img src="assets/icon-sabian.svg" alt="Sabian Symbols" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Sabian Symbols</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Genetic Matrix integrates Sabian Symbols into your chart. Each of the 360 degrees of the zodiac carries a unique symbolic image that adds poetic depth to your reading.
+                                Each of the 360 degrees of the zodiac carries a unique symbolic image. Genetic Matrix integrates Sabian Symbols directly into your chart reading.
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a><!-- Sabian page TBD -->
                 </div>
+
+                <!-- Astro Tarot Card -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-tarot.svg" alt="Astro Tarot" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Astro Tarot</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Discover the deep connection between astrology and tarot. Genetic Matrix maps your natal chart placements to Major and Minor Arcana cards.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/astro-tarot.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                </div>
+
+                <!-- Ayanamsha Card -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-ayanamsha.svg" alt="Ayanamsha" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Ayanamsha Systems</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                The angular difference between tropical and sidereal zodiacs. Explore 50+ ayanamsha systems supported by Genetic Matrix, from Lahiri to custom.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/ayanamsha.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                </div>
+
+                <!-- Chinese Astrology Card -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-1.5 hover:border-gm-purple-light transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-chinese.svg" alt="Chinese Astrology" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Chinese Astrology</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                The 12 animal signs, five elements, and yin-yang polarity. Genetic Matrix integrates Chinese astrology with Western systems for a multi-system view.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/chinese-astrology.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto">Resources &gt;</a>
+                </div>
+
             </div>
         </div>
     </section>
@@ -330,51 +486,43 @@
     <!-- ==================== CELEBRITY CHARTS SECTION ==================== -->
     <section class="py-10 md:py-14 bg-white">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="bg-gm-dark rounded-2xl p-10 md:p-14">
-                <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
-                    <!-- Left Content -->
-                    <div class="flex-1 text-white">
-                        <!-- Star Icon -->
-                        <img src="assets/icon-celebrity.svg" alt="" class="w-14 h-14 mb-4 brightness-0 invert">
-                        <span class="text-xs font-semibold tracking-widest text-gm-pink uppercase mb-3 block">Celebrity Charts</span>
-                        <h2 class="text-2xl md:text-3xl font-bold mb-4 leading-tight">
-                            Explore 87,000+ Celebrity<br>Human Design Charts
-                        </h2>
-                        <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg">
-                            Browse the largest celebrity Human Design database. Filter by
-                            Type, Profile, Authority, Definition, Sun Sign, Moon Sign, and
-                            more. Every celebrity chart calculated across multiple systems.
-                        </p>
+            <div class="bg-gm-dark rounded-2xl p-10 md:p-14 text-center">
+                <!-- Star Icon -->
+                <img src="assets/icon-celebrity.svg" alt="" class="w-14 h-14 mb-4 brightness-0 invert mx-auto">
+                <span class="text-xs font-semibold tracking-widest text-gm-pink uppercase mb-3 block">Celebrity Charts</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
+                    Explore 87,000+ Celebrity Human Design Charts
+                </h2>
+                <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-2xl mx-auto">
+                    The largest celebrity Human Design database. Every chart calculated
+                    across multiple systems — filter by Type, Profile, Authority,
+                    Definition, Sun Sign, Moon Sign, and more.
+                </p>
 
-                        <!-- Stats -->
-                        <div class="flex items-start gap-8 md:gap-12">
-                            <div>
-                                <div class="text-2xl md:text-3xl font-bold text-gm-pink">87,000+</div>
-                                <div class="text-xs text-white uppercase tracking-wider mt-1">Celebrities</div>
-                            </div>
-                            <div>
-                                <div class="text-2xl md:text-3xl font-bold text-gm-pink">7</div>
-                                <div class="text-xs text-white uppercase tracking-wider mt-1">Calculation<br>Systems</div>
-                            </div>
-                            <div>
-                                <div class="text-2xl md:text-3xl font-bold text-gm-pink">500K+</div>
-                                <div class="text-xs text-white uppercase tracking-wider mt-1">Chart Pages</div>
-                            </div>
-                        </div>
+                <!-- Stats -->
+                <div class="flex justify-center gap-8 md:gap-16 mb-10">
+                    <div>
+                        <div class="text-2xl md:text-3xl font-bold text-gm-pink">87,000+</div>
+                        <div class="text-xs text-white uppercase tracking-wider mt-1">Celebrities</div>
                     </div>
+                    <div>
+                        <div class="text-2xl md:text-3xl font-bold text-gm-pink">7</div>
+                        <div class="text-xs text-white uppercase tracking-wider mt-1">Calculation<br>Systems</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl md:text-3xl font-bold text-gm-pink">500K+</div>
+                        <div class="text-xs text-white uppercase tracking-wider mt-1">Chart Pages</div>
+                    </div>
+                </div>
 
-                    <!-- Right Buttons -->
-                    <div class="flex flex-col gap-4 w-full lg:w-auto justify-center">
-                        <a href="#" class="bg-[#b8a9d4] border-2 border-[#b8a9d4] text-white text-center font-semibold py-3.5 px-8 rounded-xl hover:bg-[#a090c0] transition text-sm md:text-base min-w-[240px]">
-                            Browse Celebrities
-                        </a>
-                        <a href="#" class="border-2 border-white text-white text-center font-semibold py-3.5 px-8 rounded-xl hover:bg-white hover:text-gm-dark transition text-sm md:text-base min-w-[240px]">
-                            Browse by Type
-                        </a>
-                        <a href="#" class="border-2 border-white text-white text-center font-semibold py-3.5 px-8 rounded-xl hover:bg-white hover:text-gm-dark transition text-sm md:text-base min-w-[240px]">
-                            Browse by Profile
-                        </a>
-                    </div>
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-center font-semibold py-3.5 px-10 rounded-xl transition text-sm md:text-base min-w-[240px]">
+                        Create Free Account
+                    </a>
+                    <a href="https://www.geneticmatrix.com/plans-features/" class="border-2 border-white text-white text-center font-semibold py-3.5 px-10 rounded-xl hover:bg-white hover:text-gm-dark transition text-sm md:text-base min-w-[240px]">
+                        See Our Plans
+                    </a>
                 </div>
             </div>
         </div>
@@ -444,16 +592,16 @@
                 <div class="text-center md:text-right">
                     <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connect With Us</h3>
                     <div class="flex justify-center md:justify-end gap-3 mb-4">
-                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener" class="hover:-translate-y-1 hover:opacity-70 transition-all duration-300">
                             <img src="assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
                         </a>
-                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener">
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener" class="hover:-translate-y-1 hover:opacity-70 transition-all duration-300">
                             <img src="assets/icon-x.svg" alt="X" class="w-10 h-10">
                         </a>
-                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener">
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener" class="hover:-translate-y-1 hover:opacity-70 transition-all duration-300">
                             <img src="assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
                         </a>
-                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener">
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener" class="hover:-translate-y-1 hover:opacity-70 transition-all duration-300">
                             <img src="assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
                         </a>
                     </div>
