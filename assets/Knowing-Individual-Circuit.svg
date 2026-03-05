@@ -1,0 +1,1442 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="830" height="970" viewBox="0 0 830 970" id="chBuilder">
+	 <rect width="830" height="970" fill="white"/><style>
+	 	#tooltip {
+
+        transition: visibility 0.1s, opacity 0.1s ease-in-out;
+        opacity: 0;
+    }
+    #tooltipText {
+	    padding: 1px 10px 10px 10px;
+	    box-sizing: border-box;
+	}
+	<!-- #tooltipText h1, #tooltipText p{
+	    margin: 0 !important;
+	} -->
+    #tooltip.visible {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #tooltip rect {
+        fill: #fff;
+        stroke-width: 0;
+        filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.3));
+        rx: 5;
+        ry: 5;
+    }
+
+    #tooltip text {
+        font-family: 'Arial', sans-serif;
+        font-size: 14px;
+        fill: #333;
+        padding: 5px 10px;
+        dominant-baseline: middle;
+        text-anchor: middle;
+    }
+	 </style>
+	<rect id="_frame" fill="#FFFFFF" stroke="#54931E" width="830" height="970" rx="10"/>
+	<g id="chart" transform="matrix(0.8 0 0 0.8 100 -95)">		
+		<g id="ChartBackground">
+		<g xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body_shade_0" class="shade">
+	<g id="aura" visibility="hidden">
+		<path class="light" fill="#F7C1AA" d="M412.735,868.577c80.895,0,128.514-24.07,137.841-29.266c72.34-35.865,132.083-109.836,134.593-112.971    l0.497-0.638c13.33-17.596,10.348-40.383,3.076-55.945L573.867,388.809l-0.362-0.761c-11.223-23.594-31.555-27.693-37.755-28.392    l-23.746-3.184c-13.916-1.731-24.3-11.766-25.106-12.565l-0.363-0.393l-0.601-0.586c-4.304-4.15-3.065-13.474-2.268-16.559    l0.788-2.616l0.095-0.979c1.457-3.728,7.164-15.707,14.756-29.258l0.505-0.9l0.451-0.955    c12.669-26.79,14.661-45.392,14.667-54.388c2.331-25.473-9.271-46.912-13.09-53.179c-15.564-27.625-43.198-40.118-48.758-42.408    c-14.042-5.97-29.132-8.997-44.853-8.997c-30.204,0-52.888,11.28-55.375,12.566c-23.232,12.137-35.208,33.998-37.373,38.257    c-13.52,26.028-13.337,50.264-13.271,52.941l0.262,10.762l2.234,2.581l-5.636,13.183c-5.873,12.855-2.741,27.897,7.567,37.465    c-0.04,4.098-0.202,9.602-0.536,15.352l-0.276,4.771l1.218,4.621c2.714,10.285,9.107,18.755,17.841,24.241    c-9.59,4.723-24.101,8.315-33.292,9.345l-1.112,0.125l-1.106,0.208c-29.098,5.507-40.632,26.457-42.649,30.6l-0.393,0.808    L130.744,669.199c-14.399,34.445,4.452,58.899,8.536,63.614c28.979,34.268,77.392,73.786,79.439,75.453l0.702,0.555    c57.061,43.672,116.038,52.979,123.214,53.974C366.431,866.632,390.014,868.577,412.735,868.577z"/>
+		<path class="medium" fill="#F09369" d="M412.735,858.577c80.199,0,126.877-24.577,133.178-28.115c70.484-34.855,128.992-107.302,131.451-110.372    l0.331-0.425c10.711-14.139,8.019-32.914,1.887-45.888L564.718,392.854l-0.241-0.507c-9.041-19.005-24.97-22.227-29.943-22.766    l-23.858-3.199c-18.154-2.258-30.889-15.44-31.016-15.574l-0.298-0.323l-0.414-0.404c-9.629-9.286-4.952-26.272-4.903-26.443    l0.551-1.831l0.117-1.207c1.046-3.406,7.481-17.006,15.868-31.975l0.337-0.601l0.299-0.634    c12.386-26.189,13.766-43.673,13.709-50.576c2.297-23.244-9.044-43.31-11.716-47.663c-14.226-25.389-40.627-36.862-43.987-38.241    c-12.814-5.457-26.607-8.224-40.997-8.224c-27.837,0-48.515,10.277-50.781,11.449c-20.931,10.935-31.873,31.587-33.052,33.906    c-12.406,23.884-12.248,45.751-12.189,48.166l0.175,7.175l3.978,4.595l-8.147,19.055c-4.374,9.453-1.706,20.611,6.531,27.205    l0.578,0.462l1.295,0.889c0.098,4.01-0.024,12.042-0.532,20.787l-0.185,3.18l0.813,3.081    c3.302,12.515,13.527,21.17,26.809,23.188c-1.518,2.813-2.881,4.438-3.315,4.924l-0.581,0.532l-0.237,0.312    c-10.122,10.109-35.728,15.893-46.684,17.12l-0.744,0.083l-0.745,0.14c-24.385,4.615-33.85,21.759-35.5,25.148l-0.263,0.539    L139.98,673.03c-12.157,29.083,3.451,49.322,6.895,53.278c28.369,33.563,76.135,72.557,78.156,74.201l0.468,0.37    c55.204,42.251,111.663,51.074,118.617,52.024C367.42,856.668,390.507,858.577,412.735,858.577z"/>
+		<path class="dark" fill="#EA6428" d="M412.735,848.577c78.939,0,123.696-24.22,128.501-26.958c68.625-33.833,125.914-104.772,128.322-107.78    l0.166-0.213c10.429-13.767,2.397-32.28,0.707-35.805L555.568,396.899l-0.12-0.252c-6.96-14.632-18.897-16.812-22.101-17.135    l-24-3.218c-22.004-2.736-36.819-18.469-36.966-18.627l-0.189-0.205l-0.229-0.224c-14.145-13.64-7.587-36.162-7.52-36.388    l0.295-0.982l0.091-0.938c0.753-4.214,9.393-21.562,17.028-35.189l0.169-0.301l0.147-0.313    c12.202-25.801,12.854-42.145,12.746-46.751c2.283-20.844-8.546-39.279-10.333-42.155c-12.694-22.83-36.836-33.11-39.211-34.077    c-11.588-4.946-24.086-7.454-37.147-7.454c-25.913,0-45.372,9.91-46.188,10.332c-18.206,9.511-27.825,27.773-28.731,29.555    c-11.486,22.113-11.127,42.53-11.106,43.39l0.087,3.588l2.349,2.713c1.967,2.272,2.758,3.813,3.069,4.604l-10.369,24.251    c-2.798,5.897-0.334,12.121,3.652,15.312l0.288,0.23l4.686,3.216l0.042,0.695l0.333,0.97c0.539,3.129,0.299,15.533-0.274,25.413    l-0.092,1.59l0.406,1.541c2.634,9.984,11.525,16.188,23.2,16.188c0,0,0,0,0,0c1.585,0,2.705-0.123,3.01-0.161l0.524-0.064    l0.514-0.12c1.654-0.384,3.006-0.624,4.052-0.774c-2.765,14.524-9.744,21.994-10.433,22.703l-0.21,0.192l-0.067,0.088    c-12.771,13.371-42.7,19.34-53.154,20.511l-0.375,0.042l-0.379,0.071c-20.098,3.804-27.57,18.081-28.356,19.696l-0.13,0.269    L149.217,676.861c-10.012,23.952,2.875,40.229,5.241,42.929c27.79,32.9,74.892,71.342,76.885,72.964l0.233,0.185    c54.012,41.339,109.755,49.502,114.009,50.073C368.411,846.705,391.002,848.577,412.735,848.577z"/>
+	</g>
+	<g id="bodygraph">
+		<path fill="#CCD2EE" stroke="#FFFFFF" stroke-width="0.5" d="M331.839,281.781l-4.598-3.155c0,0-1.802-1.442-0.81-3.334l11.176-26.14c0,0,2.163-4.685-5.408-13.431    c0,0-0.451-18.477,10.005-38.579c0,0,8.383-16.856,24.428-25.239c0,0,36.597-18.929,74.905-2.524c0,0,22.986,9.105,34.433,29.928    c0,0,11.36,17.487,8.924,36.686c0,0,1.218,15.413-11.762,42.86c0,0-17.578,31.367-18.253,39.073c0,0-8.788,28.258,10.141,46.511    c0,0,16.9,18.526,42.997,21.77l24.203,3.245c0,0,8.924,0.407,14.197,11.492L661.299,681.91c0,0,7.926,15.814,0.454,25.678    c0,0-57.681,72.027-125.228,105.204c0,0-67.843,40.049-189.484,20.325c0,0-55.888-7.173-109.387-48.119    c0,0-48.118-39.15-75.615-71.73c0,0-11.954-12.552-3.585-32.575l115.245-277.857c0,0,5.48-11.266,21.223-14.245    c0,0,41.128-4.538,59.28-23.544c0,0,10.352-9.924,13.614-29.781c0,0,1.275-10.636-7.234-10.352c0,0-3.119-0.14-9.218,1.277    c0,0-12.62,1.56-15.314-8.653c0,0,1.418-24.389-0.143-28.927c0,0-0.256-4.231-3.403-6.379L331.839,281.781z"/>
+	</g>
+</g></g>
+		<g id="www.geneticmatrix.com">
+			<text transform="matrix(1 0 0 1 343.4946 827.0791)" fill="#545252" font-family="Arial" font-size="12">www.geneticmatrix.com</text>
+		</g>
+
+		<g id="Channels">
+		<g xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="channels0" class="channels">
+	<g id="white_channels">
+		<g id="shadow">
+			<line class="noAngelic noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="408.25" y1="444.411" x2="408.25" y2="505.411"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="408.25" y1="510.411" x2="408.25" y2="582.411"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="408.25" y1="659.411" x2="408.25" y2="713.411"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="426.75" y1="220.411" x2="426.75" y2="260.411"/>
+			<line fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="389.75" y1="576.411" x2="389.75" y2="659.411"/>
+			<path class="noSleep noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M542.623,652.195c0,0-18.449,9.286-47.067,16.566"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="389.75" y1="443.411" x2="389.75" y2="504.411"/>
+			<line class="noAngelic noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="408.25" y1="385.411" x2="408.25" y2="444.411"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="426.75" y1="659.411" x2="426.75" y2="713.411"/>
+			<path class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M250.619,559.401c12.466-49.097,120.678-52.813,120.678-52.813"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="426.75" y1="260.411" x2="426.75" y2="321.411"/>
+			<path class="noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M439.005,390.403c0,0,49.622,6.822,92.121,80.681"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="426.75" y1="443.411" x2="426.75" y2="504.411"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="408.25" y1="582.411" x2="408.25" y2="665.411"/>
+			<line fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="389.75" y1="504.411" x2="389.75" y2="576.411"/>
+			<path class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M377.184,370.403c0,0-58.15,6.86-106.073,86.742"/>
+			<line class="noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="389.75" y1="270.411" x2="389.75" y2="321.411"/>
+			<path class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M220.546,689.602c0,0,12.378,45.693,63.951,76.885"/>
+			<path class="noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M513.78,734.755c-17.729,10.867-41.796,19.253-74.39,21.083"/>
+			<path class="noAngelic noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M378.116,390.403c0,0-84.531,11.621-127.428,168.746"/>
+	
+			<path class="noSleep noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M490.188,464.876c9.367,18.262,17.313,42.003,20.91,72.57"/>
+			<path class="noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M531.126,471.084c19.78,34.375,38.017,83.271,48.99,152.759"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="408.25" y1="321.411" x2="408.25" y2="384.411"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="408.25" y1="220.411" x2="408.25" y2="260.411"/>
+			<path class="noSleep noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M449.027,505.146c0,0,13.747,4.394,28.278,16.503"/>
+			<path class="noSleep noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M482.306,571.194c0,0-62.544-10.064-128.903,8.585"/>
+			<path class="noAngelic noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M320.935,668.76c15.385,3.914,33.709,7.249,53.688,8.249"/>
+			<path class="noAngelic noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M238.678,679.98c0,0,9.657,41.638,55.332,69.942"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="426.75" y1="576.411" x2="426.75" y2="659.411"/>
+			<path class="noSleep noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M595.954,689.603c0,0-12.378,45.692-63.95,76.884"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="389.75" y1="384.411" x2="389.75" y2="443.411"/>
+			<path class="noSleep noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M254.39,669.885c0,0,6.623,39.304,48.331,64.87"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="426.75" y1="384.411" x2="426.75" y2="443.411"/>
+			<path class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M377.005,640.216c0,0-145.408-4.322-126.386-80.814"/>
+			<path class="noSleep noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M439.779,370.403c0,0,58.15,6.86,106.073,86.742"/>
+			<path class="noSleep noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M545.853,457.146c21.783,36.311,41.453,87.709,52.588,160.407"/>
+			<path class="noSleep noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M551.644,602.702c5.299,9.049,9.898,20.347,10.921,33.231"/>
+			<path class="noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M294.01,749.923c19.978,12.38,46.847,22.209,82.813,24.887"/>
+			<path class="noSleep noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M522.491,749.923c-19.978,12.38-46.847,22.209-82.813,24.887"/>
+			<path class="noSleep noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M532.618,579.273c0,0,10.433,8.755,19.025,23.429"/>
+
+			<path class="noSleep noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M532.004,766.486c-22.377,13.534-52.133,24.338-91.458,27.494"/>
+			<line class="noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="389.75" y1="659.411" x2="389.75" y2="713.411"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="408.25" y1="260.411" x2="408.25" y2="321.411"/>
+			<path class="noSleep noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M353.403,579.779c-34.246,9.624-69.507,26.896-97.713,57.144"/>
+			<path class="noSleep noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M438.583,409.417c0,0,29.692,12.737,51.606,55.459"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="426.75" y1="504.411" x2="426.75" y2="576.411"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="389.75" y1="220.411" x2="389.75" y2="260.411"/>
+			<path class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M271.11,457.146c-21.783,36.311-41.453,87.709-52.588,160.407"/>
+			<path class="noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M562.11,669.885c0,0-6.623,39.304-48.331,64.87"/>
+			<path class="noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M273.878,652.195c0,0,18.445,9.284,47.057,16.564"/>
+			<path class="noSleep noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M477.306,521.648c8.337,6.946,16.932,16.433,23.337,29.085"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="426.75" y1="713.411" x2="426.75" y2="769.688"/>
+			<line class="noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="389.75" y1="713.411" x2="389.75" y2="769.688"/>
+			<path class="noSleep" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M302.721,734.755c17.729,10.867,41.797,19.253,74.39,21.083"/>
+			<path class="noSleep noAngelic" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M577.823,679.98c0,0-9.657,41.639-55.332,69.942"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="426.75" y1="321.411" x2="426.75" y2="384.411"/>
+			<path class="noAngelic noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M250.688,559.149c-5.266,19.289-9.904,40.771-13.683,64.693"/>
+			<path class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M284.497,766.486c22.376,13.534,52.132,24.338,91.457,27.494"/>
+			<path class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" d="M495.555,668.762c-15.383,3.914-33.704,7.247-53.677,8.247"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="408.25" y1="713.411" x2="408.25" y2="769.688"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="408.25" y1="180.524" x2="408.25" y2="220.411"/>
+			<line class="noAngelic noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="389.75" y1="321.411" x2="389.75" y2="384.411"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="426.75" y1="180.524" x2="426.75" y2="220.411"/>
+			<line class="noSleep noBiology" fill="none" stroke="#d6d4d4" stroke-width="16" stroke-miterlimit="12" x1="389.75" y1="180.524" x2="389.75" y2="220.411"/>
+		</g>
+		
+		<line class="noAngelic noBiology light" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="408.25" y1="444.411" x2="408.25" y2="505.411"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="408.25" y1="510.411" x2="408.25" y2="582.411"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="408.25" y1="659.411" x2="408.25" y2="713.411"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="426.75" y1="220.411" x2="426.75" y2="260.411"/>
+		<line class="earth" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="389.75" y1="576.411" x2="389.75" y2="659.411"/>
+		<path class="noSleep noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M542.623,652.195c0,0-18.449,9.286-47.067,16.566"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="389.75" y1="443.411" x2="389.75" y2="504.411"/>
+		<line class="noAngelic noBiology light" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="408.25" y1="385.411" x2="408.25" y2="444.411"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="426.75" y1="659.411" x2="426.75" y2="713.411"/>
+		<path class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M250.619,559.401c12.466-49.097,120.678-52.813,120.678-52.813"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="426.75" y1="260.411" x2="426.75" y2="321.411"/>
+		<path class="noAngelic earth" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M439.005,390.403c0,0,49.622,6.822,92.121,80.681"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="426.75" y1="443.411" x2="426.75" y2="504.411"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="408.25" y1="582.411" x2="408.25" y2="665.411"/>
+		<line class="earth" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="389.75" y1="504.411" x2="389.75" y2="576.411"/>
+		<path class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M377.184,370.403c0,0-58.15,6.86-106.073,86.742"/>
+		<line class="noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="389.75" y1="270.411" x2="389.75" y2="321.411"/>
+		<path class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M220.546,689.602c0,0,12.378,45.693,63.951,76.885"/>
+		<path class="noAngelic demon" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M513.78,734.755c-17.729,10.867-41.796,19.253-74.39,21.083"/>
+		<path class="noAngelic noBiology light" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M378.116,390.403c0,0-84.531,11.621-127.428,168.746"/>
+
+		<path class="noSleep noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M490.188,464.876c9.367,18.262,17.313,42.003,20.91,72.57"/>
+		<path class="noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M531.126,471.084c19.78,34.375,38.017,83.271,48.99,152.759"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="408.25" y1="321.411" x2="408.25" y2="384.411"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="408.25" y1="220.411" x2="408.25" y2="260.411"/>
+		<path class="noSleep noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M449.027,505.146c0,0,13.747,4.394,28.278,16.503"/>
+		<path class="noSleep noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M482.306,571.194c0,0-62.544-10.064-128.903,8.585"/>
+		<path class="noAngelic noBiology earth" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M320.935,668.76c15.385,3.914,33.709,7.249,53.688,8.249"/>
+		<path class="noAngelic noBiology demon" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M238.678,679.98c0,0,9.657,41.638,55.332,69.942"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="426.75" y1="576.411" x2="426.75" y2="659.411"/>
+		<path class="noSleep noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M595.954,689.603c0,0-12.378,45.692-63.95,76.884"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="389.75" y1="384.411" x2="389.75" y2="443.411"/>
+		<path class="noSleep noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M254.39,669.885c0,0,6.623,39.304,48.331,64.87"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="426.75" y1="384.411" x2="426.75" y2="443.411"/>
+		<path class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M377.005,640.216c0,0-145.408-4.322-126.386-80.814"/>
+		<path class="noSleep noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M439.779,370.403c0,0,58.15,6.86,106.073,86.742"/>
+		<path class="noSleep noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M545.853,457.146c21.783,36.311,41.453,87.709,52.588,160.407"/>
+		<path class="noSleep noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M551.644,602.702c5.299,9.049,9.898,20.347,10.921,33.231"/>
+		<path class="noAngelic demon" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M294.01,749.923c19.978,12.38,46.847,22.209,82.813,24.887"/>
+		<path class="noSleep noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M522.491,749.923c-19.978,12.38-46.847,22.209-82.813,24.887"/>
+		<path class="noSleep noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M532.618,579.273c0,0,10.433,8.755,19.025,23.429"/>
+
+		<path class="noSleep noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M532.004,766.486c-22.377,13.534-52.133,24.338-91.458,27.494"/>
+		<line class="noAngelic demon" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="389.75" y1="659.411" x2="389.75" y2="713.411"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="408.25" y1="260.411" x2="408.25" y2="321.411"/>
+		<path class="noSleep noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M353.403,579.779c-34.246,9.624-69.507,26.896-97.713,57.144"/>
+		<path class="noSleep noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M438.583,409.417c0,0,29.692,12.737,51.606,55.459"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="426.75" y1="504.411" x2="426.75" y2="576.411"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="389.75" y1="220.411" x2="389.75" y2="260.411"/>
+		<path class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M271.11,457.146c-21.783,36.311-41.453,87.709-52.588,160.407"/>
+		<path class="noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M562.11,669.885c0,0-6.623,39.304-48.331,64.87"/>
+		<path class="noAngelic earth" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M273.878,652.195c0,0,18.445,9.284,47.057,16.564"/>
+		<path class="noSleep noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M477.306,521.648c8.337,6.946,16.932,16.433,23.337,29.085"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="426.75" y1="713.411" x2="426.75" y2="769.688"/>
+		<line class="noAngelic demon" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="389.75" y1="713.411" x2="389.75" y2="769.688"/>
+		<path class="noSleep" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M302.721,734.755c17.729,10.867,41.797,19.253,74.39,21.083"/>
+		<path class="noSleep noAngelic" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M577.823,679.98c0,0-9.657,41.639-55.332,69.942"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="426.75" y1="321.411" x2="426.75" y2="384.411"/>
+		<path class="noAngelic noBiology light" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M250.688,559.149c-5.266,19.289-9.904,40.771-13.683,64.693"/>
+		<path class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M284.497,766.486c22.376,13.534,52.132,24.338,91.457,27.494"/>
+		<path class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" d="M495.555,668.762c-15.383,3.914-33.704,7.247-53.677,8.247"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="408.25" y1="713.411" x2="408.25" y2="769.688"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="408.25" y1="180.524" x2="408.25" y2="220.411"/>
+		<line class="noAngelic noBiology light" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="389.75" y1="321.411" x2="389.75" y2="384.411"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="426.75" y1="180.524" x2="426.75" y2="220.411"/>
+		<line class="noSleep noBiology" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="12" x1="389.75" y1="180.524" x2="389.75" y2="220.411"/>
+	</g>
+
+	<g id="gates">
+		<g id="gate_1" tooltipid="FO11-GA-1A" class="gate noAngelic noBiology" opacity="1" style="user-select: none;">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="444.411" x2="408.25" y2="505.411" opacity="0" style="user-select: none;"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="444.411" x2="408.25" y2="505.411" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="410.25" y1="444.411" x2="410.25" y2="505.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="406.25" y1="505.411" x2="406.25" y2="444.411"/>
+			</g>
+			<line class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="444.411" x2="408.25" y2="505.411" style="user-select: none;"/>
+		</g>
+		<g id="gate_2" tooltipid="FO11-GA-2A" class="gate noSleep noBiology" opacity="1" style="user-select: none;">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="510.411" x2="408.25" y2="582.411" opacity="0" style="user-select: none;"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="510.411" x2="408.25" y2="582.411" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="410.25" y1="510.411" x2="410.25" y2="582.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="406.25" y1="582.411" x2="406.25" y2="510.411"/>
+			</g>
+			<line class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="510.411" x2="408.25" y2="582.411" style="user-select: none;"/>
+		</g>
+		<g id="gate_3" tooltipid="FO11-GA-3A" class="gate noSleep noBiology" opacity="1" style="user-select: none;">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="659.411" x2="408.25" y2="713.411" opacity="0" style="user-select: none;"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="659.411" x2="408.25" y2="713.411" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="410.25" y1="659.411" x2="410.25" y2="713.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="406.25" y1="713.411" x2="406.25" y2="659.411"/>
+			</g>
+			<line class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="659.411" x2="408.25" y2="713.411" style="user-select: none;"/>
+		</g>
+		<g id="gate_4" tooltipid="FO11-GA-4A" class="gate noSleep noBiology" opacity="0" style="user-select: none;">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="220.411" x2="426.75" y2="260.411" opacity="0" style="user-select: none;"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="220.411" x2="426.75" y2="260.411" opacity="0" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="428.75" y1="220.411" x2="428.75" y2="260.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="424.75" y1="260.411" x2="424.75" y2="220.411"/>
+			</g>
+			<line class="Logical circuit" fill="none" stroke="#F940CE" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="220.411" x2="426.75" y2="260.411" style="user-select: none;"/>
+		</g>
+		<g id="gate_5" tooltipid="FO11-GA-5A" class="gate" opacity="0">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="576.411" x2="389.75" y2="659.411" opacity="0"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="576.411" x2="389.75" y2="659.411" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="391.75" y1="576.411" x2="391.75" y2="659.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="387.75" y1="659.411" x2="387.75" y2="576.411"/>
+			</g>
+			<line class="Logical circuit" fill="none" stroke="#F940CE" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="576.411" x2="389.75" y2="659.411"/>
+		</g>
+		<g id="gate_6" tooltipid="FO11-GA-6A" class="gate noSleep noAngelic" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M542.623,652.195c0,0-18.449,9.286-47.067,16.566" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M542.623,652.195c0,0-18.449,9.286-47.067,16.566" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M543.522,653.981c-0.187,0.094-18.974,9.469-47.474,16.719"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M495.062,666.823c28.082-7.144,46.479-16.322,46.661-16.414"/>
+			</g>
+			<path class="Defense circuit" fill="none" stroke="#70180A" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M542.623,652.195c0,0-18.449,9.286-47.067,16.566"/>
+		</g>
+		<g id="gate_7" tooltipid="FO11-GA-7A" class="gate noSleep noBiology" opacity="0">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="443.411" x2="389.75" y2="504.411" opacity="0"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="443.411" x2="389.75" y2="504.411" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="391.75" y1="443.411" x2="391.75" y2="504.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="387.75" y1="504.411" x2="387.75" y2="443.411"/>
+			</g>
+			<line class="Logical circuit" fill="none" stroke="#F940CE" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="443.411" x2="389.75" y2="504.411"/>
+		</g>
+		<g id="gate_8" tooltipid="FO11-GA-8A" class="gate noAngelic noBiology" opacity="1" style="user-select: none;">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="385.411" x2="408.25" y2="444.411" opacity="0" style="user-select: none;"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="385.411" x2="408.25" y2="444.411" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="410.25" y1="385.411" x2="410.25" y2="444.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="406.25" y1="444.411" x2="406.25" y2="385.411"/>
+			</g>
+			<line class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="385.411" x2="408.25" y2="444.411" style="user-select: none;"/>
+		</g>
+		<g id="gate_9" tooltipid="FO11-GA-9A" class="gate noSleep noBiology" opacity="0" style="user-select: none;">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="659.411" x2="426.75" y2="713.411" opacity="0" style="user-select: none;"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="659.411" x2="426.75" y2="713.411" opacity="0" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="428.75" y1="659.411" x2="428.75" y2="713.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="424.75" y1="713.411" x2="424.75" y2="659.411"/>
+			</g>
+			<line class="Logical circuit" fill="none" stroke="#F940CE" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="659.411" x2="426.75" y2="713.411" style="user-select: none;"/>
+		</g>
+		<g id="gate_10" tooltipid="FO11-GA-10A" class="gate noSleep noBiology" opacity="0" style="user-select: none;">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M250.619,559.401c12.466-49.097,120.678-52.813,120.678-52.813" opacity="0" style="user-select: none;"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M250.619,559.401c12.466-49.097,120.678-52.813,120.678-52.813" opacity="0" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M371.365,508.587c-1.067,0.036-106.854,4.227-118.808,51.307"/>
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M248.68,558.909c5.366-21.133,27.73-36.699,66.473-46.268c28.484-7.035,55.802-8.043,56.075-8.053"/>
+			</g>
+			<path class="Centering circuit" fill="none" stroke="#0808F7" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M250.619,559.401c12.466-49.097,120.678-52.813,120.678-52.813" style="user-select: none;"/>
+			<path class="Integration circuit" fill="none" stroke="#FF7B16" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M250.619,559.401c12.466-49.097,120.678-52.813,120.678-52.813" style="user-select: none;"/>
+		</g>
+		<g id="gate_11" tooltipid="FO11-GA-11A" class="gate noSleep noBiology" opacity="0">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="260.411" x2="426.75" y2="321.411" opacity="0"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="260.411" x2="426.75" y2="321.411" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="428.75" y1="260.411" x2="428.75" y2="321.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="424.75" y1="321.411" x2="424.75" y2="260.411"/>
+			</g>
+			<line class="Abstract circuit" fill="none" stroke="#882BC6" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="260.411" x2="426.75" y2="321.411"/>
+		</g>
+		<g id="gate_12" tooltipid="FO11-GA-12A" class="gate noAngelic" opacity="1" style="user-select: none;">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M439.005,390.403c0,0,49.622,6.822,92.121,80.681" opacity="0" style="user-select: none;"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M439.005,390.403c0,0,49.622,6.822,92.121,80.681" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M439.278,388.423c0.523,0.072,13.029,1.89,30.901,12.923c16.362,10.101,40.518,30.226,62.68,68.741"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M529.393,472.081c-41.436-72.011-90.175-79.627-90.663-79.696"/>
+			</g>
+			<path class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M439.005,390.403c0,0,49.622,6.822,92.121,80.681" style="user-select: none;"/>
+		</g>
+		<g id="gate_13" tooltipid="FO11-GA-13A" class="gate noSleep noBiology" opacity="0">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="443.411" x2="426.75" y2="504.411" opacity="0"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="443.411" x2="426.75" y2="504.411" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="428.75" y1="443.411" x2="428.75" y2="504.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="424.75" y1="504.411" x2="424.75" y2="443.411"/>
+			</g>
+			<line class="Abstract circuit" fill="none" stroke="#882BC6" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="443.411" x2="426.75" y2="504.411"/>
+		</g>
+		<g id="gate_14" tooltipid="FO11-GA-14A" class="gate noSleep noBiology" opacity="1" style="user-select: none;">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="582.411" x2="408.25" y2="665.411" opacity="0" style="user-select: none;"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="582.411" x2="408.25" y2="665.411" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="410.25" y1="582.411" x2="410.25" y2="665.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="406.25" y1="665.411" x2="406.25" y2="582.411"/>
+			</g>
+			<line class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="582.411" x2="408.25" y2="665.411" style="user-select: none;"/>
+		</g>
+		<g id="gate_15" tooltipid="FO11-GA-15A" class="gate" opacity="0">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="504.411" x2="389.75" y2="576.411" opacity="0"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="504.411" x2="389.75" y2="576.411" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="391.75" y1="504.411" x2="391.75" y2="576.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="387.75" y1="576.411" x2="387.75" y2="504.411"/>
+			</g>
+			<line class="Logical circuit" fill="none" stroke="#F940CE" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="504.411" x2="389.75" y2="576.411"/>
+		</g>
+		<g id="gate_16" tooltipid="FO11-GA-16A" class="gate noSleep noBiology" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M377.184,370.403c0,0-58.15,6.86-106.073,86.742" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M377.184,370.403c0,0-58.15,6.86-106.073,86.742" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M376.949,368.417c-0.61,0.072-15.178,1.898-35.822,13.664c-18.937,10.794-46.754,32.399-71.732,74.035"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M272.825,458.175c46.875-78.137,104.021-85.718,104.593-85.785"/>
+			</g>
+			<path class="Logical circuit" fill="none" stroke="#F940CE" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M377.184,370.403c0,0-58.15,6.86-106.073,86.742"/>
+		</g>
+		<g id="gate_17" tooltipid="FO11-GA-17A" class="gate noBiology" opacity="0">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="270.411" x2="389.75" y2="321.411" opacity="0"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="270.411" x2="389.75" y2="321.411" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="391.75" y1="270.411" x2="391.75" y2="321.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="387.75" y1="321.411" x2="387.75" y2="270.411"/>
+			</g>
+			<line class="Logical circuit" fill="none" stroke="#F940CE" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="260.411" x2="389.75" y2="321.411"/>
+		</g>
+		<g id="gate_18" tooltipid="FO11-GA-18A" class="gate noSleep noBiology" opacity="0" style="user-select: none;">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M220.546,689.602c0,0,12.378,45.693,63.951,76.885" opacity="0" style="user-select: none;"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M220.546,689.602c0,0,12.378,45.693,63.951,76.885" opacity="0" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M222.477,689.078c0.123,0.45,12.83,45.319,63.056,75.697"/>
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M283.462,768.197c-51.66-31.244-64.72-77.607-64.846-78.071"/>
+			</g>
+			<path class="Logical circuit" fill="none" stroke="#F940CE" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M220.546,689.602c0,0,12.378,45.693,63.951,76.885" style="user-select: none;"/>
+		</g>
+		<g id="gate_19" tooltipid="FO11-GA-19A" class="gate noAngelic" opacity="0" style="user-select: none;">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M513.78,734.755c-17.729,10.867-41.796,19.253-74.39,21.083" opacity="0" style="user-select: none;"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M513.78,734.755c-17.729,10.867-41.796,19.253-74.39,21.083" opacity="0" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M514.825,736.46c-20.432,12.524-45.774,19.716-75.323,21.375"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M439.278,753.841c28.881-1.621,53.595-8.616,73.457-20.791"/>
+			</g>
+			<path class="Tribal circuit" fill="none" stroke="#098E14" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M513.78,734.755c-17.729,10.867-41.796,19.253-74.39,21.083" style="user-select: none;"/>
+		</g>
+		<g id="gate_20" tooltipid="FO11-GA-20A" class="gate noAngelic noBiology" opacity="1" style="user-select: none;">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M378.116,390.403c0,0-84.531,11.621-127.428,168.746" opacity="0" style="user-select: none;"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M378.116,390.403c0,0-84.531,11.621-127.428,168.746" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M378.391,392.385c-0.208,0.029-21.089,3.178-46.878,25.225c-23.869,20.405-56.932,61.616-78.896,142.066"/>
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M248.758,558.623c22.293-81.659,56.045-123.538,80.434-144.291c26.634-22.664,47.765-25.787,48.651-25.909"/>
+			</g>
+			<path class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M378.116,390.403c0,0-84.531,11.621-127.428,168.746" style="user-select: none;"/>
+			<path class="Integration circuit" fill="none" stroke="#FF7B16" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M378.116,390.403c0,0-84.531,11.621-127.428,168.746" style="user-select: none;"/>
+		</g>
+		<g id="gate_21" tooltipid="FO11-GA-21A" class="gate noSleep noAngelic" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M490.188,464.876c9.367,18.262,17.313,42.003,20.91,72.57" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M490.188,464.876c9.367,18.262,17.313,42.003,20.91,72.57" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M491.968,463.963c10.761,20.98,17.865,45.625,21.116,73.25"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M509.112,537.68c-3.195-27.149-10.16-51.337-20.703-71.891"/>
+			</g>
+			<path class="Tribal circuit" fill="none" stroke="#098E14" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M490.188,464.876c9.367,18.262,17.313,42.003,20.91,72.57"/>
+		</g>
+		<g id="gate_22" tooltipid="FO11-GA-22A" class="gate noAngelic" opacity="1" style="user-select: none;">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M531.126,471.084c19.78,34.375,38.017,83.271,48.99,152.759" opacity="0" style="user-select: none;"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M531.126,471.084c19.78,34.375,38.017,83.271,48.99,152.759" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M532.859,470.087c22.864,39.734,39.428,91.36,49.232,153.444"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M578.14,624.154c-9.727-61.598-26.128-112.763-48.748-152.073"/>
+			</g>
+			<path class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M531.126,471.084c19.78,34.375,38.017,83.271,48.99,152.759" style="user-select: none;"/>
+		</g>
+		<g id="gate_23" tooltipid="FO11-GA-23A" class="gate noSleep noBiology" opacity="1" style="user-select: none;">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="321.411" x2="408.25" y2="384.411" opacity="0" style="user-select: none;"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="321.411" x2="408.25" y2="384.411" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="410.25" y1="321.411" x2="410.25" y2="384.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="406.25" y1="384.411" x2="406.25" y2="321.411"/>
+			</g>
+			<line class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="321.411" x2="408.25" y2="384.411" style="user-select: none;"/>
+		</g>
+		<g id="gate_24" tooltipid="FO11-GA-24A" class="gate noSleep noBiology" opacity="1" style="user-select: none;">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="220.411" x2="408.25" y2="260.411" opacity="0" style="user-select: none;"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="220.411" x2="408.25" y2="260.411" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="410.25" y1="220.411" x2="410.25" y2="260.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="406.25" y1="260.411" x2="406.25" y2="220.411"/>
+			</g>
+			<line class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="220.411" x2="408.25" y2="260.411" style="user-select: none;"/>
+		</g>
+		<g id="gate_25" tooltipid="FO11-GA-25A" class="gate noSleep noAngelic" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M449.027,505.146c0,0,13.747,4.394,28.278,16.503" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M449.027,505.146c0,0,13.747,4.394,28.278,16.503" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M449.636,503.24c0.577,0.185,14.287,4.653,28.95,16.872"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M476.025,523.185c-14.069-11.724-27.473-16.091-27.607-16.134"/>
+			</g>
+			<path class="Centering circuit" fill="none" stroke="#0808F7" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M449.027,505.146c0,0,13.747,4.394,28.278,16.503"/>
+		</g>
+		<g id="gate_26" tooltipid="FO11-GA-26A" class="gate noSleep noAngelic" opacity="0" style="user-select: none;">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M482.306,571.194c0,0-62.544-10.064-128.903,8.585" opacity="0" style="user-select: none;"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M482.306,571.194c0,0-62.544-10.064-128.903,8.585" opacity="0" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M481.988,573.169c-0.622-0.101-62.903-9.771-128.044,8.536"/>
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M352.862,577.854c66.018-18.554,129.132-8.734,129.762-8.634"/>
+			</g>
+			<path class="Tribal circuit" fill="none" stroke="#098E14" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M482.306,571.194c0,0-62.544-10.064-128.903,8.585" style="user-select: none;"/>
+		</g>
+		<g id="gate_27" tooltipid="FO11-GA-27A" class="gate noAngelic noBiology" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M320.935,668.76c15.385,3.914,33.709,7.249,53.688,8.249" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M320.935,668.76c15.385,3.914,33.709,7.249,53.688,8.249" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M321.428,666.821c17.931,4.562,35.861,7.317,53.294,8.19"/>
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M374.522,679.006c-17.698-0.886-35.893-3.681-54.081-8.308"/>
+			</g>
+			<path class="Defense circuit" fill="none" stroke="#70180A" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M320.935,668.76c15.385,3.914,33.709,7.249,53.688,8.249"/>
+		</g>
+		<g id="gate_28" tooltipid="FO11-GA-28A" class="gate noAngelic noBiology" opacity="1" style="user-select: none;">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M238.678,679.98c0,0,9.657,41.638,55.332,69.942" opacity="0" style="user-select: none;"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M238.678,679.98c0,0,9.657,41.638,55.332,69.942" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M240.625,679.527c0.096,0.408,10.062,41.195,54.438,68.695"/>
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M292.956,751.623c-45.855-28.416-55.825-69.457-56.227-71.19"/>
+			</g>
+			<path class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M238.678,679.98c0,0,9.657,41.638,55.332,69.942" style="user-select: none;"/>
+		</g>
+		<g id="gate_29" tooltipid="FO11-GA-29A" class="gate noSleep noBiology" opacity="0">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="576.411" x2="426.75" y2="659.411" opacity="0"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="576.411" x2="426.75" y2="659.411" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="428.75" y1="576.411" x2="428.75" y2="659.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="424.75" y1="659.411" x2="424.75" y2="576.411"/>
+			</g>
+			<line class="Abstract circuit" fill="none" stroke="#882BC6" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="576.411" x2="426.75" y2="659.411"/>
+		</g>
+		<g id="gate_30" tooltipid="FO11-GA-30A" class="gate noSleep noAngelic" opacity="0" style="user-select: none;">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M595.954,689.603c0,0-12.378,45.692-63.95,76.884" opacity="0" style="user-select: none;"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M595.954,689.603c0,0-12.378,45.692-63.95,76.884" opacity="0" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M597.884,690.126c-0.125,0.464-13.186,46.827-64.845,78.071"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M530.969,764.775c50.226-30.378,62.933-75.247,63.055-75.697"/>
+			</g>
+			<path class="Abstract circuit" fill="none" stroke="#882BC6" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M595.954,689.603c0,0-12.378,45.692-63.95,76.884" style="user-select: none;"/>
+		</g>
+		<g id="gate_31" tooltipid="FO11-GA-31A" class="gate noSleep noBiology" opacity="0" style="user-select: none;">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="384.411" x2="389.75" y2="443.411" opacity="0" style="user-select: none;"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="384.411" x2="389.75" y2="443.411" opacity="0" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="391.75" y1="384.411" x2="391.75" y2="443.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="387.75" y1="443.411" x2="387.75" y2="384.411"/>
+			</g>
+			<line class="Logical circuit" fill="none" stroke="#F940CE" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="384.411" x2="389.75" y2="443.411" style="user-select: none;"/>
+		</g>
+		<g id="gate_32" tooltipid="FO11-GA-32A" class="gate noSleep noAngelic" opacity="0" style="user-select: none;">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M254.39,669.885c0,0,6.623,39.304,48.331,64.87" opacity="0" style="user-select: none;"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M254.39,669.885c0,0,6.623,39.304,48.331,64.87" opacity="0" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M256.362,669.551c0.066,0.385,7.019,38.743,47.405,63.499"/>
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M301.676,736.46c-42.001-25.746-48.981-64.602-49.258-66.243"/>
+			</g>
+			<path class="Tribal circuit" fill="none" stroke="#098E14" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M254.39,669.885c0,0,6.623,39.304,48.331,64.87" style="user-select: none;"/>
+		</g>
+		<g id="gate_33" tooltipid="FO11-GA-33A" class="gate noSleep noBiology" opacity="0">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="384.411" x2="426.75" y2="443.411" opacity="0"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="384.411" x2="426.75" y2="443.411" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="428.75" y1="384.411" x2="428.75" y2="443.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="424.75" y1="443.411" x2="424.75" y2="384.411"/>
+			</g>
+			<line class="Abstract circuit" fill="none" stroke="#882BC6" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="384.411" x2="426.75" y2="443.411"/>
+		</g>
+		<g id="gate_34" tooltipid="FO11-GA-34A" class="gate noSleep noBiology" opacity="0" style="user-select: none;">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M377.005,640.216c0,0-145.408-4.322-126.386-80.814" opacity="0" style="user-select: none;"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M377.005,640.216c0,0-145.408-4.322-126.386-80.814" opacity="0" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M252.56,559.884c-3.596,14.459-1.274,27.258,6.9,38.042c28.196,37.198,116.714,40.265,117.605,40.291"/>
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M376.945,642.215c-3.715-0.11-91.316-3.149-120.671-41.869c-8.943-11.797-11.499-25.734-7.597-41.427"/>
+			</g>
+			<path class="Centering circuit" fill="none" stroke="#0808F7" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M377.005,640.216c0,0-145.408-4.322-126.386-80.814" style="user-select: none;"/>
+			<path class="Integration circuit" fill="none" stroke="#FF7B16" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M377.005,640.216c0,0-145.408-4.322-126.386-80.814" style="user-select: none;"/>
+		</g>
+		<g id="gate_35" tooltipid="FO11-GA-35A" class="gate noSleep noAngelic" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M439.779,370.403c0,0,58.15,6.86,106.073,86.742" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M439.779,370.403c0,0,58.15,6.86,106.073,86.742" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M440.014,368.417c0.61,0.072,15.178,1.898,35.822,13.664c18.937,10.794,46.754,32.399,71.732,74.035"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M544.138,458.175c-46.875-78.137-104.021-85.718-104.593-85.785"/>
+			</g>
+			<path class="Abstract circuit" fill="none" stroke="#882BC6" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M439.779,370.403c0,0,58.15,6.86,106.073,86.742"/>
+		</g>
+		<g id="gate_36" tooltipid="FO11-GA-36A" class="gate noSleep noAngelic" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M545.853,457.146c21.783,36.311,41.453,87.709,52.588,160.407" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M545.853,457.146c21.783,36.311,41.453,87.709,52.588,160.407" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M547.567,456.116c25.101,41.841,42.882,96.054,52.851,161.134"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M596.464,617.855c-9.889-64.563-27.494-118.288-52.326-159.681"/>
+			</g>
+			<path class="Abstract circuit" fill="none" stroke="#882BC6" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M545.853,457.146c21.783,36.311,41.453,87.709,52.588,160.407"/>
+		</g>
+		<g id="gate_37" tooltipid="FO11-GA-37A" class="gate noSleep noAngelic" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M551.644,602.702c5.299,9.049,9.898,20.347,10.921,33.231" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M551.644,602.702c5.299,9.049,9.898,20.347,10.921,33.231" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M553.369,601.691c6.512,11.118,10.276,22.586,11.189,34.084"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M560.571,636.092c-0.865-10.892-4.449-21.785-10.653-32.379"/>
+			</g>
+			<path class="Tribal circuit" fill="none" stroke="#098E14" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M551.644,602.702c5.299,9.049,9.898,20.347,10.921,33.231"/>
+		</g>
+		<g id="gate_38" tooltipid="FO11-GA-38A" class="gate noAngelic" opacity="1" style="user-select: none;">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M294.01,749.923c19.978,12.38,46.847,22.209,82.813,24.887" opacity="0" style="user-select: none;"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M294.01,749.923c19.978,12.38,46.847,22.209,82.813,24.887" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M295.063,748.223c22.507,13.947,50.065,22.222,81.908,24.593"/>
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M376.674,776.804c-32.491-2.419-60.658-10.891-83.718-25.181"/>
+			</g>
+			<path class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M294.01,749.923c19.978,12.38,46.847,22.209,82.813,24.887" style="user-select: none;"/>
+		</g>
+		<g id="gate_39" tooltipid="FO11-GA-39A" class="gate noSleep noAngelic" opacity="1" style="user-select: none;">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M522.491,749.923c-19.978,12.38-46.847,22.209-82.813,24.887" opacity="0" style="user-select: none;"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M522.491,749.923c-19.978,12.38-46.847,22.209-82.813,24.887" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M523.544,751.623c-23.061,14.29-51.228,22.762-83.718,25.181"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M439.529,772.815c31.842-2.371,59.4-10.646,81.908-24.593"/>
+			</g>
+			<path class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M522.491,749.923c-19.978,12.38-46.847,22.209-82.813,24.887" style="user-select: none;"/>
+		</g>
+		<g id="gate_40" tooltipid="FO11-GA-40A" class="gate noSleep noAngelic" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M532.618,579.273c0,0,10.433,8.755,19.025,23.429" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M532.618,579.273c0,0,10.433,8.755,19.025,23.429" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M533.904,577.741c0.437,0.367,10.797,9.147,19.466,23.95"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M549.917,603.713c-8.3-14.174-18.484-22.822-18.586-22.908"/>
+			</g>
+			<path class="Tribal circuit" fill="none" stroke="#098E14" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M532.618,579.273c0,0,10.433,8.755,19.025,23.429"/>
+		</g>
+		<g id="gate_41" tooltipid="FO11-GA-41A" class="gate noSleep noAngelic" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M532.004,766.486c-22.377,13.534-52.133,24.338-91.458,27.494" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M532.004,766.486c-22.377,13.534-52.133,24.338-91.458,27.494" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M533.039,768.197c-25.762,15.582-56.827,24.927-92.333,27.776"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M440.386,791.987c34.881-2.8,65.357-11.955,90.583-27.212"/>
+			</g>
+			<path class="Abstract circuit" fill="none" stroke="#882BC6" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M532.004,766.486c-22.377,13.534-52.133,24.338-91.458,27.494"/>
+		</g>
+		<g id="gate_42" tooltipid="FO11-GA-42A" class="gate noAngelic" opacity="0">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="659.411" x2="389.75" y2="713.411" opacity="0"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="659.411" x2="389.75" y2="713.411" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="391.75" y1="659.411" x2="391.75" y2="713.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="387.75" y1="713.411" x2="387.75" y2="659.411"/>
+			</g>
+			<line class="Abstract circuit" fill="none" stroke="#882BC6" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="659.411" x2="389.75" y2="713.411"/>
+		</g>
+		<g id="gate_43" tooltipid="FO11-GA-43A" class="gate noSleep noBiology" opacity="1" style="user-select: none;">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="260.411" x2="408.25" y2="321.411" opacity="0" style="user-select: none;"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="260.411" x2="408.25" y2="321.411" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="410.25" y1="260.411" x2="410.25" y2="321.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="406.25" y1="321.411" x2="406.25" y2="260.411"/>
+			</g>
+			<line class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="260.411" x2="408.25" y2="321.411" style="user-select: none;"/>
+		</g>
+		<g id="gate_44" tooltipid="FO11-GA-44A" class="gate noSleep noAngelic" opacity="0" style="user-select: none;">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M353.403,579.779c-34.246,9.624-69.507,26.896-97.713,57.144" opacity="0" style="user-select: none;"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M353.403,579.779c-34.246,9.624-69.507,26.896-97.713,57.144" opacity="0" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M353.944,581.705c-39.591,11.126-72.157,30.163-96.791,56.582"/>
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M254.227,635.559c25.142-26.963,58.327-46.377,98.635-57.705"/>
+			</g>
+			<path class="Tribal circuit" fill="none" stroke="#098E14" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M353.403,579.779c-34.246,9.624-69.507,26.896-97.713,57.144" style="user-select: none;"/>
+		</g>
+		<g id="gate_45" tooltipid="FO11-GA-45A" class="gate noSleep noAngelic" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M438.583,409.417c0,0,29.692,12.737,51.606,55.459" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M438.583,409.417c0,0,29.692,12.737,51.606,55.459" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M439.371,407.579c1.239,0.531,30.607,13.514,52.597,56.384"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M488.409,465.789c-21.285-41.497-50.326-54.409-50.617-54.535"/>
+			</g>
+			<path class="Tribal circuit" fill="none" stroke="#098E14" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M438.583,409.417c0,0,29.692,12.737,51.606,55.459"/>
+		</g>
+		<g id="gate_46" tooltipid="FO11-GA-46A" class="gate noSleep noBiology" opacity="0">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="504.411" x2="426.75" y2="576.411" opacity="0"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="504.411" x2="426.75" y2="576.411" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="428.75" y1="504.411" x2="428.75" y2="576.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="424.75" y1="576.411" x2="424.75" y2="504.411"/>
+			</g>
+			<line class="Abstract circuit" fill="none" stroke="#882BC6" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="504.411" x2="426.75" y2="576.411"/>
+		</g>
+		<g id="gate_47" tooltipid="FO11-GA-47A" class="gate noSleep noBiology" opacity="0">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="220.411" x2="389.75" y2="260.411" opacity="0"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="220.411" x2="389.75" y2="260.411" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="391.75" y1="220.411" x2="391.75" y2="260.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="387.75" y1="260.411" x2="387.75" y2="220.411"/>
+			</g>
+			<line class="Abstract circuit" fill="none" stroke="#882BC6" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="220.411" x2="389.75" y2="260.411"/>
+		</g>
+		<g id="gate_48" tooltipid="FO11-GA-48A" class="gate noSleep noBiology" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M271.11,457.146c-21.783,36.311-41.453,87.709-52.588,160.407" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M271.11,457.146c-21.783,36.311-41.453,87.709-52.588,160.407" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M269.396,456.116c-25.101,41.841-42.882,96.054-52.851,161.134"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M220.499,617.855c9.889-64.563,27.494-118.288,52.326-159.681"/>
+			</g>
+			<path class="Logical circuit" fill="none" stroke="#F940CE" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M271.11,457.146c-21.783,36.311-41.453,87.709-52.588,160.407"/>
+		</g>
+		<g id="gate_49" tooltipid="FO11-GA-49A" class="gate noAngelic" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M562.11,669.885c0,0-6.623,39.304-48.331,64.87" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M562.11,669.885c0,0-6.623,39.304-48.331,64.87" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M564.083,670.217c-0.276,1.642-7.257,40.497-49.257,66.243"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M512.734,733.05c40.386-24.756,47.338-63.114,47.404-63.499"/>
+			</g>
+			<path class="Tribal circuit" fill="none" stroke="#098E14" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M562.11,669.885c0,0-6.623,39.304-48.331,64.87"/>
+		</g>
+		<g id="gate_50" tooltipid="FO11-GA-50A" class="gate noAngelic" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M273.878,652.195c0,0,18.445,9.284,47.057,16.564" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M273.878,652.195c0,0,18.445,9.284,47.057,16.564" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M274.777,650.408c0.183,0.093,18.61,9.278,46.651,16.413"/>
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M320.442,670.698c-28.494-7.25-47.277-16.623-47.463-16.717"/>
+			</g>
+			<path class="Defense circuit" fill="none" stroke="#70180A" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M273.878,652.195c0,0,18.445,9.284,47.057,16.564"/>
+		</g>
+		<g id="gate_51" tooltipid="FO11-GA-51A" class="gate noSleep noAngelic" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M477.306,521.648c8.337,6.946,16.932,16.433,23.337,29.085" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M477.306,521.648c8.337,6.946,16.932,16.433,23.337,29.085" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M478.586,520.112c10.094,8.41,18.116,18.408,23.841,29.717"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M498.859,551.636c-5.478-10.819-13.16-20.392-22.833-28.451"/>
+			</g>
+			<path class="Centering circuit" fill="none" stroke="#0808F7" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M477.306,521.648c8.337,6.946,16.932,16.433,23.337,29.085"/>
+		</g>
+		<g id="gate_52" tooltipid="FO11-GA-52A" class="gate noSleep noBiology" opacity="0" style="user-select: none;">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="713.411" x2="426.75" y2="769.688" opacity="0" style="user-select: none;"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="713.411" x2="426.75" y2="769.688" opacity="0" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="428.75" y1="713.411" x2="428.75" y2="769.688"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="424.75" y1="769.688" x2="424.75" y2="713.411"/>
+			</g>
+			<line class="Logical circuit" fill="none" stroke="#F940CE" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="713.411" x2="426.75" y2="769.688" style="user-select: none;"/>
+		</g>
+		<g id="gate_53" tooltipid="FO11-GA-53A" class="gate noAngelic" opacity="0">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="713.411" x2="389.75" y2="769.688" opacity="0"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="713.411" x2="389.75" y2="769.688" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="391.75" y1="713.411" x2="391.75" y2="769.688"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="387.75" y1="769.688" x2="387.75" y2="713.411"/>
+			</g>
+			<line class="Abstract circuit" fill="none" stroke="#882BC6" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="713.411" x2="389.75" y2="769.688"/>
+		</g>
+		<g id="gate_54" tooltipid="FO11-GA-54A" class="gate noSleep" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M302.721,734.755c17.729,10.867,41.797,19.253,74.39,21.083" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M302.721,734.755c17.729,10.867,41.797,19.253,74.39,21.083" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M303.767,733.05c19.861,12.175,44.575,19.17,73.456,20.791"/>
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M376.998,757.835c-29.548-1.659-54.891-8.851-75.322-21.375"/>
+			</g>
+			<path class="Tribal circuit" fill="none" stroke="#098E14" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M302.721,734.755c17.729,10.867,41.797,19.253,74.39,21.083"/>
+		</g>
+		<g id="gate_55" tooltipid="FO11-GA-55A" class="gate noSleep noAngelic" opacity="1" style="user-select: none;">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M577.823,679.98c0,0-9.657,41.639-55.332,69.942" opacity="0" style="user-select: none;"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M577.823,679.98c0,0-9.657,41.639-55.332,69.942" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M579.771,680.433c-0.402,1.733-10.372,42.775-56.227,71.19"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M521.437,748.223c44.376-27.499,54.342-68.287,54.438-68.695"/>
+			</g>
+			<path class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M577.823,679.98c0,0-9.657,41.639-55.332,69.942" style="user-select: none;"/>
+		</g>
+		<g id="gate_56" tooltipid="FO11-GA-56A" class="gate noSleep noBiology" opacity="0">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="321.411" x2="426.75" y2="384.411" opacity="0"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="321.411" x2="426.75" y2="384.411" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="428.75" y1="321.411" x2="428.75" y2="384.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="424.75" y1="384.411" x2="424.75" y2="321.411"/>
+			</g>
+			<line class="Abstract circuit" fill="none" stroke="#882BC6" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="321.411" x2="426.75" y2="384.411"/>
+		</g>
+		<g id="gate_57" tooltipid="FO11-GA-57A" class="gate noAngelic noBiology" opacity="1" style="user-select: none;">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M250.688,559.149c-5.266,19.289-9.904,40.771-13.683,64.693" opacity="0" style="user-select: none;"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M250.688,559.149c-5.266,19.289-9.904,40.771-13.683,64.693" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M252.617,559.676c-5.437,19.916-10.025,41.61-13.636,64.479"/>
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M235.03,623.531c3.634-23.014,8.252-44.852,13.729-64.908"/>
+			</g>
+			<path class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M250.688,559.149c-5.266,19.289-9.904,40.771-13.683,64.693" style="user-select: none;"/>
+			<path class="Integration circuit" fill="none" stroke="#FF7B16" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M250.688,559.149c-5.266,19.289-9.904,40.771-13.683,64.693" style="user-select: none;"/>
+		</g>
+		<g id="gate_58" tooltipid="FO11-GA-58A" class="gate noSleep noBiology" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M284.497,766.486c22.376,13.534,52.132,24.338,91.457,27.494" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M284.497,766.486c22.376,13.534,52.132,24.338,91.457,27.494" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M285.532,764.775c25.225,15.257,55.701,24.412,90.582,27.212"/>
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M375.794,795.974c-35.506-2.85-66.571-12.194-92.332-27.776"/>
+			</g>
+			<path class="Logical circuit" fill="none" stroke="#F940CE" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M284.497,766.486c22.376,13.534,52.132,24.338,91.457,27.494"/>
+		</g>
+		<g id="gate_59" tooltipid="FO11-GA-59A" class="gate noSleep noBiology" opacity="0">
+			<path id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" d="M495.555,668.762c-15.383,3.914-33.704,7.247-53.677,8.247" opacity="0"/>
+			<path id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" d="M495.555,668.762c-15.383,3.914-33.704,7.247-53.677,8.247" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<path class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M496.048,670.7c-18.185,4.626-36.376,7.42-54.07,8.306"/>
+				<path class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M441.778,675.012c17.429-0.873,35.356-3.628,53.284-8.188"/>
+			</g>
+			<path class="Defense circuit" fill="none" stroke="#70180A" opacity="0" stroke-width="8" stroke-miterlimit="10" d="M495.555,668.762c-15.383,3.914-33.704,7.247-53.677,8.247"/>
+		</g>
+		<g id="gate_60" tooltipid="FO11-GA-60A" class="gate noSleep noBiology" opacity="1" style="user-select: none;">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="713.411" x2="408.25" y2="769.688" opacity="0" style="user-select: none;"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="713.411" x2="408.25" y2="769.688" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="410.25" y1="713.411" x2="410.25" y2="769.688"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="406.25" y1="769.688" x2="406.25" y2="713.411"/>
+			</g>
+			<line class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="713.411" x2="408.25" y2="769.688" style="user-select: none;"/>
+		</g>
+		<g id="gate_61" tooltipid="FO11-GA-61A" class="gate noSleep noBiology" opacity="1" style="user-select: none;">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="180.524" x2="408.25" y2="220.411" opacity="0" style="user-select: none;"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="180.524" x2="408.25" y2="220.411" opacity="1" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="410.25" y1="180.524" x2="410.25" y2="220.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="406.25" y1="220.411" x2="406.25" y2="180.524"/>
+			</g>
+			<line class="Individual circuit" fill="none" stroke="#1CD5FF" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="408.25" y1="180.524" x2="408.25" y2="220.411" style="user-select: none;"/>
+		</g>
+		<g id="gate_62" tooltipid="FO11-GA-62A" class="gate noAngelic noBiology" opacity="0">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="321.411" x2="389.75" y2="384.411" opacity="0"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="321.411" x2="389.75" y2="384.411" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="391.75" y1="321.411" x2="391.75" y2="384.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="387.75" y1="384.411" x2="387.75" y2="321.411"/>
+			</g>
+			<line class="Logical circuit" fill="none" stroke="#F940CE" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="321.411" x2="389.75" y2="384.411"/>
+		</g>
+		<g id="gate_63" tooltipid="FO11-GA-63A" class="gate noSleep noBiology" opacity="0" style="user-select: none;">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="180.524" x2="426.75" y2="220.411" opacity="0" style="user-select: none;"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="180.524" x2="426.75" y2="220.411" opacity="0" style="user-select: none;"/>
+			<g id="juxt" visibility="visible" opacity="0" style="user-select: none;">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="428.75" y1="180.524" x2="428.75" y2="220.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="424.75" y1="220.411" x2="424.75" y2="180.524"/>
+			</g>
+			<line class="Logical circuit" fill="none" stroke="#F940CE" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="426.75" y1="180.524" x2="426.75" y2="220.411" style="user-select: none;"/>
+		</g>
+		<g id="gate_64" tooltipid="FO11-GA-64A" class="gate noSleep noBiology" opacity="0">
+			<line id="desi" visibility="visible" class="red_gate" fill="none" stroke="#FF0000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="180.524" x2="389.75" y2="220.411" opacity="0"/>
+			<line id="pers" visibility="visible" class="black_gate" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="180.524" x2="389.75" y2="220.411" opacity="0"/>
+			<g id="juxt" visibility="visible" opacity="0">
+				<line class="red_gate" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="391.75" y1="180.524" x2="391.75" y2="220.411"/>
+				<line class="black_gate" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" x1="387.75" y1="220.411" x2="387.75" y2="180.524"/>
+			</g>
+			<line class="Abstract circuit" fill="none" stroke="#882BC6" opacity="0" stroke-width="8" stroke-miterlimit="10" x1="389.75" y1="180.524" x2="389.75" y2="220.411"/>
+		</g>
+	</g>
+
+	<g id="channels">
+		<g id="ch_0108" tooltipid="FO11-CH-0108" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<rect x="402.25" y="385.952" fill="#FFFFFF" width="12" height="118.353"/>
+		</g>
+		<g id="ch_0214" tooltipid="FO11-CH-0214" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<rect x="402.25" y="513.365" fill="#FFFFFF" width="12" height="142.733"/>
+		</g>
+		<g id="ch_0360" tooltipid="FO11-CH-0360" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<rect x="402.25" y="665.159" fill="#FFFFFF" width="12" height="104.528"/>
+		</g>
+		<g id="ch_0463" tooltipid="FO11-CH-0463" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<rect x="420.75" y="180.524" fill="#FFFFFF" width="12" height="78.456"/>
+		</g>
+		<g id="ch_0515" tooltipid="FO11-CH-0515" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<rect x="383.75" y="513.365" fill="#FFFFFF" width="12" height="142.733"/>
+		</g>
+		<g id="ch_0659" tooltipid="FO11-CH-0659" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M442.178,683.001l-0.6-11.984     c55.227-2.766,97.922-23.967,98.347-24.181l5.396,10.719C543.493,658.475,499.912,680.11,442.178,683.001z"/>
+		</g>
+		<g id="ch_0731" tooltipid="FO11-CH-0731" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<rect x="383.75" y="385.952" fill="#FFFFFF" width="12" height="118.353"/>
+		</g>
+		<g id="ch_0952" tooltipid="FO11-CH-0952" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<rect x="420.75" y="665.159" fill="#FFFFFF" width="12" height="104.528"/>
+		</g>
+		<g id="ch_1156" tooltipid="FO11-CH-1156" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<rect x="420.75" y="268.041" fill="#FFFFFF" width="12" height="108.851"/>
+		</g>
+		<g id="ch_1222" tooltipid="FO11-CH-1222" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M574.189,624.778c-17.466-110.601-53.684-166.88-80.991-194.615c-29.282-29.741-54.783-33.782-55.037-33.819l1.662-11.885     c1.169,0.161,29.009,4.307,61.027,36.379c18.475,18.506,34.654,42.633,48.088,71.712c16.653,36.047,29.137,79.905,37.104,130.357L574.189,624.778z"/>
+		</g>
+		<g id="ch_1333" tooltipid="FO11-CH-1333" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<rect x="420.75" y="385.952" fill="#FFFFFF" width="12" height="118.353"/>
+		</g>
+		<g id="ch_1648" tooltipid="FO11-CH-1648" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M224.453,618.461l-11.861-1.816c8.219-53.658,21.797-100.247,40.357-138.473c14.963-30.818,33.193-56.33,54.183-75.828c36.23-33.654,68.014-37.742,69.349-37.899     l1.406,11.917l-0.703-5.958l0.724,5.956c-0.295,0.037-29.917,4.055-63.378,35.495C283.392,441.111,242.49,500.704,224.453,618.461z"/>
+		</g>
+		<g id="ch_1762" tooltipid="FO11-CH-1762" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<rect x="383.75" y="268.041" fill="#FFFFFF" width="12" height="108.851"/>
+		</g>
+		<g id="ch_1858" tooltipid="FO11-CH-1858" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M375.474,799.961c-69.081-5.544-109.037-34.622-130.391-58.038c-23.317-25.57-30.053-49.736-30.328-50.752l11.582-3.139l-5.791,1.569l5.788-1.581     c0.062,0.226,6.459,22.821,28.046,46.286c28.525,31.007,70.73,49.574,122.054,53.693L375.474,799.961z"/>
+		</g>
+		<g id="ch_1949" tooltipid="FO11-CH-1949" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M439.727,761.828l-0.673-11.98c43.573-2.446,76.557-16.946,98.037-43.096c15.824-19.263,19.072-37.681,19.104-37.864l11.833,1.994     c-0.148,0.879-3.833,21.78-21.664,43.487C530.071,734.203,498.345,758.537,439.727,761.828z"/>
+		</g>
+		<g id="ch_2145" tooltipid="FO11-CH-2145" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M505.139,538.147c-5.977-50.791-24.423-81.594-38.844-98.49c-15.578-18.251-29.954-24.672-30.097-24.734l4.75-11.02     c0.669,0.287,16.596,7.264,33.928,27.327c15.72,18.197,35.798,51.274,42.181,105.515L505.139,538.147z"/>
+		</g>
+		<g id="ch_2343" tooltipid="FO11-CH-2343" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<rect x="402.25" y="268.041" fill="#FFFFFF" width="12" height="108.851"/>
+		</g>
+		<g id="ch_2461" tooltipid="FO11-CH-2461" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<rect x="402.25" y="180.524" fill="#FFFFFF" width="12" height="78.456"/>
+		</g>
+		<g id="ch_2551" tooltipid="FO11-CH-2551" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M495.29,553.442c-16.158-31.915-47.784-42.482-48.102-42.586l3.666-11.426c1.488,0.476,36.649,12.066,55.142,48.592L495.29,553.442z"/>
+		</g>
+		<g id="ch_2644" tooltipid="FO11-CH-2644" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M260.078,641.015l-8.776-8.184c34.865-37.391,86.071-60.924,148.083-68.056c46.582-5.355,82.374,0.254,83.875,0.495l-1.906,11.848l0.953-5.924l-0.951,5.924     c-0.355-0.057-35.923-5.605-80.926-0.384C359.294,581.508,301.555,596.534,260.078,641.015z"/>
+		</g>
+		<g id="ch_2946" tooltipid="FO11-CH-2946" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<rect x="420.75" y="513.365" fill="#FFFFFF" width="12" height="142.733"/>
+		</g>
+		<g id="ch_2750" tooltipid="FO11-CH-2750" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M374.323,683.001c-57.734-2.891-101.315-24.526-103.143-25.446l5.396-10.719c0.596,0.298,43.366,21.428,98.347,24.181L374.323,683.001z      M273.878,652.195l2.695-5.361c0,0.001,0.001,0.001,0.003,0.002L273.878,652.195z"/>
+		</g>
+		<g id="ch_2838" tooltipid="FO11-CH-2838" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M376.377,780.793c-63.083-4.696-98.698-31.277-117.467-52.749c-20.514-23.468-25.86-45.771-26.077-46.708l11.687-2.725     c0.048,0.205,5.079,20.765,23.846,42.013c25.151,28.477,61.792,44.694,108.903,48.202L376.377,780.793z"/>
+		</g>
+		<g id="ch_3041" tooltipid="FO11-CH-3041" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M441.026,799.961L440.066,788c51.323-4.12,93.529-22.687,122.054-53.693c21.586-23.464,27.984-46.06,28.046-46.285l11.579,3.15     c-0.275,1.016-7.01,25.182-30.328,50.751C550.063,765.34,510.107,794.417,441.026,799.961z"/>
+		</g>
+		<g id="ch_3254" tooltipid="FO11-CH-3254" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M376.774,761.828c-58.619-3.291-90.344-27.625-106.637-47.459c-17.831-21.707-21.516-42.608-21.664-43.487l11.831-2.01     c0.033,0.188,3.472,19.093,19.51,38.369c21.499,25.841,54.348,40.176,97.633,42.606L376.774,761.828z"/>
+		</g>
+		<g id="ch_3536" tooltipid="FO11-CH-3536" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M592.51,618.461c-18.146-118.465-59.418-178.132-90.846-207.325c-33.39-31.016-62.3-34.74-62.588-34.774l1.406-11.917     c1.335,0.157,33.119,4.245,69.349,37.899c20.99,19.498,39.22,45.01,54.183,75.828c18.56,38.226,32.138,84.814,40.357,138.473L592.51,618.461z"/>
+		</g>
+		<g id="ch_3740" tooltipid="FO11-CH-3740" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M556.583,636.408c-2.455-30.917-27.569-52.326-27.822-52.539l7.714-9.191c1.192,1,29.222,24.907,32.07,60.781L556.583,636.408z"/>
+		</g>
+		<g id="ch_3955" tooltipid="FO11-CH-3955" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M440.123,780.793l-0.891-11.967c47.111-3.508,83.751-19.726,108.903-48.202c18.767-21.248,23.797-41.808,23.845-42.013l11.687,2.725     c-0.217,0.938-5.563,23.24-26.077,46.708C538.821,749.516,503.206,776.097,440.123,780.793z"/>
+		</g>
+		<g id="ch_4253" tooltipid="FO11-CH-4253" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<rect x="383.75" y="665.159" fill="#FFFFFF" width="12" height="104.528"/>
+		</g>
+		<g id="ch_4764" tooltipid="FO11-CH-4764" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<rect x="383.75" y="180.524" fill="#FFFFFF" width="12" height="78.456"/>
+		</g>
+
+		<g id="ch_1020" tooltipid="FO11-CH-1020" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M266.464,528.798c20.744-58.37,47.213-90.516,67.108-107.685c24.99-21.565,45.187-24.74,45.388-24.77l-1.662-11.885c-0.934,0.129-23.186,3.413-50.699,26.826c-24.818,21.118-59.138,63.641-81.7,146.284l0.005,0.001     c-0.031,0.119-0.071,0.234-0.101,0.354l11.631,2.953c5.698-22.44,36.025-34.37,60.462-40.427c27.689-6.861,54.341-7.857,54.607-7.867l-0.414-11.992C367.539,500.713,302.253,503.321,266.464,528.798z"/>
+		</g>
+		<g id="ch_1034" tooltipid="FO11-CH-1034" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M376.827,646.213c-3.793-0.112-93.243-3.224-123.74-43.451c-9.71-12.808-12.5-27.884-8.291-44.809c13.428-52.883,121.692-57.204,126.294-57.361l0.414,11.992c-0.266,0.01-26.918,1.006-54.607,7.867     c-24.438,6.057-54.764,17.986-60.462,40.427c-3.328,13.382-1.299,24.718,6.209,34.626c27.027,35.668,113.669,38.688,114.542,38.715L376.827,646.213z"/>
+		</g>
+		<g id="ch_1057" tooltipid="FO11-CH-1057" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M242.932,624.778l-11.854-1.871c3.639-23.04,8.26-44.916,13.736-65.027c13.475-52.808,121.675-57.131,126.276-57.288l0.414,11.992     c-0.266,0.01-26.918,1.006-54.607,7.867c-24.384,6.043-54.63,17.932-60.424,40.277l0.003,0.001C251.077,580.504,246.521,602.053,242.932,624.778z"/>
+		</g>
+		<g id="ch_2034" tooltipid="FO11-CH-2034" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M376.827,646.213c-3.793-0.112-93.243-3.224-123.74-43.451c-9.71-12.808-12.5-27.884-8.291-44.809l0.104-0.386c22.562-82.642,56.882-125.164,81.7-146.282c27.513-23.413,49.765-26.697,50.699-26.826l1.662,11.885     c-0.201,0.029-20.398,3.204-45.388,24.77c-23.263,20.075-55.522,60.594-77.097,139.616l-0.051,0.186c-3.312,13.382-1.277,24.696,6.218,34.589c27.027,35.668,113.669,38.688,114.542,38.715L376.827,646.213z"/>
+		</g>
+		<g id="ch_2057" tooltipid="FO11-CH-2057" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M242.932,624.778l-11.854-1.871c7.967-50.452,20.451-94.311,37.104-130.357c13.434-29.079,29.613-53.206,48.088-71.712c32.019-32.072,59.858-36.218,61.028-36.379     l1.635,11.889l-0.817-5.944l0.844,5.94c-0.254,0.037-25.755,4.078-55.037,33.819C296.616,457.898,260.397,514.178,242.932,624.778z"/>
+		</g>
+		<g id="ch_3457" tooltipid="FO11-CH-3457" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M262.643,595.504c-7.497-9.893-9.529-21.21-6.215-34.593c0.016-0.06,0.031-0.122,0.048-0.182l-11.576-3.16c-0.035,0.127-0.067,0.258-0.102,0.384h-0.002c-0.004,0.016-0.007,0.031-0.011,0.047c-5.463,20.079-10.076,41.911-13.707,64.907l11.854,1.871    c1.597-10.115,3.396-19.979,5.366-29.576c1.347,2.6,2.94,5.121,4.789,7.56c30.497,40.228,119.947,43.339,123.74,43.451l0.358-11.994C376.313,634.192,289.67,631.172,262.643,595.504z"/>
+		</g>
+
+		<g id="ch_102034" tooltipid="FO11-CH-102034" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M262.643,595.504c-7.505-9.904-9.535-21.236-6.205-34.64c5.707-22.432,36.025-34.357,60.458-40.413c27.689-6.861,54.341-7.857,54.607-7.867l-0.414-11.992c-3.552,0.121-68.837,2.729-104.626,28.206     c20.744-58.37,47.213-90.516,67.108-107.685c24.99-21.565,45.187-24.74,45.388-24.77l-1.662-11.885c-0.934,0.129-23.186,3.413-50.699,26.826c-24.818,21.118-59.138,63.641-81.7,146.284l-0.104,0.384     c-4.208,16.925-1.419,32.001,8.291,44.809c30.497,40.228,119.947,43.339,123.74,43.451l0.358-11.994C376.313,634.192,289.67,631.172,262.643,595.504z"/>
+		</g>
+		<g id="ch_102057" tooltipid="FO11-CH-102057" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M266.464,528.798c20.744-58.37,47.213-90.516,67.108-107.685c24.99-21.565,45.187-24.74,45.388-24.77l-1.662-11.885c-0.934,0.129-23.186,3.413-50.699,26.826c-24.818,21.118-59.138,63.641-81.7,146.284c-0.023,0.084-0.045,0.172-0.068,0.256     c-0.008,0.034-0.02,0.066-0.028,0.1l0.002,0.001c-5.472,20.099-10.091,41.957-13.727,64.981l11.854,1.871c3.584-22.7,8.136-44.226,13.526-63.981c5.751-22.388,36.031-34.297,60.438-40.346c27.689-6.861,54.341-7.857,54.607-7.867     l-0.414-11.992C367.539,500.713,302.253,503.321,266.464,528.798z"/>
+		</g>
+		<g id="ch_103457" tooltipid="FO11-CH-103457" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M262.643,595.504c-7.497-9.893-9.529-21.21-6.215-34.593c0.01-0.038,0.02-0.076,0.03-0.114c5.751-22.388,36.031-34.297,60.438-40.346c27.689-6.861,54.341-7.857,54.607-7.867l-0.414-11.992     c-4.591,0.157-112.368,4.464-126.186,56.979l-0.005-0.001c-0.023,0.084-0.045,0.172-0.068,0.256c-0.008,0.034-0.02,0.066-0.028,0.1l0.002,0.001c-0.002,0.009-0.005,0.019-0.007,0.027h-0.002c-0.004,0.016-0.007,0.031-0.011,0.047     c-5.463,20.079-10.076,41.911-13.707,64.907l11.854,1.871c1.597-10.115,3.396-19.979,5.366-29.576c1.347,2.6,2.94,5.121,4.789,7.56c30.497,40.228,119.947,43.339,123.74,43.451l0.358-11.994C376.313,634.192,289.67,631.172,262.643,595.504z"/>
+		</g>
+		<g id="ch_203457" tooltipid="FO11-CH-203457" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M376.827,646.213c-3.793-0.112-93.243-3.224-123.74-43.451c-1.563-2.063-2.948-4.184-4.152-6.362l-6.06,28.684l-11.797-2.176c3.657-23.159,8.308-45.142,13.821-65.338c22.563-82.644,56.882-125.166,81.7-146.284c27.513-23.413,49.765-26.697,50.699-26.826     l1.662,11.885c-0.201,0.029-20.398,3.204-45.388,24.77c-23.263,20.075-55.522,60.594-77.097,139.616c-0.007,0.028-0.016,0.057-0.023,0.085l-0.879,4.16c-1.985,11.633,0.344,21.653,7.069,30.529     c27.027,35.668,113.669,38.688,114.542,38.715L376.827,646.213z"/>
+		</g>
+		<g id="ch_10203457" tooltipid="FO11-CH-10203457" fill-opacity="0" visibility="hidden" stroke-width="3px">
+			<path fill="#FFFFFF" d="M262.643,595.504c-7.497-9.893-9.529-21.21-6.215-34.593c0.01-0.038,0.02-0.076,0.03-0.114c5.751-22.388,36.031-34.297,60.438-40.346c27.689-6.861,54.341-7.857,54.607-7.867l-0.414-11.992     c-3.552,0.121-68.837,2.729-104.626,28.206c20.744-58.37,47.213-90.516,67.108-107.685c24.99-21.565,45.187-24.74,45.388-24.77l-1.662-11.885c-0.934,0.129-23.186,3.413-50.699,26.826c-24.818,21.118-59.138,63.641-81.7,146.284     c-0.023,0.084-0.045,0.172-0.068,0.256c-0.008,0.034-0.02,0.066-0.028,0.1l0.002,0.001c-0.002,0.009-0.005,0.019-0.007,0.027h-0.002c-0.004,0.016-0.007,0.031-0.011,0.047c-5.463,20.079-10.076,41.911-13.707,64.907l11.854,1.871     c1.597-10.115,3.396-19.979,5.366-29.576c1.347,2.6,2.94,5.121,4.789,7.56c30.497,40.228,119.947,43.339,123.74,43.451l0.358-11.994C376.313,634.192,289.67,631.172,262.643,595.504z"/>
+		</g>
+	</g>
+</g></g>
+
+		<g id="Centers">
+		
+
+		<g xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="original_centers" class="centers">
+	<g id="background_centres">
+		<path fill="#FFFFFF" stroke-width="2" stroke="#FFFFFF" d="M450.463,787.836v-11.325v-6.808v-11.928v-6.236    c0-0.205-0.026-0.403-0.031-0.608c-0.295-11.429-8.784-20.89-19.787-22.712c-1.256-0.209-2.536-0.344-3.848-0.344h-2.919h-11.844    h-6.768h-11.844h-2.92c-1.313,0-2.592,0.135-3.847,0.344c-10.997,1.82-19.482,11.271-19.786,22.692    c-0.006,0.21-0.032,0.417-0.032,0.628v6.203v30.094c0,0.217,0.026,0.428,0.033,0.644c0.067,2.421,0.496,4.749,1.245,6.941    c3.182,9.319,12.024,16.079,22.388,16.079h36.296c10.368,0,19.216-6.766,22.394-16.095c0.744-2.185,1.172-4.507,1.238-6.922    C450.436,788.267,450.463,788.054,450.463,787.836z"/>
+		<path fill="#FFFFFF" stroke-width="2" stroke="#FFFFFF" d="M426.798,616.809h-2.92h-11.844h-6.768h-11.844h-2.92    c-1.313,0-2.592,0.136-3.847,0.344c-9.777,1.619-17.574,9.265-19.398,18.974c-0.265,1.411-0.42,2.862-0.42,4.348v2.425v30.659    v3.214c0,1.22,0.122,2.407,0.303,3.579c1.548,10.067,9.482,18.08,19.516,19.742c1.255,0.208,2.534,0.344,3.847,0.344h2.92h11.844    h6.768h11.844h2.92c1.313,0,2.592-0.136,3.848-0.344c10.397-1.722,18.569-10.258,19.684-20.841c0.086-0.817,0.134-1.643,0.134-2.48    v-4.315v-31.982c0-11.704-8.619-21.466-19.818-23.321C429.39,616.944,428.11,616.809,426.798,616.809z"/>
+		<path fill="#FFFFFF" stroke-width="2" stroke="#FFFFFF" d="M232.798,695.762l22.625-14.327l5.896-3.734l12.158-7.7    c5.464-3.46,8.885-7.739,10.276-12.229c0.774-2.497,0.891-5.055,0.404-7.574c-0.982-5.11-4.521-10.056-10.681-13.958l-12.539-7.938    l-5.766-3.65l-15.03-9.519l-6.144-3.889l-1.201-0.761c-3.503-2.219-6.846-3.504-9.917-3.979c-2.549-0.394-4.915-0.236-7.007,0.484    c-5.935,2.04-9.734,8.402-9.734,18.167v55.933c0,13.047,6.781,20.012,16.377,18.725c2.037-0.274,4.21-0.959,6.463-1.997    C230.23,697.238,231.499,696.585,232.798,695.762z"/>
+		<path class="noSleep noAngelic" fill="#FFFFFF" stroke-width="2" stroke="#FFFFFF" d="M601.425,606.989c-2.09-0.72-4.454-0.88-7.002-0.486    c-3.072,0.475-6.417,1.762-9.923,3.98l-1.203,0.762l-6.138,3.886l-13.29,8.416l-6.04,3.823l-14.009,8.869    c-6.655,4.215-10.255,9.646-10.87,15.189c-0.261,2.359,0.03,4.733,0.864,7.048c1.521,4.23,4.83,8.247,10.005,11.523l12.172,7.708    l5.86,3.712l10.268,6.502l5.843,3.699l6.538,4.141c1.309,0.829,2.586,1.487,3.846,2.065c2.251,1.035,4.422,1.718,6.456,1.989    c9.585,1.275,16.357-5.689,16.357-18.728v-55.933C611.159,615.392,607.36,609.029,601.425,606.989z"/>
+		<path class="noSleep noAngelic" fill="#FFFFFF" stroke-width="2" stroke="#FFFFFF" d="M500.95,534.28l-4.007,4.39l-4.651,5.097l-15.674,17.174    c-2.587,2.836-4.098,5.676-4.649,8.336c-0.536,2.59-0.14,4.997,1.129,7.057c1.848,2.998,5.514,5.257,10.866,6.204l41.29,7.314    c5.113,0.905,9.189,0.153,11.955-1.815c1.975-1.405,3.288-3.426,3.786-5.955c0.553-2.796,0.134-6.192-1.425-9.992l-13.696-33.396    c-2.789-6.801-7.584-10.388-12.808-10.494c-2.168-0.043-4.409,0.53-6.613,1.707C504.568,530.914,502.709,532.353,500.95,534.28z"/>
+		<g fill="#FFFFFF" stroke-width="2" stroke="#FFFFFF">
+			<path class="none_heart" d="M457.098,511.67c0.661-2.433,0.921-4.948,0.797-7.45c-0.281-5.665-2.545-11.246-6.846-15.547     l-20.403-20.403l-5.262-5.263c-0.483-0.483-0.993-0.927-1.506-1.359c-3.466-2.916-7.584-4.668-11.844-5.276     c-2.246-0.321-4.522-0.321-6.768,0c-4.26,0.608-8.378,2.36-11.844,5.276c-0.514,0.433-1.023,0.876-1.506,1.359l-5.262,5.261     l-20.404,20.405c-3.705,3.704-5.891,8.362-6.613,13.2c-0.335,2.244-0.35,4.521-0.043,6.767c0.674,4.944,2.875,9.719,6.656,13.499     l20.404,20.404l5.262,5.263c0.483,0.484,0.992,0.928,1.506,1.36c3.466,2.916,7.584,4.666,11.844,5.275     c2.246,0.321,4.522,0.321,6.768-0.002c4.26-0.607,8.378-2.357,11.844-5.275c0.513-0.433,1.022-0.875,1.506-1.36l5.262-5.261     l20.403-20.403C454.05,519.139,456.054,515.512,457.098,511.67z"/>
+			<path class="heart" d="M460.147,485.327c-2.654-6.656-7.98-12.255-15.349-15.722c-6.513-3.065-13.53-3.434-19.91-1.562c-6.376,1.873-12.111,6.978-16.061,12.878c-3.95-5.899-9.684-11.004-16.06-12.878c-6.376-1.872-13.396-1.503-19.908,1.562     c-7.368,3.466-12.694,9.065-15.35,15.722c-2.654,6.657-2.666,14.386,0.68,22.071c7.156,16.44,50.412,55.029,50.64,55.688c0.227-0.658,43.482-39.247,50.638-55.688C462.814,499.711,462.802,491.984,460.147,485.327" opacity="0"/>
+		</g>					
+		<path fill="#FFFFFF" stroke-width="2" stroke="#FFFFFF" d="M366.849,389.12v7.257v8.195c0,11.714,8.358,21.564,19.407,23.895    c1.621,0.342,3.297,0.527,5.015,0.527h1.752h11.843h6.769h11.844h1.751c1.718,0,3.396-0.186,5.017-0.527    c6.65-1.402,12.306-5.546,15.769-11.168c1.213-1.967,2.15-4.111,2.769-6.39c0.548-2.025,0.868-4.145,0.868-6.337v-8.077v-7.261    v-12.588v-7.121v-6.055c0-11.713-8.36-21.564-19.406-23.894c-1.621-0.342-3.298-0.527-5.017-0.527h-1.751h-11.844h-6.769h-11.843    h-1.752c-1.718,0-3.395,0.186-5.015,0.527c-11.048,2.33-19.407,12.181-19.407,23.894v5.952v7.115V389.12z"/>
+		<path class="noSleep noBiology" fill="#FFFFFF" stroke-width="2" stroke="#FFFFFF" d="M436.613,228.8h-5.967h-6.768h-11.844h-6.768h-11.844h-6.768h-5.97    c-17.354,0-23.957,11.997-14.673,26.658l20.643,32.598l5.114,8.078c0.531,0.838,1.086,1.615,1.653,2.358    c3.476,4.548,7.592,7.27,11.844,8.22c2.246,0.5,4.522,0.5,6.768,0c4.252-0.952,8.369-3.672,11.844-8.221    c0.566-0.743,1.122-1.519,1.652-2.357l5.116-8.079l20.641-32.596C460.57,240.797,453.967,228.8,436.613,228.8z"/>
+		<path class="noSleep noBiology" fill="#FFFFFF" stroke-width="2" stroke="#FFFFFF" d="M405.266,212.433h6.768h11.844h6.768h5.967    c17.354,0,23.958-11.997,14.674-26.658l-25.757-40.679c-9.284-14.662-24.477-14.662-33.76,0l-25.758,40.679    c-9.284,14.662-2.682,26.658,14.673,26.658h5.97h6.768H405.266z"/>
+	</g>
+	<g id="white_centres">
+		<g class="white_center str_root" id="white_root_centre" tooltipid="FO11-CE-0-0" fill="#FFFFFF" stroke-width="3" stroke="#9B6D31" style="user-select: none;">
+			<path d="M450.463,787.836v-11.325v-6.808v-11.928v-6.236     c0-0.205-0.026-0.403-0.031-0.608c-0.295-11.429-8.784-20.89-19.787-22.712c-1.256-0.209-2.536-0.344-3.848-0.344h-2.919h-11.844     h-6.768h-11.844h-2.92c-1.313,0-2.592,0.135-3.847,0.344c-10.997,1.82-19.482,11.271-19.786,22.692     c-0.006,0.21-0.032,0.417-0.032,0.628v6.203v30.094c0,0.217,0.026,0.428,0.033,0.644c0.067,2.421,0.496,4.749,1.245,6.941     c3.182,9.319,12.024,16.079,22.388,16.079h36.296c10.368,0,19.216-6.766,22.394-16.095c0.744-2.185,1.172-4.507,1.238-6.922     C450.436,788.267,450.463,788.054,450.463,787.836z" style="user-select: none;"/>
+		</g>
+		<g class="white_center str_sacral" id="white_sacral" tooltipid="FO11-CE-1-0" fill="#FFFFFF" stroke-width="3" stroke="#CE2121" style="user-select: none;">
+			<path d="M426.798,616.809h-2.92h-11.844h-6.768h-11.844h-2.92     c-1.313,0-2.592,0.136-3.847,0.344c-9.777,1.619-17.574,9.265-19.398,18.974c-0.265,1.411-0.42,2.862-0.42,4.348v2.425v30.659     v3.214c0,1.22,0.122,2.407,0.303,3.579c1.548,10.067,9.482,18.08,19.516,19.742c1.255,0.208,2.534,0.344,3.847,0.344h2.92h11.844     h6.768h11.844h2.92c1.313,0,2.592-0.136,3.848-0.344c10.397-1.722,18.569-10.258,19.684-20.841c0.086-0.817,0.134-1.643,0.134-2.48     v-4.315v-31.982c0-11.704-8.619-21.466-19.818-23.321C429.39,616.944,428.11,616.809,426.798,616.809z" style="user-select: none;"/>
+		</g>
+		<g class="white_center str_spleen" id="white_spleen_centre" tooltipid="FO11-CE-2-0" fill="#FFFFFF" stroke-width="3" stroke="#9B6D31" style="user-select: none;">
+			<path d="M232.798,695.762l22.625-14.327l5.896-3.734l12.158-7.7     c5.464-3.46,8.885-7.739,10.276-12.229c0.774-2.497,0.891-5.055,0.404-7.574c-0.982-5.11-4.521-10.056-10.681-13.958l-12.539-7.938     l-5.766-3.65l-15.03-9.519l-6.144-3.889l-1.201-0.761c-3.503-2.219-6.846-3.504-9.917-3.979c-2.549-0.394-4.915-0.236-7.007,0.484     c-5.935,2.04-9.734,8.402-9.734,18.167v55.933c0,13.047,6.781,20.012,16.377,18.725c2.037-0.274,4.21-0.959,6.463-1.997     C230.23,697.238,231.499,696.585,232.798,695.762z" style="user-select: none;"/>
+		</g>
+		<g class="white_center str_solar_plexus noSleep noAngelic" id="white_solar_plexus" tooltipid="FO11-CE-3-0" fill="#FFFFFF" stroke-width="3" stroke="#9B6D31" style="user-select: none;">
+			<path d="M601.425,606.989c-2.09-0.72-4.454-0.88-7.002-0.486     c-3.072,0.475-6.417,1.762-9.923,3.98l-1.203,0.762l-6.138,3.886l-13.29,8.416l-6.04,3.823l-14.009,8.869     c-6.655,4.215-10.255,9.646-10.87,15.189c-0.261,2.359,0.03,4.733,0.864,7.048c1.521,4.23,4.83,8.247,10.005,11.523l12.172,7.708     l5.86,3.712l10.268,6.502l5.843,3.699l6.538,4.141c1.309,0.829,2.586,1.487,3.846,2.065c2.251,1.035,4.422,1.718,6.456,1.989     c9.585,1.275,16.357-5.689,16.357-18.728v-55.933C611.159,615.392,607.36,609.029,601.425,606.989z" style="user-select: none;"/>
+		</g>
+		<g class="white_center str_heart noAngelic noSleep" id="white_heart" tooltipid="FO11-CE-4-0" fill="#FFFFFF" stroke-width="3" stroke="#CE2121">
+			<path d="M500.95,534.28l-4.007,4.39l-4.651,5.097l-15.674,17.174     c-2.587,2.836-4.098,5.676-4.649,8.336c-0.536,2.59-0.14,4.997,1.129,7.057c1.848,2.998,5.514,5.257,10.866,6.204l41.29,7.314     c5.113,0.905,9.189,0.153,11.955-1.815c1.975-1.405,3.288-3.426,3.786-5.955c0.553-2.796,0.134-6.192-1.425-9.992l-13.696-33.396     c-2.789-6.801-7.584-10.388-12.808-10.494c-2.168-0.043-4.409,0.53-6.613,1.707C504.568,530.914,502.709,532.353,500.95,534.28z"/>
+		</g>
+		<g class="white_center str_G" id="white_G_centre" tooltipid="FO11-CE-5-0" fill="#FFFFFF" stroke-width="3" stroke="#F4DD0B" style="user-select: none;">
+			<path class="none_heart" d="M457.098,511.67c0.661-2.433,0.921-4.948,0.797-7.45c-0.281-5.665-2.545-11.246-6.846-15.547     l-20.403-20.403l-5.262-5.263c-0.483-0.483-0.993-0.927-1.506-1.359c-3.466-2.916-7.584-4.668-11.844-5.276     c-2.246-0.321-4.522-0.321-6.768,0c-4.26,0.608-8.378,2.36-11.844,5.276c-0.514,0.433-1.023,0.876-1.506,1.359l-5.262,5.261     l-20.404,20.405c-3.705,3.704-5.891,8.362-6.613,13.2c-0.335,2.244-0.35,4.521-0.043,6.767c0.674,4.944,2.875,9.719,6.656,13.499     l20.404,20.404l5.262,5.263c0.483,0.484,0.992,0.928,1.506,1.36c3.466,2.916,7.584,4.666,11.844,5.275     c2.246,0.321,4.522,0.321,6.768-0.002c4.26-0.607,8.378-2.357,11.844-5.275c0.513-0.433,1.022-0.875,1.506-1.36l5.262-5.261     l20.403-20.403C454.05,519.139,456.054,515.512,457.098,511.67z" style="user-select: none;"/>
+			<path class="heart" d="M460.147,485.327c-2.654-6.656-7.98-12.255-15.349-15.722c-6.513-3.065-13.53-3.434-19.91-1.562c-6.376,1.873-12.111,6.978-16.061,12.878c-3.95-5.899-9.684-11.004-16.06-12.878c-6.376-1.872-13.396-1.503-19.908,1.562     c-7.368,3.466-12.694,9.065-15.35,15.722c-2.654,6.657-2.666,14.386,0.68,22.071c7.156,16.44,50.412,55.029,50.64,55.688c0.227-0.658,43.482-39.247,50.638-55.688C462.814,499.711,462.802,491.984,460.147,485.327" opacity="0" style="user-select: none;"/>
+		</g>					
+		<g class="white_center str_throat" id="white_throat_centre" tooltipid="FO11-CE-6-0" fill="#FFFFFF" stroke-width="3" stroke="#9B6D31">
+			<path d="M366.849,389.12v7.257v8.195c0,11.714,8.358,21.564,19.407,23.895     c1.621,0.342,3.297,0.527,5.015,0.527h1.752h11.843h6.769h11.844h1.751c1.718,0,3.396-0.186,5.017-0.527     c6.65-1.402,12.306-5.546,15.769-11.168c1.213-1.967,2.15-4.111,2.769-6.39c0.548-2.025,0.868-4.145,0.868-6.337v-8.077v-7.261     v-12.588v-7.121v-6.055c0-11.713-8.36-21.564-19.406-23.894c-1.621-0.342-3.298-0.527-5.017-0.527h-1.751h-11.844h-6.769h-11.843     h-1.752c-1.718,0-3.395,0.186-5.015,0.527c-11.048,2.33-19.407,12.181-19.407,23.894v5.952v7.115V389.12z"/>
+		</g>
+		<g class="white_center str_ajna noSleep noBiology" id="white_ajna_centre" tooltipid="FO11-CE-7-0" fill="#FFFFFF" stroke-width="3" stroke="#54931E" style="user-select: none;">
+			<path d="M436.613,228.8h-5.967h-6.768h-11.844h-6.768h-11.844h-6.768h-5.97     c-17.354,0-23.957,11.997-14.673,26.658l20.643,32.598l5.114,8.078c0.531,0.838,1.086,1.615,1.653,2.358     c3.476,4.548,7.592,7.27,11.844,8.22c2.246,0.5,4.522,0.5,6.768,0c4.252-0.952,8.369-3.672,11.844-8.221     c0.566-0.743,1.122-1.519,1.652-2.357l5.116-8.079l20.641-32.596C460.57,240.797,453.967,228.8,436.613,228.8z" style="user-select: none;"/>
+		</g>
+		<g class="white_center str_head noSleep noBiology" id="white_head_centre" tooltipid="FO11-CE-8-0" fill="#FFFFFF" stroke-width="3" stroke="#F4DD0B">
+			<path d="M405.266,212.433h6.768h11.844h6.768h5.967     c17.354,0,23.958-11.997,14.674-26.658l-25.757-40.679c-9.284-14.662-24.477-14.662-33.76,0l-25.758,40.679     c-9.284,14.662-2.682,26.658,14.673,26.658h5.97h6.768H405.266z"/>
+		</g>
+	</g>
+	<g id="coloured_centres">
+		<g tooltipid="FO11-CE-0-1" class="center fil_root" data-tooltip="111" fill="#9B6D31" stroke-width="2" stroke="#FFFFFF" opacity="1" visibility="visibility" style="user-select: none;">
+			<path d="M450.463,787.836v-11.325v-6.808v-11.928v-6.236     c0-0.205-0.026-0.403-0.031-0.608c-0.295-11.429-8.784-20.89-19.787-22.712c-1.256-0.209-2.536-0.344-3.848-0.344h-2.919h-11.844     h-6.768h-11.844h-2.92c-1.313,0-2.592,0.135-3.847,0.344c-10.997,1.82-19.482,11.271-19.786,22.692     c-0.006,0.21-0.032,0.417-0.032,0.628v6.203v30.094c0,0.217,0.026,0.428,0.033,0.644c0.067,2.421,0.496,4.749,1.245,6.941     c3.182,9.319,12.024,16.079,22.388,16.079h36.296c10.368,0,19.216-6.766,22.394-16.095c0.744-2.185,1.172-4.507,1.238-6.922     C450.436,788.267,450.463,788.054,450.463,787.836z" style="user-select: none;"/>
+		</g>
+		<g tooltipid="FO11-CE-1-1" class="center fil_sacral" data-tooltip="222" fill="#CE2121" stroke-width="2" stroke="#FFFFFF" opacity="1" visibility="visibility" style="user-select: none;">
+			<path d="M426.798,616.809h-2.92h-11.844h-6.768h-11.844h-2.92     c-1.313,0-2.592,0.136-3.847,0.344c-9.777,1.619-17.574,9.265-19.398,18.974c-0.265,1.411-0.42,2.862-0.42,4.348v2.425v30.659     v3.214c0,1.22,0.122,2.407,0.303,3.579c1.548,10.067,9.482,18.08,19.516,19.742c1.255,0.208,2.534,0.344,3.847,0.344h2.92h11.844     h6.768h11.844h2.92c1.313,0,2.592-0.136,3.848-0.344c10.397-1.722,18.569-10.258,19.684-20.841c0.086-0.817,0.134-1.643,0.134-2.48     v-4.315v-31.982c0-11.704-8.619-21.466-19.818-23.321C429.39,616.944,428.11,616.809,426.798,616.809z" style="user-select: none;"/>
+		</g>
+		<g tooltipid="FO11-CE-2-1" class="center fil_spleen" data-tooltip="333" fill="#9B6D31" stroke-width="2" stroke="#FFFFFF" opacity="1" visibility="visibility" style="user-select: none;">
+			<path d="M232.798,695.762l22.625-14.327l5.896-3.734l12.158-7.7     c5.464-3.46,8.885-7.739,10.276-12.229c0.774-2.497,0.891-5.055,0.404-7.574c-0.982-5.11-4.521-10.056-10.681-13.958l-12.539-7.938     l-5.766-3.65l-15.03-9.519l-6.144-3.889l-1.201-0.761c-3.503-2.219-6.846-3.504-9.917-3.979c-2.549-0.394-4.915-0.236-7.007,0.484     c-5.935,2.04-9.734,8.402-9.734,18.167v55.933c0,13.047,6.781,20.012,16.377,18.725c2.037-0.274,4.21-0.959,6.463-1.997     C230.23,697.238,231.499,696.585,232.798,695.762z" style="user-select: none;"/>
+		</g>
+		<g tooltipid="FO11-CE-3-1" class="center fil_solar_plexus" data-tooltip="444" fill="#9B6D31" stroke-width="2" stroke="#FFFFFF" opacity="1" visibility="visibility" style="user-select: none;">
+			<path d="M601.425,606.989c-2.09-0.72-4.454-0.88-7.002-0.486     c-3.072,0.475-6.417,1.762-9.923,3.98l-1.203,0.762l-6.138,3.886l-13.29,8.416l-6.04,3.823l-14.009,8.869     c-6.655,4.215-10.255,9.646-10.87,15.189c-0.261,2.359,0.03,4.733,0.864,7.048c1.521,4.23,4.83,8.247,10.005,11.523l12.172,7.708     l5.86,3.712l10.268,6.502l5.843,3.699l6.538,4.141c1.309,0.829,2.586,1.487,3.846,2.065c2.251,1.035,4.422,1.718,6.456,1.989     c9.585,1.275,16.357-5.689,16.357-18.728v-55.933C611.159,615.392,607.36,609.029,601.425,606.989z" style="user-select: none;"/>
+		</g>
+		<g tooltipid="FO11-CE-4-1" class="center fil_heart" data-tooltip="555" fill="#CE2121" stroke-width="2" stroke="#FFFFFF" opacity="0" visibility="visibility" style="user-select: none;">
+			<path d="M500.95,534.28l-4.007,4.39l-4.651,5.097l-15.674,17.174     c-2.587,2.836-4.098,5.676-4.649,8.336c-0.536,2.59-0.14,4.997,1.129,7.057c1.848,2.998,5.514,5.257,10.866,6.204l41.29,7.314     c5.113,0.905,9.189,0.153,11.955-1.815c1.975-1.405,3.288-3.426,3.786-5.955c0.553-2.796,0.134-6.192-1.425-9.992l-13.696-33.396     c-2.789-6.801-7.584-10.388-12.808-10.494c-2.168-0.043-4.409,0.53-6.613,1.707C504.568,530.914,502.709,532.353,500.95,534.28z" style="user-select: none;"/>
+		</g>
+		<g tooltipid="FO11-CE-5-1" class="center fil_G" data-tooltip="666" fill="#F4DD0B" stroke-width="2" stroke="#FFFFFF" opacity="1" visibility="visibility" style="user-select: none;">
+			<path class="none_heart" d="M457.098,511.67c0.661-2.433,0.921-4.948,0.797-7.45c-0.281-5.665-2.545-11.246-6.846-15.547     l-20.403-20.403l-5.262-5.263c-0.483-0.483-0.993-0.927-1.506-1.359c-3.466-2.916-7.584-4.668-11.844-5.276     c-2.246-0.321-4.522-0.321-6.768,0c-4.26,0.608-8.378,2.36-11.844,5.276c-0.514,0.433-1.023,0.876-1.506,1.359l-5.262,5.261     l-20.404,20.405c-3.705,3.704-5.891,8.362-6.613,13.2c-0.335,2.244-0.35,4.521-0.043,6.767c0.674,4.944,2.875,9.719,6.656,13.499     l20.404,20.404l5.262,5.263c0.483,0.484,0.992,0.928,1.506,1.36c3.466,2.916,7.584,4.666,11.844,5.275     c2.246,0.321,4.522,0.321,6.768-0.002c4.26-0.607,8.378-2.357,11.844-5.275c0.513-0.433,1.022-0.875,1.506-1.36l5.262-5.261     l20.403-20.403C454.05,519.139,456.054,515.512,457.098,511.67z" style="user-select: none;"/>
+			<path class="heart" d="M460.147,485.327c-2.654-6.656-7.98-12.255-15.349-15.722c-6.513-3.065-13.53-3.434-19.91-1.562c-6.376,1.873-12.111,6.978-16.061,12.878c-3.95-5.899-9.684-11.004-16.06-12.878c-6.376-1.872-13.396-1.503-19.908,1.562     c-7.368,3.466-12.694,9.065-15.35,15.722c-2.654,6.657-2.666,14.386,0.68,22.071c7.156,16.44,50.412,55.029,50.64,55.688c0.227-0.658,43.482-39.247,50.638-55.688C462.814,499.711,462.802,491.984,460.147,485.327" opacity="0" style="user-select: none;"/>
+		</g>
+		<g tooltipid="FO11-CE-6-1" class="center fil_throat" data-tooltip="777" fill="#9B6D31" stroke-width="2" stroke="#FFFFFF" opacity="1" visibility="visibility" style="user-select: none;">
+			<path d="M366.849,389.12v7.257v8.195c0,11.714,8.358,21.564,19.407,23.895     c1.621,0.342,3.297,0.527,5.015,0.527h1.752h11.843h6.769h11.844h1.751c1.718,0,3.396-0.186,5.017-0.527     c6.65-1.402,12.306-5.546,15.769-11.168c1.213-1.967,2.15-4.111,2.769-6.39c0.548-2.025,0.868-4.145,0.868-6.337v-8.077v-7.261     v-12.588v-7.121v-6.055c0-11.713-8.36-21.564-19.406-23.894c-1.621-0.342-3.298-0.527-5.017-0.527h-1.751h-11.844h-6.769h-11.843     h-1.752c-1.718,0-3.395,0.186-5.015,0.527c-11.048,2.33-19.407,12.181-19.407,23.894v5.952v7.115V389.12z" style="user-select: none;"/>
+		</g>
+		<g tooltipid="FO11-CE-7-1" class="center fil_ajna" data-tooltip="888" fill="#54931E" stroke-width="2" stroke="#FFFFFF" opacity="1" visibility="visibility" style="user-select: none;">
+			<path d="M436.613,228.8h-5.967h-6.768h-11.844h-6.768h-11.844h-6.768h-5.97     c-17.354,0-23.957,11.997-14.673,26.658l20.643,32.598l5.114,8.078c0.531,0.838,1.086,1.615,1.653,2.358     c3.476,4.548,7.592,7.27,11.844,8.22c2.246,0.5,4.522,0.5,6.768,0c4.252-0.952,8.369-3.672,11.844-8.221     c0.566-0.743,1.122-1.519,1.652-2.357l5.116-8.079l20.641-32.596C460.57,240.797,453.967,228.8,436.613,228.8z" style="user-select: none;"/>
+		</g>
+		<g tooltipid="FO11-CE-8-1" class="center fil_head" data-tooltip="999" fill="#F4DD0B" stroke-width="2" stroke="#FFFFFF" opacity="1" visibility="visibility" style="user-select: none;">
+			<path d="M405.266,212.433h6.768h11.844h6.768h5.967     c17.354,0,23.958-11.997,14.674-26.658l-25.757-40.679c-9.284-14.662-24.477-14.662-33.76,0l-25.758,40.679     c-9.284,14.662-2.682,26.658,14.673,26.658h5.97h6.768H405.266z" style="user-select: none;"/>
+		</g>
+	</g>
+</g><g xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="center_glow" class="effects">
+	<defs>
+		<filter id="glow_root" height="300%" width="300%" x="-75%" y="-75%">
+			<feMorphology operator="dilate" radius="5" in="SourceAlpha" result="thicken"/>
+			<feGaussianBlur in="thicken" stdDeviation="5" result="blurred"/>
+
+			<feFlood flood-color="#ffffff" result="glowColor"/>
+			<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored"/>
+
+			<feMerge>
+				<feMergeNode in="softGlow_colored"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+		<filter id="glow_sacral" height="300%" width="300%" x="-75%" y="-75%">
+			<feMorphology operator="dilate" radius="5" in="SourceAlpha" result="thicken"/>
+			<feGaussianBlur in="thicken" stdDeviation="5" result="blurred"/>
+
+			<feFlood flood-color="#ffffff" result="glowColor"/>
+			<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored"/>
+
+			<feMerge>
+				<feMergeNode in="softGlow_colored"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+		<filter id="glow_spleen" height="300%" width="300%" x="-75%" y="-75%">
+			<feMorphology operator="dilate" radius="5" in="SourceAlpha" result="thicken"/>
+			<feGaussianBlur in="thicken" stdDeviation="5" result="blurred"/>
+
+			<feFlood flood-color="#ffffff" result="glowColor"/>
+			<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored"/>
+
+			<feMerge>
+				<feMergeNode in="softGlow_colored"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+		<filter id="glow_solar_plexus" height="300%" width="300%" x="-75%" y="-75%">
+			<feMorphology operator="dilate" radius="5" in="SourceAlpha" result="thicken"/>
+			<feGaussianBlur in="thicken" stdDeviation="5" result="blurred"/>
+
+			<feFlood flood-color="#ffffff" result="glowColor"/>
+			<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored"/>
+
+			<feMerge>
+				<feMergeNode in="softGlow_colored"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+		<filter id="glow_heart" height="300%" width="300%" x="-75%" y="-75%">
+			<feMorphology operator="dilate" radius="5" in="SourceAlpha" result="thicken"/>
+			<feGaussianBlur in="thicken" stdDeviation="5" result="blurred"/>
+
+			<feFlood flood-color="#ffffff" result="glowColor"/>
+			<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored"/>
+
+			<feMerge>
+				<feMergeNode in="softGlow_colored"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+		<filter id="glow_G" height="300%" width="300%" x="-75%" y="-75%">
+			<feMorphology operator="dilate" radius="5" in="SourceAlpha" result="thicken"/>
+			<feGaussianBlur in="thicken" stdDeviation="5" result="blurred"/>
+
+			<feFlood flood-color="#ffffff" result="glowColor"/>
+			<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored"/>
+
+			<feMerge>
+				<feMergeNode in="softGlow_colored"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+		<filter id="glow_throat" height="300%" width="300%" x="-75%" y="-75%">
+			<feMorphology operator="dilate" radius="5" in="SourceAlpha" result="thicken"/>
+			<feGaussianBlur in="thicken" stdDeviation="5" result="blurred"/>
+
+			<feFlood flood-color="#ffffff" result="glowColor"/>
+			<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored"/>
+
+			<feMerge>
+				<feMergeNode in="softGlow_colored"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+		<filter id="glow_ajna" height="300%" width="300%" x="-75%" y="-75%">
+			<feMorphology operator="dilate" radius="5" in="SourceAlpha" result="thicken"/>
+			<feGaussianBlur in="thicken" stdDeviation="5" result="blurred"/>
+
+			<feFlood flood-color="#ffffff" result="glowColor"/>
+			<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored"/>
+
+			<feMerge>
+				<feMergeNode in="softGlow_colored"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+		<filter id="glow_head" height="300%" width="300%" x="-75%" y="-75%">
+			<feMorphology operator="dilate" radius="5" in="SourceAlpha" result="thicken"/>
+			<feGaussianBlur in="thicken" stdDeviation="5" result="blurred"/>
+
+			<feFlood flood-color="#ffffff" result="glowColor"/>
+			<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored"/>
+
+			<feMerge>
+				<feMergeNode in="softGlow_colored"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+	</defs>
+</g></g>
+
+		<g id="Gates">
+			<g id="black_numbers">
+				<text id="black_1" class="none_heart" transform="matrix(1 0 0 1 404.4932 470.8535)" font-family="Arial" font-size="13.5358" visibility="visible">1</text>
+				<text id="black_1" class="heart" transform="matrix(1 0 0 1 404.4932 494.8535)" font-family="Arial" font-size="13.5358" visibility="hidden">1</text>
+				<text id="black_2" transform="matrix(1 0 0 1 405.0029 548.665)" font-family="Arial" font-size="13.5358">2</text>
+				<text id="black_3" transform="matrix(1 0 0 1 404.6514 694.9775)" font-family="Arial" font-size="13.5358">3</text>
+				<text id="black_4" transform="matrix(1 0 0 1 423.1826 244.1255)" font-family="Arial" font-size="13.5358">4</text>
+				<text id="black_5" transform="matrix(1 0 0 1 385.9565 631.9775)" font-family="Arial" font-size="13.5358">5</text>
+				<text id="black_6" transform="matrix(1 0 0 1 538.8408 657.0986)" font-family="Arial" font-size="13.5358">6</text>
+				<text id="black_7" transform="matrix(1 0 0 1 387.7632 484.0498)" font-family="Arial" font-size="13.5358">7</text>
+				<text id="black_8" transform="matrix(1 0 0 1 404.2793 423.3203)" font-family="Arial" font-size="13.5358">8</text>
+				<text id="black_9" transform="matrix(1 0 0 1 423.5879 695.1035)" font-family="Arial" font-size="13.5358">9</text>
+				<text id="black_10" transform="matrix(1 0 0 1 363.1304 510.8018)" font-family="Arial" font-size="13.5358">10</text>
+				<text id="black_11" transform="matrix(1 0 0 1 417.2627 283.3345)" font-family="Arial" font-size="13.5358">11</text>
+				<text id="black_12" transform="matrix(1 0 0 1 431.478 395.2344)" font-family="Arial" font-size="13.5358">12</text>
+				<text id="black_13" transform="matrix(1 0 0 1 417.1064 483.0381)" font-family="Arial" font-size="13.5358">13</text>
+				<text id="black_14" transform="matrix(1 0 0 1 400.2383 631.7939)" font-family="Arial" font-size="13.5358">14</text>
+				<text id="black_15" transform="matrix(1 0 0 1 382.501 537.5889)" font-family="Arial" font-size="13.5358">15</text>
+				<text id="black_16" transform="matrix(1 0 0 1 370.3164 374.8857)" font-family="Arial" font-size="13.5358">16</text>
+				<text id="black_17" transform="matrix(1 0 0 1 384.9805 283.4194)" font-family="Arial" font-size="13.5358">17</text>
+				<text id="black_18" transform="matrix(1 0 0 1 214.2246 694.7607)" font-family="Arial" font-size="13.5358">18</text>
+				<text id="black_19" transform="matrix(1 0 0 1 431.438 759.9951)" font-family="Arial" font-size="13.5358">19</text>
+				<text id="black_20" transform="matrix(1 0 0 1 370.9941 396.6699)" font-family="Arial" font-size="13.5358">20</text>
+				<text id="black_21" transform="matrix(1 0 0 1 506.0752 543.0811)" font-family="Arial" font-size="13.5358">21</text>
+				<text id="black_22" transform="matrix(1 0 0 1 574.3423 628.5557)" font-family="Arial" font-size="13.5358">22</text>
+				<text id="black_23" transform="matrix(1 0 0 1 402.4355 354.4136)" font-family="Arial" font-size="13.5358">23</text>
+				<text id="black_24" transform="matrix(1 0 0 1 401.7017 244.0093)" font-family="Arial" font-size="13.5358">24</text>
+				<text id="black_25" transform="matrix(1 0 0 1 440.7261 510.8203)" font-family="Arial" font-size="13.5358">25</text>
+				<text id="black_26" transform="matrix(1 0 0 1 475.0479 575.6582)" font-family="Arial" font-size="13.5358">26</text>
+				<text id="black_27" transform="matrix(1 0 0 1 369.9287 679.876)" font-family="Arial" font-size="13.5358">27</text>
+				<text id="black_28" transform="matrix(1 0 0 1 230.8726 684.9775)" font-family="Arial" font-size="13.5358">28</text>
+				<text id="black_29" transform="matrix(1 0 0 1 419.9839 631.3047)" font-family="Arial" font-size="13.5358">29</text>
+				<text id="black_30" transform="matrix(1 0 0 1 588.8931 694.4746)" font-family="Arial" font-size="13.5358">30</text>
+				<text id="black_31" transform="matrix(1 0 0 1 382.0562 423.374)" font-family="Arial" font-size="13.5358">31</text>
+				<text id="black_32" transform="matrix(1 0 0 1 246.5078 674.7715)" font-family="Arial" font-size="13.5358">32</text>
+				<text id="black_33" transform="matrix(1 0 0 1 419.3193 423.3154)" font-family="Arial" font-size="13.5358">33</text>
+				<text id="black_34" transform="matrix(1 0 0 1 369.5664 645.2822)" font-family="Arial" font-size="13.5358">34</text>
+				<text id="black_35" transform="matrix(1 0 0 1 431.478 374.9834)" font-family="Arial" font-size="13.5358">35</text>
+				<text id="black_36" transform="matrix(1 0 0 1 592.0034 621.9775)" font-family="Arial" font-size="13.5358">36</text>
+				<text id="black_37" transform="matrix(1 0 0 1 554.9165 641.0869)" font-family="Arial" font-size="13.5358">37</text>
+				<text id="black_38" transform="matrix(1 0 0 1 369.7964 779.0117)" font-family="Arial" font-size="13.5358">38</text>
+				<text id="black_39" transform="matrix(1 0 0 1 432.0552 778.9668)" font-family="Arial" font-size="13.5358">39</text>
+				<text id="black_40" transform="matrix(1 0 0 1 523.3057 584.0518)" font-family="Arial" font-size="13.5358">40</text>
+				<text id="black_41" transform="matrix(1 0 0 1 432.7549 797.7783)" font-family="Arial" font-size="13.5358">41</text>
+				<text id="black_42" transform="matrix(1 0 0 1 381.9058 694.4131)" font-family="Arial" font-size="13.5358">42</text>
+				<text id="black_43" transform="matrix(1 0 0 1 402.0078 301.6938)" font-family="Arial" font-size="13.5358">43</text>
+				<text id="black_44" transform="matrix(1 0 0 1 248.1016 641.6768)" font-family="Arial" font-size="13.5358">44</text>
+				<text id="black_45" transform="matrix(1 0 0 1 431.354 414.458)" font-family="Arial" font-size="13.5358">45</text>
+				<text id="black_46" transform="matrix(1 0 0 1 418.7896 537.2002)" font-family="Arial" font-size="13.5358">46</text>
+				<text id="black_47" transform="matrix(1 0 0 1 382.2119 244.4819)" font-family="Arial" font-size="13.5358">47</text>
+				<text id="black_48" transform="matrix(1 0 0 1 212.2813 621.251)" font-family="Arial" font-size="13.5358">48</text>
+				<text id="black_49" transform="matrix(1 0 0 1 555.3765 674.6279)" font-family="Arial" font-size="13.5358">49</text>
+				<text id="black_50" transform="matrix(1 0 0 1 266.7354 656.3809)" font-family="Arial" font-size="13.5358">50</text>
+				<text id="black_51" transform="matrix(1 0 0 1 492.8003 555.5859)" font-family="Arial" font-size="13.5358">51</text>
+				<text id="black_52" transform="matrix(1 0 0 1 419.5283 742.9385)" font-family="Arial" font-size="13.5358">52</text>
+				<text id="black_53" transform="matrix(1 0 0 1 382.2407 743.2471)" font-family="Arial" font-size="13.5358">53</text>
+				<text id="black_54" transform="matrix(1 0 0 1 369.9614 759.7783)" font-family="Arial" font-size="13.5358">54</text>
+				<text id="black_55" transform="matrix(1 0 0 1 571.4346 684.9932)" font-family="Arial" font-size="13.5358">55</text>
+				<text id="black_56" transform="matrix(1 0 0 1 421.1997 354.8315)" font-family="Arial" font-size="13.5358">56</text>
+				<text id="black_57" transform="matrix(1 0 0 1 228.9277 630.4092)" font-family="Arial" font-size="13.5358">57</text>
+				<text id="black_58" transform="matrix(1 0 0 1 369.8813 797.6826)" font-family="Arial" font-size="13.5358">58</text>
+				<text id="black_59" transform="matrix(1 0 0 1 433.1201 681.166)" font-family="Arial" font-size="13.5358">59</text>
+				<text id="black_60" transform="matrix(1 0 0 1 400.9746 742.9717)" font-family="Arial" font-size="13.5358">60</text>
+				<text id="black_61" transform="matrix(1 0 0 1 401.6187 206.9839)" font-family="Arial" font-size="13.5358">61</text>
+				<text id="black_62" transform="matrix(1 0 0 1 383.2134 354.417)" font-family="Arial" font-size="13.5358">62</text>
+				<text id="black_63" transform="matrix(1 0 0 1 419.8052 207.4458)" font-family="Arial" font-size="13.5358">63</text>
+				<text id="black_64" transform="matrix(1 0 0 1 382.0269 207.2148)" font-family="Arial" font-size="13.5358">64</text>
+			</g>
+
+			<g id="active_number_background">
+				<g id="gate_1" class="gate" opacity="1">
+					<g class="none_heart" visibility="visible">
+						<circle class="ind_gate" fill="#C92711" cx="408.505" cy="466.458" r="8.984"/>
+						<text transform="matrix(1 0 0 1 404.4932 470.8535)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">1</text>
+					</g>
+					<g class="heart" visibility="hidden">
+						<circle class="ind_gate" fill="#C92711" cx="408.505" cy="490.458" r="8.984"/>
+						<text transform="matrix(1 0 0 1 404.4932 494.8535)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">1</text>
+					</g>
+				</g>
+				<g id="gate_2" class="gate" opacity="1">
+					<circle class="ind_gate" fill="#C92711" cx="408.646" cy="544.503" r="8.984"/>
+					<text transform="matrix(1 0 0 1 405.0029 548.665)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">2</text>
+				</g>
+				<g id="gate_3" class="gate" opacity="1">
+					<circle class="ind_gate" fill="#C92711" cx="408.6" cy="690.16" r="8.984"/>
+					<text transform="matrix(1 0 0 1 404.6514 694.9775)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">3</text>
+				</g>
+				<g id="gate_4" class="gate" opacity="0">
+					<circle class="log_gate" fill="#C92711" cx="427.296" cy="239.222" r="8.984"/>
+					<text transform="matrix(1 0 0 1 423.1826 244.1255)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">4</text>
+				</g>
+				<g id="gate_5" class="gate" opacity="0">
+					<circle class="log_gate" fill="#C92711" cx="389.686" cy="626.939" r="8.983"/>
+					<text transform="matrix(1 0 0 1 385.9565 631.9775)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">5</text>
+				</g>
+				<g id="gate_6" class="gate" opacity="0">
+					<circle class="def_gate" fill="#C92711" cx="542.787" cy="652.196" r="8.983"/>
+					<text transform="matrix(1 0 0 1 538.8408 657.0986)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">6</text>
+				</g>
+				<g id="gate_7" class="gate" opacity="0">
+					<circle class="log_gate" fill="#C92711" cx="391.378" cy="478.081" r="8.983"/>
+					<text transform="matrix(1 0 0 1 387.7632 484.0498)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">7</text>
+				</g>
+				<g id="gate_8" class="gate" opacity="1">
+					<circle class="ind_gate" fill="#C92711" cx="408.1" cy="418.3" r="8.984"/>
+					<text transform="matrix(1 0 0 1 404.2793 423.3203)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">8</text>
+				</g>
+				<g id="gate_9" class="gate" opacity="0">
+					<circle class="log_gate" fill="#C92711" cx="427.3" cy="690.16" r="8.984"/>
+					<text transform="matrix(1 0 0 1 423.5879 695.1035)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">9</text>
+				</g>
+				<g id="gate_10" class="gate" opacity="0">
+					<circle class="cen_gate int_gate" fill="#C92711" cx="371.35" cy="506" r="8.984"/>
+					<text transform="matrix(1 0 0 1 363.1094 510.8018)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">10</text>
+				</g>
+				<g id="gate_11" class="gate" opacity="0">
+					<circle class="abs_gate" fill="#C92711" cx="424.477" cy="278.407" r="8.984"/>
+					<text transform="matrix(1 0 0 1 417.2627 283.3345)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">11</text>
+				</g>
+				<g id="gate_12" class="gate" opacity="1">
+					<circle class="ind_gate" fill="#C92711" cx="439.1" cy="390.4" r="8.984"/>
+					<text transform="matrix(1 0 0 1 430.8 395.2344)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">12</text>
+				</g>
+				<g id="gate_13" class="gate" opacity="0">
+					<circle class="abs_gate" fill="#C92711" cx="425.604" cy="478.083" r="8.984"/>
+					<text transform="matrix(1 0 0 1 417.1064 483.0381)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">13</text>
+				</g>
+				<g id="gate_14" class="gate" opacity="1">
+					<circle class="ind_gate" fill="#C92711" cx="408.505" cy="626.94" r="8.984"/>
+					<text transform="matrix(1 0 0 1 400.2383 631.7939)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">14</text>
+				</g>
+				<g id="gate_15" class="gate" opacity="0">
+					<circle class="log_gate" fill="#C92711" cx="390.955" cy="532.459" r="8.983"/>
+					<text transform="matrix(1 0 0 1 382.501 537.5889)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">15</text>
+				</g>
+				<g id="gate_16" class="gate" opacity="0">
+					<circle class="log_gate" fill="#C92711" cx="378.324" cy="370.08" r="8.984"/>
+					<text transform="matrix(1 0 0 1 370.3164 374.8857)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">16</text>
+				</g>
+				<g id="gate_17" class="gate" opacity="0">
+					<circle class="log_gate" fill="#C92711" cx="392.929" cy="277.843" r="8.983"/>
+					<text transform="matrix(1 0 0 1 384.9805 283.4194)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">17</text>
+				</g>
+				<g id="gate_18" class="gate" opacity="0">
+					<circle class="log_gate" fill="#C92711" cx="222.262" cy="689.658" r="8.983"/>
+					<text transform="matrix(1 0 0 1 214.2246 694.7607)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">18</text>
+				</g>
+				<g id="gate_19" class="gate" opacity="0">
+					<circle class="tri_gate" fill="#C92711" cx="439.765" cy="755.163" r="8.984"/>
+					<text transform="matrix(1 0 0 1 431.438 759.9951)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">19</text>
+				</g>
+				<g id="gate_20" class="gate" opacity="1">
+					<circle class="ind_gate int_gate" fill="#C92711" cx="378.324" cy="392.075" r="8.984"/>
+					<text transform="matrix(1 0 0 1 370.9941 396.6699)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">20</text>
+				</g>
+				<g id="gate_21" class="gate" opacity="0">
+					<circle class="tri_gate" fill="#C92711" cx="513" cy="538.4" r="8.984"/>
+					<text transform="matrix(1 0 0 1 506.0752 543.0811)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">21</text>
+				</g>
+				<g id="gate_22" class="gate" opacity="1">
+					<circle class="ind_gate" fill="#C92711" cx="581.478" cy="624.44" r="8.984"/>
+					<text transform="matrix(1 0 0 1 574.3423 628.5557)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">22</text>
+				</g>
+				<g id="gate_23" class="gate" opacity="1">
+					<circle class="ind_gate" fill="#C92711" cx="409.5" cy="349.8" r="8.984"/>
+					<text transform="matrix(1 0 0 1 402.4355 354.4136)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">23</text>
+				</g>
+				<g id="gate_24" class="gate" opacity="1">
+					<circle class="ind_gate" fill="#C92711" cx="408.505" cy="239.222" r="8.984"/>
+					<text transform="matrix(1 0 0 1 401.7017 244.0093)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">24</text>
+				</g>
+				<g id="gate_25" class="gate" opacity="0">
+					<circle class="cen_gate" fill="#C92711" cx="447.979" cy="506.071" r="8.984"/>
+					<text transform="matrix(1 0 0 1 440.7261 510.8203)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">25</text>
+				</g>
+				<g id="gate_26" class="gate" opacity="0">
+					<circle class="tri_gate" fill="#C92711" cx="482.306" cy="571.195" r="8.983"/>
+					<text transform="matrix(1 0 0 1 475.0479 575.6582)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">26</text>
+				</g>
+				<g id="gate_27" class="gate" opacity="0">
+					<circle class="def_gate" fill="#C92711" cx="377.325" cy="675.072" r="8.984"/>
+					<text transform="matrix(1 0 0 1 369.9287 679.876)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">27</text>
+				</g>
+				<g id="gate_28" class="gate" opacity="1">
+					<circle class="ind_gate" fill="#C92711" cx="238.424" cy="680.336" r="8.983"/>
+					<text transform="matrix(1 0 0 1 230.8726 684.9775)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">28</text>
+				</g>
+				<g id="gate_29" class="gate" opacity="0">
+					<circle class="abs_gate" fill="#C92711" cx="427.359" cy="626.94" r="8.984"/>
+					<text transform="matrix(1 0 0 1 419.9839 631.3047)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">29</text>
+				</g>
+				<g id="gate_30" class="gate" opacity="0">
+					<circle class="abs_gate" fill="#C92711" cx="596.475" cy="689.603" r="8.984"/>
+					<text transform="matrix(1 0 0 1 588.8931 694.4746)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">30</text>
+				</g>
+				<g id="gate_31" class="gate" opacity="0">
+					<circle class="log_gate" fill="#C92711" cx="389.2" cy="418.3" r="8.984"/>
+					<text transform="matrix(1 0 0 1 382.0562 423.374)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">31</text>
+				</g>
+				<g id="gate_32" class="gate" opacity="0">
+					<circle class="tri_gate" fill="#C92711" cx="254.45" cy="670.1" r="8.984"/>
+					<text transform="matrix(1 0 0 1 246.5078 674.7715)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">32</text>
+				</g>
+				<g id="gate_33" class="gate" opacity="0">
+					<circle class="abs_gate" fill="#C92711" cx="426.9" cy="418.3" r="8.984"/>
+					<text transform="matrix(1 0 0 1 419.3193 423.3154)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">33</text>
+				</g>
+				<g id="gate_34" class="gate" opacity="0">
+					<circle class="cen_gate int_gate" fill="#C92711" cx="377.2" cy="640.2" r="8.983"/>
+					<text transform="matrix(1 0 0 1 369.5664 645.2822)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">34</text>
+				</g>
+				<g id="gate_35" class="gate" opacity="0">
+					<circle class="abs_gate" fill="#C92711" cx="439.1" cy="370" r="8.983"/>
+					<text transform="matrix(1 0 0 1 431.478 374.9834)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">35</text>
+				</g>
+				<g id="gate_36" class="gate" opacity="0">
+					<circle class="abs_gate" fill="#C92711" cx="599.7" cy="617.1" r="8.983"/>
+					<text transform="matrix(1 0 0 1 592.0034 621.9775)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">36</text>
+				</g>
+				<g id="gate_37" class="gate" opacity="0">
+					<circle class="tri_gate" fill="#C92711" cx="562.565" cy="635.934" r="8.984"/>
+					<text transform="matrix(1 0 0 1 554.9165 641.0869)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">37</text>
+				</g>
+				<g id="gate_38" class="gate" opacity="1">
+					<circle class="ind_gate" fill="#C92711" cx="377.5" cy="774" r="8.983"/>
+					<text transform="matrix(1 0 0 1 369.7964 779.0117)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">38</text>
+				</g>
+				<g id="gate_39" class="gate" opacity="1">
+					<circle class="ind_gate" fill="#C92711" cx="439.765" cy="774.04" r="8.983"/>
+					<text transform="matrix(1 0 0 1 432.0552 778.9668)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">39</text>
+				</g>
+				<g id="gate_40" class="gate" opacity="0">
+					<circle class="tri_gate" fill="#C92711" cx="530.876" cy="579.441" r="8.983"/>
+					<text transform="matrix(1 0 0 1 523.3057 584.0518)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">40</text>
+				</g>
+				<g id="gate_41" class="gate" opacity="0">
+					<circle class="abs_gate" fill="#C92711" cx="439.8" cy="792.8" r="8.983"/>
+					<text transform="matrix(1 0 0 1 432.7549 797.7783)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">41</text>
+				</g>
+				<g id="gate_42" class="gate" opacity="0">
+					<circle class="abs_gate" fill="#C92711" cx="389.686" cy="690.16" r="8.983"/>
+					<text transform="matrix(1 0 0 1 381.9058 694.4131)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">42</text>
+				</g>
+				<g id="gate_43" class="gate" opacity="1">
+					<circle class="ind_gate" fill="#C92711" cx="409.492" cy="296.683" r="8.983"/>
+					<text transform="matrix(1 0 0 1 402.0078 301.6938)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">43</text>
+				</g>
+				<g id="gate_44" class="gate" opacity="0">
+					<circle class="tri_gate" fill="#C92711" cx="255.75" cy="636.9" r="8.983"/>
+					<text transform="matrix(1 0 0 1 248.1016 641.6768)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">44</text>
+				</g>
+				<g id="gate_45" class="gate" opacity="0">
+					<circle class="tri_gate" fill="#C92711" cx="438.8" cy="409.35" r="8.983"/>
+					<text transform="matrix(1 0 0 1 431.354 414.458)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">45</text>
+				</g>
+				<g id="gate_46" class="gate" opacity="0">
+					<circle class="abs_gate" fill="#C92711" cx="426.027" cy="532.461" r="8.984"/>
+					<text transform="matrix(1 0 0 1 418.7896 537.2002)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">46</text>
+				</g>
+				<g id="gate_47" class="gate" opacity="0">
+					<circle class="abs_gate" fill="#C92711" cx="389.686" cy="239.222" r="8.983"/>
+					<text transform="matrix(1 0 0 1 382.2119 244.4819)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">47</text>
+				</g>
+				<g id="gate_48" class="gate" opacity="0">
+					<circle class="log_gate" fill="#C92711" cx="219.653" cy="616.757" r="8.984"/>
+					<text transform="matrix(1 0 0 1 212.2813 621.251)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">48</text>
+				</g>
+				<g id="gate_49" class="gate" opacity="0">
+					<circle class="tri_gate" fill="#C92711" cx="563.15" cy="669.85" r="8.983"/>
+					<text transform="matrix(1 0 0 1 555.3765 674.6279)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">49</text>
+				</g>
+				<g id="gate_50" class="gate" opacity="0">
+					<circle class="def_gate" fill="#C92711" cx="274.2" cy="651.646" r="8.984"/>
+					<text transform="matrix(1 0 0 1 266.7354 656.3809)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">50</text>
+				</g>
+				<g id="gate_51" class="gate" opacity="0">
+					<circle class="cen_gate" fill="#C92711" cx="499.9" cy="550.7" r="8.983"/>
+					<text transform="matrix(1 0 0 1 492.8003 555.5859)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">51</text>
+				</g>
+				<g id="gate_52" class="gate" opacity="0">
+					<circle class="log_gate" fill="#C92711" cx="427.3" cy="738.3" r="8.983"/>
+					<text transform="matrix(1 0 0 1 419.5283 742.9385)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">52</text>
+				</g>
+				<g id="gate_53" class="gate" opacity="0">
+					<circle class="abs_gate" fill="#C92711" cx="389.7" cy="738.3" r="8.983"/>
+					<text transform="matrix(1 0 0 1 382.2407 743.2471)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">53</text>
+				</g>
+				<g id="gate_54" class="gate" opacity="0">
+					<circle class="tri_gate" fill="#C92711" cx="377.48" cy="755.163" r="8.984"/>
+					<text transform="matrix(1 0 0 1 369.9614 759.7783)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">54</text>
+				</g>
+				<g id="gate_55" class="gate" opacity="1">
+					<circle class="ind_gate" fill="#C92711" cx="579.122" cy="679.981" r="8.984"/>
+					<text transform="matrix(1 0 0 1 571.4346 684.9932)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">55</text>
+				</g>
+				<g id="gate_56" class="gate" opacity="0">
+					<circle class="abs_gate" fill="#C92711" cx="428.5" cy="349.8" r="8.983"/>
+					<text transform="matrix(1 0 0 1 421.1997 354.8315)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">56</text>
+				</g>
+				<g id="gate_57" class="gate" opacity="1">
+					<circle class="ind_gate int_gate" fill="#C92711" cx="236.639" cy="625.085" r="8.984"/>
+					<text transform="matrix(1 0 0 1 228.9277 630.4092)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">57</text>
+				</g>
+				<g id="gate_58" class="gate" opacity="0">
+					<circle class="log_gate" fill="#C92711" cx="377.6" cy="792.8" r="8.983"/>
+					<text transform="matrix(1 0 0 1 369.8813 797.6826)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">58</text>
+				</g>
+				<g id="gate_59" class="gate" opacity="0">
+					<circle class="def_gate" fill="#C92711" cx="440.5" cy="676.4" r="8.983"/>
+					<text transform="matrix(1 0 0 1 433.1201 681.166)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">59</text>
+				</g>
+				<g id="gate_60" class="gate" opacity="1">
+					<circle class="ind_gate" fill="#C92711" cx="408.5" cy="738.3" r="8.983"/>
+					<text transform="matrix(1 0 0 1 400.9746 742.9717)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">60</text>
+				</g>
+				<g id="gate_61" class="gate" opacity="1">
+					<circle class="ind_gate" fill="#C92711" cx="408.505" cy="202.371" r="8.984"/>
+					<text transform="matrix(1 0 0 1 401.6187 206.9839)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">61</text>
+				</g>
+				<g id="gate_62" class="gate" opacity="0">
+					<circle class="log_gate" fill="#C92711" cx="390.815" cy="349.799" r="8.983"/>
+					<text transform="matrix(1 0 0 1 383.2134 354.417)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">62</text>
+				</g>
+				<g id="gate_63" class="gate" opacity="0">
+					<circle class="log_gate" fill="#C92711" cx="427.296" cy="202.371" r="8.984"/>
+					<text transform="matrix(1 0 0 1 419.8052 207.4458)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">63</text>
+				</g>
+				<g id="gate_64" class="gate" opacity="0">
+					<circle class="abs_gate" fill="#C92711" cx="389.686" cy="202.371" r="8.983"/>
+					<text transform="matrix(1 0 0 1 382.0269 207.2148)" fill="#FFFFFF" font-family="Arial" font-size="13.5358">64</text>
+				</g>
+			</g>
+
+		</g>
+		<g id="tooltip" visibility="hidden">
+		    <rect width="0" height="50" fill="white" stroke="black"/>
+		    <foreignObject width="0" height="40" x="5" y="5">
+		        <div xmlns="http://www.w3.org/1999/xhtml" id="tooltipText" style="font-size: 12px; font-family: sans-serif; fill: black; max-width: 300px; overflow: hidden;"></div>
+		    </foreignObject>
+		</g>
+
+
+
+	</g>
+</svg>

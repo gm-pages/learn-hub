@@ -40,7 +40,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
-        /* Hero starfield — 3 independent layers for visible twinkling */
+        /* Hero starfield - 3 independent layers for visible twinkling */
         .hero-stars-1, .hero-stars-2, .hero-stars-3 {
             position: absolute; inset: 0; pointer-events: none;
         }
@@ -98,7 +98,7 @@
             75% { filter: brightness(0.95); }
         }
         .icon-twinkle { animation: twinkle 8s ease-in-out infinite; }
-        /* Card reveal animation — CSS transition (works both directions) */
+        /* Card reveal animation - CSS transition (works both directions) */
         .card-reveal {
             opacity: 0;
             transform: translateY(30px);
@@ -108,7 +108,7 @@
             opacity: 1;
             transform: translateY(0);
         }
-        /* Stretched link — entire card clickable */
+        /* Stretched link - entire card clickable */
         .card-link { position: relative; cursor: pointer; }
         .card-link .card-link-target::after {
             content: '';
@@ -171,7 +171,7 @@
 
     <!-- ==================== HERO / PAGE HEADER ==================== -->
     <section class="relative overflow-hidden py-16 md:py-20 text-center" style="background: linear-gradient(135deg, #1e1240 0%, #3C2864 35%, #4a3070 55%, #3C2864 75%, #1a0e38 100%);">
-        <!-- Zodiac wheel — decorative SVG -->
+        <!-- Zodiac wheel - decorative SVG -->
         <div class="absolute inset-0 flex items-center justify-center pointer-events-none" aria-hidden="true">
             <svg class="w-[500px] h-[500px] md:w-[650px] md:h-[650px] opacity-[0.18]" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- Outer ring -->
@@ -209,7 +209,7 @@
                 <text x="112" y="45" fill="white" font-size="11" text-anchor="middle" opacity="0.9">♓</text>
             </svg>
         </div>
-        <!-- Stars layers — 3 independent layers for visible twinkling -->
+        <!-- Stars layers - 3 independent layers for visible twinkling -->
         <div class="hero-stars-1" aria-hidden="true"></div>
         <div class="hero-stars-2" aria-hidden="true"></div>
         <div class="hero-stars-3" aria-hidden="true"></div>
@@ -236,7 +236,7 @@
                 <span class="text-gm-purple">|</span> Foundations & Advanced Topics
             </h2>
             <p class="text-gray-500 text-sm md:text-base max-w-3xl mb-10">
-                Explore the mechanics of your design — from basic core body elements at right to the deepest layers of cognitive differentiation.
+                Explore the mechanics of your design - from basic core body elements at right to the deepest layers of cognitive differentiation.
             </p>
 
             <!-- Cards Grid -->
@@ -263,7 +263,7 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Profile</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Your Profile — your Personality is a combination of two numbers that create your Profile. It describes the costume you wear to fulfill your life's purpose and direction.
+                                Your Profile - your Personality is a combination of two numbers that create your Profile. It describes the costume you wear to fulfill your life's purpose and direction.
                             </p>
                         </div>
                     </div>
@@ -319,11 +319,11 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Circuits</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Channels group into three Circuit families — Individual, Collective, and Tribal — each with a distinct purpose. Understanding your dominant circuitry reveals how you share energy with others.
+                                Channels group into three Circuit families - Individual, Collective, and Tribal - each with a distinct purpose. Understanding your dominant circuitry reveals how you share energy with others.
                             </p>
                         </div>
                     </div>
-                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                    <a href="circuits/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
                 <!-- Definition Card -->
@@ -347,7 +347,7 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Variables & Arrows <span class="text-gm-pink text-xs font-bold">(NEW)</span></h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                The four arrows at the top of your Bodygraph reveal your Variables — the deepest layer of differentiation in Human Design, covering digestion, environment, perspective, and motivation.
+                                The four arrows at the top of your Bodygraph reveal your Variables - the deepest layer of differentiation in Human Design, covering digestion, environment, perspective, and motivation.
                             </p>
                         </div>
                     </div>
@@ -397,7 +397,7 @@
                 <span class="text-gm-purple">|</span> Understand How Charts Are Calculated
             </h2>
             <p class="text-gray-500 text-sm md:text-base max-w-4xl mb-10">
-                Genetic Matrix offers multiple calculation systems that each produces a valid chart — explore the differences and decide what resonates with you.
+                Genetic Matrix offers multiple calculation systems that each produces a valid chart - explore the differences and decide what resonates with you.
             </p>
 
             <!-- Cards Grid -->
@@ -424,9 +424,9 @@
                         <img src="assets/icon-j2k.svg" alt="J2000" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <span class="text-xs font-semibold tracking-widest text-gm-pink uppercase">Tropical</span>
-                            <h3 class="text-lg font-bold text-gray-800 mb-1">J2000 — Fixed Reference</h3>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">J2000 - Fixed Reference</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                The standard system used by Ra Uru Hu. Uses a fixed reference point — the position of stars and constellations on January 1, 2000, at Epoch J2000.0.
+                                The standard system used by Ra Uru Hu. Uses a fixed reference point - the position of stars and constellations on January 1, 2000, at Epoch J2000.0.
                             </p>
                         </div>
                     </div>
@@ -471,7 +471,7 @@
                             <span class="text-xs font-semibold tracking-widest text-[#d46ba3] uppercase">True Sidereal</span>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">True Sidereal Variants</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                True Sidereal systems position — Fagan-Bradley, Lahiri, and other variations. Explore the differences and determine which resonates.
+                                True Sidereal systems position - Fagan-Bradley, Lahiri, and other variations. Explore the differences and determine which resonates.
                             </p>
                         </div>
                     </div>
@@ -528,7 +528,7 @@
                         </circle>
                         <circle cx="210" cy="80" r="10" fill="#E8961D" opacity="0.65"/>
                         <circle cx="210" cy="80" r="6" fill="#FBBF24" opacity="0.85"/>
-                        <!-- Inner planet — Mercury -->
+                        <!-- Inner planet - Mercury -->
                         <g>
                             <animateMotion dur="12s" repeatCount="indefinite">
                                 <mpath href="#orbit-inner"/>
@@ -536,7 +536,7 @@
                             <circle r="5" fill="#9080B1" opacity="0.08"/>
                             <circle r="3.5" fill="#9080B1" opacity="0.7"/>
                         </g>
-                        <!-- Middle planet — Earth (green) -->
+                        <!-- Middle planet - Earth (green) -->
                         <g>
                             <animateMotion dur="22s" begin="-5s" repeatCount="indefinite">
                                 <mpath href="#orbit-mid"/>
@@ -544,7 +544,7 @@
                             <circle r="12" fill="#54931E" opacity="0.06"/>
                             <circle r="5.5" fill="#54931E" opacity="0.6"/>
                         </g>
-                        <!-- Outer planet — Saturn (with ring) -->
+                        <!-- Outer planet - Saturn (with ring) -->
                         <g>
                             <animateMotion dur="35s" repeatCount="indefinite">
                                 <mpath href="#orbit-outer"/>
@@ -577,7 +577,7 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Zodiac Signs</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                The 12 zodiac signs — plus the controversial 13th sign Ophiuchus. Explore each sign's element, modality, ruling planet, and core characteristics.
+                                The 12 zodiac signs - plus the controversial 13th sign Ophiuchus. Explore each sign's element, modality, ruling planet, and core characteristics.
                             </p>
                         </div>
                     </div>
@@ -591,7 +591,7 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Planets</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                From personal planets like the Sun and Moon to outer planets like Pluto — understand what each planetary body represents in your birth chart.
+                                From personal planets like the Sun and Moon to outer planets like Pluto - understand what each planetary body represents in your birth chart.
                             </p>
                         </div>
                     </div>
@@ -605,7 +605,7 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Houses & House Systems</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                The 12 houses represent areas of life. Explore 10 house systems supported by Genetic Matrix — from Placidus and Koch to Whole Sign and Equal.
+                                The 12 houses represent areas of life. Explore 10 house systems supported by Genetic Matrix - from Placidus and Koch to Whole Sign and Equal.
                             </p>
                         </div>
                     </div>
@@ -619,7 +619,7 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Aspects & Orbs</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Angular relationships between planets — conjunctions, trines, squares, and more. Includes Genetic Matrix's exclusive True Astrology aspect analysis.
+                                Angular relationships between planets - conjunctions, trines, squares, and more. Includes Genetic Matrix's exclusive True Astrology aspect analysis.
                             </p>
                         </div>
                     </div>
@@ -633,7 +633,7 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Asteroids & Planetoids</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Ceres, Pallas, Juno, Vesta, and beyond — asteroids add nuance and specificity to chart readings, tracked in both tropical and sidereal coordinates.
+                                Ceres, Pallas, Juno, Vesta, and beyond - asteroids add nuance and specificity to chart readings, tracked in both tropical and sidereal coordinates.
                             </p>
                         </div>
                     </div>
@@ -726,7 +726,7 @@
                 </h2>
                 <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-2xl mx-auto">
                     The largest celebrity Human Design database. Every chart calculated
-                    across multiple systems — filter by Type, Profile, Authority,
+                    across multiple systems - filter by Type, Profile, Authority,
                     Definition, Sun Sign, Moon Sign, and more.
                 </p>
 
