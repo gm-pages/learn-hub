@@ -1,0 +1,70 @@
+# Genetic Matrix Learn Hub
+
+> Genetic Matrix is a Human Design and Astrology platform providing free educational content on chart mechanics, types, profiles, centers, gates, channels, circuits, variables, calculation methods, and astrological tools. All content is designed for self-discovery, not doctrine.
+
+## Content Pages
+
+### Human Design Foundations
+
+- [Human Design Types](https://geneticmatrix.com/learn/types/): The five Types in Human Design, their Strategies, Authorities, and aura mechanics.
+- [Generator](https://geneticmatrix.com/learn/types/generator/): Generator Strategy, Sacral Authority, and the path to satisfaction.
+- [Manifesting Generator](https://geneticmatrix.com/learn/types/manifesting-generator/): Manifesting Generator speed, multi-passionate nature, and how response works for them.
+- [Manifestor](https://geneticmatrix.com/learn/types/manifestor/): Manifestor initiation, informing Strategy, and the path to peace.
+- [Projector](https://geneticmatrix.com/learn/types/projector/): Projector recognition, invitation Strategy, and the path to success.
+- [Reflector](https://geneticmatrix.com/learn/types/reflector/): Reflector lunar cycle Authority, openness, and the path to surprise.
+- [Profiles](https://geneticmatrix.com/learn/profiles/): The 12 Profiles in Human Design, their lines, and life themes.
+- [Profile 1/3](https://geneticmatrix.com/learn/profiles/profile-1-3/): The Investigator/Martyr profile.
+- [Profile 1/4](https://geneticmatrix.com/learn/profiles/profile-1-4/): The Investigator/Opportunist profile.
+- [Profile 2/4](https://geneticmatrix.com/learn/profiles/profile-2-4/): The Hermit/Opportunist profile.
+- [Profile 2/5](https://geneticmatrix.com/learn/profiles/profile-2-5/): The Hermit/Heretic profile.
+- [Profile 3/5](https://geneticmatrix.com/learn/profiles/profile-3-5/): The Martyr/Heretic profile.
+- [Profile 3/6](https://geneticmatrix.com/learn/profiles/profile-3-6/): The Martyr/Role Model profile.
+- [Profile 4/1](https://geneticmatrix.com/learn/profiles/profile-4-1/): The Opportunist/Investigator profile.
+- [Profile 4/6](https://geneticmatrix.com/learn/profiles/profile-4-6/): The Opportunist/Role Model profile.
+- [Profile 5/1](https://geneticmatrix.com/learn/profiles/profile-5-1/): The Heretic/Investigator profile.
+- [Profile 5/2](https://geneticmatrix.com/learn/profiles/profile-5-2/): The Heretic/Hermit profile.
+- [Profile 6/2](https://geneticmatrix.com/learn/profiles/profile-6-2/): The Role Model/Hermit profile.
+- [Profile 6/3](https://geneticmatrix.com/learn/profiles/profile-6-3/): The Role Model/Martyr profile.
+- [Centers](https://geneticmatrix.com/learn/centers/): The nine Centers in the Human Design bodygraph, defined, undefined, and open.
+- [Gates](https://geneticmatrix.com/learn/gates/): The 64 Gates in Human Design, their themes and hexagram connections.
+- [Channels](https://geneticmatrix.com/learn/channels/): The 36 Channels in Human Design connecting centers and creating definition.
+- [Circuits](https://geneticmatrix.com/learn/circuits/): The three Circuit Groups (Individual, Tribal, Collective) and their sub-circuits.
+- [Definition](https://geneticmatrix.com/learn/definition/): Single, Split, Triple Split, and Quadruple Split definition types.
+- [Incarnation Crosses](https://geneticmatrix.com/learn/incarnation-cross/): All 192 Incarnation Crosses organized by Quarter, with RAX, LAX, and JX types explained.
+- [Variables](https://geneticmatrix.com/learn/variables/): The four Variable arrows covering Digestion, Environment, Motivation, and Perspective.
+
+### Human Design Advanced
+
+- [Sleep Design](https://geneticmatrix.com/learn/sleep-design/): Sleep Design charts using the Moon, covering the Light Field, Earth Plane, and Demon Realm.
+- [Animal Design](https://geneticmatrix.com/learn/animals/): Animal Design charts using the 15-gate mammalian matrix for pets and animals.
+
+### Calculation Methods
+
+- [Tropical](https://geneticmatrix.com/learn/calculations/tropical/): The Tropical zodiac calculation method used in Western astrology and standard Human Design.
+- [Sidereal](https://geneticmatrix.com/learn/calculations/sidereal/): The Sidereal zodiac calculation based on fixed star positions.
+- [True Sidereal](https://geneticmatrix.com/learn/calculations/true-sidereal/): True Sidereal calculation using actual constellation boundaries.
+- [Draconic](https://geneticmatrix.com/learn/calculations/draconic/): The Draconic zodiac based on the Lunar Nodes.
+- [J2000](https://geneticmatrix.com/learn/calculations/j2000/): J2000 epoch-based calculation using the fixed reference frame of January 1, 2000.
+- [13-Sign Sidereal](https://geneticmatrix.com/learn/calculations/13-sign-sidereal/): 13-sign calculation including Ophiuchus as the thirteenth sign.
+
+### Astrology
+
+- [Zodiac Signs](https://geneticmatrix.com/learn/astrology/zodiac-signs/): The 12 signs of the zodiac, their elements, modalities, and planetary rulers.
+- [Planets](https://geneticmatrix.com/learn/astrology/planets/): All planets used in astrology from the Sun to Pluto, plus Chiron and Black Moon Lilith.
+- [Houses](https://geneticmatrix.com/learn/astrology/houses/): The 12 houses of the birth chart and the life areas they represent.
+- [Aspects](https://geneticmatrix.com/learn/astrology/aspects/): Major and minor aspects in astrology, their orbs and interpretive meanings.
+- [Asteroids](https://geneticmatrix.com/learn/astrology/asteroids/): Key asteroids used in astrological interpretation.
+- [Fixed Stars](https://geneticmatrix.com/learn/astrology/fixed-stars/): Fixed stars in astrology and their influence on natal charts.
+- [Chinese Astrology](https://geneticmatrix.com/learn/astrology/chinese-astrology/): Chinese astrological system including animals, elements, and compatibility.
+- [Ayanamsha](https://geneticmatrix.com/learn/astrology/ayanamsha/): Ayanamsha values and their role in sidereal astrology calculations.
+- [Astro Tarot](https://geneticmatrix.com/learn/astrology/astro-tarot/): The intersection of astrology and tarot, planetary and zodiac correspondences.
+- [Sabian Symbols](https://geneticmatrix.com/learn/astrology/sabian-symbols/): 360 symbolic images for every degree of the zodiac by Elsie Wheeler and Marc Edmund Jones.
+- [Charubel Degrees](https://geneticmatrix.com/learn/astrology/charubel-degrees/): 360 clairvoyant visions for each zodiac degree by Welsh mystic Charubel (John Thomas, 1826-1908).
+
+## About Genetic Matrix
+
+Genetic Matrix is the most comprehensive Human Design and Astrology software platform, offering free and premium chart tools for individuals, families, and businesses. Founded to make self-knowledge accessible, Genetic Matrix provides charts, reports, and educational resources across Human Design, Astrology, and related systems.
+
+- Website: https://geneticmatrix.com
+- Free Chart: https://geneticmatrix.com (click Free Chart)
+- Plans: https://geneticmatrix.com/plans-features/
