@@ -1,13 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
   <!-- Two centers with split definition (gap between) -->
-  <rect x="4" y="8" width="22" height="18" rx="4" fill="#6E5898" stroke="#6E5898" stroke-width="1.5"/>
-  <rect x="4" y="30" width="22" height="18" rx="4" fill="#6E5898" stroke="#6E5898" stroke-width="1.5"/>
-  <line x1="15" y1="26" x2="15" y2="30" stroke="white" stroke-width="2"/>
+  <rect x="4" y="8" width="22" height="18" rx="4" fill="none" stroke="#6E5898" stroke-width="1.5"/>
+  <rect x="4" y="30" width="22" height="18" rx="4" fill="none" stroke="#6E5898" stroke-width="1.5"/>
+  <line x1="15" y1="26" x2="15" y2="30" stroke="#6E5898" stroke-width="2"/>
   <!-- Second group (split) -->
-  <rect x="38" y="14" width="22" height="18" rx="4" fill="#6E5898" stroke="#6E5898" stroke-width="1.5"/>
-  <rect x="38" y="36" width="22" height="18" rx="4" fill="#6E5898" stroke="#6E5898" stroke-width="1.5"/>
-  <line x1="49" y1="32" x2="49" y2="36" stroke="white" stroke-width="2"/>
+  <rect x="38" y="14" width="22" height="18" rx="4" fill="none" stroke="#6E5898" stroke-width="1.5"/>
+  <rect x="38" y="36" width="22" height="18" rx="4" fill="none" stroke="#6E5898" stroke-width="1.5"/>
+  <line x1="49" y1="32" x2="49" y2="36" stroke="#6E5898" stroke-width="2"/>
   <!-- Split indicator -->
   <path d="M28 28 L36 28" stroke="#6E5898" stroke-width="1.5" stroke-dasharray="3 2" stroke-linecap="round"/>
-  <text x="32" y="62" text-anchor="middle" fill="#6E5898" font-size="8" font-family="Inter,sans-serif" font-weight="600">Split</text>
 </svg>
