@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Pentagon shape representing 5-person group mechanics -->
+  <polygon points="32,8 56,26 47,54 17,54 8,26" fill="#F4F0FC" stroke="#6E5898" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Five dots at vertices -->
+  <circle cx="32" cy="8" r="3" fill="#6E5898"/>
+  <circle cx="56" cy="26" r="3" fill="#6E5898"/>
+  <circle cx="47" cy="54" r="3" fill="#6E5898"/>
+  <circle cx="17" cy="54" r="3" fill="#6E5898"/>
+  <circle cx="8" cy="26" r="3" fill="#6E5898"/>
+  <!-- Center dot -->
+  <circle cx="32" cy="33" r="3" fill="#6E5898"/>
+</svg>

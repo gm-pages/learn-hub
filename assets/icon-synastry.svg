@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Two overlapping circles (Venn diagram) for synastry -->
+  <circle cx="24" cy="32" r="18" fill="#F4F0FC" stroke="#6E5898" stroke-width="2.5"/>
+  <circle cx="40" cy="32" r="18" fill="none" stroke="#6E5898" stroke-width="2.5"/>
+  <!-- Stars in each circle -->
+  <circle cx="16" cy="28" r="2.5" fill="#6E5898"/>
+  <circle cx="16" cy="36" r="2.5" fill="#6E5898"/>
+  <circle cx="48" cy="28" r="2.5" fill="#6E5898"/>
+  <circle cx="48" cy="36" r="2.5" fill="#6E5898"/>
+  <!-- Shared center -->
+  <circle cx="32" cy="32" r="3" fill="#6E5898"/>
+</svg>
