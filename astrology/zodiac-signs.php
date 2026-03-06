@@ -95,7 +95,7 @@
 </script>
  <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"Is the 13th sign real?","acceptedAnswer":{"@type":"Answer","text":"The constellation Ophiuchus is astronomically real, and the Sun does pass through it. Whether it should be included in the astrological zodiac depends on which system you use. Traditional astrology uses 12 equal signs. The 13-Sign system includes it. Genetic Matrix lets you explore both approaches."}},
+{"@type":"Question","name":"Is the 13th sign real?","acceptedAnswer":{"@type":"Answer","text":"The constellation Ophiuchus is astronomically real -- the Sun does pass through it. Whether it should be included in the astrological zodiac depends on which system you use. Traditional astrology uses 12 equal signs. The 13-Sign system includes it. Genetic Matrix lets you explore both approaches."}},
 {"@type":"Question","name":"What matters more, my Sun sign or Moon sign?","acceptedAnswer":{"@type":"Answer","text":"Both are essential. Your Sun sign describes your conscious identity and life direction. Your Moon sign describes your emotional nature and inner needs. Many people find their Moon sign more relatable because it reflects their private, feeling self rather than their public identity."}},
 {"@type":"Question","name":"Do my signs change if I switch from tropical to sidereal?","acceptedAnswer":{"@type":"Answer","text":"Yes. The sidereal zodiac is shifted roughly 24 degrees from the tropical zodiac, which typically moves your sign placements back by one sign. Genetic Matrix lets you view your chart in both systems to compare."}},
 {"@type":"Question","name":"What does it mean if I have no planets in a house?","acceptedAnswer":{"@type":"Answer","text":"It does not mean that area of life is empty or unimportant. It simply means no planet was in that section of the sky at your birth. The sign on the house cusp and its ruling planet still describe how that life area functions for you."}}
@@ -118,8 +118,6 @@
                     <img src="../assets/icon-talking-chart.svg" alt="Talking Charts" class="h-7 w-7">
                 </a>
                 <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Free Chart</a>
-                <!-- Learn -->
-                <a href="../index.html" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Learn</a>
                 <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Our Plans</a>
                 <a href="https://www.geneticmatrix.com/cart/" title="Cart">
                     <img src="../assets/icon-cart.svg" alt="Cart" class="h-8 w-auto">
@@ -159,15 +157,15 @@
      <div class="max-w-4xl mx-auto px-6">
          <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> What Are Zodiac Signs?</h2>
 
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The zodiac is a belt of sky extending roughly 8 degrees on either side of the ecliptic, the apparent path the Sun traces across the sky over the course of a year. This belt is divided into 12 segments of 30 degrees each, and each segment is named after a constellation. These are the zodiac signs.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The zodiac is a belt of sky extending roughly 8 degrees on either side of the ecliptic -- the apparent path the Sun traces across the sky over the course of a year. This belt is divided into 12 segments of 30 degrees each, and each segment is named after a constellation. These are the zodiac signs.</p>
 
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">In astrology, your Sun sign is determined by which segment of the zodiac the Sun occupied at the moment of your birth. But your full birth chart places all the planets, the Moon, and other significant points in the zodiac, giving you placements in multiple signs. You are not just your Sun sign. You are an entire chart.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">In astrology, your Sun sign is determined by which segment of the zodiac the Sun occupied at the moment of your birth. But your full birth chart places all the planets, the Moon, and other significant points in the zodiac, giving you placements in multiple signs. You are not just your Sun sign -- you are an entire chart.</p>
 
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Each sign has a <strong class="text-gray-800">ruling planet</strong>, an <strong class="text-gray-800">element</strong> (Fire, Earth, Air, Water), a <strong class="text-gray-800">modality</strong> (Cardinal, Fixed, Mutable), and a <strong class="text-gray-800">polarity</strong> (Yin or Yang). These qualities shape how the sign expresses its energy.</p>
 
          <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
              <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Key Insight</p>
-             <p class="text-gm-text text-sm leading-relaxed italic">You are not just your Sun sign. You are an entire chart. Your full birth chart places all the planets, the Moon, and other significant points across the zodiac, giving you placements in multiple signs that together paint a complete picture of who you are.</p>
+             <p class="text-gm-text text-sm leading-relaxed italic">You are not just your Sun sign -- you are an entire chart. Your full birth chart places all the planets, the Moon, and other significant points across the zodiac, giving you placements in multiple signs that together paint a complete picture of who you are.</p>
          </div>
      </div>
  </section>
@@ -232,7 +230,7 @@
              Taurus (April 20 - May 20)
          </h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Earth | <strong class="text-gray-800">Modality:</strong> Fixed | <strong class="text-gray-800">Ruler:</strong> Venus</p>
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Taurus is the sign of stability, sensuality, and material comfort. Taurus energy is patient, reliable, and deeply connected to the physical world: food, touch, nature, money, beauty. It values security above almost everything and can be extraordinarily persistent. At its most challenging, Taurus becomes stubborn, possessive, and resistant to change. Taurus rules the throat and neck.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Taurus is the sign of stability, sensuality, and material comfort. Taurus energy is patient, reliable, and deeply connected to the physical world -- food, touch, nature, money, beauty. It values security above almost everything and can be extraordinarily persistent. At its most challenging, Taurus becomes stubborn, possessive, and resistant to change. Taurus rules the throat and neck.</p>
 
          <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-3">
              <svg class="w-7 h-7 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="#6E5898" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -352,7 +350,7 @@
              Pisces (February 19 - March 20)
          </h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Water | <strong class="text-gray-800">Modality:</strong> Mutable | <strong class="text-gray-800">Rulers:</strong> Jupiter (traditional), Neptune (modern)</p>
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Pisces is the last sign of the zodiac, carrying the energy of dissolution, compassion, and spiritual transcendence. Pisces energy is empathic, imaginative, and deeply connected to the unseen realms: dreams, intuition, art, and the collective unconscious. At its most challenging, Pisces can be escapist, boundary-less, and prone to victimhood or martyrdom. Pisces rules the feet and the lymphatic system.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Pisces is the last sign of the zodiac, carrying the energy of dissolution, compassion, and spiritual transcendence. Pisces energy is empathic, imaginative, and deeply connected to the unseen realms -- dreams, intuition, art, and the collective unconscious. At its most challenging, Pisces can be escapist, boundary-less, and prone to victimhood or martyrdom. Pisces rules the feet and the lymphatic system.</p>
      </div>
  </section>
 
@@ -367,7 +365,7 @@
 
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Traditional astrology has always known about Ophiuchus and deliberately chose 12 equal signs for mathematical and symbolic reasons. However, some modern astrologers and the 13-Sign sidereal system do incorporate Ophiuchus, giving it roughly 18 days of the year and adjusting the other signs accordingly.</p>
 
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Ophiuchus is associated with <strong class="text-gray-800">healing, serpent wisdom, forbidden knowledge, and the archetype of the healer-shaman</strong>. The constellation depicts a figure holding a serpent, the mythological Asclepius, the Greek god of medicine.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Ophiuchus is associated with <strong class="text-gray-800">healing, serpent wisdom, forbidden knowledge, and the archetype of the healer-shaman</strong>. The constellation depicts a figure holding a serpent -- the mythological Asclepius, the Greek god of medicine.</p>
 
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Genetic Matrix supports 13-Sign calculations for both astrology and Human Design charts, allowing users to explore how incorporating Ophiuchus changes their chart. This is available as one of the calculation system options.</p>
 
@@ -412,19 +410,19 @@
 
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Here are some key combinations that illustrate the principle:</p>
 
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Sun in the 1st House:</strong> Strong sense of identity, natural confidence, tendency to lead. The self is the primary focus.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Sun in the 1st House</strong> -- Strong sense of identity, natural confidence, tendency to lead. The self is the primary focus.</p>
 
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Moon in the 4th House:</strong> Deep connection to home and family, emotional roots run deep, need for domestic security.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Moon in the 4th House</strong> -- Deep connection to home and family, emotional roots run deep, need for domestic security.</p>
 
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Venus in the 7th House:</strong> Natural ease in partnerships, attractiveness to others, love of harmony in relationships.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Venus in the 7th House</strong> -- Natural ease in partnerships, attractiveness to others, love of harmony in relationships.</p>
 
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Mars in the 10th House:</strong> Ambitious drive in career, competitive in the professional sphere, desire for public achievement.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Mars in the 10th House</strong> -- Ambitious drive in career, competitive in the professional sphere, desire for public achievement.</p>
 
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Saturn in the 12th House:</strong> Hidden fears and responsibilities, spiritual discipline through solitude, karmic work done behind the scenes.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Saturn in the 12th House</strong> -- Hidden fears and responsibilities, spiritual discipline through solitude, karmic work done behind the scenes.</p>
 
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Jupiter in the 2nd House:</strong> Ease with money and resources, generous with possessions, tendency toward financial growth.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Jupiter in the 2nd House</strong> -- Ease with money and resources, generous with possessions, tendency toward financial growth.</p>
 
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The full picture of any house comes from combining its sign, its ruling planet, and any planets placed within it. A house with no planets is not empty or inactive. Its sign and ruler still describe how that life area operates for you.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The full picture of any house comes from combining its sign, its ruling planet, and any planets placed within it. A house with no planets is not empty or inactive -- its sign and ruler still describe how that life area operates for you.</p>
      </div>
  </section>
 
@@ -435,7 +433,7 @@
          <div class="space-y-3">
              <details class="bg-white rounded-lg border border-gm-border">
                  <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Is the 13th sign real?</summary>
-                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">The constellation Ophiuchus is astronomically real, and the Sun does pass through it. Whether it should be included in the astrological zodiac depends on which system you use. Traditional astrology uses 12 equal signs. The 13-Sign system includes it. Genetic Matrix lets you explore both approaches.</div>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">The constellation Ophiuchus is astronomically real -- the Sun does pass through it. Whether it should be included in the astrological zodiac depends on which system you use. Traditional astrology uses 12 equal signs. The 13-Sign system includes it. Genetic Matrix lets you explore both approaches.</div>
              </details>
              <details class="bg-white rounded-lg border border-gm-border">
                  <summary class="py-4 px-6 text-sm font-semibold text-gray-800">What matters more, my Sun sign or Moon sign?</summary>
@@ -486,7 +484,7 @@
  <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
      <div class="max-w-2xl mx-auto px-6">
          <h2 class="text-2xl md:text-3xl font-bold mb-4">Explore Your Chart</h2>
-         <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">See your full astrology chart with all the tools discussed on this page - planets, signs, houses, aspects, and more.</p>
+         <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">See your full astrology chart with all the tools discussed on this page: planets, signs, houses, aspects, and more.</p>
          <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">Try free with Starter plan &rarr;</a>
      </div>
  </section>
