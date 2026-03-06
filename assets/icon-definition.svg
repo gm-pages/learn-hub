@@ -1,12 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
   <!-- Two centers with split definition (gap between) -->
-  <rect x="4" y="8" width="22" height="18" rx="4" fill="none" stroke="#6E5898" stroke-width="1.5"/>
-  <rect x="4" y="30" width="22" height="18" rx="4" fill="none" stroke="#6E5898" stroke-width="1.5"/>
-  <line x1="15" y1="26" x2="15" y2="30" stroke="#6E5898" stroke-width="2"/>
+  <rect x="4" y="8" width="22" height="18" rx="4" fill="#F4F0FC" stroke="#6E5898" stroke-width="2.5"/>
+  <rect x="4" y="30" width="22" height="18" rx="4" fill="#F4F0FC" stroke="#6E5898" stroke-width="2.5"/>
+  <line x1="15" y1="26" x2="15" y2="30" stroke="#6E5898" stroke-width="2.5"/>
+  <circle cx="15" cy="17" r="3" fill="#6E5898"/>
+  <circle cx="15" cy="39" r="3" fill="#6E5898"/>
   <!-- Second group (split) -->
-  <rect x="38" y="14" width="22" height="18" rx="4" fill="none" stroke="#6E5898" stroke-width="1.5"/>
-  <rect x="38" y="36" width="22" height="18" rx="4" fill="none" stroke="#6E5898" stroke-width="1.5"/>
-  <line x1="49" y1="32" x2="49" y2="36" stroke="#6E5898" stroke-width="2"/>
+  <rect x="38" y="14" width="22" height="18" rx="4" fill="#F4F0FC" stroke="#6E5898" stroke-width="2.5"/>
+  <rect x="38" y="36" width="22" height="18" rx="4" fill="#F4F0FC" stroke="#6E5898" stroke-width="2.5"/>
+  <line x1="49" y1="32" x2="49" y2="36" stroke="#6E5898" stroke-width="2.5"/>
+  <circle cx="49" cy="23" r="3" fill="#6E5898"/>
+  <circle cx="49" cy="45" r="3" fill="#6E5898"/>
   <!-- Split indicator -->
-  <path d="M28 28 L36 28" stroke="#6E5898" stroke-width="1.5" stroke-dasharray="3 2" stroke-linecap="round"/>
+  <path d="M28 28 L36 28" stroke="#6E5898" stroke-width="2" stroke-dasharray="3 2" stroke-linecap="round"/>
 </svg>
