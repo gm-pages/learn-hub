@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Outer circle representing the zodiac wheel -->
+  <circle cx="32" cy="32" r="28" fill="#F4F0FC" stroke="#6E5898" stroke-width="2.5"/>
+  <!-- Inner circle -->
+  <circle cx="32" cy="32" r="18" fill="none" stroke="#6E5898" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <!-- Degree tick marks around the outer circle -->
+  <line x1="32" y1="6" x2="32" y2="10" stroke="#6E5898" stroke-width="2" stroke-linecap="round"/>
+  <line x1="32" y1="54" x2="32" y2="58" stroke="#6E5898" stroke-width="2" stroke-linecap="round"/>
+  <line x1="6" y1="32" x2="10" y2="32" stroke="#6E5898" stroke-width="2" stroke-linecap="round"/>
+  <line x1="54" y1="32" x2="58" y2="32" stroke="#6E5898" stroke-width="2" stroke-linecap="round"/>
+  <!-- Diagonal ticks -->
+  <line x1="11.5" y1="11.5" x2="14.3" y2="14.3" stroke="#6E5898" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="49.7" y1="49.7" x2="52.5" y2="52.5" stroke="#6E5898" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="52.5" y1="11.5" x2="49.7" y2="14.3" stroke="#6E5898" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="14.3" y1="49.7" x2="11.5" y2="52.5" stroke="#6E5898" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Degree symbol -->
+  <circle cx="42" cy="22" r="3" fill="none" stroke="#6E5898" stroke-width="2"/>
+  <!-- Star/point at center -->
+  <circle cx="32" cy="32" r="3" fill="#6E5898"/>
+</svg>
