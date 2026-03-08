@@ -417,39 +417,18 @@
     <section class="py-10 md:py-14 bg-white">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
-                <span class="text-gm-purple">|</span> &#128279; {{CROSS_LINKS_HEADING}}
+                <span class="text-gm-purple">|</span> Other Learn Topics
             </h2>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <!-- Cross-link card with emoji icon -->
-                <a href="#" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
-                    <span class="text-lg flex-shrink-0 w-8 h-8 bg-gm-card-active rounded-full flex items-center justify-center">&#9670;</span>
+                <!-- Cross-link card — use the actual topic icon (icon-type.svg, icon-penta.svg, etc.) -->
+                <a href="../{{TOPIC}}/index.html" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
+                    <img src="../assets/icon-{{TOPIC}}.svg" alt="{{LINK_TITLE}}" class="w-8 h-8 flex-shrink-0">
                     <div>
                         <h3 class="text-sm font-bold text-gray-800">{{LINK_TITLE}}</h3>
                         <p class="text-gray-400 text-xs">{{LINK_SUBTITLE}}</p>
                     </div>
                 </a>
-                <a href="#" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
-                    <span class="text-lg flex-shrink-0 w-8 h-8 bg-gm-card-active rounded-full flex items-center justify-center">&#9670;</span>
-                    <div>
-                        <h3 class="text-sm font-bold text-gray-800">{{LINK_TITLE}}</h3>
-                        <p class="text-gray-400 text-xs">{{LINK_SUBTITLE}}</p>
-                    </div>
-                </a>
-                <a href="#" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
-                    <span class="text-lg flex-shrink-0 w-8 h-8 bg-gm-card-active rounded-full flex items-center justify-center">&#9733;</span>
-                    <div>
-                        <h3 class="text-sm font-bold text-gray-800">{{LINK_TITLE}}</h3>
-                        <p class="text-gray-400 text-xs">{{LINK_SUBTITLE}}</p>
-                    </div>
-                </a>
-                <a href="#" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
-                    <span class="text-lg flex-shrink-0 w-8 h-8 bg-gm-card-active rounded-full flex items-center justify-center">&#9790;</span>
-                    <div>
-                        <h3 class="text-sm font-bold text-gray-800">{{LINK_TITLE}}</h3>
-                        <p class="text-gray-400 text-xs">{{LINK_SUBTITLE}}</p>
-                    </div>
-                </a>
-                <!-- Repeat as needed -->
+                <!-- Repeat as needed (4-6 links recommended) -->
             </div>
         </div>
     </section>

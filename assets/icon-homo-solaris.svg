@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Inner circle - the Solar core -->
+  <circle cx="32" cy="32" r="12" fill="#F4F0FC" stroke="#6E5898" stroke-width="2.5"/>
+  <!-- Radiating lines - solar rays -->
+  <line x1="32" y1="6" x2="32" y2="16" stroke="#6E5898" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="32" y1="48" x2="32" y2="58" stroke="#6E5898" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="6" y1="32" x2="16" y2="32" stroke="#6E5898" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="48" y1="32" x2="58" y2="32" stroke="#6E5898" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Diagonal rays -->
+  <line x1="13.6" y1="13.6" x2="20.7" y2="20.7" stroke="#6E5898" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="43.3" y1="43.3" x2="50.4" y2="50.4" stroke="#6E5898" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="50.4" y1="13.6" x2="43.3" y2="20.7" stroke="#6E5898" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="13.6" y1="50.4" x2="20.7" y2="43.3" stroke="#6E5898" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Center dot -->
+  <circle cx="32" cy="32" r="4" fill="#6E5898"/>
+</svg>

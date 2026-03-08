@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Single circle -->
+  <circle cx="32" cy="32" r="26" fill="#F4F0FC" stroke="#6E5898" stroke-width="2.5"/>
+  <!-- Vertical dividing line -->
+  <line x1="32" y1="10" x2="32" y2="54" stroke="#6E5898" stroke-width="2"/>
+  <!-- Two dots left side -->
+  <circle cx="21" cy="25" r="5" fill="#6E5898"/>
+  <circle cx="21" cy="39" r="5" fill="#6E5898"/>
+  <!-- Two dots right side -->
+  <circle cx="43" cy="25" r="5" fill="#6E5898"/>
+  <circle cx="43" cy="39" r="5" fill="#6E5898"/>
+</svg>

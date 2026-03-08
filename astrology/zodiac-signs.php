@@ -454,7 +454,7 @@
  <!-- ==================== CONTINUE LEARNING ==================== -->
  <section class="py-10 md:py-14 bg-white">
      <div class="max-w-4xl mx-auto px-6">
-         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Continue Learning</h2>
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Other Learn Topics</h2>
          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
              <a href="planets.html" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
                  <h3 class="text-sm font-bold text-gm-purple mb-1">Planets &rarr;</h3>

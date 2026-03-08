@@ -200,7 +200,7 @@
                 <span class="text-gm-purple">|</span> What Is a Profile?
             </h2>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
-                In Human Design, your Profile is a combination of two numbers - like 1/3 or 5/2 - derived from the <strong>line positions of your conscious and unconscious Sun &amp; Earth</strong>. The first number comes from the line of your Personality Sun/Earth (shown in black on the bodygraph). The second comes from the line of your Design Sun/Earth (shown in red). Together, these two lines create your Profile.
+                In Human Design, your Profile is a combination of two numbers - like 1/3 or 5/2 - derived from the <strong>line positions of your conscious and unconscious Sun &amp; Earth</strong>. The first number comes from the line of your Personality Sun/Earth (shown in black on the Bodygraph). The second comes from the line of your Design Sun/Earth (shown in red). Together, these two lines create your Profile.
             </p>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
                 The six lines come from the <strong>I Ching hexagram</strong> - a stack of six horizontal lines that has been used for millennia to describe the patterns of change in human experience. Each line carries a specific archetype, and the combination of your two lines creates a unique role that shapes how you move through life.
@@ -563,10 +563,10 @@
                 <span class="text-gm-purple">|</span> Conscious and Unconscious
             </h2>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
-                The first number in your Profile is your <strong>conscious line</strong> - the part of your personality you are most aware of and identify with. This comes from your Personality Sun &amp; Earth, the black column on your bodygraph. You can usually recognize this line in yourself easily.
+                The first number in your Profile is your <strong>conscious line</strong> - the part of your personality you are most aware of and identify with. This comes from your Personality Sun &amp; Earth, the black column on your Bodygraph. You can usually recognize this line in yourself easily.
             </p>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
-                The second number is your <strong>unconscious line</strong> - operating below your awareness, often more visible to others than to yourself. This comes from your Design Sun &amp; Earth, the red column on your bodygraph. Others may see this line in you before you see it yourself.
+                The second number is your <strong>unconscious line</strong> - operating below your awareness, often more visible to others than to yourself. This comes from your Design Sun &amp; Earth, the red column on your Bodygraph. Others may see this line in you before you see it yourself.
             </p>
             <p class="text-gm-text text-sm md:text-base leading-relaxed">
                 The dynamic between these two lines creates the interplay that defines your Profile. They are not separate - they work together, sometimes in harmony and sometimes in creative tension. Understanding both lines, and how they interact, is essential to living your Profile correctly.
@@ -662,7 +662,7 @@
     <section class="py-10 md:py-14 bg-white">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
-                <span class="text-gm-purple">|</span> Continue Learning
+                <span class="text-gm-purple">|</span> Other Learn Topics
             </h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <a href="#" class="bg-gm-light rounded-lg border border-gm-border p-5 hover:shadow-md transition">

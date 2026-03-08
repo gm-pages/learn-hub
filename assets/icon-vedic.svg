@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="6 6 80 80">
+  <!-- Outer circle with 27 Nakshatra dots -->
+  <circle cx="46" cy="46" r="34" fill="none" stroke="#6d5797" stroke-width="2"/>
+  <!-- Inner diamond (North Indian chart style) -->
+  <rect x="26" y="26" width="40" height="40" rx="2" fill="none" stroke="#6d5797" stroke-width="2" transform="rotate(45 46 46)"/>
+  <!-- Center circle (Sun/Moon) -->
+  <circle cx="46" cy="46" r="8" fill="none" stroke="#6d5797" stroke-width="2"/>
+  <!-- Crescent moon inside -->
+  <path d="M43,42 A6,6 0 1,1 43,50 A4.5,4.5 0 1,0 43,42" fill="#6d5797"/>
+  <!-- Small star dot above -->
+  <circle cx="46" cy="35" r="2" fill="#6d5797"/>
+  <!-- 12 house markers around diamond -->
+  <circle cx="46" cy="12" r="1.8" fill="#6d5797"/>
+  <circle cx="63" cy="17" r="1.8" fill="#6d5797"/>
+  <circle cx="75" cy="29" r="1.8" fill="#6d5797"/>
+  <circle cx="80" cy="46" r="1.8" fill="#6d5797"/>
+  <circle cx="75" cy="63" r="1.8" fill="#6d5797"/>
+  <circle cx="63" cy="75" r="1.8" fill="#6d5797"/>
+  <circle cx="46" cy="80" r="1.8" fill="#6d5797"/>
+  <circle cx="29" cy="75" r="1.8" fill="#6d5797"/>
+  <circle cx="17" cy="63" r="1.8" fill="#6d5797"/>
+  <circle cx="12" cy="46" r="1.8" fill="#6d5797"/>
+  <circle cx="17" cy="29" r="1.8" fill="#6d5797"/>
+  <circle cx="29" cy="17" r="1.8" fill="#6d5797"/>
+</svg>
