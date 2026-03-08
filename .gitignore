@@ -17,6 +17,9 @@ Desktop.ini
 *.psd
 *.ai
 
+# But allow chart bodygraph images
+!types/images/*.png
+
 # Python
 __pycache__/
 *.pyc
