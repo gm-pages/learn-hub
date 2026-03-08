@@ -185,7 +185,7 @@ def parse_source(filename):
     # Remove CTA
     sections_area = re.sub(r'<section class="cta-section">.*?</section>', '', sections_area, flags=re.DOTALL)
     # Remove related/continue learning
-    sections_area = re.sub(r'<div class="section">\s*<h2>Continue Learning</h2>.*', '', sections_area, flags=re.DOTALL)
+    sections_area = re.sub(r'<div class="section">\s*<h2>Other Learn Topics</h2>.*', '', sections_area, flags=re.DOTALL)
     # Remove footer
     sections_area = re.sub(r'<footer>.*', '', sections_area, flags=re.DOTALL)
 
@@ -240,7 +240,7 @@ def parse_source(filename):
         data['cta_desc'] = ''
 
     # --- RELATED LINKS ---
-    related_match = re.search(r'<h2>Continue Learning</h2>\s*<div class="related-grid">(.*?)</div>\s*</div>', body, re.DOTALL)
+    related_match = re.search(r'<h2>Other Learn Topics</h2>\s*<div class="related-grid">(.*?)</div>\s*</div>', body, re.DOTALL)
     related_links = []
     if related_match:
         links = re.findall(r'<a href="([^"]*)" class="related-card">\s*<div class="rc-title">(.*?)</div>\s*<div class="rc-desc">(.*?)</div>\s*</a>', related_match.group(1), re.DOTALL)
@@ -503,7 +503,7 @@ def generate_page(data, filename):
     <section class="py-10 md:py-14 {related_bg}">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
-                <span class="text-gm-purple">|</span> Continue Learning
+                <span class="text-gm-purple">|</span> Other Learn Topics
             </h2>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
 {related_html}            </div>

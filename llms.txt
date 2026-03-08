@@ -25,7 +25,7 @@
 - [Profile 5/2](https://geneticmatrix.com/learn/profiles/profile-5-2/): The Heretic/Hermit profile.
 - [Profile 6/2](https://geneticmatrix.com/learn/profiles/profile-6-2/): The Role Model/Hermit profile.
 - [Profile 6/3](https://geneticmatrix.com/learn/profiles/profile-6-3/): The Role Model/Martyr profile.
-- [Centers](https://geneticmatrix.com/learn/centers/): The nine Centers in the Human Design bodygraph, defined, undefined, and open.
+- [Centers](https://geneticmatrix.com/learn/centers/): The nine Centers in the Human Design Bodygraph, defined, undefined, and open.
 - [Gates](https://geneticmatrix.com/learn/gates/): The 64 Gates in Human Design, their themes and hexagram connections.
 - [Channels](https://geneticmatrix.com/learn/channels/): The 36 Channels in Human Design connecting centers and creating definition.
 - [Circuits](https://geneticmatrix.com/learn/circuits/): The three Circuit Groups (Individual, Tribal, Collective) and their sub-circuits.
