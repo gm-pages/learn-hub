@@ -187,7 +187,7 @@
                     <span class="text-gm-purple">|</span> Tools, not doctrine.
                 </h2>
                 <p class="text-gm-text text-sm md:text-base leading-relaxed">
-                    The Human Design System was transmitted through Ra Uru Hu beginning in 1987. Genetic Matrix provides these tools for your own exploration and experiment. Your Profile works within your Type and Authority - it does not override them.
+                    The Human Design system first emerged at the beginning of 1987. Genetic Matrix provides these tools for your own exploration and experiment. Your Profile works within your Type and Authority - it does not override them.
                 </p>
             </div>
         </div>
