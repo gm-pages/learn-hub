@@ -223,7 +223,7 @@
                 <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
                     <div class="text-4xl font-bold text-gm-purple mb-1">1</div>
                     <h3 class="text-lg font-bold text-gray-800 mb-1">The Investigator</h3>
-                    <p class="text-xs font-semibold text-gm-text-light uppercase tracking-wide mb-3">Lower Trigram &middot; Personal</p>
+                    <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Lower Trigram &middot; Personal</p>
                     <p class="text-gm-text text-sm leading-relaxed">
                         Driven by a deep need for knowledge and security. The Investigator must understand the foundation before they can feel comfortable. Thorough, curious, and research-oriented - they dig until they find solid ground.
                     </p>
@@ -233,7 +233,7 @@
                 <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
                     <div class="text-4xl font-bold text-gm-purple mb-1">2</div>
                     <h3 class="text-lg font-bold text-gray-800 mb-1">The Hermit</h3>
-                    <p class="text-xs font-semibold text-gm-text-light uppercase tracking-wide mb-3">Lower Trigram &middot; Personal</p>
+                    <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Lower Trigram &middot; Personal</p>
                     <p class="text-gm-text text-sm leading-relaxed">
                         Carries natural, innate gifts that may not be consciously recognized. The Hermit needs solitude to develop and integrate, yet depends on others to call out their talents. The introverted extrovert - gifted in ways they may not see.
                     </p>
@@ -243,7 +243,7 @@
                 <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
                     <div class="text-4xl font-bold text-gm-purple mb-1">3</div>
                     <h3 class="text-lg font-bold text-gray-800 mb-1">The Martyr</h3>
-                    <p class="text-xs font-semibold text-gm-text-light uppercase tracking-wide mb-3">Lower Trigram &middot; Personal</p>
+                    <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Lower Trigram &middot; Personal</p>
                     <p class="text-gm-text text-sm leading-relaxed">
                         Learns exclusively through trial and error. The Martyr must experience everything directly - reading about it is not enough. Bonds made and broken, experiments run and failed. Deeply resilient, forged by experience.
                     </p>
@@ -253,7 +253,7 @@
                 <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
                     <div class="text-4xl font-bold text-gm-purple mb-1">4</div>
                     <h3 class="text-lg font-bold text-gray-800 mb-1">The Opportunist</h3>
-                    <p class="text-xs font-semibold text-gm-text-light uppercase tracking-wide mb-3">Upper Trigram &middot; Transpersonal</p>
+                    <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Upper Trigram &middot; Transpersonal</p>
                     <p class="text-gm-text text-sm leading-relaxed">
                         Finds opportunity through community and relationships. The Opportunist's network is their foundation - opportunities come through people they know, not through strangers. Influential, relational, and trust-dependent.
                     </p>
@@ -263,7 +263,7 @@
                 <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
                     <div class="text-4xl font-bold text-gm-purple mb-1">5</div>
                     <h3 class="text-lg font-bold text-gray-800 mb-1">The Heretic</h3>
-                    <p class="text-xs font-semibold text-gm-text-light uppercase tracking-wide mb-3">Upper Trigram &middot; Transpersonal</p>
+                    <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Upper Trigram &middot; Transpersonal</p>
                     <p class="text-gm-text text-sm leading-relaxed">
                         Carries a powerful projection field - others see practical solutions and project their needs onto the 5th line. The Heretic is either savior or scapegoat, depending on whether the projection is met. Universalizing and impactful.
                     </p>
@@ -273,7 +273,7 @@
                 <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
                     <div class="text-4xl font-bold text-gm-purple mb-1">6</div>
                     <h3 class="text-lg font-bold text-gray-800 mb-1">The Role Model</h3>
-                    <p class="text-xs font-semibold text-gm-text-light uppercase tracking-wide mb-3">Upper Trigram &middot; Transpersonal</p>
+                    <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Upper Trigram &middot; Transpersonal</p>
                     <p class="text-gm-text text-sm leading-relaxed">
                         Lives through three distinct phases: experimentation (~0&ndash;30), observation from the roof (~30&ndash;50), and stepping into wisdom (~50+). The Role Model becomes a living example - their authority comes from lived experience, not theory.
                     </p>
@@ -298,14 +298,14 @@
                 <a href="profile-1-3.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">1/3</span>
-                        <span class="text-xs text-gm-text-light">H.G. Wells, Reflector</span>
+                        <span class="text-xs text-gray-500">H.G. Wells, Reflector</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Investigator / Martyr</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
                         Deep researcher who tests everything through direct experience. Builds foundations of knowledge, then verifies through trial and error.
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-xs text-gm-text-light">Line 1 Conscious &middot; Line 3 Unconscious</span>
+                        <span class="text-xs text-gray-500">Line 1 Conscious &middot; Line 3 Unconscious</span>
                         <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
                     </div>
                 </a>
@@ -314,14 +314,14 @@
                 <a href="profile-1-4.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">1/4</span>
-                        <span class="text-xs text-gm-text-light">Jerry Seinfeld, Emotional Manifestor</span>
+                        <span class="text-xs text-gray-500">Jerry Seinfeld, Emotional Manifestor</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Investigator / Opportunist</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
                         Deep researcher who shares discoveries through their network. Builds solid foundations and influences their community.
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-xs text-gm-text-light">Line 1 Conscious &middot; Line 4 Unconscious</span>
+                        <span class="text-xs text-gray-500">Line 1 Conscious &middot; Line 4 Unconscious</span>
                         <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
                     </div>
                 </a>
@@ -330,14 +330,14 @@
                 <a href="profile-2-4.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">2/4</span>
-                        <span class="text-xs text-gm-text-light">Henry Cavill, Pure MG</span>
+                        <span class="text-xs text-gray-500">Henry Cavill, Pure MG</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Hermit / Opportunist</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
                         Naturally gifted introvert who thrives through their network. Innate talents need others to call them out.
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-xs text-gm-text-light">Line 2 Conscious &middot; Line 4 Unconscious</span>
+                        <span class="text-xs text-gray-500">Line 2 Conscious &middot; Line 4 Unconscious</span>
                         <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
                     </div>
                 </a>
@@ -346,14 +346,14 @@
                 <a href="profile-2-5.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">2/5</span>
-                        <span class="text-xs text-gm-text-light">Rostropovich, Pure Generator</span>
+                        <span class="text-xs text-gray-500">Rostropovich, Pure Generator</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Hermit / Heretic</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
                         Naturally gifted recluse with a projected reputation. Called out of hermit state to deliver practical solutions.
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-xs text-gm-text-light">Line 2 Conscious &middot; Line 5 Unconscious</span>
+                        <span class="text-xs text-gray-500">Line 2 Conscious &middot; Line 5 Unconscious</span>
                         <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
                     </div>
                 </a>
@@ -362,14 +362,14 @@
                 <a href="profile-3-5.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">3/5</span>
-                        <span class="text-xs text-gm-text-light">Ju Wenjun, Reflector</span>
+                        <span class="text-xs text-gray-500">Ju Wenjun, Reflector</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Martyr / Heretic</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
                         Experiential learner with universalizing impact. Discovers through trial and error, then delivers transformative solutions.
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-xs text-gm-text-light">Line 3 Conscious &middot; Line 5 Unconscious</span>
+                        <span class="text-xs text-gray-500">Line 3 Conscious &middot; Line 5 Unconscious</span>
                         <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
                     </div>
                 </a>
@@ -378,14 +378,14 @@
                 <a href="profile-3-6.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">3/6</span>
-                        <span class="text-xs text-gm-text-light">Wolfgang Pauli, Heart Manifestor</span>
+                        <span class="text-xs text-gray-500">Wolfgang Pauli, Heart Manifestor</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Martyr / Role Model</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
                         Experiential learner who becomes a wise example. Lives through chaos, observation, then emerges as an authentic role model.
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-xs text-gm-text-light">Line 3 Conscious &middot; Line 6 Unconscious</span>
+                        <span class="text-xs text-gray-500">Line 3 Conscious &middot; Line 6 Unconscious</span>
                         <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
                     </div>
                 </a>
@@ -394,14 +394,14 @@
                 <a href="profile-4-6.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">4/6</span>
-                        <span class="text-xs text-gm-text-light">Alan Turing, Pure Generator</span>
+                        <span class="text-xs text-gray-500">Alan Turing, Pure Generator</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Opportunist / Role Model</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
                         Networker who becomes a wise example. Influences through relationships and matures into a trusted guide.
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-xs text-gm-text-light">Line 4 Conscious &middot; Line 6 Unconscious</span>
+                        <span class="text-xs text-gray-500">Line 4 Conscious &middot; Line 6 Unconscious</span>
                         <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
                     </div>
                 </a>
@@ -413,14 +413,14 @@
                             <span class="text-3xl font-bold text-gm-purple">4/1</span>
                             <span class="inline-block bg-gm-pink/10 text-gm-pink text-[10px] font-bold px-2.5 py-0.5 rounded-full">Fixed Fate</span>
                         </div>
-                        <span class="text-xs text-gm-text-light">Buzz Aldrin, Splenic Manifestor</span>
+                        <span class="text-xs text-gray-500">Buzz Aldrin, Splenic Manifestor</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Opportunist / Investigator</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
                         Networker with deep foundational knowledge. Fixed Fate profile - once they find their direction, nearly immovable.
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-xs text-gm-text-light">Line 4 Conscious &middot; Line 1 Unconscious</span>
+                        <span class="text-xs text-gray-500">Line 4 Conscious &middot; Line 1 Unconscious</span>
                         <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
                     </div>
                 </a>
@@ -432,14 +432,14 @@
                             <span class="text-3xl font-bold text-gm-purple">5/1</span>
                             <span class="inline-block bg-gm-pink/10 text-gm-pink text-[10px] font-bold px-2.5 py-0.5 rounded-full">Fixed Fate</span>
                         </div>
-                        <span class="text-xs text-gm-text-light">Napoleon, Self-Proj. Projector</span>
+                        <span class="text-xs text-gray-500">Napoleon, Self-Proj. Projector</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Heretic / Investigator</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
                         Practical problem-solver with deep research. Attracts projections and delivers universalizing solutions backed by investigation.
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-xs text-gm-text-light">Line 5 Conscious &middot; Line 1 Unconscious</span>
+                        <span class="text-xs text-gray-500">Line 5 Conscious &middot; Line 1 Unconscious</span>
                         <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
                     </div>
                 </a>
@@ -448,14 +448,14 @@
                 <a href="profile-5-2.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">5/2</span>
-                        <span class="text-xs text-gm-text-light">Franz Schubert, Emotional Manifestor</span>
+                        <span class="text-xs text-gray-500">Franz Schubert, Emotional Manifestor</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Heretic / Hermit</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
                         Projected problem-solver who needs retreat. Attracts expectations while carrying natural gifts that need solitude.
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-xs text-gm-text-light">Line 5 Conscious &middot; Line 2 Unconscious</span>
+                        <span class="text-xs text-gray-500">Line 5 Conscious &middot; Line 2 Unconscious</span>
                         <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
                     </div>
                 </a>
@@ -464,14 +464,14 @@
                 <a href="profile-6-2.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">6/2</span>
-                        <span class="text-xs text-gm-text-light">Mark Zuckerberg, Splenic Projector</span>
+                        <span class="text-xs text-gray-500">Mark Zuckerberg, Splenic Projector</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Role Model / Hermit</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
                         Wise example with natural gifts. Lives through three life phases and carries innate talents that emerge through the right calling.
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-xs text-gm-text-light">Line 6 Conscious &middot; Line 2 Unconscious</span>
+                        <span class="text-xs text-gray-500">Line 6 Conscious &middot; Line 2 Unconscious</span>
                         <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
                     </div>
                 </a>
@@ -480,14 +480,14 @@
                 <a href="profile-6-3.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">6/3</span>
-                        <span class="text-xs text-gm-text-light">Marc Chagall, Emotional MG</span>
+                        <span class="text-xs text-gray-500">Marc Chagall, Emotional MG</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Role Model / Martyr</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
                         Wise example forged through relentless experience. Spends the first 30 years as a double 3rd line before ascending to role model wisdom.
                     </p>
                     <div class="flex items-center justify-between">
-                        <span class="text-xs text-gm-text-light">Line 6 Conscious &middot; Line 3 Unconscious</span>
+                        <span class="text-xs text-gray-500">Line 6 Conscious &middot; Line 3 Unconscious</span>
                         <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
                     </div>
                 </a>

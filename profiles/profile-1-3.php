@@ -135,12 +135,12 @@
                 <div class="bg-gm-card-active rounded-lg border border-gm-border p-6 text-center">
                     <div class="text-3xl font-bold text-gm-purple mb-1">1</div>
                     <div class="text-lg font-bold text-gray-800 mb-1">Investigator</div>
-                    <div class="text-xs text-gm-text-light uppercase tracking-wide">Conscious · Personality</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-wide">Conscious · Personality</div>
                 </div>
                 <div class="bg-gm-card-active rounded-lg border border-gm-border p-6 text-center">
                     <div class="text-3xl font-bold text-gm-purple mb-1">3</div>
                     <div class="text-lg font-bold text-gray-800 mb-1">Martyr</div>
-                    <div class="text-xs text-gm-text-light uppercase tracking-wide">Unconscious · Design</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-wide">Unconscious · Design</div>
                 </div>
             </div>
         </div>
@@ -236,23 +236,23 @@ Other Learn Topics
  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
 <a href="/profiles/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
  <h3 class="text-sm font-bold text-gm-purple mb-1">All 12 Profiles →</h3>
- <p class="text-gray-400 text-xs leading-relaxed">Overview of all Profile combinations and the 6 Lines.</p>
+ <p class="text-gray-600 text-xs leading-relaxed">Overview of all Profile combinations and the 6 Lines.</p>
 </a>
 <a href="/profiles/#the-6-profile-lines" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
  <h3 class="text-sm font-bold text-gm-purple mb-1">The 6 Profile Lines →</h3>
- <p class="text-gray-400 text-xs leading-relaxed">The building blocks of every Profile, from Investigator to Role Model.</p>
+ <p class="text-gray-600 text-xs leading-relaxed">The building blocks of every Profile, from Investigator to Role Model.</p>
 </a>
 <a href="/profiles/profile-1-4/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
  <h3 class="text-sm font-bold text-gm-purple mb-1">1/4 Investigator / Opportunist →</h3>
- <p class="text-gray-400 text-xs leading-relaxed">Deep researcher who shares discoveries through their trusted network.</p>
+ <p class="text-gray-600 text-xs leading-relaxed">Deep researcher who shares discoveries through their trusted network.</p>
 </a>
 <a href="/profiles/profile-3-5/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
  <h3 class="text-sm font-bold text-gm-purple mb-1">3/5 Martyr / Heretic →</h3>
- <p class="text-gray-400 text-xs leading-relaxed">Learns by experience, then offers practical solutions with broad impact.</p>
+ <p class="text-gray-600 text-xs leading-relaxed">Learns by experience, then offers practical solutions with broad impact.</p>
 </a>
 <a href="/profiles/profile-6-3/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
  <h3 class="text-sm font-bold text-gm-purple mb-1">6/3 Role Model / Martyr →</h3>
- <p class="text-gray-400 text-xs leading-relaxed">Early experiential process builds the wisdom of a future role model.</p>
+ <p class="text-gray-600 text-xs leading-relaxed">Early experiential process builds the wisdom of a future role model.</p>
 </a>
 </div>
  </div>
@@ -264,7 +264,7 @@ Other Learn Topics
             <a href="profile-6-3.php" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-sm font-semibold">
                 <span>&larr;</span> 6/3 Role Model / Martyr
             </a>
-            <a href="index.php" class="text-gm-gray hover:text-gm-dark transition text-sm">All Profiles</a>
+            <a href="index.php" class="text-gray-600 hover:text-gm-dark transition text-sm font-medium">All Profiles</a>
             <a href="profile-1-4.php" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-sm font-semibold">
                 1/4 Investigator / Opportunist <span>&rarr;</span>
             </a>
