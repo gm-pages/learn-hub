@@ -113,9 +113,7 @@
                     </div>
                 </div>
                 <div class="w-64 lg:w-72 flex-shrink-0">
-                    <div class="bg-gm-darker/50 border-2 border-dashed border-gm-purple-light/30 rounded-xl flex items-center justify-center h-72">
-                        <span class="text-gm-purple-light/50 text-sm font-semibold uppercase tracking-wide text-center px-4">Chart Image<br>Buzz Aldrin</span>
-                    </div>
+                    <img src="/profiles/images/4-1-Buzz-Aldrin.png" alt="4/1 Profile BodyGraph chart for Buzz Aldrin" class="rounded-xl w-full h-auto">
                 </div>
             </div>
         </div>
@@ -199,14 +197,14 @@
     <section class="py-10 md:py-14 bg-gm-light">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
-                <span class="text-gm-purple">|</span> &#128640; How to Explore Your 4/1 Profile
+                <span class="text-gm-purple">|</span> &#128640; How to Explore Your 4/1 Profile in Your Chart
             </h2>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">On Genetic Matrix:</strong> Generate a free Foundation chart to discover your Profile. The chart shows which lines your conscious and unconscious Sun & Earth occupy, creating your Profile combination. Advanced and Pro charts reveal how your Profile interacts with your Type, Centers, Channels, and Variable.</p>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">The celebrity database:</strong> Explore other 4/1 Profiles in Genetic Matrix's 87,000+ celebrity database. See how the Opportunist/Investigator dynamic manifests across different Types and life paths.</p>
         </div>
     </section>
     <!-- ==================== FAQ ACCORDION ==================== -->
-    <section class="py-10 md:py-14 bg-gm-light">
+    <section class="py-10 md:py-14 bg-white">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
                 <span class="text-gm-purple">|</span> &#10067; Frequently Asked Questions
@@ -229,35 +227,35 @@
     </section>
 
     <!-- ==================== CONTINUE LEARNING ==================== -->
-    <section class="py-10 md:py-14 bg-white">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
-                <span class="text-gm-purple">|</span> Other Learn Topics
-            </h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <a href="index.php" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
-                    <h3 class="text-sm font-bold text-gm-purple mb-1">All 12 Profiles →</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed">Overview of all Profile combinations and the 6 Lines.</p>
-                </a>
-                <a href="#" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
-                    <h3 class="text-sm font-bold text-gm-purple mb-1">The 5 Types →</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed">Strategy, Authority, and aura mechanics for all Types.</p>
-                </a>
-                <a href="profile-5-1.php" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
-                    <h3 class="text-sm font-bold text-gm-purple mb-1">5/1 Heretic / Investigator →</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed">The practical problem-solver with deep foundational research. 5/1s attract proje...</p>
-                </a>
-                <a href="profile-5-2.php" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
-                    <h3 class="text-sm font-bold text-gm-purple mb-1">5/2 Heretic / Hermit →</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed">The projected problem-solver who needs retreat. 5/2s attract expectations from o...</p>
-                </a>
-                <a href="profile-6-2.php" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
-                    <h3 class="text-sm font-bold text-gm-purple mb-1">6/2 Role Model / Hermit →</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed">The wise example with natural gifts. 6/2s live through three phases of life and ...</p>
-                </a>
-            </div>
-        </div>
-    </section>
+ <section class="py-10 md:py-14 bg-white">
+ <div class="max-w-4xl mx-auto px-6">
+ <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+Other Learn Topics
+ </h2>
+ <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+<a href="/profiles/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+ <h3 class="text-sm font-bold text-gm-purple mb-1">All 12 Profiles →</h3>
+ <p class="text-gray-400 text-xs leading-relaxed">Overview of all Profile combinations and the 6 Lines.</p>
+</a>
+<a href="/profiles/#the-6-profile-lines" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+ <h3 class="text-sm font-bold text-gm-purple mb-1">The 6 Profile Lines →</h3>
+ <p class="text-gray-400 text-xs leading-relaxed">The building blocks of every Profile, from Investigator to Role Model.</p>
+</a>
+<a href="/profiles/profile-1-4/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+ <h3 class="text-sm font-bold text-gm-purple mb-1">1/4 Investigator / Opportunist →</h3>
+ <p class="text-gray-400 text-xs leading-relaxed">Deep researcher who shares discoveries through their trusted network.</p>
+</a>
+<a href="/profiles/profile-4-6/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+ <h3 class="text-sm font-bold text-gm-purple mb-1">4/6 Opportunist / Role Model →</h3>
+ <p class="text-gray-400 text-xs leading-relaxed">Relationships and community build influence that matures into wisdom.</p>
+</a>
+<a href="/profiles/profile-1-3/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+ <h3 class="text-sm font-bold text-gm-purple mb-1">1/3 Investigator / Martyr →</h3>
+ <p class="text-gray-400 text-xs leading-relaxed">The deep researcher who tests everything through trial and error.</p>
+</a>
+</div>
+ </div>
+ </section>
 
     <!-- ==================== PROFILE NAVIGATION ==================== -->
     <section class="py-8 bg-gm-light border-t border-gm-border">
@@ -279,7 +277,7 @@
             <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
                 See your full chart - Profile, Type, Authority, Centers, Channels, and the complete architecture of your design.
             </p>
-            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+            <a href="https://www.geneticmatrix.com" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
                 Get Your Free Chart &rarr;
             </a>
         </div>

@@ -212,7 +212,7 @@
     </section>
 
     <!-- ==================== THE 6 PROFILE LINES ==================== -->
-    <section class="py-10 md:py-14 bg-gm-light">
+    <section id="the-6-profile-lines" class="py-10 md:py-14 bg-gm-light">
         <div class="max-w-5xl mx-auto px-6">
             <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
                 <span class="text-gm-purple">|</span> The 6 Profile Lines
@@ -578,7 +578,7 @@
     <section class="py-10 md:py-14 bg-gm-light">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
-                <span class="text-gm-purple">|</span> Common Questions
+                <span class="text-gm-purple">|</span> Frequently Asked Questions
             </h2>
             <div class="space-y-3">
 
@@ -692,7 +692,7 @@
             <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
                 Generate a free Foundation chart to see your Profile - the two lines that shape your role, personality, and life purpose.
             </p>
-            <a href="#" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+            <a href="https://www.geneticmatrix.com" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
                 Get Your Free Chart &rarr;
             </a>
         </div>
