@@ -131,7 +131,7 @@
         <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
             <!-- Logo -->
             <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
-                <img src="../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14">
+                <img src="../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14 max-w-[180px] md:max-w-none">
             </a>
 
             <!-- Right Nav: LOGGED OUT (default for static pages) -->

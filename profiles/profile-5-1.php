@@ -58,7 +58,7 @@
         <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
             <!-- Logo -->
             <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
-                <img src="../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14">
+                <img src="../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14 max-w-[180px] md:max-w-none">
             </a>
 
             <!-- Right Nav: LOGGED OUT (default for static pages) -->
@@ -259,12 +259,12 @@ Other Learn Topics
 
     <!-- ==================== PROFILE NAVIGATION ==================== -->
     <section class="py-8 bg-gm-light border-t border-gm-border">
-        <div class="max-w-4xl mx-auto px-6 flex justify-between items-center">
-            <a href="profile-4-1.php" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-sm font-semibold">
+        <div class="max-w-4xl mx-auto px-6 flex justify-between items-center gap-3">
+            <a href="profile-4-1.php" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-xs md:text-sm font-semibold">
                 <span>&larr;</span> 4/1 Opportunist / Investigator
             </a>
             <a href="index.php" class="text-gray-600 hover:text-gm-dark transition text-sm font-medium">All Profiles</a>
-            <a href="profile-5-2.php" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-sm font-semibold">
+            <a href="profile-5-2.php" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-xs md:text-sm font-semibold">
                 5/2 Heretic / Hermit <span>&rarr;</span>
             </a>
         </div>
