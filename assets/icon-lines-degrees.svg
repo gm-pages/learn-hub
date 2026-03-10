@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Ruler / graduated scale with 6 stepped marks (6 lines) -->
+  <!-- Main vertical ruler bar -->
+  <rect x="14" y="6" width="12" height="52" rx="2" stroke="#6E5898" stroke-width="2.5" fill="#F4F0FC"/>
+  <!-- Six graduated tick marks (the 6 lines) -->
+  <line x1="26" y1="12" x2="34" y2="12" stroke="#6E5898" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="26" y1="20.4" x2="32" y2="20.4" stroke="#6E5898" stroke-width="2" stroke-linecap="round"/>
+  <line x1="26" y1="28.8" x2="34" y2="28.8" stroke="#6E5898" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="26" y1="37.2" x2="32" y2="37.2" stroke="#6E5898" stroke-width="2" stroke-linecap="round"/>
+  <line x1="26" y1="45.6" x2="34" y2="45.6" stroke="#6E5898" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="26" y1="52" x2="32" y2="52" stroke="#6E5898" stroke-width="2" stroke-linecap="round"/>
+  <!-- Degree arc on right -->
+  <path d="M42 14 A18 18 0 0 1 42 50" stroke="#6E5898" stroke-width="2" fill="none"/>
+  <!-- Degree markers -->
+  <circle cx="42" cy="14" r="2" fill="#6E5898"/>
+  <circle cx="48" cy="22" r="2" fill="#6E5898"/>
+  <circle cx="50" cy="32" r="2" fill="#6E5898"/>
+  <circle cx="48" cy="42" r="2" fill="#6E5898"/>
+  <circle cx="42" cy="50" r="2" fill="#6E5898"/>
+</svg>

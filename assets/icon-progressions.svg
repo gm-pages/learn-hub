@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Circular cycle / timeline + orbit for progressions & returns -->
+  <!-- Main cycle circle -->
+  <circle cx="32" cy="32" r="24" stroke="#6E5898" stroke-width="2.5" fill="none"/>
+  <!-- Return arrow (nearly full circle) -->
+  <path d="M32 8 A24 24 0 1 1 28 8.3" stroke="#6E5898" stroke-width="2" fill="none"/>
+  <path d="M26 4 L28 8.3 L24 10" fill="#6E5898"/>
+  <!-- Timeline progression dots along the orbit -->
+  <circle cx="32" cy="8" r="3.5" fill="#6E5898"/>
+  <circle cx="52" cy="20" r="2.5" fill="#6E5898"/>
+  <circle cx="56" cy="32" r="2.5" stroke="#6E5898" stroke-width="1.5" fill="#F4F0FC"/>
+  <circle cx="52" cy="44" r="2.5" fill="#6E5898"/>
+  <circle cx="32" cy="56" r="2.5" stroke="#6E5898" stroke-width="1.5" fill="#F4F0FC"/>
+  <circle cx="12" cy="44" r="2.5" fill="#6E5898"/>
+  <circle cx="8" cy="32" r="2.5" stroke="#6E5898" stroke-width="1.5" fill="#F4F0FC"/>
+  <circle cx="12" cy="20" r="2.5" fill="#6E5898"/>
+  <!-- Inner timeline bar -->
+  <line x1="18" y1="32" x2="46" y2="32" stroke="#6E5898" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="24" cy="32" r="1.5" fill="#6E5898"/>
+  <circle cx="32" cy="32" r="2" fill="#6E5898"/>
+  <circle cx="40" cy="32" r="1.5" fill="#6E5898"/>
+</svg>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
  <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -41,6 +41,9 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
+        /* Hide scrollbar on section nav */
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
         /* Calc method icon color tints (base SVG color is #6e5898 purple) */
         .icon-tint-teal { filter: brightness(0) saturate(100%) invert(58%) sepia(52%) saturate(450%) hue-rotate(127deg) brightness(92%) contrast(89%); }
         .icon-tint-red { filter: brightness(0) saturate(100%) invert(33%) sepia(60%) saturate(1200%) hue-rotate(336deg) brightness(90%) contrast(90%); }
@@ -225,16 +228,27 @@
         <div class="absolute inset-0 pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse at 60% 40%, rgba(172,148,216,0.2) 0%, transparent 60%), radial-gradient(ellipse at 30% 70%, rgba(232,150,29,0.1) 0%, transparent 50%);"></div>
         <!-- Content -->
         <div class="relative z-10 max-w-3xl mx-auto px-6">
-            <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">Learn Human Design &amp; Astrology</h1>
-            <p class="text-gray-300 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-                Free educational resources to deepen your understanding of Human Design,
-                Astrology, and the tools available on Genetic Matrix. No login required.
+            <h1 class="text-3xl md:text-4xl font-bold text-white mb-5">Where Human Design, Astrology, and Astro HD Meet</h1>
+            <p class="text-gray-200 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+                Explore free learning resources across Human Design, Astrology, multiple chart methods, and Astro HD tools in one place.
             </p>
         </div>
     </section>
 
+    <!-- ==================== SECTION NAVIGATION ==================== -->
+    <div class="bg-gray-50 border-b border-gray-300 sticky top-[80px] z-40 shadow-sm" id="section-nav">
+        <div class="max-w-6xl mx-auto px-6">
+            <nav class="flex items-center gap-6 md:gap-8 overflow-x-auto scrollbar-hide py-3.5" aria-label="Section navigation">
+                <a href="#human-design" class="section-nav-link text-sm font-bold text-gray-500 hover:text-gm-purple whitespace-nowrap border-b-2 border-transparent hover:border-gm-purple pb-3 -mb-[15px] transition">Human Design</a>
+                <a href="#chart-methods" class="section-nav-link text-sm font-bold text-gray-500 hover:text-gm-purple whitespace-nowrap border-b-2 border-transparent hover:border-gm-purple pb-3 -mb-[15px] transition">Chart Methods</a>
+                <a href="#astrology" class="section-nav-link text-sm font-bold text-gray-500 hover:text-gm-purple whitespace-nowrap border-b-2 border-transparent hover:border-gm-purple pb-3 -mb-[15px] transition">Astrology</a>
+                <a href="#astro-hd" class="section-nav-link text-sm font-bold text-gray-500 hover:text-gm-purple whitespace-nowrap border-b-2 border-transparent hover:border-gm-purple pb-3 -mb-[15px] transition">Astro HD</a>
+            </nav>
+        </div>
+    </div>
+
     <!-- ==================== HUMAN DESIGN SECTION ==================== -->
-    <section class="bg-gm-light py-12 md:py-16">
+    <section id="human-design" class="bg-gm-light pt-8 md:pt-10 pb-12 md:pb-16 scroll-mt-[132px]">
         <div class="max-w-6xl mx-auto px-6">
             <!-- Section Header -->
             <div class="mb-2">
@@ -244,7 +258,7 @@
                 <span class="text-gm-purple">|</span> Human Design Tools & Resources
             </h2>
             <p class="text-gray-500 text-sm md:text-base max-w-3xl mb-10">
-                Explore the mechanics of your design - from basic core body elements to the deepest layers of cognitive differentiation.
+                Explore Human Design from core chart foundations to advanced differentiation, relationship dynamics, cycles, and specialized study.
             </p>
 
             <!-- Foundation Basics Sub-header -->
@@ -295,6 +309,20 @@
                     <a href="centers/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
+                <!-- Definition Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-definition.svg" alt="Definition" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Definition</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Definition describes how your defined Centers connect to each other. Single, Split, Triple Split, Quadruple Split, or No Definition - each Definition type shapes how you process energy and relate to others.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="definition/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
                 <!-- Channels Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
@@ -323,34 +351,6 @@
                     <a href="gates/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
-                <!-- Circuits Card -->
-                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
-                    <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-circuits.svg" alt="Circuits" class="w-16 h-16 flex-shrink-0">
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-800 mb-1">Circuits</h3>
-                            <p class="text-gray-500 text-sm leading-relaxed">
-                                Channels, Gates and Lines group into three overarching Circuit families - Individual, Collective, and Tribal. Individual and Tribal circuits further sub-divide into Knowing, Integration, Centering, Ego and Defense circuits.
-                            </p>
-                        </div>
-                    </div>
-                    <a href="circuits/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
-                </div>
-
-                <!-- Definition Card -->
-                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
-                    <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-definition.svg" alt="Definition" class="w-16 h-16 flex-shrink-0">
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-800 mb-1">Definition</h3>
-                            <p class="text-gray-500 text-sm leading-relaxed">
-                                Definition describes how your defined Centers connect to each other. Single, Split, Triple Split, Quadruple Split, or No Definition - each Definition type shapes how you process energy and relate to others.
-                            </p>
-                        </div>
-                    </div>
-                    <a href="definition/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
-                </div>
-
                 <!-- HD Planets Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
@@ -364,6 +364,16 @@
                     </div>
                     <a href="astrology/planets.html#planets-in-human-design" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
+
+            </div>
+
+            <!-- Advanced Topics Header -->
+            <h3 class="text-base md:text-lg font-semibold text-gray-700 mt-12 mb-3">Advanced Topics</h3>
+
+            <!-- Advanced Foundation Topics Sub-header -->
+            <h4 class="text-sm md:text-base font-semibold text-gray-500 mb-5">Advanced Foundation Topics</h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- Incarnation Cross Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
@@ -379,13 +389,19 @@
                     <a href="incarnation-cross/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
-            </div>
-
-            <!-- Advanced Topics Sub-header -->
-            <h3 class="text-base md:text-lg font-semibold text-gray-700 mt-10 mb-5">Advanced Topics</h3>
-
-            <!-- Advanced Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Circuits Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-circuits.svg" alt="Circuits" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Circuits</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Channels, Gates and Lines group into three overarching Circuit families - Individual, Collective, and Tribal. Individual and Tribal circuits further sub-divide into Knowing, Integration, Centering, Ego and Defense circuits.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="circuits/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
 
                 <!-- Deeper Mechanics Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
@@ -415,33 +431,26 @@
                     <a href="variables/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
-                <!-- Sleep Design Card -->
+                <!-- Homo Solaris Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-moon.svg" alt="Sleep Design" class="w-16 h-16 flex-shrink-0">
+                        <img src="assets/icon-homo-solaris.svg" alt="Homo Solaris" class="w-16 h-16 flex-shrink-0">
                         <div>
-                            <h3 class="text-lg font-bold text-gray-800 mb-1">Sleep Design</h3>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Homo Solaris</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                When you sleep, your entire design changes and reverts to a 5 centered design. Explore how this functions and affects your rest and regeneration.
+                                Homo Solaris is the new species emerging from the Solar Plexus Mutation beginning February 2027. Defined by quad-right architecture and shared consciousness, Homo Solaris represents the next evolutionary step for humanity.
                             </p>
                         </div>
                     </div>
-                    <a href="sleep-design/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                    <a href="homo-solaris/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
-                <!-- Animal Design Card -->
-                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
-                    <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-paw.svg" alt="Animal Design" class="w-16 h-16 flex-shrink-0">
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-800 mb-1">Animal Design</h3>
-                            <p class="text-gray-500 text-sm leading-relaxed">
-                                Animals carry their own unique design and energetic blueprint. Mammals, reptiles, birds, fish, insects and arachnids can also specifically condition and be conditioned by humans.
-                            </p>
-                        </div>
-                    </div>
-                    <a href="animals/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
-                </div>
+            </div>
+
+            <!-- Transits & Life Cycles Sub-header -->
+            <h4 class="text-sm md:text-base font-semibold text-gray-500 mt-8 mb-5">Transits & Life Cycles</h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                 <!-- Life Cycles Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
@@ -470,6 +479,13 @@
                     </div>
                     <a href="transits/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
+
+            </div>
+
+            <!-- Relationship & Group Dynamics Sub-header -->
+            <h4 class="text-sm md:text-base font-semibold text-gray-500 mt-8 mb-5">Relationship & Group Dynamics</h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- Connection Chart Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
@@ -527,18 +543,39 @@
                     <a href="oc16/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
-                <!-- Homo Solaris Card -->
+            </div>
+
+            <!-- Additional Topics Sub-header -->
+            <h4 class="text-sm md:text-base font-semibold text-gray-500 mt-8 mb-5">Additional Topics</h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- Sleep Design Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-homo-solaris.svg" alt="Homo Solaris" class="w-16 h-16 flex-shrink-0">
+                        <img src="assets/icon-moon.svg" alt="Sleep Design" class="w-16 h-16 flex-shrink-0">
                         <div>
-                            <h3 class="text-lg font-bold text-gray-800 mb-1">Homo Solaris</h3>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Sleep Design</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Homo Solaris is the new species emerging from the Solar Plexus Mutation beginning February 2027. Defined by quad-right architecture and shared consciousness, Homo Solaris represents the next evolutionary step for humanity.
+                                When you sleep, your entire design changes and reverts to a 5 centered design. Explore how this functions and affects your rest and regeneration.
                             </p>
                         </div>
                     </div>
-                    <a href="homo-solaris/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                    <a href="sleep-design/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+                <!-- Animal Design Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-paw.svg" alt="Animal Design" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Animal Design</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Animals carry their own unique design and energetic blueprint. Mammals, reptiles, birds, fish, insects and arachnids can also specifically condition and be conditioned by humans.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="animals/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
             </div>
@@ -546,7 +583,7 @@
     </section>
 
     <!-- ==================== CALCULATION METHOD SECTION ==================== -->
-    <section class="bg-white py-12 md:py-16">
+    <section id="chart-methods" class="bg-white py-12 md:py-16 scroll-mt-[128px]">
         <div class="max-w-6xl mx-auto px-6">
             <!-- Section Header -->
             <div class="mb-2">
@@ -556,7 +593,7 @@
                 <span class="text-gm-purple">|</span> Understand How Charts Are Calculated
             </h2>
             <p class="text-gray-500 text-sm md:text-base max-w-4xl mb-10">
-                Genetic Matrix offers multiple calculation systems that each produce a valid chart - explore the differences and decide what resonates with you.
+                Genetic Matrix offers multiple calculation systems that each produce a valid chart. Compare the differences and choose the method that fits your approach.
             </p>
 
             <!-- Cards Grid -->
@@ -583,7 +620,7 @@
                         <img src="assets/icon-j2k.svg" alt="J2000" class="w-20 h-20 flex-shrink-0 -ml-2">
                         <div>
                             <span class="text-xs font-semibold tracking-widest text-gm-pink uppercase">Tropical</span>
-                            <h3 class="text-lg font-bold text-gray-800 mb-1">J2000 - Fixed Reference</h3>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">J2000 Reference Frame</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
                                 A standard celestial reference frame that freezes the mean equator and equinox at 12:00 Terrestrial Time on January 1, 2000. Removes Precession and Nutation.
                             </p>
@@ -672,7 +709,7 @@
     </section>
 
     <!-- ==================== ASTROLOGY SECTION ==================== -->
-    <section class="bg-gm-light py-8 md:py-10">
+    <section id="astrology" class="bg-gm-light py-8 md:py-10 scroll-mt-[128px]">
         <div class="max-w-6xl mx-auto px-6">
             <!-- Section Header with Solar System Animation -->
             <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-4">
@@ -953,6 +990,275 @@
         </div>
     </section>
 
+    <!-- ==================== ASTRO HD SECTION ==================== -->
+    <section id="astro-hd" class="bg-white pt-8 md:pt-10 pb-12 md:pb-16 scroll-mt-[132px]">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Section Header -->
+            <div class="mb-2">
+                <span class="text-xs font-semibold tracking-widest text-gray-400 uppercase">Astro HD</span>
+            </div>
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-3">
+                <span class="text-gm-purple">|</span> Astro HD Tools & Resources
+            </h2>
+            <p class="text-gray-500 text-sm md:text-base max-w-4xl mb-10">
+                Explore Astro HD through integrated chart tools that connect Human Design, Astrology, Personality, Design, and deeper chart mechanics.
+            </p>
+
+            <!-- Astro HD Foundations -->
+            <h4 class="text-sm md:text-base font-semibold text-gray-500 mb-5">Astro HD Foundations</h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- What Is Astro HD Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-white transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-astro-hd.svg" alt="What Is Astro HD" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">What Is Astro HD</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                An introduction to Astro HD and how it bridges Human Design and Astrology into a unified chart system for deeper self-understanding.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+                <!-- The Astro HD Chart Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-white transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-astro-chart.svg" alt="The Astro HD Chart" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">The Astro HD Chart</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Learn how to read the Astro HD chart layout, including how Human Design and Astrology layers combine into a single integrated view.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+                <!-- Personality & Design Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-white transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-personality-design.svg" alt="Personality and Design" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Personality & Design</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Understand the two calculation sets in your chart: the conscious Personality side and the unconscious Design side, and how they interact.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+                <!-- Planets in Astro HD Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-white transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-planets-astro.svg" alt="Planets in Astro HD" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Planets in Astro HD</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                How planetary activations work within Astro HD, combining astrological meaning with Human Design Gate and Line placements.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+            </div>
+
+            <!-- Core Mechanics -->
+            <h4 class="text-sm md:text-base font-semibold text-gray-500 mt-10 mb-5">Core Mechanics</h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Gates & Signs Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-white transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-gates-signs.svg" alt="Gates and Signs" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Gates & Signs</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                How the 64 Gates of the I Ching map to zodiac signs, and how sign energy influences Gate expression in your chart.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+                <!-- Lines & Degrees Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-white transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-lines-degrees.svg" alt="Lines and Degrees" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Lines & Degrees</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                How the six Lines within each Gate correspond to specific zodiac degrees, adding precision to chart interpretation.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+                <!-- Houses & Centers Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-white transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-houses-centers.svg" alt="Houses and Centers" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Houses & Centers</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Explore the relationship between astrological Houses and Human Design Centers, and how they describe different life areas.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+                <!-- Aspects & Channels Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-white transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-aspects-channels.svg" alt="Aspects and Channels" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Aspects & Channels</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                How astrological Aspects relate to Human Design Channels, revealing energy dynamics and connections within the chart.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+            </div>
+
+            <!-- Interpretation Tools -->
+            <h4 class="text-sm md:text-base font-semibold text-gray-500 mt-10 mb-5">Interpretation Tools</h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Dignities & Detriments Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-white transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-dignities.svg" alt="Dignities and Detriments" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Dignities & Detriments</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                How planetary dignity and detriment in astrology can add context to the strength and expression of activations in your chart.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+                <!-- Elemental Balance Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-white transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-elemental.svg" alt="Elemental Balance" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Elemental Balance</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Analyze the Fire, Earth, Air, and Water element distribution across your activations for a broader view of chart temperament.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+                <!-- Modality Patterns Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-white transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-modality.svg" alt="Modality Patterns" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Modality Patterns</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Examine Cardinal, Fixed, and Mutable modality distribution across your chart to understand your approach to change and action.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+                <!-- Rulership Chains Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-white transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-rulership.svg" alt="Rulership Chains" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Rulership Chains</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Trace the chain of planetary rulerships through your chart to reveal hidden links between activations and deeper thematic threads.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+            </div>
+
+            <!-- Advanced Integration -->
+            <h4 class="text-sm md:text-base font-semibold text-gray-500 mt-10 mb-5">Advanced Integration</h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Composite Charts Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-white transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-composite.svg" alt="Composite Charts" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Composite Charts</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Combine two charts into one composite view that merges both Human Design and astrological data for relationship analysis.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+                <!-- Transits in Astro HD Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-white transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-transits-astro.svg" alt="Transits in Astro HD" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Transits in Astro HD</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Track real-time planetary transits through your Astro HD chart, combining transit astrology with Human Design conditioning mechanics.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+                <!-- Progressions & Returns Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-white transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-progressions.svg" alt="Progressions and Returns" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Progressions & Returns</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Use secondary progressions and planetary returns alongside Human Design cycles for a layered view of life timing and development.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+                <!-- Cross-System Synthesis Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-white transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-synthesis.svg" alt="Cross-System Synthesis" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Cross-System Synthesis</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Bring it all together by reading your chart as a single integrated system, combining Human Design mechanics with astrological interpretation.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
     <!-- ==================== CELEBRITY CHARTS SECTION ==================== -->
     <section class="py-10 md:py-14 bg-white">
         <div class="max-w-6xl mx-auto px-6">
@@ -1163,6 +1469,29 @@
                 });
             }, { threshold: 0.1 });
             cards.forEach(card => observer.observe(card));
+
+            // Section nav active state
+            const navLinks = document.querySelectorAll('.section-nav-link');
+            const sections = document.querySelectorAll('section[id]');
+            const activeClass = ['text-gm-purple', 'border-gm-purple'];
+            const inactiveClass = ['text-gray-500', 'border-transparent'];
+
+            function updateActiveNav() {
+                let current = '';
+                sections.forEach(section => {
+                    const top = section.offsetTop - 160;
+                    if (window.scrollY >= top) current = section.id;
+                });
+                navLinks.forEach(link => {
+                    const isActive = link.getAttribute('href') === '#' + current;
+                    link.classList.toggle('text-gm-purple', isActive);
+                    link.classList.toggle('border-gm-purple', isActive);
+                    link.classList.toggle('text-gray-500', !isActive);
+                    link.classList.toggle('border-transparent', !isActive);
+                });
+            }
+            window.addEventListener('scroll', updateActiveNav, { passive: true });
+            updateActiveNav();
         });
     </script>
 </body>

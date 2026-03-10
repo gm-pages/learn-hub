@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Chart diagram: wheel with bodygraph grid overlay -->
+  <!-- Outer wheel -->
+  <circle cx="32" cy="32" r="27" stroke="#6E5898" stroke-width="2.5" fill="none"/>
+  <!-- Inner wheel -->
+  <circle cx="32" cy="32" r="18" stroke="#6E5898" stroke-width="1.5" fill="#F4F0FC"/>
+  <!-- Bodygraph nodes inside -->
+  <circle cx="32" cy="18" r="3" fill="#6E5898"/>
+  <circle cx="32" cy="28" r="2.5" fill="#6E5898"/>
+  <circle cx="25" cy="36" r="2.5" fill="#6E5898"/>
+  <circle cx="39" cy="36" r="2.5" fill="#6E5898"/>
+  <circle cx="32" cy="44" r="3" fill="#6E5898"/>
+  <!-- Connecting lines -->
+  <line x1="32" y1="21" x2="32" y2="25.5" stroke="#6E5898" stroke-width="1.5"/>
+  <line x1="30" y1="30" x2="27" y2="34" stroke="#6E5898" stroke-width="1.5"/>
+  <line x1="34" y1="30" x2="37" y2="34" stroke="#6E5898" stroke-width="1.5"/>
+  <line x1="27" y1="38" x2="30" y2="42" stroke="#6E5898" stroke-width="1.5"/>
+  <line x1="37" y1="38" x2="34" y2="42" stroke="#6E5898" stroke-width="1.5"/>
+  <!-- Wheel division marks -->
+  <line x1="32" y1="5" x2="32" y2="9" stroke="#6E5898" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="52" y1="14" x2="49" y2="17" stroke="#6E5898" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="57" y1="32" x2="53" y2="32" stroke="#6E5898" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="52" y1="50" x2="49" y2="47" stroke="#6E5898" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="32" y1="59" x2="32" y2="55" stroke="#6E5898" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="12" y1="50" x2="15" y2="47" stroke="#6E5898" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="7" y1="32" x2="11" y2="32" stroke="#6E5898" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="12" y1="14" x2="15" y2="17" stroke="#6E5898" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

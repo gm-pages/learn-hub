@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Orbit / moving ring / passing point -->
+  <!-- Static natal chart ring -->
+  <circle cx="32" cy="32" r="24" stroke="#6E5898" stroke-width="2.5" fill="none"/>
+  <circle cx="32" cy="32" r="15" stroke="#6E5898" stroke-width="1.5" fill="#F4F0FC"/>
+  <!-- Natal points -->
+  <circle cx="32" cy="17" r="2.5" fill="#6E5898"/>
+  <circle cx="44" cy="38" r="2.5" fill="#6E5898"/>
+  <circle cx="20" cy="38" r="2.5" fill="#6E5898"/>
+  <!-- Transit orbit ring (outer, dashed = moving) -->
+  <circle cx="32" cy="32" r="28" stroke="#6E5898" stroke-width="2" stroke-dasharray="6 4" fill="none"/>
+  <!-- Transit planet (in motion) -->
+  <circle cx="58" cy="24" r="4" fill="#6E5898"/>
+  <!-- Motion arrow -->
+  <path d="M56 18 L60 22 L54 23" fill="#6E5898"/>
+  <!-- Aspect line from transit to natal -->
+  <line x1="54" y1="26" x2="34" y2="17" stroke="#6E5898" stroke-width="1.5" stroke-dasharray="3 2" stroke-linecap="round"/>
+</svg>
