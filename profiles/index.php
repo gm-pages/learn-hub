@@ -168,9 +168,6 @@
     <!-- ==================== HERO BANNER ==================== -->
     <section class="bg-gm-dark text-white text-center py-12 md:py-16">
         <div class="max-w-3xl mx-auto px-6">
-            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-green hover:bg-gm-green-dark text-white text-xs font-semibold tracking-wide px-5 py-2 rounded-full mb-6 transition">
-                Try free with Starter plan
-            </a>
             <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Foundation &middot; Profiles</p>
             <h1 class="text-3xl md:text-4xl font-bold mb-4">The 12 Profiles</h1>
             <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">

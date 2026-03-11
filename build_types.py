@@ -515,10 +515,7 @@ def generate_page(data, filename):
         <div class="max-w-2xl mx-auto px-6">
             <h2 class="text-2xl md:text-3xl font-bold mb-4">{cta_title}</h2>
             <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">{cta_desc}</p>
-            <a href="https://geneticmatrix.com/free-foundation-chart/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
-                Try free with Starter plan &rarr;
-            </a>
-        </div>
+</div>
     </section>
 
     <!-- ==================== FOOTER ==================== -->
