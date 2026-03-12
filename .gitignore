@@ -20,6 +20,8 @@ Desktop.ini
 # But allow chart bodygraph images
 !types/images/*.png
 !profiles/images/*.png
+!assets/16-variable-configurations.png
+!assets/variable-arrows-bodygraph.png
 
 # Python
 __pycache__/
