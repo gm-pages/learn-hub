@@ -4,17 +4,17 @@
  <meta charset="UTF-8">
  <link rel="icon" href="/favicon.ico" type="image/x-icon">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Human Design Planets Explained | How Planets Activate Gates in Your Bodygraph | Genetic Matrix</title>
- <meta name="description" content="Learn what each planet means in Human Design, how planets activate Gates in your Bodygraph, and how Personality and Design planetary activations shape your conscious and unconscious design.">
- <meta name="keywords" content="human design planets, planets in human design, planetary activations, human design sun, human design moon, human design nodes, personality planets, design planets, human design mercury, human design venus, human design mars, human design jupiter, human design saturn, human design uranus, human design neptune, human design pluto, human design chiron, Bodygraph planets, conscious design, unconscious design">
- <link rel="canonical" href="https://www.geneticmatrix.com/learn/planets/">
- <meta property="og:title" content="Human Design Planets Explained - How Planets Activate Gates">
- <meta property="og:description" content="Learn what each planet means in Human Design, how planets activate Gates in your Bodygraph, and how planetary activations shape your conscious and unconscious design.">
+ <title>Astrology Planets Explained | What Each Planet Means in Your Birth Chart | Genetic Matrix</title>
+ <meta name="description" content="Learn what each planet means in astrology. From the Sun and Moon through Jupiter, Saturn, and the outer planets, discover how planetary energies shape your birth chart and influence your life.">
+ <meta name="keywords" content="astrology planets, planets in astrology, birth chart planets, sun in astrology, moon in astrology, mercury astrology, venus astrology, mars astrology, jupiter astrology, saturn astrology, uranus astrology, neptune astrology, pluto astrology, chiron astrology, north node astrology, south node astrology, personal planets, outer planets, natal chart planets">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn/astrology/planets/">
+ <meta property="og:title" content="Astrology Planets Explained - What Each Planet Means in Your Chart">
+ <meta property="og:description" content="Learn what each planet means in astrology. From the Sun and Moon through the outer planets, discover how planetary energies shape your birth chart.">
  <meta property="og:type" content="article">
- <meta property="og:url" content="https://www.geneticmatrix.com/learn/planets/">
+ <meta property="og:url" content="https://www.geneticmatrix.com/learn/astrology/planets/">
  <meta name="twitter:card" content="summary">
- <meta name="twitter:title" content="Human Design Planets Explained - How Planets Activate Gates">
- <meta name="twitter:description" content="Learn what each planet means in Human Design, how planets activate Gates in your Bodygraph, and how planetary activations shape your conscious and unconscious design.">
+ <meta name="twitter:title" content="Astrology Planets Explained - What Each Planet Means in Your Chart">
+ <meta name="twitter:description" content="Learn what each planet means in astrology. From the Sun and Moon through the outer planets, discover how planetary energies shape your birth chart.">
  <script src="https://cdn.tailwindcss.com"></script>
  <script>
  tailwind.config = {
@@ -54,17 +54,170 @@
  details[open] summary::after { content: '\2212'; }
  details[open] > div { animation: fadeIn 0.2s ease-in-out; }
  @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+ /* Starfield for hero */
+ .astro-stars {
+     position: absolute; inset: 0; pointer-events: none;
+     background-image:
+         radial-gradient(1.5px 1.5px at 10% 20%, rgba(255,255,255,0.8) 0%, transparent 100%),
+         radial-gradient(2px 2px at 30% 50%, rgba(255,255,255,0.9) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 50% 15%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 70% 60%, rgba(255,255,255,0.85) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 85% 30%, rgba(255,255,255,0.75) 0%, transparent 100%),
+         radial-gradient(2px 2px at 15% 70%, rgba(172,148,216,0.8) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 60% 80%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 90% 85%, rgba(232,150,29,0.5) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 40% 90%, rgba(255,255,255,0.6) 0%, transparent 100%),
+         radial-gradient(2px 2px at 25% 40%, rgba(255,255,255,0.8) 0%, transparent 100%);
+     animation: astroTwinkle 4s ease-in-out infinite alternate;
+ }
+ @keyframes astroTwinkle {
+     0% { opacity: 0.7; }
+     100% { opacity: 1; }
+ }
+
+ /* Hero decorative planet illustrations */
+ .hero-planet-layer {
+     position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+ }
+ .hero-planet-layer svg {
+     position: absolute; opacity: 0.12;
+ }
+
+ /* Hero text entrance */
+ .hero-fade-in { opacity: 0; transform: translateY(12px); animation: heroEntrance 0.8s ease-out forwards; }
+ .hero-fade-in:nth-child(1) { animation-delay: 0.2s; }
+ .hero-fade-in:nth-child(2) { animation-delay: 0.4s; }
+ .hero-fade-in:nth-child(3) { animation-delay: 0.6s; }
+ @keyframes heroEntrance {
+     to { opacity: 1; transform: translateY(0); }
+ }
+
+ /* Planet group tabs */
+ .planet-tab {
+     padding: 0.5rem 1.25rem;
+     border-radius: 9999px;
+     font-size: 0.875rem;
+     font-weight: 500;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     border: 1px solid rgba(110,88,152,0.3);
+     color: #9080B1;
+     background: transparent;
+ }
+ .planet-tab:hover {
+     border-color: rgba(172,148,216,0.6);
+     color: #AC94D8;
+ }
+ .planet-tab.active {
+     background: rgba(110,88,152,0.2);
+     border-color: #AC94D8;
+     color: white;
+ }
+
+ /* Planet card styles */
+ .planet-card {
+     transition: all 0.3s ease;
+     background: #F4F0FC;
+     border: 1px solid rgba(172,148,216,0.3);
+     border-radius: 1rem;
+     padding: 1.75rem 1.5rem;
+     text-align: center;
+ }
+ .planet-card:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 8px 30px rgba(110,88,152,0.2);
+     border-color: rgba(172,148,216,0.5);
+ }
+ .planet-icon-badge {
+     width: 56px;
+     height: 56px;
+     border-radius: 50%;
+     background: rgba(110,88,152,0.1);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto 0.75rem;
+ }
+ .planet-icon-badge span {
+     font-size: 1.75rem;
+     color: #6E5898;
+ }
+ .planet-card:hover .planet-icon-badge {
+     background: rgba(110,88,152,0.18);
+ }
+ .planet-category {
+     display: inline-block;
+     font-size: 0.625rem;
+     font-weight: 700;
+     letter-spacing: 0.1em;
+     text-transform: uppercase;
+     padding: 0.25rem 0.75rem;
+     border-radius: 9999px;
+     margin-top: 0.75rem;
+ }
+ .planet-category-personal { background: rgba(110,88,152,0.15); color: #6E5898; }
+ .planet-category-social { background: rgba(212,168,67,0.15); color: #b8942a; }
+ .planet-category-generational { background: rgba(78,205,196,0.15); color: #2a9d96; }
+ .planet-category-special { background: rgba(224,102,160,0.15); color: #c74e8a; }
+
+ /* Filtered states */
+ .planet-filtered-in {
+     animation: cardFadeIn 0.3s ease forwards;
+ }
+ .planet-filtered-out {
+     animation: cardFadeOut 0.3s ease forwards;
+     pointer-events: none;
+     position: absolute;
+     width: 0;
+     height: 0;
+     overflow: hidden;
+     opacity: 0;
+ }
+ @keyframes cardFadeIn {
+     from { opacity: 0; transform: scale(0.95); }
+     to { opacity: 1; transform: scale(1); }
+ }
+ @keyframes cardFadeOut {
+     from { opacity: 1; }
+     to { opacity: 0; }
+ }
+
+ /* Gold planet icons */
+ .planet-icon-gold { color: #d4a843; }
+
+ /* Subtle divider between planet sections */
+ .planet-divider {
+     border: none;
+     height: 1px;
+     background: linear-gradient(to right, transparent, rgba(110,88,152,0.2), transparent);
+     margin: 2rem 0;
+ }
+
+ /* Tip box */
+ .tip-box {
+     background: linear-gradient(135deg, #F4F0FC 0%, #faf8ff 100%);
+     border-left: 3px solid #d4a843;
+     border-radius: 0 0.75rem 0.75rem 0;
+     padding: 1rem 1.25rem;
+ }
+
+ /* Lavender hover for cross-links */
+ .learn-link:hover {
+     border-color: #AC94D8 !important;
+     background: #faf8ff !important;
+ }
  </style>
  <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Human Design Planets Explained | How Planets Activate Gates in Your Bodygraph","description":"Learn what each planet means in Human Design, how planets activate Gates in your Bodygraph, and how Personality and Design planetary activations shape your conscious and unconscious design.","publisher":{"@type":"Organization","name":"Genetic Matrix","url":"https://www.geneticmatrix.com"},"mainEntityOfPage":"https://www.geneticmatrix.com/learn/planets/","datePublished":"2025-01-15","dateModified":"2026-03-11"}
+{"@context":"https://schema.org","@type":"Article","headline":"Astrology Planets Explained | What Each Planet Means in Your Birth Chart","description":"Learn what each planet means in astrology. From the Sun and Moon through the outer planets, discover how planetary energies shape your birth chart and influence your life.","publisher":{"@type":"Organization","name":"Genetic Matrix","url":"https://www.geneticmatrix.com"},"mainEntityOfPage":"https://www.geneticmatrix.com/learn/astrology/planets/","datePublished":"2025-01-15","dateModified":"2026-03-13"}
 </script>
  <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"What do planets mean in Human Design?","acceptedAnswer":{"@type":"Answer","text":"In Human Design, each planet activates a specific Gate in your Bodygraph and gives that activation a thematic role. The Sun represents your life force and core incarnation theme. The Moon is what drives you. Mercury governs communication. Venus shapes your values. Mars represents immature energy that needs refining. Jupiter is law and protection. Saturn is discipline. The outer planets (Uranus, Neptune, Pluto) carry generational themes. The planet tells you the function of the activation, the role that particular Gate energy plays in your design."}},
-{"@type":"Question","name":"Why does each planet appear twice in my chart?","acceptedAnswer":{"@type":"Answer","text":"Your Human Design chart is calculated at two moments. The Personality calculation uses the planetary positions at the moment of your birth, representing your conscious self. The Design calculation uses the planetary positions approximately 88 days before birth, representing your unconscious body-level programming. Each planetary body appears twice in the chart, once on each side of the Bodygraph, giving you both a conscious and unconscious expression of that planetary theme. These may activate different Gates on the Personality and Design sides."}},
-{"@type":"Question","name":"What is the difference between Personality and Design planets?","acceptedAnswer":{"@type":"Answer","text":"Personality planets (black side of the Bodygraph) are calculated at birth and represent the aspects of yourself you can observe and identify with consciously. Design planets (red side) are calculated approximately 88 days before birth and represent your unconscious, body-level programming. You may not recognize your Design activations in yourself, but others can see them in you. Together, both sides create the full picture of your design."}},
-{"@type":"Question","name":"Which planetary activations matter most in a Human Design chart?","acceptedAnswer":{"@type":"Answer","text":"The Sun and Earth together account for about 70% of the total imprinting in your chart, making them the most significant activations. Your Personality Sun Gate is often considered the core theme of your conscious purpose, while your Design Sun Gate expresses the unconscious life force operating through the body. The Nodes (North and South) define your environmental direction across the two halves of life. All planetary activations contribute to your design, but the Sun and Earth carry the greatest weight."}},
-{"@type":"Question","name":"Is Chiron an imprinting body in Human Design?","acceptedAnswer":{"@type":"Answer","text":"No. Chiron does not activate a Gate in your Bodygraph. In Human Design, Chiron serves as a lifecycle marker. The Chiron Return around age 50 signals the beginning of the third phase of life, which is particularly significant for those with 6th-line profiles who are stepping into their Role Model phase. Chiron is included on Genetic Matrix charts for reference, but it is not one of the planetary bodies that activate Gates in the chart."}}
+{"@type":"Question","name":"What do planets represent in astrology?","acceptedAnswer":{"@type":"Answer","text":"In astrology, each planet represents a fundamental drive or dimension of human experience. The Sun governs identity and life purpose. The Moon rules emotions and instincts. Mercury handles communication and thought. Venus governs love and values. Mars drives action and ambition. Jupiter expands and brings growth. Saturn structures and teaches discipline. The outer planets (Uranus, Neptune, Pluto) shape generational themes and deep transformation. The sign and house a planet occupies in your birth chart colors how that energy expresses in your life."}},
+{"@type":"Question","name":"What is the difference between personal and outer planets?","acceptedAnswer":{"@type":"Answer","text":"Personal planets (Sun, Moon, Mercury, Venus, Mars) move relatively quickly through the zodiac and shape your individual personality, daily habits, and close relationships. Social planets (Jupiter, Saturn) bridge the personal and collective, influencing growth, ambition, and life structure over longer cycles. Outer planets (Uranus, Neptune, Pluto) move so slowly they remain in a single sign for years or decades, shaping the themes of entire generations rather than individual traits alone."}},
+{"@type":"Question","name":"Why are the Sun and Moon called planets in astrology?","acceptedAnswer":{"@type":"Answer","text":"In astrology, the Sun and Moon are traditionally grouped with the planets and called luminaries. Although astronomically the Sun is a star and the Moon is a satellite, astrology uses the term planets as shorthand for all celestial bodies that move through the zodiac and carry symbolic meaning in a birth chart. This convention dates back thousands of years to when all visible moving celestial objects were called wandering stars."}},
+{"@type":"Question","name":"What is a planetary return in astrology?","acceptedAnswer":{"@type":"Answer","text":"A planetary return occurs when a transiting planet returns to the exact position it occupied at the moment of your birth. The most well-known is the Saturn Return around ages 29 and 58, which marks major periods of restructuring and maturity. The Jupiter Return happens roughly every 12 years and often brings expansion and opportunity. The Chiron Return around age 50 signals a period of deep healing and wisdom."}},
+{"@type":"Question","name":"What does it mean when a planet is in retrograde?","acceptedAnswer":{"@type":"Answer","text":"When a planet appears to move backward through the zodiac from Earth's perspective, it is said to be in retrograde. Retrograde periods are associated with review, reflection, and revisiting themes related to that planet. Mercury retrograde is the most discussed, often linked to communication mix-ups and travel delays. All planets except the Sun and Moon go retrograde periodically, and these periods are generally seen as times to slow down and look inward rather than push forward."}}
 ]}
 </script>
 </head>
@@ -95,7 +248,7 @@
                     <img src="/assets/icon-english.svg" alt="English" class="h-5 w-7">
                 </div>
                 <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Sign In</a>
-                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Register</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Register</a>
             </div>
         </div>
     </nav>
@@ -108,128 +261,394 @@
     </div>
 
  <!-- ==================== HERO BANNER ==================== -->
- <section class="bg-gm-dark text-white text-center py-12 md:py-16">
-     <div class="max-w-3xl mx-auto px-6">
-         <h1 class="text-3xl md:text-4xl font-bold mb-3">Human Design Planets Explained</h1>
-         <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-xl mx-auto">Learn what each planet means in Human Design, how planets activate Gates in your Bodygraph, and how planetary activations shape your conscious and unconscious design.</p>
+ <section class="relative bg-gm-dark text-white text-center pt-14 md:pt-20 pb-6 md:pb-8 overflow-hidden">
+     <!-- Starfield -->
+     <div class="astro-stars"></div>
+
+     <!-- Decorative planet/constellation illustrations at edges -->
+     <div class="hero-planet-layer">
+         <!-- Saturn-like planet, top-left -->
+         <svg width="120" height="120" viewBox="0 0 120 120" style="top: 10%; left: 3%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="60" cy="60" r="30" stroke="#d4a843" stroke-width="1.5"/>
+             <ellipse cx="60" cy="60" rx="55" ry="12" stroke="#d4a843" stroke-width="1" transform="rotate(-20 60 60)"/>
+         </svg>
+         <!-- Jupiter with bands, top-right -->
+         <svg width="100" height="100" viewBox="0 0 100 100" style="top: 8%; right: 5%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="50" cy="50" r="35" stroke="#d4a843" stroke-width="1.5"/>
+             <path d="M20 42 Q50 38 80 42" stroke="#d4a843" stroke-width="0.8" fill="none"/>
+             <path d="M18 52 Q50 56 82 52" stroke="#d4a843" stroke-width="0.8" fill="none"/>
+             <path d="M22 62 Q50 58 78 62" stroke="#d4a843" stroke-width="0.8" fill="none"/>
+         </svg>
+         <!-- Small crescent moon, bottom-left -->
+         <svg width="60" height="60" viewBox="0 0 60 60" style="bottom: 12%; left: 8%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M35 10 A22 22 0 1 0 35 50 A16 16 0 1 1 35 10Z" stroke="#d4a843" stroke-width="1.2" fill="none"/>
+         </svg>
+         <!-- Small constellation cluster, bottom-right -->
+         <svg width="80" height="80" viewBox="0 0 80 80" style="bottom: 10%; right: 6%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="20" cy="20" r="2" fill="#d4a843"/>
+             <circle cx="55" cy="15" r="2" fill="#d4a843"/>
+             <circle cx="40" cy="45" r="2" fill="#d4a843"/>
+             <circle cx="65" cy="55" r="2" fill="#d4a843"/>
+             <circle cx="25" cy="65" r="2" fill="#d4a843"/>
+             <line x1="20" y1="20" x2="55" y2="15" stroke="#d4a843" stroke-width="0.5"/>
+             <line x1="55" y1="15" x2="40" y2="45" stroke="#d4a843" stroke-width="0.5"/>
+             <line x1="40" y1="45" x2="65" y2="55" stroke="#d4a843" stroke-width="0.5"/>
+             <line x1="40" y1="45" x2="25" y2="65" stroke="#d4a843" stroke-width="0.5"/>
+         </svg>
+     </div>
+
+     <div class="relative z-10 max-w-3xl mx-auto px-6">
+         <div class="hero-fade-in">
+             <span class="inline-block bg-white/10 backdrop-blur-sm text-white/90 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">Astrology</span>
+         </div>
+         <h1 class="hero-fade-in text-3xl md:text-4xl font-bold mb-4">Astrology Planets Explained</h1>
+         <p class="hero-fade-in text-gray-300 text-sm md:text-base leading-relaxed max-w-xl mx-auto">Learn what each planet means in astrology, from the personal planets (Sun, Moon, Mercury, Venus, Mars) through the outer planets (Jupiter, Saturn, Uranus, Neptune, Pluto) plus Chiron and Black Moon Lilith.</p>
      </div>
  </section>
 
+
+ <!-- ==================== SOLAR SYSTEM ILLUSTRATION ==================== -->
+ <section class="pt-4 md:pt-6 pb-6 md:pb-8 bg-gradient-to-b from-gm-dark to-[#2a1b45]">
+     <div class="max-w-3xl mx-auto px-6 text-center">
+         <img src="Maja_Planets.png" alt="Illustrated solar system showing the planets used in astrology" class="w-full max-w-2xl mx-auto rounded-2xl">
+     </div>
+ </section>
+
+
  <!-- ==================== THE PLANETS IN HUMAN DESIGN ==================== -->
- <section class="py-10 md:py-14 bg-white" id="planets-in-human-design">
-     <div class="max-w-4xl mx-auto px-6">
-         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> The Planets in Human Design</h2>
+ <section class="py-10 md:py-14 bg-white" id="planets-in-astrology">
+     <div class="max-w-6xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> The Planets in Astrology</h2>
 
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">In Human Design, planets do not describe personality in the same way they do in astrology. Instead, each planet activates a specific Gate in your Bodygraph and gives that activation a particular thematic role. The planet describes the function of the activation, the way that Gate is expressed within your design.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4 max-w-3xl">In astrology, each planet represents a core drive or dimension of human experience. The sign a planet occupies at your birth colors how that energy expresses, while the house it falls in shows the area of life where it plays out most strongly. Together, the planets form the foundation of your natal chart.</p>
 
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">Your chart is calculated at two moments: the moment of birth (Personality, conscious) and approximately 88 days before birth (Design, unconscious). Each planetary body appears twice in your chart, once on the Personality side and once on the Design side.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8 max-w-3xl">The personal planets (Sun through Mars) move quickly and shape your individual personality and daily life. The social planets (Jupiter, Saturn) govern growth and structure over longer cycles. The outer planets (Uranus, Neptune, Pluto) move so slowly they define the themes of entire generations.</p>
+
+         <!-- Planet group filter tabs -->
+         <div class="flex flex-wrap gap-2 mb-8 justify-center">
+             <button class="planet-tab active" data-group="all" onclick="filterPlanets('all')">All Planets</button>
+             <button class="planet-tab" data-group="personal" onclick="filterPlanets('personal')">Personal</button>
+             <button class="planet-tab" data-group="social" onclick="filterPlanets('social')">Social</button>
+             <button class="planet-tab" data-group="outer" onclick="filterPlanets('outer')">Outer</button>
+             <button class="planet-tab" data-group="special" onclick="filterPlanets('special')">Special Bodies</button>
+         </div>
 
          <!-- Planet cards grid -->
-         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="planet-grid">
 
              <!-- Sun -->
-             <div class="bg-gm-light rounded-lg border border-gm-border p-5">
-                 <h3 class="text-base font-bold text-gray-800 mb-1">Sun</h3>
-                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-2">The Life Force</p>
-                 <p class="text-gm-text text-sm md:text-base leading-relaxed">The Sun is one half of the Sun/Earth polarity, which together accounts for about 70% of the total imprinting in a Human Design chart. The Sun represents the core life force and central theme of expression in your design. Your Personality Sun reflects this theme consciously, while your Design Sun reflects the unconscious life force expressed through the body.</p>
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x2609;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Sun</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Identity & Life Purpose</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">The Sun represents your core identity, ego, and life purpose. It is the central force of the birth chart, describing who you are at the deepest level, what drives your sense of self, and where you seek to shine.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Ruler: <strong class="text-gm-purple">Leo</strong></span>
+                     <span>Cycle: <strong class="text-gm-purple">1 year</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Personal</span>
              </div>
 
              <!-- Earth -->
-             <div class="bg-gm-light rounded-lg border border-gm-border p-5">
-                 <h3 class="text-base font-bold text-gray-800 mb-1">Earth</h3>
-                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-2">The Grounding Force</p>
-                 <p class="text-gm-text text-sm md:text-base leading-relaxed">The Earth is the grounding counterpart to the Sun in the Sun/Earth polarity. Together, the Sun and Earth account for about 70% of the total imprinting in the chart. The Earth shows where your core life force is grounded and stabilized so it can be lived in form. Your Personality Earth reflects the conscious themes that ground you, while your Design Earth reflects the unconscious grounding expressed through the body.</p>
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x2641;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Earth</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Grounding & Physical Reality</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">The Earth is always directly opposite the Sun in your chart. It represents where you ground your solar energy into practical, physical reality. The Earth sign and house point to the resources and material foundations that support your life purpose.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Ruler: <strong class="text-gm-purple">Taurus</strong></span>
+                     <span>Cycle: <strong class="text-gm-purple">1 year</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Personal</span>
              </div>
 
              <!-- Moon -->
-             <div class="bg-gm-light rounded-lg border border-gm-border p-5">
-                 <h3 class="text-base font-bold text-gray-800 mb-1">Moon</h3>
-                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-2">The Driving Force</p>
-                 <p class="text-gm-text text-sm md:text-base leading-relaxed">In Human Design, the Moon is what drives you. It represents the motivational force that keeps you moving through life and compels action.</p>
-             </div>
-
-             <!-- North Node -->
-             <div class="bg-gm-light rounded-lg border border-gm-border p-5">
-                 <h3 class="text-base font-bold text-gray-800 mb-1">North Node</h3>
-                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-2">The Future Direction</p>
-                 <p class="text-gm-text text-sm md:text-base leading-relaxed">The North Node represents the environment and direction that emerge in the second half of life, roughly after the Uranus Opposition around ages 38–42. It points to the themes you grow into over time.</p>
-             </div>
-
-             <!-- South Node -->
-             <div class="bg-gm-light rounded-lg border border-gm-border p-5">
-                 <h3 class="text-base font-bold text-gray-800 mb-1">South Node</h3>
-                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-2">The Past Environment</p>
-                 <p class="text-gm-text text-sm md:text-base leading-relaxed">The South Node represents the environment and themes that shape the first half of life. It describes where you come from energetically and the foundation on which later development is built.</p>
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x263D;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Moon</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Emotions & Inner World</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">The Moon governs your emotional nature, instincts, and subconscious patterns. It reveals how you process feelings, what makes you feel safe, and what you need for emotional nourishment. Your Moon sign describes your inner world and habitual responses.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Ruler: <strong class="text-gm-purple">Cancer</strong></span>
+                     <span>Cycle: <strong class="text-gm-purple">28 days</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Personal</span>
              </div>
 
              <!-- Mercury -->
-             <div class="bg-gm-light rounded-lg border border-gm-border p-5">
-                 <h3 class="text-base font-bold text-gray-800 mb-1">Mercury</h3>
-                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-2">Communication</p>
-                 <p class="text-gm-text text-sm md:text-base leading-relaxed">Mercury represents communication and what you are here to express. It shows how information is articulated, explained, and shared through your design.</p>
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x263F;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Mercury</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Communication & Thought</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Mercury rules the mind, communication, and how you process and share information. It governs learning style, logical thinking, speech, writing, and everyday exchanges. Your Mercury sign shapes the way you think, argue, and make sense of the world.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Ruler: <strong class="text-gm-purple">Gemini / Virgo</strong></span>
+                     <span>Cycle: <strong class="text-gm-purple">88 days</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Personal</span>
              </div>
 
              <!-- Venus -->
-             <div class="bg-gm-light rounded-lg border border-gm-border p-5">
-                 <h3 class="text-base font-bold text-gray-800 mb-1">Venus</h3>
-                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-2">Values & Morality</p>
-                 <p class="text-gm-text text-sm md:text-base leading-relaxed">Venus in Human Design governs your values, principles, and moral code. It shapes what you consider right and wrong, and the standards by which you evaluate life.</p>
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Venus</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Love, Beauty & Values</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Venus governs love, beauty, pleasure, and what you value most. It shapes how you attract and relate to others, your aesthetic sensibilities, and your approach to romance and harmony. Your Venus sign reveals what you find beautiful and how you express affection.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Ruler: <strong class="text-gm-purple">Taurus / Libra</strong></span>
+                     <span>Cycle: <strong class="text-gm-purple">225 days</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Personal</span>
              </div>
 
              <!-- Mars -->
-             <div class="bg-gm-light rounded-lg border border-gm-border p-5">
-                 <h3 class="text-base font-bold text-gray-800 mb-1">Mars</h3>
-                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-2">Immature Energy</p>
-                 <p class="text-gm-text text-sm md:text-base leading-relaxed">Mars represents immature or raw energy. It is the force that needs to be tempered and refined over time. Mars themes describe where you may act impulsively or where growth requires discipline.</p>
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x2642;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Mars</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Action & Drive</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Mars is the planet of action, desire, physical energy, and courage. It governs how you assert yourself, pursue what you want, and handle conflict. Your Mars sign describes your fighting style, your physical drive, and how you channel anger and ambition.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Ruler: <strong class="text-gm-purple">Aries / Scorpio</strong></span>
+                     <span>Cycle: <strong class="text-gm-purple">687 days</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Personal</span>
              </div>
 
              <!-- Jupiter -->
-             <div class="bg-gm-light rounded-lg border border-gm-border p-5">
-                 <h3 class="text-base font-bold text-gray-800 mb-1">Jupiter</h3>
-                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-2">The Law & Protection</p>
-                 <p class="text-gm-text text-sm md:text-base leading-relaxed">Jupiter represents the law: personal law, natural law, and the protection that comes from living in alignment with your design. It shows where protection and support arise when you live according to your nature.</p>
+             <div class="planet-card" data-group="social">
+                 <div class="planet-icon-badge"><span>&#x2643;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Jupiter</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Expansion & Abundance</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Jupiter is the great benefic, the planet of expansion, optimism, abundance, and higher learning. It governs philosophy, travel, faith, and the search for meaning. Your Jupiter sign and house show where life tends to open doors for you and where you find your greatest purpose.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Ruler: <strong class="text-gm-purple">Sagittarius</strong></span>
+                     <span>Cycle: <strong class="text-gm-purple">12 years</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-social">Social</span>
              </div>
 
              <!-- Saturn -->
-             <div class="bg-gm-light rounded-lg border border-gm-border p-5">
-                 <h3 class="text-base font-bold text-gray-800 mb-1">Saturn</h3>
-                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-2">Discipline & Consequence</p>
-                 <p class="text-gm-text text-sm md:text-base leading-relaxed">Saturn represents discipline, consequence, and your relationship with accountability. It shows where patience is required and where life demands maturity.</p>
+             <div class="planet-card" data-group="social">
+                 <div class="planet-icon-badge"><span>&#x2644;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Saturn</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Structure & Discipline</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Saturn is the taskmaster of the zodiac, governing discipline, responsibility, boundaries, and long-term achievement. It represents the areas of life where you face your greatest challenges and, through perseverance, earn your deepest mastery. The Saturn Return around ages 29 and 58 marks pivotal periods of restructuring.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Ruler: <strong class="text-gm-purple">Capricorn</strong></span>
+                     <span>Cycle: <strong class="text-gm-purple">29.5 years</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-social">Social</span>
              </div>
 
              <!-- Uranus -->
-             <div class="bg-gm-light rounded-lg border border-gm-border p-5">
-                 <h3 class="text-base font-bold text-gray-800 mb-1">Uranus</h3>
-                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-2">Disruption & Uniqueness</p>
-                 <p class="text-gm-text text-sm md:text-base leading-relaxed">Uranus represents disruption, unpredictability, and the force of individuality. It describes where your design breaks from convention and where uniqueness seeks expression.</p>
+             <div class="planet-card" data-group="outer">
+                 <div class="planet-icon-badge"><span>&#x2645;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Uranus</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Revolution & Innovation</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Uranus is the planet of sudden change, rebellion, innovation, and liberation. It governs where you break free from convention, embrace your individuality, and experience unexpected breakthroughs. Uranus spends about 7 years in each sign, shaping generational attitudes toward freedom and progress.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Ruler: <strong class="text-gm-purple">Aquarius</strong></span>
+                     <span>Cycle: <strong class="text-gm-purple">84 years</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-generational">Generational</span>
              </div>
 
              <!-- Neptune -->
-             <div class="bg-gm-light rounded-lg border border-gm-border p-5">
-                 <h3 class="text-base font-bold text-gray-800 mb-1">Neptune</h3>
-                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-2">Mystery & Illusion</p>
-                 <p class="text-gm-text text-sm md:text-base leading-relaxed">Neptune represents mystery, illusion, and what remains veiled in the design. It shows where clarity may be obscured, but also where spiritual sensitivity and insight can emerge over time.</p>
+             <div class="planet-card" data-group="outer">
+                 <div class="planet-icon-badge"><span>&#x2646;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Neptune</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Spirituality & Imagination</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Neptune governs dreams, intuition, spirituality, compassion, and the dissolution of boundaries. It rules imagination and artistic inspiration but can also bring confusion, illusion, and escapism. Neptune spends about 14 years in each sign, shaping generational ideals around faith, art, and collective yearning.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Ruler: <strong class="text-gm-purple">Pisces</strong></span>
+                     <span>Cycle: <strong class="text-gm-purple">165 years</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-generational">Generational</span>
              </div>
 
              <!-- Pluto -->
-             <div class="bg-gm-light rounded-lg border border-gm-border p-5">
-                 <h3 class="text-base font-bold text-gray-800 mb-1">Pluto</h3>
-                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-2">Truth & Transformation</p>
-                 <p class="text-gm-text text-sm md:text-base leading-relaxed">Pluto represents deep truth and transformative force. It reveals what cannot be avoided and where irreversible change works through the design over time, often across generations.</p>
+             <div class="planet-card" data-group="outer">
+                 <div class="planet-icon-badge"><span>&#x2647;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Pluto</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Transformation & Power</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Pluto is the planet of transformation, death and rebirth, power, and the unconscious. It governs deep psychological processes, obsession, regeneration, and the destruction of what no longer serves growth. Pluto spends 12 to 30 years in a sign, driving profound generational shifts in how society relates to power.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Ruler: <strong class="text-gm-purple">Scorpio</strong></span>
+                     <span>Cycle: <strong class="text-gm-purple">248 years</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-generational">Generational</span>
+             </div>
+
+             <!-- North Node -->
+             <div class="planet-card" data-group="special">
+                 <div class="planet-icon-badge"><span>&#x260A;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">North Node</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Soul's Growth Direction</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">The North Node points to the qualities, experiences, and life direction your soul is growing toward in this lifetime. It represents unfamiliar territory that feels challenging but ultimately fulfilling. The sign and house of your North Node describe the lessons you are here to learn.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Cycle: <strong class="text-gm-purple">18.6 years</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-special">Special</span>
+             </div>
+
+             <!-- South Node -->
+             <div class="planet-card" data-group="special">
+                 <div class="planet-icon-badge"><span>&#x260B;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">South Node</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Karmic Past & Comfort Zone</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">The South Node represents innate talents, default patterns, and qualities carried over from past experience. It describes your comfort zone and the skills that come naturally but can also hold you back if you rely on them too heavily. Balancing North and South Node themes is central to the soul's journey.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Cycle: <strong class="text-gm-purple">18.6 years</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-special">Special</span>
              </div>
 
              <!-- Chiron -->
-             <div class="bg-gm-light rounded-lg border border-gm-border p-5">
-                 <h3 class="text-base font-bold text-gray-800 mb-1">Chiron</h3>
-                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-2">Lifecycle Marker</p>
-                 <p class="text-gm-text text-sm md:text-base leading-relaxed">Chiron is not an imprinting body in Human Design. It does not activate a Gate. Instead, it serves as a lifecycle marker for 9-centered beings. The Chiron Return around age 50 marks the beginning of the third phase of life, particularly significant for 6th-line profiles stepping into their Role Model phase.</p>
+             <div class="planet-card" data-group="special">
+                 <div class="planet-icon-badge"><span>&#x26B7;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Chiron</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">The Wounded Healer</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Chiron orbits between Saturn and Uranus, known as the Wounded Healer. It represents a deep, core wound that you carry through life and, through confronting it, develop the ability to heal others. Your Chiron sign and house reveal where your greatest vulnerability and most profound wisdom lie.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Cycle: <strong class="text-gm-purple">~50 years</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-special">Special</span>
+             </div>
+
+             <!-- Black Moon Lilith -->
+             <div class="planet-card" data-group="special">
+                 <div class="planet-icon-badge"><span>&#x26B8;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Black Moon Lilith</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Raw Desire & Shadow Self</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Black Moon Lilith is not a physical body but a mathematical point representing the lunar apogee, the point where the Moon is farthest from Earth in its orbit. It symbolizes your raw, untamed desires, suppressed instincts, and the parts of yourself that society pressures you to hide. Your Lilith sign and house reveal where you refuse to compromise, where you feel shame or rage, and where reclaiming your authentic power leads to liberation.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Cycle: <strong class="text-gm-purple">~9 years</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-special">Special</span>
              </div>
 
          </div>
 
-         <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
-             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Note</p>
-             <p class="text-gm-text text-sm md:text-base leading-relaxed italic">The same planet can activate very different Gates depending on when you were born. Each planetary body appears twice in the chart, once at birth (Personality) and once approximately 88 days before birth (Design), often activating different Gates on each side.</p>
+         <hr class="planet-divider">
+
+         <div class="tip-box my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Tip</p>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed">Two people born just days apart can have very different charts. The Moon changes signs every 2.5 days, and Mercury and Venus shift frequently as well. Even small differences in birth time can move planets into different houses, changing how their energy plays out in your life.</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== PLANETS IN SIGNS ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="planets-in-signs">
+     <div class="max-w-6xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4"><span class="text-gm-purple">|</span> Planets in Signs</h2>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8 max-w-3xl">The sign a planet occupies colors <strong class="text-gray-800">how</strong> that planet's energy expresses. The same planet behaves very differently depending on which sign it falls in. Below are examples showing how a single planet shifts its expression across the zodiac.</p>
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-4">Mercury Through the Signs</h3>
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x263F;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Mercury in Aries</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Quick & Direct</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Thinks fast, speaks bluntly, and makes snap decisions. Aries Mercury is competitive in debate and impatient with drawn-out explanations. Ideas come in bursts and are acted on immediately.</p>
+             </div>
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x263F;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Mercury in Virgo</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Analytical & Precise</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Mercury is in its rulership and exaltation in Virgo, making this one of its strongest placements. Thinking is methodical, detail-oriented, and practical. Virgo Mercury excels at organizing information and problem-solving.</p>
+             </div>
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x263F;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Mercury in Pisces</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Intuitive & Poetic</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Thinks in images, metaphors, and feelings rather than linear logic. Pisces Mercury absorbs information through atmosphere and intuition. Communication is creative and empathetic but can be vague or elusive.</p>
+             </div>
+         </div>
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-4">Venus Through the Signs</h3>
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Venus in Taurus</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Sensual & Steady</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Venus is in its home sign in Taurus. Love is expressed through physical touch, loyalty, and creating beautiful, comfortable spaces. Values security and consistency in relationships above all.</p>
+             </div>
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Venus in Scorpio</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Intense & Transformative</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Love is all or nothing. Scorpio Venus craves deep emotional and physical intimacy, is fiercely loyal, and struggles with jealousy or possessiveness. Relationships are vehicles for profound transformation.</p>
+             </div>
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Venus in Aquarius</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Independent & Unconventional</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Values intellectual connection and personal freedom in love. Aquarius Venus is attracted to unique, original people and resists traditional relationship structures. Friendship is the foundation of romance.</p>
+             </div>
+         </div>
+
+         <div class="tip-box my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Tip</p>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed">Your Sun sign is just the beginning. To understand your full communication style, look at your Mercury sign. For love and relationships, look at Venus. For drive and ambition, check Mars. Each planet tells a different part of your story.</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== PLANETS IN HOUSES ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="planets-in-houses">
+     <div class="max-w-6xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4"><span class="text-gm-purple">|</span> Planets in Houses</h2>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8 max-w-3xl">While the sign shows <strong class="text-gray-800">how</strong> a planet expresses, the house shows <strong class="text-gray-800">where</strong> in your life that energy plays out. The same planet in the same sign will manifest very differently depending on which house it occupies.</p>
+
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">1st House</p>
+                 <div class="planet-icon-badge"><span>&#x2642;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Mars in the 1st</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Identity & Appearance</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Mars energy is visible to everyone. You come across as assertive, competitive, and physically energetic. First impressions are bold and direct. There is a natural athleticism and an unmistakable drive in your personality.</p>
+             </div>
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">7th House</p>
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Venus in the 7th</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Partnership & Marriage</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Venus is at home in the 7th House of partnership. Relationships tend to be harmonious and central to your life. You attract partners with grace and beauty, and creating balance within one-to-one connections is a core life theme.</p>
+             </div>
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">10th House</p>
+                 <div class="planet-icon-badge"><span>&#x2609;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Sun in the 10th</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Career & Public Image</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Your identity is closely tied to your career and public reputation. There is a strong drive toward achievement, visibility, and recognition. Authority comes naturally, and your life purpose often unfolds through professional accomplishments.</p>
+             </div>
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">12th House</p>
+                 <div class="planet-icon-badge"><span>&#x2644;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Saturn in the 12th</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Solitude & Karma</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Hidden fears and responsibilities, spiritual discipline through solitude, karmic work done behind the scenes. Saturn here demands that you confront subconscious limitations and develop inner strength through periods of withdrawal and reflection.</p>
+             </div>
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">4th House</p>
+                 <div class="planet-icon-badge"><span>&#x263D;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Moon in the 4th</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Home & Emotional Roots</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">The Moon is powerfully placed in its natural house. Emotional security is deeply tied to home, family, and a sense of belonging. There is a strong connection to ancestry and childhood memories shape adult emotional patterns profoundly.</p>
+             </div>
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">2nd House</p>
+                 <div class="planet-icon-badge"><span>&#x2643;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Jupiter in the 2nd</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Wealth & Self-Worth</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Jupiter expands everything it touches, and in the 2nd House it brings natural abundance and a generous relationship with money. Earning tends to come through optimism, wisdom, or teaching. There is an innate sense of self-worth and material confidence.</p>
+             </div>
+         </div>
+
+         <div class="tip-box my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Tip</p>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed">An empty house does not mean that area of life is inactive. The sign on the house cusp and its ruling planet still influence that domain. Planets in houses simply add extra emphasis and complexity to those life areas.</p>
          </div>
      </div>
  </section>
@@ -240,33 +659,33 @@
          <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Frequently Asked Questions</h2>
          <div class="space-y-4">
              <details class="bg-white rounded-xl border border-gm-border p-5">
-                 <summary class="text-sm md:text-base font-bold text-gray-800 pr-8 py-5 px-6">What do planets mean in Human Design?</summary>
+                 <summary class="text-sm md:text-base font-bold text-gray-800 pr-8 py-5 px-6">What do planets represent in astrology?</summary>
                  <div class="mt-4 text-gm-text text-sm md:text-base leading-relaxed">
-                     <p>In Human Design, each planet activates a specific Gate in your Bodygraph and gives that activation a thematic role. The Sun represents your life force and core incarnation theme. The Moon is what drives you. Mercury governs communication. Venus shapes your values. Mars represents immature energy that needs refining. Jupiter is law and protection. Saturn is discipline. The outer planets (Uranus, Neptune, Pluto) carry generational themes. The planet tells you the function of the activation, the role that particular Gate energy plays in your design.</p>
+                     <p>In astrology, each planet represents a fundamental drive or dimension of human experience. The Sun governs identity and life purpose. The Moon rules emotions and instincts. Mercury handles communication and thought. Venus governs love and values. Mars drives action and ambition. Jupiter expands and brings growth. Saturn structures and teaches discipline. The outer planets (Uranus, Neptune, Pluto) shape generational themes and deep transformation. The sign and house a planet occupies in your birth chart colors how that energy expresses in your life.</p>
                  </div>
              </details>
              <details class="bg-white rounded-xl border border-gm-border p-5">
-                 <summary class="text-sm md:text-base font-bold text-gray-800 pr-8 py-5 px-6">Why does each planet appear twice in my chart?</summary>
+                 <summary class="text-sm md:text-base font-bold text-gray-800 pr-8 py-5 px-6">What is the difference between personal and outer planets?</summary>
                  <div class="mt-4 text-gm-text text-sm md:text-base leading-relaxed">
-                     <p>Your Human Design chart is calculated at two moments. The Personality calculation uses the planetary positions at the moment of your birth, representing your conscious self. The Design calculation uses the planetary positions approximately 88 days before birth, representing your unconscious body-level programming. Each planetary body appears twice in the chart, once on each side of the Bodygraph, giving you both a conscious and unconscious expression of that planetary theme. These may activate different Gates on the Personality and Design sides.</p>
+                     <p>Personal planets (Sun, Moon, Mercury, Venus, Mars) move relatively quickly through the zodiac and shape your individual personality, daily habits, and close relationships. Social planets (Jupiter, Saturn) bridge the personal and collective, influencing growth, ambition, and life structure over longer cycles. Outer planets (Uranus, Neptune, Pluto) move so slowly they remain in a single sign for years or decades, shaping the themes of entire generations rather than individual traits alone.</p>
                  </div>
              </details>
              <details class="bg-white rounded-xl border border-gm-border p-5">
-                 <summary class="text-sm md:text-base font-bold text-gray-800 pr-8 py-5 px-6">What is the difference between Personality and Design planets?</summary>
+                 <summary class="text-sm md:text-base font-bold text-gray-800 pr-8 py-5 px-6">Why are the Sun and Moon called planets in astrology?</summary>
                  <div class="mt-4 text-gm-text text-sm md:text-base leading-relaxed">
-                     <p>Personality planets (black side of the Bodygraph) are calculated at birth and represent the aspects of yourself you can observe and identify with consciously. Design planets (red side) are calculated approximately 88 days before birth and represent your unconscious, body-level programming. You may not recognize your Design activations in yourself, but others can see them in you. Together, both sides create the full picture of your design.</p>
+                     <p>In astrology, the Sun and Moon are traditionally grouped with the planets and called luminaries. Although astronomically the Sun is a star and the Moon is a satellite, astrology uses the term "planets" as shorthand for all celestial bodies that move through the zodiac and carry symbolic meaning in a birth chart. This convention dates back thousands of years to when all visible moving celestial objects were called wandering stars.</p>
                  </div>
              </details>
              <details class="bg-white rounded-xl border border-gm-border p-5">
-                 <summary class="text-sm md:text-base font-bold text-gray-800 pr-8 py-5 px-6">Which planetary activations matter most in a Human Design chart?</summary>
+                 <summary class="text-sm md:text-base font-bold text-gray-800 pr-8 py-5 px-6">What is a planetary return in astrology?</summary>
                  <div class="mt-4 text-gm-text text-sm md:text-base leading-relaxed">
-                     <p>The Sun and Earth together account for about 70% of the total imprinting in your chart, making them the most significant activations. Your Personality Sun Gate is often considered the core theme of your conscious purpose, while your Design Sun Gate expresses the unconscious life force operating through the body. The Nodes (North and South) define your environmental direction across the two halves of life. All planetary activations contribute to your design, but the Sun and Earth carry the greatest weight.</p>
+                     <p>A planetary return occurs when a transiting planet returns to the exact position it occupied at the moment of your birth. The most well-known is the Saturn Return around ages 29 and 58, which marks major periods of restructuring and maturity. The Jupiter Return happens roughly every 12 years and often brings expansion and opportunity. The Chiron Return around age 50 signals a period of deep healing and wisdom.</p>
                  </div>
              </details>
              <details class="bg-white rounded-xl border border-gm-border p-5">
-                 <summary class="text-sm md:text-base font-bold text-gray-800 pr-8 py-5 px-6">Is Chiron an imprinting body in Human Design?</summary>
+                 <summary class="text-sm md:text-base font-bold text-gray-800 pr-8 py-5 px-6">What does it mean when a planet is in retrograde?</summary>
                  <div class="mt-4 text-gm-text text-sm md:text-base leading-relaxed">
-                     <p>No. Chiron does not activate a Gate in your Bodygraph. In Human Design, Chiron serves as a lifecycle marker. The Chiron Return around age 50 signals the beginning of the third phase of life, which is particularly significant for those with 6th-line profiles who are stepping into their Role Model phase. Chiron is included on Genetic Matrix charts for reference, but it is not one of the planetary bodies that activate Gates in the chart.</p>
+                     <p>When a planet appears to move backward through the zodiac from Earth's perspective, it is said to be in retrograde. Retrograde periods are associated with review, reflection, and revisiting themes related to that planet. Mercury retrograde is the most discussed, often linked to communication mix-ups and travel delays. All planets except the Sun and Moon go retrograde periodically, and these periods are generally seen as times to slow down and look inward rather than push forward.</p>
                  </div>
              </details>
          </div>
@@ -278,17 +697,17 @@
      <div class="max-w-4xl mx-auto px-6">
          <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Other Learn Topics</h2>
          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-             <a href="/gates/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
-                 <h3 class="text-sm font-bold text-gm-purple mb-1">The 64 Gates &rarr;</h3>
-                 <p class="text-gray-400 text-xs leading-relaxed">Explore all 64 gates organized by Center, plus the six line themes that shape each activation.</p>
+             <a href="/astrology/zodiac-signs.html" class="learn-link bg-white rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Zodiac Signs &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Explore all 12 zodiac signs, their elements, modalities, and the personality traits each sign brings to your chart.</p>
              </a>
-             <a href="/centers/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
-                 <h3 class="text-sm font-bold text-gm-purple mb-1">The 9 Centers &rarr;</h3>
-                 <p class="text-gray-400 text-xs leading-relaxed">Discover the nine energy hubs of the Bodygraph and how definition shapes your design.</p>
+             <a href="/astrology/houses.html" class="learn-link bg-white rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">The 12 Houses &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Discover the 12 houses of the birth chart and how they map the key areas of your life experience.</p>
              </a>
-             <a href="/channels/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
-                 <h3 class="text-sm font-bold text-gm-purple mb-1">The 36 Channels &rarr;</h3>
-                 <p class="text-gray-400 text-xs leading-relaxed">When two gates connect, a channel is formed. Discover all 36 channels and the life force they carry.</p>
+             <a href="/astrology/aspects.html" class="learn-link bg-white rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Aspects & Orbs &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Learn how planets interact through aspects like conjunctions, trines, squares, and oppositions in your chart.</p>
              </a>
          </div>
      </div>
@@ -297,12 +716,12 @@
  <!-- ==================== CTA BANNER ==================== -->
  <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
      <div class="max-w-2xl mx-auto px-6">
-         <h2 class="text-2xl md:text-3xl font-bold mb-4">Explore Your Planetary Activations</h2>
+         <h2 class="text-2xl md:text-3xl font-bold mb-4">Unlock Your Full Birth Chart</h2>
          <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
-             Generate your free chart to see which Gates each planet activates in your Bodygraph across both the Personality and Design sides.
+             Access detailed astrology charts, Human Design charts, and hundreds of views and tools with a Genetic Matrix Pro membership.
          </p>
-         <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
-             Get Your Free Chart &rarr;
+         <a href="https://www.geneticmatrix.com/plans-features/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+             Explore Pro Features &rarr;
          </a>
      </div>
  </section>
@@ -344,6 +763,27 @@
             </div>
         </div>
     </footer>
+
+ <!-- Planet filter JS -->
+ <script>
+ function filterPlanets(group) {
+     const cards = document.querySelectorAll('.planet-card');
+     const tabs = document.querySelectorAll('.planet-tab');
+     tabs.forEach(t => t.classList.remove('active'));
+     document.querySelector(`[data-group="${group}"]`).classList.add('active');
+     cards.forEach(card => {
+         if (group === 'all' || card.dataset.group === group) {
+             card.classList.remove('planet-filtered-out');
+             card.classList.add('planet-filtered-in');
+             card.style.display = '';
+         } else {
+             card.classList.remove('planet-filtered-in');
+             card.classList.add('planet-filtered-out');
+             setTimeout(() => { card.style.display = 'none'; }, 300);
+         }
+     });
+ }
+ </script>
 
 </body>
 </html>

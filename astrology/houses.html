@@ -46,6 +46,84 @@
  details[open] summary::after { content: '\2212'; }
  details[open] > div { animation: fadeIn 0.2s ease-in-out; }
  @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+ /* Starfield for astro hero */
+ .astro-stars {
+     position: absolute; inset: 0; pointer-events: none;
+     background-image:
+         radial-gradient(1.5px 1.5px at 10% 20%, rgba(255,255,255,0.8) 0%, transparent 100%),
+         radial-gradient(2px 2px at 30% 50%, rgba(255,255,255,0.9) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 50% 15%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 70% 60%, rgba(255,255,255,0.85) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 85% 30%, rgba(255,255,255,0.75) 0%, transparent 100%),
+         radial-gradient(2px 2px at 15% 70%, rgba(172,148,216,0.8) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 60% 80%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 90% 85%, rgba(232,150,29,0.5) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 40% 90%, rgba(255,255,255,0.6) 0%, transparent 100%),
+         radial-gradient(2px 2px at 25% 40%, rgba(255,255,255,0.8) 0%, transparent 100%);
+     animation: astroTwinkle 4s ease-in-out infinite alternate;
+ }
+ @keyframes astroTwinkle {
+     0% { opacity: 0.7; }
+     100% { opacity: 1; }
+ }
+
+ /* Hero decorations */
+ .hero-chart-layer { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+ .hero-chart-layer svg { position: absolute; opacity: 0.12; }
+
+ /* Hero text entrance animation */
+ .hero-fade-in { opacity: 0; transform: translateY(12px); animation: heroEntrance 0.8s ease-out forwards; }
+ .hero-fade-in:nth-child(1) { animation-delay: 0.2s; }
+ .hero-fade-in:nth-child(2) { animation-delay: 0.4s; }
+ .hero-fade-in:nth-child(3) { animation-delay: 0.6s; }
+ @keyframes heroEntrance {
+     to { opacity: 1; transform: translateY(0); }
+ }
+
+ /* Slow spin for house wheel */
+ @keyframes slowSpin {
+     from { transform: rotate(0deg); }
+     to { transform: rotate(360deg); }
+ }
+ @keyframes counterSpin {
+     from { rotate: 0deg; }
+     to { rotate: -360deg; }
+ }
+ .house-wheel-container {
+     animation: slowSpin 120s linear infinite;
+ }
+ .house-wheel-container text {
+     animation: counterSpin 120s linear infinite;
+     transform-box: fill-box;
+     transform-origin: center;
+ }
+ .house-wheel-container svg {
+     filter: drop-shadow(0 0 8px rgba(212,168,67,0.15));
+ }
+
+ /* House card hover */
+ .house-card {
+     transition: all 0.3s ease;
+ }
+ .house-card:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 8px 30px rgba(110,88,152,0.15);
+ }
+
+ /* Lavender hover for cross-links */
+ .learn-link:hover {
+     border-color: #AC94D8 !important;
+     background: #faf8ff !important;
+ }
+
+ /* Subtle divider */
+ .house-divider {
+     border: none;
+     height: 1px;
+     background: linear-gradient(to right, transparent, rgba(110,88,152,0.2), transparent);
+     margin: 2rem 0;
+ }
  </style>
  <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"Astrology Houses Explained | House Systems & Calculation Methods","description":"Learn about the 12 astrology houses, what they represent, and the different house systems used to calculate them. Genetic Matrix supports 10 house methods including Placidus, Koch, Whole Sign, and more.","publisher":{"@type":"Organization","name":"Genetic Matrix","url":"https://www.geneticmatrix.com"},"mainEntityOfPage":"https://www.geneticmatrix.com/learn/astrology/houses/","datePublished":"2025-01-15","dateModified":"2026-03-06"}
@@ -55,8 +133,8 @@
 {"@type":"Question","name":"Which house system should I use?","acceptedAnswer":{"@type":"Answer","text":"If you are new to astrology, start with Placidus. It is the most widely used and most resources reference it. As you deepen your practice, experiment with Whole Sign (favored in traditional astrology) and Equal House to see which system best describes your life experience."}},
 {"@type":"Question","name":"Do house systems change my planets or signs?","acceptedAnswer":{"@type":"Answer","text":"No. Your planets stay in the same signs regardless of house system. Only the house placements change. Your Sun is still in Scorpio, but it might shift from the 4th House to the 5th House depending on the system."}},
 {"@type":"Question","name":"Why does Genetic Matrix offer 10 house systems?","acceptedAnswer":{"@type":"Answer","text":"Different astrological traditions and techniques work best with different house systems. Horary astrologers often prefer Regiomontanus, Vedic astrologers use Whole Sign, and most modern Western astrologers use Placidus. Offering all 10 lets you work within whatever tradition resonates with you."}},
-{"@type":"Question","name":"What is the free default?","acceptedAnswer":{"@type":"Answer","text":"Free charts on Genetic Matrix use Placidus, the most popular house system in Western astrology. Pro members can switch to any of the 10 supported systems."}},
-{"@type":"Question","name":"Do house systems affect my Human Design chart?","acceptedAnswer":{"@type":"Answer","text":"Human Design uses its own system of calculation that does not depend on traditional astrological house systems. The houses discussed here apply specifically to your astrology chart."}}
+{"@type":"Question","name":"How many house systems does Genetic Matrix support?","acceptedAnswer":{"@type":"Answer","text":"Genetic Matrix supports 10 house systems including Placidus, Koch, Whole Sign, Equal House, Porphyry, Regiomontanus, Campanus, Meridian, Morinus, and 0-Degree Aries. Pro members can switch between all 10 systems."}},
+{"@type":"Question","name":"Do house systems affect my Human Design chart?","acceptedAnswer":{"@type":"Answer","text":"Human Design uses its own system of calculation that does not depend on traditional astrological house systems. The houses discussed here apply specifically to your astrology or Astro HD chart."}}
 ]}
 </script>
 </head>
@@ -100,11 +178,91 @@
     </div>
 
  <!-- ==================== HERO BANNER ==================== -->
- <section class="bg-gm-dark text-white text-center py-12 md:py-16">
-     <div class="max-w-3xl mx-auto px-6">
-         <span class="inline-block bg-gm-purple text-white text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">Astrology</span>
-         <h1 class="text-3xl md:text-4xl font-bold mb-3">Astrology Houses Explained</h1>
-         <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-xl mx-auto">Learn about the 12 astrology houses, what they represent, and the different house systems used to calculate them. Genetic Matrix supports 10 house methods including Placidus, Koch, Whole Sign, and more.</p>
+ <section class="relative bg-gm-dark text-white text-center pt-12 md:pt-16 pb-2 md:pb-3 overflow-hidden">
+     <!-- Star dots -->
+     <div class="astro-stars"></div>
+     <!-- Decorative chart wheel illustrations -->
+     <div class="hero-chart-layer">
+         <!-- Left edge: partial chart wheel -->
+         <svg width="280" height="280" viewBox="0 0 280 280" style="left: -80px; top: 50%; transform: translateY(-50%);" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="140" cy="140" r="120" stroke="#AC94D8" stroke-width="1.5"/>
+             <circle cx="140" cy="140" r="80" stroke="#AC94D8" stroke-width="1"/>
+             <circle cx="140" cy="140" r="40" stroke="#7B4FBF" stroke-width="0.8"/>
+             <line x1="140" y1="20" x2="140" y2="260" stroke="#AC94D8" stroke-width="0.8"/>
+             <line x1="20" y1="140" x2="260" y2="140" stroke="#AC94D8" stroke-width="0.8"/>
+             <line x1="55" y1="55" x2="225" y2="225" stroke="#7B4FBF" stroke-width="0.6"/>
+             <line x1="225" y1="55" x2="55" y2="225" stroke="#7B4FBF" stroke-width="0.6"/>
+             <line x1="140" y1="20" x2="80" y2="244" stroke="#E066A0" stroke-width="0.5"/>
+             <line x1="140" y1="20" x2="200" y2="244" stroke="#E066A0" stroke-width="0.5"/>
+             <line x1="20" y1="140" x2="244" y2="80" stroke="#4ECDC4" stroke-width="0.5"/>
+             <line x1="20" y1="140" x2="244" y2="200" stroke="#4ECDC4" stroke-width="0.5"/>
+         </svg>
+         <!-- Right edge: partial chart wheel -->
+         <svg width="280" height="280" viewBox="0 0 280 280" style="right: -80px; top: 50%; transform: translateY(-50%);" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="140" cy="140" r="120" stroke="#AC94D8" stroke-width="1.5"/>
+             <circle cx="140" cy="140" r="80" stroke="#AC94D8" stroke-width="1"/>
+             <circle cx="140" cy="140" r="40" stroke="#7B4FBF" stroke-width="0.8"/>
+             <line x1="140" y1="20" x2="140" y2="260" stroke="#AC94D8" stroke-width="0.8"/>
+             <line x1="20" y1="140" x2="260" y2="140" stroke="#AC94D8" stroke-width="0.8"/>
+             <line x1="55" y1="55" x2="225" y2="225" stroke="#7B4FBF" stroke-width="0.6"/>
+             <line x1="225" y1="55" x2="55" y2="225" stroke="#7B4FBF" stroke-width="0.6"/>
+             <line x1="140" y1="20" x2="80" y2="244" stroke="#E066A0" stroke-width="0.5"/>
+             <line x1="140" y1="20" x2="200" y2="244" stroke="#E066A0" stroke-width="0.5"/>
+             <line x1="20" y1="140" x2="244" y2="80" stroke="#4ECDC4" stroke-width="0.5"/>
+             <line x1="20" y1="140" x2="244" y2="200" stroke="#4ECDC4" stroke-width="0.5"/>
+         </svg>
+     </div>
+     <div class="max-w-3xl mx-auto px-6 relative z-10">
+         <span class="hero-fade-in inline-block bg-gm-purple text-white text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">Astrology</span>
+         <h1 class="hero-fade-in text-3xl md:text-4xl font-bold mb-3">Astrology Houses Explained</h1>
+         <p class="hero-fade-in text-gray-300 text-sm md:text-base leading-relaxed max-w-xl mx-auto">Learn about the 12 astrology houses, what they represent, and the different house systems used to calculate them. Genetic Matrix supports 10 house methods including Placidus, Koch, Whole Sign, and more.</p>
+     </div>
+ </section>
+
+ <!-- ==================== ANIMATED HOUSE WHEEL ==================== -->
+ <section class="pt-0 pb-6 md:pb-8 bg-gradient-to-b from-gm-dark to-[#2a1b45] overflow-hidden">
+     <div class="max-w-4xl mx-auto px-6 text-center">
+         <!-- Animated house wheel diagram -->
+         <div class="relative w-64 h-64 md:w-80 md:h-80 mx-auto mb-6">
+             <div class="house-wheel-container w-full h-full">
+                 <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                     <!-- Outer circle -->
+                     <circle cx="150" cy="150" r="120" stroke="#d4a843" stroke-width="1.5" fill="none"/>
+                     <!-- Inner circle -->
+                     <circle cx="150" cy="150" r="70" stroke="#d4a843" stroke-width="1" fill="none"/>
+                     <!-- 12 radial lines at 30-degree intervals, outer r=120 to inner r=70 -->
+                     <!-- x = 150 + r*sin(angle), y = 150 - r*cos(angle) -->
+                     <line x1="150" y1="30" x2="150" y2="80" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="210" y1="46.1" x2="185" y2="89.4" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="253.9" y1="90" x2="210.6" y2="115" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="270" y1="150" x2="220" y2="150" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="253.9" y1="210" x2="210.6" y2="185" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="210" y1="253.9" x2="185" y2="210.6" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="150" y1="270" x2="150" y2="220" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="90" y1="253.9" x2="115" y2="210.6" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="46.1" y1="210" x2="89.4" y2="185" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="30" y1="150" x2="80" y2="150" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="46.1" y1="90" x2="89.4" y2="115" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="90" y1="46.1" x2="115" y2="89.4" stroke="#d4a843" stroke-width="0.8"/>
+                     <!-- House numbers 1-12 positioned at segment midpoints (15° between divider lines) -->
+                     <!-- r=95 (midway between outer 120 and inner 70), center 150,150 -->
+                     <!-- x = 150 + 95*sin(angle), y = 150 - 95*cos(angle) + 4 (baseline adjust) -->
+                     <text x="175" y="62" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">10</text>
+                     <text x="217" y="87" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">11</text>
+                     <text x="242" y="129" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">12</text>
+                     <text x="242" y="179" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">1</text>
+                     <text x="217" y="221" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">2</text>
+                     <text x="175" y="246" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">3</text>
+                     <text x="125" y="246" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">4</text>
+                     <text x="83" y="221" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">5</text>
+                     <text x="58" y="179" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">6</text>
+                     <text x="58" y="129" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">7</text>
+                     <text x="83" y="87" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">8</text>
+                     <text x="125" y="62" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">9</text>
+                 </svg>
+             </div>
+         </div>
+         <p class="text-gray-400 text-sm">The 12 houses divide the sky into areas of life experience</p>
      </div>
  </section>
 
@@ -126,41 +284,69 @@
      <div class="max-w-4xl mx-auto px-6">
          <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> The 12 Houses</h2>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">1st House: The House of Self</h3>
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The 1st House, also called the Ascendant, represents your outward personality, physical appearance, first impressions, and how you approach the world. It is the most personal house in the chart and shapes how others perceive you before they know you deeply. Any planet placed here has an outsized influence on your identity.</p>
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">2nd House: The House of Value</h3>
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The 2nd House governs your personal finances, material possessions, self-worth, and relationship with money. It describes how you earn, spend, and value resources, both tangible and intangible. This house also speaks to your sense of personal security and what you need to feel stable.</p>
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">1</span> Self</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">The 1st House, also called the Ascendant, represents your outward personality, physical appearance, first impressions, and how you approach the world. It is the most personal house in the chart and shapes how others perceive you before they know you deeply. Any planet placed here has an outsized influence on your identity.</p>
+             </div>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">3rd House: The House of Communication</h3>
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The 3rd House rules communication, short-distance travel, siblings, neighbors, and early education. It describes how you think, speak, write, and process information in daily life. This is the house of the mind's day-to-day operations: your learning style, curiosity, and local environment.</p>
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">2</span> Value</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">The 2nd House governs your personal finances, material possessions, self-worth, and relationship with money. It describes how you earn, spend, and value resources, both tangible and intangible. This house also speaks to your sense of personal security and what you need to feel stable.</p>
+             </div>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">4th House: The House of Home &amp; Family</h3>
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The 4th House, also called the IC (Imum Coeli), represents your home, family roots, ancestry, emotional foundations, and private life. It describes your relationship with your parents (particularly the nurturing parent), your sense of belonging, and the conditions of your later years in life.</p>
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">3</span> Communication</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">The 3rd House rules communication, short-distance travel, siblings, neighbors, and early education. It describes how you think, speak, write, and process information in daily life. This is the house of the mind's day-to-day operations: your learning style, curiosity, and local environment.</p>
+             </div>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">5th House: The House of Creativity &amp; Pleasure</h3>
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The 5th House governs creative self-expression, romance, children, hobbies, fun, and speculation. This is where you play, take risks, and express joy. It describes what brings you pleasure, your dating style before commitment, and your relationship with children (your own or in general).</p>
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">4</span> Home &amp; Family</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">The 4th House, also called the IC (Imum Coeli), represents your home, family roots, ancestry, emotional foundations, and private life. It describes your relationship with your parents (particularly the nurturing parent), your sense of belonging, and the conditions of your later years in life.</p>
+             </div>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">6th House: The House of Health &amp; Service</h3>
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The 6th House rules daily routines, health habits, work environment, and service to others. It describes how you approach your day-to-day responsibilities, your relationship with coworkers, and your physical well-being. This house focuses on the practical, unglamorous work of maintaining your life.</p>
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">5</span> Creativity &amp; Pleasure</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">The 5th House governs creative self-expression, romance, children, hobbies, fun, and speculation. This is where you play, take risks, and express joy. It describes what brings you pleasure, your dating style before commitment, and your relationship with children (your own or in general).</p>
+             </div>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">7th House: The House of Partnership</h3>
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The 7th House, also called the Descendant, governs committed partnerships, marriage, business partners, and open enemies. It describes what you seek in a partner, how you relate within one-to-one relationships, and the qualities you project onto others. It sits directly opposite the 1st House, reflecting the balance between self and other.</p>
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">6</span> Health &amp; Service</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">The 6th House rules daily routines, health habits, work environment, and service to others. It describes how you approach your day-to-day responsibilities, your relationship with coworkers, and your physical well-being. This house focuses on the practical, unglamorous work of maintaining your life.</p>
+             </div>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">8th House: The House of Transformation</h3>
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The 8th House rules shared resources, intimacy, death, rebirth, taxes, inheritance, and deep psychological transformation. It governs what happens when two people merge their lives, financially, emotionally, and sexually. This house also covers occult knowledge, hidden matters, and the process of letting go.</p>
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">7</span> Partnership</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">The 7th House, also called the Descendant, governs committed partnerships, marriage, business partners, and open enemies. It describes what you seek in a partner, how you relate within one-to-one relationships, and the qualities you project onto others. It sits directly opposite the 1st House, reflecting the balance between self and other.</p>
+             </div>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">9th House: The House of Philosophy</h3>
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The 9th House governs higher education, long-distance travel, philosophy, religion, law, and the search for meaning. It describes your belief systems, your relationship with foreign cultures, and your drive to understand the bigger picture. Where the 3rd House is local knowledge, the 9th House is global wisdom.</p>
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">8</span> Transformation</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">The 8th House rules shared resources, intimacy, death, rebirth, taxes, inheritance, and deep psychological transformation. It governs what happens when two people merge their lives, financially, emotionally, and sexually. This house also covers occult knowledge, hidden matters, and the process of letting go.</p>
+             </div>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">10th House: The House of Career &amp; Public Image</h3>
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The 10th House, also called the MC (Midheaven), represents your career, public reputation, achievements, and legacy. It describes your highest aspirations, your relationship with authority, and how the world sees your professional contributions. This is the most visible house in the chart.</p>
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">9</span> Philosophy</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">The 9th House governs higher education, long-distance travel, philosophy, religion, law, and the search for meaning. It describes your belief systems, your relationship with foreign cultures, and your drive to understand the bigger picture. Where the 3rd House is local knowledge, the 9th House is global wisdom.</p>
+             </div>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">11th House: The House of Community</h3>
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The 11th House governs friendships, social groups, humanitarian causes, hopes, and wishes for the future. It describes the communities you belong to, your relationship with collective goals, and what you dream about for the world. This is where personal identity meets the larger social fabric.</p>
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">10</span> Career &amp; Public Image</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">The 10th House, also called the MC (Midheaven), represents your career, public reputation, achievements, and legacy. It describes your highest aspirations, your relationship with authority, and how the world sees your professional contributions. This is the most visible house in the chart.</p>
+             </div>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">12th House: The House of the Unconscious</h3>
-         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The 12th House rules the subconscious mind, hidden enemies, self-undoing, spirituality, isolation, and endings. It describes what lies beneath the surface: your dreams, fears, karmic patterns, and connection to the transcendent. Planets here operate behind the scenes, often in ways you are not consciously aware of.</p>
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">11</span> Community</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">The 11th House governs friendships, social groups, humanitarian causes, hopes, and wishes for the future. It describes the communities you belong to, your relationship with collective goals, and what you dream about for the world. This is where personal identity meets the larger social fabric.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">12</span> The Unconscious</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">The 12th House rules the subconscious mind, hidden enemies, self-undoing, spirituality, isolation, and endings. It describes what lies beneath the surface: your dreams, fears, karmic patterns, and connection to the transcendent. Planets here operate behind the scenes, often in ways you are not consciously aware of.</p>
+             </div>
+
+         </div>
 
          <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
              <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Key Insight</p>
@@ -187,39 +373,57 @@
      <div class="max-w-4xl mx-auto px-6">
          <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> House Systems Supported by Genetic Matrix</h2>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Placidus (Free Default)</h3>
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Placidus</h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Placidus is the most popular house system in modern Western astrology and the default in most astrology software worldwide. Developed by the 17th-century Italian monk Placidus de Titis, it divides the houses based on the time it takes each degree of the ecliptic to move from the horizon to the meridian. This creates unequal house sizes that reflect the actual motion of the sky at your birth location. Placidus works well for most birth locations but produces distorted houses at very high latitudes (above 60 degrees north or south) where some degrees never rise or set.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Koch</h3>
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Koch</h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Named after Walter Koch, this system was popular in German-speaking countries throughout the 20th century. Koch houses are calculated based on the time it takes the MC degree to rise from the horizon, then dividing that arc. Like Placidus, it produces unequal houses and can have issues at extreme latitudes. Koch tends to emphasize the importance of the Midheaven in chart interpretation and produces houses that some astrologers feel better reflect career and public life themes.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Porphyrius</h3>
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Porphyrius</h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">One of the oldest house systems, attributed to the 3rd-century philosopher Porphyry. It uses a simple and elegant approach: after establishing the Ascendant and MC, it divides each quadrant of the chart into three equal parts. This means houses within the same quadrant are equal in size, though quadrants themselves may differ. Porphyrius is valued for its mathematical simplicity and its roots in classical astrology.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Regiomontanus</h3>
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Regiomontanus</h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Developed by the 15th-century German mathematician Johannes Muller (known as Regiomontanus), this system divides the celestial equator into 12 equal segments and then projects those divisions onto the ecliptic. It was the standard house system during the Renaissance and remains popular in horary astrology (the practice of casting charts to answer specific questions). Many traditional astrologers prefer Regiomontanus for its mathematical elegance.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Campanus</h3>
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Campanus</h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Named after the 13th-century Italian mathematician Campanus of Novara, this system divides the prime vertical (the great circle passing through the zenith and east/west points) into 12 equal 30-degree segments, then projects them onto the ecliptic. Campanus houses reflect the actual spatial divisions of the sky as seen from the birthplace. Some astrologers favor it for its emphasis on the local horizon and the idea that houses should represent real spatial relationships.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Equal</h3>
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Equal</h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The Equal House system is one of the simplest and oldest approaches. It takes the degree of the Ascendant and creates 12 houses of exactly 30 degrees each. If your Ascendant is at 15 degrees Aries, your 2nd House cusp is at 15 degrees Taurus, your 3rd at 15 degrees Gemini, and so on around the wheel. The advantage is consistency and simplicity. The trade-off is that the MC (Midheaven) does not necessarily fall on the 10th House cusp, which means the natural association between the MC and the 10th House is broken. Equal House is widely used in Hellenistic astrology and is making a comeback among modern practitioners.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Whole Sign</h3>
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Whole Sign</h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Whole Sign is arguably the oldest house system, used extensively in Hellenistic and ancient Indian (Vedic) astrology. In this system, whatever sign the Ascendant falls in becomes the entire 1st House. The next sign becomes the entire 2nd House, and so on. Each house is exactly one zodiac sign, 30 degrees wide. This means two people with Ascendants at 1 degree Aries and 29 degrees Aries have the same house placements. Whole Sign has seen a major revival in modern astrology due to the influence of Project Hindsight and the translation of ancient Greek astrological texts. Its simplicity makes it particularly useful for beginners and for timing techniques.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Carter Poli-Equatorial</h3>
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Carter Poli-Equatorial</h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Developed by the influential British astrologer Charles E.O. Carter, this system projects house divisions from the equatorial plane. It is a relatively rare system but has a dedicated following among astrologers who study Carter's methods. The Poli-Equatorial system attempts to resolve some of the latitude problems that affect other quadrant-based systems by anchoring the divisions differently.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Whole (0 degrees Aries)</h3>
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Whole (0 degrees Aries)</h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">This variation of Whole Sign houses fixes the 1st House at 0 degrees Aries regardless of the Ascendant. Every chart begins with Aries as the 1st House, Taurus as the 2nd, and so on. This is sometimes called the "natural house" or "solar chart" approach and is used in certain branches of mundane astrology (the astrology of world events) and as a simplified system for Sun-sign-based horoscopes. The Ascendant still appears in the chart but does not determine house placement.</p>
 
-         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Whole (0 degrees Aries) - Fix Asc</h3>
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Whole (0 degrees Aries) - Fix Asc</h3>
          <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">A variation of the 0-degree Aries Whole Sign system that additionally fixes the Ascendant at 0 degrees Aries. This creates a fully standardized chart framework where both the house system and the Ascendant are anchored to the same point. It is primarily used for specialized research and comparative analysis rather than natal chart reading.</p>
 
          <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
              <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Key Insight</p>
-             <p class="text-gm-text text-sm leading-relaxed italic">Genetic Matrix supports 10 house systems. Free charts use Placidus, the most widely used system in modern Western astrology. Pro members can switch between all 10 systems to explore how their chart shifts.</p>
+             <p class="text-gm-text text-sm leading-relaxed italic">Genetic Matrix supports 10 house systems. Pro members can switch between all 10 systems to explore how their charts shift.</p>
          </div>
      </div>
  </section>
@@ -266,12 +470,12 @@
                  <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Different astrological traditions and techniques work best with different house systems. Horary astrologers often prefer Regiomontanus, Vedic astrologers use Whole Sign, and most modern Western astrologers use Placidus. Offering all 10 lets you work within whatever tradition resonates with you.</div>
              </details>
              <details class="bg-white rounded-lg border border-gm-border">
-                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">What is the free default?</summary>
-                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Free charts on Genetic Matrix use Placidus, the most popular house system in Western astrology. Pro members can switch to any of the 10 supported systems.</div>
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">How many house systems does Genetic Matrix support?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Genetic Matrix supports 10 house systems including Placidus, Koch, Whole Sign, Equal House, Porphyry, Regiomontanus, Campanus, Meridian, Morinus, and 0-Degree Aries. Pro members can switch between all 10 systems to explore how their charts shift.</div>
              </details>
              <details class="bg-white rounded-lg border border-gm-border">
                  <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Do house systems affect my Human Design chart?</summary>
-                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Human Design uses its own system of calculation that does not depend on traditional astrological house systems. The houses discussed here apply specifically to your astrology chart.</div>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Human Design uses its own system of calculation that does not depend on traditional astrological house systems. The houses discussed here apply specifically to your astrology or Astro HD chart.</div>
              </details>
          </div>
      </div>
@@ -282,23 +486,23 @@
      <div class="max-w-4xl mx-auto px-6">
          <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Other Learn Topics</h2>
          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-             <a href="/astrology/zodiac-signs/" class="bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+             <a href="/astrology/zodiac-signs.html" class="learn-link bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
                  <h3 class="text-sm font-bold text-gm-purple mb-1">Zodiac Signs &rarr;</h3>
                  <p class="text-gray-400 text-xs leading-relaxed">The 12 signs plus the 13th sign Ophiuchus.</p>
              </a>
-             <a href="/astrology/planets/" class="bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+             <a href="/astrology/planets.html" class="learn-link bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
                  <h3 class="text-sm font-bold text-gm-purple mb-1">Planets &rarr;</h3>
                  <p class="text-gray-400 text-xs leading-relaxed">Sun through Pluto, Chiron, and Lilith.</p>
              </a>
-             <a href="/astrology/aspects/" class="bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+             <a href="/astrology/aspects.html" class="learn-link bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
                  <h3 class="text-sm font-bold text-gm-purple mb-1">Aspects &amp; Orbs &rarr;</h3>
                  <p class="text-gray-400 text-xs leading-relaxed">Conjunctions, trines, squares, and more.</p>
              </a>
-             <a href="/astrology/asteroids/" class="bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+             <a href="/astrology/asteroids.html" class="learn-link bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
                  <h3 class="text-sm font-bold text-gm-purple mb-1">Asteroids &rarr;</h3>
                  <p class="text-gray-400 text-xs leading-relaxed">Ceres, Pallas, Juno, Vesta, and beyond.</p>
              </a>
-             <a href="/astrology/fixed-stars/" class="bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+             <a href="/astrology/fixed-stars.html" class="learn-link bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
                  <h3 class="text-sm font-bold text-gm-purple mb-1">Fixed Stars &rarr;</h3>
                  <p class="text-gray-400 text-xs leading-relaxed">Royal Stars, Sirius, Spica, and Algol.</p>
              </a>
@@ -309,9 +513,12 @@
  <!-- ==================== CTA BANNER ==================== -->
  <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
      <div class="max-w-2xl mx-auto px-6">
-         <h2 class="text-2xl md:text-3xl font-bold mb-4">Explore Your Chart</h2>
-         <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">See your full astrology chart with all the tools discussed on this page - planets, signs, houses, aspects, and more.</p>
-</div>
+         <h2 class="text-2xl md:text-3xl font-bold mb-4">Unlock Your Full Birth Chart</h2>
+         <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">Access detailed astrology charts, Human Design charts, and hundreds of views and tools with a Genetic Matrix Pro membership.</p>
+        <a href="https://www.geneticmatrix.com/plans-features/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+            Explore Pro Features &rarr;
+        </a>
+    </div>
  </section>
 
  <!-- ==================== FOOTER ==================== -->
