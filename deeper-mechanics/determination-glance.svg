@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1096" height="1196" viewBox="0 0 1096 1196">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1096" height="1122" viewBox="0 0 1096 1122">
   <defs>
-    <filter id="Rectangle_8898" x="0" y="0" width="1096" height="1196" filterUnits="userSpaceOnUse">
+    <filter id="Rectangle_8898" x="0" y="0" width="1096" height="1122" filterUnits="userSpaceOnUse">
       <feOffset dy="3" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feFlood flood-opacity="0.161"/>
@@ -75,54 +75,52 @@
   </defs>
   <g id="Determination" transform="translate(15257 -1814)">
     <g transform="matrix(1, 0, 0, 1, -15257, 1814)" filter="url(#Rectangle_8898)">
-      <rect id="Rectangle_8898-2" data-name="Rectangle 8898" width="1078" height="1178" rx="24" transform="translate(9 6)" fill="#fefefe"/>
+      <rect id="Rectangle_8898-2" data-name="Rectangle 8898" width="1078" height="1104" rx="24" transform="translate(9 6)" fill="#fefefe"/>
     </g>
-    <text id="Determination_at_a_Glance" data-name="Determination at a Glance" transform="translate(-14709 1944)" fill="#3e2967" font-size="63" font-family="Bilo-Medium, Bilo" font-weight="500" letter-spacing="-0.05em"><tspan x="-323.096" y="0">Determination at a Glance</tspan></text>
-    <text id="The_top_left_arrow_in_Variable" data-name="The top left arrow in Variable" transform="translate(-14925 1974)" fill="#a699b6" font-size="35" font-family="Bilo"><tspan x="0" y="36">The top left arrow in Variable</tspan></text>
+    <text id="Determination_at_a_Glance" data-name="Determination at a Glance" transform="translate(-14709 1944)" fill="#3e2967" font-size="63" font-family="SegoeUI, Segoe UI" letter-spacing="-0.05em"><tspan x="-324.788" y="0">Determination at a Glance</tspan></text>
+    <text id="The_top_left_arrow_in_Variable" data-name="The top left arrow in Variable" transform="translate(-14925 1974)" fill="#594383" font-size="35" font-family="SegoeUI, Segoe UI"><tspan x="0" y="38">The top left arrow in Variable</tspan></text>
     <text id="Determination_describes_how_the_body_takes_in_nourishment_and_information." data-name="Determination describes how the body takes in 
-nourishment and information." transform="translate(-14721 2425)" fill="#3e2967" font-size="30" font-family="Bilo"><tspan x="-305.115" y="0">Determination describes how the body takes in </tspan><tspan x="-192.195" y="39">nourishment and information.</tspan></text>
+nourishment and information." transform="translate(-14709 2433)" fill="#3e2967" font-size="30" font-family="SegoeUI, Segoe UI"><tspan x="-315.513" y="0">Determination describes how the body takes in </tspan><tspan x="-197.593" y="40">nourishment and information.</tspan></text>
     <g id="Repeat_Grid_10" data-name="Repeat Grid 10" transform="translate(-15147 2543)" clip-path="url(#clip-path)">
       <g id="Group_16359" data-name="Group 16359" transform="translate(15161 -2531)">
         <g transform="matrix(1, 0, 0, 1, -15271, 1802)" filter="url(#Rectangle_8897)">
           <rect id="Rectangle_8897-7" data-name="Rectangle 8897" width="274" height="81" rx="21" transform="translate(119 735)" fill="#faf7ff"/>
         </g>
-        <text id="Appetite" transform="translate(-15015 2589)" fill="#707070" font-size="35" font-family="Bilo"><tspan x="-65.257" y="0">Appetite</tspan></text>
+        <text id="Appetite" transform="translate(-15015 2589)" fill="#3e2967" font-size="35" font-family="SegoeUI, Segoe UI"><tspan x="-66.266" y="0">Appetite</tspan></text>
       </g>
       <g id="Group_16359-2" data-name="Group 16359" transform="translate(15453 -2531)">
         <g transform="matrix(1, 0, 0, 1, -15563, 1802)" filter="url(#Rectangle_8897-2)">
           <rect id="Rectangle_8897-8" data-name="Rectangle 8897" width="274" height="81" rx="21" transform="translate(411 735)" fill="#faf7ff"/>
         </g>
-        <text id="Taste" transform="translate(-15015 2589)" fill="#707070" font-size="35" font-family="Bilo"><tspan x="-40.32" y="0">Taste</tspan></text>
+        <text id="Taste" transform="translate(-15015 2589)" fill="#3e2967" font-size="35" font-family="SegoeUI, Segoe UI"><tspan x="-38.615" y="0">Taste</tspan></text>
       </g>
       <g id="Group_16359-3" data-name="Group 16359" transform="translate(15745 -2531)">
         <g transform="matrix(1, 0, 0, 1, -15855, 1802)" filter="url(#Rectangle_8897-3)">
           <rect id="Rectangle_8897-9" data-name="Rectangle 8897" width="274" height="81" rx="21" transform="translate(703 735)" fill="#faf7ff"/>
         </g>
-        <text id="Thirst" transform="translate(-15015 2589)" fill="#707070" font-size="35" font-family="Bilo"><tspan x="-44.31" y="0">Thirst</tspan></text>
+        <text id="Thirst" transform="translate(-15015 2589)" fill="#3e2967" font-size="35" font-family="SegoeUI, Segoe UI"><tspan x="-42.75" y="0">Thirst</tspan></text>
       </g>
       <g id="Group_16359-4" data-name="Group 16359" transform="translate(15161 -2427)">
         <g transform="matrix(1, 0, 0, 1, -15271, 1698)" filter="url(#Rectangle_8897-4)">
           <rect id="Rectangle_8897-10" data-name="Rectangle 8897" width="274" height="81" rx="21" transform="translate(119 839)" fill="#faf7ff"/>
         </g>
-        <text id="Touch" transform="translate(-15015 2589)" fill="#707070" font-size="35" font-family="Bilo"><tspan x="-45.657" y="0">Touch</tspan></text>
+        <text id="Touch" transform="translate(-15015 2589)" fill="#3e2967" font-size="35" font-family="SegoeUI, Segoe UI"><tspan x="-45.604" y="0">Touch</tspan></text>
       </g>
       <g id="Group_16359-5" data-name="Group 16359" transform="translate(15453 -2427)">
         <g transform="matrix(1, 0, 0, 1, -15563, 1698)" filter="url(#Rectangle_8897-5)">
           <rect id="Rectangle_8897-11" data-name="Rectangle 8897" width="274" height="81" rx="21" transform="translate(411 839)" fill="#faf7ff"/>
         </g>
-        <text id="Sound" transform="translate(-15015 2589)" fill="#707070" font-size="35" font-family="Bilo"><tspan x="-47.915" y="0">Sound</tspan></text>
+        <text id="Sound" transform="translate(-15015 2589)" fill="#3e2967" font-size="35" font-family="SegoeUI, Segoe UI"><tspan x="-49.663" y="0">Sound</tspan></text>
       </g>
       <g id="Group_16359-6" data-name="Group 16359" transform="translate(15745 -2427)">
         <g transform="matrix(1, 0, 0, 1, -15855, 1698)" filter="url(#Rectangle_8897-6)">
           <rect id="Rectangle_8897-12" data-name="Rectangle 8897" width="274" height="81" rx="21" transform="translate(703 839)" fill="#faf7ff"/>
         </g>
-        <text id="Light" transform="translate(-15015 2589)" fill="#707070" font-size="35" font-family="Bilo"><tspan x="-38.658" y="0">Light</tspan></text>
+        <text id="Light" transform="translate(-15015 2589)" fill="#3e2967" font-size="35" font-family="SegoeUI, Segoe UI"><tspan x="-38.615" y="0">Light</tspan></text>
       </g>
     </g>
     <text id="_6_families_left_right_orientation_12_total_variations_" data-name="6 families × left/right orientation = 12 total variations
-" transform="translate(-15067 2795)" fill="#3e2967" font-size="30" font-family="Bilo"><tspan x="6.97" y="31">6 families × left/right orientation = 12 total variations</tspan></text>
-    <text id="Opens_into_Color_Tone_and_Cognition_" data-name="Opens into Color, Tone, and Cognition
-" transform="translate(-15045 2876)" fill="#957cc2" font-size="40" font-family="Bilo"><tspan x="0" y="41">Opens into Color, Tone, and Cognition</tspan></text>
+" transform="translate(-15065 2800)" fill="#3e2967" font-size="30" font-family="SegoeUI, Segoe UI"><tspan x="3.09" y="32">6 families × left/right orientation = 12 total variations</tspan></text>
     <g id="Group_16365" data-name="Group 16365" transform="translate(9)">
       <g id="Group_16363" data-name="Group 16363">
         <g id="Group_16358" data-name="Group 16358" transform="translate(-3 -34)">
@@ -131,9 +129,9 @@ nourishment and information." transform="translate(-14721 2425)" fill="#3e2967" 
           </g>
           <path id="Rectangle_8896" data-name="Rectangle 8896" d="M18,0H417a18,18,0,0,1,18,18v91a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V18A18,18,0,0,1,18,0Z" transform="translate(-14731 2390) rotate(180)" fill="#fefefe"/>
         </g>
-        <text id="Active_Fixed" data-name="Active / Fixed" transform="translate(-15038 2279)" fill="#707070" font-size="31" font-family="Bilo"><tspan x="0" y="32">Active / Fixed</tspan></text>
+        <text id="Active_Fixed" data-name="Active / Fixed" transform="translate(-15038 2279)" fill="#3e2967" font-size="31" font-family="SegoeUI, Segoe UI"><tspan x="0" y="33">Active / Fixed</tspan></text>
         <g id="Group_16362" data-name="Group 16362" transform="translate(10.809 -0.262)">
-          <text id="Left" transform="translate(-14925 2187)" fill="#3e2967" font-size="50" font-family="Bilo-Bold, Bilo" font-weight="700"><tspan x="0" y="0">Left</tspan></text>
+          <text id="Left" transform="translate(-14925 2187)" fill="#3e2967" font-size="50" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Left</tspan></text>
           <g id="Group_16361" data-name="Group 16361" transform="translate(-15114.809 2129)">
             <g id="Group_16360" data-name="Group 16360" transform="translate(0 0)" clip-path="url(#clip-path-2)">
               <path id="Path_13192" data-name="Path 13192" d="M109.364.429A35.41,35.41,0,0,0,75.128,26.81H39.178v-13.1L20.018,24.763.857,35.82,20.018,46.884,39.178,57.941v-13.1H75.136A35.4,35.4,0,1,0,109.364.429Z" transform="translate(5.616 2.813)" fill="none" stroke="#c92711" stroke-miterlimit="10" stroke-width="4"/>
@@ -150,9 +148,9 @@ nourishment and information." transform="translate(-14721 2425)" fill="#3e2967" 
           <path id="Rectangle_8896-2" data-name="Rectangle 8896" d="M18,0H417a18,18,0,0,1,18,18v91a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V18A18,18,0,0,1,18,0Z" transform="translate(-14731 2390) rotate(180)" fill="#fefefe"/>
         </g>
         <text id="Passive_Receptive_" data-name="Passive / Receptive
-" transform="translate(-15078 2279)" fill="#707070" font-size="31" font-family="Bilo"><tspan x="0" y="32">Passive / Receptive</tspan></text>
+" transform="translate(-15078 2279)" fill="#3e2967" font-size="31" font-family="SegoeUI, Segoe UI"><tspan x="0" y="33">Passive / Receptive</tspan></text>
         <g id="Group_16362-2" data-name="Group 16362" transform="translate(10.809 -0.262)">
-          <text id="Right" transform="translate(-14925 2187)" fill="#3e2967" font-size="50" font-family="Bilo-Bold, Bilo" font-weight="700"><tspan x="0" y="0">Right</tspan></text>
+          <text id="Right" transform="translate(-14925 2187)" fill="#3e2967" font-size="50" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Right</tspan></text>
           <g id="Group_16366" data-name="Group 16366" transform="translate(-15114.287 2130)">
             <g id="Group_16366-2" data-name="Group 16366" transform="translate(0 0)" clip-path="url(#clip-path-3)">
               <path id="Path_13194" data-name="Path 13194" d="M35.7.429A35.29,35.29,0,0,1,69.819,26.72h35.835V13.661l19.1,11.019,19.1,11.019-19.1,11.027-19.1,11.019V44.687H69.819A35.276,35.276,0,1,1,35.7.429Z" transform="translate(2.8 2.799)" fill="none" stroke="#c92711" stroke-miterlimit="10" stroke-width="4"/>
