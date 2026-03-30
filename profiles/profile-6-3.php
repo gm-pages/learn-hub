@@ -188,7 +188,7 @@
                 <span class="text-gm-purple">|</span> &#128640; How to Explore Your 6/3 Profile in Your Chart
             </h2>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">On Genetic Matrix:</strong> Generate a free Foundation chart to discover your Profile. The chart shows which lines your conscious and unconscious Sun & Earth occupy, creating your Profile combination. Advanced and Pro charts reveal how your Profile interacts with your Type, Centers, Channels, and Variable.</p>
-            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">The celebrity database:</strong> Explore other 6/3 Profiles in Genetic Matrix's 87,000+ celebrity database. See how the Role Model/Martyr dynamic manifests across different Types and life paths.</p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">The celebrity database:</strong> Explore other 6/3 Profiles in Genetic Matrix's 88,600+ celebrity database. See how the Role Model/Martyr dynamic manifests across different Types and life paths.</p>
         </div>
     </section>
     <!-- ==================== FAQ ACCORDION ==================== -->

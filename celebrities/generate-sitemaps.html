@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap Generator - Genetic Matrix Celebrities</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Inter, sans-serif; background: #f5f5f5; padding: 2rem; color: #333; }
+        h1 { margin-bottom: 0.5rem; color: #3C2864; }
+        .subtitle { color: #666; margin-bottom: 1.5rem; }
+        .controls { background: #fff; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .controls label { font-weight: 600; display: block; margin-bottom: 0.5rem; }
+        .controls select { padding: 0.5rem 1rem; border: 1px solid #ddd; border-radius: 8px; font-size: 0.95rem; }
+        .btn { padding: 0.5rem 1.25rem; border: none; border-radius: 8px; font-size: 0.95rem; cursor: pointer; font-weight: 600; margin-right: 0.5rem; margin-top: 0.5rem; }
+        .btn-primary { background: #6E5898; color: #fff; }
+        .btn-primary:hover { background: #5a4880; }
+        .btn-green { background: #54931E; color: #fff; }
+        .btn-green:hover { background: #468018; }
+        .status { margin-top: 1rem; padding: 1rem; background: #F4F0FC; border-radius: 8px; font-size: 0.9rem; display: none; }
+        .status.active { display: block; }
+        .progress-bar { width: 100%; height: 8px; background: #e0e0e0; border-radius: 4px; margin-top: 0.5rem; overflow: hidden; }
+        .progress-fill { height: 100%; background: #6E5898; border-radius: 4px; transition: width 0.3s; width: 0%; }
+
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .stat-card { background: #fff; border-radius: 12px; padding: 1.25rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); text-align: center; }
+        .stat-number { font-size: 2rem; font-weight: 700; color: #6E5898; }
+        .stat-label { font-size: 0.85rem; color: #666; margin-top: 0.25rem; }
+
+        .sitemap-list { margin-top: 1.5rem; }
+        .sitemap-file { background: #fff; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center; }
+        .sitemap-name { font-weight: 600; color: #3C2864; }
+        .sitemap-count { color: #666; font-size: 0.9rem; }
+        .sitemap-download { padding: 0.35rem 0.75rem; background: #54931E; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85rem; }
+        .sitemap-download:hover { background: #468018; }
+    </style>
+</head>
+<body>
+    <h1>Sitemap Generator</h1>
+    <p class="subtitle">Generates XML sitemaps for all celebrity pages and category pages across all 7 calculation methods</p>
+
+    <div class="controls">
+        <div style="display:flex; align-items:end; gap:1rem; flex-wrap:wrap;">
+            <div>
+                <label>Base URL:</label>
+                <select id="baseUrl">
+                    <option value="https://www.geneticmatrix.com">Live (geneticmatrix.com)</option>
+                    <option value="https://www.staginggm.com">Staging (staginggm.com)</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" onclick="generateSitemaps()">Generate All Sitemaps</button>
+            <button class="btn btn-green" onclick="downloadAll()">Download All as ZIP</button>
+        </div>
+        <div class="status" id="status">
+            <div id="statusText">Loading...</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+        </div>
+    </div>
+
+    <div class="stats" id="stats" style="display:none;"></div>
+    <div class="sitemap-list" id="sitemapList"></div>
+
+    <script>
+        const METHODS = [
+            { key: 'tropical', suffix: '' },
+            { key: 'sidereal', suffix: '/sidereal' },
+            { key: 'vedic', suffix: '/vedic' },
+            { key: 'draconic', suffix: '/draconic' },
+            { key: 'true-sidereal', suffix: '/true-sidereal' },
+            { key: '13-sign', suffix: '/13-sign' },
+            { key: 'j2000', suffix: '/j2000' }
+        ];
+
+        const MAX_URLS_PER_SITEMAP = 50000;
+        let allCelebs = [];
+        let categoryData = [];
+        let generatedSitemaps = {};
+
+        async function loadCelebIndex() {
+            allCelebs = [];
+            const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ_'.split('');
+            for (const letter of letters) {
+                try {
+                    const resp = await fetch(`data/${letter}.json`);
+                    if (resp.ok) {
+                        const data = await resp.json();
+                        allCelebs = allCelebs.concat(data);
+                    }
+                } catch (e) { /* skip */ }
+            }
+        }
+
+        async function loadCategoryData() {
+            // Parse the CSV - it's in the Downloads folder, we'll use a pre-processed version
+            // For now, load from the embedded data
+            categoryData = await parseCategoryCSV();
+        }
+
+        async function parseCategoryCSV() {
+            // We'll process this from the wp_field_manage.csv
+            // For generator purposes, we need filterName + slug pairs
+            // This will be populated from the CSV file
+            try {
+                const resp = await fetch('data/categories.json');
+                if (resp.ok) return await resp.json();
+            } catch (e) {}
+
+            // Fallback: return empty, user needs to generate categories.json first
+            return [];
+        }
+
+        function showStatus(text, progress) {
+            const el = document.getElementById('status');
+            el.classList.add('active');
+            document.getElementById('statusText').textContent = text;
+            if (progress !== undefined) {
+                document.getElementById('progressFill').style.width = `${progress}%`;
+            }
+        }
+
+        function generateSitemapXML(urls, baseUrl) {
+            let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+            xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+            for (const url of urls) {
+                xml += '  <url>\n';
+                xml += `    <loc>${url.loc}</loc>\n`;
+                if (url.lastmod) xml += `    <lastmod>${url.lastmod}</lastmod>\n`;
+                if (url.changefreq) xml += `    <changefreq>${url.changefreq}</changefreq>\n`;
+                if (url.priority) xml += `    <priority>${url.priority}</priority>\n`;
+                xml += '  </url>\n';
+            }
+            xml += '</urlset>';
+            return xml;
+        }
+
+        function generateSitemapIndex(sitemapFiles, baseUrl) {
+            let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+            xml += '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+            for (const file of sitemapFiles) {
+                xml += '  <sitemap>\n';
+                xml += `    <loc>${baseUrl}/${file.name}</loc>\n`;
+                xml += `    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>\n`;
+                xml += '  </sitemap>\n';
+            }
+            xml += '</sitemapindex>';
+            return xml;
+        }
+
+        async function generateSitemaps() {
+            const baseUrl = document.getElementById('baseUrl').value;
+            generatedSitemaps = {};
+            const today = new Date().toISOString().split('T')[0];
+
+            showStatus('Loading celebrity data...', 5);
+            await loadCelebIndex();
+
+            showStatus('Loading category data...', 10);
+            await loadCategoryData();
+
+            showStatus(`Generating celebrity page URLs for ${allCelebs.length} celebrities x 7 methods...`, 20);
+
+            // 1. Generate celebrity page URLs (87K x 7 = ~609K)
+            let celebUrls = [];
+            for (const celeb of allCelebs) {
+                for (const method of METHODS) {
+                    celebUrls.push({
+                        loc: `${baseUrl}/celebrity/${celeb.s}${method.suffix}/`,
+                        lastmod: today,
+                        changefreq: 'monthly',
+                        priority: method.key === 'tropical' ? '0.8' : '0.6'
+                    });
+                }
+            }
+
+            // Split into 50K chunks
+            let celebSitemapCount = 0;
+            for (let i = 0; i < celebUrls.length; i += MAX_URLS_PER_SITEMAP) {
+                celebSitemapCount++;
+                const chunk = celebUrls.slice(i, i + MAX_URLS_PER_SITEMAP);
+                const name = `sitemap-celebrities-${celebSitemapCount}.xml`;
+                generatedSitemaps[name] = {
+                    xml: generateSitemapXML(chunk, baseUrl),
+                    count: chunk.length,
+                    type: 'Celebrity Pages'
+                };
+                showStatus(`Generated ${name} (${chunk.length} URLs)...`, 20 + (i / celebUrls.length) * 50);
+            }
+
+            // 2. Generate category page URLs
+            showStatus('Generating category page URLs...', 75);
+
+            // Category URL mapping
+            const categoryUrlMap = {
+                'type': 'type',
+                'profile': 'profile',
+                'definition': 'definition',
+                'sun_sign': 'sun-sign',
+                'moon_sign': 'moon-sign',
+                'ascendant': 'ascendant',
+                'midheaven': 'midheaven',
+                'descendant': 'descendant',
+                'immum_coeli': 'imum-coeli',
+                'incarnation_cross': 'incarnation-cross',
+                'personality_sun': 'personality-sun',
+                'profession': 'profession',
+                'variables': 'variables'
+            };
+
+            let categoryUrls = [];
+            if (categoryData.length > 0) {
+                for (const cat of categoryData) {
+                    const urlCategory = categoryUrlMap[cat.filterName] || cat.filterName.replace(/_/g, '-');
+                    for (const method of METHODS) {
+                        const methodSuffix = method.key === 'tropical' ? '/tropical' : method.suffix;
+                        categoryUrls.push({
+                            loc: `${baseUrl}/celebrities/${urlCategory}/${cat.slug}${methodSuffix}/`,
+                            lastmod: today,
+                            changefreq: 'weekly',
+                            priority: '0.5'
+                        });
+                    }
+                }
+            }
+
+            if (categoryUrls.length > 0) {
+                let catSitemapCount = 0;
+                for (let i = 0; i < categoryUrls.length; i += MAX_URLS_PER_SITEMAP) {
+                    catSitemapCount++;
+                    const chunk = categoryUrls.slice(i, i + MAX_URLS_PER_SITEMAP);
+                    const name = `sitemap-categories-${catSitemapCount}.xml`;
+                    generatedSitemaps[name] = {
+                        xml: generateSitemapXML(chunk, baseUrl),
+                        count: chunk.length,
+                        type: 'Category Pages'
+                    };
+                }
+            }
+
+            // 3. Generate sitemap index
+            showStatus('Generating sitemap index...', 95);
+            const sitemapFiles = Object.keys(generatedSitemaps).map(name => ({ name }));
+            generatedSitemaps['sitemap-index.xml'] = {
+                xml: generateSitemapIndex(sitemapFiles, baseUrl),
+                count: sitemapFiles.length,
+                type: 'Index'
+            };
+
+            showStatus('Complete!', 100);
+            renderResults(celebUrls.length, categoryUrls.length);
+        }
+
+        function renderResults(celebCount, catCount) {
+            const totalUrls = celebCount + catCount;
+            const totalFiles = Object.keys(generatedSitemaps).length;
+
+            const statsEl = document.getElementById('stats');
+            statsEl.style.display = 'grid';
+            statsEl.innerHTML = `
+                <div class="stat-card">
+                    <div class="stat-number">${allCelebs.length.toLocaleString()}</div>
+                    <div class="stat-label">Celebrities</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">${celebCount.toLocaleString()}</div>
+                    <div class="stat-label">Celebrity Chart Pages</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">${catCount.toLocaleString()}</div>
+                    <div class="stat-label">Category Pages</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">${totalUrls.toLocaleString()}</div>
+                    <div class="stat-label">Total URLs</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">${totalFiles}</div>
+                    <div class="stat-label">Sitemap Files</div>
+                </div>
+            `;
+
+            const listEl = document.getElementById('sitemapList');
+            listEl.innerHTML = '<h2 style="color:#3C2864; margin-bottom:1rem;">Generated Sitemaps</h2>';
+            for (const [name, data] of Object.entries(generatedSitemaps)) {
+                const div = document.createElement('div');
+                div.className = 'sitemap-file';
+                div.innerHTML = `
+                    <div>
+                        <span class="sitemap-name">${name}</span>
+                        <span class="sitemap-count"> - ${data.type} (${data.count.toLocaleString()} ${data.type === 'Index' ? 'sitemaps' : 'URLs'})</span>
+                    </div>
+                    <button class="sitemap-download" onclick="downloadSitemap('${name}')">Download</button>
+                `;
+                listEl.appendChild(div);
+            }
+        }
+
+        function downloadSitemap(name) {
+            const data = generatedSitemaps[name];
+            if (!data) return;
+            const blob = new Blob([data.xml], { type: 'application/xml' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = name;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        async function downloadAll() {
+            if (Object.keys(generatedSitemaps).length === 0) {
+                alert('Generate sitemaps first!');
+                return;
+            }
+            // Download each file individually (no zip library needed)
+            for (const name of Object.keys(generatedSitemaps)) {
+                downloadSitemap(name);
+                await new Promise(r => setTimeout(r, 200));
+            }
+        }
+    </script>
+</body>
+</html>

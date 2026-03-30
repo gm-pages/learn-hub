@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Design Variable: The Four Arrows Explained | Genetic Matrix</title>
+    <meta name="description" content="Variable is the four-arrow system at the top of the Human Design Bodygraph. Learn how Determination, Environment, Motivation, and Perspective combine into 16 Variable configurations that describe how your body and mind are oriented.">
+    <meta name="keywords" content="human design variable, human design arrows, human design determination, human design environment, human design motivation, human design perspective, 16 variables, left right variable, variable configuration, human design PHS, variable arrows, bodygraph arrows">
+    <link rel="canonical" href="https://www.geneticmatrix.com/learn/variables/">
+    <meta property="og:title" content="Human Design Variable: The Four Arrows Explained">
+    <meta property="og:description" content="Variable is the four-arrow system at the top of the Bodygraph. Learn what left and right orientation mean and how the four arrows combine into 16 configurations.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.geneticmatrix.com/learn/variables/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gm-purple': '#6E5898',
+                        'gm-purple-light': '#9080B1',
+                        'gm-purple-soft': '#AC94D8',
+                        'gm-dark': '#3C2864',
+                        'gm-darker': '#2e1f4d',
+                        'gm-green': '#54931E',
+                        'gm-green-dark': '#468018',
+                        'gm-green-light': '#8EB86A',
+                        'gm-pink': '#F66378',
+                        'gm-orange': '#E8961D',
+                        'gm-gray': '#707070',
+                        'gm-light': '#F7F8F9',
+                        'gm-card': '#FAFBFC',
+                        'gm-card-active': '#F4F0FC',
+                        'gm-border': '#D8D4E4',
+                        'gm-warning': '#F8F8E8',
+                        'gm-text-dark': '#1A1A2E',
+                        'gm-text': '#444444',
+                        'gm-text-light': '#949494',
+                        'arrow-left': '#C41E2F',
+                        'arrow-right': '#4A4A8A',
+                    },
+                    fontFamily: {
+                        'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        details summary { cursor: pointer; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+        details[open] summary::after { content: '\2212'; }
+        details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+        .arrow-card { transition: box-shadow 0.2s ease; }
+        .arrow-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+    </style>
+
+    <!-- Article JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Human Design Variable: The Four Arrows Explained",
+        "description": "Variable is the four-arrow system at the top of the Human Design Bodygraph. Learn how Determination, Environment, Motivation, and Perspective combine into 16 configurations.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Genetic Matrix",
+            "url": "https://www.geneticmatrix.com"
+        },
+        "mainEntityOfPage": "https://www.geneticmatrix.com/learn/variables/",
+        "datePublished": "2025-01-15",
+        "dateModified": "2026-03-12"
+    }
+    </script>
+
+    <!-- FAQ JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is Variable in Human Design?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Variable is the four-arrow system at the top of the Bodygraph. It shows how deeper mechanics such as Brain, Environment, Perspective, and Mind are oriented."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What do the arrows mean in Human Design?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The arrows show whether each area is configured with a left-oriented or right-oriented mode of functioning. Broadly speaking, this reflects strategic versus receptive orientation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many Variable configurations are there?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "There are 16 total configurations, because each of the four arrows can point in one of two directions."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Variable matter more than Type or Authority?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Variable is advanced and should be approached after foundational mechanics are understood and lived."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can your Variable change?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Your natal Variable configuration does not change. What can change is your clarity and lived relationship to it."
+                }
+            }
+        ]
+    }
+    </script>
+
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- ==================== NAV BAR ==================== -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="/assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14">
+            </a>
+            <div class="flex items-center gap-8">
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Reports">
+                    <img src="/assets/icon-report.svg" alt="Reports" class="h-9 w-9">
+                </a>
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Talking Charts">
+                    <img src="/assets/icon-talking-chart.svg" alt="Talking Charts" class="h-7 w-7">
+                </a>
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Free Chart</a>
+                <a href="/" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Learn</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Our Plans</a>
+                <a href="https://www.geneticmatrix.com/cart/" title="Cart">
+                    <img src="/assets/icon-cart.svg" alt="Cart" class="h-8 w-auto">
+                </a>
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>English</span>
+                    <img src="/assets/icon-english.svg" alt="English" class="h-5 w-7">
+                </div>
+                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Sign In</a>
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== BREADCRUMB ==================== -->
+    <div class="bg-gm-light border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-6 py-3">
+            <a href="/" class="text-gm-purple hover:text-gm-dark text-sm font-medium transition">&larr; Back to Learn Hub</a>
+        </div>
+    </div>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+        <div class="max-w-3xl mx-auto px-6">
+            <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Deeper Mechanics &middot; Variable</p>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Human Design Variable: The Four Arrows Explained</h1>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
+                The four arrows at the top of your Bodygraph reveal your cognitive architecture, showing how you're designed to take in nourishment, find the right environment, process awareness, and perceive the world.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== INTRO ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="what-is-variable">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> What Is Variable in Human Design?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                This is one of the most advanced areas of Human Design. It does not replace Type, Strategy, Authority, or Profile, and it should not be treated as a shortcut around foundational mechanics. What Variable does offer is a more precise understanding of how your body and mind are configured to take in, process, and orient awareness.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Variable refers to the four arrows shown at the top of the Bodygraph. Each arrow points either left or right, creating a four-part pattern that reflects the way your design is differentiated at a subtle level.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Variable is often spoken about loosely, but it is not a personality label. It is a substructure framework that describes orientation. Properly understood, it shows how the body is designed to operate and how the mind is designed to view and frame experience.
+            </p>
+
+            <!-- Birth data warning -->
+            <div class="bg-gm-warning border border-yellow-200 rounded-lg p-5 mb-8">
+                <p class="text-xs font-semibold text-gm-orange uppercase tracking-widest mb-2">Important</p>
+                <p class="text-sm text-gray-700">Variable depends on an accurate birth time. Even small differences can change the arrow orientation.</p>
+            </div>
+
+            <!-- The Four Arrows -->
+            <h3 class="text-lg md:text-xl font-bold text-gray-800 mb-2">The Four Arrows and What They Represent</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                Variable is based on Tone and appears in the Bodygraph as the four arrows at the top of the chart, showing the left or right orientation of key aspects of your design.
+            </p>
+
+            <!-- Four-arrow overview cards -->
+            <div class="grid md:grid-cols-2 gap-4 mb-8">
+                <!-- Arrow 1: Determination -->
+                <div class="arrow-card bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Top Left Arrow</p>
+                    <p class="text-lg font-bold text-gray-800 mb-2">Determination</p>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1"><span class="font-bold text-arrow-left w-6 text-center">&larr;</span> Active</div>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-3"><span class="font-bold text-arrow-right w-6 text-center">&rarr;</span> Passive</div>
+                    <p class="text-sm text-gray-500 leading-relaxed">Describes how the body and brain are designed to take in and process information. Belongs to the body side of Variable.</p>
+                </div>
+
+                <!-- Arrow 2: Environment -->
+                <div class="arrow-card bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Bottom Left Arrow</p>
+                    <p class="text-lg font-bold text-gray-800 mb-2">Environment</p>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1"><span class="font-bold text-arrow-left w-6 text-center">&larr;</span> Observed</div>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-3"><span class="font-bold text-arrow-right w-6 text-center">&rarr;</span> Observer</div>
+                    <p class="text-sm text-gray-500 leading-relaxed">Describes how the body integrates within the correct environment. Belongs to the body side of Variable.</p>
+                </div>
+
+                <!-- Arrow 3: Motivation -->
+                <div class="arrow-card bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Top Right Arrow</p>
+                    <p class="text-lg font-bold text-gray-800 mb-2">Motivation</p>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1"><span class="font-bold text-arrow-left w-6 text-center">&larr;</span> Strategic</div>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-3"><span class="font-bold text-arrow-right w-6 text-center">&rarr;</span> Receptive</div>
+                    <p class="text-sm text-gray-500 leading-relaxed">The deeper mechanic connected to Mind Style and mental awareness. Belongs to the personality side of Variable.</p>
+                </div>
+
+                <!-- Arrow 4: Perspective -->
+                <div class="arrow-card bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Bottom Right Arrow</p>
+                    <p class="text-lg font-bold text-gray-800 mb-2">Perspective</p>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1"><span class="font-bold text-arrow-left w-6 text-center">&larr;</span> Focused</div>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-3"><span class="font-bold text-arrow-right w-6 text-center">&rarr;</span> Peripheral</div>
+                    <p class="text-sm text-gray-500 leading-relaxed">Describes how the mind is designed to view the environment correctly. Belongs to the personality side of Variable.</p>
+                </div>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                These Variable mechanics have dedicated pages of their own. Here, they matter because they form the structure of Variable in Human Design. Explore each one in more detail below:
+            </p>
+            <ul class="list-disc list-inside text-gm-text text-sm md:text-base leading-relaxed space-y-2">
+                <li>Brain Style in Human Design — <a href="/learn/deeper-mechanics/determination/" class="text-gm-purple hover:underline">Determination</a></li>
+                <li>Environment Style in Human Design — <a href="/learn/deeper-mechanics/environment/" class="text-gm-purple hover:underline">Environment</a></li>
+                <li>Perspective in Human Design — <a href="/learn/deeper-mechanics/perspective/" class="text-gm-purple hover:underline">View</a></li>
+                <li>Mind Style in Human Design — <a href="/learn/deeper-mechanics/motivation/" class="text-gm-purple hover:underline">Motivation</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ==================== BODY SIDE AND MIND SIDE ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="body-mind">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> <span class="text-arrow-left">Body Side</span> and Mind Side
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                Variable is easier to understand when you separate the arrows into two sides.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div>
+                    <h3 class="text-lg font-bold text-arrow-left mb-3">Body Side</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3">The left-side arrows correspond to the design side of the chart:</p>
+                    <ul class="space-y-2 text-sm text-gm-text">
+                        <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Brain Style</li>
+                        <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Environment Style</li>
+                    </ul>
+                    <p class="text-gm-text text-sm leading-relaxed mt-3">These arrows speak more directly to how the body takes in and processes information, and how it integrates within the correct environment.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">Mind Side</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3">The right-side arrows correspond to the personality side of the chart:</p>
+                    <ul class="space-y-2 text-sm text-gm-text">
+                        <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Mind Style</li>
+                        <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Perspective</li>
+                    </ul>
+                    <p class="text-gm-text text-sm leading-relaxed mt-3">These arrows speak more directly to how the mind thinks and how it views the environment correctly.</p>
+                </div>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                This is why Variable should be read as a system rather than as four disconnected labels. The arrows only operate correctly as a chain: correct cognition in the brain leads to the correct environment; the correct environment locks in the correct view; and the correct view provides the correct information for the mind to become a unique outer authority. Until the body is aligned correctly, neither correct view nor correct mental functioning is possible.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== LEFT AND RIGHT ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="left-right">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Left and Right Variable Orientation
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                The central distinction in Variable is whether an arrow points left or right. These are not value judgments. Left is not superior to right, and right is not more evolved than left. They describe different modes of orientation.
+            </p>
+
+            <!-- Left vs Right comparison cards -->
+            <div class="grid md:grid-cols-2 gap-4 mb-8">
+                <!-- Left box -->
+                <div class="bg-red-50 border border-red-200 rounded-xl p-5">
+                    <p class="text-xs font-semibold text-arrow-left uppercase tracking-wider mb-2">&larr; Left-Facing Variable</p>
+                    <div class="space-y-1.5 text-sm text-gray-600">
+                        <p><strong>Strategic</strong> focus</p>
+                        <p><strong>Consistency</strong> in a defined field</p>
+                        <p>Defined <strong>directionality</strong></p>
+                        <p><strong>Structure</strong></p>
+                        <p><strong>Specificity</strong></p>
+                        <p><strong>Active</strong> engagement</p>
+                        <p><strong>Concentrated</strong> attention</p>
+                    </div>
+                </div>
+                <!-- Right box -->
+                <div class="bg-indigo-50 border border-indigo-200 rounded-xl p-5">
+                    <p class="text-xs font-semibold text-arrow-right uppercase tracking-wider mb-2">&rarr; Right-Facing Variable</p>
+                    <div class="space-y-1.5 text-sm text-gray-600">
+                        <p><strong>Receptivity</strong></p>
+                        <p><strong>Openness</strong></p>
+                        <p><strong>Flexibility</strong></p>
+                        <p><strong>Peripheral</strong> awareness</p>
+                        <p><strong>Panoramic</strong> attention</p>
+                        <p><strong>Non-strategic</strong> processing</p>
+                        <p><strong>Non-active</strong> engagement</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                The mistake most people make is confusing Variable with the old notion of left-brain and right-brain hemispheres. That misses the point. Left and right in Variable describe modes of operation within the system, not a simplistic split between analytical and logical versus creative and intuitive styles of thinking.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== THE 16 VARIABLE CONFIGURATIONS ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="16-configurations">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> The 16 Variable Configurations
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Because each of the four arrows can point in one of two directions, there are 16 possible Variable configurations. What matters is not memorizing the code for its own sake, but understanding that each arrangement creates a distinct relationship between how the body and brain take in and process information, how the body integrates within the correct environment, how the mind views the environment, and how the mind thinks.
+            </p>
+
+            <h3 class="text-lg font-bold text-gray-800 mt-8 mb-4">What a Configuration Can Reveal</h3>
+            <ul class="space-y-2 text-sm text-gm-text mb-8">
+                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Whether your system is strategic or receptive</li>
+                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Whether your mind is oriented toward focused attention or broader receptivity</li>
+                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Whether your brain and body operate actively or passively</li>
+                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> How body and mental orientation interact</li>
+                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> How differentiated your overall operating style is</li>
+            </ul>
+
+            <div class="bg-gm-card-active rounded-2xl p-6 md:p-8 mb-4 flex justify-center">
+                <img src="../assets/16-variable-configurations.png" alt="The 16 Variable configurations showing all combinations of left and right arrows across Brain Style, Environment Style, Mind Style, and Perspective" class="max-w-full h-auto rounded-lg" loading="lazy">
+            </div>
+            <p class="text-gm-text text-xs text-center italic mb-6">
+                The chart above shows the 16 possible Variable arrangements created by the four arrows. These are read as integrated patterns of body and mind orientation, not as isolated codes.
+            </p>
+
+            <h3 class="text-lg font-bold text-gray-800 mt-8 mb-4">How to Read a Variable Code</h3>
+
+            <div class="overflow-x-auto rounded-xl border border-gm-border mb-6">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="bg-gm-card-active text-left">
+                            <th class="px-5 py-3 font-semibold text-gray-800">Code</th>
+                            <th class="px-5 py-3 font-semibold text-gray-800">Position</th>
+                            <th class="px-5 py-3 font-semibold text-gray-800">Left (&larr;)</th>
+                            <th class="px-5 py-3 font-semibold text-gray-800">Right (&rarr;)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gm-border">
+                        <tr class="bg-white">
+                            <td class="px-5 py-3 font-semibold text-arrow-left">D _ _</td>
+                            <td class="px-5 py-3 font-semibold text-arrow-left">Design (body side)</td>
+                            <td class="px-5 py-3 text-gray-400" colspan="2">-</td>
+                        </tr>
+                        <tr class="bg-gm-card">
+                            <td class="px-5 py-3 text-gray-700">D <strong>L</strong>_ or D <strong>R</strong>_</td>
+                            <td class="px-5 py-3 text-gray-600">1st letter: Brain Style (top-left arrow)</td>
+                            <td class="px-5 py-3 text-arrow-left font-semibold">L = Active</td>
+                            <td class="px-5 py-3 text-arrow-right font-semibold">R = Passive</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="px-5 py-3 text-gray-700">D _<strong>L</strong> or D _<strong>R</strong></td>
+                            <td class="px-5 py-3 text-gray-600">2nd letter: Environment Style (bottom-left arrow)</td>
+                            <td class="px-5 py-3 text-arrow-left font-semibold">L = Observed</td>
+                            <td class="px-5 py-3 text-arrow-right font-semibold">R = Observer</td>
+                        </tr>
+                        <tr class="bg-gm-card">
+                            <td class="px-5 py-3 font-semibold text-gray-800">P _ _</td>
+                            <td class="px-5 py-3 text-gray-600">Personality (mind side)</td>
+                            <td class="px-5 py-3 text-gray-400" colspan="2">-</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="px-5 py-3 text-gray-700">P <strong>L</strong>_ or P <strong>R</strong>_</td>
+                            <td class="px-5 py-3 text-gray-600">1st letter: Mind Style (top-right arrow)</td>
+                            <td class="px-5 py-3 text-arrow-left font-semibold">L = Strategic</td>
+                            <td class="px-5 py-3 text-arrow-right font-semibold">R = Receptive</td>
+                        </tr>
+                        <tr class="bg-gm-card">
+                            <td class="px-5 py-3 text-gray-700">P _<strong>L</strong> or P _<strong>R</strong></td>
+                            <td class="px-5 py-3 text-gray-600">2nd letter: Perspective (bottom-right arrow)</td>
+                            <td class="px-5 py-3 text-arrow-left font-semibold">L = Focused</td>
+                            <td class="px-5 py-3 text-arrow-right font-semibold">R = Peripheral</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-gm-text text-xs italic mb-4">
+                <strong>Note:</strong> On the Personality side, the correct order for Variable correctness is Perspective first and Mind Style second. The standard display convention has been retained here, even though it was originally specified incorrectly by Ra Uru Hu and later acknowledged as such.
+            </p>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Each configuration combines these four mechanics into a single Variable pattern. The rows describe the Design side through Brain Style and Environment Style. The columns describe the Personality side through Mind Style and Perspective. Read them together as an integrated pattern of body and mind orientation, not as four isolated labels.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT VARIABLE TELLS YOU ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="what-variable-tells-you">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> What Variable Actually Tells You
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Variable is valuable because it refines orientation. It does not tell you whether you are more conscious, more spiritual, more advanced, or more aligned than anyone else. What it can indicate with more precision is:
+            </p>
+            <ul class="space-y-2 text-sm text-gm-text mb-8">
+                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> How your awareness naturally scans, filters, and frames life experience</li>
+                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> How the body side and mind side of the chart are differentiated</li>
+                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> How left and right orientation shape the way the Variable operates</li>
+                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> How the four arrows work together as an integrated pattern</li>
+                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> How body orientation and mental orientation interact</li>
+            </ul>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                This is why Variable matters to serious Human Design students. It is not a branding device. It is a description of how your system is configured beneath the more familiar chart layers, revealing the pattern of your absolute uniqueness at its highest level.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== WHERE VARIABLE APPEARS ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="where-variable-appears">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Where Variable Appears in the Bodygraph
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                Variable appears as the four arrows at the top of the Human Design chart, positioned around the head area and the nodes area. Each arrow points either left or right. Together, they form the full Variable configuration.
+            </p>
+
+            <!-- Bodygraph arrow-location visual -->
+            <div class="bg-gm-card-active rounded-2xl p-6 md:p-8 mb-8 flex justify-center">
+                <img src="../assets/variable-arrows-bodygraph.png" alt="Human Design Bodygraph showing the four Variable arrows positioned around the head and nodes area" class="max-w-full h-auto rounded-lg" loading="lazy">
+            </div>
+
+            <!-- Arrow position table -->
+            <div class="overflow-x-auto rounded-xl border border-gm-border mb-8">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="bg-gm-card-active text-left">
+                            <th class="px-5 py-3 font-semibold text-gray-800">Arrow Position</th>
+                            <th class="px-5 py-3 font-semibold text-gray-800">Variable Area</th>
+                            <th class="px-5 py-3 font-semibold text-gray-800">Broad Domain</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gm-border">
+                        <tr class="bg-white">
+                            <td class="px-5 py-3 font-semibold text-gm-purple">Top Left</td>
+                            <td class="px-5 py-3 text-gray-600">Brain Style</td>
+                            <td class="px-5 py-3 text-gray-600">Body / intake and processing</td>
+                        </tr>
+                        <tr class="bg-gm-card">
+                            <td class="px-5 py-3 font-semibold text-gm-purple">Bottom Left</td>
+                            <td class="px-5 py-3 text-gray-600">Environment Style</td>
+                            <td class="px-5 py-3 text-gray-600">Body / environmental integration</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="px-5 py-3 font-semibold text-gm-purple">Top Right</td>
+                            <td class="px-5 py-3 text-gray-600">Mind Style</td>
+                            <td class="px-5 py-3 text-gray-600">Mind / thinking style</td>
+                        </tr>
+                        <tr class="bg-gm-card">
+                            <td class="px-5 py-3 font-semibold text-gm-purple">Bottom Right</td>
+                            <td class="px-5 py-3 text-gray-600">Perspective</td>
+                            <td class="px-5 py-3 text-gray-600">Mind / view</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                The left-side arrows belong to the Design side of Variable. The right-side arrows belong to the Personality side. Read together, they show how body and mind are oriented through Variable.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== DEEPER MECHANICS + COMMON ERRORS ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="deeper-mechanics">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Variable and the Deeper Mechanics
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Variable is closely related to the deeper mechanics of Human Design, but it should not be confused with them. The arrows point to major advanced domains such as Tonal Cognition, Determination, Environment, Perspective, and Motivation. Those topics can and should be studied in their own right. This page is about the Variable system itself rather than trying to teach all of those mechanics in full. See the <a href="/learn/deeper-mechanics/" class="text-gm-purple hover:underline">Deeper Mechanics</a> section for deeper insight into these areas.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                That distinction matters. If a Variable page tries to become a complete guide to PHS, Environment, Motivation, and Perspective all at once, it loses topical clarity and becomes weaker for both search and serious users.
+            </p>
+
+            <h3 class="text-lg font-bold text-gray-800 mb-4">Common Errors in Variable Interpretation</h3>
+            <div class="grid grid-cols-1 gap-3">
+                <div class="bg-white rounded-xl border border-gm-border p-5">
+                    <div class="text-sm font-bold text-gray-800 mb-1">Treating Left as Better Than Right</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Variable is not hierarchical. Left and right are different orientations, not rankings.</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-5">
+                    <div class="text-sm font-bold text-gray-800 mb-1">Using Variable to Bypass Strategy and Authority</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Variable is advanced substructure. It does not override the foundations of the chart. In fact, it does not function correctly without Strategy and Authority.</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-5">
+                    <div class="text-sm font-bold text-gray-800 mb-1">Reading One Arrow in Isolation</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Each arrow can be described individually, but the real meaning emerges through the full four-arrow pattern. You are a holistic whole; each arrow on its own is useful for study, not for living.</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-5">
+                    <div class="text-sm font-bold text-gray-800 mb-1">Turning Variable Into Personality Branding</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Variable describes orientation and ultimate differentiation. It is not a branding device, a slogan, or a comparison tool.</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-5">
+                    <div class="text-sm font-bold text-gray-800 mb-1">Forcing Yourself Into a Preferred Style</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">This is pure not-self behavior. Your Variable is correct as it is, and you cannot be fulfilled by forcing yourself into any other modality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ACCORDION ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Frequently Asked Questions
+            </h2>
+            <div class="space-y-3">
+
+                <details class="bg-gm-light rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        What is Variable in Human Design?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Variable is the four-arrow system at the top of the Bodygraph. It shows how deeper mechanics such as Brain, Environment, Perspective, and Mind are oriented.
+                    </div>
+                </details>
+
+                <details class="bg-gm-light rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        What do the arrows mean in Human Design?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        The arrows show whether each area is configured with a left-oriented or right-oriented mode of functioning. Broadly speaking, this reflects strategic versus receptive orientation.
+                    </div>
+                </details>
+
+                <details class="bg-gm-light rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        How many Variable configurations are there?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        There are 16 total configurations, because each of the four arrows can point in one of two directions.
+                    </div>
+                </details>
+
+                <details class="bg-gm-light rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Does Variable matter more than Type or Authority?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        No. Variable is advanced and should be approached after foundational mechanics are understood and lived.
+                    </div>
+                </details>
+
+                <details class="bg-gm-light rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Can your Variable change?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        No. Your natal Variable configuration does not change. What can change is your clarity and lived relationship to it.
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RELATED TOPICS ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Related Topics
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="/learn/deeper-mechanics/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Deeper Mechanics &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Advanced mechanics beyond the foundational chart.</p>
+                </a>
+                <a href="/learn/deeper-mechanics/determination/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Determination &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">How the body and brain are designed to take in and process information.</p>
+                </a>
+                <a href="/learn/deeper-mechanics/environment/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Environment &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">How the body integrates within the correct environment.</p>
+                </a>
+                <a href="/learn/deeper-mechanics/motivation/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Motivation &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">The deeper mechanic connected to Mind Style and mental awareness.</p>
+                </a>
+                <a href="/learn/deeper-mechanics/perspective/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Perspective &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">How the mind is designed to view the environment correctly.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Explore Your Variable</h2>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+                To see your Variable, you need an accurate Human Design chart with a reliable birth time and access to the Variable arrows. Genetic Matrix free charts do not include Variable arrows, so membership is required to view the full arrow configuration.
+            </p>
+            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+                Register Here &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+
+                <!-- Left: Logo & Copyright -->
+                <div class="text-center md:text-left">
+                    <img src="/assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">All right reserved.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Privacy, Terms and Conditions</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+
+                <!-- Center: Newsletter -->
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Subscribe to Our Newsletter</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Sign up to our newsletter to receive updates, offers,
+                        new releases, and everything related to Genetic Matrix.
+                    </p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input
+                            type="email"
+                            placeholder="Your Email Address"
+                            class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400"
+                        >
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Social & Contact -->
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connect With Us</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener">
+                            <img src="/assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
+                        </a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener">
+                            <img src="/assets/icon-x.svg" alt="X" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener">
+                            <img src="/assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener">
+                            <img src="/assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
+                        </a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Get in Touch</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

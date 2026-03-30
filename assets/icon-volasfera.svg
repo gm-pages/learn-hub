@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Outer circle representing the zodiac wheel -->
+  <circle cx="32" cy="32" r="28" fill="#F4F0FC" stroke="#6E5898" stroke-width="2.5"/>
+  <!-- Inner circle - solid instead of dashed -->
+  <circle cx="32" cy="32" r="18" fill="none" stroke="#6E5898" stroke-width="1.5"/>
+  <!-- 12 small degree dots around the outer ring -->
+  <circle cx="32" cy="6" r="2" fill="#6E5898"/>
+  <circle cx="46" cy="9" r="1.5" fill="#AC94D8"/>
+  <circle cx="55" cy="18" r="1.5" fill="#AC94D8"/>
+  <circle cx="58" cy="32" r="2" fill="#6E5898"/>
+  <circle cx="55" cy="46" r="1.5" fill="#AC94D8"/>
+  <circle cx="46" cy="55" r="1.5" fill="#AC94D8"/>
+  <circle cx="32" cy="58" r="2" fill="#6E5898"/>
+  <circle cx="18" cy="55" r="1.5" fill="#AC94D8"/>
+  <circle cx="9" cy="46" r="1.5" fill="#AC94D8"/>
+  <circle cx="6" cy="32" r="2" fill="#6E5898"/>
+  <circle cx="9" cy="18" r="1.5" fill="#AC94D8"/>
+  <circle cx="18" cy="9" r="1.5" fill="#AC94D8"/>
+  <!-- Eye/vision symbol in center - representing Sepharial's clairvoyant imagery -->
+  <ellipse cx="32" cy="32" rx="8" ry="5" fill="none" stroke="#6E5898" stroke-width="1.8"/>
+  <circle cx="32" cy="32" r="2.5" fill="#6E5898"/>
+  <!-- Small radiating lines from the eye -->
+  <line x1="32" y1="25" x2="32" y2="22" stroke="#AC94D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="38" y1="26" x2="40" y2="24" stroke="#AC94D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="26" y1="26" x2="24" y2="24" stroke="#AC94D8" stroke-width="1.2" stroke-linecap="round"/>
+</svg>

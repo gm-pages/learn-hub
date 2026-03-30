@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrity Cross-Method Category Test</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Inter, sans-serif; background: #f5f5f5; padding: 2rem; color: #333; }
+        h1 { margin-bottom: 0.5rem; color: #3C2864; }
+        .subtitle { color: #666; margin-bottom: 1.5rem; }
+        .controls { background: #fff; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .controls label { font-weight: 600; display: block; margin-bottom: 0.5rem; }
+        .controls input, .controls select { padding: 0.5rem 1rem; border: 1px solid #ddd; border-radius: 8px; font-size: 0.95rem; margin-right: 0.5rem; }
+        .controls input { width: 300px; }
+        .btn { padding: 0.5rem 1.25rem; border: none; border-radius: 8px; font-size: 0.95rem; cursor: pointer; font-weight: 600; }
+        .btn-primary { background: #6E5898; color: #fff; }
+        .btn-primary:hover { background: #5a4880; }
+        .btn-green { background: #54931E; color: #fff; }
+        .btn-green:hover { background: #468018; }
+        .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .status { margin-top: 1rem; padding: 1rem; background: #F4F0FC; border-radius: 8px; font-size: 0.9rem; display: none; }
+        .status.active { display: block; }
+        .progress-bar { width: 100%; height: 8px; background: #e0e0e0; border-radius: 4px; margin-top: 0.5rem; overflow: hidden; }
+        .progress-fill { height: 100%; background: #6E5898; border-radius: 4px; transition: width 0.3s; width: 0%; }
+
+        .results { margin-top: 1.5rem; }
+        .celeb-result { background: #fff; border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .celeb-name { font-size: 1.2rem; font-weight: 700; color: #3C2864; margin-bottom: 0.25rem; }
+        .celeb-prof { color: #666; font-size: 0.9rem; margin-bottom: 1rem; }
+
+        table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+        th { background: #F4F0FC; padding: 0.5rem; text-align: left; font-weight: 600; color: #6E5898; }
+        td { padding: 0.5rem; border-bottom: 1px solid #eee; }
+        .diff { background: #fff3cd; font-weight: 600; }
+        .same { color: #999; }
+        .error-cell { background: #fde8e8; color: #c00; }
+        .match-vedic { background: #d4edda; }
+        .mismatch-vedic { background: #f8d7da; font-weight: 600; }
+
+        .summary { background: #fff; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: none; }
+        .summary.active { display: block; }
+        .summary h2 { color: #3C2864; margin-bottom: 1rem; }
+        .stat { display: inline-block; padding: 0.75rem 1.25rem; border-radius: 8px; margin: 0.25rem; font-weight: 600; }
+        .stat-good { background: #d4edda; color: #155724; }
+        .stat-warn { background: #fff3cd; color: #856404; }
+        .stat-bad { background: #f8d7da; color: #721c24; }
+        .stat-info { background: #F4F0FC; color: #6E5898; }
+
+        .edge-cases { margin-top: 1rem; }
+        .edge-case { padding: 0.5rem; background: #fff3cd; border-radius: 6px; margin: 0.25rem 0; font-size: 0.9rem; }
+        .edge-case strong { color: #856404; }
+
+        .base-url-row { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; }
+        .base-url-row label { margin-bottom: 0; }
+    </style>
+</head>
+<body>
+    <h1>Celebrity Cross-Method Category Test</h1>
+    <p class="subtitle">Tests that category data (Type, Profile, Sun Sign, etc.) changes correctly across calculation methods</p>
+
+    <div class="controls">
+        <div class="base-url-row">
+            <label>Base URL:</label>
+            <select id="baseUrl">
+                <option value="https://www.staginggm.com">Staging (staginggm.com)</option>
+                <option value="https://www.geneticmatrix.com">Live (geneticmatrix.com)</option>
+                <option value="https://www.gmtxdev.com">Dev (gmtxdev.com)</option>
+            </select>
+        </div>
+        <div style="display:flex; align-items:end; gap: 1rem; flex-wrap: wrap;">
+            <div>
+                <label>Test specific celebrity:</label>
+                <input type="text" id="celebInput" placeholder="e.g. brad-pitt (slug)" />
+            </div>
+            <div>
+                <label>Sample size (random):</label>
+                <select id="sampleSize">
+                    <option value="5">5 celebrities</option>
+                    <option value="10" selected>10 celebrities</option>
+                    <option value="25">25 celebrities</option>
+                    <option value="50">50 celebrities</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" id="btnSpecific" onclick="testSpecific()">Test Celebrity</button>
+            <button class="btn btn-green" id="btnRandom" onclick="testRandom()">Run Random Sample</button>
+        </div>
+        <div class="status" id="status">
+            <div id="statusText">Loading...</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+        </div>
+    </div>
+
+    <div class="summary" id="summary"></div>
+    <div class="results" id="results"></div>
+
+    <script>
+        const METHODS = [
+            { key: 'tropical', label: 'Tropical', suffix: '' },
+            { key: 'sidereal', label: 'Sidereal', suffix: '/sidereal' },
+            { key: 'vedic', label: 'Vedic', suffix: '/vedic' },
+            { key: 'draconic', label: 'Draconic', suffix: '/draconic' },
+            { key: 'true-sidereal', label: 'True Sidereal', suffix: '/true-sidereal' },
+            { key: '13-sign', label: '13-Sign', suffix: '/13-sign' },
+            { key: 'j2000', label: 'J2000', suffix: '/j2000' }
+        ];
+
+        // Categories we want to scrape from each celeb page
+        const CATEGORIES = ['Type', 'Profile', 'Definition', 'Authority', 'Strategy', 'Sun Sign', 'Moon Sign', 'Ascendant', 'Midheaven', 'Descendant', 'Imum Coeli'];
+
+        let allCelebs = [];
+        let testResults = [];
+
+        // Load celeb index
+        async function loadCelebIndex() {
+            const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ_'.split('');
+            for (const letter of letters) {
+                try {
+                    const resp = await fetch(`data/${letter}.json`);
+                    if (resp.ok) {
+                        const data = await resp.json();
+                        allCelebs = allCelebs.concat(data);
+                    }
+                } catch (e) { /* skip */ }
+            }
+            console.log(`Loaded ${allCelebs.length} celebrities`);
+        }
+
+        // Fetch a celeb page and extract category values
+        async function fetchCelebCategories(baseUrl, slug, method) {
+            const url = `${baseUrl}/celebrity/${slug}${method.suffix}/`;
+            try {
+                const resp = await fetch(url, { mode: 'cors' });
+                if (!resp.ok) return { error: `HTTP ${resp.status}`, url };
+                const html = await resp.text();
+                return parseCategories(html, url);
+            } catch (e) {
+                // CORS will likely block this, use proxy approach
+                return { error: `Fetch failed: ${e.message}`, url };
+            }
+        }
+
+        // Parse category values from HTML
+        function parseCategories(html, url) {
+            const result = { url };
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+
+            // Try to find category links/badges on the page
+            // Look for common patterns in celeb pages
+            const allLinks = doc.querySelectorAll('a');
+            const allText = doc.body ? doc.body.innerText : html;
+
+            // Extract from structured data or page content
+            // Pattern: look for links to category pages like /celebrities/type/xxx/
+            for (const cat of CATEGORIES) {
+                const catSlug = cat.toLowerCase().replace(/ /g, '-');
+                const regex = new RegExp(`/celebrities/${catSlug}/([^/"]+)`, 'i');
+                const match = html.match(regex);
+                if (match) {
+                    result[cat] = decodeURIComponent(match[1]).replace(/-/g, ' ');
+                } else {
+                    // Try alternate patterns
+                    const altRegex = new RegExp(`${cat}[:\\s]*<[^>]*>([^<]+)`, 'i');
+                    const altMatch = html.match(altRegex);
+                    result[cat] = altMatch ? altMatch[1].trim() : '(not found)';
+                }
+            }
+            return result;
+        }
+
+        // Use a CORS proxy or iframe approach
+        async function fetchViaProxy(baseUrl, slug, method) {
+            const url = `${baseUrl}/celebrity/${slug}${method.suffix}/`;
+            try {
+                // Try direct fetch first
+                const resp = await fetch(url);
+                if (resp.ok) {
+                    const html = await resp.text();
+                    return parseCategories(html, url);
+                }
+                return { error: `HTTP ${resp.status}`, url };
+            } catch (e) {
+                return { error: `CORS blocked - run from same domain or use staging`, url };
+            }
+        }
+
+        function showStatus(text, progress) {
+            const el = document.getElementById('status');
+            el.classList.add('active');
+            document.getElementById('statusText').textContent = text;
+            if (progress !== undefined) {
+                document.getElementById('progressFill').style.width = `${progress}%`;
+            }
+        }
+
+        function hideStatus() {
+            document.getElementById('status').classList.remove('active');
+        }
+
+        async function testSpecific() {
+            const slug = document.getElementById('celebInput').value.trim();
+            if (!slug) { alert('Enter a celebrity slug'); return; }
+            await runTest([{ n: slug, p: '', s: slug }]);
+        }
+
+        async function testRandom() {
+            if (allCelebs.length === 0) {
+                showStatus('Loading celebrity index...');
+                await loadCelebIndex();
+            }
+            const size = parseInt(document.getElementById('sampleSize').value);
+            const sample = [];
+            const used = new Set();
+            while (sample.length < size && sample.length < allCelebs.length) {
+                const idx = Math.floor(Math.random() * allCelebs.length);
+                if (!used.has(idx)) {
+                    used.add(idx);
+                    sample.push(allCelebs[idx]);
+                }
+            }
+            await runTest(sample);
+        }
+
+        async function runTest(celebs) {
+            const baseUrl = document.getElementById('baseUrl').value;
+            const resultsEl = document.getElementById('results');
+            resultsEl.innerHTML = '';
+            testResults = [];
+
+            document.getElementById('btnSpecific').disabled = true;
+            document.getElementById('btnRandom').disabled = true;
+
+            for (let i = 0; i < celebs.length; i++) {
+                const celeb = celebs[i];
+                showStatus(`Testing ${celeb.n} (${i + 1}/${celebs.length})...`, ((i) / celebs.length) * 100);
+
+                const methodData = {};
+                for (const method of METHODS) {
+                    showStatus(`Testing ${celeb.n} - ${method.label} (${i + 1}/${celebs.length})...`, ((i + METHODS.indexOf(method) / METHODS.length) / celebs.length) * 100);
+                    methodData[method.key] = await fetchViaProxy(baseUrl, celeb.s, method);
+                    // Small delay to avoid hammering the server
+                    await new Promise(r => setTimeout(r, 500));
+                }
+
+                const result = { celeb, methodData };
+                testResults.push(result);
+                renderCelebResult(result, resultsEl);
+            }
+
+            showStatus('Complete!', 100);
+            renderSummary();
+
+            document.getElementById('btnSpecific').disabled = false;
+            document.getElementById('btnRandom').disabled = false;
+        }
+
+        function renderCelebResult(result, container) {
+            const { celeb, methodData } = result;
+            const div = document.createElement('div');
+            div.className = 'celeb-result';
+
+            let html = `<div class="celeb-name">${celeb.n}</div>`;
+            html += `<div class="celeb-prof">${celeb.p || ''}</div>`;
+
+            // Check if any method returned an error
+            const hasErrors = METHODS.some(m => methodData[m.key].error);
+            if (hasErrors) {
+                const errorMethods = METHODS.filter(m => methodData[m.key].error);
+                html += `<p style="color:#c00; margin-bottom:0.5rem;">Errors on: ${errorMethods.map(m => `${m.label} (${methodData[m.key].error})`).join(', ')}</p>`;
+            }
+
+            html += '<table><thead><tr><th>Category</th>';
+            for (const m of METHODS) {
+                html += `<th>${m.label}</th>`;
+            }
+            html += '</tr></thead><tbody>';
+
+            for (const cat of CATEGORIES) {
+                html += `<tr><td><strong>${cat}</strong></td>`;
+                const tropical = methodData['tropical'][cat] || '(n/a)';
+
+                for (const m of METHODS) {
+                    const val = methodData[m.key][cat] || '(n/a)';
+                    const hasError = methodData[m.key].error;
+
+                    if (hasError) {
+                        html += `<td class="error-cell">Error</td>`;
+                    } else if (m.key === 'tropical') {
+                        html += `<td>${val}</td>`;
+                    } else if (val === tropical && val !== '(not found)' && val !== '(n/a)') {
+                        html += `<td class="same">${val}</td>`;
+                    } else if (val !== tropical && val !== '(not found)' && val !== '(n/a)') {
+                        html += `<td class="diff">${val}</td>`;
+                    } else {
+                        html += `<td>${val}</td>`;
+                    }
+                }
+                html += '</tr>';
+
+                // Special check: Vedic vs Sidereal match
+                if (cat === 'Type' || cat === 'Profile' || cat === 'Sun Sign') {
+                    const sidereal = methodData['sidereal'][cat];
+                    const vedic = methodData['vedic'][cat];
+                    if (sidereal && vedic && !methodData['sidereal'].error && !methodData['vedic'].error) {
+                        // We'll flag in summary
+                    }
+                }
+            }
+
+            html += '</tbody></table>';
+
+            // Links to pages
+            html += '<div style="margin-top:0.75rem; font-size:0.8rem; color:#666;">';
+            const baseUrl = document.getElementById('baseUrl').value;
+            for (const m of METHODS) {
+                const url = `${baseUrl}/celebrity/${celeb.s}${m.suffix}/`;
+                html += `<a href="${url}" target="_blank" style="margin-right:1rem;">${m.label}</a>`;
+            }
+            html += '</div>';
+
+            div.innerHTML = html;
+            container.appendChild(div);
+        }
+
+        function renderSummary() {
+            const summaryEl = document.getElementById('summary');
+            summaryEl.classList.add('active');
+
+            let totalCelebs = testResults.length;
+            let celebsWithDiffs = 0;
+            let celebsAllSame = 0;
+            let vedicSiderealMatches = 0;
+            let vedicSiderealMismatches = 0;
+            let j2000TypeDiffs = 0;
+            let j2000ProfileDiffs = 0;
+            let errorCount = 0;
+            let edgeCases = [];
+
+            for (const r of testResults) {
+                const md = r.methodData;
+                let hasDiff = false;
+                let hasError = METHODS.some(m => md[m.key].error);
+
+                if (hasError) { errorCount++; continue; }
+
+                for (const cat of CATEGORIES) {
+                    const tropical = md['tropical'][cat];
+                    for (const m of METHODS.slice(1)) {
+                        if (md[m.key][cat] !== tropical && md[m.key][cat] !== '(not found)' && md[m.key][cat] !== '(n/a)') {
+                            hasDiff = true;
+                        }
+                    }
+                }
+
+                if (hasDiff) celebsWithDiffs++;
+                else celebsAllSame++;
+
+                // Vedic vs Sidereal check
+                let vedicMatch = true;
+                for (const cat of CATEGORIES) {
+                    if (md['vedic'][cat] !== md['sidereal'][cat] && md['vedic'][cat] !== '(not found)') {
+                        vedicMatch = false;
+                    }
+                }
+                if (vedicMatch) vedicSiderealMatches++;
+                else {
+                    vedicSiderealMismatches++;
+                    edgeCases.push(`${r.celeb.n}: Vedic differs from Sidereal`);
+                }
+
+                // J2000 Type/Profile changes
+                if (md['j2000']['Type'] !== md['tropical']['Type'] && md['j2000']['Type'] !== '(not found)') {
+                    j2000TypeDiffs++;
+                    edgeCases.push(`${r.celeb.n}: Type changes to "${md['j2000']['Type']}" on J2000 (was "${md['tropical']['Type']}" in Tropical)`);
+                }
+                if (md['j2000']['Profile'] !== md['tropical']['Profile'] && md['j2000']['Profile'] !== '(not found)') {
+                    j2000ProfileDiffs++;
+                    edgeCases.push(`${r.celeb.n}: Profile changes to "${md['j2000']['Profile']}" on J2000 (was "${md['tropical']['Profile']}" in Tropical)`);
+                }
+            }
+
+            let html = `<h2>Test Summary</h2>`;
+            html += `<div>`;
+            html += `<span class="stat stat-info">${totalCelebs} celebrities tested</span>`;
+            html += `<span class="stat ${celebsWithDiffs > 0 ? 'stat-good' : 'stat-bad'}">${celebsWithDiffs} with method differences</span>`;
+            html += `<span class="stat ${celebsAllSame > 0 ? 'stat-warn' : 'stat-good'}">${celebsAllSame} identical across all methods</span>`;
+            if (errorCount > 0) html += `<span class="stat stat-bad">${errorCount} with errors</span>`;
+            html += `</div>`;
+
+            html += `<div style="margin-top:1rem;">`;
+            html += `<span class="stat ${vedicSiderealMatches > 0 ? 'stat-good' : 'stat-warn'}">Vedic = Sidereal: ${vedicSiderealMatches}</span>`;
+            if (vedicSiderealMismatches > 0) html += `<span class="stat stat-warn">Vedic != Sidereal: ${vedicSiderealMismatches}</span>`;
+            html += `<span class="stat ${j2000TypeDiffs > 0 ? 'stat-warn' : 'stat-info'}">J2000 Type changes: ${j2000TypeDiffs}</span>`;
+            html += `<span class="stat ${j2000ProfileDiffs > 0 ? 'stat-warn' : 'stat-info'}">J2000 Profile changes: ${j2000ProfileDiffs}</span>`;
+            html += `</div>`;
+
+            if (edgeCases.length > 0) {
+                html += `<div class="edge-cases"><h3 style="margin:1rem 0 0.5rem;">Edge Cases Found:</h3>`;
+                for (const ec of edgeCases) {
+                    html += `<div class="edge-case"><strong>!</strong> ${ec}</div>`;
+                }
+                html += `</div>`;
+            }
+
+            if (celebsAllSame > totalCelebs * 0.8 && totalCelebs > 3) {
+                html += `<div style="margin-top:1rem; padding:1rem; background:#f8d7da; border-radius:8px; color:#721c24;"><strong>Warning:</strong> Most celebrities show identical data across all methods. This may indicate category data is not updating per calculation method.</div>`;
+            }
+
+            summaryEl.innerHTML = html;
+        }
+    </script>
+</body>
+</html>

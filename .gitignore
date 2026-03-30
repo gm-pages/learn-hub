@@ -12,19 +12,26 @@ Desktop.ini
 *~
 .vscode/
 
-# Design reference images (not needed for deploy)
-*.png
+# Design source files
 *.psd
 *.ai
 
-# But allow chart bodygraph images
-!types/images/*.png
-!profiles/images/*.png
-!assets/16-variable-configurations.png
-!assets/variable-arrows-bodygraph.png
-!astrology/Maja_Planets.png
-!deeper-mechanics/*.png
+# Original PNGs (we deploy WebP versions)
+assets/*.png
+
+# Build/reference files not for deploy
+*.pdf
+*.zip
+*.py
+translation-glossary-research.md
+maja-spec/
 
 # Python
 __pycache__/
 *.pyc
+
+# Vercel
+.vercel
+
+# Node
+node_modules/
