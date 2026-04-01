@@ -209,7 +209,7 @@ Authority Types:
 - Emotional Authority = Autorità Emotiva
 - Sacral Authority = Autorità Sacrale
 - Splenic Authority = Autorità Splenica
-- Ego/Heart Authority = Autorità dell'Ego
+- Ego/Heart Authority = Autorità del Cuore
 - Self-Projected Authority = Autorità auto-proiettata
 - Mental/Environmental Authority = Autorità Mentale dell'Ambiente
 - Lunar Authority = Autorità Lunare
@@ -348,7 +348,7 @@ Calculation Methods:
 - Sidereal = Siderale
 - Vedic = Vedico
 - Draconic = Draconico
-- True Sidereal = Siderale vera
+- True Sidereal = Siderale reale
 - Ayanamsha = Ayanamsha (keep in Sanskrit)
 - Lahiri = Lahiri (keep as proper name)
 - Fagan-Bradley = Fagan-Bradley (keep as proper name)
