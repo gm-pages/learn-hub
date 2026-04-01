@@ -1,232 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3/5 Profile in Human Design - Martyr / Heretic | Genetic Matrix</title>
-    <meta name="description" content="The experiential learner with a universalizing impact. 3/5s discover through trial and error, then deliver practical solutions that transform others.">
-    <link rel="canonical" href="https://geneticmatrix.com/learn/profiles/3/5/">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'gm-purple': '#6E5898',
-                        'gm-purple-light': '#9080B1',
-                        'gm-purple-soft': '#AC94D8',
-                        'gm-dark': '#3C2864',
-                        'gm-darker': '#2e1f4d',
-                        'gm-green': '#54931E',
-                        'gm-green-dark': '#468018',
-                        'gm-green-light': '#8EB86A',
-                        'gm-pink': '#F66378',
-                        'gm-orange': '#E8961D',
-                        'gm-gray': '#707070',
-                        'gm-light': '#F7F8F9',
-                        'gm-card': '#FAFBFC',
-                        'gm-card-active': '#F4F0FC',
-                        'gm-border': '#D8D4E4',
-                        'gm-warning': '#F8F8E8',
-                        'gm-text-dark': '#1A1A2E',
-                        'gm-text': '#444444',
-                        'gm-text-light': '#949494',
-                    },
-                    fontFamily: {
-                        'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        details summary { cursor: pointer; list-style: none; }
-        details summary::-webkit-details-marker { display: none; }
-        details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
-        details[open] summary::after { content: '\2212'; }
-        details[open] > div { animation: fadeIn 0.2s ease-in-out; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
-    </style>
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a 3/5 Profile?", "acceptedAnswer": {"@type": "Answer", "text": "The 3/5 combines the Martyr (Line 3) with the Heretic (Line 5). They learn through trial and error, and their experiential wisdom becomes universalized solutions for others through the 5th line projection field."}}, {"@type": "Question", "name": "Why do 3/5s go through so many changes?", "acceptedAnswer": {"@type": "Answer", "text": "The 3rd line learns exclusively through direct experience - trial and error, bonds made and broken. This is not instability; it is the discovery process. Each change builds wisdom that the 5th line will eventually share with the world."}}, {"@type": "Question", "name": "How does the 3/5 handle the projection field?", "acceptedAnswer": {"@type": "Answer", "text": "The 5th line projection means others see the 3/5 as a problem-solver. Because the 3rd line has actually lived through so many experiments, the 3/5 often can deliver practical solutions. Strategy and Authority help determine which projections to accept."}}]}</script>
+ <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>3/5 Profile in Human Design - Martyr / Heretic | Genetic Matrix</title>
+ <meta name="description" content="The experiential learner with a universalizing impact. 3/5s discover through trial and error, then offer practical solutions that can transform others.">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn/profiles/3/5/">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ 'gm-purple': '#6E5898',
+ 'gm-purple-light': '#9080B1',
+ 'gm-purple-soft': '#AC94D8',
+ 'gm-dark': '#3C2864',
+ 'gm-darker': '#2e1f4d',
+ 'gm-green': '#54931E',
+ 'gm-green-dark': '#468018',
+ 'gm-green-light': '#8EB86A',
+ 'gm-pink': '#F66378',
+ 'gm-orange': '#E8961D',
+ 'gm-gray': '#707070',
+ 'gm-light': '#F7F8F9',
+ 'gm-card': '#FAFBFC',
+ 'gm-card-active': '#F4F0FC',
+ 'gm-border': '#D8D4E4',
+ 'gm-warning': '#F8F8E8',
+ 'gm-text-dark': '#1A1A2E',
+ 'gm-text': '#444444',
+ 'gm-text-light': '#949494',
+ },
+ fontFamily: {
+ 'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+ },
+ }
+ }
+ }
+ </script>
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+ body { font-family: 'Inter', sans-serif; }
+ details summary { cursor: pointer; list-style: none; }
+ details summary::-webkit-details-marker { display: none; }
+ details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+ details[open] summary::after { content: '\2212'; }
+ details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+ @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+ </style>
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "3/5 Profile in Human Design - Martyr / Heretic",
+ "description": "The experiential learner with a universalizing impact. 3/5s discover through trial and error, then offer practical solutions that can transform others.",
+ "publisher": {
+ "@type": "Organization",
+ "name": "Genetic Matrix",
+ "url": "https://www.geneticmatrix.com"
+ },
+ "mainEntityOfPage": "https://www.geneticmatrix.com/learn/profiles/3/5/",
+ "datePublished": "2025-01-15",
+ "dateModified": "2026-03-06"
+ }
+ </script>
+ <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a 3/5 Profile?", "acceptedAnswer": {"@type": "Answer", "text": "The 3/5 combines the Martyr, Line 3, with the Heretic, Line 5. This profile learns through trial and error, and over time its lived experience can become practical wisdom that helps others. The 5th line adds a projection field, so the 3/5 is often seen as someone who can offer solutions."}}, {"@type": "Question", "name": "Why do 3/5s go through so many changes?", "acceptedAnswer": {"@type": "Answer", "text": "The 3rd line learns through direct experience. It discovers what works by testing life in real time, which can bring change, adjustment, and experimentation. This is not necessarily instability. It is part of how the 3/5 builds resilience, realism, and wisdom."}}, {"@type": "Question", "name": "How does the 3/5 handle the projection field?", "acceptedAnswer": {"@type": "Answer", "text": "The 5th line projection means others often see the 3/5 as a practical problem-solver. Sometimes that is accurate, and sometimes it creates pressure or expectation. Strategy and Authority help the 3/5 recognize which opportunities are correct and which projections are not theirs to carry."}}, {"@type": "Question", "name": "Why are 3/5s such practical problem-solvers?", "acceptedAnswer": {"@type": "Answer", "text": "Because their wisdom is tested. The 3rd line learns by living through real situations, making adjustments, and discovering what actually holds up. When this experience is integrated well, the 3/5 can offer guidance that is grounded, realistic, and genuinely useful."}}]}</script>
 </head>
 <body class="bg-white text-gray-700">
 
-    <!-- ==================== NAV BAR ==================== -->
-    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
-            <!-- Logo -->
-            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
-                <img src="../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14 max-w-[180px] md:max-w-none">
-            </a>
+ <!-- ==================== NAV BAR ==================== -->
+ <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+ <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+ <!-- Logo -->
+ <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+ <img src="../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14 max-w-[180px] md:max-w-none">
+ </a>
 
-            <!-- Right Nav: LOGGED OUT (default for static pages) -->
-            <div class="flex items-center gap-8">
-                <!-- Report Icon -->
-                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Reports">
-                    <img src="../assets/icon-report.svg" alt="Reports" class="h-9 w-9">
-                </a>
-                <!-- Talking Chart Icon -->
-                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Talking Charts">
-                    <img src="../assets/icon-talking-chart.svg" alt="Talking Charts" class="h-7 w-7">
-                </a>
-                <!-- Free Chart (popup on live site - Shafik to wire up) -->
-                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Free Chart</a>
-                <!-- Our Plans -->
-                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Our Plans</a>
-                <!-- Cart -->
-                <a href="https://www.geneticmatrix.com/cart/" title="Cart">
-                    <img src="../assets/icon-cart.svg" alt="Cart" class="h-8 w-auto">
-                </a>
-                <!-- Language Selector -->
-                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
-                    <span>English</span>
-                    <img src="../assets/icon-english.svg" alt="English" class="h-5 w-7">
-                </div>
-                <!-- Sign In (popup on live site - Shafik to wire up) -->
-                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Sign In</a>
-                <!-- Register -->
-                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Register</a>
-            </div>
-        </div>
-    </nav>
+ <!-- Right Nav: LOGGED OUT (default for static pages) -->
+ <div class="flex items-center gap-8">
+ <!-- Report Icon -->
+ <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Reports">
+ <img src="../assets/icon-report.svg" alt="Reports" class="h-9 w-9">
+ </a>
+ <!-- Talking Chart Icon -->
+ <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Talking Charts">
+ <img src="../assets/icon-talking-chart.svg" alt="Talking Charts" class="h-7 w-7">
+ </a>
+ <!-- Free Chart (popup on live site - Shafik to wire up) -->
+ <a href="/types/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Free Chart</a>
+ <!-- Learn -->
+ <a href="../" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Learn</a>
+ <!-- Our Plans -->
+ <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Our Plans</a>
+ <!-- Cart -->
+ <a href="https://www.geneticmatrix.com/cart/" title="Cart">
+ <img src="../assets/icon-cart.svg" alt="Cart" class="h-8 w-auto">
+ </a>
+ <!-- Language Selector -->
+ <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+ <span>English</span>
+ <img src="../assets/icon-english.svg" alt="English" class="h-5 w-7">
+ </div>
+ <!-- Sign In (popup on live site - Shafik to wire up) -->
+ <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Sign In</a>
+ <!-- Register -->
+ <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Register</a>
+ </div>
+ </div>
+ </nav>
 
-    <!-- ==================== HERO BANNER ==================== -->
-    <section class="bg-gm-dark text-white py-12 md:py-16">
-        <div class="max-w-5xl mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
-                <div class="flex-1 text-center lg:text-left">
-                    <span class="inline-block bg-gm-purple text-white text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">Profile 3/5</span>
-                    <h1 class="text-3xl md:text-4xl font-bold mb-2">3/5 Profile</h1>
-                    <p class="text-gm-purple-light text-lg font-medium mb-3">Martyr / Heretic</p>
-                    <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-xl mb-6">The experiential learner with a universalizing impact. 3/5s discover through trial and error, then deliver practical solutions that transform others.</p>
-                    <div class="flex gap-8 justify-center lg:justify-start">
-                    <div>
-                        <div class="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mb-0.5">Conscious</div>
-                        <div class="text-sm text-white font-semibold">Line 3 · Martyr</div>
-                    </div>
-                    <div>
-                        <div class="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mb-0.5">Unconscious</div>
-                        <div class="text-sm text-white font-semibold">Line 5 · Heretic</div>
-                    </div>
-                    </div>
-                </div>
-                <div class="w-64 lg:w-72 flex-shrink-0">
-                    <img src="/profiles/images/3-5-Ju-Wenjun.png" alt="3/5 Profile BodyGraph chart for Ju Wenjun" class="rounded-xl w-full h-auto">
-                </div>
-            </div>
-        </div>
-    </section>
+ <!-- ==================== HERO BANNER ==================== -->
+ <section class="bg-gm-dark text-white py-12 md:py-16">
+ <div class="max-w-5xl mx-auto px-6">
+ <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+ <div class="flex-1 text-center lg:text-left">
+ <span class="inline-block bg-gm-purple text-white text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">Profile 3/5</span>
+ <h1 class="text-3xl md:text-4xl font-bold mb-2">3/5 Profile</h1>
+ <p class="text-gm-purple-light text-lg font-medium mb-3">Martyr / Heretic</p>
+ <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-xl mb-6">The experiential learner with a universalizing impact. 3/5s discover through trial and error, then offer practical solutions that can transform others.</p>
+ <div class="flex gap-8 justify-center lg:justify-start">
+ <div>
+ <div class="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mb-0.5">Conscious</div>
+ <div class="text-sm text-white font-semibold">Line 3 · Martyr</div>
+ </div>
+ <div>
+ <div class="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mb-0.5">Unconscious</div>
+ <div class="text-sm text-white font-semibold">Line 5 · Heretic</div>
+ </div>
+ </div>
+ </div>
+ <div class="w-64 lg:w-72 flex-shrink-0">
+ <img src="/profiles/images/3-5-Ju-Wenjun.png" alt="3/5 Profile Bodygraph chart for Ju Wenjun" class="rounded-xl w-full h-auto">
+ </div>
+ </div>
+ </div>
+ </section>
+ <!-- ==================== LINE CARDS ==================== -->
+ <section class="py-10 bg-white">
+ <div class="max-w-4xl mx-auto px-6">
+ <div class="grid grid-cols-2 gap-4">
+ <div class="bg-gm-card-active rounded-lg border border-gm-border p-6 text-center">
+ <div class="text-3xl font-bold text-gm-purple mb-1">3</div>
+ <div class="text-lg font-bold text-gray-800 mb-1">Martyr</div>
+ <div class="text-xs text-gray-500 uppercase tracking-wide">Conscious · Personality</div>
+ </div>
+ <div class="bg-gm-card-active rounded-lg border border-gm-border p-6 text-center">
+ <div class="text-3xl font-bold text-gm-purple mb-1">5</div>
+ <div class="text-lg font-bold text-gray-800 mb-1">Heretic</div>
+ <div class="text-xs text-gray-500 uppercase tracking-wide">Unconscious · Design</div>
+ </div>
+ </div>
+ </div>
+ </section>
 
-    <!-- ==================== HIGHLIGHT BOX ==================== -->
-    <section class="py-10 md:py-14 bg-white">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-gm-card-active rounded-2xl p-8 md:p-10">
-                <p class="text-gm-text text-sm md:text-base leading-relaxed"><strong class="text-gray-800">Tools, not doctrine.</strong> Genetic Matrix provides these tools for your own exploration and experiment. The chart shown is Ju Wenjun - Chess Grandmaster · Reflector.</p>
-            </div>
-        </div>
-    </section>
+ <!-- ==================== WHAT IS THE 3/5 PROFILE? ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light">
+ <div class="max-w-4xl mx-auto px-6">
+ <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"> What Is the 3/5 Profile?
+ </h2>
+ <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The 3/5 Profile combines the <strong class="text-gray-800">Martyr</strong>, Line 3, with the <strong class="text-gray-800">Heretic</strong>, Line 5, creating a powerful blend of experiential wisdom and practical impact. The 3/5 learns through direct experience, and what they discover can then be universalized through the 5th line to benefit others.</p>
+ <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The conscious 3rd line lives through trial and error. Bonds are made and broken, experiments are run and fail, and paths are taken and abandoned. This is part of the 3/5's learning process. Nothing is wasted. Every experience, especially the difficult ones, helps build the wisdom that may later be shared with others.</p>
+ <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The unconscious 5th line carries the projection field. Others often see the 3/5 as someone who can offer practical, widely useful solutions. Because the 3rd line has actually lived through so many real experiences, the 3/5 often does have something valuable to offer. Their solutions are not theoretical. They are forged through direct experience.</p>
+ </div>
+ </section>
+ <!-- ==================== HOW THE 3 AND 5 WORK TOGETHER ==================== -->
+ <section class="py-10 md:py-14 bg-white">
+ <div class="max-w-4xl mx-auto px-6">
+ <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+How the 3 and 5 Work Together
+ </h2>
+ <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The 3/5 Profile brings together experimentation and projection. Line 3 learns by trying things, discovering what works through experience, and adapting through mistakes, adjustments, and real-life testing. Line 5, by contrast, tends to be seen by others as capable, practical, and able to offer solutions. This means the 3/5 often lives at the meeting point between lived trial and error and outer expectation.</p>
+ <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">This can be a dynamic but demanding combination. The 3 needs freedom to experiment, fail, and learn in motion. The 5, however, can create pressure to look certain, competent, or immediately effective. Others may expect answers before the process is complete. As a result, the 3/5 often learns not only what works, but also how to separate genuine usefulness from projection.</p>
+ <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">When these two lines work well together, the result is <strong class="text-gray-800">practical wisdom with impact</strong>. The 3 brings resilience, realism, and adaptability. The 5 brings reach, influence, and the capacity to offer solutions that matter. Together, they create someone who can help others precisely because they have tested life directly and learned what holds up in the real world.</p>
+ </div>
+ </section>
+ <!-- ==================== LIVING THE 3/5 ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light">
+ <div class="max-w-4xl mx-auto px-6">
+ <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"> Living the 3/5
+ </h2>
+ <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The 3/5 life can feel uneven at times. The 3rd line learns through experience, experimentation, and adjustment, while the 5th line adds pressure to appear capable and have answers for others. This can make the process feel intense, especially when life is still teaching you through direct experience.</p>
+ <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">This is why Strategy and Authority matter so much for the 3/5. They help you know which experiences are correct for you and which projections are not yours to carry. When a 3/5 trusts their process, they build wisdom that is grounded, tested, and genuinely useful. Over time, this can make them extraordinarily practical, resilient, and able to guide others through what they have actually lived.</p>
 
-    <!-- ==================== LINE CARDS ==================== -->
-    <section class="pb-10 bg-white">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="grid grid-cols-2 gap-4">
-                <div class="bg-gm-card-active rounded-lg border border-gm-border p-6 text-center">
-                    <div class="text-3xl font-bold text-gm-purple mb-1">3</div>
-                    <div class="text-lg font-bold text-gray-800 mb-1">Martyr</div>
-                    <div class="text-xs text-gray-500 uppercase tracking-wide">Conscious · Personality</div>
-                </div>
-                <div class="bg-gm-card-active rounded-lg border border-gm-border p-6 text-center">
-                    <div class="text-3xl font-bold text-gm-purple mb-1">5</div>
-                    <div class="text-lg font-bold text-gray-800 mb-1">Heretic</div>
-                    <div class="text-xs text-gray-500 uppercase tracking-wide">Unconscious · Design</div>
-                </div>
-            </div>
-        </div>
-    </section>
+ <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
+ <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Key Insight</p>
+ <p class="text-gm-text text-sm leading-relaxed italic">Remember: your Profile operates within your Type and Authority. A 3/5 Generator lives this profile very differently from a 3/5 Projector. The Profile describes your role, while your Type and Authority describe how you enter into that role correctly.</p>
+ </div>
+ </div>
+ </section>
+ <!-- ==================== THE 3/5 IN RELATIONSHIPS ==================== -->
+ <section class="py-10 md:py-14 bg-white">
+ <div class="max-w-4xl mx-auto px-6">
+ <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"> The 3/5 in Relationships
+ </h2>
+ <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">In relationships, 3/5s often learn through experience. The 3rd line is experimental by nature, which can mean relationships become part of how they discover what works, what does not, and what is truly sustainable. This does not mean the 3/5 is careless or insincere. It means they are learning through lived reality rather than theory.</p>
+ <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">At the same time, the 5th line can bring projection into relationships. Partners may expect the 3/5 to be more certain, stable, or solution-oriented than they actually feel in the moment. This can create pressure, especially if the relationship is built on expectation rather than genuine understanding.</p>
+ <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Healthy relationships for a 3/5 need room for honesty, growth, and reality. They do best with people who understand that experience is part of their process and who do not punish them for learning in real time. When seen clearly, a 3/5 can be <strong class="text-gray-800">deeply loyal, practical, and wise</strong>, bringing hard-earned insight and real-world resilience into relationship.</p>
+ </div>
+ </section>
+ <!-- ==================== WATCH: THE 3/5 PROFILE ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light">
+ <div class="max-w-4xl mx-auto px-6">
+ <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"> Watch: The 3/5 Profile
+ </h2>
+ <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">See the 3/5 Profile in motion. This short animated video explores how the Martyr and Heretic lines work together, what this profile looks like in practice, and how to recognize it in yourself and others.</p>
+ <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Below is a 2 minute animated video about the 3/5 Profile from our YouTube channel.</p>
 
-    <!-- ==================== WHAT IS THE 3/5 PROFILE? ==================== -->
-    <section class="py-10 md:py-14 bg-gm-light">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
-                <span class="text-gm-purple">|</span> &#128300; What Is the 3/5 Profile?
-            </h2>
-            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The 3/5 Profile combines the <strong class="text-gray-800">Martyr</strong> (Line 3) with the <strong class="text-gray-800">Heretic</strong> (Line 5) - creating a powerful combination of experiential wisdom and practical impact. The 3/5 learns everything through direct experience, and then their discoveries become universalized through the 5th line's projection field to benefit others.</p>
-            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The conscious 3rd line is in constant <strong class="text-gray-800">trial and error</strong>. Bonds made and broken, experiments run and failed, paths taken and abandoned - this is the 3/5's learning process. Nothing is wasted. Every experience, especially the failures, builds the wisdom that the 5th line will eventually deliver to the world.</p>
-            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The unconscious 5th line carries the projection field - others see the 3/5 as someone who can provide <strong class="text-gray-800">practical, universalizing solutions</strong>. And because the 3rd line has actually lived through so many experiments, the 3/5 often can deliver. Their solutions are not theoretical - they are forged in direct experience.</p>
-        </div>
-    </section>
-    <!-- ==================== LIVING THE 3/5 ==================== -->
-    <section class="py-10 md:py-14 bg-white">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
-                <span class="text-gm-purple">|</span> &#127793; Living the 3/5
-            </h2>
-            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The 3/5 life can feel bumpy - the 3rd line process is inherently chaotic, and the 5th line projection adds pressure to be the one who has the answers. The key is trusting the process: <strong class="text-gray-800">the experiments are building exactly the wisdom that others need</strong>. The 3/5 who embraces their trial-and-error nature without shame becomes an extraordinarily practical and trusted guide.</p>
+ <div class="relative w-full pt-[56.25%] mt-6 rounded-xl overflow-hidden">
+ <iframe src="https://www.youtube.com/embed/CNCZxXutECE" title="Watch: The 3/5 Profile" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe>
+ </div>
+ </div>
+ </section>
+ <!-- ==================== HOW TO EXPLORE YOUR 3/5 PROFILE ==================== -->
+ <section class="py-10 md:py-14 bg-white">
+ <div class="max-w-4xl mx-auto px-6">
+ <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"> How to Explore Your 3/5 Profile in Your Chart
+ </h2>
+ <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">On <strong class="text-gray-800">Genetic Matrix</strong>, generate a free Foundation Chart to discover your Profile. The chart shows which lines your conscious and unconscious Sun and Earth occupy, creating your Profile combination. Advanced and Pro Charts reveal how your Profile interacts with your Type, Centers, Channels, and Variable.</p>
+ <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">You can also explore other 3/5 Profiles in Genetic Matrix's celebrity database of more than 88,600 charts. Seeing how this profile appears across different Types and life paths can help you understand how the Martyr and Heretic dynamic expresses itself in the real world.</p>
+ <a href="/celebrities/" class="inline-block text-gm-pink font-semibold text-sm hover:underline">Search Celebrities →</a>
+ </div>
+ </section>
+ <!-- ==================== FAQ ACCORDION ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light">
+ <div class="max-w-4xl mx-auto px-6">
+ <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"> Frequently Asked Questions
+ </h2>
+ <div class="space-y-3">
+ <details class="bg-white rounded-lg border border-gm-border">
+ <summary class="py-4 px-6 text-sm font-semibold text-gray-800">What is a 3/5 Profile?</summary>
+ <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">The 3/5 combines the Martyr, Line 3, with the Heretic, Line 5. This profile learns through trial and error, and over time its lived experience can become practical wisdom that helps others. The 5th line adds a projection field, so the 3/5 is often seen as someone who can offer solutions.</div>
+ </details>
+ <details class="bg-white rounded-lg border border-gm-border">
+ <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Why do 3/5s go through so many changes?</summary>
+ <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">The 3rd line learns through direct experience. It discovers what works by testing life in real time, which can bring change, adjustment, and experimentation. This is not necessarily instability. It is part of how the 3/5 builds resilience, realism, and wisdom.</div>
+ </details>
+ <details class="bg-white rounded-lg border border-gm-border">
+ <summary class="py-4 px-6 text-sm font-semibold text-gray-800">How does the 3/5 handle the projection field?</summary>
+ <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">The 5th line projection means others often see the 3/5 as a practical problem-solver. Sometimes that is accurate, and sometimes it creates pressure or expectation. Strategy and Authority help the 3/5 recognize which opportunities are correct and which projections are not theirs to carry.</div>
+ </details>
+ <details class="bg-white rounded-lg border border-gm-border">
+ <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Why are 3/5s such practical problem-solvers?</summary>
+ <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Because their wisdom is tested. The 3rd line learns by living through real situations, making adjustments, and discovering what actually holds up. When this experience is integrated well, the 3/5 can offer guidance that is grounded, realistic, and genuinely useful.</div>
+ </details>
+ </div>
+ </div>
+ </section>
 
-            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
-                <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Key Insight</p>
-                <p class="text-gm-text text-sm leading-relaxed italic">Remember: your Profile operates within your Type and Authority. A 3/5 Generator lives this profile very differently from a 3/5 Projector. The Profile describes your role - your Type and Authority describe how you enter into that role correctly.</p>
-            </div>
-        </div>
-    </section>
-    <!-- ==================== THE 3/5 IN RELATIONSHIPS ==================== -->
-    <section class="py-10 md:py-14 bg-gm-light">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
-                <span class="text-gm-purple">|</span> &#128149; The 3/5 in Relationships
-            </h2>
-            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">In relationships, the 3/5 may go through multiple bonds - the 3rd line makes and breaks connections as part of its learning process. Partners need to understand that the 3/5 is not being flaky; they are discovering what works through experience. The 5th line projection can create unrealistic expectations from partners.</p>
-        </div>
-    </section>
-    <!-- ==================== WATCH: THE 3/5 PROFILE ==================== -->
-    <section class="py-10 md:py-14 bg-white">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
-                <span class="text-gm-purple">|</span> &#127909; Watch: The 3/5 Profile
-            </h2>
-            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Explore the 3/5 Profile in motion - how the Martyr and Heretic lines interact, what it looks like in practice, and how to recognize this Profile in yourself and others.</p>
-
-            <div class="relative w-full pt-[56.25%] mt-6 rounded-xl overflow-hidden">
-                <iframe src="https://www.youtube.com/embed/CNCZxXutECE" title="Watch: The 3/5 Profile" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe>
-            </div>
-        </div>
-    </section>
-    <!-- ==================== HOW TO EXPLORE YOUR 3/5 PROFILE ==================== -->
-    <section class="py-10 md:py-14 bg-gm-light">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
-                <span class="text-gm-purple">|</span> &#128640; How to Explore Your 3/5 Profile in Your Chart
-            </h2>
-            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">On Genetic Matrix:</strong> Generate a free Foundation chart to discover your Profile. The chart shows which lines your conscious and unconscious Sun & Earth occupy, creating your Profile combination. Advanced and Pro charts reveal how your Profile interacts with your Type, Centers, Channels, and Variable.</p>
-            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">The celebrity database:</strong> Explore other 3/5 Profiles in Genetic Matrix's 88,600+ celebrity database. See how the Martyr/Heretic dynamic manifests across different Types and life paths.</p>
-        </div>
-    </section>
-    <!-- ==================== FAQ ACCORDION ==================== -->
-    <section class="py-10 md:py-14 bg-white">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
-                <span class="text-gm-purple">|</span> Frequently Asked Questions
-            </h2>
-            <div class="space-y-3">
-                <details class="bg-white rounded-lg border border-gm-border">
-                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">What is a 3/5 Profile?</summary>
-                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">The 3/5 combines the Martyr (Line 3) with the Heretic (Line 5). They learn through trial and error, and their experiential wisdom becomes universalized solutions for others through the 5th line projection field.</div>
-                </details>
-                <details class="bg-white rounded-lg border border-gm-border">
-                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Why do 3/5s go through so many changes?</summary>
-                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">The 3rd line learns exclusively through direct experience - trial and error, bonds made and broken. This is not instability; it is the discovery process. Each change builds wisdom that the 5th line will eventually share with the world.</div>
-                </details>
-                <details class="bg-white rounded-lg border border-gm-border">
-                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">How does the 3/5 handle the projection field?</summary>
-                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">The 5th line projection means others see the 3/5 as a problem-solver. Because the 3rd line has actually lived through so many experiments, the 3/5 often can deliver practical solutions. Strategy and Authority help determine which projections to accept.</div>
-                </details>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== CONTINUE LEARNING ==================== -->
+ <!-- ==================== CONTINUE LEARNING ==================== -->
  <section class="py-10 md:py-14 bg-white">
  <div class="max-w-4xl mx-auto px-6">
  <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
@@ -239,7 +262,7 @@ Other Learn Topics
 </a>
 <a href="/profiles/#the-6-profile-lines" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
  <h3 class="text-sm font-bold text-gm-purple mb-1">The 6 Profile Lines →</h3>
- <p class="text-gray-600 text-xs leading-relaxed">The building blocks of every Profile, from Investigator to Role Model.</p>
+ <p class="text-gray-600 text-xs leading-relaxed">The six lines that shape every Profile, from Investigator to Role Model.</p>
 </a>
 <a href="/profiles/profile-1-3/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
  <h3 class="text-sm font-bold text-gm-purple mb-1">1/3 Investigator / Martyr →</h3>
@@ -257,93 +280,94 @@ Other Learn Topics
  </div>
  </section>
 
-    <!-- ==================== PROFILE NAVIGATION ==================== -->
-    <section class="py-8 bg-gm-light border-t border-gm-border">
-        <div class="max-w-4xl mx-auto px-6 flex justify-between items-center gap-3">
-            <a href="profile-2-5.php" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-xs md:text-sm font-semibold">
-                <span>&larr;</span> 2/5 Hermit / Heretic
-            </a>
-            <a href="index.php" class="text-gray-600 hover:text-gm-dark transition text-sm font-medium">All Profiles</a>
-            <a href="profile-3-6.php" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-xs md:text-sm font-semibold">
-                3/6 Martyr / Role Model <span>&rarr;</span>
-            </a>
-        </div>
-    </section>
+ <!-- ==================== PROFILE NAVIGATION ==================== -->
+ <section class="py-8 bg-gm-light border-t border-gm-border">
+ <div class="max-w-4xl mx-auto px-6 flex justify-between items-center gap-3">
+ <a href="/profiles/profile-2-5/" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-xs md:text-sm font-semibold">
+ <span>&larr;</span> 2/5 Hermit / Heretic
+ </a>
+ <a href="/profiles/index/" class="text-gray-600 hover:text-gm-dark transition text-sm font-medium">All Profiles</a>
+ <a href="/profiles/profile-3-6/" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-xs md:text-sm font-semibold">
+ 3/6 Martyr / Role Model <span>&rarr;</span>
+ </a>
+ </div>
+ </section>
 
-    <!-- ==================== CTA BANNER ==================== -->
-    <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
-        <div class="max-w-2xl mx-auto px-6">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4">Discover Your Profile</h2>
-            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
-                See your full chart - Profile, Type, Authority, Centers, Channels, and the complete architecture of your design.
-            </p>
-            <a href="https://www.geneticmatrix.com" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
-                Get Your Free Chart &rarr;
-            </a>
-        </div>
-    </section>
+ <!-- ==================== CTA BANNER ==================== -->
+ <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+ <div class="max-w-2xl mx-auto px-6">
+ <h2 class="text-2xl md:text-3xl font-bold mb-4">Discover Your Profile</h2>
+ <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+ See your full chart: Profile, Type, Authority, Centers, Channels, and the complete architecture of your design.
+ </p>
+ <a href="https://www.geneticmatrix.com/pricing/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+ Get Pro &rarr;
+ </a>
+ </div>
+ </section>
 
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="bg-[#d5d5d5] py-10">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+ <!-- ==================== FOOTER ==================== -->
+ <footer class="bg-[#d5d5d5] py-10">
+ <div class="max-w-6xl mx-auto px-6">
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
 
-                <!-- Left: Logo & Copyright -->
-                <div class="text-center md:text-left">
-                    <img src="../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
-                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
-                    <p class="text-sm text-gray-600 mb-2">All right reserved.</p>
-                    <p class="text-sm">
-                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Privacy, Terms and Conditions</a>
-                        <span class="mx-1">&bull;</span>
-                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
-                    </p>
-                </div>
+ <!-- Left: Logo & Copyright -->
+ <div class="text-center md:text-left">
+ <img src="../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+ <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+ <p class="text-sm text-gray-600 mb-2">All right reserved.</p>
+ <p class="text-sm">
+ <a href="#" class="text-gray-700 underline hover:text-gray-900">Privacy, Terms and Conditions</a>
+ <span class="mx-1">&bull;</span>
+ <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+ </p>
+ </div>
 
-                <!-- Center: Newsletter (Shafik to wire up form backend) -->
-                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
-                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Subscribe to Our Newsletter</h3>
-                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
-                        Sign up to our newsletter to receive updates, offers,
-                        new releases, and everything related to Genetic Matrix.
-                    </p>
-                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
-                        <input
-                            type="email"
-                            placeholder="Your Email Address"
-                            class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400"
-                        >
-                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
-                        </button>
-                    </form>
-                </div>
+ <!-- Center: Newsletter (Shafik to wire up form backend) -->
+ <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+ <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Subscribe to Our Newsletter</h3>
+ <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+ Sign up to our newsletter to receive updates, offers,
+ new releases, and everything related to Genetic Matrix.
+ </p>
+ <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+ <input
+ type="email"
+ placeholder="Your Email Address"
+ class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400"
+ >
+ <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+ <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+ <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+ </svg>
+ </button>
+ </form>
+ </div>
 
-                <!-- Right: Social & Contact -->
-                <div class="text-center md:text-right">
-                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connect With Us</h3>
-                    <div class="flex justify-center md:justify-end gap-3 mb-4">
-                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener">
-                            <img src="../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
-                        </a>
-                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener">
-                            <img src="../assets/icon-x.svg" alt="X" class="w-10 h-10">
-                        </a>
-                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener">
-                            <img src="../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
-                        </a>
-                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener">
-                            <img src="../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
-                        </a>
-                    </div>
-                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Get in Touch</a>
-                </div>
+ <!-- Right: Social & Contact -->
+ <div class="text-center md:text-right">
+ <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connect With Us</h3>
+ <div class="flex justify-center md:justify-end gap-3 mb-4">
+ <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener">
+ <img src="../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
+ </a>
+ <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener">
+ <img src="../assets/icon-x.svg" alt="X" class="w-10 h-10">
+ </a>
+ <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener">
+ <img src="../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
+ </a>
+ <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener">
+ <img src="../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
+ </a>
+ </div>
+ <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Get in Touch</a>
+ </div>
 
-            </div>
-        </div>
-    </footer>
+ </div>
+ </div>
+ </footer>
 
+<script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
 </body>
 </html>

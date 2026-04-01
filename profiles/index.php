@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The 12 Profiles in Human Design - Lines, Roles & Life Purpose | Genetic Matrix</title>
     <meta name="description" content="Explore all 12 Human Design Profiles - from 1/3 Investigator/Martyr to 6/3 Role Model/Martyr. Learn how the 6 Profile Lines shape your personality, role, and life purpose.">
-    <link rel="canonical" href="https://geneticmatrix.com/learn/profiles/">
+    <link rel="canonical" href="https://www.geneticmatrix.com/learn/profiles/">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -50,75 +51,92 @@
         @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 
-    <!-- FAQ JSON-LD Schema -->
+    <!-- JSON-LD Schema (@graph: Article + FAQPage) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
+        "@graph": [
             {
-                "@type": "Question",
-                "name": "What is a Profile in Human Design?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Your Profile is a combination of two numbers derived from the line positions of your conscious and unconscious Sun & Earth. It describes your role, personality, and life arc. There are 12 Profile combinations, each made up of two of the six hexagram lines."
-                }
+                "@type": "Article",
+                "headline": "The 12 Profiles in Human Design - Lines, Roles & Life Purpose",
+                "description": "Explore all 12 Human Design Profiles - from 1/3 Investigator/Martyr to 6/3 Role Model/Martyr. Learn how the 6 Profile Lines shape your personality, role, and life purpose.",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Genetic Matrix",
+                    "url": "https://www.geneticmatrix.com"
+                },
+                "mainEntityOfPage": "https://www.geneticmatrix.com/learn/profiles/",
+                "datePublished": "2025-01-15",
+                "dateModified": "2026-03-10"
             },
             {
-                "@type": "Question",
-                "name": "How is my Profile calculated?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Your Profile comes from the line of your conscious Sun/Earth (Personality, black) and the line of your unconscious Sun/Earth (Design, red). For example, if your conscious Sun/Earth is Line 1 and your unconscious Sun/Earth is Line 3, your Profile is 1/3."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the 6 Profile Lines?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Line 1: Investigator (deep research). Line 2: Hermit (natural gifts, solitude). Line 3: Martyr (trial and error). Line 4: Opportunist (community, networking). Line 5: Heretic (projection, practical solutions). Line 6: Role Model (three-phase life, wisdom)."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Does my Profile change based on my Type?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "No - your Profile is fixed at birth. However, the same Profile expresses differently through different Types. A 3/5 Generator lives out trial and error very differently from a 3/5 Projector. Your Type is the vehicle; your Profile is the role."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the difference between conscious and unconscious lines?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The first number (conscious) is what you identify with and recognize in yourself. The second number (unconscious) operates below awareness - others often see it in you more than you see it yourself."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are Personal Destiny, Transpersonal Karma, and Fixed Fate?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "These describe the geometry of your Profile. Right Angle (Personal Destiny): self-focused journey. Left Angle (Transpersonal Karma): purpose through serving others. Juxtaposition (Fixed Fate): a rigid, determined life path. Only the 4/1 is Fixed Fate."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the lower and upper trigrams?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Lines 1-3 form the lower trigram (personal, introspective). Lines 4-6 form the upper trigram (transpersonal, interpersonal). Your Profile's combination of these determines whether your orientation is more personal or relational."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Why does the 6th line have three life phases?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The 6th line (Role Model) experiences life in three stages: experimentation (~0-30, living as a 3rd line), observation (~30-50, going on the roof), and wisdom (~50+, coming off the roof as a living example). This unique arc means the 6th line matures and transforms more dramatically than any other line."
-                }
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What is a Profile in Human Design?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Your Profile is a combination of two numbers derived from the line values of your conscious and unconscious Sun and Earth. It describes a core role or orientation in the chart, and helps explain how your Type is expressed in real life. There are 12 possible Profile combinations, each made from two of the six hexagram lines."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How is my Profile calculated?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Your Profile comes from the line of your conscious Sun and Earth, shown in black on the Bodygraph, and the line of your unconscious Sun and Earth, shown in red. For example, if your conscious line is 1 and your unconscious line is 3, your Profile is 1/3."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What are the 6 Profile Lines?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The six Profile lines are: Line 1, Investigator; Line 2, Hermit; Line 3, Martyr; Line 4, Opportunist; Line 5, Heretic; and Line 6, Role Model. Each line carries a distinct theme, and combining two of them creates the 12 Profiles."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does my Profile change based on my Type?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Your Profile is fixed at birth. However, the same Profile can express very differently through different Types. A 3/5 Generator does not live the same experience as a 3/5 Projector. Your Type is the vehicle, and your Profile is the role."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What is the difference between conscious and unconscious lines?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The first number in your Profile is the conscious line, which you are more likely to recognize in yourself and identify with. The second number is the unconscious line, which tends to operate more below awareness and is often easier for other people to notice."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What are Personal Destiny, Transpersonal Karma, and Fixed Fate?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "These are older Human Design terms used to describe Profile geometry. Right Angle Profiles are personal in orientation. Left Angle Profiles are transpersonal, with life themes that unfold more through interaction with others. Juxtaposition refers to the 4/1 Profile, which has a more fixed and consistent orientation. Useful terms, slightly dramatic packaging."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What are the lower and upper trigrams?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Lines 1 through 3 form the lower trigram, which is more personal and introspective in orientation. Lines 4 through 6 form the upper trigram, which is more relational and transpersonal. Together, they help describe how a Profile is oriented."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Why does the 6th line have three life phases?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The 6th line tends to move through life in three broad phases. The early years are more experimental, the middle phase is often more observational or on the roof, and later life brings the potential for embodied role modeling. It is less a rigid schedule than a developmental arc, which is helpful, because life rarely checks a stopwatch."
+                        }
+                    }
+                ]
             }
         ]
     }
@@ -146,6 +164,8 @@
                 </a>
                 <!-- Free Chart (popup on live site - Shafik to wire up) -->
                 <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Free Chart</a>
+                <!-- Learn -->
+                <a href="../" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Learn</a>
                 <!-- Our Plans -->
                 <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Our Plans</a>
                 <!-- Cart -->
@@ -165,45 +185,44 @@
         </div>
     </nav>
 
+    <!-- ==================== BREADCRUMB ==================== -->
+    <div class="bg-gray-50 border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 py-2.5">
+            <a href="../" class="text-sm text-gm-purple hover:text-gm-dark font-medium transition">&larr; Back to Learn Hub</a>
+        </div>
+    </div>
+
     <!-- ==================== HERO BANNER ==================== -->
     <section class="bg-gm-dark text-white text-center py-12 md:py-16">
         <div class="max-w-3xl mx-auto px-6">
             <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Foundation &middot; Profiles</p>
             <h1 class="text-3xl md:text-4xl font-bold mb-4">The 12 Profiles</h1>
             <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
-                Your Profile is your role - the costume you wear, how you engage with the world, and the arc of your life purpose. Built from two lines of the I Ching hexagram, it shapes 70% of how your Type expresses itself.
+                Your Profile is your role in life, the costume you wear, and a key part of how your Type gets expressed in the world. It is built from the line values of your conscious and unconscious Sun/Earth, and it is one of the main things that makes two people of the same Type look very different in practice.
             </p>
         </div>
     </section>
 
-    <!-- ==================== HIGHLIGHT BOX ==================== -->
-    <section class="py-10 md:py-14 bg-white">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-gm-card-active rounded-2xl p-8 md:p-10">
-                <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-                    <span class="text-gm-purple">|</span> Tools, not doctrine.
-                </h2>
-                <p class="text-gm-text text-sm md:text-base leading-relaxed">
-                    The Human Design system first emerged at the beginning of 1987. Genetic Matrix provides these tools for your own exploration and experiment. Your Profile works within your Type and Authority - it does not override them.
-                </p>
-            </div>
-        </div>
-    </section>
 
     <!-- ==================== WHAT IS A PROFILE? ==================== -->
     <section class="py-10 md:py-14 bg-white">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
-                <span class="text-gm-purple">|</span> What Is a Profile?
-            </h2>
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">What Is a Profile?</h2>
+
+            <!-- How to find it -->
+            <div class="bg-gm-light border border-gm-border rounded-lg p-5 mb-6">
+                <h3 class="text-sm font-bold text-gray-800 mb-2">How to Find Your Profile</h3>
+                <p class="text-gm-text text-sm leading-relaxed">Look for Profile in the left-hand data panel of your chart. It appears as two numbers, such as 1/3 or 5/1, which come from the line numbers of your conscious and unconscious Sun and Earth.</p>
+            </div>
+
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
-                In Human Design, your Profile is a combination of two numbers - like 1/3 or 5/2 - derived from the <strong>line positions of your conscious and unconscious Sun &amp; Earth</strong>. The first number comes from the line of your Personality Sun/Earth (shown in black on the Bodygraph). The second comes from the line of your Design Sun/Earth (shown in red). Together, these two lines create your Profile.
+                In Human Design, your Profile is made up of two numbers, like 1/3 or 5/2, taken from the line values of your conscious and unconscious Sun/Earth. The first number comes from your Personality Sun/Earth, shown in black on the Bodygraph. The second comes from your Design Sun/Earth, shown in red. Put them together and you get your Profile.
             </p>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
-                The six lines come from the <strong>I Ching hexagram</strong> - a stack of six horizontal lines that has been used for millennia to describe the patterns of change in human experience. Each line carries a specific archetype, and the combination of your two lines creates a unique role that shapes how you move through life.
+                Those line numbers come from the six-line structure of the I Ching hexagram. Each line has its own theme, and when two of them are combined, they describe a particular role or way of moving through life.
             </p>
             <p class="text-gm-text text-sm md:text-base leading-relaxed">
-                Your Profile describes your <strong>personality, your role, and your life arc</strong>. It influences how you learn, how you relate, how you find your purpose, and how others experience you. Two people with the same Type can live very differently based on their Profile - it is one of the most individualizing elements of the chart.
+                Profile is one of the things that makes Human Design feel personal rather than generic. It helps explain how you tend to learn, relate, and engage with others. Two people can share the same Type and still be very different in style, experience, and expression because their Profiles are not the same.
             </p>
         </div>
     </section>
@@ -212,7 +231,7 @@
     <section id="the-6-profile-lines" class="py-10 md:py-14 bg-gm-light">
         <div class="max-w-5xl mx-auto px-6">
             <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
-                <span class="text-gm-purple">|</span> The 6 Profile Lines
+The 6 Profile Lines
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
@@ -222,7 +241,7 @@
                     <h3 class="text-lg font-bold text-gray-800 mb-1">The Investigator</h3>
                     <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Lower Trigram &middot; Personal</p>
                     <p class="text-gm-text text-sm leading-relaxed">
-                        Driven by a deep need for knowledge and security. The Investigator must understand the foundation before they can feel comfortable. Thorough, curious, and research-oriented - they dig until they find solid ground.
+                        Driven by a deep need to understand and feel secure, the Investigator wants a solid foundation before moving forward. Curious, thorough, and rarely satisfied with surface answers, they dig until they find something they can actually stand on.
                     </p>
                 </div>
 
@@ -232,7 +251,7 @@
                     <h3 class="text-lg font-bold text-gray-800 mb-1">The Hermit</h3>
                     <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Lower Trigram &middot; Personal</p>
                     <p class="text-gm-text text-sm leading-relaxed">
-                        Carries natural, innate gifts that may not be consciously recognized. The Hermit needs solitude to develop and integrate, yet depends on others to call out their talents. The introverted extrovert - gifted in ways they may not see.
+                        Carries natural gifts that may not be fully conscious to them. The Hermit needs periods of solitude to develop and integrate, yet is often called out by others who recognize their talent. What comes naturally here is not always self-evident.
                     </p>
                 </div>
 
@@ -242,7 +261,7 @@
                     <h3 class="text-lg font-bold text-gray-800 mb-1">The Martyr</h3>
                     <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Lower Trigram &middot; Personal</p>
                     <p class="text-gm-text text-sm leading-relaxed">
-                        Learns exclusively through trial and error. The Martyr must experience everything directly - reading about it is not enough. Bonds made and broken, experiments run and failed. Deeply resilient, forged by experience.
+                        Learns through direct experience and trial and error. The Martyr finds out what works by living it, not by reading the manual first. Resilient and adaptable, they are forged by experience, one experiment at a time.
                     </p>
                 </div>
 
@@ -252,7 +271,7 @@
                     <h3 class="text-lg font-bold text-gray-800 mb-1">The Opportunist</h3>
                     <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Upper Trigram &middot; Transpersonal</p>
                     <p class="text-gm-text text-sm leading-relaxed">
-                        Finds opportunity through community and relationships. The Opportunist's network is their foundation - opportunities come through people they know, not through strangers. Influential, relational, and trust-dependent.
+                        Opportunities come through relationships, community, and trusted connections. The Opportunist's network is their foundation, and influence tends to grow through the people they know rather than through strangers. Relational, persuasive, and built on trust.
                     </p>
                 </div>
 
@@ -262,7 +281,7 @@
                     <h3 class="text-lg font-bold text-gray-800 mb-1">The Heretic</h3>
                     <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Upper Trigram &middot; Transpersonal</p>
                     <p class="text-gm-text text-sm leading-relaxed">
-                        Carries a powerful projection field - others see practical solutions and project their needs onto the 5th line. The Heretic is either savior or scapegoat, depending on whether the projection is met. Universalizing and impactful.
+                        Carries a projection field that leads others to assume they have the answer, sometimes before they have even been asked the question. The Heretic is often cast as either savior or scapegoat, depending on whether those projections survive contact with reality. Broad in impact and naturally universalizing, this line can influence far beyond the personal.
                     </p>
                 </div>
 
@@ -272,7 +291,7 @@
                     <h3 class="text-lg font-bold text-gray-800 mb-1">The Role Model</h3>
                     <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Upper Trigram &middot; Transpersonal</p>
                     <p class="text-gm-text text-sm leading-relaxed">
-                        Lives through three distinct phases: experimentation (~0&ndash;30), observation from the roof (~30&ndash;50), and stepping into wisdom (~50+). The Role Model becomes a living example - their authority comes from lived experience, not theory.
+                        Moves through three life phases: experimentation in the early years, observation from the roof in midlife, and a later embodiment of wisdom through lived experience. The Role Model becomes a living example over time. Their authority comes from what life has taught them directly.
                     </p>
                 </div>
 
@@ -283,209 +302,201 @@
     <!-- ==================== ALL 12 PROFILES ==================== -->
     <section class="py-10 md:py-14 bg-white">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-                <span class="text-gm-purple">|</span> All 12 Profiles
-            </h2>
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">All 12 Profiles</h2>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
-                Each Profile combines a conscious line (how you see yourself) with an unconscious line (how others see you). Click any Profile to explore its full mechanics, relationships, and famous examples.
+                Each Profile combines a conscious line with an unconscious line, creating a distinct role in the chart. Click any Profile to explore its mechanics, relationship patterns, and what it actually looks like in real life.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 
                 <!-- 1/3 -->
-                <a href="profile-1-3.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                <a href="profile-1-3.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">1/3</span>
                         <span class="text-xs text-gray-500">H.G. Wells, Reflector</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Investigator / Martyr</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
-                        Deep researcher who tests everything through direct experience. Builds foundations of knowledge, then verifies through trial and error.
+                        Builds a solid foundation through research, then tests it through direct experience. Grounded, skeptical, and shaped by trial and error.
                     </p>
                     <div class="flex items-center justify-between">
                         <span class="text-xs text-gray-500">Line 1 Conscious &middot; Line 3 Unconscious</span>
-                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Explore &rarr;</span>
                     </div>
                 </a>
 
                 <!-- 1/4 -->
-                <a href="profile-1-4.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                <a href="profile-1-4.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">1/4</span>
                         <span class="text-xs text-gray-500">Jerry Seinfeld, Emotional Manifestor</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Investigator / Opportunist</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
-                        Deep researcher who shares discoveries through their network. Builds solid foundations and influences their community.
+                        Builds a strong foundation, then shares what they know through trusted relationships. Knowledge becomes influence when the network is right.
                     </p>
                     <div class="flex items-center justify-between">
                         <span class="text-xs text-gray-500">Line 1 Conscious &middot; Line 4 Unconscious</span>
-                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Explore &rarr;</span>
                     </div>
                 </a>
 
                 <!-- 2/4 -->
-                <a href="profile-2-4.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                <a href="profile-2-4.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">2/4</span>
                         <span class="text-xs text-gray-500">Henry Cavill, Pure MG</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Hermit / Opportunist</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
-                        Naturally gifted introvert who thrives through their network. Innate talents need others to call them out.
+                        Carries natural gifts that need space to develop, yet opportunities come through trusted relationships. Withdrawal and connection both matter here.
                     </p>
                     <div class="flex items-center justify-between">
                         <span class="text-xs text-gray-500">Line 2 Conscious &middot; Line 4 Unconscious</span>
-                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Explore &rarr;</span>
                     </div>
                 </a>
 
                 <!-- 2/5 -->
-                <a href="profile-2-5.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                <a href="profile-2-5.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">2/5</span>
                         <span class="text-xs text-gray-500">Rostropovich, Pure Generator</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Hermit / Heretic</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
-                        Naturally gifted recluse with a projected reputation. Called out of hermit state to deliver practical solutions.
+                        Needs retreat to develop natural gifts, yet draws projection from others who expect practical answers. Privacy and public expectation rarely stay neatly separated.
                     </p>
                     <div class="flex items-center justify-between">
                         <span class="text-xs text-gray-500">Line 2 Conscious &middot; Line 5 Unconscious</span>
-                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Explore &rarr;</span>
                     </div>
                 </a>
 
                 <!-- 3/5 -->
-                <a href="profile-3-5.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                <a href="profile-3-5.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">3/5</span>
                         <span class="text-xs text-gray-500">Ju Wenjun, Reflector</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Martyr / Heretic</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
-                        Experiential learner with universalizing impact. Discovers through trial and error, then delivers transformative solutions.
+                        Learns through trial and error, then turns lived experience into practical solutions others can use. Resilient, adaptive, and often impactful beyond the personal.
                     </p>
                     <div class="flex items-center justify-between">
                         <span class="text-xs text-gray-500">Line 3 Conscious &middot; Line 5 Unconscious</span>
-                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Explore &rarr;</span>
                     </div>
                 </a>
 
                 <!-- 3/6 -->
-                <a href="profile-3-6.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                <a href="profile-3-6.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">3/6</span>
                         <span class="text-xs text-gray-500">Wolfgang Pauli, Heart Manifestor</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Martyr / Role Model</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
-                        Experiential learner who becomes a wise example. Lives through chaos, observation, then emerges as an authentic role model.
+                        Learns through direct experience early in life, then gradually gains distance and perspective. Experiment first, wisdom later.
                     </p>
                     <div class="flex items-center justify-between">
                         <span class="text-xs text-gray-500">Line 3 Conscious &middot; Line 6 Unconscious</span>
-                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Explore &rarr;</span>
                     </div>
                 </a>
 
                 <!-- 4/6 -->
-                <a href="profile-4-6.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                <a href="profile-4-6.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">4/6</span>
                         <span class="text-xs text-gray-500">Alan Turing, Pure Generator</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Opportunist / Role Model</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
-                        Networker who becomes a wise example. Influences through relationships and matures into a trusted guide.
+                        Influence grows through relationships, while life gradually matures this profile into a visible example for others. Connection comes first, wisdom takes time.
                     </p>
                     <div class="flex items-center justify-between">
                         <span class="text-xs text-gray-500">Line 4 Conscious &middot; Line 6 Unconscious</span>
-                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Explore &rarr;</span>
                     </div>
                 </a>
 
                 <!-- 4/1 -->
-                <a href="profile-4-1.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                <a href="profile-4-1.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
-                        <div class="flex items-center gap-3">
-                            <span class="text-3xl font-bold text-gm-purple">4/1</span>
-                            <span class="inline-block bg-gm-pink/10 text-gm-pink text-[10px] font-bold px-2.5 py-0.5 rounded-full">Fixed Fate</span>
-                        </div>
+                        <span class="text-3xl font-bold text-gm-purple">4/1</span>
                         <span class="text-xs text-gray-500">Buzz Aldrin, Splenic Manifestor</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Opportunist / Investigator</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
-                        Networker with deep foundational knowledge. Fixed Fate profile - once they find their direction, nearly immovable.
+                        Combines a stable foundation with influence through trusted relationships. Consistent in direction, with a strong need for both solid footing and dependable connections.
                     </p>
                     <div class="flex items-center justify-between">
                         <span class="text-xs text-gray-500">Line 4 Conscious &middot; Line 1 Unconscious</span>
-                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Explore &rarr;</span>
                     </div>
                 </a>
 
                 <!-- 5/1 -->
-                <a href="profile-5-1.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                <a href="profile-5-1.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
-                        <div class="flex items-center gap-3">
-                            <span class="text-3xl font-bold text-gm-purple">5/1</span>
-                            <span class="inline-block bg-gm-pink/10 text-gm-pink text-[10px] font-bold px-2.5 py-0.5 rounded-full">Fixed Fate</span>
-                        </div>
-                        <span class="text-xs text-gray-500">Napoleon, Self-Proj. Projector</span>
+                        <span class="text-3xl font-bold text-gm-purple">5/1</span>
+                        <span class="text-xs text-gray-500">Napoleon, Self-Projected Projector</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Heretic / Investigator</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
-                        Practical problem-solver with deep research. Attracts projections and delivers universalizing solutions backed by investigation.
+                        Draws projection from others while relying on a deep investigative foundation. When prepared, this profile can offer practical solutions with broad impact.
                     </p>
                     <div class="flex items-center justify-between">
                         <span class="text-xs text-gray-500">Line 5 Conscious &middot; Line 1 Unconscious</span>
-                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Explore &rarr;</span>
                     </div>
                 </a>
 
                 <!-- 5/2 -->
-                <a href="profile-5-2.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                <a href="profile-5-2.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">5/2</span>
                         <span class="text-xs text-gray-500">Franz Schubert, Emotional Manifestor</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Heretic / Hermit</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
-                        Projected problem-solver who needs retreat. Attracts expectations while carrying natural gifts that need solitude.
+                        Draws expectations from others while carrying natural gifts that need privacy and retreat. Being left alone and being called on are both part of the pattern.
                     </p>
                     <div class="flex items-center justify-between">
                         <span class="text-xs text-gray-500">Line 5 Conscious &middot; Line 2 Unconscious</span>
-                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Explore &rarr;</span>
                     </div>
                 </a>
 
                 <!-- 6/2 -->
-                <a href="profile-6-2.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                <a href="profile-6-2.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">6/2</span>
                         <span class="text-xs text-gray-500">Mark Zuckerberg, Splenic Projector</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Role Model / Hermit</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
-                        Wise example with natural gifts. Lives through three life phases and carries innate talents that emerge through the right calling.
+                        Matures into visible role modeling over time, while carrying natural gifts that may need the right call to emerge. Time, space, and experience matter here.
                     </p>
                     <div class="flex items-center justify-between">
                         <span class="text-xs text-gray-500">Line 6 Conscious &middot; Line 2 Unconscious</span>
-                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Explore &rarr;</span>
                     </div>
                 </a>
 
                 <!-- 6/3 -->
-                <a href="profile-6-3.php" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                <a href="profile-6-3.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
                     <div class="flex items-start justify-between mb-2">
                         <span class="text-3xl font-bold text-gm-purple">6/3</span>
                         <span class="text-xs text-gray-500">Marc Chagall, Emotional MG</span>
                     </div>
                     <h3 class="text-base font-bold text-gm-purple mb-2">Role Model / Martyr</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
-                        Wise example forged through relentless experience. Spends the first 30 years as a double 3rd line before ascending to role model wisdom.
+                        Begins life with a strongly experiential process, then gradually develops the distance and perspective of the 6th line. Early mess can become real wisdom later.
                     </p>
                     <div class="flex items-center justify-between">
                         <span class="text-xs text-gray-500">Line 6 Conscious &middot; Line 3 Unconscious</span>
-                        <span class="text-gm-purple opacity-0 group-hover:opacity-100 transition font-bold">&rarr;</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Explore &rarr;</span>
                     </div>
                 </a>
 
@@ -496,20 +507,17 @@
     <!-- ==================== PROFILE GEOMETRY ==================== -->
     <section class="py-10 md:py-14 bg-gm-light">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-                <span class="text-gm-purple">|</span> Profile Geometry: Destiny, Karma &amp; Fate
-            </h2>
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">Profile Geometry</h2>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
-                The 12 Profiles fall into three geometrical categories based on the angle formed by the conscious and unconscious lines. This geometry describes how your Profile interacts with the larger patterns of your life.
+                The 12 Profiles fall into three geometrical categories based on the angle created by the conscious and unconscious lines. In Human Design, this geometry helps describe whether a Profile is more personal, more fixed in its orientation, or more transpersonal in how life themes unfold.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                 <!-- Right Angle -->
                 <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
-                    <h3 class="text-lg font-bold text-gray-800 mb-1">Right Angle</h3>
-                    <p class="text-xs font-semibold text-gm-purple uppercase tracking-wide mb-3">Personal Destiny</p>
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">Right Angle</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-4">
-                        Self-absorbed in their own process. Their life unfolds through personal experience rather than interaction with others. They are focused on their own journey.
+                        Right Angle Profiles are primarily oriented around personal experience. Their life themes tend to unfold through their own process, and while other people are certainly involved, the underlying geometry is personal rather than transpersonal.
                     </p>
                     <div class="flex flex-wrap gap-2">
                         <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">1/3</span>
@@ -524,10 +532,9 @@
 
                 <!-- Juxtaposition -->
                 <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
-                    <h3 class="text-lg font-bold text-gray-800 mb-1">Juxtaposition</h3>
-                    <p class="text-xs font-semibold text-gm-pink uppercase tracking-wide mb-3">Fixed Fate</p>
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">Juxtaposition</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-4">
-                        A fixed and determined life path that cannot easily be redirected. The lines cross the trigram boundary, creating a rigid configuration with a singular direction.
+                        Juxtaposition is a more fixed geometry, with a stable and consistent directional theme. In practice, this can feel more singular or self-contained than the other Profile geometries. It does not mean life is mechanically predetermined, but it does suggest a more fixed orientation.
                     </p>
                     <div class="flex flex-wrap gap-2">
                         <span class="inline-block bg-gm-pink/10 text-gm-pink text-xs font-semibold px-3 py-1 rounded-full">4/1</span>
@@ -536,10 +543,9 @@
 
                 <!-- Left Angle -->
                 <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
-                    <h3 class="text-lg font-bold text-gray-800 mb-1">Left Angle</h3>
-                    <p class="text-xs font-semibold text-gm-orange uppercase tracking-wide mb-3">Transpersonal Karma</p>
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">Left Angle</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-4">
-                        Here to interact with and serve others. Their purpose is fulfilled through relationships and their impact on the collective. Life is shaped by karmic interactions.
+                        Left Angle Profiles are transpersonal, which means life themes unfold through interaction with others. Relationships, exchanges, and the impact one has on other people play a central role here. "Karma" in this context does not need to be mystical. It simply points to a life path that is worked out through human contact.
                     </p>
                     <div class="flex flex-wrap gap-2">
                         <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">5/1</span>
@@ -556,99 +562,75 @@
     <!-- ==================== CONSCIOUS AND UNCONSCIOUS ==================== -->
     <section class="py-10 md:py-14 bg-white">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
-                <span class="text-gm-purple">|</span> Conscious and Unconscious
-            </h2>
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">Conscious and Unconscious</h2>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
-                The first number in your Profile is your <strong>conscious line</strong> - the part of your personality you are most aware of and identify with. This comes from your Personality Sun &amp; Earth, the black column on your Bodygraph. You can usually recognize this line in yourself easily.
+                The first number in your Profile is your conscious line, the aspect you are more likely to recognize in yourself and identify with. It comes from your Personality Sun and Earth, shown in black on the Bodygraph.
             </p>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
-                The second number is your <strong>unconscious line</strong> - operating below your awareness, often more visible to others than to yourself. This comes from your Design Sun &amp; Earth, the red column on your Bodygraph. Others may see this line in you before you see it yourself.
+                The second number is your unconscious line, which tends to operate more below awareness and is often easier for other people to spot. It comes from your Design Sun and Earth, shown in red on the Bodygraph.
             </p>
             <p class="text-gm-text text-sm md:text-base leading-relaxed">
-                The dynamic between these two lines creates the interplay that defines your Profile. They are not separate - they work together, sometimes in harmony and sometimes in creative tension. Understanding both lines, and how they interact, is essential to living your Profile correctly.
+                The interplay between these two lines gives your Profile its character. They are not separate parts behaving politely at opposite ends of the room. They work together, sometimes smoothly and sometimes with a bit of tension. Understanding both helps you see how the Profile actually plays out in real life.
             </p>
+        </div>
+    </section>
+
+    <!-- ==================== CELEBRITY SEARCH BANNER ==================== -->
+    <section class="py-10 md:py-12 bg-gm-dark text-white text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <p class="text-gm-pink text-xs font-semibold tracking-widest uppercase mb-3">Celebrity Database</p>
+            <h2 class="text-xl md:text-2xl font-bold mb-3">Explore 88,600+ Celebrity Charts</h2>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6 max-w-xl mx-auto">Search by name and explore free Human Design charts calculated across 7 systems. Filter by Type, Profile, Authority, Sun Sign, Moon Sign, and more.</p>
+            <a href="/celebrities/" class="inline-block bg-gm-pink hover:bg-[#e04d63] text-white font-semibold py-3 px-8 rounded-xl transition text-sm">
+                Search Celebrities →
+            </a>
         </div>
     </section>
 
     <!-- ==================== FAQ ACCORDION ==================== -->
     <section class="py-10 md:py-14 bg-gm-light">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
-                <span class="text-gm-purple">|</span> Frequently Asked Questions
-            </h2>
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">Frequently Asked Questions</h2>
             <div class="space-y-3">
 
                 <details class="bg-white rounded-lg border border-gm-border">
-                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
-                        What is a Profile in Human Design?
-                    </summary>
-                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
-                        Your Profile is a combination of two numbers derived from the line positions of your conscious and unconscious Sun &amp; Earth. It describes your role, personality, and life arc. There are 12 Profile combinations, each made up of two of the six hexagram lines.
-                    </div>
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">What is a Profile in Human Design?</summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Your Profile is a combination of two numbers derived from the line values of your conscious and unconscious Sun and Earth. It describes a core role or orientation in the chart, and helps explain how your Type is expressed in real life. There are 12 possible Profile combinations, each made from two of the six hexagram lines.</div>
                 </details>
 
                 <details class="bg-white rounded-lg border border-gm-border">
-                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
-                        How is my Profile calculated?
-                    </summary>
-                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
-                        Your Profile comes from the line of your conscious Sun/Earth (Personality, black) and the line of your unconscious Sun/Earth (Design, red). For example, if your conscious Sun/Earth is Line 1 and your unconscious Sun/Earth is Line 3, your Profile is 1/3.
-                    </div>
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">How is my Profile calculated?</summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Your Profile comes from the line of your conscious Sun and Earth, shown in black on the Bodygraph, and the line of your unconscious Sun and Earth, shown in red. For example, if your conscious line is 1 and your unconscious line is 3, your Profile is 1/3.</div>
                 </details>
 
                 <details class="bg-white rounded-lg border border-gm-border">
-                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
-                        What are the 6 Profile Lines?
-                    </summary>
-                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
-                        Line 1: Investigator (deep research). Line 2: Hermit (natural gifts, solitude). Line 3: Martyr (trial and error). Line 4: Opportunist (community, networking). Line 5: Heretic (projection, practical solutions). Line 6: Role Model (three-phase life, wisdom).
-                    </div>
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">What are the 6 Profile Lines?</summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">The six Profile lines are: Line 1, Investigator; Line 2, Hermit; Line 3, Martyr; Line 4, Opportunist; Line 5, Heretic; and Line 6, Role Model. Each line carries a distinct theme, and combining two of them creates the 12 Profiles.</div>
                 </details>
 
                 <details class="bg-white rounded-lg border border-gm-border">
-                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
-                        Does my Profile change based on my Type?
-                    </summary>
-                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
-                        No - your Profile is fixed at birth. However, the same Profile expresses differently through different Types. A 3/5 Generator lives out trial and error very differently from a 3/5 Projector. Your Type is the vehicle; your Profile is the role.
-                    </div>
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Does my Profile change based on my Type?</summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">No. Your Profile is fixed at birth. However, the same Profile can express very differently through different Types. A 3/5 Generator does not live the same experience as a 3/5 Projector. Your Type is the vehicle, and your Profile is the role.</div>
                 </details>
 
                 <details class="bg-white rounded-lg border border-gm-border">
-                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
-                        What is the difference between conscious and unconscious lines?
-                    </summary>
-                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
-                        The first number (conscious) is what you identify with and recognize in yourself. The second number (unconscious) operates below awareness - others often see it in you more than you see it yourself.
-                    </div>
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">What is the difference between conscious and unconscious lines?</summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">The first number in your Profile is the conscious line, which you are more likely to recognize in yourself and identify with. The second number is the unconscious line, which tends to operate more below awareness and is often easier for other people to notice.</div>
                 </details>
 
                 <details class="bg-white rounded-lg border border-gm-border">
-                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
-                        What are Personal Destiny, Transpersonal Karma, and Fixed Fate?
-                    </summary>
-                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
-                        These describe the geometry of your Profile. Right Angle (Personal Destiny): self-focused journey. Left Angle (Transpersonal Karma): purpose through serving others. Juxtaposition (Fixed Fate): a rigid, determined life path. Only the 4/1 is Fixed Fate.
-                    </div>
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">What are Personal Destiny, Transpersonal Karma, and Fixed Fate?</summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">These are older Human Design terms used to describe Profile geometry. Right Angle Profiles are personal in orientation. Left Angle Profiles are transpersonal, with life themes that unfold more through interaction with others. Juxtaposition refers to the 4/1 Profile, which has a more fixed and consistent orientation. Useful terms, slightly dramatic packaging.</div>
                 </details>
 
                 <details class="bg-white rounded-lg border border-gm-border">
-                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
-                        What are the lower and upper trigrams?
-                    </summary>
-                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
-                        Lines 1&ndash;3 form the lower trigram (personal, introspective). Lines 4&ndash;6 form the upper trigram (transpersonal, interpersonal). Your Profile's combination of these determines whether your orientation is more personal or relational.
-                    </div>
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">What are the lower and upper trigrams?</summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Lines 1 through 3 form the lower trigram, which is more personal and introspective in orientation. Lines 4 through 6 form the upper trigram, which is more relational and transpersonal. Together, they help describe how a Profile is oriented.</div>
                 </details>
 
                 <details class="bg-white rounded-lg border border-gm-border">
-                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
-                        Why does the 6th line have three life phases?
-                    </summary>
-                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
-                        The 6th line (Role Model) experiences life in three stages: experimentation (~0&ndash;30, living as a 3rd line), observation (~30&ndash;50, going on the roof), and wisdom (~50+, coming off the roof as a living example). This unique arc means the 6th line matures and transforms more dramatically than any other line.
-                    </div>
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Why does the 6th line have three life phases?</summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">The 6th line tends to move through life in three broad phases. The early years are more experimental, the middle phase is often more observational or "on the roof," and later life brings the potential for embodied role modeling. It is less a rigid schedule than a developmental arc, which is helpful, because life rarely checks a stopwatch.</div>
                 </details>
 
             </div>
@@ -658,25 +640,23 @@
     <!-- ==================== CROSS-LINKS / CONTINUE LEARNING ==================== -->
     <section class="py-10 md:py-14 bg-white">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
-                <span class="text-gm-purple">|</span> Other Learn Topics
-            </h2>
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">Other Learn Topics</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <a href="#" class="bg-gm-light rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                <a href="/types/" class="bg-gm-light rounded-lg border border-gm-border p-5 hover:shadow-md transition">
                     <h3 class="text-sm font-bold text-gray-800 mb-1">The 5 Types &rarr;</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed">Strategy, Authority, and aura mechanics for all Human Design Types.</p>
+                    <p class="text-gray-500 text-xs leading-relaxed">Strategy, Authority, and aura mechanics across all five Human Design types.</p>
                 </a>
-                <a href="#" class="bg-gm-light rounded-lg border border-gm-border p-5 hover:shadow-md transition">
-                    <h3 class="text-sm font-bold text-gray-800 mb-1">Variables &rarr;</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed">The Four Transformations - Determination, Environment, Perspective, Motivation.</p>
+                <a href="/variables/" class="bg-gm-light rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">Deeper Mechanics &rarr;</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed">Explore the deeper layers of Human Design, including Determination, Environment, Perspective, and Motivation.</p>
                 </a>
-                <a href="#" class="bg-gm-light rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                <a href="/sleep-design/" class="bg-gm-light rounded-lg border border-gm-border p-5 hover:shadow-md transition">
                     <h3 class="text-sm font-bold text-gray-800 mb-1">Sleep Design &rarr;</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed">How your design transforms during sleep and the power of your sleeping aura.</p>
+                    <p class="text-gray-500 text-xs leading-relaxed">How your design changes during sleep, and why your sleeping aura matters.</p>
                 </a>
-                <a href="../index.php" class="bg-gm-light rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                <a href="../" class="bg-gm-light rounded-lg border border-gm-border p-5 hover:shadow-md transition">
                     <h3 class="text-sm font-bold text-gray-800 mb-1">Learn Hub &rarr;</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed">All Human Design educational content - foundations, advanced topics, and tools.</p>
+                    <p class="text-gray-500 text-xs leading-relaxed">Browse all Human Design educational content, from core foundations to advanced topics and tools.</p>
                 </a>
             </div>
         </div>
@@ -687,10 +667,10 @@
         <div class="max-w-2xl mx-auto px-6">
             <h2 class="text-2xl md:text-3xl font-bold mb-4">Discover Your Profile</h2>
             <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
-                Generate a free Foundation chart to see your Profile - the two lines that shape your role, personality, and life purpose.
+                Generate a free Foundation Chart to see your Profile, the two lines that shape your role and how you move through life.
             </p>
-            <a href="https://www.geneticmatrix.com" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
-                Get Your Free Chart &rarr;
+            <a href="https://www.geneticmatrix.com/pricing/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+                Get Pro &rarr;
             </a>
         </div>
     </section>
@@ -757,5 +737,6 @@
         </div>
     </footer>
 
+<script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
 </body>
 </html>

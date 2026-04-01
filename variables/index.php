@@ -213,7 +213,7 @@
                     <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Top Left Arrow</p>
                     <p class="text-lg font-bold text-gray-800 mb-2">Determination</p>
                     <div class="flex items-center gap-2 text-sm text-gray-600 mb-1"><span class="font-bold text-arrow-left w-6 text-center">&larr;</span> Active</div>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-3"><span class="font-bold text-arrow-right w-6 text-center">&rarr;</span> Passive</div>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-3"><span class="font-bold text-arrow-left w-6 text-center">&rarr;</span> Passive</div>
                     <p class="text-sm text-gray-500 leading-relaxed">Describes how the body and brain are designed to take in and process information. Belongs to the body side of Variable.</p>
                 </div>
 
@@ -222,7 +222,7 @@
                     <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Bottom Left Arrow</p>
                     <p class="text-lg font-bold text-gray-800 mb-2">Environment</p>
                     <div class="flex items-center gap-2 text-sm text-gray-600 mb-1"><span class="font-bold text-arrow-left w-6 text-center">&larr;</span> Observed</div>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-3"><span class="font-bold text-arrow-right w-6 text-center">&rarr;</span> Observer</div>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-3"><span class="font-bold text-arrow-left w-6 text-center">&rarr;</span> Observer</div>
                     <p class="text-sm text-gray-500 leading-relaxed">Describes how the body integrates within the correct environment. Belongs to the body side of Variable.</p>
                 </div>
 
@@ -230,8 +230,8 @@
                 <div class="arrow-card bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
                     <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Top Right Arrow</p>
                     <p class="text-lg font-bold text-gray-800 mb-2">Motivation</p>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1"><span class="font-bold text-arrow-left w-6 text-center">&larr;</span> Strategic</div>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-3"><span class="font-bold text-arrow-right w-6 text-center">&rarr;</span> Receptive</div>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1"><span class="font-bold text-gray-800 w-6 text-center">&larr;</span> Strategic</div>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-3"><span class="font-bold text-gray-800 w-6 text-center">&rarr;</span> Receptive</div>
                     <p class="text-sm text-gray-500 leading-relaxed">The deeper mechanic connected to Mind Style and mental awareness. Belongs to the personality side of Variable.</p>
                 </div>
 
@@ -239,8 +239,8 @@
                 <div class="arrow-card bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
                     <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Bottom Right Arrow</p>
                     <p class="text-lg font-bold text-gray-800 mb-2">Perspective</p>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1"><span class="font-bold text-arrow-left w-6 text-center">&larr;</span> Focused</div>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-3"><span class="font-bold text-arrow-right w-6 text-center">&rarr;</span> Peripheral</div>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1"><span class="font-bold text-gray-800 w-6 text-center">&larr;</span> Focused</div>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-3"><span class="font-bold text-gray-800 w-6 text-center">&rarr;</span> Peripheral</div>
                     <p class="text-sm text-gray-500 leading-relaxed">Describes how the mind is designed to view the environment correctly. Belongs to the personality side of Variable.</p>
                 </div>
             </div>
@@ -360,7 +360,7 @@
             </ul>
 
             <div class="bg-gm-card-active rounded-2xl p-6 md:p-8 mb-4 flex justify-center">
-                <img src="../assets/16-variable-configurations.png" alt="The 16 Variable configurations showing all combinations of left and right arrows across Brain Style, Environment Style, Mind Style, and Perspective" class="max-w-full h-auto rounded-lg" loading="lazy">
+                <img src="../assets/16-variable-configurations.webp" alt="The 16 Variable configurations showing all combinations of left and right arrows across Brain Style, Environment Style, Mind Style, and Perspective" class="max-w-full h-auto rounded-lg" loading="lazy">
             </div>
             <p class="text-gm-text text-xs text-center italic mb-6">
                 The chart above shows the 16 possible Variable arrangements created by the four arrows. These are read as integrated patterns of body and mind orientation, not as isolated codes.
@@ -461,7 +461,7 @@
 
             <!-- Bodygraph arrow-location visual -->
             <div class="bg-gm-card-active rounded-2xl p-6 md:p-8 mb-8 flex justify-center">
-                <img src="../assets/variable-arrows-bodygraph.png" alt="Human Design Bodygraph showing the four Variable arrows positioned around the head and nodes area" class="max-w-full h-auto rounded-lg" loading="lazy">
+                <img src="../assets/variable-arrows-bodygraph.webp" alt="Human Design Bodygraph showing the four Variable arrows positioned around the head and nodes area" class="max-w-full h-auto rounded-lg" loading="lazy">
             </div>
 
             <!-- Arrow position table -->
@@ -640,7 +640,7 @@
                 To see your Variable, you need an accurate Human Design chart with a reliable birth time and access to the Variable arrows. Genetic Matrix free charts do not include Variable arrows, so membership is required to view the full arrow configuration.
             </p>
             <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
-                Register Here &rarr;
+                Get Pro &rarr;
             </a>
         </div>
     </section>
@@ -707,5 +707,6 @@
         </div>
     </footer>
 
+<script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
 </body>
 </html>
