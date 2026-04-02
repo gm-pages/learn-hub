@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Ayanamsha explicado | Guía completa de todos los sistemas Ayanamsha | Genetic Matrix</title>
+ <meta name="description" content="Aprenda qué es el ayanamsha, por qué es importante para la astrología sideral, y explore más de 50 sistemas ayanamsha compatibles con Genetic Matrix incluyendo Lahiri, Fagan/Bradley, Krishnamurti y muchos más.">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn/astrology/ayanamsha/">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ 'gm-purple': '#6E5898',
+ 'gm-purple-light': '#9080B1',
+ 'gm-purple-soft': '#AC94D8',
+ 'gm-dark': '#3C2864',
+ 'gm-darker': '#2e1f4d',
+ 'gm-green': '#54931E',
+ 'gm-green-dark': '#468018',
+ 'gm-green-light': '#8EB86A',
+ 'gm-pink': '#F66378',
+ 'gm-orange': '#E8961D',
+ 'gm-gray': '#707070',
+ 'gm-light': '#F7F8F9',
+ 'gm-card': '#FAFBFC',
+ 'gm-card-active': '#F4F0FC',
+ 'gm-border': '#D8D4E4',
+ 'gm-warning': '#F8F8E8',
+ 'gm-text-dark': '#1A1A2E',
+ 'gm-text': '#444444',
+ 'gm-text-light': '#949494',
+ }
+ }
+ }
+ }
+ </script>
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+ body { font-family: 'Inter', sans-serif; }
+ details summary { cursor: pointer; list-style: none; }
+ details summary::-webkit-details-marker { display: none; }
+ details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+ details[open] summary::after { content: '\2212'; }
+ details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+ @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+ </style>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Ayanamsha explicado | Guía completa de todos los sistemas Ayanamsha","description":"Aprenda qué es el ayanamsha, por qué es importante para la astrología sideral, y explore más de 50 sistemas ayanamsha compatibles con Genetic Matrix incluyendo Lahiri, Fagan/Bradley, Krishnamurti y muchos más.","publisher":{"@type":"Organization","name":"Genetic Matrix","url":"https://www.geneticmatrix.com"},"mainEntityOfPage":"https://www.geneticmatrix.com/learn/astrology/ayanamsha/","datePublished":"2025-01-15","dateModified":"2026-03-06"}
+</script>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"¿Qué ayanamsha debo usar?","acceptedAnswer":{"@type":"Answer","text":"Si usted es nuevo en la astrología sideral, comience con Lahiri (Chitrapaksha). Es el sistema más ampliamente usado, el estándar oficial del gobierno indio, y el predeterminado gratuito en Genetic Matrix. Si usted sigue una tradición o maestro específico, use el ayanamsha recomendado por ese linaje. No existe una sola respuesta correcta. Diferentes sistemas reflejan diferentes puntos de referencia astronómicos y suposiciones filosóficas."}},
+{"@type":"Question","name":"¿Afecta el ayanamsha a la astrología tropical (occidental)?","acceptedAnswer":{"@type":"Answer","text":"No. La astrología tropical define el zodíaco por los equinoccios y solsticios, no por las estrellas fijas. El zodíaco tropical no se desplaza con la precesión, por lo que el ayanamsha es irrelevante para los cálculos de cartas tropicales. Solo se aplica cuando usted cambia a un sistema zodiacal sideral o constelacional."}},
+{"@type":"Question","name":"¿Por qué hay tantos sistemas ayanamsha?","acceptedAnswer":{"@type":"Answer","text":"Porque no existe un único punto cero obvio para el zodíaco sideral. Diferentes astrónomos y astrólogos han elegido diferentes estrellas de referencia o puntos galácticos para anclar el zodíaco, y cada elección produce un desplazamiento ligeramente diferente. Las diferencias entre sistemas son típicamente pequeñas (1-3 grados) pero pueden desplazar los límites de signos y nakshatras."}},
+{"@type":"Question","name":"¿Cuál es el predeterminado gratuito en Genetic Matrix?","acceptedAnswer":{"@type":"Answer","text":"El ayanamsha sideral predeterminado gratuito en Genetic Matrix es Lahiri (Chitrapaksha). Este es el mismo estándar usado por el gobierno indio y el ayanamsha más ampliamente reconocido en la astrología védica. Los miembros Pro pueden cambiar a cualquiera de los más de 50 sistemas compatibles."}},
+{"@type":"Question","name":"¿Puedo usar mi propio ayanamsha personalizado?","acceptedAnswer":{"@type":"Answer","text":"Sí. Los miembros Pro de Genetic Matrix pueden introducir un valor SVP (Punto Vernal Sideral) personalizado para definir su propio ayanamsha. Esto es útil para investigadores, practicantes avanzados, o cualquiera trabajando con un sistema no incluido en la lista estándar."}}
+]}
+</script>
+</head>
+<body class="bg-white text-gray-700">
+
+ <!-- ==================== NAV BAR ==================== -->
+ <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../../assets/logo.svg" alt="Genetic Matrix - Conócete a ti mismo" class="h-14">
+            </a>
+            <div class="flex items-center gap-8">
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Informes">
+                    <img src="../../assets/icon-report.svg" alt="Informes" class="h-9 w-9">
+                </a>
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Cartas que Hablan">
+                    <img src="../../assets/icon-talking-chart.svg" alt="Cartas que Hablan" class="h-7 w-7">
+                </a>
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Carta gratuita</a>
+                <!-- Learn -->
+                <a href="../../" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Aprender</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Nuestros planes</a>
+                <a href="https://www.geneticmatrix.com/cart/" title="Carrito">
+                    <img src="../../assets/icon-cart.svg" alt="Carrito" class="h-8 w-auto">
+                </a>
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>Español</span>
+                    <img src="../../assets/icon-english.svg" alt="Español" class="h-5 w-7">
+                </div>
+                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Iniciar sesión</a>
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Registrarse</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-50 border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 py-2.5">
+            <a href="../../" class="text-sm text-gm-purple hover:text-gm-dark font-medium transition">&larr; Volver a Learn Hub</a>
+        </div>
+    </div>
+
+ <!-- ==================== HERO BANNER ==================== -->
+ <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+     <div class="max-w-3xl mx-auto px-6">
+         <span class="inline-block bg-gm-purple text-white text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">Astrología</span>
+         <h1 class="text-3xl md:text-4xl font-bold mb-3">Ayanamsha explicado</h1>
+         <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-xl mx-auto">Aprenda qué es el ayanamsha, por qué es importante para la astrología sideral, y explore más de 50 sistemas ayanamsha compatibles con Genetic Matrix incluyendo Lahiri, Fagan/Bradley, Krishnamurti y muchos más.</p>
+     </div>
+ </section>
+
+ <!-- ==================== WHAT IS AYANAMSHA? ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="what-is-ayanamsha">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> ¿Qué es el ayanamsha?</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Ayanamsha (también escrito ayanamsa) es la diferencia angular entre el zodíaco tropical y el zodíaco sideral. Es la variable técnica más importante en la astrología sideral, porque determina dónde cae cada planeta, cúspide de casa y punto sensible en la carta sideral.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">El zodíaco tropical, usado por la mayoría de astrólogos occidentales, está anclado a las estaciones. Define 0 grados de Aries como el punto donde el Sol cruza el ecuador celeste hacia el norte, el equinoccio vernal. Este punto está fijo relativo a las estaciones de la Tierra pero se desplaza lentamente contra el fondo de las estrellas fijas debido a un fenómeno llamado la <strong class="text-gray-800">precesión de los equinoccios</strong>.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">El zodíaco sideral, usado en la astrología védica (Jyotish) y otras tradiciones, está anclado a las estrellas fijas. Intenta mantener los signos zodiacales alineados con las constelaciones por las que fueron originalmente nombrados. Debido a la precesión, los zodíacos tropical y sideral se separan lentamente a un ritmo de aproximadamente 1 grado cada 72 años.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">El ayanamsha es la medición de qué tan separados se han desplazado en cualquier punto dado en el tiempo. Si usted conoce el valor del ayanamsha, puede convertir cualquier carta tropical a una carta sideral restando el ayanamsha de cada posición tropical. El desafío es que diferentes tradiciones y astrónomos no están de acuerdo sobre exactamente cuándo los dos zodíacos estaban perfectamente alineados, lo que lleva a diferentes valores de ayanamsha y diferentes sistemas.</p>
+     </div>
+ </section>
+
+ <!-- ==================== WHY DOES THE AYANAMSHA VALUE MATTER? ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="why-ayanamsha-matters">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> ¿Por qué importa el valor del ayanamsha?</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">El valor del ayanamsha determina directamente en qué signo sideral cae cada planeta. Una diferencia de incluso 1-2 grados entre sistemas ayanamsha puede desplazar planetas a través de límites de signos, cambiar ubicaciones de nakshatra (mansiones lunares) y alterar posiciones de cartas divisionales. Esto significa que dos astrólogos védicos usando diferentes sistemas ayanamsha pueden leer los mismos datos de nacimiento y llegar a diferentes ubicaciones de signos.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Para planetas cerca del límite entre dos signos (digamos, a 29 grados de un signo o 0-1 grados del siguiente), la elección del ayanamsha puede cambiar completamente la ubicación del signo. Esta no es una tecnicidad menor. Un Marte en el último grado de Cáncer versus el primer grado de Leo será interpretado muy diferentemente por cualquier astrólogo.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">El ayanamsha también importa para los cálculos de dasha (períodos planetarios) en la astrología védica, ya que los dashas dependen de la posición exacta de la Luna. Un cambio de incluso una fracción de grado en la longitud sideral de la Luna puede cambiar el punto de inicio de su secuencia de dasha, alterando potencialmente toda la línea de tiempo de eventos predichos.</p>
+
+         <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Conocimiento clave</p>
+             <p class="text-gm-text text-sm leading-relaxed italic">A partir de 2025, el ayanamsha más comúnmente usado (Lahiri) coloca la diferencia tropical-sideral en aproximadamente 24 grados. Esto significa que su signo solar sideral es aproximadamente un signo anterior que su signo solar tropical.</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== AYANAMSHA SYSTEMS SUPPORTED ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="ayanamsha-systems">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Sistemas Ayanamsha compatibles con Genetic Matrix</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Genetic Matrix es compatible con más de 50 sistemas ayanamsha, convirtiéndola en la plataforma más completa disponible para el cálculo de cartas siderales. A continuación se presenta una guía de cada sistema compatible, agrupado por categoría, para que usted pueda entender qué representa cada uno y cuándo podría usarlo.</p>
+
+         <!-- Major Systems -->
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Sistemas principales</h3>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Lahiri (Chitrapaksha), predeterminado gratuito</strong><br>El ayanamsha más ampliamente usado en la astrología védica y el estándar oficial adoptado por el gobierno indio. Está basado en que la estrella fija Spica (Chitra) se coloque exactamente a 0 grados Libra. Lahiri es el sistema sideral predeterminado en Genetic Matrix y está disponible para todos los usuarios gratuitamente. Si usted es nuevo en la astrología sideral, este es el punto de partida recomendado.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Fagan/Bradley</strong><br>Desarrollado por Cyril Fagan y Donald Bradley, este es el ayanamsha principal usado en la astrología sideral occidental. Está basado en investigación estadística extensa y coloca el origen del zodíaco ligeramente diferente de la tradición india. Fagan/Bradley es comúnmente usado por astrólogos siderales fuera de la tradición Jyotish.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Krishnamurti</strong><br>Desarrollado por K.S. Krishnamurti, el fundador del sistema Krishnamurti Paddhati (KP) de astrología védica. El sistema KP es una sub-rama de la astrología védica que usa un método único de división de casas y sub-señores planetarios. El ayanamsha Krishnamurti es ligeramente diferente de Lahiri y es requerido para cálculos KP precisos.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Raman</strong><br>Propuesto por B.V. Raman, uno de los astrólogos védicos más influyentes del siglo XX. El ayanamsha de Raman difiere de Lahiri por aproximadamente 2 grados y está basado en sus propios cálculos astronómicos. Algunos astrólogos védicos tradicionales prefieren este sistema basado en su experiencia con la precisión predictiva.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">De Luce</strong><br>Un ayanamsha calculado por Robert DeLuce, un astrólogo sideral occidental temprano. Este sistema es históricamente significativo en el desarrollo de la práctica sideral occidental y proporciona un punto de referencia para investigadores que comparan diferentes enfoques.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Usha/Shashi</strong><br>Un sistema ayanamsha basado en el trabajo de los astrólogos indios Usha y Shashi. Este sistema ofrece una calibración ligeramente diferente de Lahiri y es usado por una comunidad más pequeña de practicantes que han encontrado que produce mejores resultados en su práctica.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Yukteshwar</strong><br>Basado en los cálculos astronómicos de Sri Yukteshwar Giri, el gurú de Paramahansa Yogananda. Yukteshwar propuso un modelo único de ciclos de precesión en su libro La Ciencia Sagrada y calculó el ayanamsha en consecuencia. Este sistema es usado por seguidores de la tradición Kriya Yoga y aquellos interesados en la teoría de ciclos yuga de Yukteshwar.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Djwhal Khul</strong><br>Basado en las enseñanzas atribuidas al maestro tibetano Djwhal Khul a través de los escritos de Alice Bailey. Este ayanamsha es usado dentro de círculos de astrología esotérica y refleja un marco filosófico específico sobre la relación entre el zodíaco y la evolución espiritual.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">J.N. Bhasin</strong><br>Propuesto por J.N. Bhasin, un astrólogo indio que calculó su propio ayanamsha basado en datos astronómicos históricos. Este sistema es usado por astrólogos que siguen el enfoque de Bhasin y proporciona otro punto de referencia dentro de la tradición astrológica india.</p>
+
+         <!-- Babylonian Systems -->
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Sistemas babilónicos</h3>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Los sistemas ayanamsha babilónicos están basados en investigación académica sobre el zodíaco babilónico original, que precedió tanto al zodíaco tropical griego como al zodíaco sideral indio. Estos sistemas intentan reconstruir dónde los antiguos babilonios colocaron el comienzo del zodíaco relativo a las estrellas fijas.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Kugler 1</strong><br>Basado en la investigación de Franz Xaver Kugler, un sacerdote jesuita y asiriólogo que estudió tablillas astronómicas babilónicas. Kugler 1 representa una de sus reconstrucciones propuestas del punto cero del zodíaco babilónico original.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Kugler 2</strong><br>Una segunda reconstrucción por Kugler basada en diferentes tablillas fuente babilónicas. Las diferencias entre Kugler 1, 2, y 3 reflejan la ambigüedad en los registros antiguos.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Kugler 3</strong><br>Una tercera reconstrucción por Kugler, ofreciendo otra interpretación más de los datos babilónicos. Juntos, los tres sistemas Kugler abarcan el rango probable del origen del zodíaco babilónico original.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Huber</strong><br>Basado en el trabajo de Peter Huber, un asiriólogo que refinó la reconstrucción del zodíaco babilónico usando textos cuneiformes adicionales. El sistema de Huber es considerado uno de los intentos académicos más rigurosos para determinar el punto cero babilónico.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Eta Piscium</strong><br>Un ayanamsha de la era babilónica que usa la estrella Eta Piscium como su punto de referencia. Esta estrella fue significativa en la astronomía babilónica y proporciona un anclaje estelar directo para el origen del zodíaco.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Aldebaran = 15 Tau</strong><br>Este sistema coloca la estrella brillante Aldebaran exactamente a 15 grados Tauro. Porque Aldebaran es una de las cuatro Estrellas Reales y fue central en la astronomía babilónica, esto proporciona un punto de referencia natural e históricamente fundamentado para el zodíaco sideral.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Britton</strong><br>Basado en la investigación de John Britton, un historiador de la astronomía antigua. El trabajo de Britton refinó la comprensión de los parámetros astronómicos babilónicos y produjo una reconstrucción más precisamente calibrada del zodíaco babilónico.</p>
+
+         <!-- Historical and Classical Systems -->
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Sistemas históricos y clásicos</h3>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Hipparchos</strong><br>Basado en las observaciones de Hiparco de Nicea (c. 190-120 a.C.), el astrónomo griego a quien se le atribuye el descubrimiento de la precesión de los equinoccios. Este ayanamsha refleja la calibración zodiacal implicada por el catálogo de estrellas de Hiparco y proporciona una ventana sobre cómo se entendía el zodíaco en el período helenístico.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Sassanian</strong><br>Basado en registros astronómicos del Imperio Sasánida (224-651 d.C.) en Persia. La astronomía sasánida heredó tradiciones tanto babilónicas como griegas y desarrolló sus propias observaciones precisas de estrellas, que implican un valor ayanamsha específico para esa era.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Vettius Valens</strong><br>Basado en las obras astrológicas de Vettius Valens (c. 120-175 d.C.), un astrólogo helenístico cuya Antología es uno de los textos supervivientes más importantes de la tradición astrológica antigua. El ayanamsha implicado por sus ejemplos de cartas permite a los astrólogos modernos reconstruir el marco zodiacal que él estaba usando.</p>
+
+         <!-- Astronomical Reference Frames -->
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Marcos de referencia astronómicos</h3>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">J2000</strong><br>Basado en la época astronómica estándar J2000.0 (1 de enero de 2000, 12:00 TT). Este no es un sistema astrológico per se, sino un marco de referencia astronómico preciso. Coloca el equinoccio vernal del año 2000 a 0 grados y mide todas las posiciones desde ese punto. Útil para astrónomos e investigadores que quieren posiciones de cartas en un sistema de coordenadas científico estándar.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">J1900</strong><br>Basado en la época astronómica J1900.0 (1 de enero de 1900). Similar a J2000 pero usando una fecha de referencia anterior. Esta fue la época estándar usada en gran parte de la literatura astronómica del siglo XX.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">B1950</strong><br>Basado en la época besseliana B1950.0, que fue el marco de referencia astronómico estándar antes de que J2000 fuera adoptado. Algunos softwares astrológicos más antiguos y obras de referencia usan posiciones B1950, por lo que esta opción permite una comparación precisa con fuentes más antiguas.</p>
+
+         <!-- Suryasiddhanta Systems -->
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Sistemas Suryasiddhanta</h3>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">El Suryasiddhanta es uno de los textos astronómicos más antiguos e importantes en la tradición india, datando aproximadamente del siglo IV-V d.C. Contiene modelos matemáticos detallados para el movimiento planetario e incluye sus propios cálculos de precesión. Varios sistemas ayanamsha se derivan de sus parámetros.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Suryasiddhanta</strong><br>El ayanamsha estándar derivado directamente del modelo de precesión del Suryasiddhanta. Este modelo usa una tasa y patrón de precesión diferente de la astronomía moderna, produciendo un valor ayanamsha distinto.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Suryasiddhanta, Sol medio</strong><br>Una variante del ayanamsha Suryasiddhanta que usa la posición del Sol medio (promediada, movimiento uniforme) en lugar de la posición del Sol verdadero (real, movimiento ligeramente irregular). La diferencia es pequeña pero importa para cálculos precisos.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">SS Revati</strong><br>Un ayanamsha derivado del Suryasiddhanta calibrado a la estrella Revati (Zeta Piscium). En la tradición india, Revati marca el final del ciclo nakshatra y el comienzo del zodíaco sideral.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">SS Citra</strong><br>Un ayanamsha derivado del Suryasiddhanta calibrado a la estrella Citra (Spica), similar a Lahiri pero usando el modelo de precesión propio del Suryasiddhanta en lugar de la precesión astronómica moderna.</p>
+
+         <!-- Aryabhata Systems -->
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Sistemas Aryabhata</h3>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Aryabhata</strong><br>Basado en los parámetros astronómicos de Aryabhata (476-550 d.C.), uno de los más grandes matemáticos y astrónomos de la India antigua. El sistema de Aryabhata usa constantes ligeramente diferentes que el Suryasiddhanta, produciendo un valor ayanamsha diferente.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Aryabhata, Sol medio</strong><br>Una variante del ayanamsha Aryabhata usando la posición del Sol medio en lugar del Sol verdadero. Como con la variante Suryasiddhanta, esto suaviza las pequeñas irregularidades en el movimiento aparente del Sol.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Aryabhata 522</strong><br>Un ayanamsha derivado de Aryabhata calibrado al año 522 d.C., que algunos académicos identifican como una época significativa en la tradición astronómica india. Esta variante ajusta la suposición de fecha cero dentro del marco de Aryabhata.</p>
+
+         <!-- True Star-Based Systems -->
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Sistemas basados en estrellas verdaderas</h3>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">True Revati</strong><br>Un ayanamsha que rastrea la posición actual real de la estrella Revati (Zeta Piscium) en lugar de usar un cálculo histórico fijo. Porque las estrellas fijas tienen su propio movimiento propio muy lento, un ayanamsha "verdadero" basado en estrellas cambia ligeramente a lo largo de los siglos de maneras que un sistema basado en fórmulas no captura.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">True Pushya (PVRN Rao)</strong><br>Un ayanamsha basado en la posición verdadera de la estrella Pushya (Delta Cancri), según lo defendido por el astrólogo indio PVRN Rao. Rao argumentó que Pushya proporciona un anclaje más estable y astronómicamente preciso para el zodíaco sideral que Spica o Revati.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">True Mula (Chandra Hari)</strong><br>Un ayanamsha basado en la posición verdadera de la estrella al comienzo del nakshatra Mula, según lo propuesto por el astrónomo-astrólogo indio Chandra Hari. Este sistema ancla el zodíaco a la región del centro galáctico, ya que Mula está ubicado cerca del centro de la Vía Láctea.</p>
+
+         <!-- Galactic Center Systems -->
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Sistemas del centro galáctico</h3>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Gil Brand</strong><br>Un ayanamsha desarrollado por el astrólogo Gil Brand, basado en alinear el zodíaco con el Centro Galáctico. Este enfoque argumenta que el punto de referencia astronómico más significativo es el centro de nuestra galaxia en lugar de cualquier estrella individual.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">IAU 1958 (Centro Galáctico = 0 Sag)</strong><br>Basado en la definición de 1958 de la Unión Astronómica Internacional de coordenadas galácticas, que coloca el Centro Galáctico a 0 grados Sagitario en el zodíaco sideral. Esto proporciona un punto de referencia preciso y estandarizado internacionalmente.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Galactic Equator (IAU 1958)</strong><br>Un ayanamsha basado en alinear el zodíaco con el ecuador galáctico (el plano medio de la Vía Láctea) usando el sistema de coordenadas galácticas IAU 1958. Este toma el plano galáctico en lugar del centro galáctico como la referencia primaria.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Galactic Equator mid-Mula</strong><br>Una variación que alinea la intersección del ecuador galáctico con el punto medio del nakshatra Mula. Este sistema combina el marco de referencia galáctico con la estructura tradicional nakshatra india.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Cochrane (Centro Galáctico = 0 Cap)</strong><br>Desarrollado por el astrólogo David Cochrane, este sistema coloca el Centro Galáctico a 0 grados Capricornio en lugar de 0 grados Sagitario. La investigación de Cochrane sugiere que esta alineación produce mejores correlaciones estadísticas en estudios astrológicos.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Fiorenza</strong><br>Desarrollado por Nick Anthony Fiorenza, este ayanamsha está basado en la alineación precesional del equinoccio vernal con puntos específicos en el zodíaco sideral relacionados con el ecuador galáctico. El sistema de Fiorenza se usa en su marco de astrología sideral que enfatiza alineaciones galácticas.</p>
+
+         <!-- Other Systems -->
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Otros sistemas</h3>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Skydram (Mardyks)</strong><br>Desarrollado por el astrólogo Raymond Mardyks (Skydram), este ayanamsha está basado en un conjunto único de consideraciones astronómicas y se usa dentro del marco astrológico sideral de Mardyks.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Dhruva/Galactic Center/Wilhelm</strong><br>Un sistema que combina el concepto de la alineación de la Estrella Polar (Dhruva) con el punto de referencia del Centro Galáctico, según lo desarrollado por el astrólogo Ernst Wilhelm. El enfoque de Wilhelm integra conceptos indios tradicionales con la astronomía galáctica moderna.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Vedic Sheoran</strong><br>Un sistema ayanamsha desarrollado dentro de la tradición védica por la escuela Sheoran de astrología. Ofrece una calibración ligeramente diferente basada en su interpretación de textos clásicos y observaciones astronómicas.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Lahiri 1940</strong><br>El valor ayanamsha Lahiri original como se calculó en 1940, antes de refinamientos posteriores. Algunos practicantes prefieren esta calibración anterior basada en su experiencia con la precisión de cartas.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Lahiri VP285</strong><br>Una variante del ayanamsha Lahiri usando una calibración de punto vernal de 285 grados. Esta es una variación técnica dentro del marco Lahiri que produce posiciones ligeramente diferentes.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Krishnamurti-Senthilathiban</strong><br>Una versión refinada del ayanamsha Krishnamurti, recalculada por Senthilathiban usando datos astronómicos modernos. Esto es usado por practicantes KP que quieren la versión astronómicamente más precisa del sistema Krishnamurti.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Lahiri ICRC</strong><br>El ayanamsha Lahiri según lo definido por el Comité de Reforma del Calendario Indio (ICRC). Esta es la versión adoptada oficialmente por el gobierno indio para cálculos de calendario y es considerada la referencia autoritativa para el sistema Lahiri.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">User Defined SVP</strong><br>Los miembros Pro de Genetic Matrix pueden introducir su propio valor de Punto Vernal Sideral (SVP) personalizado. Esto permite a investigadores, practicantes avanzados, o cualquiera trabajando con un sistema no incluido en la lista estándar calcular cartas usando su ayanamsha preferido.</p>
+
+         <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Conocimiento clave</p>
+             <p class="text-gm-text text-sm leading-relaxed italic">Genetic Matrix es compatible con más de 50 sistemas ayanamsha, la selección más completa disponible en cualquier plataforma de astrología o Diseño Humano. Los miembros Pro también pueden introducir su propio SVP personalizado para cálculos completamente personalizados.</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== HOW AYANAMSHA AFFECTS YOUR CHART ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="how-ayanamsha-affects-chart">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Cómo afecta el ayanamsha a su carta</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Cuando usted cambia de una carta tropical a una carta sideral, o de un ayanamsha sideral a otro, las posiciones de todos los planetas, cúspides de casas y puntos sensibles se desplazan por la diferencia en valores ayanamsha. El efecto más inmediatamente notorio es que su signo solar (y potencialmente signo lunar y ascendente) puede cambiar.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Por ejemplo, si usted es un Sol tropical en Aries a 10 grados de Aries y el ayanamsha Lahiri es aproximadamente 24 grados, su Sol sideral estaría aproximadamente a 16 grados de Piscis, un signo completamente diferente. Este cambio se aplica a cada planeta en su carta. Su carta tropical y su carta sideral describen a la misma persona desde dos marcos de referencia diferentes, como medir temperatura en Fahrenheit versus Celsius.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Genetic Matrix hace fácil explorar estas diferencias. Usted puede ver su carta en el zodíaco tropical, cambiar a cualquier ayanamsha sideral compatible, y comparar los resultados lado a lado. Esta es una herramienta poderosa para el autoentendimiento, ya que muchas personas encuentran que un sistema resuena más profundamente que otro, o que los dos sistemas iluminan diferentes facetas de su experiencia.</p>
+     </div>
+ </section>
+
+ <!-- ==================== FAQ ACCORDION ==================== -->
+ <section class="py-10 md:py-14 bg-white">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Preguntas frecuentes</h2>
+         <div class="space-y-3">
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">¿Qué ayanamsha debo usar?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Si usted es nuevo en la astrología sideral, comience con Lahiri (Chitrapaksha). Es el sistema más ampliamente usado, el estándar oficial del gobierno indio, y el predeterminado gratuito en Genetic Matrix. Si usted sigue una tradición o maestro específico, use el ayanamsha recomendado por ese linaje. No existe una sola respuesta correcta. Diferentes sistemas reflejan diferentes puntos de referencia astronómicos y suposiciones filosóficas.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">¿Afecta el ayanamsha a la astrología tropical (occidental)?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">No. La astrología tropical define el zodíaco por los equinoccios y solsticios, no por las estrellas fijas. El zodíaco tropical no se desplaza con la precesión, por lo que el ayanamsha es irrelevante para los cálculos de cartas tropicales. Solo se aplica cuando usted cambia a un sistema zodiacal sideral o constelacional.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">¿Por qué hay tantos sistemas ayanamsha?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Porque no existe un único punto cero obvio para el zodíaco sideral. Diferentes astrónomos y astrólogos han elegido diferentes estrellas de referencia o puntos galácticos para anclar el zodíaco, y cada elección produce un desplazamiento ligeramente diferente. Las diferencias entre sistemas son típicamente pequeñas (1-3 grados) pero pueden desplazar los límites de signos y nakshatras.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">¿Cuál es el predeterminado gratuito en Genetic Matrix?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">El ayanamsha sideral predeterminado gratuito en Genetic Matrix es Lahiri (Chitrapaksha). Este es el mismo estándar usado por el gobierno indio y el ayanamsha más ampliamente reconocido en la astrología védica. Los miembros Pro pueden cambiar a cualquiera de los más de 50 sistemas compatibles.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">¿Puedo usar mi propio ayanamsha personalizado?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Sí. Los miembros Pro de Genetic Matrix pueden introducir un valor SVP (Punto Vernal Sideral) personalizado para definir su propio ayanamsha. Esto es útil para investigadores, practicantes avanzados, o cualquiera trabajando con un sistema no incluido en la lista estándar.</div>
+             </details>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== CONTINUE LEARNING ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Otros temas de aprendizaje</h2>
+         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+             <a href="/astrology/zodiac-signs/" class="bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Signos zodiacales &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Los 12 signos más el 13° signo explicados.</p>
+             </a>
+             <a href="/astrology/planets/" class="bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Planetas &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Del Sol a Plutón, Quirón y Lilith.</p>
+             </a>
+             <a href="/astrology/houses/" class="bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Casas &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">12 casas y 10 sistemas de casas explicados.</p>
+             </a>
+             <a href="/astrology/aspects/" class="bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Aspectos y orbes &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Conjunciones, trígonos, cuadraturas y más.</p>
+             </a>
+             <a href="/astrology/chinese-astrology/" class="bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Astrología china &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">12 signos animales, cinco elementos, yin y yang.</p>
+             </a>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== CTA BANNER ==================== -->
+ <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+     <div class="max-w-2xl mx-auto px-6">
+         <h2 class="text-2xl md:text-3xl font-bold mb-4">Explore su carta</h2>
+         <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">Vea su carta en cualquier sistema ayanamsha. Compare ubicaciones tropicales y siderales con Genetic Matrix.</p>
+        <a href="https://www.geneticmatrix.com/pricing/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+            Get Pro &rarr;
+        </a>
+</div>
+ </section>
+
+ <!-- ==================== FOOTER ==================== -->
+ <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+                <div class="text-center md:text-left">
+                    <img src="../../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">Todos los derechos reservados.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Privacidad, términos y condiciones</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Suscríbase a nuestro boletín</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Regístrese a nuestro boletín para recibir actualizaciones, ofertas, nuevos lanzamientos, y todo lo relacionado con Genetic Matrix.</p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input type="email" placeholder="Su dirección de correo electrónico" class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400">
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Conéctese con nosotros</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener"><img src="../../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10"></a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener"><img src="../../assets/icon-x.svg" alt="X" class="w-10 h-10"></a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener"><img src="../../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10"></a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener"><img src="../../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10"></a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Póngase en contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
+</body>
+</html>

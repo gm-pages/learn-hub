@@ -22,8 +22,9 @@
                 <!-- Our Plans -->
                 <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Our Plans</a>
                 <!-- Cart -->
-                <a href="https://www.geneticmatrix.com/cart/" title="Cart">
+                <a href="https://www.geneticmatrix.com/cart/" title="Cart" class="relative">
                     <img src="{{ASSET_PATH}}icon-cart.svg" alt="Cart" class="h-8 w-auto">
+                    <span id="gm-cart-count" class="absolute -top-1 -right-2 bg-gm-pink text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center hidden">0</span>
                 </a>
                 <!-- Language Selector -->
                 <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
@@ -31,9 +32,15 @@
                     <img src="{{ASSET_PATH}}icon-english.svg" alt="English" class="h-5 w-7">
                 </div>
                 <!-- Sign In (popup on live site - Shafik to wire up) -->
-                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Sign In</a>
+                <div id="gm-logged-out" class="flex items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/my-account/" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium">Sign In</a>
                 <!-- Register -->
                 <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Register</a>
+                </div>
+                <div id="gm-logged-in" class="hidden flex items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/my-account/" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium">My Account</a>
+                    <a href="https://www.geneticmatrix.com/my-account/customer-logout/" class="text-gm-gray hover:text-gray-900 text-sm font-medium">Logout</a>
+                </div>
             </div>
         </div>
     </nav>

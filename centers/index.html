@@ -163,18 +163,25 @@
                 <!-- Our Plans -->
                 <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Our Plans</a>
                 <!-- Cart -->
-                <a href="https://www.geneticmatrix.com/cart/" title="Cart">
+                <a href="https://www.geneticmatrix.com/cart/" title="Cart" class="relative">
                     <img src="../assets/icon-cart.svg" alt="Cart" class="h-8 w-auto">
+                    <span id="gm-cart-count" class="absolute -top-1 -right-2 bg-gm-pink text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center hidden">0</span>
                 </a>
                 <!-- Language Selector -->
                 <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
                     <span>English</span>
                     <img src="../assets/icon-english.svg" alt="English" class="h-5 w-7">
                 </div>
-                <!-- Sign In (popup on live site - Shafik to wire up) -->
-                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Sign In</a>
-                <!-- Register -->
-                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Register</a>
+                                <!-- Logged OUT state -->
+                <div id="gm-logged-out" class="flex items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/my-account/" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium">Sign In</a>
+                    <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Register</a>
+                </div>
+                <!-- Logged IN state (hidden by default) -->
+                <div id="gm-logged-in" class="hidden flex items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/my-account/" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium">My Account</a>
+                    <a href="https://www.geneticmatrix.com/my-account/customer-logout/" class="text-gm-gray hover:text-gray-900 text-sm font-medium">Logout</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -852,6 +859,34 @@
         </div>
     </footer>
 
+<script>
+(function() {
+    function getCartCount() {
+        var match = document.cookie.match(/woocommerce_items_in_cart=(\d+)/);
+        if (match) return parseInt(match[1]);
+        var hashMatch = document.cookie.match(/woocommerce_cart_hash=([^;]+)/);
+        if (hashMatch && hashMatch[1]) return -1;
+        return 0;
+    }
+    var count = getCartCount();
+    var badge = document.getElementById('gm-cart-count');
+    if (badge) {
+        if (count > 0) { badge.textContent = count; badge.classList.remove('hidden'); }
+        else if (count === -1) { badge.textContent = ''; badge.classList.remove('hidden'); }
+    }
+    function isLoggedIn() {
+        return document.cookie.split(';').some(function(c) {
+            return c.trim().indexOf('wordpress_logged_in_') === 0;
+        });
+    }
+    var loggedOut = document.getElementById('gm-logged-out');
+    var loggedIn = document.getElementById('gm-logged-in');
+    if (isLoggedIn()) {
+        if (loggedOut) loggedOut.classList.add('hidden');
+        if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
+    }
+})();
+</script>
 <script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
 </body>
 </html>

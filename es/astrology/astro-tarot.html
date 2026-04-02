@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Astro Tarot | Conexión entre astrología y tarot | Cartas de tarot de su carta natal | Genetic Matrix</title>
+ <meta name="description" content="Descubra la profunda conexión entre la astrología y el tarot. Aprenda qué cartas de tarot corresponden a sus signos zodiacales, planetas y posiciones en la carta. Genetic Matrix ofrece una carta única de Astro Tarot.">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn/astrology/astro-tarot/">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ 'gm-purple': '#6E5898',
+ 'gm-purple-light': '#9080B1',
+ 'gm-purple-soft': '#AC94D8',
+ 'gm-dark': '#3C2864',
+ 'gm-darker': '#2e1f4d',
+ 'gm-green': '#54931E',
+ 'gm-green-dark': '#468018',
+ 'gm-green-light': '#8EB86A',
+ 'gm-pink': '#F66378',
+ 'gm-orange': '#E8961D',
+ 'gm-gray': '#707070',
+ 'gm-light': '#F7F8F9',
+ 'gm-card': '#FAFBFC',
+ 'gm-card-active': '#F4F0FC',
+ 'gm-border': '#D8D4E4',
+ 'gm-warning': '#F8F8E8',
+ 'gm-text-dark': '#1A1A2E',
+ 'gm-text': '#444444',
+ 'gm-text-light': '#949494',
+ }
+ }
+ }
+ }
+ </script>
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+ body { font-family: 'Inter', sans-serif; }
+ details summary { cursor: pointer; list-style: none; }
+ details summary::-webkit-details-marker { display: none; }
+ details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+ details[open] summary::after { content: '\2212'; }
+ details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+ @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+ </style>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Astro Tarot | Conexión entre astrología y tarot | Cartas de tarot de su carta natal","description":"Descubra la profunda conexión entre la astrología y el tarot. Aprenda qué cartas de tarot corresponden a sus signos zodiacales, planetas y posiciones en la carta. Genetic Matrix ofrece una carta única de Astro Tarot.","publisher":{"@type":"Organization","name":"Genetic Matrix","url":"https://www.geneticmatrix.com"},"mainEntityOfPage":"https://www.geneticmatrix.com/learn/astrology/astro-tarot/","datePublished":"2025-01-15","dateModified":"2026-03-06"}
+</script>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"¿Necesito conocer el tarot para usar la carta Astro Tarot?","acceptedAnswer":{"@type":"Answer","text":"No. La carta Astro Tarot proporciona significados de cartas junto con cada posición, para que pueda entender el simbolismo incluso si nunca ha estudiado tarot."}},
+{"@type":"Question","name":"¿Es Astro Tarot una lectura de tarot?","acceptedAnswer":{"@type":"Answer","text":"No es una lectura predictiva en el sentido tradicional. Es un mapeo de su carta natal sobre el simbolismo del tarot, mostrando qué cartas son parte de su firma astrológica personal. Piense en ello como un retrato fijo más que como una tirada barajada."}},
+{"@type":"Question","name":"¿Puedo usar esto para mejorar mis lecturas de tarot?","acceptedAnswer":{"@type":"Answer","text":"Absolutamente. Entender las correspondencias astrológicas detrás de cada carta profundiza su capacidad interpretativa y le ayuda a conectar el simbolismo del tarot con las energías planetarias reales en su carta y en los tránsitos actuales."}},
+{"@type":"Question","name":"¿Ofrece Genetic Matrix lecturas de tarot?","acceptedAnswer":{"@type":"Answer","text":"Genetic Matrix proporciona la carta Astro Tarot, que mapea su carta natal con correspondencias de tarot. Esta es una herramienta única que conecta la astrología y el tarot más que una lectura tradicional de cartas barajadas."}}
+]}
+</script>
+</head>
+<body class="bg-white text-gray-700">
+
+ <!-- ==================== NAV BAR ==================== -->
+ <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../../assets/logo.svg" alt="Genetic Matrix - Conócete" class="h-14">
+            </a>
+            <div class="flex items-center gap-8">
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Reportes">
+                    <img src="../../assets/icon-report.svg" alt="Reportes" class="h-9 w-9">
+                </a>
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Talking Charts">
+                    <img src="../../assets/icon-talking-chart.svg" alt="Talking Charts" class="h-7 w-7">
+                </a>
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Carta gratis</a>
+                <!-- Learn -->
+                <a href="../../" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Learn</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Nuestros planes</a>
+                <a href="https://www.geneticmatrix.com/cart/" title="Carrito">
+                    <img src="../../assets/icon-cart.svg" alt="Carrito" class="h-8 w-auto">
+                </a>
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>Español</span>
+                    <img src="../../assets/icon-english.svg" alt="Español" class="h-5 w-7">
+                </div>
+                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Iniciar sesión</a>
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Regístrese</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-50 border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 py-2.5">
+            <a href="../../" class="text-sm text-gm-purple hover:text-gm-dark font-medium transition">&larr; Volver al Learn Hub</a>
+        </div>
+    </div>
+
+ <!-- ==================== HERO BANNER ==================== -->
+ <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+     <div class="max-w-3xl mx-auto px-6">
+         <span class="inline-block bg-gm-purple text-white text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">Astrología</span>
+         <h1 class="text-3xl md:text-4xl font-bold mb-3">Astro Tarot</h1>
+         <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-xl mx-auto">El puente entre la astrología y el tarot. Descubra qué cartas de tarot corresponden a sus signos zodiacales, planetas y posiciones en su carta natal.</p>
+     </div>
+ </section>
+
+ <!-- ==================== WHAT IS ASTRO TAROT? ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="what-is-astro-tarot">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> ¿Qué es Astro Tarot?</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Astro Tarot es el puente entre dos de los sistemas simbólicos más antiguos del mundo. La astrología y el tarot han estado entrelazados desde al menos el Renacimiento, cuando eruditos y ocultistas comenzaron a mapear correspondencias entre el zodíaco, los planetas y la baraja de tarot. Cada carta mayor del tarot tiene una asignación astrológica, y cada signo, planeta y elemento en astrología tiene una contraparte en el tarot.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Entender estas correspondencias profundiza ambas prácticas. Si conoce su carta natal, el tarot le da un marco visual y narrativo para entender sus posiciones planetarias. Si lee tarot, la astrología le da una estructura sistemática detrás del significado de cada carta.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Genetic Matrix lleva esta conexión más allá al generar una carta personalizada de Astro Tarot que mapea las posiciones específicas de su carta natal con sus cartas de tarot correspondientes. Esto le da una tirada única de cartas que refleja su patrón astrológico, un retrato de tarot de su carta natal.</p>
+     </div>
+ </section>
+
+ <!-- ==================== THE MAJOR ARCANA AND THE ZODIAC ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="major-arcana-zodiac">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Los Arcanos Mayores y el zodíaco</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Las 22 cartas de los Arcanos Mayores corresponden a los 12 signos zodiacales, los 7 planetas clásicos y los 3 elementos (más El Loco, que está fuera del sistema como potencial puro).</p>
+
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Correspondencias de signos zodiacales</h3>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">El Emperador:</strong> Aries. Autoridad, estructura, liderazgo y la voluntad de construir. El Emperador canaliza el fuego cardinal de Aries hacia la creación del orden y el gobierno.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">El Hierofante:</strong> Tauro. Tradición, enseñanza, autoridad espiritual y sabiduría establecida. El Hierofante refleja la conexión de Tauro con valores duraderos y la integración material-espiritual.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Los Enamorados:</strong> Géminis. Elección, dualidad, comunicación y relación. La carta de Los Enamorados captura el tema esencial de Géminis de dos caminos, dos perspectivas y la decisión entre ellas.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">El Carro:</strong> Cáncer. Determinación emocional, impulso protector y la voluntad de avanzar. El Carro refleja la energía de agua cardinal de Cáncer, moviéndose hacia adelante a través del sentimiento más que de la fuerza.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">La Fuerza:</strong> Leo. Valor, corazón, poder interior y el dominio gentil de la fuerza bruta. La Fuerza muestra a Leo en su más alta expresión, liderando a través de la calidez y la presencia más que del dominio.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">El Ermitaño:</strong> Virgo. Soledad, análisis, sabiduría interior y la búsqueda de la verdad a través del examen cuidadoso. El Ermitaño refleja el viaje interno de Virgo, buscando perfección a través del entendimiento más que de la acción.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">La Justicia:</strong> Libra. Equilibrio, equidad, verdad y las consecuencias de las decisiones. La Justicia refleja el impulso central de Libra hacia el equilibrio y la claridad ética.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">La Muerte:</strong> Escorpio. Transformación, finales, liberación y renacimiento. La carta de la Muerte captura la verdad fundamental de Escorpio: algo debe morir para que algo nuevo viva.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">La Templanza:</strong> Sagitario. Integración, paciencia, propósito superior y la alquimia de combinar opuestos. La Templanza refleja la búsqueda de Sagitario de significado a través de la síntesis de experiencia.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">El Diablo:</strong> Capricornio. Materialismo, esclavitud, sombra y las estructuras de poder que tanto nos sirven como nos atrapan. El Diablo muestra la relación de Capricornio con la ambición, la autoridad y el lado oscuro del éxito mundano.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">La Estrella:</strong> Acuario. Esperanza, inspiración, visión humanitaria y la conexión con la verdad universal. La Estrella refleja el idealismo de Acuario y su papel como el signo que vierte sabiduría para el colectivo.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">La Luna:</strong> Piscis. Ilusión, intuición, el subconsciente y el viaje a través de la oscuridad hacia el entendimiento. La carta de la Luna captura la profundidad oceánica de Piscis, el reino de los sueños, los miedos y el anhelo espiritual.</p>
+
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Correspondencias planetarias</h3>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">El Loco:</strong> Urano (y el elemento Aire). Potencial puro, el salto de fe y el comienzo de todos los viajes.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">El Mago:</strong> Mercurio. Habilidad, comunicación, fuerza de voluntad y la capacidad de canalizar energía espiritual en resultados materiales.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">La Suma Sacerdotisa:</strong> La Luna. Intuición, misterio, la mente subconsciente y conocimiento oculto esperando ser accedido.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">La Emperatriz:</strong> Venus. Abundancia, fertilidad, belleza, nutrición y el poder creativo de la naturaleza.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">La Rueda de la Fortuna:</strong> Júpiter. Expansión, ciclos, suerte y el giro del destino que trae crecimiento a través del cambio.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">La Torre:</strong> Marte. Disrupción repentina, revelación, la destrucción de estructuras falsas y la energía bruta del avance.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">El Sol:</strong> El Sol. Alegría, claridad, vitalidad, éxito y la verdad radiante de la auténtica autoexpresión.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">El Juicio:</strong> Plutón. Despertar, ajuste de cuentas, transformación y la llamada a elevarse hacia una versión superior de sí mismo.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">El Mundo:</strong> Saturno. Completitud, maestría, integración y la realización que viene del esfuerzo disciplinado y la sabiduría ganada.</p>
+
+         <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Perspectiva clave</p>
+             <p class="text-gm-text text-base leading-relaxed">Cada carta mayor del tarot tiene una asignación astrológica. Los 22 Arcanos Mayores corresponden a los 12 signos zodiacales, los planetas clásicos y los elementos. Entender estas correspondencias profundiza tanto su práctica de astrología como de tarot.</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== THE MINOR ARCANA AND THE ELEMENTS ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="minor-arcana-elements">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Los Arcanos Menores y los elementos</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Los cuatro palos de los Arcanos Menores corresponden a los cuatro elementos astrológicos:</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Bastos:</strong> Fuego (Aries, Leo, Sagitario). Acción, pasión, creatividad, ambición e impulso espiritual. Las cartas de Bastos describen las experiencias asociadas con la energía de fuego: inspiración, competencia, aventura y la voluntad de crear.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Copas:</strong> Agua (Cáncer, Escorpio, Piscis). Emoción, intuición, relaciones y el mundo interior. Las cartas de Copas describen experiencias de amor, dolor, alegría, sueños y las profundidades del sentimiento.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Espadas:</strong> Aire (Géminis, Libra, Acuario). Pensamiento, comunicación, conflicto y verdad. Las cartas de Espadas describen experiencias mentales: claridad, confusión, toma de decisiones y el dolor y poder de la honestidad intelectual.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Pentáculos:</strong> Tierra (Tauro, Virgo, Capricornio). Realidad material, trabajo, dinero, salud y logro práctico. Las cartas de Pentáculos describen experiencias de construcción, ganancia, crecimiento y compromiso con el mundo físico.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Cada carta numerada (As hasta 10) corresponde a un segmento específico de 10 grados del zodíaco (llamado decanato), vinculando cartas individuales con posiciones astrológicas precisas.</p>
+     </div>
+ </section>
+
+ <!-- ==================== YOUR ASTRO TAROT CHART ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="your-astro-tarot-chart">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Su carta Astro Tarot</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Genetic Matrix genera una carta personalizada de Astro Tarot basada en sus datos de nacimiento. Esta carta identifica las cartas de tarot que corresponden a sus posiciones planetarias específicas, dándole un retrato visual de tarot de su carta natal.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Por ejemplo, si su Sol está en Escorpio, la carta de la Muerte es parte de su firma de tarot. Si su Luna está en Piscis, aparece la carta de la Luna. Si Venus es prominente en su carta, La Emperatriz se convierte en una carta clave. La combinación crea una tirada única que ninguna lectura genérica de tarot puede proporcionar porque está derivada de su carta natal real.</p>
+     </div>
+ </section>
+
+ <!-- ==================== FAQ ACCORDION ==================== -->
+ <section class="py-10 md:py-14 bg-white">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Preguntas frecuentes</h2>
+         <div class="space-y-3">
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">¿Necesito conocer el tarot para usar la carta Astro Tarot?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">No. La carta Astro Tarot proporciona significados de cartas junto con cada posición, para que pueda entender el simbolismo incluso si nunca ha estudiado tarot.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">¿Es Astro Tarot una lectura de tarot?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">No es una lectura predictiva en el sentido tradicional. Es un mapeo de su carta natal sobre el simbolismo del tarot, mostrando qué cartas son parte de su firma astrológica personal. Piense en ello como un retrato fijo más que como una tirada barajada.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">¿Puedo usar esto para mejorar mis lecturas de tarot?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Absolutamente. Entender las correspondencias astrológicas detrás de cada carta profundiza su capacidad interpretativa y le ayuda a conectar el simbolismo del tarot con las energías planetarias reales en su carta y en los tránsitos actuales.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">¿Ofrece Genetic Matrix lecturas de tarot?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Genetic Matrix proporciona la carta Astro Tarot, que mapea su carta natal con correspondencias de tarot. Esta es una herramienta única que conecta la astrología y el tarot más que una lectura tradicional de cartas barajadas.</div>
+             </details>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== CONTINUE LEARNING ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Otros temas de Learn</h2>
+         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+             <a href="/astrology/zodiac-signs/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Signos zodiacales &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Los 12 signos más el decimotercer signo.</p>
+             </a>
+             <a href="/astrology/planets/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Planetas &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Del Sol a Plutón, Quirón y Lilith.</p>
+             </a>
+             <a href="/astrology/houses/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Casas &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">12 casas y 10 sistemas de casas explicados.</p>
+             </a>
+             <a href="/astrology/asteroids/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Asteroides &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Ceres, Palas, Juno, Vesta y más allá.</p>
+             </a>
+             <a href="/astrology/ayanamsha/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Ayanamsha &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Más de 50 sistemas de zodíaco sideral.</p>
+             </a>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== CTA BANNER ==================== -->
+ <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+     <div class="max-w-2xl mx-auto px-6">
+         <h2 class="text-2xl md:text-3xl font-bold mb-4">Explore su carta</h2>
+         <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">Vea su carta personalizada de Astro Tarot y descubra qué cartas de tarot corresponden a las posiciones de su carta natal.</p>
+        <a href="https://www.geneticmatrix.com/pricing/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+            Get Pro &rarr;
+        </a>
+</div>
+ </section>
+
+ <!-- ==================== FOOTER ==================== -->
+ <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+                <div class="text-center md:text-left">
+                    <img src="../../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">Todos los derechos reservados.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Privacidad, términos y condiciones</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Preguntas frecuentes</a>
+                    </p>
+                </div>
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Suscríbase a nuestro boletín</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Regístrese en nuestro boletín para recibir actualizaciones, ofertas, nuevos lanzamientos y todo lo relacionado con Genetic Matrix.</p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input type="email" placeholder="Su dirección de correo electrónico" class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400">
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Conéctese con nosotros</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener"><img src="../../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10"></a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener"><img src="../../assets/icon-x.svg" alt="X" class="w-10 h-10"></a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener"><img src="../../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10"></a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener"><img src="../../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10"></a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Póngase en contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
+</body>
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodíaco Tropical | Métodos de Cálculo - Genetic Matrix</title>
+    <meta name="description" content="Aprenda cómo funciona el zodíaco Tropical en Diseño Humano y Astrología. Entienda por qué Genetic Matrix usa el anclaje estacional y qué significa para su carta.">
+    <meta name="keywords" content="zodíaco tropical, cálculo diseño humano, tropical vs sideral, equinoccio vernal, zodíaco estacional, Ra Uru Hu tropical, métodos cálculo genetic matrix, cálculo carta diseño humano, zodíaco tropical diseño humano, sistema coordenadas zodíaco">
+    <link rel="canonical" href="https://www.geneticmatrix.com/learn/calculations/tropical/">
+    <meta property="og:title" content="El Zodíaco Tropical - Métodos de Cálculo | Genetic Matrix">
+    <meta property="og:description" content="La base estacional del Diseño Humano: qué es, cómo funciona y por qué Ra Uru Hu construyó el sistema sobre él.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.geneticmatrix.com/learn/calculations/tropical/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gm-purple': '#6E5898',
+                        'gm-purple-light': '#9080B1',
+                        'gm-purple-soft': '#AC94D8',
+                        'gm-dark': '#3C2864',
+                        'gm-darker': '#2e1f4d',
+                        'gm-green': '#54931E',
+                        'gm-green-dark': '#468018',
+                        'gm-green-light': '#8EB86A',
+                        'gm-pink': '#F66378',
+                        'gm-orange': '#E8961D',
+                        'gm-gray': '#707070',
+                        'gm-light': '#F7F8F9',
+                        'gm-card': '#FAFBFC',
+                        'gm-card-active': '#F4F0FC',
+                        'gm-border': '#D8D4E4',
+                        'gm-warning': '#F8F8E8',
+                        'gm-text-dark': '#1A1A2E',
+                        'gm-text': '#444444',
+                        'gm-text-light': '#949494',
+                    },
+                    fontFamily: {
+                        'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        details summary { cursor: pointer; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+        details[open] summary::after { content: '\2212'; }
+        details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+
+    <!-- Article JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "El Zodíaco Tropical - Métodos de Cálculo en Diseño Humano",
+        "description": "Aprenda cómo funciona el zodíaco Tropical en Diseño Humano y Astrología. Entienda por qué Genetic Matrix usa el anclaje estacional y qué significa para su carta.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Genetic Matrix",
+            "url": "https://www.geneticmatrix.com"
+        },
+        "mainEntityOfPage": "https://www.geneticmatrix.com/learn/calculations/tropical/",
+        "datePublished": "2025-01-15",
+        "dateModified": "2026-03-06"
+    }
+    </script>
+
+    <!-- FAQ JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Es Tropical el método más preciso para Diseño Humano?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Es el método que Ra Uru Hu especificó para Diseño Humano, y es la base sobre la cual se desarrolló toda la investigación y enseñanza original de Diseño Humano. Si es \"más preciso\" depende de su marco de referencia. Dentro del contexto del sistema de Ra, Tropical es el método previsto. Genetic Matrix proporciona otras opciones para quienes deseen explorar, pero Tropical sigue siendo el predeterminado y la línea base."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Por qué mi signo solar difiere entre Tropical y Sideral?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Porque los dos sistemas se han separado aproximadamente 24 grados debido a la precesión axial durante los últimos dos milenios. Si su cumpleaños cae temprano en un signo en Tropical, un cálculo Sideral puede colocar su Sol en el signo anterior. Esto es normal y esperado: son sistemas de coordenadas genuinamente diferentes, no diferentes niveles de precisión."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es la diferencia entre Tropical y Tropical (J2000)?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ambos son sistemas Tropicales: ambos anclan 0 grados Aries al Equinoccio Vernal. La diferencia está en cómo se maneja la referencia del equinoccio. El Tropical tradicional usa el equinoccio de la fecha (lo que significa que la referencia se desplaza ligeramente cada año con la precesión). Tropical (J2000) usa una referencia fija del equinoccio del 1 de enero de 2000, creando una época estable. La diferencia práctica es pequeña pero puede afectar la decodificación detallada del Diseño Humano en los niveles de Color, Tono y Base."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Debería cambiar de Tropical a otro método?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Esa es completamente su decisión. Tropical es el método que Ra usó y con el que trabajan la mayoría de practicantes de Diseño Humano. Si tiene curiosidad sobre otros métodos, Genetic Matrix hace fácil generar su carta bajo cualquiera de nuestras opciones de cálculo y comparar. Recomendamos usar un método consistentemente en lugar de mezclar resultados entre métodos."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Tiene el zodíaco Tropical algo que ver con las constelaciones reales?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No, y esta es una fuente común de confusión. Los signos del zodíaco Tropical no son lo mismo que las constelaciones astronómicas. El signo Aries en el zodíaco Tropical es un arco de 30 grados del cielo que comienza en el Equinoccio Vernal. La constelación Aries es un grupo de estrellas. Debido a la precesión, el signo Tropical de Aries actualmente se superpone principalmente con la constelación Piscis en el cielo. Los signos y las constelaciones comparten nombres pero son cosas diferentes."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Está diciendo Genetic Matrix que otros métodos son incorrectos?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Ofrecemos Tropical como predeterminado porque es sobre lo que se construyó Diseño Humano. Ofrecemos otros métodos porque creemos en darle herramientas para explorar. Diferentes métodos responden diferentes preguntas. No estamos aquí para decirle qué creer: estamos aquí para darle las mejores herramientas posibles para que lo descubra usted mismo."
+                }
+            }
+        ]
+    }
+    </script>
+
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- ==================== NAV BAR ==================== -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <!-- Logo -->
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../../assets/logo.svg" alt="Genetic Matrix - Conócete" class="h-14">
+            </a>
+
+            <!-- Right Nav: LOGGED OUT (default for static pages) -->
+            <div class="flex items-center gap-8">
+                <!-- Report Icon -->
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Reportes">
+                    <img src="../../assets/icon-report.svg" alt="Reportes" class="h-9 w-9">
+                </a>
+                <!-- Talking Chart Icon -->
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Cartas Parlantes">
+                    <img src="../../assets/icon-talking-chart.svg" alt="Cartas Parlantes" class="h-7 w-7">
+                </a>
+                <!-- Free Chart (popup on live site - Shafik to wire up) -->
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Carta Gratuita</a>
+                <!-- Learn -->
+                <a href="../../" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Learn Hub</a>
+                <!-- Our Plans -->
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Nuestros Planes</a>
+                <!-- Cart -->
+                <a href="https://www.geneticmatrix.com/cart/" title="Carrito">
+                    <img src="../../assets/icon-cart.svg" alt="Carrito" class="h-8 w-auto">
+                </a>
+                <!-- Language Selector -->
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>Español</span>
+                    <img src="../../assets/icon-english.svg" alt="Español" class="h-5 w-7">
+                </div>
+                <!-- Sign In (popup on live site - Shafik to wire up) -->
+                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Iniciar Sesión</a>
+                <!-- Register -->
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Registrarse</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== BREADCRUMB ==================== -->
+    <div class="bg-gm-light border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-6 py-3">
+            <a href="../../" class="text-gm-purple hover:text-gm-dark text-sm font-medium transition">&larr; Volver a Learn Hub</a>
+        </div>
+    </div>
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+        <div class="max-w-3xl mx-auto px-6">
+            <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Métodos de Cálculo &middot; Tropical</p>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">El Zodíaco Tropical</h1>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
+                La base estacional del Diseño Humano: qué es, cómo funciona y por qué Ra Uru Hu construyó el sistema sobre él.
+            </p>
+        </div>
+    </section>
+    <!-- ==================== INTRO ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="intro">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Si alguna vez se ha preguntado por qué su carta de Diseño Humano se calcula como se hace, la respuesta comienza aquí. El zodíaco Tropical es el método de cálculo predeterminado en Genetic Matrix, y el que Ra Uru Hu usó cuando desarrolló el Diseño Humano. Esta página explica qué significa eso y por qué es importante.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== AVAILABLE CALCULATION METHODS ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="available-methods">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Métodos de Cálculo Disponibles
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                <div class="bg-gm-card-active rounded-xl border-2 border-gm-purple p-4">
+                    <div class="text-sm font-bold text-gm-dark mb-1">Tropical</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Zodíaco estacional tradicional</p>
+                    <span class="inline-block bg-gm-green text-white text-[10px] font-bold rounded px-2 py-0.5 mt-2 uppercase">Esta página</span>
+                </div>
+                <a href="/calculations/j2000/" class="bg-white rounded-xl border border-gm-border p-4 hover:shadow-md hover:border-gm-purple transition">
+                    <div class="text-sm font-bold text-gm-dark mb-1">Tropical (J2000)</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Marco de referencia fijo</p>
+                </a>
+                <a href="/calculations/sidereal/" class="bg-white rounded-xl border border-gm-border p-4 hover:shadow-md hover:border-gm-purple transition">
+                    <div class="text-sm font-bold text-gm-dark mb-1">Sideral</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Zodíaco basado en estrellas</p>
+                </a>
+                <a href="/calculations/13-sign-sidereal/" class="bg-white rounded-xl border border-gm-border p-4 hover:shadow-md hover:border-gm-purple transition">
+                    <div class="text-sm font-bold text-gm-dark mb-1">Sideral de 13 Signos</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Incluye Ofiuco</p>
+                </a>
+                <a href="/calculations/true-sidereal/" class="bg-white rounded-xl border border-gm-border p-4 hover:shadow-md hover:border-gm-purple transition">
+                    <div class="text-sm font-bold text-gm-dark mb-1">Sideral Verdadero</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Ayanamsas Kanatas, Chimenti, Midpoint</p>
+                </a>
+                <a href="/calculations/draconic/" class="bg-white rounded-xl border border-gm-border p-4 hover:shadow-md hover:border-gm-purple transition">
+                    <div class="text-sm font-bold text-gm-dark mb-1">Dracónica</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Basado en nodos lunares</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT IS THE TROPICAL ZODIAC? ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="what-is-tropical">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> ¿Qué es el Zodíaco Tropical?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                El zodíaco Tropical es un sistema de coordenadas que divide el cielo en 12 segmentos iguales de 30 grados, anclado a las estaciones de la Tierra. El punto de partida, 0 grados Aries, está fijado al Equinoccio Vernal: el momento cada año cuando el Sol cruza el ecuador celeste dirigiéndose hacia el norte, marcando el comienzo de la primavera en el Hemisferio Norte.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Este es un sistema puramente centrado en la Tierra y estacional. No está anclado a las estrellas. Está anclado a nuestra relación con el Sol a través del año.
+            </p>
+
+            <!-- Seasons Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+                <div class="bg-white rounded-xl border border-gm-border p-5 text-center">
+                    <div class="text-3xl mb-2">&#127793;</div>
+                    <div class="text-sm font-bold text-gm-dark">Equinoccio Vernal</div>
+                    <p class="text-xs text-gray-500 mt-1">0&#176; Aries - Comienza la primavera</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-5 text-center">
+                    <div class="text-3xl mb-2">&#9728;&#65039;</div>
+                    <div class="text-sm font-bold text-gm-dark">Solsticio de Verano</div>
+                    <p class="text-xs text-gray-500 mt-1">0&#176; Cáncer - Comienza el verano</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-5 text-center">
+                    <div class="text-3xl mb-2">&#127810;</div>
+                    <div class="text-sm font-bold text-gm-dark">Equinoccio Otoñal</div>
+                    <p class="text-xs text-gray-500 mt-1">0&#176; Libra - Comienza el otoño</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-5 text-center">
+                    <div class="text-3xl mb-2">&#10052;&#65039;</div>
+                    <div class="text-sm font-bold text-gm-dark">Solsticio de Invierno</div>
+                    <p class="text-xs text-gray-500 mt-1">0&#176; Capricornio - Comienza el invierno</p>
+                </div>
+            </div>
+
+            <!-- Everyday Example -->
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-xs font-bold tracking-widest text-gm-green uppercase mb-2">Ejemplo Cotidiano</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Piense en la cara de un reloj. Los números no corresponden a estrellas fijas: corresponden a la rotación de la Tierra a través del tiempo. Las 12 en punto siempre es mediodía, no un punto fijo en la galaxia. El zodíaco Tropical funciona de la misma manera: los signos rastrean nuestra relación estacional con el Sol, no nuestra posición relativa a estrellas distantes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY DID RA USE THE TROPICAL ZODIAC? ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="why-tropical">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> ¿Por Qué Ra Usó el Zodíaco Tropical?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Ra Uru Hu tomó una decisión deliberada de anclar el Diseño Humano al zodíaco Tropical. Su razonamiento era que el Diseño Humano es fundamentalmente sobre la mecánica de la encarnación: la experiencia física de estar vivo en la Tierra, en un cuerpo, en una estación, en un momento. El zodíaco Tropical, enraizado en la relación de la Tierra con el Sol, refleja esa experiencia encarnada.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Ra rechazó explícitamente el zodíaco Sideral para los cálculos de Diseño Humano. Vio el anclaje estacional del sistema Tropical como esencial para la integridad de la carta.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== TROPICAL VS SIDEREAL ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="tropical-vs-sidereal">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Tropical vs. Sideral: La Diferencia Clave
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                La distinción más importante en los métodos de cálculo del zodíaco es entre Tropical y Sideral. Vale la pena entender esto claramente, porque es la base de muchas preguntas sobre métodos de cálculo.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Debido a la precesión axial, el movimiento lento del eje de rotación de la Tierra durante aproximadamente 26,000 años, el zodíaco Tropical y el zodíaco Sideral se han separado aproximadamente 24 grados durante dos milenios. Estuvieron alineados alrededor del 285 d.C. Hoy están aproximadamente 24 grados fuera de alineación y separándose más cada siglo.
+            </p>
+
+            <!-- Comparison Table -->
+            <div class="overflow-x-auto rounded-xl border border-gm-border mb-8">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="bg-gm-purple text-white">
+                            <th class="text-left py-3 px-5 font-semibold">Característica</th>
+                            <th class="text-left py-3 px-5 font-semibold">Tropical</th>
+                            <th class="text-left py-3 px-5 font-semibold">Sideral</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gm-text">
+                        <tr class="bg-white">
+                            <td class="py-3 px-5 font-semibold border-b border-gm-border">Anclado a</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Estaciones de la Tierra (Equinoccio Vernal = 0&#176; Aries)</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Estrellas fijas (constelaciones)</td>
+                        </tr>
+                        <tr class="bg-gm-card">
+                            <td class="py-3 px-5 font-semibold border-b border-gm-border">¿Se mueve con la precesión?</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Sí - rastrea el equinoccio mientras se desplaza</td>
+                            <td class="py-3 px-5 border-b border-gm-border">No - permanece fijo a las estrellas</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-3 px-5 font-semibold border-b border-gm-border">Diferencia actual</td>
+                            <td class="py-3 px-5 border-b border-gm-border">-</td>
+                            <td class="py-3 px-5 border-b border-gm-border">~24&#176; detrás del Tropical (varía por ayanamsa)</td>
+                        </tr>
+                        <tr class="bg-gm-card">
+                            <td class="py-3 px-5 font-semibold border-b border-gm-border">¿Usado en Diseño Humano?</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Sí - método original de Ra</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Disponible como opción en Genetic Matrix</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-3 px-5 font-semibold border-b border-gm-border">¿Usado en astrología occidental?</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Sí - tradición dominante</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Algunos practicantes</td>
+                        </tr>
+                        <tr class="bg-gm-card">
+                            <td class="py-3 px-5 font-semibold">¿Usado en astrología védica?</td>
+                            <td class="py-3 px-5">Raramente</td>
+                            <td class="py-3 px-5">Sí - tradición dominante</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Everyday Example -->
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-xs font-bold tracking-widest text-gm-green uppercase mb-2">Ejemplo Cotidiano</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Imagine dos personas describiendo la ubicación de un edificio. Una dice "está en la esquina de Principal y Primera", esa es una dirección fija (Sideral, anclado al paisaje físico). La otra dice "está a unos 10 minutos caminando hacia el norte desde donde se instala el mercado cada sábado", eso es relativo a un evento recurrente (Tropical, anclado a las estaciones). Ninguna está equivocada. Son sistemas de referencia diferentes describiendo el mismo edificio.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HOW THE TROPICAL ZODIAC WORKS IN YOUR CHART ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="how-it-works">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Cómo Funciona el Zodíaco Tropical en Su Carta
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Cuando Genetic Matrix calcula su carta de Diseño Humano usando el método Tropical, usa una efemérides astronómica precisa para determinar dónde estaba cada planeta en su momento de nacimiento, expresado como una longitud dentro del zodíaco Tropical (0&#176; a 360&#176;).
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Esa longitud se decodifica después en el sistema de 64 puertas del Diseño Humano. El zodíaco de 360 grados se divide en 64 puertas, cada una abarcando 5.625 grados. Cada puerta se subdivide en 6 líneas, cada línea en 6 colores, cada color en 6 tonos, y cada tono en 5 bases, creando un sistema extraordinariamente detallado de distinción.
+            </p>
+
+            <!-- Subdivision Box -->
+            <div class="bg-gm-card-active rounded-xl border border-gm-border p-6 md:p-8 mb-8">
+                <p class="text-sm font-bold text-gm-dark mb-4">La subdivisión Tropical:</p>
+                <div class="font-mono text-sm text-gm-text leading-loose">
+                    <p>1 Puerta = 360&#176; / 64 = 5.625&#176;</p>
+                    <p>1 Línea = 5.625&#176; / 6 = 0.9375&#176;</p>
+                    <p>1 Color = 0.9375&#176; / 6 = 0.15625&#176;</p>
+                    <p>1 Tono = 0.15625&#176; / 6 = 0.0260417&#176; (aprox. 1'33.75")</p>
+                    <p>1 Base = 0.0260417&#176; / 5 = 0.0052083&#176; (aprox. 18.75")</p>
+                </div>
+                <p class="text-gm-text text-sm leading-relaxed mt-4">
+                    Para cuando se alcanza el nivel de Base, el zodíaco se ha dividido en 92,160 posiciones distintas. El cálculo preciso no es opcional: es esencial.
+                </p>
+            </div>
+
+            <!-- Blockquote -->
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    "El zodíaco Tropical ancla el Diseño Humano a la experiencia vivida y encarnada: el cambio de estaciones, el ritmo de una vida en la Tierra."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ACCORDION ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Preguntas Frecuentes
+            </h2>
+            <div class="space-y-3">
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        ¿Es Tropical el método más preciso para Diseño Humano?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Es el método que Ra Uru Hu especificó para Diseño Humano, y es la base sobre la cual se desarrolló toda la investigación y enseñanza original de Diseño Humano. Si es "más preciso" depende de su marco de referencia. Dentro del contexto del sistema de Ra, Tropical es el método previsto. Genetic Matrix proporciona otras opciones para quienes deseen explorar, pero Tropical sigue siendo el predeterminado y la línea base.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        ¿Por qué mi signo solar difiere entre Tropical y Sideral?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Porque los dos sistemas se han separado aproximadamente 24 grados debido a la precesión axial durante los últimos dos milenios. Si su cumpleaños cae temprano en un signo en Tropical, un cálculo Sideral puede colocar su Sol en el signo anterior. Esto es normal y esperado: son sistemas de coordenadas genuinamente diferentes, no diferentes niveles de precisión.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        ¿Cuál es la diferencia entre Tropical y Tropical (J2000)?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Ambos son sistemas Tropicales: ambos anclan 0&#176; Aries al Equinoccio Vernal. La diferencia está en cómo se maneja la referencia del equinoccio. El Tropical tradicional usa el equinoccio de la fecha (lo que significa que la referencia se desplaza ligeramente cada año con la precesión). Tropical (J2000) usa una referencia fija del equinoccio del 1 de enero de 2000, creando una época estable. La diferencia práctica es pequeña pero puede afectar la decodificación detallada del Diseño Humano en los niveles de Color, Tono y Base.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        ¿Debería cambiar de Tropical a otro método?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Esa es completamente su decisión. Tropical es el método que Ra usó y con el que trabajan la mayoría de practicantes de Diseño Humano. Si tiene curiosidad sobre otros métodos, Genetic Matrix hace fácil generar su carta bajo cualquiera de nuestras opciones de cálculo y comparar. Recomendamos usar un método consistentemente en lugar de mezclar resultados entre métodos.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        ¿Tiene el zodíaco Tropical algo que ver con las constelaciones reales?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        No, y esta es una fuente común de confusión. Los signos del zodíaco Tropical no son lo mismo que las constelaciones astronómicas. El signo "Aries" en el zodíaco Tropical es un arco de 30 grados del cielo que comienza en el Equinoccio Vernal. La constelación Aries es un grupo de estrellas. Debido a la precesión, el signo Tropical de Aries actualmente se superpone principalmente con la constelación Piscis en el cielo. Los signos y las constelaciones comparten nombres pero son cosas diferentes.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        ¿Está diciendo Genetic Matrix que otros métodos son incorrectos?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        No. Ofrecemos Tropical como predeterminado porque es sobre lo que se construyó Diseño Humano. Ofrecemos otros métodos porque creemos en darle herramientas para explorar. Diferentes métodos responden diferentes preguntas. No estamos aquí para decirle qué creer: estamos aquí para darle las mejores herramientas posibles para que lo descubra usted mismo.
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTINUE LEARNING ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Otros Temas de Learn Hub
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="/calculations/j2000/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Tropical (J2000) &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Referencia tropical de época fija para decodificación detallada de Diseño Humano.</p>
+                </a>
+                <a href="/calculations/sidereal/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Sideral &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Zodíaco anclado a estrellas usado en astrología védica y disponible en Genetic Matrix.</p>
+                </a>
+                <a href="/calculations/draconic/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Dracónica &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Método de cálculo basado en nodos lunares para exploración más profunda del alma.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Genere Su Carta Tropical</h2>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+                Vea su carta de Diseño Humano calculada usando el método Tropical original de Ra. Compárela con otros métodos para ver qué cambia.
+            </p>
+            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+                Get Pro &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+
+                <!-- Left: Logo & Copyright -->
+                <div class="text-center md:text-left">
+                    <img src="../../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">Todos los derechos reservados.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Privacidad, Términos y Condiciones</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+
+                <!-- Center: Newsletter (Shafik to wire up form backend) -->
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Suscríbase a Nuestro Boletín</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Regístrese en nuestro boletín para recibir actualizaciones, ofertas,
+                        nuevos lanzamientos y todo relacionado con Genetic Matrix.
+                    </p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input
+                            type="email"
+                            placeholder="Su Dirección de Email"
+                            class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400"
+                        >
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Social & Contact -->
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Conéctese con Nosotros</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener">
+                            <img src="../../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
+                        </a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener">
+                            <img src="../../assets/icon-x.svg" alt="X" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener">
+                            <img src="../../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener">
+                            <img src="../../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
+                        </a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Contáctenos</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+<script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
+</body>
+</html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodíaco Sideral | Métodos de Cálculo - Genetic Matrix</title>
+    <meta name="description" content="Entienda el zodíaco Sideral en Diseño Humano. Aprenda cómo difieren los cálculos anclados a las estrellas del Tropical, qué significa ayanamsa y cómo comparar sus cartas.">
+    <meta name="keywords" content="zodíaco sideral, diseño humano sideral, astrología védica diseño humano, ayanamsa, sideral vs tropical, cálculo sideral, jyotish diseño humano, precesión zodíaco, zodíaco basado en estrellas, comparación carta sideral, genetic matrix sideral">
+    <link rel="canonical" href="https://www.geneticmatrix.com/learn/calculations/sidereal/">
+    <meta property="og:title" content="El Zodíaco Sideral - Método de Cálculo Anclado a las Estrellas">
+    <meta property="og:description" content="Anclado a las estrellas, no a las estaciones. Qué es el zodíaco Sideral, cómo difiere del Tropical y qué significa para su carta de Diseño Humano.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.geneticmatrix.com/learn/calculations/sidereal/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gm-purple': '#6E5898',
+                        'gm-purple-light': '#9080B1',
+                        'gm-purple-soft': '#AC94D8',
+                        'gm-dark': '#3C2864',
+                        'gm-darker': '#2e1f4d',
+                        'gm-green': '#54931E',
+                        'gm-green-dark': '#468018',
+                        'gm-green-light': '#8EB86A',
+                        'gm-pink': '#F66378',
+                        'gm-orange': '#E8961D',
+                        'gm-gray': '#707070',
+                        'gm-light': '#F7F8F9',
+                        'gm-card': '#FAFBFC',
+                        'gm-card-active': '#F4F0FC',
+                        'gm-border': '#D8D4E4',
+                        'gm-warning': '#F8F8E8',
+                        'gm-text-dark': '#1A1A2E',
+                        'gm-text': '#444444',
+                        'gm-text-light': '#949494',
+                    },
+                    fontFamily: {
+                        'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        details summary { cursor: pointer; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+        details[open] summary::after { content: '\2212'; }
+        details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+
+    <!-- Article JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "El Zodíaco Sideral - Método de Cálculo Anclado a las Estrellas para Diseño Humano",
+        "description": "Entienda el zodíaco Sideral en Diseño Humano. Aprenda cómo difieren los cálculos anclados a las estrellas del Tropical, qué significa ayanamsa y cómo comparar sus cartas.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Genetic Matrix",
+            "url": "https://www.geneticmatrix.com"
+        },
+        "mainEntityOfPage": "https://www.geneticmatrix.com/learn/calculations/sidereal/",
+        "datePublished": "2025-01-15",
+        "dateModified": "2026-03-06"
+    }
+    </script>
+
+    <!-- FAQ JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Ra Uru Hu usaba cálculos Siderales?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Ra usó explícitamente el zodíaco Tropical y rechazó el Sideral para el Diseño Humano. Consideraba el anclaje estacional del sistema Tropical esencial para la integridad de la carta. Genetic Matrix ofrece el Sideral como herramienta exploratoria, no como respaldo al Diseño Humano Sideral como práctica reconocida dentro del sistema de Ra."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Por qué cambia mi signo solar entre Tropical y Sideral?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Porque los dos zodíacos están actualmente separados por aproximadamente 24 grados. Si usted nació en los primeros días de un signo Tropical - digamos, los primeros días de Aries Tropical - un cálculo Sideral probablemente ubicará su Sol en el signo anterior (Piscis). Los planetas no se han movido; el sistema de coordenadas se ha desplazado."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es la diferencia entre Sideral estándar y Sideral Verdadero?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Sideral estándar usa un valor de ayanamsa convencional ampliamente usado en tradiciones védicas. El Sideral Verdadero (Kanatas, Chimenti, Midpoint) usa valores de ayanamsa derivados de mediciones observacionales de los límites reales de las constelaciones - intentando alinear el zodíaco precisamente con donde las constelaciones están físicamente en el cielo. Las diferencias entre estas variantes son pequeñas (típicamente menos de un grado), pero pueden afectar la decodificación detallada del Diseño Humano."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Es válida una carta de Diseño Humano Sideral?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Dentro del sistema original de Ra, no - él especificó el Tropical. Si una carta Sideral es significativa es una pregunta filosófica que le dejamos a usted. Genetic Matrix provee la herramienta; usted decide qué resuena. Recomendamos no mezclar resultados entre Tropical y Sideral en la práctica."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué ayanamsa debería usar?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Si está explorando desde una perspectiva védica, la opción Sideral estándar es un buen punto de partida. Si quiere profundizar en cálculos Siderales Verdaderos, nuestra página dedicada al Sideral Verdadero explica en detalle las diferencias entre los ayanamsas Kanatas, Chimenti y Midpoint."
+                }
+            }
+        ]
+    }
+    </script>
+
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- ==================== NAV BAR ==================== -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <!-- Logo -->
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../../assets/logo.svg" alt="Genetic Matrix - Conócete" class="h-14">
+            </a>
+
+            <!-- Right Nav: LOGGED OUT (default for static pages) -->
+            <div class="flex items-center gap-8">
+                <!-- Report Icon -->
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Reportes">
+                    <img src="../../assets/icon-report.svg" alt="Reportes" class="h-9 w-9">
+                </a>
+                <!-- Talking Chart Icon -->
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Cartas Parlantes">
+                    <img src="../../assets/icon-talking-chart.svg" alt="Cartas Parlantes" class="h-7 w-7">
+                </a>
+                <!-- Free Chart (popup on live site - Shafik to wire up) -->
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Carta Gratis</a>
+                <!-- Learn -->
+                <a href="../../" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Learn Hub</a>
+                <!-- Our Plans -->
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Nuestros Planes</a>
+                <!-- Cart -->
+                <a href="https://www.geneticmatrix.com/cart/" title="Carrito">
+                    <img src="../../assets/icon-cart.svg" alt="Carrito" class="h-8 w-auto">
+                </a>
+                <!-- Language Selector -->
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>Español</span>
+                    <img src="../../assets/icon-english.svg" alt="Español" class="h-5 w-7">
+                </div>
+                <!-- Sign In (popup on live site - Shafik to wire up) -->
+                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Iniciar Sesión</a>
+                <!-- Register -->
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Registrarse</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== BREADCRUMB ==================== -->
+    <div class="bg-gm-light border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-6 py-3">
+            <a href="../../" class="text-gm-purple hover:text-gm-dark text-sm font-medium transition">&larr; Volver a Learn Hub</a>
+        </div>
+    </div>
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+        <div class="max-w-3xl mx-auto px-6">
+            <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Métodos de Cálculo &middot; Sideral</p>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">El Zodíaco Sideral</h1>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
+                Anclado a las estrellas, no a las estaciones. Qué es el zodíaco Sideral, cómo difiere del Tropical y qué significa para su carta de Diseño Humano.
+            </p>
+        </div>
+    </section>
+    <!-- ==================== INTRO ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                El zodíaco Sideral es el sistema anclado a las estrellas usado en la astrología védica y por algunos practicantes occidentales. Mide las posiciones planetarias en relación con las constelaciones reales en lugar del ciclo estacional de la Tierra. Si alguna vez ha tenido curiosidad sobre por qué su carta se ve diferente bajo el cálculo Sideral, o cuál es la relación entre la astrología védica y occidental, esta página lo explica claramente.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== AVAILABLE CALCULATION METHODS ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="available-methods">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Métodos de Cálculo Disponibles
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                <div class="bg-white rounded-xl border border-gm-border p-4">
+                    <div class="text-sm font-bold text-gray-800 mb-1">Tropical</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Zodíaco estacional tradicional</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-4">
+                    <div class="text-sm font-bold text-gray-800 mb-1">Tropical (J2000)</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Marco de referencia fijo</p>
+                </div>
+                <div class="bg-gm-card-active rounded-xl border-2 border-gm-purple p-4">
+                    <div class="text-sm font-bold text-gm-dark mb-1">Sideral</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Zodíaco basado en estrellas</p>
+                    <span class="inline-block bg-gm-green text-white text-[10px] font-bold rounded px-2 py-0.5 mt-1 uppercase">Esta página</span>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-4">
+                    <div class="text-sm font-bold text-gray-800 mb-1">Sideral de 13 Signos</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Incluye Ofiuco</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-4">
+                    <div class="text-sm font-bold text-gray-800 mb-1">Sideral Verdadero</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Kanatas, Chimenti, Midpoint</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-4">
+                    <div class="text-sm font-bold text-gray-800 mb-1">Dracónica</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Basada en nodos lunares</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT IS THE SIDEREAL ZODIAC? ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="what-is-sidereal">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> ¿Qué Es el Zodíaco Sideral?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                La palabra "sideral" viene del latín <em>sidereus</em>, que significa "de las estrellas". El zodíaco Sideral ancla su punto de partida - 0 grados Aries - a una posición fija entre las estrellas en lugar del equinoccio móvil.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                En la práctica, esto significa que el zodíaco Sideral no se desplaza con la precesión de la Tierra. El punto de partida permanece fijo al fondo estelar, que parece casi completamente fijo desde una perspectiva de escala temporal humana.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                El zodíaco Sideral es la base del Jyotish (astrología védica), que ha sido practicado en India durante miles de años y permanece como una de las tradiciones astrológicas más sofisticadas del mundo.
+            </p>
+
+            <!-- Everyday Example box -->
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-xs font-bold text-gm-purple uppercase tracking-wide mb-2">Ejemplo Cotidiano</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Imagine que quiere describir dónde aparcó su coche. Podría decir "Aparqué junto al roble cerca de la entrada" - ése es un punto de referencia físico fijo (Sideral, anclado a las estrellas). O podría decir "Aparqué donde cae la sombra matutina a las 9am" - eso cambia con la estación (Tropical, anclado a la relación de la Tierra con el Sol). El mismo aparcamiento, diferentes sistemas de referencia.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRECESSION AND THE 24-DEGREE DRIFT ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="precession">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Precesión y la Deriva de 24 Grados
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                El eje de la Tierra traza lentamente un gran círculo en el espacio durante aproximadamente 26,000 años - un movimiento llamado precesión axial. Porque el punto de partida del zodíaco Tropical (el Equinoccio Vernal) está ligado al eje de la Tierra, se desplaza lentamente en relación con las estrellas fijas.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Alrededor del año 285 d.C., los zodíacos Tropical y Sideral estaban alineados. Desde entonces, el Equinoccio Vernal se ha desplazado aproximadamente 24 grados hacia atrás a través de las estrellas - aproximadamente un grado cada 72 años. Hoy, el "signo Tropical de Aries" en realidad corresponde a las estrellas de Piscis en el cielo nocturno.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                La medida de esta deriva se llama <strong>ayanamsa</strong> - una palabra sánscrita que significa "la parte de un signo". Diferentes tradiciones Siderales usan diferentes valores de ayanamsa, razón por la cual existen múltiples métodos de cálculo Sideral.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT IS AYANAMSA? ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="ayanamsa">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> ¿Qué Es Ayanamsa?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                El ayanamsa es la diferencia angular entre los zodíacos Tropical y Sideral en cualquier momento dado. Es aproximadamente 24 grados hoy, pero el valor preciso depende de qué tradición Sideral siga, porque diferentes tradiciones hicieron diferentes elecciones sobre cuándo o dónde estaban originalmente alineados los dos zodíacos.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Genetic Matrix ofrece tres opciones de Sideral Verdadero (ayanamsas Kanatas, Chimenti y Midpoint) para quienes quieren explorar cálculos precisos basados en estrellas. La opción Sideral estándar usa un valor de referencia ampliamente aceptado adecuado para exploración general.
+            </p>
+
+            <!-- Ayanamsa cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-white rounded-xl border border-gm-border p-5">
+                    <div class="text-sm font-bold text-gray-800 mb-1">Sideral Estándar</div>
+                    <div class="text-2xl font-bold text-gm-purple mb-2">~24&#176;</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Referencia Sideral general, adecuada para exploración y comparación con tradiciones védicas</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-5">
+                    <div class="text-sm font-bold text-gray-800 mb-1">Sideral Verdadero (Kanatas)</div>
+                    <div class="text-2xl font-bold text-gm-purple mb-2">~25.2&#176;</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Ayanamsa Kanatas - anclado a los límites reales de constelaciones tal como se observan</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-5">
+                    <div class="text-sm font-bold text-gray-800 mb-1">Sideral Verdadero (Chimenti)</div>
+                    <div class="text-2xl font-bold text-gm-purple mb-2">~24.8&#176;</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Ayanamsa Chimenti - un enfoque observacional refinado de límites estelares</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-5">
+                    <div class="text-sm font-bold text-gray-800 mb-1">Sideral Verdadero (Midpoint)</div>
+                    <div class="text-2xl font-bold text-gm-purple mb-2">~25.0&#176;</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">El punto medio entre Kanatas y Chimenti - una referencia observacional equilibrada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT CHANGES IN YOUR HUMAN DESIGN CHART? ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="what-changes">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> ¿Qué Cambia en Su Carta de Diseño Humano?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Porque el zodíaco Sideral está aproximadamente 24 grados detrás del Tropical, cambiar al cálculo Sideral desplazará todas las longitudes planetarias hacia atrás por aproximadamente 24 grados. Este es un cambio sustancial, mucho mayor que las pequeñas diferencias entre Tropical y Tropical (J2000).
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                Para el Diseño Humano, un cambio de 24 grados casi ciertamente cambiará sus Puertas, y en muchos casos sus Canales, Centros Definidos, Perfil y posiblemente su Tipo. Esta no es una variación sutil, es una carta fundamentalmente diferente.
+            </p>
+
+            <!-- Important Note warning box -->
+            <div class="bg-gm-warning border-l-4 border-gm-orange rounded-r-xl p-5 mb-8">
+                <p class="text-xs font-bold text-gm-orange uppercase tracking-wide mb-2">Nota Importante</p>
+                <p class="text-gm-text text-sm leading-relaxed">
+                    Ra Uru Hu rechazó explícitamente el zodíaco Sideral para el Diseño Humano. Una carta de Diseño Humano Sideral no es un método reconocido dentro de las enseñanzas originales de Ra. Genetic Matrix lo proporciona como herramienta de exploración, particularmente para practicantes que llegan al Diseño Humano desde un trasfondo de astrología védica o sideral y quieren ver cómo se ve el sistema a través de esa lente. Úselo con ese contexto en mente.
+                </p>
+            </div>
+
+            <!-- Comparison table -->
+            <div class="overflow-x-auto rounded-xl border border-gm-border">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="bg-gm-dark text-white">
+                            <th class="text-left py-3 px-5 font-semibold">Elemento de la Carta</th>
+                            <th class="text-left py-3 px-5 font-semibold">Probabilidad de Cambio vs Tropical</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                        <tr class="border-b border-gm-border">
+                            <td class="py-3 px-5 font-semibold text-gray-800">Puerta</td>
+                            <td class="py-3 px-5 text-gray-600">Muy alta - cambio de ~24 grados moverá la mayoría de planetas a una puerta diferente</td>
+                        </tr>
+                        <tr class="border-b border-gm-border bg-gm-card">
+                            <td class="py-3 px-5 font-semibold text-gray-800">Línea</td>
+                            <td class="py-3 px-5 text-gray-600">Muy alta - los cambios se producen en cascada desde los cambios de puerta</td>
+                        </tr>
+                        <tr class="border-b border-gm-border">
+                            <td class="py-3 px-5 font-semibold text-gray-800">Perfil</td>
+                            <td class="py-3 px-5 text-gray-600">Alta - probable que cambie</td>
+                        </tr>
+                        <tr class="border-b border-gm-border bg-gm-card">
+                            <td class="py-3 px-5 font-semibold text-gray-800">Canales</td>
+                            <td class="py-3 px-5 text-gray-600">Alta - los cambios de puerta afectan la activación de canales</td>
+                        </tr>
+                        <tr class="border-b border-gm-border">
+                            <td class="py-3 px-5 font-semibold text-gray-800">Centros Definidos</td>
+                            <td class="py-3 px-5 text-gray-600">Moderada a alta - depende de los cambios de canal</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-5 font-semibold text-gray-800">Tipo</td>
+                            <td class="py-3 px-5 text-gray-600">Posible - si las definiciones de centro cambian significativamente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Blockquote -->
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5 mt-8">
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    El zodíaco Sideral no es mejor o peor que el Tropical, es una pregunta diferente. El Tropical pregunta: ¿dónde está usted en el ciclo de las estaciones? El Sideral pregunta: ¿dónde está usted contra las estrellas?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHO IS THE SIDEREAL OPTION FOR? ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="who-is-it-for">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> ¿Para Quién Es la Opción Sideral?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                La opción de cálculo Sideral en Genetic Matrix es principalmente para:
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                <strong>Astrólogos védicos</strong> que quieren explorar cómo se ve el Diseño Humano a través de un sistema de coordenadas alineado con Jyotish, usando el marco zodiacal con el que ya trabajan.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                <strong>Investigadores curiosos</strong> que quieren entender cuánto afecta el método de cálculo a la carta, y cómo diferentes marcos tradicionales producen diferentes resultados de los mismos datos natales.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                <strong>Practicantes explorando síntesis</strong> entre el Diseño Humano occidental y las tradiciones astrológicas védicas o siderales.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                Si usted es nuevo en el Diseño Humano o sigue el sistema original de Ra, el Tropical es la línea de base apropiada. La opción Sideral es una lente adicional, no un reemplazo.
+            </p>
+
+            <!-- Everyday Example box -->
+            <div class="bg-white border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-xs font-bold text-gm-purple uppercase tracking-wide mb-2">Ejemplo Cotidiano</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Si está aprendiendo a leer un mapa, empieza con el sistema de coordenadas estándar. Una vez que entienda eso, podría explorar otras proyecciones - Mercator, Peters, azimutal - para ver cómo representan el mismo mundo de manera diferente. El Sideral es como una proyección de mapa diferente: misma realidad, diferente representación, útil una vez que entiende el territorio.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ACCORDION ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Preguntas Frecuentes
+            </h2>
+            <div class="space-y-3">
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        ¿Ra Uru Hu usaba cálculos Siderales?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        No. Ra usó explícitamente el zodíaco Tropical y rechazó el Sideral para el Diseño Humano. Consideraba el anclaje estacional del sistema Tropical esencial para la integridad de la carta. Genetic Matrix ofrece el Sideral como herramienta exploratoria, no como respaldo al Diseño Humano Sideral como práctica reconocida dentro del sistema de Ra.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        ¿Por qué cambia mi signo solar entre Tropical y Sideral?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Porque los dos zodíacos están actualmente separados por aproximadamente 24 grados. Si usted nació en los primeros días de un signo Tropical - digamos, los primeros días de Aries Tropical - un cálculo Sideral probablemente ubicará su Sol en el signo anterior (Piscis). Los planetas no se han movido; el sistema de coordenadas se ha desplazado.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        ¿Cuál es la diferencia entre Sideral estándar y Sideral Verdadero?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        El Sideral estándar usa un valor de ayanamsa convencional ampliamente usado en tradiciones védicas. El Sideral Verdadero (Kanatas, Chimenti, Midpoint) usa valores de ayanamsa derivados de mediciones observacionales de los límites reales de las constelaciones - intentando alinear el zodíaco precisamente con donde las constelaciones están físicamente en el cielo. Las diferencias entre estas variantes son pequeñas (típicamente menos de un grado), pero pueden afectar la decodificación detallada del Diseño Humano.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        ¿Es válida una carta de Diseño Humano Sideral?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Dentro del sistema original de Ra, no - él especificó el Tropical. Si una carta Sideral es significativa es una pregunta filosófica que le dejamos a usted. Genetic Matrix provee la herramienta; usted decide qué resuena. Recomendamos no mezclar resultados entre Tropical y Sideral en la práctica.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        ¿Qué ayanamsa debería usar?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Si está explorando desde una perspectiva védica, la opción Sideral estándar es un buen punto de partida. Si quiere profundizar en cálculos Siderales Verdaderos, nuestra página dedicada al Sideral Verdadero explica en detalle las diferencias entre los ayanamsas Kanatas, Chimenti y Midpoint.
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTINUE LEARNING ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Explore Otros Métodos de Cálculo
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="/calculations/tropical/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Tropical &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Método estacional original de Ra</p>
+                </a>
+                <a href="/calculations/j2000/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Tropical (J2000) &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Referencia tropical de época fija</p>
+                </a>
+                <a href="/calculations/draconic/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Dracónica &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Basada en nodos lunares</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Compare Su Carta Sideral</h2>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+                Genere su carta de Diseño Humano bajo cálculos Siderales y compárela con su carta Tropical para ver qué cambia.
+            </p>
+            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+                Get Pro &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+
+                <!-- Left: Logo & Copyright -->
+                <div class="text-center md:text-left">
+                    <img src="../../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">Todos los derechos reservados.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Privacidad, Términos y Condiciones</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+
+                <!-- Center: Newsletter (Shafik to wire up form backend) -->
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Suscríbase a Nuestro Boletín</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Suscríbase a nuestro boletín para recibir actualizaciones, ofertas,
+                        nuevos lanzamientos y todo lo relacionado con Genetic Matrix.
+                    </p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input
+                            type="email"
+                            placeholder="Su Dirección de Email"
+                            class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400"
+                        >
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Social & Contact -->
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Conéctese Con Nosotros</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener">
+                            <img src="../../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
+                        </a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener">
+                            <img src="../../assets/icon-x.svg" alt="X" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener">
+                            <img src="../../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener">
+                            <img src="../../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
+                        </a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Ponerse en Contacto</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+<script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
+</body>
+</html>
