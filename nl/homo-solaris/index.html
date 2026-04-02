@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homo Solaris | De Volgende Menselijke Soort | Genetic Matrix</title>
+    <meta name="description" content="Homo Solaris is de nieuwe soort die voorkomt uit de Solar Plexus Mutatie in februari 2027. Leer over de evolutionaire sprong van Homo Sapiens naar Homo Solaris, de Zonnesmens.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gm-purple': '#6E5898',
+                        'gm-purple-light': '#9080B1',
+                        'gm-purple-soft': '#AC94D8',
+                        'gm-dark': '#3C2864',
+                        'gm-darker': '#2e1f4d',
+                        'gm-green': '#54931E',
+                        'gm-green-dark': '#468018',
+                        'gm-green-light': '#8EB86A',
+                        'gm-pink': '#F66378',
+                        'gm-orange': '#E8961D',
+                        'gm-gray': '#707070',
+                        'gm-light': '#F7F8F9',
+                        'gm-card': '#FAFBFC',
+                        'gm-card-active': '#F4F0FC',
+                        'gm-border': '#D8D4E4',
+                        'gm-warning': '#F8F8E8',
+                        'gm-text-dark': '#1A1A2E',
+                        'gm-text': '#444444',
+                        'gm-text-light': '#949494',
+                    },
+                    fontFamily: {
+                        'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        /* FAQ Accordion */
+        details summary { cursor: pointer; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+        details[open] summary::after { content: '−'; }
+        details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- ==================== NAV BAR ==================== -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14">
+            </a>
+            <div class="flex items-center gap-8">
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Rapporten">
+                    <img src="../../assets/icon-report.svg" alt="Rapporten" class="h-9 w-9">
+                </a>
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Talking Charts">
+                    <img src="../../assets/icon-talking-chart.svg" alt="Talking Charts" class="h-7 w-7">
+                </a>
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Gratis Chart</a>
+                <a href="../../" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Leren</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Onze Abonnementen</a>
+                <a href="https://www.geneticmatrix.com/cart/" title="Winkelwagen">
+                    <img src="../../assets/icon-cart.svg" alt="Winkelwagen" class="h-5 w-auto">
+                </a>
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>Nederlands</span>
+                    <img src="../../assets/icon-english.svg" alt="Nederlands" class="h-5 w-7">
+                </div>
+                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Inloggen</a>
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Registreren</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== BREADCRUMB ==================== -->
+    <div class="bg-gm-light border-b border-gm-border">
+        <div class="max-w-4xl mx-auto px-6 py-3">
+            <a href="../../" class="text-gm-purple text-sm font-medium hover:underline">&larr; Terug naar Learn Hub</a>
+        </div>
+    </div>
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+        <div class="max-w-3xl mx-auto px-6">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Homo Solaris: De Evolutionaire Sprong van de Mensheid</h1>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
+                Een nieuw hoofdstuk in de evolutie van de mensheid staat op het punt zich te ontvouwen. In februari 2027 zal de Solar Plexus Mutatie aanleiding geven tot een nieuwe soort: Homo Solaris, de Zonnesmens.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== INTRODUCTION ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Het ontstaan van Homo Solaris is meer dan een biologische verschuiving. Het vertegenwoordigt een reorganisatie van bewustzijn zelf. Deze toekomstige wezens zullen emotionele stabiliteit belichamen, gebaseerd op gemuteerde Solar Plexus bewustzijn, en bezitten de capaciteit om te functioneren als een collectief bewustzijn. Ze zijn niet buitenaards of gescheiden van ons. Ze zijn wij, geëvolueerd.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                De overgang van het Tijdperk van Planning naar het Tijdperk van de Slapende Phoenix vormt de energetische basis voor deze monumentale sprong in menselijke evolutie. Dit cruciale tijdperk brengt diepgaande veranderingen in de structuur van de samenleving, bewustzijn en het weefsel van menselijke relaties, en vormt de setting voor het ontstaan van Homo Solaris.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Terwijl het Tijdperk van de Slapende Phoenix zich ontvouwt, moeten individuen en gemeenschappen de diepgaande verschuivingen die voor hen liggen navigeren met bewustzijn en aanpassingsvermogen. De opkomst van Homo Solaris is niet alleen een biologisch of energetisch fenomeen. Het is een uitnodiging voor de mensheid om een dieper begrip van zichzelf en haar plaats binnen de kosmische orde te omarmen.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== EVOLUTIONARY TIMELINE ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-3">
+                <span class="text-gm-purple">|</span> De Evolutionaire Reis van de Mensheid
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Het verhaal van de mensheid is er een van voortdurende evolutie. Van Homo Habilis tot Homo Sapiens heeft elke evolutionaire sprong diepgaande veranderingen gebracht in hoe we denken, verbinding maken en overleven. Nu staan we aan de dageraad van nog een transformationeel hoofdstuk.
+            </p>
+
+            <!-- Timeline Cards -->
+            <div class="space-y-4">
+                <!-- Homo Habilis -->
+                <div class="bg-white rounded-lg border border-gm-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gm-card-active rounded-full flex items-center justify-center">
+                            <span class="text-gm-purple font-bold text-sm">1</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Homo Habilis</h3>
+                            <p class="text-xs font-semibold text-gm-purple uppercase tracking-wide mb-2">2,4 tot 1,4 Miljoen Jaar Geleden &middot; De Handige Mens</p>
+                            <p class="text-gm-text text-sm leading-relaxed">
+                                De eerste bekende soort in het Homo geslacht. Homo Habilis was de "handige mens" vanwege zijn vermogen om gereedschappen van steen en bot te maken en te gebruiken. Deze innovatie markeerde het begin van de lange relatie van de mensheid met technologie. Hun relatief grotere brein suggereert het begin van complexere probleemoplossende vaardigheden, een kritieke stap naar de hogere intelligentie die bij latere mensen werd gezien.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Homo Erectus -->
+                <div class="bg-white rounded-lg border border-gm-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gm-card-active rounded-full flex items-center justify-center">
+                            <span class="text-gm-purple font-bold text-sm">2</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Homo Erectus</h3>
+                            <p class="text-xs font-semibold text-gm-purple uppercase tracking-wide mb-2">1,9 Miljoen tot 110.000 Jaar Geleden &middot; De Rechtopstaande Mens</p>
+                            <p class="text-gm-text text-sm leading-relaxed">
+                                Bekend als de "rechtopstaande mens", deze soort beheerste tweevoetige voortbeweging, wat de manier transformeerde waarop mensen interacteerden met hun omgeving. Rechtop lopen bevrijdde hun handen voor andere taken. Een van hun bepalende prestaties was het beheersen van vuur, wat warmte, bescherming en het vermogen om voedsel te koken bood. Dit verbeterde de voeding en droeg bij aan hersengroei. Homo Erectus was de eerste soort die Afrika verliet en zich verspreidde naar Europa en Azië.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Homo Neanderthalensis -->
+                <div class="bg-white rounded-lg border border-gm-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gm-card-active rounded-full flex items-center justify-center">
+                            <span class="text-gm-purple font-bold text-sm">3</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Homo Neanderthalensis</h3>
+                            <p class="text-xs font-semibold text-gm-purple uppercase tracking-wide mb-2">400.000 tot 40.000 Jaar Geleden &middot; De Taaie Overlevende</p>
+                            <p class="text-gm-text text-sm leading-relaxed">
+                                Neanderthalers ontwikkelden robuuste, gespierde lichamen die perfect geschikt waren voor overleving in harde ijstijd klimaten. Naast fysieke taaiheid waren ze bekwame gereedschapmakers en vertoonden tekenen van symbolisch gedrag en creativiteit. Neanderthalers en Homo Sapiens bestonden samen gedurende tot 200.000 à 300.000 jaar, met bewijs van onderlinge voortplanting en culturele uitwisseling. Niet-Afrikaanse moderne mensen dragen vandaag de dag 1 tot 4% Neanderthaler DNA, een bewijs van hun blijvende erfenis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7-Centered Homo Sapiens -->
+                <div class="bg-white rounded-lg border border-gm-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gm-card-active rounded-full flex items-center justify-center">
+                            <span class="text-gm-purple font-bold text-sm">4</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">7-Centrede Homo Sapiens</h3>
+                            <p class="text-xs font-semibold text-gm-purple uppercase tracking-wide mb-2">300.000 Jaar Geleden tot 1781 &middot; De Wijze Mens</p>
+                            <p class="text-gm-text text-sm leading-relaxed">
+                                Het ontstaan van Homo Sapiens markeerde een dramatische sprong in cognitieve vaardigheden, zelfbewustzijn en sociale organisatie. In tegenstelling tot hun voorgangers ontwikkelden Homo Sapiens taal, kunst en cultuur, wat de basis vormde voor wereldwijde beschavingen. Voor het grootste deel van hun geschiedenis functioneerden Homo Sapiens als 7-centrede wezens, functionerend met een bewustzijn gebaseerd op instinct en mentale strategieën. Deze overlevingsgerichte architectuur was gericht op instinctief overleven, mentale verwerking en lineair denken.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9-Centered Homo Sapiens transitus -->
+                <div class="bg-white rounded-lg border border-gm-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gm-card-active rounded-full flex items-center justify-center">
+                            <span class="text-gm-purple font-bold text-sm">5</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">9-Centrede Homo Sapiens Transitus</h3>
+                            <p class="text-xs font-semibold text-gm-purple uppercase tracking-wide mb-2">1781 tot 2027 &middot; De Overgangsmens</p>
+                            <p class="text-gm-text text-sm leading-relaxed">
+                                In 1781 onderging de mensheid een significante energetische verschuiving met de ontdekking van Uranus en het ontstaan van 9-centrede mensen. Deze overgangsvorm markeerde het begin van een nieuw paradigma van zelfbewustzijn, emotionele diepte en innerlijke autoriteit. In tegenstelling tot hun 7-centrede voorgangers integreren 9-centrede mensen zowel strategisch (links) als receptief (rechts) bewustzijn, wat een groter evenwicht mogelijk maakt tussen logica en holistische perceptie. Dit verhoogde zelfbewustzijn effende het pad voor de mensheid om hogere bewustzijnstoestanden te verkennen en zich voor te bereiden op de volgende evolutionaire sprong.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Homo Solaris -->
+                <div class="bg-gm-card-active rounded-lg border-2 border-gm-purple p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gm-purple rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">6</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Homo Solaris</h3>
+                            <p class="text-xs font-semibold text-gm-purple uppercase tracking-wide mb-2">2027 en Verder &middot; De Zonnesmens</p>
+                            <p class="text-gm-text text-sm leading-relaxed">
+                                Het ontstaan van Homo Solaris vertegenwoordigt het volgende hoofdstuk in het evolutionaire verhaal van de mensheid. Deze soort zal worden gedefinieerd door gedeeld bewustzijn, emotionele stabiliteit en onderlinge afhankelijkheid. In tegenstelling tot Homo Sapiens, die van nature individualistisch en competitief zijn, zal Homo Solaris gedijen door collectieve intelligentie en een diepe verbinding met het geheel. De drijvende kracht achter deze transformatie is de Solar Plexus Mutatie, een diepgaande energetische verschuiving die de overgang van het 9-centrede model naar een volledig rechtsgeoriënteerde architectuur zal voltooien.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SPECIES OVERLAP ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Het Belang van Soorteneverweaving
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Evolutionaire overgangen zijn nooit netjes. Er is altijd significante overlap tussen soorten of fasen. Deze overlap maakt interacties, aanpassingen en uitwisselingen mogelijk die het verloop van de evolutie vormgeven.
+            </p>
+
+            <div class="bg-gm-light border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
+                <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Kernprincipe</p>
+                <p class="text-gm-text text-sm leading-relaxed">
+                    Evolutionaire eigenschappen worden niet van de ene dag op de andere overgenomen. Overlappende fasen maken het mogelijk dat nieuwe eigenschappen geleidelijk in de samenleving integreren, in plaats van bestaande systemen abrupt te verstoren. Homo Sapiens en Neanderthalers bestonden bijvoorbeeld tot 300.000 jaar samen.
+                </p>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Het ontstaan van Homo Solaris in 2027 zal niet onmiddellijk pre-mutatie 9-centrede mensen vervangen. In plaats daarvan vertegenwoordigt deze evolutionaire verschuiving de introductie van een gemuteerd 9-centreed bewustzijn, onderscheidend in zijn quad-rechts energetische architectuur. Pre-mutatie 9-centrede mensen zullen naast deze nieuwe vorm blijven bestaan gedurende ten minste nog 100 jaar.
+            </p>
+
+            <h3 class="text-lg font-bold text-gray-800 mt-8 mb-4">Huidige Overgang: 9-Centreed naar Homo Solaris</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Homo Sapiens Transitus, de huidige 9-centrede vorm, functioneert met een Links/Rechts (L/R) energetische architectuur. Het "Rechts" bewustzijn bestaat uit de 4de Toon en niet-gemuteerde 5de en 6de Tonen met receptieve architectuur, in balans met het strategische, mentale focus van het Links bewustzijn (1ste, 2de en 3de Tonen).
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Homo Solaris daarentegen belichaamt een volledig gemuteerd Quad-Rechts Design, wat een diepgaande verschuiving vertegenwoordigt naar holistisch, receptief en niet-lineair bewustzijn. Deze evolutionaire sprong zal niet alleen menselijk potentieel transformeren, maar ook de geleidelijke overgang betekenen weg van de hiërarchische, overlevingsgebaseerde conditionering van de 7-centrede erfenis en de strategische dominantie van Links bewustzijn in de 9-centrede vorm.
+            </p>
+
+            <h3 class="text-lg font-bold text-gray-800 mt-8 mb-4">Waarom Soorteneverweaving Belangrijk Is</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                <div class="bg-gm-light rounded-lg border border-gm-border p-5">
+                    <h4 class="text-sm font-bold text-gray-800 mb-2">Genetische en Culturele Uitwisseling</h4>
+                    <p class="text-gm-text text-xs leading-relaxed">
+                        Overlappende soorten paarden vaak en deelden culturele praktijken, wat het aanpassingsvermogen en overleving verbeterde. Neanderthaler DNA droeg bij aan moderne menselijke eigenschappen zoals immuniteit en cognitieve functie.
+                    </p>
+                </div>
+                <div class="bg-gm-light rounded-lg border border-gm-border p-5">
+                    <h4 class="text-sm font-bold text-gray-800 mb-2">Geleidelijke Integratie</h4>
+                    <p class="text-gm-text text-xs leading-relaxed">
+                        Nieuwe eigenschappen integreren geleidelijk, waardoor abrupte maatschappelijke verstoring wordt vermeden. Overgangsvormen zoals Homo Sapiens Transitus fungeren als bruggen, zodat nieuwe vormen voortbouwen op bestaande fundamenten.
+                    </p>
+                </div>
+                <div class="bg-gm-light rounded-lg border border-gm-border p-5">
+                    <h4 class="text-sm font-bold text-gray-800 mb-2">Voorbereiding voor de Toekomst</h4>
+                    <p class="text-gm-text text-xs leading-relaxed">
+                        Momenteel integreren 9-centrede mensen individualiteit, gemeenschapssteun, "Rechtsheid" in architectuur en emotionele diepte zonder cognitie, wat de basis legt voor het holistische bewustzijn van Homo Solaris.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== KEY TRAITS ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Belangrijke Eigenschappen van Homo Solaris
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Shared Consciousness -->
+                <div class="bg-white rounded-lg border border-gm-border p-6">
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">Gedeeld Bewustzijn</h3>
+                    <p class="text-gray-400 text-xs uppercase tracking-wide mb-4">Collectieve Intelligentie</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        In tegenstelling tot Homo Sapiens, wiens bewustzijn geïndividualiseerd is, zal Homo Solaris functioneren als een collectief bewustzijn. Hun intelligentie zal niet beperkt zijn tot een enkele geest maar zal naadloos stromen door groepsdynamiek, waardoor ongekende niveaus van samenwerking en afstemming mogelijk worden. De strategische mogelijkheden voor Homo Solaris ontstaan door de Penta, het energetische raamwerk dat individuen verbindt tot functionele groepseenheden.
+                    </p>
+                </div>
+
+                <!-- Emotional Evolution -->
+                <div class="bg-white rounded-lg border border-gm-border p-6">
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">Emotionele Evolutie</h3>
+                    <p class="text-gray-400 text-xs uppercase tracking-wide mb-4">Van Chaos naar Stilte</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        De onbewuste pieken en dalen van de emotionele golven in het Homo Sapiens Transitus design zullen worden vervangen door een kalme, gestage emotionele intelligentie, bevorderd door de gemuteerde 5de (Gevoel / Oordeel) en 6de (Aanraking / Acceptatie) Tonen. Deze mutatie brengt een diepgaande verschuiving in emotioneel bewustzijn, wat een staat van harmonie en helderheid mogelijk maakt die de reactieve en vaak chaotische aard van emotionele golven in het 9-centrede design overstijgt.
+                    </p>
+                </div>
+
+                <!-- Interdependence -->
+                <div class="bg-white rounded-lg border border-gm-border p-6">
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">Onderlinge Afhankelijkheid</h3>
+                    <p class="text-gray-400 text-xs uppercase tracking-wide mb-4">Collectieve Overleving</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Terwijl Homo Sapiens gedreven wordt door individualisme en competitie, zal Homo Solaris gedijen op collectieve samenwerking en vertrouwen op de Penta zelf voor groeps- en individuele strategische overlevingsbehoeften. Alleen staand is het zeer onwaarschijnlijk dat een Homo Solaris individu zal overleven zonder toegang tot zijn groepsinfrastructuur. Ze zijn niet buitenaards of gescheiden van ons. Ze zijn wij, geëvolueerd.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Diet Change Note -->
+            <div class="bg-gm-warning border-l-4 border-gm-orange rounded-r-lg p-5 mt-8">
+                <p class="text-xs font-semibold text-gm-orange uppercase tracking-widest mb-2">Significante Verandering</p>
+                <p class="text-gm-text text-sm leading-relaxed">
+                    Een van de meest diepgaande veranderingen die gepaard gaan met de opkomst van Homo Solaris zal een verschuiving in dieet zijn. Homo Solaris zal geen vlees of zuivelproducten eten, waardoor deze voedingsmiddelen overbodig worden voor deze nieuwe tak van de mensheid. Terwijl Homo Sapiens en Homo Solaris de komende honderd jaar naast elkaar bestaan, zal de dierlijke landbouw enige tijd blijven bestaan, maar geleidelijk afnemen.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NAMING THE SPECIES (SEO Section) ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Waarom We "Homo Solaris" Zeggen, Niet "Rave"
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                In traditionele Human Design terminologie wordt de post-2027 soort gewoonlijk de "Rave" genoemd. Genetic Matrix gebruikt de term Homo Solaris (of simpelweg Solaris) omdat deze naam de evolutionaire betekenis en collectieve doel van deze wezens accurater weergeeft.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Het is belangrijk op te merken dat de "Voice" die het Human Design Systeem aan Ra Uru Hu doorgaf nooit daadwerkelijk de naam "Rave" heeft genoemd. Ra zelf beweerde dat hij het woord zijdelings zag tijdens zijn ervaring. Aangezien deze naam nooit direct werd doorgegeven, en gezien wat het woord "rave" oproept in de moderne cultuur, is er goede reden om te twijfelen of het ooit de bedoelde naam was voor deze buitengewone nieuwe soort.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                De naam Homo Solaris betekent "Zonnesmens" en weerspiegelt de bepalende eigenschappen van de nieuwe soort: hun lichtgevend bewustzijn, collectief bewustzijn en vermogen om in harmonie met elkaar en de wereld te leven. In gewoon gebruik noemen we ze simpelweg Solaris, een naam die hun essentie vastlegt terwijl hun verbinding met de mensheid behouden blijft.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Deze naamgevingsconventie weerspiegelt de evolutionaire traditie van de mensheid zelf. Net zoals Homo Habilis ("handige mens") evolueerde naar Homo Erectus ("rechtopstaande mens"), en later naar Homo Sapiens ("wijze mens"), markeert het ontstaan van Homo Solaris de volgende stap in deze reis.
+            </p>
+
+            <div class="bg-gm-card-active rounded-2xl p-8 md:p-10 mt-6">
+                <h3 class="text-lg font-bold text-gray-800 mb-4">Respect voor de Evolutionaire Lijn</h3>
+                <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                    De wezens die na de Solar Plexus Mutatie geboren worden vertegenwoordigen het hoogtepunt van de evolutionaire reis van de mensheid. Het zijn lichtgevende wezens van licht, gebouwd voor collectief bewustzijn en gedeeld bewustzijn. Ze zijn de belichaming van harmonie, onderlinge afhankelijkheid en hoger bewustzijn. Ze labelen met een woord dat geassocieerd wordt met drugsgevoede danscultuur is niet respectvol voor wat ze vertegenwoordigen.
+                </p>
+                <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                    Het woord Solaris, afgeleid van het Latijnse woord voor "Zon", symboliseert verlichting, eenheid en hoger bewustzijn. Het draagt een gevoel van waardigheid, diepte en tijdloosheid. Het eert de diepgaande schoonheid van de nieuwe soort en de transformatieve rol die ze zullen spelen in de toekomst van de mensheid. Taal is belangrijk, en door Solaris te kiezen, streven we ernaar de ware essentie van deze buitengewone evolutionaire sprong te weerspiegelen.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== AGE OF THE SLEEPING PHOENIX ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Het Tijdperk van de Slapende Phoenix
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Sinds 1615 heeft de mensheid geleefd in het Tijdperk van Planning, een era gedefinieerd door coöperatieve collectieve infrastructuren, gedeelde hulpbronnen en sociale contracten. Deze periode, geworteld in tribale en collectieve energieën, gaf aanleiding tot verzorgingsstaten, openbare gezondheidszorg, vakbonden en andere systemen ontworpen om veiligheid en structuur te bieden voor velen.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Deze era loopt echter ten einde in 2027, wat het Tijdperk van de Slapende Phoenix inluidt: een tijd van radicale transformatie gericht op individuele empowerment, differentiatie en zelfvoorzienendheid. De verschuiving in achtergrondfrequentie is geen willekeurige gebeurtenis, maar een geprogrammeerde frequentie ontworpen om het ontstaan van een nieuw menselijk archetype te ondersteunen.
+            </p>
+
+            <h3 class="text-lg font-bold text-gray-800 mt-8 mb-4">De Rol van de 41ste Poort: De Genetische Trigger</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Centraal in deze overgang is de activering van de 41ste Poort, bekend in de genetica als het Start Codon, het punt waarop alle genetische processen beginnen. Op 15 februari 2027 zal de Zon zich afstemmen op de 41ste Poort, wat de culminatie markeert van de Solar Plexus Mutatie en de evolutionaire sprong naar Homo Solaris initieert. De 41ste Poort dient als de genetische "trigger", die het potentieel opent voor een geheel nieuwe vorm van bewustzijn en ervaring.
+            </p>
+
+            <h3 class="text-lg font-bold text-gray-800 mt-8 mb-4">Van het Kruis van Planning naar het Kruis van de Slapende Phoenix</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Gedurende meer dan vier eeuwen heeft het Kruis van Planning onze wereld gedefinieerd. Het was een era gebouwd op de energieën van de stam en het collectief, die samenwerking, gedeelde hulpbronnen en wederzijdse steun door het gezin en zorgvuldig beheerde instellingen aanmoedigde.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Met de komst van 2027 neemt het Kruis van de Slapende Phoenix de overhand, en verschuift de onderliggende frequentie van onze tijd dramatisch. De nadruk verschuift weg van collectieve en tribale energieën, en naar het individu. Het overgrote deel van de energie in dit nieuwe tijdperk is individueel van aard (Poorten 20, 34, 55), met de resterende tribale (verdediging) energie gewijd aan barrièredoorbraak die leidt tot voortplanting (Poort 59), niet tot gemeenschapssteun of sociale contracten.
+            </p>
+
+            <div class="bg-white border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
+                <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">De Phoenix Metafoor</p>
+                <p class="text-gm-text text-sm leading-relaxed">
+                    Het verhaal van de Phoenix gaat niet alleen over vurige vernietiging en wedergeboorte. Het begint met ontwaken. De "Slapende" Phoenix moet, na eeuwen van sluimeren, eerst haar ogen openen. Pas dan kan ze zich overgeven aan de vlammen, de oude vorm laten consumeren en ruimte maken voor iets nieuws om te ontstaan. De evolutionaire mutatie heeft sluimerend in ons DNA gelegen, wachtend op het precieze moment om te ontwaken.
+                </p>
+            </div>
+
+            <h3 class="text-lg font-bold text-gray-800 mt-8 mb-4">Conflict als Katalysator</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Het branden van de Phoenix is niet vredig, en de achteruitgang van het Tijdperk van Planning zal worden gekenmerkt door turbulentie. Terwijl de collectieve structuren steun verliezen, zal de wereld oorlogen om hulpbronnen tegemoet zien, waarbij schaarste aan water, voedsel, energie en bewoonbaar land zowel internationale als interne conflicten zal aanwakkeren. Massale migratie zal verdere druk leggen op reeds fragiele systemen.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Deze conflicten, hoe tragisch ze ook mogen zijn, zijn niet louter destructief. Ze dienen als de vlammen die de grond vrijmaken voor transformatie, integraal deel uitmakend van zowel de dood van de oude orde als de geboorte van de nieuwe. Zoals de Phoenix alleen uit haar eigen as opstaat, zo zal ook Homo Solaris ontstaan uit de turbulentie en ineenstorting van de wereld die Homo Sapiens heeft gebouwd.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== SUPPORTING THE SHIFT ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> De Verschuiving Ondersteunen
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Om te gedijen tijdens dit transformatieve tijdperk is het cruciaal om u af te stemmen op de nieuwe achtergrondfrequentie en te leven volgens uw Strategie en Autoriteit. Dit betekent zelfbewustzijn cultiveren, onderscheidingsvermogen oefenen en keuzes maken die uw unieke design eren.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                Het ondersteunen van het ontstaan van Homo Solaris vereist meer dan alleen persoonlijke afstemming. Het vraagt om bewust omgevingen te creëren waar deze nieuwe individuen herkend, begrepen en ondersteund worden. Als solitaire wezens kunnen Homo Solaris kwetsbaar, misverstaan of zelfs gehandicapt lijken volgens conventionele standaarden. Hun unieke kwaliteiten kunnen worden aangezien voor autisme of sociale teruggetrokkenheid. Het ware potentieel van Homo Solaris wordt echter alleen gerealiseerd wanneer ze deel uitmaken van een Penta, een kleine, synergetische groep van andere Homo Solaris individuen.
+            </p>
+
+            <h3 class="text-lg font-bold text-gray-800 mt-4 mb-4">Praktische Stappen voor het Navigeren van de Overgang</h3>
+            <ul class="space-y-3 text-gm-text text-sm md:text-base leading-relaxed">
+                <li class="flex items-start gap-2">
+                    <span class="text-gm-purple mt-1 flex-shrink-0">&#9679;</span>
+                    <span><strong>Herdefinieer Uw Werk en Carrière:</strong> Focus op het ontwikkelen van vaardigheden die moeilijk te repliceren blijven voor AI en robots, zoals creativiteit, emotionele intelligentie, genuanceerde persoonlijke communicatie, visie en leiderschap.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-gm-purple mt-1 flex-shrink-0">&#9679;</span>
+                    <span><strong>Cultiveer Zelfvoorzienendheid:</strong> Ontwikkel praktische vaardigheden die uw onafhankelijkheid vergroten. Het bouwen van veerkrachtige netwerken van gelijkgestemde individuen kan wederzijdse steun bieden buiten traditionele instellingen.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-gm-purple mt-1 flex-shrink-0">&#9679;</span>
+                    <span><strong>Versterk Uw Gezondheid en Veerkracht:</strong> Investeer in uw fysieke en mentale welzijn. Het komende tijdperk zal turbulent zijn. Robuuste gezondheid, emotionele regulatie en veerkracht van het zenuwstelsel zullen vitale troeven zijn.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-gm-purple mt-1 flex-shrink-0">&#9679;</span>
+                    <span><strong>Omarm Levenslang Leren:</strong> De wereld verandert en zal blijven snel veranderen. Kweek een geest van nieuwsgierigheid en aanpassingsvermogen door nieuwe kennis te zoeken, verschillende perspectieven te verkennen en open te blijven voor innovatie.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-gm-purple mt-1 flex-shrink-0">&#9679;</span>
+                    <span><strong>Geef Prioriteit aan Authentieke Relaties:</strong> Terwijl collectieve structuren oplossen, worden echte verbindingen gebaseerd op wederzijds respect en gedeelde waarden nog belangrijker. Zoek gemeenschap, maar laat het gebouwd zijn op authenticiteit in plaats van verplichting.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-gm-purple mt-1 flex-shrink-0">&#9679;</span>
+                    <span><strong>Koester Uw Unieke Gaven:</strong> De toekomst behoort toe aan degenen die hun individualiteit omarmen. Investeer tijd in het ontdekken en cultiveren van uw unieke talenten, passies en creatieve visie.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ==================== CONCLUSION ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Onze Evolutie Omarmen
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Homo Solaris vertegenwoordigt de volgende evolutionaire stap voor de mensheid, een hoger bewustzijnspotentieel dat niet ontstaat uit scheiding, maar uit de integratie van alles wat we hebben geleerd en zijn geworden. Deze nieuwe soort is geen buitenstaander, noch een verwerping van ons verleden, maar een verfijning en bloei van onze diepste menselijke kwaliteiten. Hun ontstaan signaleert een keerpunt, dat ons uitnodigt om bewust deel te nemen aan onze collectieve transformatie.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Het pad naar deze nieuwe manier van zijn zal niet zonder uitdagingen zijn. De turbulentie van snelle technologische, sociale en ecologische verandering kan soms overweldigend zijn. Toch is het precies in deze momenten van onzekerheid dat onze capaciteit voor aanpassing, veerkracht en creativiteit het meest essentieel wordt. Onze evolutie omarmen betekent zowel onze kwetsbaarheden als onze sterke punten erkennen en ervoor kiezen vooruit te gaan met moed en intentie.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Terwijl we de opkomst van Homo Solaris ondersteunen, worden we geroepen om omgevingen te creëren, binnen onszelf en onder elkaar, waar authenticiteit, empathie, zelfvoorzienendheid en collectieve intelligentie kunnen bloeien. Door ons bewust voor te bereiden op de overgang en het ontstaan van Homo Solaris te ondersteunen, vergroten we niet alleen onze kansen om te gedijen, maar dragen we ook bij aan het creëren van een nieuw, veerkrachtiger en geïnspireerd menselijk verhaal.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT IS NEXT ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-gm-card-active rounded-2xl p-8 md:p-10 text-center">
+                <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">Wat Volgt Er?</h2>
+                <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                    Genetic Matrix zal verdere educatieve materialen leveren over het design en de unieke kwaliteiten van Homo Solaris. Deze bronnen zullen ons allemaal helpen de diepgaande verschillen en het potentieel dat deze nieuwe vorm van mensheid met zich meebrengt beter te begrijpen.
+                </p>
+                <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                    Blijf op de hoogte van updates en nieuwe tools om uw reis in dit opwindende evolutionaire hoofdstuk te ondersteunen.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Veelgestelde Vragen
+            </h2>
+            <div class="space-y-3">
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Wat is de Solar Plexus Mutatie?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        De Solar Plexus Mutatie is een diepgaande energetische verschuiving die fundamenteel zal veranderen hoe nieuw incarnerende mensen emoties, bewustzijn en verbinding ervaren. Het behelst de mutatie van de 5de (Gevoel / Oordeel) en 6de (Aanraking / Acceptatie) Tonen, wat een kalme, gestage emotionele intelligentie creëert die de reactieve emotionele golven van het huidige 9-centrede design vervangt.
+                    </div>
+                </details>
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Wanneer begint de mutatie?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Op 15 februari 2027 stemt de Zon af op de 41ste Poort (het Start Codon), wat de culminatie markeert van de Solar Plexus Mutatie en de evolutionaire sprong naar Homo Solaris initieert. Dit is wanneer de eerste Homo Solaris wezens zullen beginnen te incarneren.
+                    </div>
+                </details>
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Zullen bestaande mensen veranderen in Homo Solaris?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Nee. Bestaande 9-centrede mensen zullen doorgaan met hun huidige design. Homo Solaris verwijst naar nieuw incarnerende wezens die na de mutatie geboren worden. Pre-mutatie 9-centrede mensen zullen naast Homo Solaris bestaan gedurende ten minste nog 100 jaar, net zoals eerdere soorten overlapten tijdens evolutionaire overgangen.
+                    </div>
+                </details>
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Wat is het verschil tussen "Rave" en "Homo Solaris"?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Ze verwijzen naar dezelfde post-2027 soort. "Rave" is de term die traditioneel wordt gebruikt in Human Design. Genetic Matrix gebruikt "Homo Solaris" (betekenis "Zonnesmens") omdat het de evolutionaire lijn correct weergeeft, deze wezens verbindt met het Homo geslacht (Habilis, Erectus, Sapiens, Solaris) en hun verbinding met het verhaal van de mensheid eert in plaats van ze te behandelen als iets buitenaards of losgekoppeld.
+                    </div>
+                </details>
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Wat is het Tijdperk van de Slapende Phoenix?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Het Tijdperk van de Slapende Phoenix is het nieuwe tijdperk dat begint in 2027, ter vervanging van het Tijdperk van Planning dat van kracht is geweest sinds 1615. Het markeert een verschuiving van collectieve en tribale energieën naar individuele empowerment, differentiatie en zelfvoorzienendheid. Het Kruis van de Slapende Phoenix draagt voornamelijk individuele energie (Poorten 20, 34, 55), wat de achtergrondfrequentie die de menselijke samenleving vormt fundamenteel verandert.
+                    </div>
+                </details>
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Kan een Homo Solaris individu alleen overleven?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Alleen staand is het zeer onwaarschijnlijk dat een Homo Solaris individu zal overleven zonder toegang tot zijn groepsinfrastructuur, of begripvolle menselijke verzorgers. Hun ware potentieel wordt alleen gerealiseerd binnen een Penta, een kleine synergetische groep van 3 tot 5 andere Homo Solaris individuen. Binnen deze intentionele collectieven kan hun individuele intelligentie en creativiteit in elkaar grijpen, wat aanleiding geeft tot een nieuw niveau van collectief genie en veerkracht.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CROSS-LINKS ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Andere Leeronderwerpen
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <a href="/types/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
+                    <img src="../../assets/icon-type.svg" alt="Type" class="w-8 h-8 flex-shrink-0">
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-800">Type</h3>
+                        <p class="text-gray-400 text-xs">De vijf Types</p>
+                    </div>
+                </a>
+                <a href="/centers/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
+                    <img src="../../assets/icon-centres.svg" alt="Centra" class="w-8 h-8 flex-shrink-0">
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-800">Centra</h3>
+                        <p class="text-gray-400 text-xs">De negen energiecentra</p>
+                    </div>
+                </a>
+                <a href="/variables/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
+                    <img src="../../assets/icon-arrows.svg" alt="Variabele Pijlen" class="w-8 h-8 flex-shrink-0">
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-800">Variabele Pijlen</h3>
+                        <p class="text-gray-400 text-xs">Kwantum differentiatie</p>
+                    </div>
+                </a>
+                <a href="/gates/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
+                    <img src="../../assets/icon-gates.svg" alt="Poorten" class="w-8 h-8 flex-shrink-0">
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-800">Poorten</h3>
+                        <p class="text-gray-400 text-xs">De 64 Poorten</p>
+                    </div>
+                </a>
+                <a href="/profiles/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
+                    <img src="../../assets/icon-profile.svg" alt="Profielen" class="w-8 h-8 flex-shrink-0">
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-800">Profielen</h3>
+                        <p class="text-gray-400 text-xs">De 12 Profielen</p>
+                    </div>
+                </a>
+                <a href="/definition/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
+                    <img src="../../assets/icon-definition.svg" alt="Definitie" class="w-8 h-8 flex-shrink-0">
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-800">Definitie</h3>
+                        <p class="text-gray-400 text-xs">Hoe energie stroomt</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Verken Uw Design</h2>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+                Uw eigen design begrijpen is de eerste stap in het navigeren van de verschuiving die voor ons ligt. Maak uw gratis chart en ontdek de mechanica van uw unieke Bodygraph.
+            </p>
+            <a href="https://www.geneticmatrix.com/pricing/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+                Get Pro &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-

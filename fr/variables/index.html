@@ -5,11 +5,11 @@
  <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Variables Human Design : Les Quatre Flèches Expliquées | Genetic Matrix</title>
-    <meta name="description" content="Les Variables sont le système des quatre flèches au sommet du Bodygraph Human Design. Découvrez comment la Détermination, l'Environnement, la Motivation et la Perspective se combinent en 16 configurations de Variables qui décrivent l'orientation de votre corps et de votre mental.">
+    <meta name="description" content="Les Variables constituent le système des quatre flèches au sommet du Bodygraph Human Design. Découvrez comment la Détermination, l'Environnement, la Motivation et la Perspective se combinent en 16 configurations de Variables qui décrivent l'orientation de votre corps et de votre mental.">
     <meta name="keywords" content="human design variable, human design arrows, human design determination, human design environment, human design motivation, human design perspective, 16 variables, left right variable, variable configuration, human design PHS, variable arrows, bodygraph arrows">
     <link rel="canonical" href="https://www.geneticmatrix.com/learn/variables/">
     <meta property="og:title" content="Variables Human Design : Les Quatre Flèches Expliquées">
-    <meta property="og:description" content="Les Variables sont le système des quatre flèches au sommet du Bodygraph. Découvrez ce que signifient les orientations gauche et droite et comment les quatre flèches se combinent en 16 configurations.">
+    <meta property="og:description" content="Les Variables constituent le système des quatre flèches au sommet du Bodygraph. Découvrez ce que signifient les orientations gauche et droite et comment les quatre flèches se combinent en 16 configurations.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.geneticmatrix.com/learn/variables/">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -66,7 +66,7 @@
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "Variables Human Design : Les Quatre Flèches Expliquées",
-        "description": "Les Variables sont le système des quatre flèches au sommet du Bodygraph Human Design. Découvrez comment la Détermination, l'Environnement, la Motivation et la Perspective se combinent en 16 configurations.",
+        "description": "Les Variables constituent le système des quatre flèches au sommet du Bodygraph Human Design. Découvrez comment la Détermination, l'Environnement, la Motivation et la Perspective se combinent en 16 configurations.",
         "publisher": {
             "@type": "Organization",
             "name": "Genetic Matrix",
@@ -89,7 +89,7 @@
                 "name": "Que sont les Variables en Human Design ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Les Variables sont le système des quatre flèches au sommet du Bodygraph. Elles montrent comment les mécaniques plus profondes telles que le Cerveau, l'Environnement, la Perspective et le Mental sont orientées."
+                    "text": "Les Variables constituent le système des quatre flèches au sommet du Bodygraph. Elles montrent comment des mécaniques plus profondes telles que le Cerveau, l'Environnement, la Perspective et le Mental sont orientées."
                 }
             },
             {
@@ -97,7 +97,7 @@
                 "name": "Que signifient les flèches en Human Design ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Les flèches montrent si chaque zone est configurée avec un mode de fonctionnement orienté à gauche ou orienté à droite. De façon générale, cela reflète une orientation stratégique versus réceptive."
+                    "text": "Les flèches indiquent si chaque zone est configurée avec un mode de fonctionnement orienté à gauche ou orienté à droite. De manière générale, cela reflète une orientation stratégique versus réceptive."
                 }
             },
             {
@@ -121,7 +121,7 @@
                 "name": "Vos Variables peuvent-elles changer ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Non. Votre configuration de Variables natale ne change pas. Ce qui peut changer, c'est votre clarté et votre relation vécue avec elle."
+                    "text": "Non. Votre configuration de Variables natale ne change pas. Ce qui peut changer, c'est votre clarté et votre relation vécue à celles-ci."
                 }
             }
         ]
@@ -145,17 +145,24 @@
                     <img src="../../assets/icon-talking-chart.svg" alt="Cartes Parlantes" class="h-7 w-7">
                 </a>
                 <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Carte Gratuite</a>
-                <a href="../../" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Learn</a>
+                <a href="../../" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Apprendre</a>
                 <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Nos Forfaits</a>
-                <a href="https://www.geneticmatrix.com/cart/" title="Panier">
-                    <img src="../../assets/icon-cart.svg" alt="Panier" class="h-8 w-auto">
+                <a href="https://www.geneticmatrix.com/cart/" title="Panier" class="relative">
+                    <img src="../../assets/icon-cart.svg" alt="Panier" class="h-5 w-auto">
+                    <span id="gm-cart-count" class="absolute -top-1 -right-3 text-gm-green font-bold text-sm hidden">0</span>
                 </a>
                 <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
                     <span>Français</span>
                     <img src="../../assets/icon-english.svg" alt="Français" class="h-5 w-7">
                 </div>
-                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Se Connecter</a>
-                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">S'inscrire</a>
+                <div id="gm-logged-out" class="flex items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/my-account/" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium">Se Connecter</a>
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">S'Inscrire</a>
+                </div>
+                <div id="gm-logged-in" class="hidden items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="text-gm-gray hover:text-gray-900 text-sm font-medium">Se Déconnecter</a>
+                    <a href="https://www.geneticmatrix.com/user-home/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Mon Espace</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -170,7 +177,7 @@
     <!-- ==================== HERO ==================== -->
     <section class="bg-gm-dark text-white text-center py-12 md:py-16">
         <div class="max-w-3xl mx-auto px-6">
-            <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Mécaniques Profondes &middot; Variables</p>
+            <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Mécaniques Avancées &middot; Variables</p>
             <h1 class="text-3xl md:text-4xl font-bold mb-4">Variables Human Design : Les Quatre Flèches Expliquées</h1>
             <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
                 Les quatre flèches au sommet de votre Bodygraph révèlent votre architecture cognitive, montrant comment vous êtes conçu pour recevoir la nourriture, trouver le bon environnement, traiter la conscience et percevoir le monde.
@@ -185,13 +192,13 @@
                 <span class="text-gm-purple">|</span> Que Sont les Variables en Human Design ?
             </h2>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
-                C'est l'un des domaines les plus avancés du Human Design. Cela ne remplace pas le Type, la Stratégie, l'Autorité ou le Profil, et ne doit pas être traité comme un raccourci pour contourner les mécaniques fondamentales. Ce que les Variables offrent, c'est une compréhension plus précise de la façon dont votre corps et votre mental sont configurés pour recevoir, traiter et orienter la conscience.
+                Il s'agit de l'un des domaines les plus avancés du Human Design. Cela ne remplace pas le Type, la Stratégie, l'Autorité ou le Profil, et cela ne doit pas être traité comme un raccourci pour contourner les mécaniques fondamentales. Ce que les Variables offrent, c'est une compréhension plus précise de la façon dont votre corps et votre mental sont configurés pour recevoir, traiter et orienter la conscience.
             </p>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
-                Les Variables font référence aux quatre flèches montrées au sommet du Bodygraph. Chaque flèche pointe soit vers la gauche soit vers la droite, créant un motif en quatre parties qui reflète la façon dont votre design est différencié à un niveau subtil.
+                Les Variables font référence aux quatre flèches présentées au sommet du Bodygraph. Chaque flèche pointe soit vers la gauche soit vers la droite, créant un schéma en quatre parties qui reflète la façon dont votre design est différencié à un niveau subtil.
             </p>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
-                On parle souvent des Variables de façon vague, mais ce n'est pas une étiquette de personnalité. C'est un cadre de sous-structure qui décrit l'orientation. Bien comprises, elles montrent comment le corps est conçu pour fonctionner et comment le mental est conçu pour voir et encadrer l'expérience.
+                On parle souvent des Variables de manière approximative, mais ce n'est pas une étiquette de personnalité. C'est un cadre de sous-structure qui décrit l'orientation. Correctement comprises, elles montrent comment le corps est conçu pour opérer et comment le mental est conçu pour voir et encadrer l'expérience.
             </p>
 
             <!-- Birth data warning -->
@@ -203,7 +210,7 @@
             <!-- The Four Arrows -->
             <h3 class="text-lg md:text-xl font-bold text-gray-800 mb-2">Les Quatre Flèches et Ce Qu'Elles Représentent</h3>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
-                Les Variables sont basées sur le Ton et apparaissent dans le Bodygraph comme les quatre flèches au sommet de la carte, montrant l'orientation gauche ou droite des aspects clés de votre design.
+                Les Variables sont basées sur le Ton et apparaissent dans le Bodygraph sous forme de quatre flèches au sommet de la carte, montrant l'orientation gauche ou droite des aspects clés de votre design.
             </p>
 
             <!-- Four-arrow overview cards -->
@@ -212,8 +219,8 @@
                 <div class="arrow-card bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
                     <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Flèche Supérieure Gauche</p>
                     <p class="text-lg font-bold text-gray-800 mb-2">Détermination</p>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1"><span class="font-bold text-arrow-left w-6 text-center">&larr;</span> Active</div>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-3"><span class="font-bold text-arrow-left w-6 text-center">&rarr;</span> Passive</div>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1"><span class="font-bold text-arrow-left w-6 text-center">&larr;</span> Actif</div>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-3"><span class="font-bold text-arrow-left w-6 text-center">&rarr;</span> Passif</div>
                     <p class="text-sm text-gray-500 leading-relaxed">Décrit comment le corps et le cerveau sont conçus pour recevoir et traiter l'information. Appartient au côté corps des Variables.</p>
                 </div>
 
@@ -231,7 +238,7 @@
                     <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Flèche Supérieure Droite</p>
                     <p class="text-lg font-bold text-gray-800 mb-2">Motivation</p>
                     <div class="flex items-center gap-2 text-sm text-gray-600 mb-1"><span class="font-bold text-gray-800 w-6 text-center">&larr;</span> Stratégique</div>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-3"><span class="font-bold text-gray-800 w-6 text-center">&rarr;</span> Réceptive</div>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-3"><span class="font-bold text-gray-800 w-6 text-center">&rarr;</span> Réceptif</div>
                     <p class="text-sm text-gray-500 leading-relaxed">La mécanique plus profonde connectée au Style Mental et à la conscience mentale. Appartient au côté personnalité des Variables.</p>
                 </div>
 
@@ -239,18 +246,18 @@
                 <div class="arrow-card bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
                     <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Flèche Inférieure Droite</p>
                     <p class="text-lg font-bold text-gray-800 mb-2">Perspective</p>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1"><span class="font-bold text-gray-800 w-6 text-center">&larr;</span> Focalisée</div>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1"><span class="font-bold text-gray-800 w-6 text-center">&larr;</span> Focalisé</div>
                     <div class="flex items-center gap-2 text-sm text-gray-600 mb-3"><span class="font-bold text-gray-800 w-6 text-center">&rarr;</span> Périphérique</div>
                     <p class="text-sm text-gray-500 leading-relaxed">Décrit comment le mental est conçu pour voir l'environnement correctement. Appartient au côté personnalité des Variables.</p>
                 </div>
             </div>
 
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
-                Ces mécaniques de Variables ont leurs propres pages dédiées. Ici, elles importent parce qu'elles forment la structure des Variables en Human Design. Explorez chacune d'elles plus en détail ci-dessous :
+                Ces mécaniques de Variables ont leurs propres pages dédiées. Ici, elles sont importantes car elles forment la structure des Variables en Human Design. Explorez chacune d'elles plus en détail ci-dessous :
             </p>
             <ul class="list-disc list-inside text-gm-text text-sm md:text-base leading-relaxed space-y-2">
-                <li>Style Cérébral en Human Design — <a href="/learn/deeper-mechanics/determination/" class="text-gm-purple hover:underline">Détermination</a></li>
-                <li>Style Environnemental en Human Design — <a href="/learn/deeper-mechanics/environment/" class="text-gm-purple hover:underline">Environnement</a></li>
+                <li>Style de Cerveau en Human Design — <a href="/learn/deeper-mechanics/determination/" class="text-gm-purple hover:underline">Détermination</a></li>
+                <li>Style d'Environnement en Human Design — <a href="/learn/deeper-mechanics/environment/" class="text-gm-purple hover:underline">Environnement</a></li>
                 <li>Perspective en Human Design — <a href="/learn/deeper-mechanics/perspective/" class="text-gm-purple hover:underline">Vue</a></li>
                 <li>Style Mental en Human Design — <a href="/learn/deeper-mechanics/motivation/" class="text-gm-purple hover:underline">Motivation</a></li>
             </ul>
@@ -272,10 +279,10 @@
                     <h3 class="text-lg font-bold text-arrow-left mb-3">Côté Corps</h3>
                     <p class="text-gm-text text-sm leading-relaxed mb-3">Les flèches du côté gauche correspondent au côté design de la carte :</p>
                     <ul class="space-y-2 text-sm text-gm-text">
-                        <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Style Cérébral</li>
-                        <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Style Environnemental</li>
+                        <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Style de Cerveau</li>
+                        <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Style d'Environnement</li>
                     </ul>
-                    <p class="text-gm-text text-sm leading-relaxed mt-3">Ces flèches parlent plus directement de la façon dont le corps reçoit et traite l'information, et de comment il s'intègre dans l'environnement correct.</p>
+                    <p class="text-gm-text text-sm leading-relaxed mt-3">Ces flèches parlent plus directement de la façon dont le corps reçoit et traite l'information, et comment il s'intègre dans l'environnement correct.</p>
                 </div>
                 <div>
                     <h3 class="text-lg font-bold text-gray-800 mb-3">Côté Mental</h3>
@@ -284,12 +291,12 @@
                         <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Style Mental</li>
                         <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Perspective</li>
                     </ul>
-                    <p class="text-gm-text text-sm leading-relaxed mt-3">Ces flèches parlent plus directement de la façon dont le mental pense et de comment il voit l'environnement correctement.</p>
+                    <p class="text-gm-text text-sm leading-relaxed mt-3">Ces flèches parlent plus directement de la façon dont le mental pense et comment il voit l'environnement correctement.</p>
                 </div>
             </div>
 
             <p class="text-gm-text text-sm md:text-base leading-relaxed">
-                C'est pourquoi les Variables doivent être lues comme un système plutôt que comme quatre étiquettes déconnectées. Les flèches ne fonctionnent correctement qu'en chaîne : une cognition correcte dans le cerveau mène au bon environnement ; le bon environnement verrouille la bonne vue ; et la bonne vue fournit la bonne information pour que le mental devienne une autorité extérieure unique. Tant que le corps n'est pas aligné correctement, ni la vue correcte ni le fonctionnement mental correct ne sont possibles.
+                C'est pourquoi les Variables doivent être lues comme un système plutôt que comme quatre étiquettes déconnectées. Les flèches ne fonctionnent correctement qu'en tant que chaîne : une cognition correcte dans le cerveau mène au bon environnement ; le bon environnement verrouille la bonne vue ; et la bonne vue fournit la bonne information pour que le mental devienne une autorité extérieure unique. Tant que le corps n'est pas aligné correctement, ni la vue correcte ni le fonctionnement mental correct ne sont possibles.
             </p>
         </div>
     </section>
@@ -335,7 +342,7 @@
             </div>
 
             <p class="text-gm-text text-sm md:text-base leading-relaxed">
-                L'erreur que font la plupart des gens est de confondre les Variables avec l'ancienne notion d'hémisphères cerveau gauche et cerveau droit. Cela passe à côté de l'essentiel. Gauche et droite dans les Variables décrivent des modes d'opération au sein du système, pas une division simpliste entre styles de pensée analytiques et logiques versus créatifs et intuitifs.
+                L'erreur que la plupart des gens commettent est de confondre les Variables avec l'ancienne notion d'hémisphères cerveau gauche et cerveau droit. Cela passe à côté de l'essentiel. Gauche et droite dans les Variables décrivent des modes d'opération au sein du système, non pas une division simpliste entre styles de pensée analytique et logique versus créatif et intuitif.
             </p>
         </div>
     </section>
@@ -347,23 +354,23 @@
                 <span class="text-gm-purple">|</span> Les 16 Configurations de Variables
             </h2>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
-                Comme chacune des quatre flèches peut pointer dans l'une des deux directions, il y a 16 configurations possibles de Variables. Ce qui importe n'est pas de mémoriser le code pour lui-même, mais de comprendre que chaque arrangement crée une relation distincte entre la façon dont le corps et le cerveau reçoivent et traitent l'information, comment le corps s'intègre dans l'environnement correct, comment le mental voit l'environnement, et comment le mental pense.
+                Parce que chacune des quatre flèches peut pointer dans l'une des deux directions, il y a 16 configurations possibles de Variables. Ce qui importe n'est pas de mémoriser le code pour lui-même, mais de comprendre que chaque arrangement crée une relation distincte entre la façon dont le corps et le cerveau reçoivent et traitent l'information, comment le corps s'intègre dans l'environnement correct, comment le mental voit l'environnement, et comment le mental pense.
             </p>
 
-            <h3 class="text-lg font-bold text-gray-800 mt-8 mb-4">Ce Qu'une Configuration Peut Révéler</h3>
+            <h3 class="text-lg font-bold text-gray-800 mt-8 mb-4">Ce qu'une Configuration Peut Révéler</h3>
             <ul class="space-y-2 text-sm text-gm-text mb-8">
                 <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Si votre système est stratégique ou réceptif</li>
                 <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Si votre mental est orienté vers une attention focalisée ou une réceptivité plus large</li>
                 <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Si votre cerveau et votre corps opèrent activement ou passivement</li>
-                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Comment l'orientation du corps et du mental interagissent</li>
-                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> À quel point votre style opératoire global est différencié</li>
+                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Comment l'orientation corporelle et mentale interagissent</li>
+                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> À quel point votre style opérationnel global est différencié</li>
             </ul>
 
             <div class="bg-gm-card-active rounded-2xl p-6 md:p-8 mb-4 flex justify-center">
-                <img src="../../assets/16-variable-configurations.webp" alt="Les 16 configurations de Variables montrant toutes les combinaisons de flèches gauches et droites à travers le Style Cérébral, le Style Environnemental, le Style Mental et la Perspective" class="max-w-full h-auto rounded-lg" loading="lazy">
+                <img src="../../assets/16-variable-configurations.webp" alt="Les 16 configurations de Variables montrant toutes les combinaisons de flèches gauche et droite à travers le Style de Cerveau, le Style d'Environnement, le Style Mental et la Perspective" class="max-w-full h-auto rounded-lg" loading="lazy">
             </div>
             <p class="text-gm-text text-xs text-center italic mb-6">
-                Le graphique ci-dessus montre les 16 arrangements possibles de Variables créés par les quatre flèches. Ils se lisent comme des motifs intégrés d'orientation du corps et du mental, pas comme des codes isolés.
+                Le diagramme ci-dessus montre les 16 arrangements possibles de Variables créés par les quatre flèches. Ceux-ci sont lus comme des schémas intégrés d'orientation corporelle et mentale, non pas comme des codes isolés.
             </p>
 
             <h3 class="text-lg font-bold text-gray-800 mt-8 mb-4">Comment Lire un Code de Variables</h3>
@@ -386,13 +393,13 @@
                         </tr>
                         <tr class="bg-gm-card">
                             <td class="px-5 py-3 text-gray-700">D <strong>L</strong>_ ou D <strong>R</strong>_</td>
-                            <td class="px-5 py-3 text-gray-600">1ère lettre : Style Cérébral (flèche supérieure gauche)</td>
-                            <td class="px-5 py-3 text-arrow-left font-semibold">L = Active</td>
-                            <td class="px-5 py-3 text-arrow-right font-semibold">R = Passive</td>
+                            <td class="px-5 py-3 text-gray-600">1ère lettre : Style de Cerveau (flèche supérieure gauche)</td>
+                            <td class="px-5 py-3 text-arrow-left font-semibold">L = Actif</td>
+                            <td class="px-5 py-3 text-arrow-right font-semibold">R = Passif</td>
                         </tr>
                         <tr class="bg-white">
                             <td class="px-5 py-3 text-gray-700">D _<strong>L</strong> ou D _<strong>R</strong></td>
-                            <td class="px-5 py-3 text-gray-600">2ème lettre : Style Environnemental (flèche inférieure gauche)</td>
+                            <td class="px-5 py-3 text-gray-600">2ème lettre : Style d'Environnement (flèche inférieure gauche)</td>
                             <td class="px-5 py-3 text-arrow-left font-semibold">L = Observé</td>
                             <td class="px-5 py-3 text-arrow-right font-semibold">R = Observateur</td>
                         </tr>
@@ -405,7 +412,7 @@
                             <td class="px-5 py-3 text-gray-700">P <strong>L</strong>_ ou P <strong>R</strong>_</td>
                             <td class="px-5 py-3 text-gray-600">1ère lettre : Style Mental (flèche supérieure droite)</td>
                             <td class="px-5 py-3 text-arrow-left font-semibold">L = Stratégique</td>
-                            <td class="px-5 py-3 text-arrow-right font-semibold">R = Réceptive</td>
+                            <td class="px-5 py-3 text-arrow-right font-semibold">R = Réceptif</td>
                         </tr>
                         <tr class="bg-gm-card">
                             <td class="px-5 py-3 text-gray-700">P _<strong>L</strong> ou P _<strong>R</strong></td>
@@ -418,11 +425,11 @@
             </div>
 
             <p class="text-gm-text text-xs italic mb-4">
-                <strong>Note :</strong> Du côté Personnalité, l'ordre correct pour la justesse des Variables est la Perspective en premier et le Style Mental en second. La convention d'affichage standard a été conservée ici, même si elle fut initialement spécifiée incorrectement par Ra Uru Hu et reconnue comme telle plus tard.
+                <strong>Note :</strong> Du côté Personnalité, l'ordre correct pour la justesse des Variables est d'abord la Perspective puis le Style Mental en second. La convention d'affichage standard a été conservée ici, même si elle avait été initialement spécifiée incorrectement par Ra Uru Hu et reconnue comme telle par la suite.
             </p>
 
             <p class="text-gm-text text-sm md:text-base leading-relaxed">
-                Chaque configuration combine ces quatre mécaniques en un seul motif de Variables. Les lignes décrivent le côté Design à travers le Style Cérébral et le Style Environnemental. Les colonnes décrivent le côté Personnalité à travers le Style Mental et la Perspective. Lisez-les ensemble comme un motif intégré d'orientation du corps et du mental, pas comme quatre étiquettes isolées.
+                Chaque configuration combine ces quatre mécaniques en un seul schéma de Variables. Les lignes décrivent le côté Design à travers le Style de Cerveau et le Style d'Environnement. Les colonnes décrivent le côté Personnalité à travers le Style Mental et la Perspective. Lisez-les ensemble comme un schéma intégré d'orientation corporelle et mentale, non pas comme quatre étiquettes isolées.
             </p>
         </div>
     </section>
@@ -431,20 +438,20 @@
     <section class="py-10 md:py-14 bg-gm-light" id="what-variable-tells-you">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
-                <span class="text-gm-purple">|</span> Ce Que les Variables Vous Disent Vraiment
+                <span class="text-gm-purple">|</span> Ce que les Variables Vous Disent Vraiment
             </h2>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
-                Les Variables sont précieuses parce qu'elles raffinent l'orientation. Elles ne vous disent pas si vous êtes plus conscient, plus spirituel, plus avancé ou plus aligné que quiconque. Ce qu'elles peuvent indiquer avec plus de précision, c'est :
+                Les Variables sont précieuses car elles affinent l'orientation. Elles ne vous disent pas si vous êtes plus conscient, plus spirituel, plus avancé, ou plus aligné que quiconque d'autre. Ce qu'elles peuvent indiquer avec plus de précision, c'est :
             </p>
             <ul class="space-y-2 text-sm text-gm-text mb-8">
-                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Comment votre conscience scanne, filtre et encadre naturellement l'expérience de la vie</li>
+                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Comment votre conscience scanne, filtre et encadre naturellement l'expérience de vie</li>
                 <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Comment le côté corps et le côté mental de la carte sont différenciés</li>
-                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Comment les orientations gauche et droite façonnent la façon dont les Variables opèrent</li>
-                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Comment les quatre flèches travaillent ensemble comme un motif intégré</li>
-                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Comment l'orientation du corps et l'orientation mentale interagissent</li>
+                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Comment l'orientation gauche et droite façonne la manière dont les Variables opèrent</li>
+                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Comment les quatre flèches fonctionnent ensemble comme un schéma intégré</li>
+                <li class="flex items-start gap-2"><span class="text-gm-purple font-bold mt-0.5">&bull;</span> Comment l'orientation corporelle et l'orientation mentale interagissent</li>
             </ul>
             <p class="text-gm-text text-sm md:text-base leading-relaxed">
-                C'est pourquoi les Variables importent aux étudiants sérieux du Human Design. Ce n'est pas un dispositif de branding. C'est une description de la façon dont votre système est configuré sous les couches de carte plus familières, révélant le motif de votre unicité absolue à son plus haut niveau.
+                C'est pourquoi les Variables importent aux étudiants sérieux du Human Design. Ce n'est pas un dispositif de branding. C'est une description de la façon dont votre système est configuré sous les couches de carte plus familières, révélant le schéma de votre unicité absolue à son plus haut niveau.
             </p>
         </div>
     </section>
@@ -453,10 +460,10 @@
     <section class="py-10 md:py-14 bg-white" id="where-variable-appears">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
-                <span class="text-gm-purple">|</span> Où Apparaissent les Variables dans le Bodygraph
+                <span class="text-gm-purple">|</span> Où les Variables Apparaissent dans le Bodygraph
             </h2>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
-                Les Variables apparaissent comme les quatre flèches au sommet de la carte Human Design, positionnées autour de la zone de la tête et de la zone des nœuds. Chaque flèche pointe soit vers la gauche soit vers la droite. Ensemble, elles forment la configuration complète des Variables.
+                Les Variables apparaissent sous forme de quatre flèches au sommet de la carte Human Design, positionnées autour de la zone de la tête et de la zone des nœuds. Chaque flèche pointe soit vers la gauche soit vers la droite. Ensemble, elles forment la configuration complète des Variables.
             </p>
 
             <!-- Bodygraph arrow-location visual -->
@@ -471,18 +478,18 @@
                         <tr class="bg-gm-card-active text-left">
                             <th class="px-5 py-3 font-semibold text-gray-800">Position de la Flèche</th>
                             <th class="px-5 py-3 font-semibold text-gray-800">Zone de Variables</th>
-                            <th class="px-5 py-3 font-semibold text-gray-800">Domaine Large</th>
+                            <th class="px-5 py-3 font-semibold text-gray-800">Domaine Général</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gm-border">
                         <tr class="bg-white">
                             <td class="px-5 py-3 font-semibold text-gm-purple">Supérieure Gauche</td>
-                            <td class="px-5 py-3 text-gray-600">Style Cérébral</td>
-                            <td class="px-5 py-3 text-gray-600">Corps / réception et traitement</td>
+                            <td class="px-5 py-3 text-gray-600">Style de Cerveau</td>
+                            <td class="px-5 py-3 text-gray-600">Corps / prise et traitement</td>
                         </tr>
                         <tr class="bg-gm-card">
                             <td class="px-5 py-3 font-semibold text-gm-purple">Inférieure Gauche</td>
-                            <td class="px-5 py-3 text-gray-600">Style Environnemental</td>
+                            <td class="px-5 py-3 text-gray-600">Style d'Environnement</td>
                             <td class="px-5 py-3 text-gray-600">Corps / intégration environnementale</td>
                         </tr>
                         <tr class="bg-white">
@@ -509,36 +516,36 @@
     <section class="py-10 md:py-14 bg-gm-light" id="deeper-mechanics">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
-                <span class="text-gm-purple">|</span> Variables et Mécaniques Profondes
+                <span class="text-gm-purple">|</span> Variables et Mécaniques Avancées
             </h2>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
-                Les Variables sont étroitement liées aux mécaniques profondes du Human Design, mais elles ne doivent pas être confondues avec elles. Les flèches pointent vers des domaines avancés majeurs tels que la Cognition Tonale, la Détermination, l'Environnement, la Perspective et la Motivation. Ces sujets peuvent et doivent être étudiés à part entière. Cette page concerne le système de Variables lui-même plutôt qu'essayer d'enseigner toutes ces mécaniques dans leur intégralité. Voir la section <a href="/learn/deeper-mechanics/" class="text-gm-purple hover:underline">Mécaniques Profondes</a> pour une compréhension plus approfondie de ces domaines.
+                Les Variables sont étroitement liées aux mécaniques avancées du Human Design, mais elles ne doivent pas être confondues avec celles-ci. Les flèches pointent vers des domaines avancés majeurs tels que la Cognition Tonale, la Détermination, l'Environnement, la Perspective et la Motivation. Ces sujets peuvent et doivent être étudiés en eux-mêmes. Cette page traite du système des Variables lui-même plutôt que d'essayer d'enseigner toutes ces mécaniques en entier. Consultez la section <a href="/learn/deeper-mechanics/" class="text-gm-purple hover:underline">Mécaniques Avancées</a> pour un aperçu plus approfondi de ces domaines.
             </p>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
-                Cette distinction importe. Si une page sur les Variables tente de devenir un guide complet sur le PHS, l'Environnement, la Motivation et la Perspective à la fois, elle perd sa clarté thématique et devient moins efficace tant pour la recherche que pour les utilisateurs sérieux.
+                Cette distinction compte. Si une page sur les Variables essaie de devenir un guide complet du PHS, de l'Environnement, de la Motivation et de la Perspective en même temps, elle perd de la clarté thématique et devient moins efficace tant pour la recherche que pour les utilisateurs sérieux.
             </p>
 
-            <h3 class="text-lg font-bold text-gray-800 mb-4">Erreurs Communes dans l'Interprétation des Variables</h3>
+            <h3 class="text-lg font-bold text-gray-800 mb-4">Erreurs Courantes dans l'Interprétation des Variables</h3>
             <div class="grid grid-cols-1 gap-3">
                 <div class="bg-white rounded-xl border border-gm-border p-5">
-                    <div class="text-sm font-bold text-gray-800 mb-1">Traiter la Gauche comme Meilleure que la Droite</div>
-                    <p class="text-xs text-gray-500 leading-relaxed">Les Variables ne sont pas hiérarchiques. Gauche et droite sont des orientations différentes, pas des classements.</p>
+                    <div class="text-sm font-bold text-gray-800 mb-1">Traiter la Gauche comme Supérieure à la Droite</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Les Variables ne sont pas hiérarchiques. Gauche et droite sont des orientations différentes, non des classements.</p>
                 </div>
                 <div class="bg-white rounded-xl border border-gm-border p-5">
                     <div class="text-sm font-bold text-gray-800 mb-1">Utiliser les Variables pour Contourner la Stratégie et l'Autorité</div>
-                    <p class="text-xs text-gray-500 leading-relaxed">Les Variables sont une sous-structure avancée. Elles n'annulent pas les fondations de la carte. En fait, elles ne fonctionnent pas correctement sans Stratégie et Autorité.</p>
+                    <p class="text-xs text-gray-500 leading-relaxed">Les Variables constituent une sous-structure avancée. Elles ne remplacent pas les fondements de la carte. En fait, elles ne fonctionnent pas correctement sans la Stratégie et l'Autorité.</p>
                 </div>
                 <div class="bg-white rounded-xl border border-gm-border p-5">
                     <div class="text-sm font-bold text-gray-800 mb-1">Lire une Flèche de Façon Isolée</div>
-                    <p class="text-xs text-gray-500 leading-relaxed">Chaque flèche peut être décrite individuellement, mais le vrai sens émerge à travers le motif complet des quatre flèches. Vous êtes un tout holistique ; chaque flèche seule est utile pour l'étude, pas pour vivre.</p>
+                    <p class="text-xs text-gray-500 leading-relaxed">Chaque flèche peut être décrite individuellement, mais le vrai sens émerge à travers le schéma complet des quatre flèches. Vous êtes un tout holistique ; chaque flèche seule est utile pour l'étude, non pour vivre.</p>
                 </div>
                 <div class="bg-white rounded-xl border border-gm-border p-5">
-                    <div class="text-sm font-bold text-gray-800 mb-1">Transformer les Variables en Branding de Personnalité</div>
-                    <p class="text-xs text-gray-500 leading-relaxed">Les Variables décrivent l'orientation et la différenciation ultime. Ce n'est pas un dispositif de branding, un slogan ou un outil de comparaison.</p>
+                    <div class="text-sm font-bold text-gray-800 mb-1">Transformer les Variables en Image de Marque de Personnalité</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Les Variables décrivent l'orientation et la différenciation ultime. Ce n'est pas un dispositif de branding, un slogan, ou un outil de comparaison.</p>
                 </div>
                 <div class="bg-white rounded-xl border border-gm-border p-5">
                     <div class="text-sm font-bold text-gray-800 mb-1">Se Forcer dans un Style Préféré</div>
-                    <p class="text-xs text-gray-500 leading-relaxed">C'est un pur comportement de Non-Soi. Vos Variables sont correctes telles qu'elles sont, et vous ne pouvez pas être épanoui en vous forçant dans toute autre modalité.</p>
+                    <p class="text-xs text-gray-500 leading-relaxed">C'est un comportement de Non-Soi pur. Vos Variables sont correctes telles qu'elles sont, et vous ne pouvez pas être épanoui en vous forçant dans une autre modalité.</p>
                 </div>
             </div>
         </div>
@@ -548,7 +555,7 @@
     <section class="py-10 md:py-14 bg-white">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
-                <span class="text-gm-purple">|</span> Questions Fréquentes
+                <span class="text-gm-purple">|</span> Questions Fréquemment Posées
             </h2>
             <div class="space-y-3">
 
@@ -557,7 +564,7 @@
                         Que sont les Variables en Human Design ?
                     </summary>
                     <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
-                        Les Variables sont le système des quatre flèches au sommet du Bodygraph. Elles montrent comment les mécaniques plus profondes telles que le Cerveau, l'Environnement, la Perspective et le Mental sont orientées.
+                        Les Variables constituent le système des quatre flèches au sommet du Bodygraph. Elles montrent comment des mécaniques plus profondes telles que le Cerveau, l'Environnement, la Perspective et le Mental sont orientées.
                     </div>
                 </details>
 
@@ -566,7 +573,7 @@
                         Que signifient les flèches en Human Design ?
                     </summary>
                     <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
-                        Les flèches montrent si chaque zone est configurée avec un mode de fonctionnement orienté à gauche ou orienté à droite. De façon générale, cela reflète une orientation stratégique versus réceptive.
+                        Les flèches indiquent si chaque zone est configurée avec un mode de fonctionnement orienté à gauche ou orienté à droite. De manière générale, cela reflète une orientation stratégique versus réceptive.
                     </div>
                 </details>
 
@@ -593,7 +600,7 @@
                         Vos Variables peuvent-elles changer ?
                     </summary>
                     <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
-                        Non. Votre configuration de Variables natale ne change pas. Ce qui peut changer, c'est votre clarté et votre relation vécue avec elle.
+                        Non. Votre configuration de Variables natale ne change pas. Ce qui peut changer, c'est votre clarté et votre relation vécue à celles-ci.
                     </div>
                 </details>
 
@@ -609,7 +616,7 @@
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <a href="/learn/deeper-mechanics/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
-                    <h3 class="text-sm font-bold text-gm-purple mb-1">Mécaniques Profondes &rarr;</h3>
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Mécaniques Avancées &rarr;</h3>
                     <p class="text-gray-400 text-xs leading-relaxed">Mécaniques avancées au-delà de la carte fondamentale.</p>
                 </a>
                 <a href="/learn/deeper-mechanics/determination/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
@@ -637,7 +644,7 @@
         <div class="max-w-2xl mx-auto px-6">
             <h2 class="text-2xl md:text-3xl font-bold mb-4">Explorez Vos Variables</h2>
             <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
-                Pour voir vos Variables, vous avez besoin d'une carte Human Design précise avec une heure de naissance fiable et l'accès aux flèches de Variables. Les cartes gratuites Genetic Matrix n'incluent pas les flèches de Variables, donc un abonnement est requis pour voir la configuration complète des flèches.
+                Pour voir vos Variables, vous avez besoin d'une carte Human Design précise avec une heure de naissance fiable et un accès aux flèches des Variables. Les cartes gratuites Genetic Matrix n'incluent pas les flèches des Variables, donc un abonnement est requis pour voir la configuration complète des flèches.
             </p>
             <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
                 Get Pro &rarr;
@@ -666,8 +673,8 @@
                 <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
                     <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Abonnez-vous à Notre Newsletter</h3>
                     <p class="text-gray-600 text-sm mb-4 leading-relaxed">
-                        Inscrivez-vous à notre newsletter pour recevoir les mises à jour, offres,
-                        nouvelles versions et tout ce qui concerne Genetic Matrix.
+                        Inscrivez-vous à notre newsletter pour recevoir des mises à jour, des offres,
+                        de nouvelles sorties, et tout ce qui concerne Genetic Matrix.
                     </p>
                     <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
                         <input
@@ -685,7 +692,7 @@
 
                 <!-- Right: Social & Contact -->
                 <div class="text-center md:text-right">
-                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connectez-vous Avec Nous</h3>
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connectez-vous avec Nous</h3>
                     <div class="flex justify-center md:justify-end gap-3 mb-4">
                         <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener">
                             <img src="../../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
@@ -700,13 +707,33 @@
                             <img src="../../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
                         </a>
                     </div>
-                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Contactez-nous</a>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Prenez Contact</a>
                 </div>
 
             </div>
         </div>
     </footer>
 
+<script>
+(function() {
+    fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            var badge = document.getElementById('gm-cart-count');
+            if (badge && data.cart_count > 0) {
+                badge.textContent = data.cart_count;
+                badge.classList.remove('hidden');
+            }
+            var loggedOut = document.getElementById('gm-logged-out');
+            var loggedIn = document.getElementById('gm-logged-in');
+            if (data.logged_in) {
+                if (loggedOut) loggedOut.classList.add('hidden');
+                if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
+            }
+        })
+        .catch(function() {});
+})();
+</script>
 <script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
 </body>
 </html>

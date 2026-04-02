@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropische (J2000) Berekeningsmethode - Vast Referentiekader | Genetic Matrix</title>
+    <meta name="description" content="Leer over de Tropische (J2000) berekeningsmethode in Human Design. Begrijp hoe een vast astronomisch referentiekader verschilt van traditionele Tropische berekeningen en waarom precisie belangrijk is.">
+    <meta name="keywords" content="tropical j2000, j2000 human design, human design calculation methods, tropical of date, fixed reference frame, precession, nutation, j2k notifications, genetic matrix j2000, human design chart accuracy, planetary positions human design, j2000 epoch, equinox of date">
+    <link rel="canonical" href="https://www.geneticmatrix.com/learn/calculations/j2000/">
+    <meta property="og:title" content="Tropische (J2000) Berekeningsmethode - Vast Referentiekader">
+    <meta property="og:description" content="Tropische (J2000) gebruikt een vast astronomisch referentiekader voor Human Design berekeningen. Leer hoe het verschilt van traditionele Tropische methoden en waarom precisie belangrijk is.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.geneticmatrix.com/learn/calculations/j2000/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gm-purple': '#6E5898',
+                        'gm-purple-light': '#9080B1',
+                        'gm-purple-soft': '#AC94D8',
+                        'gm-dark': '#3C2864',
+                        'gm-darker': '#2e1f4d',
+                        'gm-green': '#54931E',
+                        'gm-green-dark': '#468018',
+                        'gm-green-light': '#8EB86A',
+                        'gm-pink': '#F66378',
+                        'gm-orange': '#E8961D',
+                        'gm-gray': '#707070',
+                        'gm-light': '#F7F8F9',
+                        'gm-card': '#FAFBFC',
+                        'gm-card-active': '#F4F0FC',
+                        'gm-border': '#D8D4E4',
+                        'gm-warning': '#F8F8E8',
+                        'gm-text-dark': '#1A1A2E',
+                        'gm-text': '#444444',
+                        'gm-text-light': '#949494',
+                    },
+                    fontFamily: {
+                        'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        details summary { cursor: pointer; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+        details[open] summary::after { content: '\2212'; }
+        details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+
+    <!-- Article JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Tropische (J2000) Berekeningsmethode - Vast Referentiekader voor Human Design",
+        "description": "Leer over de Tropische (J2000) berekeningsmethode in Human Design. Begrijp hoe een vast astronomisch referentiekader verschilt van traditionele Tropische berekeningen en waarom precisie belangrijk is.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Genetic Matrix",
+            "url": "https://www.geneticmatrix.com"
+        },
+        "mainEntityOfPage": "https://www.geneticmatrix.com/learn/calculations/j2000/",
+        "datePublished": "2025-01-15",
+        "dateModified": "2026-03-06"
+    }
+    </script>
+
+    <!-- FAQ JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Betekent dit dat mijn oude chart helemaal verkeerd is?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Niet noodzakelijk. Tropische (Of-Date) en Tropische (J2000) zijn twee manieren om tropische lengte uit te drukken met verschillende referentie-tijdperken. Omdat Human Design decodering precieze grenzen gebruikt (Poort/Lijn/Kleur/Toon/Basis), zullen sommige mensen betekenisvolle veranderingen zien, vooral in Variabelen, terwijl anderen er weinig tot geen zullen zien. De enige manier om het te weten is beide methoden op dezelfde geboortegegevens te vergelijken."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Waarom gebruikt niet iedereen J2000?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Voornamelijk traditie en gereedschappen. Human Design software heeft historisch gezien Tropische (Of-Date) gebruikt, en veel scholen onderwijzen wat Ra's oorspronkelijke materialen en vroege rekenmachines gebruikten. Ondertussen is J2000 een veelvoorkomend referentie-tijdperk in moderne astronomische catalogi en coördinatensystemen, dus sommige software en beoefenaars geven de voorkeur aan een vast-tijdperk tropisch kader voor consistentie."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welke berekening moet ik gebruiken?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Gebruik één methode consequent, evalueer dan uw ervaring. Als u Human Design beoefent zoals algemeen onderwezen, is Tropische (Of-Date) de gebruikelijke basis. Als u een vast-tijdperk tropische referentie wilt verkennen, probeer dan Tropische (J2000) - maar vermijd het mixen en matchen van individuele uitkomsten tussen methoden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Tropische (J2000) nog steeds Tropisch?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja. Tropische (J2000) is nog steeds een tropisch systeem. De zodiak blijft verankerd aan de seizoenen, met de lente-equinox die 0 graden Ram definieert. Het verschilt van traditionele Tropische alleen in de stabiliteit van het referentiekader dat gebruikt wordt om planetaire posities te berekenen - niet in waar het zodiakwiel begint of hoe het zich verhoudt tot de seizoenscyclus van de Aarde."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wat betekent het J2K icoon op mijn chart?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Het J2K icoon geeft een randgeval aan - een planetaire activatie die dicht bij een grens ligt. Wanneer u J2K Meldingen inschakelt, verschijnen deze iconen op uw traditionele Tropische chart om posities te markeren die waarschijnlijk zullen veranderen als u overschakelt naar Tropische (J2000)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Zal mijn chart zeker veranderen met Tropische (J2000)?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Als een van uw planetaire plaatsingen dicht bij grenzen tussen Lijnen of Poorten vallen, zult u waarschijnlijk enig verschil zien. Als uw plaatsingen stevig in het midden van Lijnen vallen, kunnen de twee methoden identieke resultaten produceren voor die posities. De J2K meldingsfunctie helpt u in één oogopslag te zien welke activeringen zouden kunnen verschuiven."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Hoe zit het met transits en voorspellingen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Als u transits volgt, zorgt het gebruik van J2000 voor consistentie met moderne efemerisgegevens. Uw geboortehoroscoop en transits zouden hetzelfde referentiekader moeten gebruiken voor accurate analyse. Het mixen van methoden kan discrepanties introduceren."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Hoe zit het met de andere berekeningsmethoden die u aanbiedt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Genetic Matrix biedt Tropische, Tropische (J2000), Siderale, 13-Teken Siderale, drie True Sidereal varianten (Kanatas, Chimenti, Midpoint), en twee Draconische opties. Elk dient verschillende doeleinden en filosofische kaders. Tropische (J2000) is specifiek voor degenen die binnen het tropische kader willen blijven terwijl ze een vaste astronomische referentie gebruiken."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Zegt Genetic Matrix dat de traditionele methode verkeerd is?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nee. We zeggen dat er meer dan één geldige manier is om een chart te berekenen, en we geloven erin u opties te geven. De traditionele Tropische methode blijft beschikbaar. Tropische (J2000) is een aanvullend gereedschap voor degenen die het willen verkennen. We zijn er niet om u te vertellen wat u moet geloven - we zijn er om u de gereedschappen te geven om het zelf uit te zoeken."
+                }
+            }
+        ]
+    }
+    </script>
+
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- ==================== NAV BAR ==================== -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <!-- Logo -->
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14">
+            </a>
+
+            <!-- Right Nav: LOGGED OUT (default for static pages) -->
+            <div class="flex items-center gap-8">
+                <!-- Report Icon -->
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Rapporten">
+                    <img src="../../assets/icon-report.svg" alt="Rapporten" class="h-9 w-9">
+                </a>
+                <!-- Talking Chart Icon -->
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Sprekende Charts">
+                    <img src="../../assets/icon-talking-chart.svg" alt="Sprekende Charts" class="h-7 w-7">
+                </a>
+                <!-- Free Chart -->
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Gratis Chart</a>
+                <!-- Learn -->
+                <a href="../../" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Learn Hub</a>
+                <!-- Our Plans -->
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Onze Abonnementen</a>
+                <!-- Cart -->
+                <a href="https://www.geneticmatrix.com/cart/" title="Winkelwagen" class="relative">
+                    <img src="../../assets/icon-cart.svg" alt="Winkelwagen" class="h-5 w-auto">
+                    <span id="gm-cart-count" class="absolute -top-1 -right-3 text-gm-green font-bold text-sm hidden">0</span>
+                </a>
+                <!-- Language Selector -->
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>Nederlands</span>
+                    <img src="../../assets/icon-english.svg" alt="Nederlands" class="h-5 w-7">
+                </div>
+                                <!-- Logged OUT state -->
+                <div id="gm-logged-out" class="flex items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/my-account/" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium">Inloggen</a>
+                    <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Registreren</a>
+                </div>
+                <!-- Logged IN state (hidden by default) -->
+                <div id="gm-logged-in" class="hidden items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="text-gm-gray hover:text-gray-900 text-sm font-medium">Uitloggen</a>
+                    <a href="https://www.geneticmatrix.com/user-home/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Mijn Hub</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== BREADCRUMB ==================== -->
+    <div class="bg-gm-light border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-6 py-3">
+            <a href="../../" class="text-gm-purple hover:text-gm-dark text-sm font-medium transition">&larr; Terug naar Learn Hub</a>
+        </div>
+    </div>
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+        <div class="max-w-3xl mx-auto px-6">
+            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-green hover:bg-gm-green-dark text-white text-xs font-semibold tracking-wide px-5 py-2 rounded-full mb-6 transition">
+                Beschikbaar met Pro abonnement
+            </a>
+            <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Berekeningsmethoden &middot; J2000</p>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Tropische (J2000)</h1>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
+                Waarom charts kunnen verschillen tussen berekeningsmethoden. Tropische (Of-Date) versus Tropische (J2000) referentiekaders uitgelegd.
+            </p>
+        </div>
+    </section>
+    <!-- ==================== INTRO BOX ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Wat is Tropische (J2000)?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Als u uw Human Design chart hebt bestudeerd, is het u misschien opgevallen dat er iets bestaat dat Tropische (J2000) heet of hebt u een kleine J2K indicator gezien. Deze pagina legt uit wat dit betekent en waarom het belangrijk is voor de nauwkeurigheid van uw chart.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                <strong>Tropische (J2000) is beschikbaar met een Genetic Matrix Pro abonnement.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== AVAILABLE CALCULATION METHODS ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Beschikbare Berekeningsmethoden
+            </h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <a href="/calculations/tropical/" class="bg-white rounded-xl border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Tropisch</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Traditionele seizoenszodiak</p>
+                </a>
+                <div class="bg-gm-card-active rounded-xl border-2 border-gm-purple p-5">
+                    <div class="flex items-center gap-3">
+                        <h3 class="text-sm font-bold text-gm-purple">Tropische (J2000)</h3>
+                        <span class="bg-gm-green text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Deze Pagina</span>
+                    </div>
+                    <p class="text-gray-400 text-xs leading-relaxed mt-1">Vast referentiekader</p>
+                </div>
+                <a href="/calculations/sidereal/" class="bg-white rounded-xl border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Sideraal</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Stergebaseerde zodiak</p>
+                </a>
+                <a href="#" class="bg-white rounded-xl border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">13-Teken Sideraal</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Inclusief Ophiuchus</p>
+                </a>
+                <a href="#" class="bg-white rounded-xl border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">True Sidereal-K</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Kanatas ayanamsa</p>
+                </a>
+                <a href="#" class="bg-white rounded-xl border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">True Sidereal-C</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Chimenti ayanamsa</p>
+                </a>
+                <a href="#" class="bg-white rounded-xl border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">True Sidereal-M</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Midpoint ayanamsa</p>
+                </a>
+                <a href="/calculations/draconic/" class="bg-white rounded-xl border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Draconisch-Tropisch (Gemiddeld)</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Gebaseerd op maanknopen</p>
+                </a>
+                <a href="#" class="bg-white rounded-xl border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Draconisch-Tropisch (Waar)</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Ware knoop variant</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== J2K EDGE CASE NOTIFICATIONS ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> J2K Randgeval Meldingen
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Het J2K icoon markeert activeringen waar de gedecodeerde waarde verschilt tussen Tropische (Of-Date) en Tropische (J2000), of waar het binnen een kleine drempelwaarde van een grens valt die zou kunnen omklappen onder een andere methode.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Dit laat u direct zien welke delen van uw chart er anders uit zouden kunnen zien onder J2000 berekeningen, zonder dat u heen en weer hoeft te schakelen tussen methoden.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== UNDERSTANDING EARTH'S MOTION ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="earths-motion">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> De Beweging van de Aarde Begrijpen
+            </h2>
+
+            <!-- Precession -->
+            <h3 class="text-base md:text-lg font-bold text-gm-purple mb-3">Precessie: De 26.000-Jarige Wankeling</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                De Aarde draait om haar as zoals een tol. Maar net zoals een tol die aan het uitdraaien is, wijst de aardas niet in een vaste richting - hij trekt langzaam een cirkel in de ruimte over ongeveer 26.000 jaar. Dit wordt <strong>axiale precessie</strong> genoemd.
+            </p>
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5 mb-8">
+                <p class="text-gm-purple font-bold text-xs tracking-wide uppercase mb-2">Alledaags Voorbeeld</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Stel u een tol voor die op tafel draait. Terwijl hij draait, blijft de tol niet perfect rechtop staan - hij wankelt langzaam in een cirkel rond. De Aarde doet precies hetzelfde, alleen heel langzaam. De Noordpool, die momenteel naar Polaris (de Poolster) wijst, wees duizenden jaren geleden naar een andere ster en zal over duizenden jaren naar weer een andere ster wijzen.
+                </p>
+            </div>
+
+            <!-- Nutation -->
+            <h3 class="text-base md:text-lg font-bold text-gm-purple mb-3">Nutatie: De Kleinere Knikkende Beweging</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Bovenop de precessie ligt een kleinere, snellere wankeling genaamd nutatie. Terwijl precessie de grote, langzame cirkel is, is nutatie een lichte knik of oscillatie die zijn cyclus ruwweg elke 18,6 jaar voltooit. Dit wordt voornamelijk veroorzaakt door de zwaartekrachtsaantrekking van de Maan op de equatoriale bulging van de Aarde.
+            </p>
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5 mb-8">
+                <p class="text-gm-purple font-bold text-xs tracking-wide uppercase mb-2">Alledaags Voorbeeld</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Denk aan iemand die een volle kop koffie draagt terwijl hij loopt. Er is de grote beweging van het vooruit lopen, maar er is ook een kleinere, snellere klotsing van de koffie bij elke stap. Precessie is het lopen; nutatie is het klotsen. Beide beïnvloeden waar de koffie (of in ons geval, de precieze richting van de aardas) zich werkelijk bevindt op elk gegeven moment.
+                </p>
+            </div>
+
+            <!-- Other Perturbations -->
+            <h3 class="text-base md:text-lg font-bold text-gm-purple mb-3">Andere Verstoringen</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Naast precessie en nutatie ervaart de Aarde andere kleine bewegingen: zwaartekrachtstrekken van andere planeten, lichte variaties in de vorm van de aardbaan, en zelfs de herverdeling van massa op het aardoppervlak kunnen de oriëntatie van onze planeet beïnvloeden. Dit zijn minieme effecten, maar ze bestaan.
+            </p>
+
+            <!-- Why a fraction of a degree matters -->
+            <div class="bg-gm-warning border-l-4 border-gm-orange rounded-r-xl p-6">
+                <p class="text-gm-orange font-bold text-xs tracking-wide uppercase mb-3">Waarom Doet een Breukdeel van een Graad Er Toe?</p>
+                <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                    Human Design verdeelt de zodiak in zeer fijne stappen (poort, lijn, kleur, toon, basis). Een verschil van zelfs 0,3 - 0,6 graden, de schaal die u krijgt wanneer u een vaste J2000 referentie vergelijkt met een equinox-of-date referentie over de afgelopen decennia, kan het gedecodeerde resultaat verschuiven.
+                </p>
+                <div class="text-sm text-gm-text space-y-1 mt-4">
+                    <p>1 Poort = 360 / 64 = <strong>5,625 graden</strong></p>
+                    <p>1 Lijn = 5,625 / 6 = <strong>0,9375 graden</strong></p>
+                    <p>1 Kleur = 0,9375 / 6 = <strong>0,15625 graden</strong></p>
+                    <p>1 Toon = 0,15625 / 6 = <strong>0,026 graden</strong> (ongeveer 1 min 34 sec)</p>
+                    <p>1 Basis = 0,026 / 5 = <strong>0,0052 graden</strong> (ongeveer 18,75 sec)</p>
+                </div>
+                <p class="text-gm-text text-sm md:text-base leading-relaxed mt-4">
+                    Dus een verschuiving van ~0,3 graden (2000 - 2026 schaal) kan aannemelijk Kleuren en soms Lijnen veranderen, en het zal heel vaak Toon/Basis-afgeleide uitkomsten veranderen als u die gebruikt.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HOW THIS AFFECTS CALCULATIONS ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="how-it-affects">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Hoe Dit Berekeningen Beïnvloedt
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Wanneer we een Human Design chart berekenen, moeten we precies weten waar de planeten waren op het moment van geboorte. Dit vereist een coördinatensysteem - een manier om posities in de ruimte te definiëren.
+            </p>
+
+            <!-- Two methods side by side -->
+            <div class="grid sm:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white rounded-xl border border-gm-border p-6">
+                    <h3 class="text-sm font-bold text-gm-purple mb-2">Traditioneel Tropisch</h3>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Gebruikt de equinox van datum als het nulpunt voor tropische lengte (0 graden Ram). Met andere woorden, lengten worden gerefereerd aan de equinox op het moment van de chart (gemiddeld of schijnbaar, afhankelijk van systeem).
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-6">
+                    <h3 class="text-sm font-bold text-gm-purple mb-2">Tropische (J2000)</h3>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Gebruikt de gemiddelde equinox/ecliptica van J2000.0 als de referentie. Lengten worden uitgedrukt relatief tot een vast tijdperk in plaats van equinox-of-date waarden voor hetzelfde geboortemoment.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5 mb-8">
+                <p class="text-gm-purple font-bold text-xs tracking-wide uppercase mb-2">Alledaags Voorbeeld</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Verschillende coördinatendatums kunnen verschillende numerieke coördinaten toewijzen aan dezelfde fysieke locatie. De locatie is niet verhuisd - alleen de referentie die gebruikt wordt om het te beschrijven is veranderd. Evenzo "bewegen" planeten niet wanneer we schakelen tussen Of-Date en J2000; alleen de getallen die gebruikt worden om hun lengten uit te drukken veranderen.
+                </p>
+            </div>
+
+            <h3 class="text-base md:text-lg font-bold text-gm-purple mb-3">De Astronomische Standaard</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                J2000/ICRS-stijl referentiekaders worden veel gebruikt in moderne astronomie, ruimtevaartuignavigatie, en vele efemerisgegevenssets. Astrologie- en Human Design software kan die posities omzetten naar een equinox-of-date tropische zodiak als de meest voorkomende conventie. Omdat Human Design zeer fijne onderverdelingen gebruikt in HD praktijk, zijn beide benaderingen goed gedefinieerd; ze kunnen verschillende gedecodeerde uitkomsten produceren.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== ADDRESSING THE "MOVING PLATFORM" ARGUMENT ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Het "Bewegend Platform" Argument Bespreken
+            </h2>
+
+            <h3 class="text-base md:text-lg font-bold text-gm-purple mb-3">Een Terechte Vraag</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed italic mb-4">
+                "Legt de traditionele methode niet vast wat er werkelijk gebeurde op het moment van geboorte? Als de Aarde aan het wankelen was, zouden onze berekeningen die wankeling dan niet moeten weergeven? Is de 'of date' benadering niet nauwkeuriger omdat hij de realiteit volgt?"
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Dit is een redelijke vraag, en het verdient een doordacht antwoord.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Hier is het punt: de planeten bewegen eigenlijk niet wanneer we van referentiekader veranderen. Mars was precies waar hij was bij uw geboorte, ongeacht welk coördinatensysteem we gebruiken om zijn positie te beschrijven. Wat verandert is hoe we die positie beschrijven - welke getallen we eraan toewijzen.
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-6 mb-8">
+                <div class="bg-gm-light rounded-xl border border-gm-border p-6">
+                    <h3 class="text-sm font-bold text-gm-purple mb-2">De "Of Date" Methode Zegt:</h3>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        "Laten we planetaire posities beschrijven relatief tot waar de aardas nu naar wijst, met wankelingen en al."
+                    </p>
+                </div>
+                <div class="bg-gm-light rounded-xl border border-gm-border p-6">
+                    <h3 class="text-sm font-bold text-gm-purple mb-2">De J2000 Methode Zegt:</h3>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        "Laten we planetaire posities beschrijven relatief tot een vast referentiepunt, zodat we een stabiele standaard hebben die niet verschuift met de bewegingen van de Aarde."
+                    </p>
+                </div>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Geen van beide benaderingen is meer "echt" dan de andere - het zijn verschillende conventies voor het beschrijven van dezelfde fysieke realiteit. De vraag is welke conventie meer consistente, betekenisvolle resultaten oplevert voor Human Design berekeningen.
+            </p>
+
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-gm-purple font-bold text-xs tracking-wide uppercase mb-2">Alledaags Voorbeeld</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Stel u voor dat u de exacte locatie van een zeldzame vogelwaarneming wilt vastleggen. U zou het kunnen beschrijven relatief tot waar u staat ("20 meter naar links van mij"). Maar als u op een langzaam draaiend platform staat, betekent "naar links van mij" iets anders afhankelijk van wanneer u de meting doet. Als alternatief zou u GPS coördinaten kunnen gebruiken - een vast referentiesysteem dat niet afhangt van waar u staat of welke kant u op kijkt. De vogel is hoe dan ook op dezelfde plaats. De vraag is gewoon: welke beschrijving is nuttiger en consistenter?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== A NOTE ON RA URU HU ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Een Noot over Ra Uru Hu en de Evolutie van Gereedschappen
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Deze pagina gaat niet over het herinterpretieren van Human Design's oorsprong of het in iemands mond leggen van woorden. Het legt simpelweg uit dat het berekenen van planetaire posities verschillende astronomische referentieconventies kan gebruiken (bijv., equinox-of-date vs. een vast tijdperk zoals J2000), wat fijnkorrelige decoderingsresultaten kan veranderen. We moedigen methode-voor-methode vergelijking en verkenning aan.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Tropische (Of-Date) en Tropische (J2000) zijn beide geldige tropische conventies. Ze verschillen in of de equinox referentie wordt bijgewerkt voor de datum of vastgehouden op het J2000 tijdperk, dus fijnkorrelige Human Design decodering kan verschillen.
+            </p>
+
+            <div class="bg-gm-warning border-l-4 border-gm-orange rounded-r-xl p-6 mb-8">
+                <p class="text-gm-orange font-bold text-xs tracking-wide uppercase mb-3">We Kunnen Niet Voor Ra Spreken</p>
+                <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                    Iedereen die beweert definitief te weten wat Ra zou hebben gedacht over J2000 speculeert. Ra is er niet om het te vragen, en woorden in zijn mond leggen is iets waar wij geen interesse in hebben. Wat we kunnen doen is gereedschappen leveren en u laten experimenteren. Genereer uw chart op beide manieren. Vergelijk de resultaten. Zie wat resoneert met uw geleefde ervaring. Dat is de Human Design manier - neem niemands woord ervoor aan. Test het zelf.
+                </p>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Human Design is altijd geëvolueerd naarmate betere gereedschappen beschikbaar kwamen. Vroege charts werden met de hand berekend. Toen kwam basis software. Toen meer geavanceerde efemerisberekeningen. J2000 is simpelweg de volgende stap in die evolutie - het gebruik van dezelfde astronomische standaard die moderne ruimtevaartuignavigatie en waarnemingstoepassingen aandrijft.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                De vraag is niet wat Ra zou hebben gedacht. De vraag is: <strong>produceert dit een chart die nauwkeuriger weergeeft wie u bent? Alleen u kunt dat beantwoorden.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== WHY PRECISION MATTERS ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Waarom Precisie Belangrijk is in Human Design
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Een Human Design chart verdeelt de 360-graden zodiak in 64 Poorten, waarbij elke Poort 5,625 graden beslaat. Maar het systeem gaat dieper: elke Poort bevat 6 Lijnen, elke Lijn bevat 6 Kleuren, elke Kleur bevat 6 Tonen, en elke Toon bevat 5 Bases.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Tegen de tijd dat u het niveau van Basis bereikt, verdeelt u elke Poort in 1.080 kleine schijfjes. Bij deze resolutie kunnen zelfs kleine positionele verschillen tussen berekeningsmethoden verschillende resultaten opleveren.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                De J2K markering geeft activeringen aan waarvan het gedecodeerde resultaat verschilt tussen Tropische (Of-Date) en Tropische (J2000).
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT MIGHT CHANGE IN YOUR CHART ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="what-might-change">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Wat Zou Kunnen Veranderen in Uw Chart
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Bij het vergelijken van Tropische (J2000) met traditionele Tropische berekeningen, hebben verschillen de neiging eerst op de fijnere niveaus te verschijnen, maar kunnen opwaarts doorwerken:
+            </p>
+
+            <div class="overflow-x-auto rounded-xl border border-gm-border bg-white mb-8">
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-gm-light">
+                        <tr>
+                            <th class="px-6 py-4 font-semibold text-sm text-gray-800">Niveau</th>
+                            <th class="px-6 py-4 font-semibold text-sm text-gray-800">Wat Het Beïnvloedt</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gm-border">
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Basis</td>
+                            <td class="px-6 py-4 text-gm-text">De Toegangsfrequentie in uw cognitieve architectuur</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Toon</td>
+                            <td class="px-6 py-4 text-gm-text">De binnenste laag van de kristallen van bewustzijn</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Kleur</td>
+                            <td class="px-6 py-4 text-gm-text">De uitgangsfrequentie - Motivatie of Determinatie. Het Niet-Zelf ontstaat wanneer een verstoorde uitgangsfrequentie de geest toestaat beslissingen te controleren</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Lijn</td>
+                            <td class="px-6 py-4 text-gm-text">Zou uw Profiel kunnen beïnvloeden - de rol die u speelt in het leven</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Poort</td>
+                            <td class="px-6 py-4 text-gm-text">Een verschuiving naar een andere Poort, mogelijk kanalen veranderend</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Centrum</td>
+                            <td class="px-6 py-4 text-gm-text">Een nieuw kanaal zou een energiecentrum kunnen definiëren of ondefiniëren</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Type</td>
+                            <td class="px-6 py-4 text-gm-text">In sommige gevallen zou een centrumverandering uw Type volledig kunnen verschuiven</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                De meeste charts zullen verschillen tonen op het Kleur of Toon niveau. Sommige zullen Lijn verschillen tonen. Af en toe, wanneer een planeet in een 6de Lijn dicht bij de grens van de volgende Poort zit, kan een Poortverschuiving optreden - en dat is wanneer Type of Profiel zou kunnen veranderen.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== EXAMPLE: SAME PERSON, TWO CALCULATIONS ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Voorbeeld: Dezelfde Persoon, Twee Berekeningen
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Hier is hoe dezelfde geboortegegevens verschillende resultaten kunnen opleveren:
+            </p>
+
+            <div class="overflow-x-auto rounded-xl border border-gm-border bg-white mb-8">
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-gm-light">
+                        <tr>
+                            <th class="px-6 py-4 font-semibold text-sm text-gray-800">Element</th>
+                            <th class="px-6 py-4 font-semibold text-sm text-gray-800">Traditioneel Tropisch</th>
+                            <th class="px-6 py-4 font-semibold text-sm text-gray-800">Tropische J2000</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gm-border">
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Profiel</td>
+                            <td class="px-6 py-4 text-gm-text">6/2</td>
+                            <td class="px-6 py-4 text-gm-text">1/3</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Zon Poort</td>
+                            <td class="px-6 py-4 text-gm-text">Poort 4, Lijn 6</td>
+                            <td class="px-6 py-4 text-gm-text">Poort 63, Lijn 1</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Kanalen</td>
+                            <td class="px-6 py-4 text-gm-text">4-63, 47-64, 11-56</td>
+                            <td class="px-6 py-4 text-gm-text">47-64, 24-61, 11-56</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Gedefinieerde Centra</td>
+                            <td class="px-6 py-4 text-gm-text">Hoofd, Ajna, Keel</td>
+                            <td class="px-6 py-4 text-gm-text">Hoofd, Ajna, Keel</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Merk op hoe het Profiel verschoof van 6/2 naar 1/3, twee compleet verschillende levenspaden. De kanaalconfiguratie veranderde ook, wat zou veranderen hoe energie door het design stroomt.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== STILL TROPICAL, NOT SIDEREAL ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Nog Steeds Tropisch, Niet Sideraal
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Een belangrijke verduidelijking: Tropische (J2000) is nog steeds een tropisch systeem. De zodiak blijft verankerd aan de seizoenen, met de lente-equinox die 0 graden Ram definieert. Dit is het kader dat Ra Uru Hu gebruikte voor Human Design.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Tropische (J2000) verschilt van traditionele Tropische alleen in de stabiliteit van het referentiekader dat gebruikt wordt om planetaire posities te berekenen - niet in waar het zodiakwiel begint of hoe het zich verhoudt tot de seizoenscyclus van de Aarde.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Dit onderscheidt zich van de siderale opties die we ook aanbieden (Sideraal, 13-Teken Sideraal, True Sidereal varianten), die verankeren aan de vaste sterren en het hele wiel ongeveer 24 graden verschuiven. Als u een astroloog bent die met sideraal werkt en Human Design door die lens wilt verkennen, bieden we die opties. Tropische (J2000) is een ander soort optie - een verfijning van tropische precisie in plaats van een verschuiving naar een ander zodiakaal kader.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== HOW TO EXPLORE ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Hoe Tropische (J2000) te Verkennen
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Klaar om het te proberen? Hier zijn drie manieren om toegang te krijgen tot Tropische (J2000) in uw Genetic Matrix account:
+            </p>
+
+            <div class="grid sm:grid-cols-3 gap-6 mb-8">
+                <div class="bg-gm-light rounded-xl border border-gm-border p-6">
+                    <h3 class="text-sm font-bold text-gm-purple mb-3">Snelle Vergelijking</h3>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Selecteer "Tropische (J2000)" uit de berekeningsmethode dropdown op elke chart. Schakel heen en weer tussen methoden om uw resultaten direct te vergelijken.
+                    </p>
+                </div>
+                <div class="bg-gm-light rounded-xl border border-gm-border p-6">
+                    <h3 class="text-sm font-bold text-gm-purple mb-3">J2K Meldingen Inschakelen</h3>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Ga naar Instellingen, dan J2000 Melding Instellingen en schakel het Aan. Een J2K icoon zal verschijnen naast activeringen die dicht bij belangrijke decodeer grenzen zitten, waar resultaten meer kans hebben te veranderen wanneer u van methode wisselt.
+                    </p>
+                </div>
+                <div class="bg-gm-light rounded-xl border border-gm-border p-6">
+                    <h3 class="text-sm font-bold text-gm-purple mb-3">Instellen als Standaard</h3>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Kies Tropische (J2000) als uw permanente berekeningsmethode in Instellingen. Al uw charts zullen genereren met deze methode totdat u het verandert.
+                    </p>
+                </div>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                We moedigen u aan te verkennen. Genereer uw chart met traditioneel Tropisch, controleer welke activeringen de J2K vlag tonen, schakel dan over naar Tropische (J2000) en zie wat verschuift. Overweeg of de nieuwe informatie resoneert met uw ervaring.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== QUOTE ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-gm-card-active rounded-2xl p-8 border-l-4 border-gm-purple">
+                <p class="text-gm-purple text-lg italic leading-relaxed">
+                    "Verschillende referentiekaders kunnen dezelfde hemel beschrijven. Wat verandert is het coördinatensysteem, niet de planeten."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ACCORDION ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Veelgestelde Vragen
+            </h2>
+            <div class="space-y-3">
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Betekent dit dat mijn oude chart helemaal verkeerd is?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Niet noodzakelijk. Tropische (Of-Date) en Tropische (J2000) zijn twee manieren om tropische lengte uit te drukken met verschillende referentie-tijdperken. Omdat Human Design decodering precieze grenzen gebruikt (Poort/Lijn/Kleur/Toon/Basis), zullen sommige mensen betekenisvolle veranderingen zien, vooral in Variabelen, terwijl anderen er weinig tot geen zullen zien. De enige manier om het te weten is beide methoden op dezelfde geboortegegevens te vergelijken.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Waarom gebruikt niet iedereen J2000?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Voornamelijk traditie en gereedschappen. Human Design software heeft historisch gezien Tropische (Of-Date) gebruikt, en veel scholen onderwijzen wat Ra's oorspronkelijke materialen en vroege rekenmachines gebruikten. Ondertussen is J2000 een veelvoorkomend referentie-tijdperk in moderne astronomische catalogi en coördinatensystemen, dus sommige software en beoefenaars geven de voorkeur aan een vast-tijdperk tropisch kader voor consistentie. Het gaat er minder om dat de ene "juist" is, en meer om welke conventie u kiest om uw decodering te verankeren.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Welke berekening moet ik gebruiken?
+                    </summary>
+                    <div class

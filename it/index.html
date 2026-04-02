@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Hub | Genetic Matrix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gm-purple': '#6E5898',
+                        'gm-purple-light': '#9080B1',
+                        'gm-purple-soft': '#AC94D8',
+                        'gm-dark': '#3C2864',
+                        'gm-darker': '#2e1f4d',
+                        'gm-green': '#54931E',
+                        'gm-green-dark': '#468018',
+                        'gm-green-light': '#8EB86A',
+                        'gm-pink': '#F66378',
+                        'gm-orange': '#E8961D',
+                        'gm-gray': '#707070',
+                        'gm-light': '#F7F8F9',
+                        'gm-card': '#FAFBFC',
+                        'gm-card-active': '#F4F0FC',
+                        'gm-border': '#D8D4E4',
+                        'gm-warning': '#F8F8E8',
+                        'gm-text-dark': '#1A1A2E',
+                        'gm-text': '#444444',
+                        'gm-text-light': '#949494',
+                    },
+                    fontFamily: {
+                        'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        /* Hide scrollbar on section nav */
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        /* Calc method icon color tints (base SVG color is #6e5898 purple) */
+        .icon-tint-teal { filter: brightness(0) saturate(100%) invert(58%) sepia(52%) saturate(450%) hue-rotate(127deg) brightness(92%) contrast(89%); }
+        .icon-tint-red { filter: brightness(0) saturate(100%) invert(33%) sepia(60%) saturate(1200%) hue-rotate(336deg) brightness(90%) contrast(90%); }
+        .icon-tint-pink { filter: brightness(0) saturate(100%) invert(52%) sepia(40%) saturate(600%) hue-rotate(290deg) brightness(95%) contrast(90%); }
+        .icon-tint-navy { filter: brightness(0) saturate(100%) invert(30%) sepia(30%) saturate(800%) hue-rotate(190deg) brightness(95%) contrast(95%); }
+        /* Hero starfield - 3 independent layers for visible twinkling */
+        .hero-stars-1, .hero-stars-2, .hero-stars-3 {
+            position: absolute; inset: 0; pointer-events: none;
+        }
+        .hero-stars-1 {
+            background-image:
+                radial-gradient(2.5px 2.5px at 10% 15%, rgba(255,255,255,0.95) 0%, transparent 100%),
+                radial-gradient(2px 2px at 40% 20%, rgba(255,255,255,1) 0%, transparent 100%),
+                radial-gradient(2.5px 2.5px at 85% 55%, rgba(255,255,255,0.9) 0%, transparent 100%),
+                radial-gradient(2px 2px at 50% 10%, rgba(255,255,255,0.85) 0%, transparent 100%),
+                radial-gradient(2px 2px at 35% 45%, rgba(255,255,255,0.9) 0%, transparent 100%),
+                radial-gradient(2px 2px at 80% 12%, rgba(255,255,255,0.85) 0%, transparent 100%),
+                radial-gradient(2.5px 2.5px at 20% 30%, rgba(172,148,216,1) 0%, transparent 100%),
+                radial-gradient(2px 2px at 30% 5%, rgba(255,255,255,0.9) 0%, transparent 100%);
+            animation: twinkle1 3s ease-in-out infinite;
+        }
+        .hero-stars-2 {
+            background-image:
+                radial-gradient(1.5px 1.5px at 25% 60%, rgba(255,255,255,0.85) 0%, transparent 100%),
+                radial-gradient(2px 2px at 70% 35%, rgba(255,255,255,0.9) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 15% 80%, rgba(255,255,255,0.8) 0%, transparent 100%),
+                radial-gradient(2px 2px at 5% 50%, rgba(255,255,255,0.85) 0%, transparent 100%),
+                radial-gradient(2px 2px at 72% 65%, rgba(255,255,255,0.85) 0%, transparent 100%),
+                radial-gradient(2.5px 2.5px at 75% 50%, rgba(172,148,216,0.9) 0%, transparent 100%),
+                radial-gradient(2px 2px at 60% 15%, rgba(232,150,29,0.75) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 58% 52%, rgba(255,255,255,0.75) 0%, transparent 100%);
+            animation: twinkle2 4s ease-in-out infinite;
+        }
+        .hero-stars-3 {
+            background-image:
+                radial-gradient(1.5px 1.5px at 55% 75%, rgba(255,255,255,0.75) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 90% 85%, rgba(255,255,255,0.85) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 65% 90%, rgba(255,255,255,0.75) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 48% 42%, rgba(255,255,255,0.7) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 92% 30%, rgba(255,255,255,0.8) 0%, transparent 100%),
+                radial-gradient(2px 2px at 8% 35%, rgba(172,148,216,0.85) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 45% 88%, rgba(232,150,29,0.65) 0%, transparent 100%);
+            animation: twinkle3 5s ease-in-out infinite;
+        }
+        @keyframes twinkle1 {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        @keyframes twinkle2 {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 1; }
+        }
+        @keyframes twinkle3 {
+            0%, 100% { opacity: 0.9; }
+            35% { opacity: 0.25; }
+            70% { opacity: 1; }
+        }
+        @keyframes twinkle {
+            0%, 100% { filter: brightness(1); }
+            45% { filter: brightness(1.1) drop-shadow(0 0 2px rgba(110,88,152,0.15)); }
+            75% { filter: brightness(0.95); }
+        }
+        .icon-twinkle { animation: twinkle 8s ease-in-out infinite; }
+        /* Card reveal animation - CSS transition (works both directions) */
+        .card-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        .card-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Stretched link - entire card clickable */
+        .card-link { position: relative; cursor: pointer; }
+        .card-link .card-link-target::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+        }
+        /* Pulsing glow on CTA button */
+        @keyframes btnGlow {
+            0%, 100% { box-shadow: 0 0 8px rgba(84,147,30,0.3); }
+            50% { box-shadow: 0 0 20px rgba(84,147,30,0.55), 0 0 40px rgba(84,147,30,0.15); }
+        }
+        .btn-glow { animation: btnGlow 3s ease-in-out infinite; }
+        /* Button hover/press scale */
+        .btn-scale { transition: transform 0.2s ease; }
+        .btn-scale:hover { transform: scale(1.02); }
+        .btn-scale:active { transform: scale(0.97); }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- ==================== NAV BAR ==================== -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <!-- Logo -->
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14">
+            </a>
+
+            <!-- Right Nav: LOGGED OUT (default for static pages) -->
+            <div class="flex items-center gap-8">
+                <!-- Report Icon -->
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Report">
+                    <img src="assets/icon-report.svg" alt="Report" class="h-9 w-9">
+                </a>
+                <!-- Talking Chart Icon -->
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Carte Parlanti">
+                    <img src="assets/icon-talking-chart.svg" alt="Carte Parlanti" class="h-7 w-7">
+                </a>
+                <!-- Free Chart (popup on live site - Shafik to wire up) -->
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Carta Gratuita</a>
+                <!-- Learn -->
+                <a href="index.html" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Impara</a>
+                <!-- Our Plans -->
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">I Nostri Piani</a>
+                <!-- Cart -->
+                <a href="https://www.geneticmatrix.com/cart/" title="Carrello" class="relative">
+                    <img src="assets/icon-cart.svg" alt="Carrello" class="h-5 w-auto">
+                    <span id="gm-cart-count" class="absolute -top-1 -right-3 text-gm-green font-bold text-sm hidden">0</span>
+                </a>
+                <!-- Language Selector -->
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>Italiano</span>
+                    <img src="assets/icon-english.svg" alt="Italiano" class="h-5 w-7">
+                </div>
+                                <!-- Logged OUT state -->
+                <div id="gm-logged-out" class="flex items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/my-account/" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium">Accedi</a>
+                    <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Registrati</a>
+                </div>
+                <!-- Logged IN state (hidden by default) -->
+                <div id="gm-logged-in" class="hidden items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="text-gm-gray hover:text-gray-900 text-sm font-medium">Esci</a>
+                    <a href="https://www.geneticmatrix.com/user-home/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Il Mio Hub</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO / PAGE HEADER ==================== -->
+    <section class="relative overflow-hidden py-16 md:py-20 text-center" style="background: linear-gradient(135deg, #1e1240 0%, #3C2864 35%, #4a3070 55%, #3C2864 75%, #1a0e38 100%);">
+        <!-- Zodiac wheel - decorative SVG -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none" aria-hidden="true">
+            <svg class="w-[500px] h-[500px] md:w-[650px] md:h-[650px] opacity-[0.18]" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Outer ring -->
+                <circle cx="200" cy="200" r="190" stroke="white" stroke-width="1.2"/>
+                <circle cx="200" cy="200" r="170" stroke="white" stroke-width="0.8"/>
+                <circle cx="200" cy="200" r="150" stroke="white" stroke-width="0.5"/>
+                <!-- 12 division lines (zodiac houses) -->
+                <line x1="200" y1="10" x2="200" y2="50" stroke="white" stroke-width="0.8"/>
+                <line x1="295" y1="27.7" x2="275" y2="62.3" stroke="white" stroke-width="0.8"/>
+                <line x1="372.3" y1="105" x2="337.7" y2="125" stroke="white" stroke-width="0.8"/>
+                <line x1="390" y1="200" x2="350" y2="200" stroke="white" stroke-width="0.8"/>
+                <line x1="372.3" y1="295" x2="337.7" y2="275" stroke="white" stroke-width="0.8"/>
+                <line x1="295" y1="372.3" x2="275" y2="337.7" stroke="white" stroke-width="0.8"/>
+                <line x1="200" y1="390" x2="200" y2="350" stroke="white" stroke-width="0.8"/>
+                <line x1="105" y1="372.3" x2="125" y2="337.7" stroke="white" stroke-width="0.8"/>
+                <line x1="27.7" y1="295" x2="62.3" y2="275" stroke="white" stroke-width="0.8"/>
+                <line x1="10" y1="200" x2="50" y2="200" stroke="white" stroke-width="0.8"/>
+                <line x1="27.7" y1="105" x2="62.3" y2="125" stroke="white" stroke-width="0.8"/>
+                <line x1="105" y1="27.7" x2="125" y2="62.3" stroke="white" stroke-width="0.8"/>
+                <!-- Inner detail rings -->
+                <circle cx="200" cy="200" r="120" stroke="white" stroke-width="0.5"/>
+                <circle cx="200" cy="200" r="80" stroke="white" stroke-width="0.3"/>
+                <!-- Zodiac symbols (simplified glyphs) -->
+                <text x="200" y="25" fill="white" font-size="11" text-anchor="middle" opacity="0.9">♈</text>
+                <text x="290" y="45" fill="white" font-size="11" text-anchor="middle" opacity="0.9">♉</text>
+                <text x="358" y="115" fill="white" font-size="11" text-anchor="middle" opacity="0.9">♊</text>
+                <text x="378" y="205" fill="white" font-size="11" text-anchor="middle" opacity="0.9">♋</text>
+                <text x="358" y="295" fill="white" font-size="11" text-anchor="middle" opacity="0.9">♌</text>
+                <text x="290" y="365" fill="white" font-size="11" text-anchor="middle" opacity="0.9">♍</text>
+                <text x="200" y="385" fill="white" font-size="11" text-anchor="middle" opacity="0.9">♎</text>
+                <text x="112" y="365" fill="white" font-size="11" text-anchor="middle" opacity="0.9">♏</text>
+                <text x="42" y="295" fill="white" font-size="11" text-anchor="middle" opacity="0.9">♐</text>
+                <text x="22" y="205" fill="white" font-size="11" text-anchor="middle" opacity="0.9">♑</text>
+                <text x="42" y="115" fill="white" font-size="11" text-anchor="middle" opacity="0.9">♒</text>
+                <text x="112" y="45" fill="white" font-size="11" text-anchor="middle" opacity="0.9">♓</text>
+            </svg>
+        </div>
+        <!-- Stars layers - 3 independent layers for visible twinkling -->
+        <div class="hero-stars-1" aria-hidden="true"></div>
+        <div class="hero-stars-2" aria-hidden="true"></div>
+        <div class="hero-stars-3" aria-hidden="true"></div>
+        <!-- Warm glow overlay -->
+        <div class="absolute inset-0 pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse at 60% 40%, rgba(172,148,216,0.2) 0%, transparent 60%), radial-gradient(ellipse at 30% 70%, rgba(232,150,29,0.1) 0%, transparent 50%);"></div>
+        <!-- Content -->
+        <div class="relative z-10 max-w-3xl mx-auto px-6">
+            <h1 class="text-3xl md:text-4xl font-bold text-white mb-5">Impara Human Design & Astrologia</h1>
+            <p class="text-gray-200 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+                Risorse educative gratuite per approfondire la Sua comprensione di Human Design, astrologia e gli strumenti disponibili su Genetic Matrix. Accesso non richiesto.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION NAVIGATION ==================== -->
+    <div class="bg-gray-50 border-b border-gray-300 sticky top-[80px] z-40 shadow-sm" id="section-nav">
+        <div class="max-w-6xl mx-auto px-6">
+            <nav class="flex items-center gap-6 md:gap-8 overflow-x-auto scrollbar-hide py-3.5" aria-label="Navigazione sezioni">
+                <a href="#human-design" class="section-nav-link text-sm font-bold text-gray-500 hover:text-gm-purple whitespace-nowrap border-b-2 border-transparent hover:border-gm-purple pb-3 -mb-[15px] transition">Human Design</a>
+                <a href="#chart-methods" class="section-nav-link text-sm font-bold text-gray-500 hover:text-gm-purple whitespace-nowrap border-b-2 border-transparent hover:border-gm-purple pb-3 -mb-[15px] transition">Metodi di Calcolo</a>
+                <a href="#astrology" class="section-nav-link text-sm font-bold text-gray-500 hover:text-gm-purple whitespace-nowrap border-b-2 border-transparent hover:border-gm-purple pb-3 -mb-[15px] transition">Astrologia</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ==================== HUMAN DESIGN SECTION ==================== -->
+    <section id="human-design" class="bg-gm-light pt-8 md:pt-10 pb-12 md:pb-16 scroll-mt-[132px]">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Section Header -->
+            <div class="mb-2">
+                <span class="text-xs font-semibold tracking-widest text-gray-400 uppercase">Human Design</span>
+            </div>
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-3">
+                <span class="text-gm-purple">|</span> Strumenti e Risorse di Human Design
+            </h2>
+            <p class="text-gray-500 text-sm md:text-base max-w-3xl mb-10">
+                Esplori Human Design dalle fondamenta della Carta alle differenziazioni avanzate, dinamiche relazionali, cicli e studio specializzato.
+            </p>
+
+            <!-- Foundation Basics Sub-header -->
+            <h3 class="text-base md:text-lg font-semibold text-gray-700 mb-5">Fondamenti di Base</h3>
+
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Type Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-type.svg" alt="Tipo" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Tipo</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Il Sistema Human Design funziona principalmente attraverso il Suo Bodygraph. Divide tutti noi in cinque Tipi: Generatore, Generatore Manifestante, Proiettore, Manifestatore e Riflettore.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="types/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- Profile Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-profile.svg" alt="Profilo" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Profilo</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Il Suo Profilo descrive il 70% del costume comportamentale che Lei incarna e mostra come segnale per vivere correttamente il Suo ruolo di scopo.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="profiles/" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- Centers Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-rhombus.svg" alt="Centri" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Centri</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Il Bodygraph contiene nove Centri. Comprendere i Suoi Centri definiti, indefiniti e aperti rivela la Sua Autorità, Definizione e condizionamento.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="centers/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- Definition Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-definition.svg" alt="Definizione" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Definizione</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                La Definizione descrive come i Suoi Centri definiti si collegano tra loro. Definizione Singola, Divisa, Tripla Divisione, Quadrupla Divisione o Nessuna definizione: ogni tipo di Definizione plasma come Lei elabora l'energia e si relaziona con gli altri.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="definition/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- Channels Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-channels.svg" alt="Canali" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Canali</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                I 36 Canali collegano i Centri e creano Definizione nel Suo Bodygraph. Ogni Canale è formato da due Porte e porta un tema energetico specifico che plasma come Lei sperimenta la vita e influenza gli altri attraverso il condizionamento.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="channels/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- Gates & Lines Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-gates.svg" alt="Porte e Linee" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Porte e Linee</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Le Porte e le Linee sono le energie archetipali specifiche attivate nella Sua Carta dalle posizioni planetarie. Ci sono 64 Porte nel Bodygraph, ognuna con 6 Linee, derivate dai 64 esagrammi dell'I Ching.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="gates/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- HD Planets Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-planets.svg" alt="Pianeti HD" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Pianeti</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                In Human Design, ogni pianeta programma Porte e Linee specifiche nel Suo Bodygraph. Scopra come il Sole, la Luna, i Nodi e i pianeti portano significati diversi rispetto all'astrologia tradizionale.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/planets.html#planets-in-human-design" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+            </div>
+
+            <!-- Advanced Topics Header -->
+            <h3 class="text-base md:text-lg font-semibold text-gray-700 mt-12 mb-3">Argomenti Avanzati</h3>
+
+            <!-- Advanced Foundation Topics Sub-header -->
+            <h4 class="text-sm md:text-base font-semibold text-gray-500 mb-5">Argomenti Fondamentali Avanzati</h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Incarnation Cross Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-incarnation.svg" alt="Croce di Incarnazione" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Croce di Incarnazione</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                La Sua Croce di Incarnazione è definita da quattro attivazioni di Porte e Linee e fornisce il tema generale attraverso cui il Suo scopo può emergere. Le Croci sono raggruppate in Quarti e tipi di Croce.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="incarnation-cross/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- Circuits Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-circuits.svg" alt="Circuiti" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Circuiti</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Canali, Porte e Linee si raggruppano in tre famiglie di Circuiti generali: Individuale, Collettivo e Tribale. I circuiti Individuali e Tribali si suddividono ulteriormente in circuiti di Conoscenza, Integrazione, Centratura, Ego e Difesa.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="circuits/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- Deeper Mechanics Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-deeper-mechanics.svg" alt="Meccaniche Profonde" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Meccaniche Profonde</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Determinazione, Ambiente, Prospettiva e Motivazione. Le quattro aree critiche per vivere correttamente il Suo Design al livello più profondo.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="deeper-mechanics/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- Variables & Arrows Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-arrows.svg" alt="Frecce Variabili" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Frecce Variabili</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Le quattro Frecce in cima al Suo Bodygraph rivelano le Sue Variabili, che sono derivate dal Tono e rappresentano il livello più profondo di differenziazione quantica in Human Design.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="variables/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- Homo Solaris Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-homo-solaris.svg" alt="Homo Solaris" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Homo Solaris</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Homo Solaris è la nuova specie che emerge dalla Mutazione del Plesso Solare che inizia nel febbraio 2027. Definita dall'architettura quad-destra e dalla coscienza condivisa, Homo Solaris rappresenta il prossimo passo evolutivo per l'umanità.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="homo-solaris/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+            </div>
+
+            <!-- Transits & Life Cycles Sub-header -->
+            <h4 class="text-sm md:text-base font-semibold text-gray-500 mt-8 mb-5">Transiti e Cicli di Vita</h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- Life Cycles Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-cycles.svg" alt="Cicli di Vita" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Cicli di Vita</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Il Ritorno di Saturno, l'Opposizione di Urano e il Ritorno di Chirone segnano fasi critiche di maturazione e trasformazione nella vita. Altri cicli come il Rivoluzione solare, lunari, di Giove e altri hanno valore di condizionamento specifico e impatto.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="cycles/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- Transits Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-transits.svg" alt="Transiti" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Transiti</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Il flusso di neutrini porta programmazione planetaria che condiziona tutti in tempo reale, svegli o addormentati. I pianeti in Transito attivano Porte e Linee nella Sua Carta, rivelando un altro profondo strato di condizionamento che impatta la Sua mente.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="transits/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+            </div>
+
+            <!-- Relationship & Group Dynamics Sub-header -->
+            <h4 class="text-sm md:text-base font-semibold text-gray-500 mt-8 mb-5">Dinamiche Relazionali e di Gruppo</h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Connection Chart Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-connection.svg" alt="Carta di Connessione" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Carta di Connessione</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Un Design di Connessione assorbe i Design individuali e rivela le meccaniche di un'unione. Il Design di Connessione rivela che un'unione è più della somma delle sue parti.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="connection/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- Family Penta Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-penta.svg" alt="Penta Familiare" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Penta Familiare</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Il Penta è una forma energetica transpersonale che emerge quando gruppi di 3-5 persone sono in contatto aurico. Ha le sue proprie meccaniche. In termini di unità familiare, i temi Penta dominano come funziona un'unità familiare.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="penta/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- Business Penta (BG5) Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-penta.svg" alt="Penta Aziendale (BG5)" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Penta Aziendale (BG5)</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Il Penta Aziendale è la stessa meccanica Penta applicata ai piccoli team aziendali. L'unica differenza è la terminologia, rietichettata per un contesto aziendale.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="bg5/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- OC16 (WA) Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-oc16.svg" alt="WA (OC16)" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">WA (OC16)</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Il WA è una forma trans-aurica che emerge dal campo energetico combinato di nove o più persone. Gli OC16 sono i 6 Canali centrali (e 10 sotto-canali) che il WA usa per condizionare gli individui a funzionare come specifici "ingranaggi" al servizio dell'insieme.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="oc16/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+            </div>
+
+            <!-- Additional Topics Sub-header -->
+            <h4 class="text-sm md:text-base font-semibold text-gray-500 mt-8 mb-5">Argomenti Aggiuntivi</h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- Sleep Design Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-moon.svg" alt="Design del Sonno" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Design del Sonno</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Quando Lei dorme, l'intero Suo Design cambia e ritorna a un Design a 5 centri. Esplori come questo funziona e influenza il Suo riposo e rigenerazione.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="sleep-design/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- Animal Design Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-paw.svg" alt="Design Animale" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Design Animale</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Gli animali portano il loro Design unico e schema energetico. Mammiferi, rettili, uccelli, pesci, insetti e aracnidi possono anche condizionare specificamente ed essere condizionati dagli umani.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="animals/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CALCULATION METHOD SECTION ==================== -->
+    <section id="chart-methods" class="bg-white py-12 md:py-16 scroll-mt-[128px]">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Section Header -->
+            <div class="mb-2">
+                <span class="text-xs font-semibold tracking-widest text-gray-400 uppercase">Metodi di Calcolo</span>
+            </div>
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-3">
+                <span class="text-gm-purple">|</span> Comprenda Come Vengono Calcolate le Carte
+            </h2>
+            <p class="text-gray-500 text-sm md:text-base max-w-4xl mb-10">
+                Genetic Matrix offre sistemi di calcolo multipli che producono ciascuno una Carta valida. Confronti le differenze e scelga il metodo che si adatta al Suo approccio.
+            </p>
+
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Tropical Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-gm-purple flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-centres.svg" alt="Tropicale" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <span class="text-xs font-semibold tracking-widest text-gm-purple uppercase">Tropicale</span>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Zodiaco Tropicale</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Il sistema standard specificato da Ra Uru Hu per Human Design. Basato sulle stagioni e sull'equinozio di primavera, questo è il sistema più ampiamente utilizzato nell'astrologia occidentale.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="calculations/tropical.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- J2000 Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-gm-pink flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-j2k.svg" alt="J2000" class="w-20 h-20 flex-shrink-0 -ml-2">
+                        <div>
+                            <span class="text-xs font-semibold tracking-widest text-gm-pink uppercase">Tropicale</span>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Sistema di Riferimento J2000</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Un sistema di riferimento celeste standard che congela l'equatore medio e l'equinozio alle 12:00 Tempo Terrestre del 1° gennaio 2000. Rimuove Precessione e Nutazione.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="calculations/j2000.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- Sidereal Calculation Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#2ea89e] flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-windrose.svg" alt="Siderale" class="w-16 h-16 flex-shrink-0 icon-tint-teal">
+                        <div>
+                            <span class="text-xs font-semibold tracking-widest text-[#2ea89e] uppercase">Siderale</span>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Calcolo Siderale</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                A differenza dello zodiaco tropicale, i sistemi siderali misurano il tempo o il movimento basandosi sulla posizione della Terra relativa alle stelle distanti e "fisse", piuttosto che relativa al Sole. Per tenere conto della precessione degli equinozi della Terra, vengono utilizzati gli Ayanamsha assicurando che i segni zodiacali si allineino con le costellazioni reali e fisse nel cielo.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="calculations/sidereal.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- Draconic Zodiac Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#c94040] flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-dragon.svg" alt="Draconico" class="w-16 h-16 flex-shrink-0 icon-tint-red">
+                        <div>
+                            <span class="text-xs font-semibold tracking-widest text-[#c94040] uppercase">Draconico</span>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Zodiaco Draconico</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Il sistema Draconico sposta l'intero zodiaco tropicale cosicché il Nodo Nord diventa 0° Ariete. Rivela una Carta a livello animico connessa al Suo percorso karmico.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="calculations/draconic.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- True Sidereal Variants Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#d46ba3] flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-star.svg" alt="Siderale Reale" class="w-16 h-16 flex-shrink-0 icon-tint-pink">
+                        <div>
+                            <span class="text-xs font-semibold tracking-widest text-[#d46ba3] uppercase">Siderale reale</span>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Varianti Siderali Reali</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                L'astrologia Siderale reale non usa un ayanamsa indiano tradizionale e fisso come Lahiri. Invece, si allinea con i confini reali e visibili delle costellazioni. Popolarizzata da Clementi e Kanatas usando il sistema di confini IAU, mentre altri usano un sistema Punto Medio. Genetic Matrix supporta tutti questi metodi.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="calculations/true-sidereal.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Esplora →</a>
+                </div>
+
+                <!-- 13-Sign Sidereal Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#3d5a96] flex flex-col">
+                    <div class="flex items-start gap-4 mb

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+ <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>I 12 Segni Zodiacali (Plus il 13° Segno) | Segni Astrologici Spiegati | Genetic Matrix</title>
+ <meta name="description" content="Esplori tutti i 12 segni zodiacali più il controverso 13° segno Ofiuco. Scopra cosa significa ogni segno, come i pianeti si esprimono diversamente in ciascun segno, e cosa significa avere pianeti in case specifiche.">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn/astrology/zodiac-signs/">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ 'gm-purple': '#6E5898',
+ 'gm-purple-light': '#9080B1',
+ 'gm-purple-soft': '#AC94D8',
+ 'gm-dark': '#3C2864',
+ 'gm-darker': '#2e1f4d',
+ 'gm-green': '#54931E',
+ 'gm-green-dark': '#468018',
+ 'gm-green-light': '#8EB86A',
+ 'gm-pink': '#F66378',
+ 'gm-orange': '#E8961D',
+ 'gm-gray': '#707070',
+ 'gm-light': '#F7F8F9',
+ 'gm-card': '#FAFBFC',
+ 'gm-card-active': '#F4F0FC',
+ 'gm-border': '#D8D4E4',
+ 'gm-warning': '#F8F8E8',
+ 'gm-text-dark': '#1A1A2E',
+ 'gm-text': '#444444',
+ 'gm-text-light': '#949494',
+ }
+ }
+ }
+ }
+ </script>
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+ body { font-family: 'Inter', sans-serif; }
+ details summary { cursor: pointer; list-style: none; }
+ details summary::-webkit-details-marker { display: none; }
+ details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+ details[open] summary::after { content: '\2212'; }
+ details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+ @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+ /* Milky Way drift */
+ .milky-way {
+     position: absolute;
+     width: 200%;
+     height: 100%;
+     background: linear-gradient(135deg, transparent 30%, rgba(255,255,255,0.03) 45%, rgba(172,148,216,0.05) 50%, rgba(255,255,255,0.03) 55%, transparent 70%);
+     animation: milkyDrift 30s linear infinite;
+ }
+ @keyframes milkyDrift {
+     0% { transform: translateX(-25%); }
+     100% { transform: translateX(25%); }
+ }
+
+ /* Starfield for astro hero */
+ .astro-stars {
+     position: absolute; inset: 0; pointer-events: none;
+     background-image:
+         radial-gradient(1.5px 1.5px at 10% 20%, rgba(255,255,255,0.8) 0%, transparent 100%),
+         radial-gradient(2px 2px at 30% 50%, rgba(255,255,255,0.9) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 50% 15%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 70% 60%, rgba(255,255,255,0.85) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 85% 30%, rgba(255,255,255,0.75) 0%, transparent 100%),
+         radial-gradient(2px 2px at 15% 70%, rgba(172,148,216,0.8) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 60% 80%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 90% 85%, rgba(232,150,29,0.5) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 40% 90%, rgba(255,255,255,0.6) 0%, transparent 100%),
+         radial-gradient(2px 2px at 25% 40%, rgba(255,255,255,0.8) 0%, transparent 100%);
+     animation: astroTwinkle 4s ease-in-out infinite alternate;
+ }
+ @keyframes astroTwinkle {
+     0% { opacity: 0.7; }
+     100% { opacity: 1; }
+ }
+
+ /* Gold constellation patterns - scattered around hero edges */
+ .constellation-layer {
+     position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+ }
+ .constellation-layer svg {
+     position: absolute; opacity: 0.15;
+ }
+
+ /* Hero text entrance animation */
+ .hero-fade-in { opacity: 0; transform: translateY(12px); animation: heroEntrance 0.8s ease-out forwards; }
+ .hero-fade-in:nth-child(1) { animation-delay: 0.2s; }
+ .hero-fade-in:nth-child(2) { animation-delay: 0.4s; }
+ .hero-fade-in:nth-child(3) { animation-delay: 0.6s; }
+ @keyframes heroEntrance {
+     to { opacity: 1; transform: translateY(0); }
+ }
+
+ /* Background zodiac wheel rotation */
+ @keyframes slowSpin {
+     from { transform: rotate(0deg); }
+     to { transform: rotate(360deg); }
+ }
+ @keyframes counterSpin {
+     from { rotate: 0deg; }
+     to { rotate: -360deg; }
+ }
+
+ /* Zodiac wheel - gold line art */
+ .zodiac-wheel-container {
+     animation: slowSpin 120s linear infinite;
+ }
+ .zodiac-wheel-container text {
+     animation: counterSpin 120s linear infinite;
+     transform-box: fill-box;
+     transform-origin: center;
+ }
+ .zodiac-wheel-container svg {
+     filter: drop-shadow(0 0 8px rgba(232,150,29,0.15));
+ }
+
+ /* Sign card styles */
+ .sign-card {
+     transition: all 0.3s ease;
+     cursor: pointer;
+ }
+ .sign-card:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 8px 30px rgba(110,88,152,0.2);
+ }
+ .sign-card:hover .sign-icon {
+     filter: drop-shadow(0 0 12px rgba(172,148,216,0.6));
+ }
+ .sign-card .sign-icon {
+     transition: filter 0.3s ease;
+ }
+
+ /* Element filter pills */
+ .element-pill {
+     transition: all 0.2s ease;
+     cursor: pointer;
+     border: 2px solid transparent;
+ }
+ .element-pill:hover { transform: translateY(-1px); }
+ .element-pill.active { border-color: currentColor; box-shadow: 0 2px 12px rgba(0,0,0,0.15); }
+ .element-pill[data-element="fire"] { background: #dc2626; color: white; }
+ .element-pill[data-element="earth"] { background: #65a30d; color: white; }
+ .element-pill[data-element="air"] { background: #0891b2; color: white; }
+ .element-pill[data-element="water"] { background: #2563eb; color: white; }
+ .element-pill[data-element="all"] { background: #6E5898; color: white; }
+
+ /* Card filtering animation */
+ .sign-card.filtered-out {
+     opacity: 0; transform: scale(0.9); pointer-events: none;
+     max-height: 0; padding: 0; margin: 0; border: none; overflow: hidden;
+     transition: all 0.3s ease;
+ }
+ .sign-card.filtered-in {
+     opacity: 1; transform: scale(1);
+     transition: all 0.3s ease;
+ }
+
+ /* Scroll offset for sticky nav */
+ [id$="-detail"] { scroll-margin-top: 100px; }
+
+ /* FAQ hover */
+ details { transition: background-color 0.2s ease; }
+ details:hover { background-color: #F4F0FC; }
+ </style>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"I 12 Segni Zodiacali (Plus il 13° Segno) | Segni Astrologici Spiegati","description":"Esplori tutti i 12 segni zodiacali più il controverso 13° segno Ofiuco. Scopra cosa significa ogni segno, come i pianeti si esprimono diversamente in ciascun segno, e cosa significa avere pianeti in case specifiche.","publisher":{"@type":"Organization","name":"Genetic Matrix","url":"https://www.geneticmatrix.com"},"mainEntityOfPage":"https://www.geneticmatrix.com/learn/astrology/zodiac-signs/","datePublished":"2025-01-15","dateModified":"2026-03-06"}
+</script>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Il 13° segno è reale?","acceptedAnswer":{"@type":"Answer","text":"La costellazione di Ofiuco è astronomicamente reale, e il Sole passa effettivamente attraverso di essa. Se debba essere inclusa nel zodíaco astrologico dipende da quale sistema Lei utilizza. L'astrologia tradizionale usa 12 segni uguali. Il sistema a 13 segni lo include. Genetic Matrix Le consente di esplorare entrambi gli approcci."}},
+{"@type":"Question","name":"Cosa conta di più, il mio segno Sole o segno Luna?","acceptedAnswer":{"@type":"Answer","text":"Entrambi sono essenziali. Il Suo segno Sole descrive la Sua identità conscia e direzione di vita. Il Suo segno Luna descrive la Sua natura emotiva e i bisogni interiori. Molte persone trovano il loro segno Luna più riconoscibile perché riflette il loro sé privato ed emotivo piuttosto che la loro identità pubblica."}},
+{"@type":"Question","name":"I miei segni cambiano se passo dal tropicale al siderale?","acceptedAnswer":{"@type":"Answer","text":"Sì. Lo zodiaco siderale è spostato di circa 24 gradi rispetto al zodíaco tropicale, il che tipicamente sposta le Sue posizioni di segno indietro di un segno. Genetic Matrix Le consente di visualizzare la Sua carta in entrambi i sistemi per confrontare."}},
+{"@type":"Question","name":"Cosa significa se non ho pianeti in una casa?","acceptedAnswer":{"@type":"Answer","text":"Non significa che quell'area della vita sia vuota o non importante. Significa semplicemente che nessun pianeta si trovava in quella sezione del cielo al momento della Sua nascita. Il segno sulla cuspide della casa e il suo pianeta governatore descrivono ancora come funziona quell'area di vita per Lei."}}
+]}
+</script>
+</head>
+<body class="bg-white text-gray-700">
+
+ <!-- ==================== NAV BAR ==================== -->
+ <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14">
+            </a>
+            <div class="flex items-center gap-8">
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Rapporti">
+                    <img src="../../assets/icon-report.svg" alt="Rapporti" class="h-9 w-9">
+                </a>
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Carte Parlanti">
+                    <img src="../../assets/icon-talking-chart.svg" alt="Carte Parlanti" class="h-7 w-7">
+                </a>
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Carta Gratuita</a>
+                <!-- Learn -->
+                <a href="../../" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Learn</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">I Nostri Piani</a>
+                <a href="https://www.geneticmatrix.com/cart/" title="Carrello">
+                    <img src="../../assets/icon-cart.svg" alt="Carrello" class="h-5 w-auto">
+                </a>
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>English</span>
+                    <img src="../../assets/icon-english.svg" alt="English" class="h-5 w-7">
+                </div>
+                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Accedi</a>
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Registrati</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-50 border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 py-2.5">
+            <a href="../../" class="text-sm text-gm-purple hover:text-gm-dark font-medium transition">&larr; Torna a Learn Hub</a>
+        </div>
+    </div>
+
+ <!-- ==================== HERO BANNER ==================== -->
+ <section class="relative overflow-hidden text-white text-center py-14 md:py-20" style="background: linear-gradient(135deg, #1e1240 0%, #3C2864 35%, #4a3070 55%, #3C2864 75%, #1a0e38 100%);">
+     <!-- Milky Way band -->
+     <div class="milky-way"></div>
+     <!-- Star dots -->
+     <div class="astro-stars"></div>
+     <!-- Gold constellation patterns - scattered at edges -->
+     <div class="constellation-layer">
+         <!-- Top-left: Aries-like constellation -->
+         <svg width="120" height="140" viewBox="0 0 120 140" style="left: 3%; top: 8%;">
+             <circle cx="60" cy="10" r="3" fill="#d4a843"/><circle cx="35" cy="35" r="4" fill="#d4a843"/><circle cx="15" cy="65" r="3" fill="#d4a843"/><circle cx="40" cy="80" r="3.5" fill="#d4a843"/><circle cx="25" cy="110" r="3" fill="#d4a843"/><circle cx="55" cy="55" r="2.5" fill="#d4a843"/><circle cx="80" cy="45" r="3" fill="#d4a843"/>
+             <line x1="60" y1="10" x2="35" y2="35" stroke="#d4a843" stroke-width="0.8"/><line x1="35" y1="35" x2="55" y2="55" stroke="#d4a843" stroke-width="0.8"/><line x1="55" y1="55" x2="80" y2="45" stroke="#d4a843" stroke-width="0.8"/><line x1="35" y1="35" x2="15" y2="65" stroke="#d4a843" stroke-width="0.8"/><line x1="15" y1="65" x2="40" y2="80" stroke="#d4a843" stroke-width="0.8"/><line x1="40" y1="80" x2="25" y2="110" stroke="#d4a843" stroke-width="0.8"/>
+         </svg>
+         <!-- Top-right: Gemini-like constellation -->
+         <svg width="90" height="100" viewBox="0 0 90 100" style="right: 8%; top: 5%;">
+             <circle cx="20" cy="10" r="3" fill="#d4a843"/><circle cx="70" cy="10" r="3" fill="#d4a843"/><circle cx="25" cy="40" r="2.5" fill="#d4a843"/><circle cx="65" cy="40" r="2.5" fill="#d4a843"/><circle cx="30" cy="70" r="3" fill="#d4a843"/><circle cx="60" cy="70" r="3" fill="#d4a843"/><circle cx="45" cy="90" r="3.5" fill="#d4a843"/>
+             <line x1="20" y1="10" x2="25" y2="40" stroke="#d4a843" stroke-width="0.8"/><line x1="70" y1="10" x2="65" y2="40" stroke="#d4a843" stroke-width="0.8"/><line x1="25" y1="40" x2="65" y2="40" stroke="#d4a843" stroke-width="0.8"/><line x1="25" y1="40" x2="30" y2="70" stroke="#d4a843" stroke-width="0.8"/><line x1="65" y1="40" x2="60" y2="70" stroke="#d4a843" stroke-width="0.8"/><line x1="30" y1="70" x2="45" y2="90" stroke="#d4a843" stroke-width="0.8"/><line x1="60" y1="70" x2="45" y2="90" stroke="#d4a843" stroke-width="0.8"/>
+         </svg>
+         <!-- Bottom-left: Sagittarius-like -->
+         <svg width="100" height="120" viewBox="0 0 100 120" style="left: 2%; bottom: 5%;">
+             <circle cx="10" cy="100" r="3" fill="#d4a843"/><circle cx="30" cy="80" r="2.5" fill="#d4a843"/><circle cx="50" cy="60" r="3.5" fill="#d4a843"/><circle cx="70" cy="40" r="3" fill="#d4a843"/><circle cx="90" cy="20" r="2.5" fill="#d4a843"/><circle cx="40" cy="40" r="2.5" fill="#d4a843"/><circle cx="60" cy="90" r="3" fill="#d4a843"/>
+             <line x1="10" y1="100" x2="30" y2="80" stroke="#d4a843" stroke-width="0.8"/><line x1="30" y1="80" x2="50" y2="60" stroke="#d4a843" stroke-width="0.8"/><line x1="50" y1="60" x2="70" y2="40" stroke="#d4a843" stroke-width="0.8"/><line x1="70" y1="40" x2="90" y2="20" stroke="#d4a843" stroke-width="0.8"/><line x1="50" y1="60" x2="40" y2="40" stroke="#d4a843" stroke-width="0.8"/><line x1="30" y1="80" x2="60" y2="90" stroke="#d4a843" stroke-width="0.8"/>
+         </svg>
+         <!-- Bottom-right: Orion-like -->
+         <svg width="110" height="130" viewBox="0 0 110 130" style="right: 5%; bottom: 8%;">
+             <circle cx="55" cy="10" r="3" fill="#d4a843"/><circle cx="35" cy="35" r="3.5" fill="#d4a843"/><circle cx="75" cy="35" r="3.5" fill="#d4a843"/><circle cx="55" cy="55" r="2.5" fill="#d4a843"/><circle cx="30" cy="80" r="3" fill="#d4a843"/><circle cx="80" cy="80" r="3" fill="#d4a843"/><circle cx="20" cy="110" r="2.5" fill="#d4a843"/><circle cx="90" cy="110" r="2.5" fill="#d4a843"/>
+             <line x1="55" y1="10" x2="35" y2="35" stroke="#d4a843" stroke-width="0.8"/><line x1="55" y1="10" x2="75" y2="35" stroke="#d4a843" stroke-width="0.8"/><line x1="35" y1="35" x2="75" y2="35" stroke="#d4a843" stroke-width="0.8"/><line x1="35" y1="35" x2="55" y2="55" stroke="#d4a843" stroke-width="0.8"/><line x1="75" y1="35" x2="55" y2="55" stroke="#d4a843" stroke-width="0.8"/><line x1="35" y1="35" x2="30" y2="80" stroke="#d4a843" stroke-width="0.8"/><line x1="75" y1="35" x2="80" y2="80" stroke="#d4a843" stroke-width="0.8"/><line x1="30" y1="80" x2="20" y2="110" stroke="#d4a843" stroke-width="0.8"/><line x1="80" y1="80" x2="90" y2="110" stroke="#d4a843" stroke-width="0.8"/>
+         </svg>
+         <!-- Center-right small cluster -->
+         <svg width="60" height="50" viewBox="0 0 60 50" style="right: 20%; top: 15%;">
+             <circle cx="10" cy="25" r="2" fill="#d4a843"/><circle cx="30" cy="10" r="2.5" fill="#d4a843"/><circle cx="50" cy="30" r="2" fill="#d4a843"/><circle cx="35" cy="45" r="2.5" fill="#d4a843"/>
+             <line x1="10" y1="25" x2="30" y2="10" stroke="#d4a843" stroke-width="0.6"/><line x1="30" y1="10" x2="50" y2="30" stroke="#d4a843" stroke-width="0.6"/><line x1="50" y1="30" x2="35" y2="45" stroke="#d4a843" stroke-width="0.6"/>
+         </svg>
+     </div>
+     <div class="max-w-3xl mx-auto px-6 relative z-10">
+         <span class="hero-fade-in inline-block bg-gm-purple text-white text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">Astrologia</span>
+         <h1 class="hero-fade-in text-3xl md:text-4xl font-bold mb-3">I 12 Segni Zodiacali (Plus il 13° Segno)</h1>
+         <p class="hero-fade-in text-gray-300 text-sm md:text-base leading-relaxed max-w-xl mx-auto">Esplori tutti i 12 segni zodiacali più il controverso 13° segno Ofiuco. Scopra cosa significa ogni segno, come i pianeti si esprimono diversamente in ciascun segno, e cosa significa avere pianeti in case specifiche.</p>
+     </div>
+ </section>
+
+ <!-- ==================== WHAT ARE ZODIAC SIGNS? ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="what-are-zodiac-signs">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Cosa Sono i Segni Zodiacali?</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Lo zodiaco è una fascia di cielo che si estende per circa 8 gradi su entrambi i lati dell'eclittica, il percorso apparente che il Sole traccia attraverso il cielo nel corso di un anno. Questa fascia è divisa in 12 segmenti di 30 gradi ciascuno, e ogni segmento prende il nome da una costellazione. Questi sono i segni zodiacali.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">In astrologia, il Suo segno Sole è determinato da quale segmento dello zodiaco il Sole occupava al momento della Sua nascita. Ma il Suo Tema natale completo posiziona tutti i pianeti, la Luna e altri punti significativi nello zodiaco, dandoLe posizioni in più segni. Lei non è solo il Suo segno Sole. Lei è un intero Tema natale.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Ogni segno ha un <strong class="text-gray-800">pianeta governatore</strong>, un <strong class="text-gray-800">elemento</strong> (Fuoco, Terra, Aria, Acqua), una <strong class="text-gray-800">modalità</strong> (Cardinale, Fisso, Mobile), e una <strong class="text-gray-800">polarità</strong> (Yin o Yang). Queste qualità modellano come il segno esprime la sua energia.</p>
+
+         <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Chiave di Comprensione</p>
+             <p class="text-gm-text text-sm leading-relaxed italic">Lei non è solo il Suo segno Sole. Lei è un intero Tema natale. Il Suo Tema natale completo posiziona tutti i pianeti, la Luna e altri punti significativi attraverso lo zodiaco, dandoLe posizioni in più segni che insieme dipingono un quadro completo di chi è.</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== ZODIAC WHEEL ==================== -->
+ <section class="py-14 md:py-20 bg-gm-light relative overflow-hidden" id="zodiac-wheel">
+     <div class="max-w-4xl mx-auto px-6 relative z-10">
+         <!-- Rotating zodiac wheel -->
+         <div class="flex justify-center mb-12">
+             <div class="zodiac-wheel-container w-[300px] h-[300px] md:w-[380px] md:h-[380px]">
+                 <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <!-- Outer ring -->
+                     <circle cx="200" cy="200" r="190" stroke="#d4a843" stroke-width="1.5"/>
+                     <!-- Glyph guide ring -->
+                     <circle cx="200" cy="200" r="145" stroke="#d4a843" stroke-width="0.4" stroke-dasharray="2 4"/>
+                     <!-- Inner ring -->
+                     <circle cx="200" cy="200" r="100" stroke="#d4a843" stroke-width="1"/>
+                     <!-- Center starburst ring -->
+                     <circle cx="200" cy="200" r="38" stroke="#d4a843" stroke-width="0.6"/>
+
+                     <!-- 12 segment lines from outer ring (r=190) to inner ring (r=100) -->
+                     <!-- x = 200 + r*sin(angle), y = 200 - r*cos(angle) -->
+                     <line x1="200" y1="10" x2="200" y2="100" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="295" y1="35.5" x2="250" y2="113.4" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="364.5" y1="105" x2="286.6" y2="150" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="390" y1="200" x2="300" y2="200" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="364.5" y1="295" x2="286.6" y2="250" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="295" y1="364.5" x2="250" y2="286.6" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="200" y1="390" x2="200" y2="300" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="105" y1="364.5" x2="150" y2="286.6" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="35.5" y1="295" x2="113.4" y2="250" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="10" y1="200" x2="100" y2="200" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="35.5" y1="105" x2="113.4" y2="150" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="105" y1="35.5" x2="150" y2="113.4" stroke="#d4a843" stroke-width="0.8"/>
+
+                     <!-- Center 12-pointed starburst -->
+                     <!-- Cardinal rays -->
+                     <line x1="200" y1="163" x2="200" y2="237" stroke="#d4a843" stroke-width="1" opacity="0.5"/>
+                     <line x1="163" y1="200" x2="237" y2="200" stroke="#d4a843" stroke-width="1" opacity="0.5"/>
+                     <!-- Diagonal rays -->
+                     <line x1="174" y1="174" x2="226" y2="226" stroke="#d4a843" stroke-width="0.8" opacity="0.4"/>
+                     <line x1="226" y1="174" x2="174" y2="226" stroke="#d4a843" stroke-width="0.8" opacity="0.4"/>
+                     <!-- 30-degree rays -->
+                     <line x1="181" y1="164" x2="219" y2="236" stroke="#d4a843" stroke-width="0.5" opacity="0.3"/>
+                     <line x1="219" y1="164" x2="181" y2="236" stroke="#d4a843" stroke-width="0.5" opacity="0.3"/>
+                     <line x1="164" y1="181" x2="236" y2="219" stroke="#d4a843" stroke-width="0.5" opacity="0.3"/>
+                     <line x1="164" y1="219" x2="236" y2="181" stroke="#d4a843" stroke-width="0.5" opacity="0.3"/>
+                     <!-- Star tip accents -->
+                     <polygon points="200,163 196,178 200,168 204,178" fill="#d4a843" opacity="0.5"/>
+                     <polygon points="200,237 204,222 200,232 196,222" fill="#d4a843" opacity="0.5"/>
+                     <polygon points="163,200 178,204 168,200 178,196" fill="#d4a843" opacity="0.5"/>
+                     <polygon points="237,200 222,196 232,200 222,204" fill="#d4a843" opacity="0.5"/>
+                     <!-- Center dot -->
+                     <circle cx="200" cy="200" r="3" fill="#d4a843"/>
+
+                     <!-- Zodiac glyphs centered in segments (r=145, at 15°/45°/75°... between divider lines) -->
+                     <!-- Aries at 15° -->
+                     <text x="237.5" y="60" text-anchor="middle" dominant-baseline="central" fill="#d4a843" font-size="28" font-family="serif">&#x2648;</text>
+                     <!-- Taurus at 45° -->
+                     <text x="302.5" y="97.5" text-anchor="middle" dominant-baseline="central" fill="#d4a843" font-size="28" font-family="serif">&#x2649;</text>
+                     <!-- Gemini at 75° -->
+                     <text x="340" y="162.5" text-anchor="middle" dominant-baseline="central" fill="#d4a843" font-size="28" font-family="serif">&#x264A;</text>
+                     <!-- Cancer at 105° -->
+                     <text x="340" y="237.5" text-anchor="middle" dominant-baseline="central" fill="#d4a843" font-size="28" font-family="serif">&#x264B;</text>
+                     <!-- Leo at 135° -->
+                     <text x="302.5" y="302.5" text-anchor="middle" dominant-baseline="central" fill="#d4a843" font-size="28" font-family="serif">&#x264C;</text>
+                     <!-- Virgo at 165° -->
+                     <text x="237.5" y="340" text-anchor="middle" dominant-baseline="central" fill="#d4a843" font-size="28" font-family="serif">&#x264D;</text>
+                     <!-- Libra at 195° -->
+                     <text x="162.5" y="340" text-anchor="middle" dominant-baseline="central" fill="#d4a843" font-size="28" font-family="serif">&#x264E;</text>
+                     <!-- Scorpio at 225° -->
+                     <text x="97.5" y="302.5" text-anchor="middle" dominant-baseline="central" fill="#d4a843" font-size="28" font-family="serif">&#x264F;</text>
+                     <!-- Sagittarius at 255° -->
+                     <text x="60" y="237.5" text-anchor="middle" dominant-baseline="central" fill="#d4a843" font-size="28" font-family="serif">&#x2650;</text>
+                     <!-- Capricorn at 285° -->
+                     <text x="60" y="162.5" text-anchor="middle" dominant-baseline="central" fill="#d4a843" font-size="28" font-family="serif">&#x2651;</text>
+                     <!-- Aquarius at 315° -->
+                     <text x="97.5" y="97.5" text-anchor="middle" dominant-baseline="central" fill="#d4a843" font-size="28" font-family="serif">&#x2652;</text>
+                     <!-- Pisces at 345° -->
+                     <text x="162.5" y="60" text-anchor="middle" dominant-baseline="central" fill="#d4a843" font-size="28" font-family="serif">&#x2653;</text>
+                 </svg>
+             </div>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== THE 12 ZODIAC SIGNS - CARD GRID ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="the-12-zodiac-signs">
+     <div class="max-w-5xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> I 12 Segni Zodiacali</h2>
+
+         <!-- Element filter pills -->
+         <div class="flex flex-wrap gap-3 mb-8" id="element-filters">
+             <button class="element-pill active text-sm font-semibold px-5 py-2 rounded-full" data-element="all" onclick="filterSigns('all')">Tutti i Segni</button>
+             <button class="element-pill text-sm font-semibold px-5 py-2 rounded-full" data-element="fire" onclick="filterSigns('fire')">&#x1F525; Fuoco</button>
+             <button class="element-pill text-sm font-semibold px-5 py-2 rounded-full" data-element="earth" onclick="filterSigns('earth')">&#x1F30D; Terra</button>
+             <button class="element-pill text-sm font-semibold px-5 py-2 rounded-full" data-element="air" onclick="filterSigns('air')">&#x1F4A8; Aria</button>
+             <button class="element-pill text-sm font-semibold px-5 py-2 rounded-full" data-element="water" onclick="filterSigns('water')">&#x1F4A7; Acqua</button>
+         </div>
+
+         <!-- Sign cards grid -->
+         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5" id="sign-cards">
+
+             <!-- Aries -->
+             <a href="#aries-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="fire">
+                 <div class="w-14 h-14 mx-auto mb-3">
+                     <img src="../../assets/zodiac/Aries.svg" alt="Ariete" class="sign-icon w-full h-full">
+                 </div>
+                 <h3 class="text-base font-bold text-gray-800 mb-1">Ariete</h3>
+                 <p class="text-gm-text-light text-xs mb-2">21 marzo - 19 aprile</p>
+                 <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-red-500/10 text-red-600">Fuoco</span>
+             </a>
+
+             <!-- Taurus -->
+             <a href="#taurus-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="earth">
+                 <div class="w-14 h-14 mx-auto mb-3">
+                     <img src="../../assets/zodiac/Taurus.svg" alt="Toro" class="sign-icon w-full h-full">
+                 </div>
+                 <h3 class="text-base font-bold text-gray-800 mb-1">Toro</h3>
+                 <p class="text-gm-text-light text-xs mb-2">20 aprile - 20 maggio</p>
+                 <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-green-500/10 text-green-700">Terra</span>
+             </a>
+
+             <!-- Gemini -->
+             <a href="#gemini-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="air">
+                 <div class="w-14 h-14 mx-auto mb-3">
+                     <img src="../../assets/zodiac/Gemini.svg" alt="Gemelli" class="sign-icon w-full h-full">
+                 </div>
+                 <h3 class="text-base font-bold text-gray-800 mb-1">Gemelli</h3>
+                 <p class="text-gm-text-light text-xs mb-2">21 maggio - 20 giugno</p>
+                 <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-cyan-500/10 text-cyan-700">Aria</span>
+             </a>
+
+             <!-- Cancer -->
+             <a href="#cancer-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="water">
+                 <div class="w-14 h-14 mx-auto mb-3">
+                     <img src="../../assets/zodiac/Cancer.svg" alt="Cancro" class="sign-icon w-full h-full">
+                 </div>
+                 <h3 class="text-base font-bold text-gray-800 mb-1">Cancro</h3>
+                 <p class="text-gm-text-light text-xs mb-2">21 giugno - 22 luglio</p>
+                 <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-600">Acqua</span>
+             </a>
+
+             <!-- Leo -->
+             <a href="#leo-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="fire">
+                 <div class="w-14 h-14 mx-auto mb-3">
+                     <img src="../../assets/zodiac/Leo.svg" alt="Leone" class="sign-icon w-full h-full">
+                 </div>
+                 <h3 class="text-base font-bold text-gray-800 mb-1">Leone</h3>
+                 <p class="text-gm-text-light text-xs mb-2">23 luglio - 22 agosto</p>
+                 <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-red-500/10 text-red-600">Fuoco</span>
+             </a>
+
+             <!-- Virgo -->
+             <a href="#virgo-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="earth">
+                 <div class="w-14 h-14 mx-auto mb-3">
+                     <img src="../../assets/zodiac/Virgo.svg" alt="Vergine" class="sign-icon w-full h-full">
+                 </div>
+                 <h3 class="text-base font-bold text-gray-800 mb-1">Vergine</h3>
+                 <p class="text-gm-text-light text-xs mb-2">23 agosto - 22 settembre</p>
+                 <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-green-500/10 text-green-700">Terra</span>
+             </a>
+
+             <!-- Libra -->
+             <a href="#libra-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="air">
+                 <div class="w-14 h-14 mx-auto mb-3">
+                     <img src="../../assets/zodiac/Libra.svg" alt="Bilancia" class="sign-icon w-full h-full">
+                 </div>
+                 <h3 class="text-base font-bold text-gray-800 mb-1">Bilancia</h3>
+                 <p class="text-gm-text-light text-xs mb-2">23 settembre - 22 ottobre</p>
+                 <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-cyan-500/10 text-cyan-700">Aria</span>
+             </a>
+
+             <!-- Scorpio -->
+             <a href="#scorpio-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="water">
+                 <div class="w-14 h-14 mx-auto mb-3">
+                     <img src="../../assets/zodiac/Scorpio.svg" alt="Scorpione" class="sign-icon w-full h-full">
+                 </div>
+                 <h3 class="text-base font-bold text-gray-800 mb-1">Scorpione</h3>
+                 <p class="text-gm-text-light text-xs mb-2">23 ottobre - 21 novembre</p>
+                 <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-600">Acqua</span>
+             </a>
+
+             <!-- Sagittarius -->
+             <a href="#sagittarius-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="fire">
+                 <div class="w-14 h-14 mx-auto mb-3">
+                     <img src="../../assets/zodiac/Sagittarius.svg" alt="Sagittario" class="sign-icon w-full h-full">
+                 </div>
+                 <h3 class="text-base font-bold text-gray-800 mb-1">Sagittario</h3>
+                 <p class="text-gm-text-light text-xs mb-2">22 novembre - 21 dicembre</p>
+                 <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-red-500/10 text-red-600">Fuoco</span>
+             </a>
+
+             <!-- Capricorn -->
+             <a href="#capricorn-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="earth">
+                 <div class="w-14 h-14 mx-auto mb-3">
+                     <img src="../../assets/zodiac/Capricorn.svg" alt="Capricorno" class="sign-icon w-full h-full">
+                 </div>
+                 <h3 class="text-base font-bold text-gray-800 mb-1">Capricorno</h3>
+                 <p class="text-gm-text-light text-xs mb-2">22 dicembre - 19 gennaio</p>
+                 <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-green-500/10 text-green-700">Terra</span>
+             </a>
+
+             <!-- Aquarius -->
+             <a href="#aquarius-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="air">
+                 <div class="w-14 h-14 mx-auto mb-3">
+                     <img src="../../assets/zodiac/Aquarius.svg" alt="Acquario" class="sign-icon w-full h-full">
+                 </div>
+                 <h3 class="text-base font-bold text-gray-800 mb-1">Acquario</h3>
+                 <p class="text-gm-text-light text-xs mb-2">20 gennaio - 18 febbraio</p>
+                 <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-cyan-500/10 text-cyan-700">Aria</span>
+             </a>
+
+             <!-- Pisces -->
+             <a href="#pisces-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="water">
+                 <div class="w-14 h-14 mx-auto mb-3">
+                     <img src="../../assets/zodiac/Pisces.svg" alt="Pesci" class="sign-icon w-full h-full">
+                 </div>
+                 <h3 class="text-base font-bold text-gray-800 mb-1">Pesci</h3>
+                 <p class="text-gm-text-light text-xs mb-2">19 febbraio - 20 marzo</p>
+                 <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-600">Acqua</span>
+             </a>
+
+         </div>
+
+         <!-- Key Insight box -->
+         <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 mt-8">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Chiave di Comprensione</p>
+             <p class="text-gm-text text-sm leading-relaxed italic">Ogni segno zodiacale governa una parte del corpo, creando una mappa dalla testa (Ariete) ai piedi (Pesci). Questa antica corrispondenza collega i modelli celesti all'esperienza fisica, riflettendo la visione olistica dell'astrologia secondo cui il macrocosmo si rispecchia nel microcosmo.</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== SIGN DETAIL SECTIONS ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="sign-details">
+     <div class="max-w-4xl mx-auto px-6">
+         <div id="aries-detail" class="mb-10">
+             <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
+                 <img src="../../assets/zodiac/Aries.svg" alt="Ariete" class="w-7 h-7 flex-shrink-0">
+                 Ariete (21 marzo - 19 aprile)
+             </h3>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Elemento:</strong> Fuoco | <strong class="text-gray-800">Modalità:</strong> Cardinale | <strong class="text-gray-800">Governatore:</strong> Marte</p>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed">L'Ariete è il primo segno dello zodiaco e porta l'energia dell'iniziazione, del coraggio e dell'azione diretta. L'energia dell'Ariete è competitiva, indipendente e impulsiva. Vuole essere primo, guidare e fare da pioniere. Al suo meglio, l'Ariete è coraggioso, onesto ed energizzante. Al suo aspetto più difficile, può essere impaziente, aggressivo ed egocentrico. L'Ariete governa la testa e il viso.</p>
+         </div>
+
+         <div id="taurus-detail" class="mb-10">
+             <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
+                 <img src="../../assets/zodiac/Taurus.svg" alt="Toro" class="w-7 h-7 flex-shrink-0">
+                 Toro (20 aprile - 20 maggio)
+             </h3>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Elemento:</strong> Terra | <strong class="text-gray-800">Modalità:</strong> Fisso | <strong class="text-gray-800">Governatore:</strong> Venere</p>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed">Il Toro è il segno della stabilità, sensualità e comfort materiale. L'energia del Toro è paziente, affidabile e profondamente connessa al mondo fisico: cibo, tatto, natura, denaro, bellezza. Valorizza la sicurezza sopra quasi ogni altra cosa e può essere straordinariamente persistente. Al suo aspetto più difficile, il Toro diventa ostinato, possessivo e resistente al cambiamento. Il Toro governa la gola e il collo.</p>
+         </div>
+
+         <div id="gemini-detail" class="mb-10">
+             <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
+                 <img src="../../assets/zodiac/Gemini.svg" alt="Gemelli" class="w-7 h-7 flex-shrink-0">
+                 Gemelli (21 maggio - 20 giugno)
+             </h3>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Elemento:</strong> Aria | <strong class="text-gray-800">Modalità:</strong> Mobile | <strong class="text-gray-800">Governatore:</strong> Mercurio</p>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed">I Gemelli sono il segno della comunicazione, curiosità e agilità mentale. L'energia dei Gemelli vuole imparare tutto, parlare con tutti e destreggiarsi tra più interessi simultaneamente. È adattabile, spiritoso e socialmente versatile. Al suo aspetto più difficile, i Gemelli possono essere superficiali, incoerenti e dispersivi. I Gemelli governano le mani, le braccia e i polmoni.</p>
+         </div>
+
+         <div id="cancer-detail" class="mb-10">
+             <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
+                 <img src="../../assets/zodiac/Cancer.svg" alt="Cancro" class="w-7 h-7 flex-shrink-0">
+                 Cancro (21 giugno - 22 luglio)
+             </h3>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Elemento:</strong> Acqua | <strong class="text-gray-800">Modalità:</strong> Cardinale | <strong class="text-gray-800">Governatore:</strong> Luna</p>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed">Il Cancro è il segno dell'accudimento, profondità emotiva e casa. L'energia del Cancro è protettiva, intuitiva e profondamente attaccata alla famiglia e al passato. Crea sicurezza per coloro che ama e ha una potente memoria emotiva. Al suo aspetto più difficile, il Cancro può essere lunatico, appiccicoso e manipolativo attraverso il senso di colpa. Il Cancro governa il petto, il seno e lo stomaco.</p>
+         </div>
+
+         <div id="leo-detail" class="mb-10">
+             <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
+                 <img src="../../assets/zodiac/Leo.svg" alt="Leone" class="w-7 h-7 flex-shrink-0">
+                 Leone (23 luglio - 22 agosto)
+             </h3>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Elemento:</strong> Fuoco | <strong class="text-gray-800">Modalità:</strong> Fisso | <strong class="text-gray-800">Governatore:</strong> Sole</p>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed">Il Leone è il segno della creatività, autoespressione e magnetismo personale. L'energia del Leone è calorosa, generosa, drammatica e vuole essere vista e apprezzata. Ha qualità di leadership naturali e un genuino desiderio di portare gioia agli altri. Al suo aspetto più difficile, il Leone può essere egocentrico, in cerca di attenzione e orgoglioso. Il Leone governa il cuore e la parte superiore della schiena.</p>
+         </div>
+
+         <div id="virgo-detail" class="mb-10">
+             <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
+                 <img src="../../assets/zodiac/Virgo.svg" alt="Vergine" class="w-7 h-7 flex-shrink-0">
+                 Vergine (23 agosto - 22 settembre)
+             </h3>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Elemento:</strong> Terra | <strong class="text-gray-800">Modalità:</strong> Mobile | <strong class="text-gray-800">Governatore:</strong> Mercurio</p>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed">La Vergine è il segno dell'analisi, servizio e miglioramento pratico. L'energia della Vergine è meticolosa, attenta alla salute e spinta a far funzionare meglio le cose. Nota ciò che altri non vedono e trova scopo nell'essere utile. Al suo aspetto più difficile, la Vergine può essere eccessivamente critica, ansiosa e perfezionista al punto di paralisi. La Vergine governa il sistema digestivo e gli intestini.</p>
+         </div>
+
+         <div id="libra-detail" class="mb-10">
+             <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
+                 <img src="../../assets/zodiac/Libra.svg" alt="Bilancia" class="w-7 h-7 flex-shrink-0">
+                 Bilancia (23 settembre - 22 ottobre)
+             </h3>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Elemento:</strong> Aria | <strong class="text-gray-800">Modalità:</strong> Cardinale | <strong class="text-gray-800">Governatore:</strong> Venere</p>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed">La Bilancia è il segno dell'equilibrio, partnership e armonia estetica. L'energia della Bilancia cerca equità, bellezza e connessione significativa uno a uno. È diplomatica, affascinante e socialmente graziosa. Al suo aspetto più difficile, la Bilancia può essere indecisa, compiacente e evitante i conflitti fino al punto della disonestà. La Bilancia governa i reni, la parte bassa della schiena e la pelle.</p>
+         </div>
+
+         <div id

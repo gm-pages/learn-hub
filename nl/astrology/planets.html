@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+ <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Astrologische Planeten Uitgelegd | Wat Elke Planeet Betekent in Uw Geboortehoroscoop | Genetic Matrix</title>
+ <meta name="description" content="Leer wat elke planeet betekent in de astrologie. Van de Zon en Maan tot Jupiter, Saturnus en de buitenplaneten, ontdek hoe planetaire energieën uw geboortehoroscoop vormen en uw leven beïnvloeden.">
+ <meta name="keywords" content="astrologische planeten, planeten in astrologie, geboortehoroscoop planeten, zon in astrologie, maan in astrologie, mercurius astrologie, venus astrologie, mars astrologie, jupiter astrologie, saturnus astrologie, uranus astrologie, neptunus astrologie, pluto astrologie, chiron astrologie, noordknoop astrologie, zuidknoop astrologie, persoonlijke planeten, buitenplaneten, geboortehoroscoop planeten">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn/astrology/planets/">
+ <meta property="og:title" content="Astrologische Planeten Uitgelegd - Wat Elke Planeet Betekent in Uw Chart">
+ <meta property="og:description" content="Leer wat elke planeet betekent in de astrologie. Van de Zon en Maan tot de buitenplaneten, ontdek hoe planetaire energieën uw geboortehoroscoop vormen.">
+ <meta property="og:type" content="article">
+ <meta property="og:url" content="https://www.geneticmatrix.com/learn/astrology/planets/">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="Astrologische Planeten Uitgelegd - Wat Elke Planeet Betekent in Uw Chart">
+ <meta name="twitter:description" content="Leer wat elke planeet betekent in de astrologie. Van de Zon en Maan tot de buitenplaneten, ontdek hoe planetaire energieën uw geboortehoroscoop vormen.">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ 'gm-purple': '#6E5898',
+ 'gm-purple-light': '#9080B1',
+ 'gm-purple-soft': '#AC94D8',
+ 'gm-dark': '#3C2864',
+ 'gm-darker': '#2e1f4d',
+ 'gm-green': '#54931E',
+ 'gm-green-dark': '#468018',
+ 'gm-green-light': '#8EB86A',
+ 'gm-pink': '#F66378',
+ 'gm-orange': '#E8961D',
+ 'gm-gray': '#707070',
+ 'gm-light': '#F7F8F9',
+ 'gm-card': '#FAFBFC',
+ 'gm-card-active': '#F4F0FC',
+ 'gm-border': '#D8D4E4',
+ 'gm-warning': '#F8F8E8',
+ 'gm-text-dark': '#1A1A2E',
+ 'gm-text': '#444444',
+ 'gm-text-light': '#949494',
+ }
+ }
+ }
+ }
+ </script>
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+ body { font-family: 'Inter', sans-serif; }
+ details summary { cursor: pointer; list-style: none; }
+ details summary::-webkit-details-marker { display: none; }
+ details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+ details[open] summary::after { content: '\2212'; }
+ details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+ @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+ /* Starfield for hero */
+ .astro-stars {
+     position: absolute; inset: 0; pointer-events: none;
+     background-image:
+         radial-gradient(1.5px 1.5px at 10% 20%, rgba(255,255,255,0.8) 0%, transparent 100%),
+         radial-gradient(2px 2px at 30% 50%, rgba(255,255,255,0.9) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 50% 15%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 70% 60%, rgba(255,255,255,0.85) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 85% 30%, rgba(255,255,255,0.75) 0%, transparent 100%),
+         radial-gradient(2px 2px at 15% 70%, rgba(172,148,216,0.8) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 60% 80%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 90% 85%, rgba(232,150,29,0.5) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 40% 90%, rgba(255,255,255,0.6) 0%, transparent 100%),
+         radial-gradient(2px 2px at 25% 40%, rgba(255,255,255,0.8) 0%, transparent 100%);
+     animation: astroTwinkle 4s ease-in-out infinite alternate;
+ }
+ @keyframes astroTwinkle {
+     0% { opacity: 0.7; }
+     100% { opacity: 1; }
+ }
+
+ /* Hero decorative planet illustrations */
+ .hero-planet-layer {
+     position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+ }
+ .hero-planet-layer svg {
+     position: absolute; opacity: 0.12;
+ }
+
+ /* Hero text entrance */
+ .hero-fade-in { opacity: 0; transform: translateY(12px); animation: heroEntrance 0.8s ease-out forwards; }
+ .hero-fade-in:nth-child(1) { animation-delay: 0.2s; }
+ .hero-fade-in:nth-child(2) { animation-delay: 0.4s; }
+ .hero-fade-in:nth-child(3) { animation-delay: 0.6s; }
+ @keyframes heroEntrance {
+     to { opacity: 1; transform: translateY(0); }
+ }
+
+ /* Planet group tabs */
+ .planet-tab {
+     padding: 0.5rem 1.25rem;
+     border-radius: 9999px;
+     font-size: 0.875rem;
+     font-weight: 500;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     border: 1px solid rgba(110,88,152,0.3);
+     color: #9080B1;
+     background: transparent;
+ }
+ .planet-tab:hover {
+     border-color: rgba(172,148,216,0.6);
+     color: #AC94D8;
+ }
+ .planet-tab.active {
+     background: rgba(110,88,152,0.2);
+     border-color: #AC94D8;
+     color: white;
+ }
+
+ /* Planet card styles */
+ .planet-card {
+     transition: all 0.3s ease;
+     background: #F4F0FC;
+     border: 1px solid rgba(172,148,216,0.3);
+     border-radius: 1rem;
+     padding: 1.75rem 1.5rem;
+     text-align: center;
+ }
+ .planet-card:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 8px 30px rgba(110,88,152,0.2);
+     border-color: rgba(172,148,216,0.5);
+ }
+ .planet-icon-badge {
+     width: 56px;
+     height: 56px;
+     border-radius: 50%;
+     background: rgba(110,88,152,0.1);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto 0.75rem;
+ }
+ .planet-icon-badge span {
+     font-size: 1.75rem;
+     color: #6E5898;
+ }
+ .planet-card:hover .planet-icon-badge {
+     background: rgba(110,88,152,0.18);
+ }
+ .planet-category {
+     display: inline-block;
+     font-size: 0.625rem;
+     font-weight: 700;
+     letter-spacing: 0.1em;
+     text-transform: uppercase;
+     padding: 0.25rem 0.75rem;
+     border-radius: 9999px;
+     margin-top: 0.75rem;
+ }
+ .planet-category-personal { background: rgba(110,88,152,0.15); color: #6E5898; }
+ .planet-category-social { background: rgba(212,168,67,0.15); color: #b8942a; }
+ .planet-category-generational { background: rgba(78,205,196,0.15); color: #2a9d96; }
+ .planet-category-special { background: rgba(224,102,160,0.15); color: #c74e8a; }
+
+ /* Filtered states */
+ .planet-filtered-in {
+     animation: cardFadeIn 0.3s ease forwards;
+ }
+ .planet-filtered-out {
+     animation: cardFadeOut 0.3s ease forwards;
+     pointer-events: none;
+     position: absolute;
+     width: 0;
+     height: 0;
+     overflow: hidden;
+     opacity: 0;
+ }
+ @keyframes cardFadeIn {
+     from { opacity: 0; transform: scale(0.95); }
+     to { opacity: 1; transform: scale(1); }
+ }
+ @keyframes cardFadeOut {
+     from { opacity: 1; }
+     to { opacity: 0; }
+ }
+
+ /* Gold planet icons */
+ .planet-icon-gold { color: #d4a843; }
+
+ /* Subtle divider between planet sections */
+ .planet-divider {
+     border: none;
+     height: 1px;
+     background: linear-gradient(to right, transparent, rgba(110,88,152,0.2), transparent);
+     margin: 2rem 0;
+ }
+
+ /* Tip box */
+ .tip-box {
+     background: linear-gradient(135deg, #F4F0FC 0%, #faf8ff 100%);
+     border-left: 3px solid #d4a843;
+     border-radius: 0 0.75rem 0.75rem 0;
+     padding: 1rem 1.25rem;
+ }
+
+ /* Lavender hover for cross-links */
+ .learn-link:hover {
+     border-color: #AC94D8 !important;
+     background: #faf8ff !important;
+ }
+ </style>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Astrologische Planeten Uitgelegd | Wat Elke Planeet Betekent in Uw Geboortehoroscoop","description":"Leer wat elke planeet betekent in de astrologie. Van de Zon en Maan tot de buitenplaneten, ontdek hoe planetaire energieën uw geboortehoroscoop vormen en uw leven beïnvloeden.","publisher":{"@type":"Organization","name":"Genetic Matrix","url":"https://www.geneticmatrix.com"},"mainEntityOfPage":"https://www.geneticmatrix.com/learn/astrology/planets/","datePublished":"2025-01-15","dateModified":"2026-03-13"}
+</script>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Wat vertegenwoordigen planeten in de astrologie?","acceptedAnswer":{"@type":"Answer","text":"In de astrologie vertegenwoordigt elke planeet een fundamentele drijfveer of dimensie van de menselijke ervaring. De Zon beheerst identiteit en levensdoel. De Maan regelt emoties en instincten. Mercurius behandelt communicatie en gedachten. Venus beheerst liefde en waarden. Mars drijft actie en ambitie aan. Jupiter breidt uit en brengt groei. Saturnus structureert en leert discipline. De buitenplaneten (Uranus, Neptunus, Pluto) vormen generatiethema's en diepe transformatie. Het teken en huis waarin een planeet in uw geboortehoroscoop staat, kleurt hoe die energie zich in uw leven uitdrukt."}},
+{"@type":"Question","name":"Wat is het verschil tussen persoonlijke en buitenplaneten?","acceptedAnswer":{"@type":"Answer","text":"Persoonlijke planeten (Zon, Maan, Mercurius, Venus, Mars) bewegen relatief snel door de dierenriem en vormen uw individuele persoonlijkheid, dagelijkse gewoonten en nauwe relaties. Sociale planeten (Jupiter, Saturnus) verbinden het persoonlijke en collectieve, en beïnvloeden groei, ambitie en levensstructuur over langere cycli. Buitenplaneten (Uranus, Neptunus, Pluto) bewegen zo langzaam dat ze jarenlang of tientallen jaren in één teken blijven, waardoor ze de thema's van hele generaties vormen in plaats van alleen individuele eigenschappen."}},
+{"@type":"Question","name":"Waarom worden de Zon en Maan planeten genoemd in de astrologie?","acceptedAnswer":{"@type":"Answer","text":"In de astrologie worden de Zon en Maan traditioneel gegroepeerd met de planeten en lichtgevende lichamen genoemd. Hoewel astronomisch gezien de Zon een ster is en de Maan een satelliet, gebruikt de astrologie het woord planeten als verkorting voor alle hemellichamen die door de dierenriem bewegen en symbolische betekenis hebben in een geboortehoroscoop. Deze conventie gaat duizenden jaren terug naar toen alle zichtbare bewegende hemellichamen zwervende sterren werden genoemd."}},
+{"@type":"Question","name":"Wat is een planetaire terugkeer in de astrologie?","acceptedAnswer":{"@type":"Answer","text":"Een planetaire terugkeer vindt plaats wanneer een transiterende planeet terugkeert naar de exacte positie die deze innam op het moment van uw geboorte. De bekendste is de Saturnus Terugkeer rond de leeftijd van 29 en 58 jaar, die belangrijke perioden van herstructurering en volwassenheid markeert. De Jupiter Terugkeer gebeurt ongeveer elke 12 jaar en brengt vaak expansie en kansen. De Chiron Terugkeer rond de leeftijd van 50 jaar signaleert een periode van diepe genezing en wijsheid."}},
+{"@type":"Question","name":"Wat betekent het wanneer een planeet retrograde staat?","acceptedAnswer":{"@type":"Answer","text":"Wanneer een planeet lijkt achteruit te bewegen door de dierenriem vanuit het perspectief van de Aarde, wordt gezegd dat deze retrograde staat. Retrograde perioden worden geassocieerd met herziening, reflectie en het opnieuw bekijken van thema's gerelateerd aan die planeet. Mercurius retrograde wordt het meest besproken, vaak gekoppeld aan communicatieproblemen en reisvertragingen. Alle planeten behalve de Zon en Maan gaan periodiek retrograde, en deze perioden worden algemeen gezien als tijden om te vertragen en naar binnen te kijken in plaats van vooruit te duwen."}}
+]}
+</script>
+</head>
+<body class="bg-white text-gray-700">
+
+ <!-- ==================== NAV BAR ==================== -->
+ <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../../assets/logo.svg" alt="Genetic Matrix - Ken uzelf" class="h-14">
+            </a>
+            <div class="flex items-center gap-8">
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Rapporten">
+                    <img src="../../assets/icon-report.svg" alt="Rapporten" class="h-9 w-9">
+                </a>
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Sprekende Charts">
+                    <img src="../../assets/icon-talking-chart.svg" alt="Sprekende Charts" class="h-7 w-7">
+                </a>
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Gratis Chart</a>
+                <!-- Learn -->
+                <a href="../../" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Learn</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Onze Abonnementen</a>
+                <a href="https://www.geneticmatrix.com/cart/" title="Winkelwagen">
+                    <img src="../../assets/icon-cart.svg" alt="Winkelwagen" class="h-5 w-auto">
+                </a>
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>Nederlands</span>
+                    <img src="../../assets/icon-english.svg" alt="Nederlands" class="h-5 w-7">
+                </div>
+                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Inloggen</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Registreren</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-50 border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 py-2.5">
+            <a href="../../" class="text-sm text-gm-purple hover:text-gm-dark font-medium transition">&larr; Terug naar Learn Hub</a>
+        </div>
+    </div>
+
+ <!-- ==================== HERO BANNER ==================== -->
+ <section class="relative bg-gm-dark text-white text-center pt-14 md:pt-20 pb-6 md:pb-8 overflow-hidden">
+     <!-- Starfield -->
+     <div class="astro-stars"></div>
+
+     <!-- Decorative planet/constellation illustrations at edges -->
+     <div class="hero-planet-layer">
+         <!-- Saturn-like planet, top-left -->
+         <svg width="120" height="120" viewBox="0 0 120 120" style="top: 10%; left: 3%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="60" cy="60" r="30" stroke="#d4a843" stroke-width="1.5"/>
+             <ellipse cx="60" cy="60" rx="55" ry="12" stroke="#d4a843" stroke-width="1" transform="rotate(-20 60 60)"/>
+         </svg>
+         <!-- Jupiter with bands, top-right -->
+         <svg width="100" height="100" viewBox="0 0 100 100" style="top: 8%; right: 5%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="50" cy="50" r="35" stroke="#d4a843" stroke-width="1.5"/>
+             <path d="M20 42 Q50 38 80 42" stroke="#d4a843" stroke-width="0.8" fill="none"/>
+             <path d="M18 52 Q50 56 82 52" stroke="#d4a843" stroke-width="0.8" fill="none"/>
+             <path d="M22 62 Q50 58 78 62" stroke="#d4a843" stroke-width="0.8" fill="none"/>
+         </svg>
+         <!-- Small crescent moon, bottom-left -->
+         <svg width="60" height="60" viewBox="0 0 60 60" style="bottom: 12%; left: 8%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M35 10 A22 22 0 1 0 35 50 A16 16 0 1 1 35 10Z" stroke="#d4a843" stroke-width="1.2" fill="none"/>
+         </svg>
+         <!-- Small constellation cluster, bottom-right -->
+         <svg width="80" height="80" viewBox="0 0 80 80" style="bottom: 10%; right: 6%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="20" cy="20" r="2" fill="#d4a843"/>
+             <circle cx="55" cy="15" r="2" fill="#d4a843"/>
+             <circle cx="40" cy="45" r="2" fill="#d4a843"/>
+             <circle cx="65" cy="55" r="2" fill="#d4a843"/>
+             <circle cx="25" cy="65" r="2" fill="#d4a843"/>
+             <line x1="20" y1="20" x2="55" y2="15" stroke="#d4a843" stroke-width="0.5"/>
+             <line x1="55" y1="15" x2="40" y2="45" stroke="#d4a843" stroke-width="0.5"/>
+             <line x1="40" y1="45" x2="65" y2="55" stroke="#d4a843" stroke-width="0.5"/>
+             <line x1="40" y1="45" x2="25" y2="65" stroke="#d4a843" stroke-width="0.5"/>
+         </svg>
+     </div>
+
+     <div class="relative z-10 max-w-3xl mx-auto px-6">
+         <div class="hero-fade-in">
+             <span class="inline-block bg-white/10 backdrop-blur-sm text-white/90 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">Astrologie</span>
+         </div>
+         <h1 class="hero-fade-in text-3xl md:text-4xl font-bold mb-4">Astrologische Planeten Uitgelegd</h1>
+         <p class="hero-fade-in text-gray-300 text-sm md:text-base leading-relaxed max-w-xl mx-auto">Leer wat elke planeet betekent in de astrologie, van de persoonlijke planeten (Zon, Maan, Mercurius, Venus, Mars) tot de buitenplaneten (Jupiter, Saturnus, Uranus, Neptunus, Pluto) plus Chiron en Zwarte Maan.</p>
+     </div>
+ </section>
+
+
+ <!-- ==================== SOLAR SYSTEM ILLUSTRATION ==================== -->
+ <section class="pt-4 md:pt-6 pb-6 md:pb-8 bg-gradient-to-b from-gm-dark to-[#2a1b45]">
+     <div class="max-w-3xl mx-auto px-6 text-center">
+         <img src="Maja_Planets.png" alt="Geïllustreerd zonnestelsel dat de planeten toont die worden gebruikt in de astrologie" class="w-full max-w-2xl mx-auto rounded-2xl">
+     </div>
+ </section>
+
+
+ <!-- ==================== THE PLANETS IN HUMAN DESIGN ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="planets-in-astrology">
+     <div class="max-w-6xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> De Planeten in de Astrologie</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4 max-w-3xl">In de astrologie vertegenwoordigt elke planeet een kerngedrevenheid of dimensie van de menselijke ervaring. Het teken waarin een planeet bij uw geboorte staat kleurt hoe die energie zich uitdrukt, terwijl het huis waarin deze valt het levensgebied toont waar deze het sterkst speelt. Samen vormen de planeten het fundament van uw geboortehoroscoop.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8 max-w-3xl">De persoonlijke planeten (Zon tot Mars) bewegen snel en vormen uw individuele persoonlijkheid en dagelijks leven. De sociale planeten (Jupiter, Saturnus) besturen groei en structuur over langere cycli. De buitenplaneten (Uranus, Neptunus, Pluto) bewegen zo langzaam dat ze de thema's van hele generaties definiëren.</p>
+
+         <!-- Planet group filter tabs -->
+         <div class="flex flex-wrap gap-2 mb-8 justify-center">
+             <button class="planet-tab active" data-group="all" onclick="filterPlanets('all')">Alle Planeten</button>
+             <button class="planet-tab" data-group="personal" onclick="filterPlanets('personal')">Persoonlijk</button>
+             <button class="planet-tab" data-group="social" onclick="filterPlanets('social')">Sociaal</button>
+             <button class="planet-tab" data-group="outer" onclick="filterPlanets('outer')">Buitenplaneten</button>
+             <button class="planet-tab" data-group="special" onclick="filterPlanets('special')">Speciale Lichamen</button>
+         </div>
+
+         <!-- Planet cards grid -->
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="planet-grid">
+
+             <!-- Sun -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x2609;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Zon</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Identiteit & Levensdoel</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">De Zon vertegenwoordigt uw kernidentiteit, ego en levensdoel. Het is de centrale kracht van de geboortehoroscoop, die beschrijft wie u op het diepste niveau bent, wat uw gevoel van zelf aandrijft, en waar u probeert te schijnen.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Heerser: <strong class="text-gm-purple">Leeuw</strong></span>
+                     <span>Cyclus: <strong class="text-gm-purple">1 jaar</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Persoonlijk</span>
+             </div>
+
+             <!-- Earth -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x2641;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Aarde</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Grounding & Fysieke Realiteit</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">De Aarde staat altijd direct tegenover de Zon in uw chart. Deze vertegenwoordigt waar u uw zonneenergie grond in praktische, fysieke realiteit. Het Aarde-teken en huis wijzen naar de bronnen en materiële fundamenten die uw levensdoel ondersteunen.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Heerser: <strong class="text-gm-purple">Stier</strong></span>
+                     <span>Cyclus: <strong class="text-gm-purple">1 jaar</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Persoonlijk</span>
+             </div>
+
+             <!-- Moon -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x263D;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Maan</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Emoties & Innerlijke Wereld</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">De Maan beheerst uw emotionele natuur, instincten en onbewuste patronen. Deze onthult hoe u gevoelens verwerkt, wat u zich veilig doet voelen, en wat u nodig hebt voor emotionele voeding. Uw Maan-teken beschrijft uw innerlijke wereld en gewoonteresponses.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Heerser: <strong class="text-gm-purple">Kreeft</strong></span>
+                     <span>Cyclus: <strong class="text-gm-purple">28 dagen</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Persoonlijk</span>
+             </div>
+
+             <!-- Mercury -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x263F;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Mercurius</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Communicatie & Gedachte</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Mercurius regelt de geest, communicatie en hoe u informatie verwerkt en deelt. Het beheerst leerstijl, logisch denken, spraak, schrijven en dagelijkse uitwisselingen. Uw Mercurius-teken vormt de manier waarop u denkt, discussieert en de wereld begrijpt.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Heerser: <strong class="text-gm-purple">Tweelingen / Maagd</strong></span>
+                     <span>Cyclus: <strong class="text-gm-purple">88 dagen</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Persoonlijk</span>
+             </div>
+
+             <!-- Venus -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Venus</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Liefde, Schoonheid & Waarden</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Venus beheerst liefde, schoonheid, plezier en wat u het meest waardeert. Het vormt hoe u anderen aantrekt en zich tot hen verhoudt, uw esthetische gevoeligheden en uw benadering van romantiek en harmonie. Uw Venus-teken onthult wat u mooi vindt en hoe u genegenheid uitdrukt.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Heerser: <strong class="text-gm-purple">Stier / Weegschaal</strong></span>
+                     <span>Cyclus: <strong class="text-gm-purple">225 dagen</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Persoonlijk</span>
+             </div>
+
+             <!-- Mars -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x2642;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Mars</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Actie & Drijfkracht</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Mars is de planeet van actie, verlangen, fysieke energie en moed. Het beheerst hoe u uzelf laat gelden, nastreeft wat u wilt, en met conflict omgaat. Uw Mars-teken beschrijft uw vechtstijl, uw fysieke drive, en hoe u woede en ambitie kanaliseer.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Heerser: <strong class="text-gm-purple">Ram / Schorpioen</strong></span>
+                     <span>Cyclus: <strong class="text-gm-purple">687 dagen</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Persoonlijk</span>
+             </div>
+
+             <!-- Jupiter -->
+             <div class="planet-card" data-group="social">
+                 <div class="planet-icon-badge"><span>&#x2643;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Jupiter</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Expansie & Overvloed</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Jupiter is de grote weldoener, de planeet van expansie, optimisme, overvloed en hoger leren. Het beheerst filosofie, reizen, geloof en de zoektocht naar betekenis. Uw Jupiter-teken en huis tonen waar het leven de neiging heeft deuren voor u te openen en waar u uw grootste doel vindt.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Heerser: <strong class="text-gm-purple">Boogschutter</strong></span>
+                     <span>Cyclus: <strong class="text-gm-purple">12 jaar</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-social">Sociaal</span>
+             </div>
+
+             <!-- Saturn -->
+             <div class="planet-card" data-group="social">
+                 <div class="planet-icon-badge"><span>&#x2644;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Saturnus</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Structuur & Discipline</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Saturnus is de taakmeester van de dierenriem, die discipline, verantwoordelijkheid, grenzen en langetermijnprestaties beheerst. Het vertegenwoordigt de levensgebieden waar u uw grootste uitdagingen ervaart en, door volharding, uw diepste meesterschap verdient. De Saturnus Terugkeer rond de leeftijd van 29 en 58 markeert cruciale perioden van herstructurering.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Heerser: <strong class="text-gm-purple">Steenbok</strong></span>
+                     <span>Cyclus: <strong class="text-gm-purple">29,5 jaar</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-social">Sociaal</span>
+             </div>
+
+             <!-- Uranus -->
+             <div class="planet-card" data-group="outer">
+                 <div class="planet-icon-badge"><span>&#x2645;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Uranus</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Revolutie & Innovatie</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Uranus is de planeet van plotselinge verandering, rebellie, innovatie en bevrijding. Het beheerst waar u zich losbreekt van conventies, uw individualiteit omarmt en onverwachte doorbraken ervaart. Uranus brengt ongeveer 7 jaar door in elk teken, waardoor generationele houdingen ten opzichte van vrijheid en vooruitgang worden gevormd.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Heerser: <strong class="text-gm-purple">Waterman</strong></span>
+                     <span>Cyclus: <strong class="text-gm-purple">84 jaar</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-generational">Generationeel</span>
+             </div>
+
+             <!-- Neptune -->
+             <div class="planet-card" data-group="outer">
+                 <div class="planet-icon-badge"><span>&#x2646;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Neptunus</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Spiritualiteit & Verbeelding</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Neptunus beheerst dromen, intuïtie, spiritualiteit, mededogen en het oplossen van grenzen. Het regelt verbeelding en artistieke inspiratie, maar kan ook verwarring, illusie en escapisme brengen. Neptunus brengt ongeveer 14 jaar door in elk teken, waardoor generationele idealen rondom geloof, kunst en collectief verlangen worden gevormd.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Heerser: <strong class="text-gm-purple">Vissen</strong></span>
+                     <span>Cyclus: <strong class="text-gm-purple">165 jaar</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-generational">Generationeel</span>
+             </div>
+
+             <!-- Pluto -->
+             <div class="planet-card" data-group="outer">
+                 <div class="planet-icon-badge"><span>&#x2647;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Pluto</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Transformatie & Macht</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Pluto is de planeet van transformatie, dood en wedergeboorte, macht en het onbewuste. Het beheerst diepe psychologische processen, obsessie, regeneratie en de vernietiging van wat groei niet langer dient. Pluto brengt 12 tot 30 jaar door in een teken, wat drijft tot diepgaande generationele verschuivingen in hoe de samenleving zich tot macht verhoudt.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Heerser: <strong class="text-gm-purple">Schorpioen</strong></span>
+                     <span>Cyclus: <strong class="text-gm-purple">248 jaar</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-generational">Generationeel</span>
+             </div>
+
+             <!-- North Node -->
+             <div class="planet-card" data-group="special">
+                 <div class="planet-icon-badge"><span>&#x260A;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Noordknoop</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Zielgroei Richting</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">De Noordknoop wijst naar de kwaliteiten, ervaringen en levensrichting waar uw ziel naar groeit in dit leven. Het vertegenwoordigt onbekend terrein dat uitdagend aanvoelt maar uiteindelijk vervullend is. Het teken en huis van uw Noordknoop beschrijven de lessen die u hier bent om te leren.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Cyclus: <strong class="text-gm-purple">18,6 jaar</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-special">Speciaal</span>
+             </div>
+
+             <!-- South Node -->
+             <div class="planet-card" data-group="special">
+                 <div class="planet-icon-badge"><span>&#x260B;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Zuidknoop</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Karmisch Verleden & Comfortzone</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">De Zuidknoop vertegenwoordigt aangeboren talenten, standaardpatronen en kwaliteiten overgedragen uit ervaring uit het verleden. Het beschrijft uw comfortzone en de vaardigheden die natuurlijk komen, maar u ook kunnen tegenhouden als u er te zwaar op leunt. Het balanceren van Noordknoop en Zuidknoop thema's staat centraal in de zielreis.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Cyclus: <strong class="text-gm-purple">18,6 jaar</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-special">Speciaal</span>
+             </div>
+
+             <!-- Chiron -->
+             <div class="planet-card" data-group="special">
+                 <div class="planet-icon-badge"><span>&#x26B7;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Chiron</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">De Gewonde Genezer</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Chiron draait tussen Saturnus en Uranus, bekend als de Gewonde Genezer. Het vertegenwoordigt een diepe, kernwonde die u door het leven draagt en, door ermee geconfronteerd te worden, de mogelijkheid ontwikkelt om anderen te genezen. Uw Chiron-teken en huis onthullen waar uw grootste kwetsbaarheid en meest diepgaande wijsheid liggen.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Cyclus: <strong class="text-gm-purple">~50 jaar</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-special">Speciaal</span>
+             </div>
+
+             <!-- Black Moon Lilith -->
+             <div class="planet-card" data-group="special">
+                 <div class="planet-icon-badge"><span>&#x26B8;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Zwarte Maan</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Rauwe Begeerte & Schaduwzelf</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Zwarte Maan is geen fysiek lichaam maar een wiskundig punt dat het apogeum van de maan vertegenwoordigt, het punt waar de Maan het verst van de Aarde staat in haar baan. Het symboliseert uw rauwe, ongetemde verlangens, onderdrukte instincten en de delen van uzelf die de samenleving u onder druk zet te verbergen. Uw Zwarte Maan teken en huis onthullen waar u weigert compromissen te sluiten, waar u schaamte of woede voelt, en waar het terugwinnen van uw authentieke kracht tot bevrijding leidt.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Cyclus: <strong class="text-gm-purple">~9 jaar</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-special">Speciaal</span>
+             </div>
+
+         </div>
+
+         <hr class="planet-divider">
+
+         <div class="tip-box my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Tip</p>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed">Twee mensen geboren op slechts enkele dagen afstand kunnen zeer verschillende charts hebben. De Maan verandert elke 2,5 dag van teken, en Mercurius en Venus verschuiven ook frequent. Zelfs kleine verschillen in geboortijd kunnen planeten in verschillende huizen plaatsen, waardoor verandert hoe hun energie in uw leven uitwerkt.</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== PLANETS IN SIGNS ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="planets-in-signs">
+     <div class="max-w-6xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4"><span class="text-gm-purple">|</span> Planeten in Tekens</h2>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8 max-w-3xl">Het teken waarin een planeet staat kleurt <strong class="text-gray-800">hoe</strong> die planeetenergie zich uitdrukt. Dezelfde planeet gedraagt zich heel anders afhankelijk van in welk teken deze staat. Hieronder zijn voorbeelden die tonen hoe een enkele planeet zijn uitdrukking verschuift door de dierenriem.</p>
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-4">Mercurius door de Tekens</h3>
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x263F;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Mercurius in Ram</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Snel & Direct</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Denkt snel, spreekt bot en neemt haastige beslissingen. Ram Mercurius is competitief in debat en ongeduldig met langdurige uitleg. Ideeën komen in uitbarstingen en worden onmiddellijk uitgevoerd.</p>
+             </div>
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x263F;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Mercurius in Maagd</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Analytisch & Precies</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Mercurius is in zijn heerschappij en verhoging in Maagd, waardoor dit een van zijn sterkste plaatsingen is. Denken is methodisch, detailgericht en praktisch. Maagd Mercurius blinkt uit in het organiseren van informatie en probleemoplossing.</p>
+             </div>
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x263F;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Mercurius in Vissen</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Intuïtief & Poëtisch</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Denkt in beelden, metaforen en gevoelens in plaats van lineaire logica. Vissen Mercurius absorbeert informatie door atmosfeer en intuïtie. Communicatie is creatief en empathisch maar kan vaag of ongrijpbaar zijn.</p>
+             </div>
+         </div>
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-4">Venus door de Tekens</h3>
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Venus in Stier</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Sensueel & Stabiel</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Venus staat in haar thuisteken in Stier. Liefde wordt uitgedrukt door fysieke aanraking, loyaliteit en het creëren van mooie, comfortabele ruimtes. Waardeert veiligheid en consistentie in relaties boven alles.</p>
+             </div>
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Venus in Schorpioen</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Intens & Transformerend</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Liefde is alles of niets. Schorpioen Venus hunkert naar diepe emotionele en fysieke intimiteit, is vurig loyaal en worstelt met jaloezie of bezitterigheid. Relaties zijn voertuigen voor diepgaande transformatie.</p>
+             </div>
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Venus in Waterman</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Onafhankelijk & Onconventioneel</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Waardeert intellectuele verbinding en persoonlijke vrijheid in de liefde. Waterman Venus wordt aangetrokken tot unieke, originele mensen en weerstaat traditionele relatiestructuren. Vriendschap is het fundament van romantiek.</p>
+             </div>
+         </div>
+
+         <div class="tip-box my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Tip</p>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed">Uw zonneten is slechts het begin. Om uw volledige communicatiestijl te begrijpen, kijk naar uw Mercurius-teken. Voor liefde en relaties, kijk naar Venus. Voor drive en ambitie, controleer Mars. Elke planeet vertelt een ander deel van uw verhaal.</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== PLANETS IN HOUSES ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="planets-in-houses">
+     <div class="max-w-6xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4"><span class="text-gm-purple">|</span> Planeten in Huizen</h2>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8 max-w-3xl">Terwijl het teken toont <strong class="text-gray-800">hoe</strong> een planeet zich uitdrukt, toont het huis <strong class="text-gray-800">waar</strong> in uw leven die energie zich afspeelt. Dezelfde planeet in hetzelfde teken zal zich heel anders manifesteren afhankelijk van in welk huis deze staat.</p>
+
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">1e Huis</p>
+                 <div class="planet-icon-badge"><span>&#x2642;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Mars in het 1e</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Identiteit & Uiterlijk</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Mars energie is zichtbaar voor iedereen. U komt over als assertief, competitief en fysiek energiek. Eerste indrukken zijn gedurfd en direct. Er is een natuurlijke sportiviteit en een onmiskenbare drive in uw persoonlijkheid.</p>
+             </div>
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">7e Huis</p>
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Venus in het 7e</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Partnerschap & Huwelijk</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Venus is thuis in het 7e Huis van partnerschap. Relaties zijn meestal harmonieus en centraal in uw leven. U trekt partners aan met gratie en schoonheid, en het creëren van balans binnen één-op-één verbindingen is een kernlevensthema.</p>
+             </div>
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">10e Huis</p>
+                 <div class="planet-icon-badge"><span>&#x2609;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Zon in het 10e</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Carrière & Publiek Imago</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Uw identiteit is nauw verbonden met uw carrière en publieke reputatie. Er is een sterke drive naar prestatie, zichtbaarheid en erkenning. Autoriteit komt natuurlijk, en uw levensdoel ontvouwt zich vaak door professionele prestaties.</p>
+             </div>
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">12e Huis</p>
+                 <div class="planet-icon-badge"><span>&#x2644;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Saturnus in het 12e</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Eenzaamheid & Karma</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Verborgen angsten en verantwoordelijkheden, spirituele discipline door eenzaamheid, karmisch werk gedaan achter de schermen. Saturnus hier eist dat u onbewuste beperkingen confronteert en innerlijke kracht ontwikkelt door perioden van terugtrekking en

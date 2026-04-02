@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De 12 Profielen in Human Design - Lijnen, Rollen & Levensdoel | Genetic Matrix</title>
+    <meta name="description" content="Ontdek alle 12 Human Design Profielen - van 1/3 Onderzoeker/Martelaar tot 6/3 Rolmodel/Martelaar. Leer hoe de 6 Profiellijnen uw persoonlijkheid, rol en levensdoel vormgeven.">
+    <link rel="canonical" href="https://www.geneticmatrix.com/learn/profiles/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gm-purple': '#6E5898',
+                        'gm-purple-light': '#9080B1',
+                        'gm-purple-soft': '#AC94D8',
+                        'gm-dark': '#3C2864',
+                        'gm-darker': '#2e1f4d',
+                        'gm-green': '#54931E',
+                        'gm-green-dark': '#468018',
+                        'gm-green-light': '#8EB86A',
+                        'gm-pink': '#F66378',
+                        'gm-orange': '#E8961D',
+                        'gm-gray': '#707070',
+                        'gm-light': '#F7F8F9',
+                        'gm-card': '#FAFBFC',
+                        'gm-card-active': '#F4F0FC',
+                        'gm-border': '#D8D4E4',
+                        'gm-warning': '#F8F8E8',
+                        'gm-text-dark': '#1A1A2E',
+                        'gm-text': '#444444',
+                        'gm-text-light': '#949494',
+                    },
+                    fontFamily: {
+                        'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        details summary { cursor: pointer; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+        details[open] summary::after { content: '\2212'; }
+        details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+
+    <!-- JSON-LD Schema (@graph: Article + FAQPage) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Article",
+                "headline": "De 12 Profielen in Human Design - Lijnen, Rollen & Levensdoel",
+                "description": "Ontdek alle 12 Human Design Profielen - van 1/3 Onderzoeker/Martelaar tot 6/3 Rolmodel/Martelaar. Leer hoe de 6 Profiellijnen uw persoonlijkheid, rol en levensdoel vormgeven.",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Genetic Matrix",
+                    "url": "https://www.geneticmatrix.com"
+                },
+                "mainEntityOfPage": "https://www.geneticmatrix.com/learn/profiles/",
+                "datePublished": "2025-01-15",
+                "dateModified": "2026-03-10"
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Wat is een Profiel in Human Design?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Uw Profiel is een combinatie van twee nummers afgeleid van de lijnwaarden van uw bewuste en onbewuste Zon en Aarde. Het beschrijft een kernrol of oriëntatie in de Chart, en helpt uitleggen hoe uw Type in het echte leven wordt uitgedrukt. Er zijn 12 mogelijke Profielcombinaties, elk gemaakt van twee van de zes hexagramlijnen."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Hoe wordt mijn Profiel berekend?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Uw Profiel komt van de lijn van uw bewuste Zon en Aarde, weergegeven in zwart op de Bodygraph, en de lijn van uw onbewuste Zon en Aarde, weergegeven in rood. Als bijvoorbeeld uw bewuste lijn 1 is en uw onbewuste lijn 3, dan is uw Profiel 1/3."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Wat zijn de 6 Profiellijnen?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "De zes Profiellijnen zijn: Lijn 1, Onderzoeker; Lijn 2, Kluizenaar; Lijn 3, Martelaar; Lijn 4, Opportunist; Lijn 5, Ketter; en Lijn 6, Rolmodel. Elke lijn draagt een onderscheidend thema, en door er twee te combineren ontstaan de 12 Profielen."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Verandert mijn Profiel op basis van mijn Type?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nee. Uw Profiel is vastgesteld bij de geboorte. Hetzelfde Profiel kan echter heel anders tot uitdrukking komen door verschillende Types. Een 3/5 Generator leeft niet dezelfde ervaring als een 3/5 Projector. Uw Type is het voertuig, en uw Profiel is de rol."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Wat is het verschil tussen bewuste en onbewuste lijnen?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Het eerste nummer in uw Profiel is de bewuste lijn, die u eerder in uzelf zult herkennen en waarmee u zich zult identificeren. Het tweede nummer is de onbewuste lijn, die meer onder bewustzijn werkt en vaak gemakkelijker voor anderen op te merken is."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Wat zijn Persoonlijk Lot, Transpersoonlijk Karma, en Vast Lot?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Dit zijn oudere Human Design termen die gebruikt worden om Profiel geometrie te beschrijven. Rechtehoekkruisen zijn persoonlijk in oriëntatie. Linkerhoekkruisen zijn transpersoonlijk, met levensthema's die meer ontplooien door interactie met anderen. Juxtapositie verwijst naar het 4/1 Profiel, dat een meer vaste en consistente oriëntatie heeft. Nuttige termen, licht dramatische verpakking."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Wat zijn de lagere en hogere trigrammen?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Lijnen 1 tot en met 3 vormen het lagere trigram, dat meer persoonlijk en introspectief georiënteerd is. Lijnen 4 tot en met 6 vormen het hogere trigram, dat meer relationeel en transpersoonlijk is. Samen helpen ze beschrijven hoe een Profiel georiënteerd is."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Waarom heeft de 6de lijn drie levensfases?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "De 6de lijn neigt ertoe door het leven te gaan in drie brede fasen. De vroege jaren zijn meer experimenteel, de middenfase is vaak meer observerend of op het dak, en het latere leven brengt het potentieel voor belichaamd rolmodel-zijn. Het is minder een rigide schema dan een ontwikkelingsboog, wat handig is, omdat het leven zelden op een stopwatch kijkt."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- ==================== NAV BAR ==================== -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <!-- Logo -->
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../../assets/logo.svg" alt="Genetic Matrix - Ken uzelf" class="h-14 max-w-[180px] md:max-w-none">
+            </a>
+
+            <!-- Right Nav: LOGGED OUT (default for static pages) -->
+            <div class="flex items-center gap-8">
+                <!-- Report Icon -->
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Rapporten">
+                    <img src="../../assets/icon-report.svg" alt="Rapporten" class="h-9 w-9">
+                </a>
+                <!-- Talking Chart Icon -->
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Talking Charts">
+                    <img src="../../assets/icon-talking-chart.svg" alt="Talking Charts" class="h-7 w-7">
+                </a>
+                <!-- Free Chart (popup on live site - Shafik to wire up) -->
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Gratis Chart</a>
+                <!-- Learn -->
+                <a href="../../" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Leren</a>
+                <!-- Our Plans -->
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Onze Plannen</a>
+                <!-- Cart -->
+                <a href="https://www.geneticmatrix.com/cart/" title="Winkelwagen" class="relative">
+                    <img src="../../assets/icon-cart.svg" alt="Winkelwagen" class="h-5 w-auto">
+                    <span id="gm-cart-count" class="absolute -top-1 -right-3 text-gm-green font-bold text-sm hidden">0</span>
+                </a>
+                <!-- Language Selector -->
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>Nederlands</span>
+                    <img src="../../assets/icon-english.svg" alt="Nederlands" class="h-5 w-7">
+                </div>
+                <!-- Sign In (popup on live site - Shafik to wire up) -->
+                <div id="gm-logged-out" class="flex items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/my-account/" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium">Inloggen</a>
+                <!-- Register -->
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Registreren</a>
+                </div>
+                <div id="gm-logged-in" class="hidden items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="text-gm-gray hover:text-gray-900 text-sm font-medium">Uitloggen</a>
+                    <a href="https://www.geneticmatrix.com/user-home/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Mijn Hub</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== BREADCRUMB ==================== -->
+    <div class="bg-gray-50 border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 py-2.5">
+            <a href="../../" class="text-sm text-gm-purple hover:text-gm-dark font-medium transition">&larr; Terug naar Learn Hub</a>
+        </div>
+    </div>
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+        <div class="max-w-3xl mx-auto px-6">
+            <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Fundament &middot; Profielen</p>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">De 12 Profielen</h1>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
+                Uw Profiel is uw rol in het leven, het kostuum dat u draagt, en een belangrijk onderdeel van hoe uw Type wordt uitgedrukt in de wereld. Het is opgebouwd uit de lijnwaarden van uw bewuste en onbewuste Zon/Aarde, en het is een van de belangrijkste dingen die twee mensen van hetzelfde Type er in de praktijk heel anders uit laten zien.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- ==================== WHAT IS A PROFILE? ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">Wat is een Profiel?</h2>
+
+            <!-- How to find it -->
+            <div class="bg-gm-light border border-gm-border rounded-lg p-5 mb-6">
+                <h3 class="text-sm font-bold text-gray-800 mb-2">Hoe vindt u uw Profiel</h3>
+                <p class="text-gm-text text-sm leading-relaxed">Zoek naar Profiel in het linkerpaneel met gegevens van uw Chart. Het verschijnt als twee nummers, zoals 1/3 of 5/1, die komen van de lijnnummers van uw bewuste en onbewuste Zon en Aarde.</p>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                In Human Design bestaat uw Profiel uit twee nummers, zoals 1/3 of 5/2, genomen van de lijnwaarden van uw bewuste en onbewuste Zon/Aarde. Het eerste nummer komt van uw Persoonlijkheidzon/Aarde, weergegeven in zwart op de Bodygraph. Het tweede komt van uw Design Zon/Aarde, weergegeven in rood. Voeg ze samen en u krijgt uw Profiel.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Die lijnnummers komen uit de zeslijnstructuur van het I Ching hexagram. Elke lijn heeft zijn eigen thema, en wanneer er twee worden gecombineerd, beschrijven ze een bepaalde rol of manier van bewegen door het leven.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Profiel is een van de dingen die Human Design persoonlijk laat voelen in plaats van generiek. Het helpt uitleggen hoe u geneigd bent te leren, verbinding te maken en omgaan met anderen. Twee mensen kunnen hetzelfde Type delen en toch heel verschillend zijn in stijl, ervaring en uitdrukking omdat hun Profielen niet hetzelfde zijn.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== THE 6 PROFILE LINES ==================== -->
+    <section id="the-6-profile-lines" class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+De 6 Profiellijnen
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Line 1 -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <div class="text-4xl font-bold text-gm-purple mb-1">1</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">De Onderzoeker</h3>
+                    <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Lager Trigram &middot; Persoonlijk</p>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Gedreven door een diepe behoefte om te begrijpen en zich veilig te voelen, wil de Onderzoeker een solide fundament voordat hij verder gaat. Nieuwsgierig, grondig en zelden tevreden met oppervlakkige antwoorden, graven ze totdat ze iets vinden waarop ze daadwerkelijk kunnen staan.
+                    </p>
+                </div>
+
+                <!-- Line 2 -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <div class="text-4xl font-bold text-gm-purple mb-1">2</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">De Kluizenaar</h3>
+                    <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Lager Trigram &middot; Persoonlijk</p>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Draagt natuurlijke gaven die niet volledig bewust voor hen zijn. De Kluizenaar heeft periodes van afzondering nodig om te ontwikkelen en te integreren, maar wordt vaak naar buiten geroepen door anderen die hun talent herkennen. Wat hier natuurlijk aankomt is niet altijd vanzelfsprekend.
+                    </p>
+                </div>
+
+                <!-- Line 3 -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <div class="text-4xl font-bold text-gm-purple mb-1">3</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">De Martelaar</h3>
+                    <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Lager Trigram &middot; Persoonlijk</p>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Leert door directe ervaring en vallen en opstaan. De Martelaar ontdekt wat werkt door het te leven, niet door eerst de handleiding te lezen. Veerkrachtig en aanpasbaar, worden ze gevormd door ervaring, één experiment tegelijk.
+                    </p>
+                </div>
+
+                <!-- Line 4 -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <div class="text-4xl font-bold text-gm-purple mb-1">4</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">De Opportunist</h3>
+                    <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Hoger Trigram &middot; Transpersoonlijk</p>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Kansen komen door relaties, gemeenschap en vertrouwde connecties. Het netwerk van de Opportunist is hun fundament, en invloed groeit meestal door de mensen die ze kennen in plaats van door vreemden. Relationeel, overtuigend en gebaseerd op vertrouwen.
+                    </p>
+                </div>
+
+                <!-- Line 5 -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <div class="text-4xl font-bold text-gm-purple mb-1">5</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">De Ketter</h3>
+                    <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Hoger Trigram &middot; Transpersoonlijk</p>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Draagt een projectieveld dat anderen ertoe brengt aan te nemen dat zij het antwoord hebben, soms voordat ze überhaupt de vraag zijn gesteld. De Ketter wordt vaak neergezet als redder of zondebok, afhankelijk van of die projecties het contact met de werkelijkheid overleven. Breed in impact en van nature universaliserend, deze lijn kan ver voorbij het persoonlijke beïnvloeden.
+                    </p>
+                </div>
+
+                <!-- Line 6 -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <div class="text-4xl font-bold text-gm-purple mb-1">6</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">Het Rolmodel</h3>
+                    <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Hoger Trigram &middot; Transpersoonlijk</p>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Beweegt door drie levensfases: experimenteren in de vroege jaren, observatie vanaf het dak in de middelbare leeftijd, en een latere belichaming van wijsheid door geleefde ervaring. Het Rolmodel wordt in de tijd een levend voorbeeld. Hun autoriteit komt van wat het leven hen direct heeft geleerd.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ALL 12 PROFILES ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">Alle 12 Profielen</h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Elk Profiel combineert een bewuste lijn met een onbewuste lijn, waardoor een onderscheidende rol in de Chart ontstaat. Klik op elk Profiel om zijn mechaniek, relatiepatronen en hoe het er in werkelijkheid uitziet te verkennen.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                <!-- 1/3 -->
+                <a href="profile-1-3.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">1/3</span>
+                        <span class="text-xs text-gray-500">H.G. Wells, Reflector</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Onderzoeker / Martelaar</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Bouwt een solide fundament door onderzoek, test het vervolgens door directe ervaring. Geaard, sceptisch, en gevormd door vallen en opstaan.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-500">Lijn 1 Bewust &middot; Lijn 3 Onbewust</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Verkennen &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 1/4 -->
+                <a href="profile-1-4.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">1/4</span>
+                        <span class="text-xs text-gray-500">Jerry Seinfeld, Emotionele Manifestor</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Onderzoeker / Opportunist</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Bouwt een sterk fundament, deelt vervolgens wat ze weten door vertrouwde relaties. Kennis wordt invloed wanneer het netwerk klopt.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-500">Lijn 1 Bewust &middot; Lijn 4 Onbewust</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Verkennen &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 2/4 -->
+                <a href="profile-2-4.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">2/4</span>
+                        <span class="text-xs text-gray-500">Henry Cavill, Pure MG</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Kluizenaar / Opportunist</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Draagt natuurlijke gaven die ruimte nodig hebben om zich te ontwikkelen, maar kansen komen door vertrouwde relaties. Terugtrekking en verbinding zijn beide belangrijk hier.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-500">Lijn 2 Bewust &middot; Lijn 4 Onbewust</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Verkennen &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 2/5 -->
+                <a href="profile-2-5.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">2/5</span>
+                        <span class="text-xs text-gray-500">Rostropovich, Pure Generator</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Kluizenaar / Ketter</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Heeft terugtrekking nodig om natuurlijke gaven te ontwikkelen, maar trekt projectie van anderen die praktische antwoorden verwachten. Privacy en publieke verwachting blijven zelden netjes gescheiden.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-500">Lijn 2 Bewust &middot; Lijn 5 Onbewust</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Verkennen &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 3/5 -->
+                <a href="profile-3-5.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">3/5</span>
+                        <span class="text-xs text-gray-500">Ju Wenjun, Reflector</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Martelaar / Ketter</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Leert door vallen en opstaan, zet vervolgens geleefde ervaring om in praktische oplossingen die anderen kunnen gebruiken. Veerkrachtig, aanpasbaar, en vaak impactvol voorbij het persoonlijke.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-500">Lijn 3 Bewust &middot; Lijn 5 Onbewust</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Verkennen &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 3/6 -->
+                <a href="profile-3-6.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">3/6</span>
+                        <span class="text-xs text-gray-500">Wolfgang Pauli, Hart Manifestor</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Martelaar / Rolmodel</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Leert door directe ervaring vroeg in het leven, krijgt vervolgens geleidelijk afstand en perspectief. Eerst experimenteren, later wijsheid.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-500">Lijn 3 Bewust &middot; Lijn 6 Onbewust</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Verkennen &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 4/6 -->
+                <a href="profile-4-6.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">4/6</span>
+                        <span class="text-xs text-gray-500">Alan Turing, Pure Generator</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Opportunist / Rolmodel</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Invloed groeit door relaties, terwijl het leven geleidelijk dit profiel laat rijpen tot een zichtbaar voorbeeld voor anderen. Verbinding komt eerst, wijsheid heeft tijd nodig.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-500">Lijn 4 Bewust &middot; Lijn 6 Onbewust</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Verkennen &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 4/1 -->
+                <a href="profile-4-1.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">4/1</span>
+                        <span class="text-xs text-gray-500">Buzz Aldrin, Milt Manifestor</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Opportunist / Onderzoeker</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Combineert een stabiel fundament met invloed door vertrouwde relaties. Consistent in richting, met een sterke behoefte aan zowel stevige grond als betrouwbare verbindingen.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-500">Lijn 4 Bewust &middot; Lijn 1 Onbewust</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Verkennen &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 5/1 -->
+                <a href="profile-5-1.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">5/1</span>
+                        <span class="text-xs text-gray-500">Napoleon, Zelfgeprojecteerde Projector</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Ketter / Onderzoeker</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Trekt projectie van anderen terwijl hij vertrouwt op een diep onderzoekend fundament. Wanneer voorbereid, kan dit profiel praktische oplossingen bieden met brede impact.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-500">Lijn 5 Bewust &middot; Lijn 1 Onbewust</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Verkennen &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 5/2 -->
+                <a href="profile-5-2.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">5/2</span>
+                        <span class="text-xs text-gray-500">Franz Schubert, Emotionele Manifestor</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Ketter / Kluizenaar</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Trekt verwachtingen van anderen terwijl hij natuurlijke gaven draagt die privacy en terugtrekking nodig hebben. Met rust gelaten worden en opgeroepen worden zijn beide onderdeel van het patroon.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-500">Lijn 5 Bewust &middot; Lijn 2 Onbewust</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Verkennen &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 6/2 -->
+                <a href="profile-6-2.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">6/2</span>
+                        <span class="text-xs text-gray-500">Mark Zuckerberg, Milt Projector</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Rolmodel / Kluizenaar</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Rijpt in de tijd tot zichtbaar rolmodel, terwijl hij natuurlijke gaven draagt die misschien de juiste oproep nodig hebben om naar voren te komen. Tijd, ruimte en ervaring zijn hier belangrijk.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-500">Lijn 6 Bewust &middot; Lijn 2 Onbewust</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Verkennen &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 6/3 -->
+                <a href="profile-6-3.html" class="group bg-white rounded-lg border border-gm-border border-l-4 border-l-gm-purple p-6 hover:shadow-md transition flex flex-col">
+                    <div class="flex items-start justify-between mb-2">
+                        <span class="text-3xl font-bold text-gm-purple">6/3</span>
+                        <span class="text-xs text-gray-500">Marc Chagall, Emotionele MG</span>
+                    </div>
+                    <h3 class="text-base font-bold text-gm-purple mb-2">Rolmodel / Martelaar</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-3 flex-1">
+                        Begint het leven met een sterk ervaringsgericht proces, ontwikkelt vervolgens geleidelijk de afstand en het perspectief van de 6de lijn. Vroege chaos kan later echte wijsheid worden.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-gray-500">Lijn 6 Bewust &middot; Lijn 3 Onbewust</span>
+                        <span class="text-gm-purple font-semibold text-sm group-hover:underline transition">Verkennen &rarr;</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROFILE GEOMETRY ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">Profiel Geometrie</h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                De 12 Profielen vallen in drie geometrische categorieën op basis van de hoek die wordt gecreëerd door de bewuste en onbewuste lijnen. In Human Design helpt deze geometrie te beschrijven of een Profiel meer persoonlijk is, meer vastgesteld in zijn oriëntatie, of meer transpersoonlijk in hoe levensthema's zich ontvouwen.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Right Angle -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">Rechtehoek</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-4">
+                        Rechtehoekkruisen zijn primair georiënteerd rond persoonlijke ervaring. Hun levensthema's hebben de neiging om zich te ontvouwen door hun eigen proces, en hoewel andere mensen zeker betrokken zijn, is de onderliggende geometrie persoonlijk in plaats van transpersoonlijk.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">1/3</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">1/4</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">2/4</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">2/5</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">3/5</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">3/6</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">4/6</span>
+                    </div>
+                </div>
+
+                <!-- Juxtaposition -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">Juxtapositie</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-4">
+                        Juxtapositie is een meer vaste geometrie, met een stabiel en consistent richtingsthema. In de praktijk kan dit meer singulier of zelfstandig aanvoelen dan de andere Profiel geometrieën. Het betekent niet dat het leven mechanisch voorbestemd is, maar het suggereert wel een meer vaste oriëntatie.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="inline-block bg-gm-pink/10 text-gm-pink text-xs font-semibold px-3 py-1 rounded-full">4/1</span>
+                    </div>
+                </div>
+
+                <!-- Left Angle -->
+                <div class="bg-white rounded-lg border border-gm-border p-6 hover:shadow-md transition">
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">Linkerhoek</h3>
+                    <p class="text-gm-text text-sm leading-relaxed mb-4">
+                        Linkerhoekkruisen zijn transpersoonlijk, wat betekent dat levensthema's zich ontvouwen door interactie met anderen. Relaties, uitwisselingen en de impact die iemand heeft op andere mensen spelen hier een centrale rol. "Karma" in deze context hoeft niet mystiek te zijn. Het wijst eenvoudig naar een levenspad dat wordt uitgewerkt door menselijk contact.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">5/1</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">5/2</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">6/2</span>
+                        <span class="inline-block bg-gm-card-active text-gm-purple text-xs font-semibold px-3 py-1 rounded-full">6/3</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONSCIOUS AND UNCONSCIOUS ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">Bewust en Onbewust</h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Het eerste nummer in uw Profiel is uw bewuste lijn, het aspect dat u eerder in uzelf zult herkennen en waarmee u zich zult identificeren. Het komt van uw Persoonlijkheidzon en Aarde, weergegeven in zwart op de Bodygraph.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Het tweede nummer is uw onbewuste lijn, die meer onder bewustzijn werkt en vaak gemakkelijker voor anderen te zien is. Het komt van uw Design Zon en Aarde, weergegeven in rood op de Bodygraph.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Het samenspel tussen deze twee lijnen geeft uw Profiel zijn karakter. Het zijn geen aparte onderdelen die zich netjes gedragen aan tegenovergestelde kanten van de kamer. Ze werken samen, soms soepel en soms met een beetje spanning. Het begrijpen van beide helpt u zien hoe het Profiel daadwerkelijk uitpakt in het echte leven.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== CELEBRITY SEARCH BANNER ==================== -->
+    <section class="py-10 md:py-12 bg-gm-dark text-white text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <p class="text-gm-pink text-xs font-semibold tracking-widest uppercase mb-3">Beroemdhedendatabase</p>
+            <h2 class="text-xl md:text-2xl font-bold mb-3">Verken 88.600+ Celebrity Charts</h2>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6 max-w-xl mx-auto">Zoek op naam en verken gratis Human Design Charts berekend over 7 systemen. Filter op Type, Profiel, Autoriteit, Zonneteken, Maanteken, en meer.</p>
+            <a href="/celebrities/" class="inline-block bg-gm-pink hover:bg-[#e04d63] text-white font-semibold py-3 px-8 rounded-xl transition text-sm">
+                Beroemdheden Zoeken →
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ACCORDION ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">Veelgestelde Vragen</h2>
+            <div class="space-y-3">
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Wat is een Profiel in Human Design?</summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Uw Profiel is een combinatie van twee nummers afgeleid van de lijnwaarden van uw bewuste en onbewuste Zon en Aarde. Het beschrijft een kernrol of oriëntatie in de Chart, en helpt uitleggen hoe uw Type in het echte leven wordt uitgedrukt. Er zijn 12 mogelijke Profielcombinaties, elk gemaakt van twee van de zes hexagramlijnen.</div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Hoe wordt mijn Profiel berekend?</summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Uw Profiel komt van de lijn van uw bewuste Zon en Aarde, weergegeven in zwart op de Bodygraph, en de lijn van uw onbewuste Zon en Aarde, weergegeven in rood. Als bijvoorbeeld uw bewuste lijn 1 is en uw onbewuste lijn 3, dan is uw Profiel 1/3.</div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Wat zijn de 6 Profiellijnen?</summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">De zes Profiellijnen zijn: Lijn 1, Onderzoeker; Lijn 2, Kluizenaar; Lijn 3, Martelaar; Lijn 4, Opportunist; Lijn 5, Ketter; en Lijn 6, Rolmodel. Elke lijn draagt een onderscheidend thema, en door er twee te combineren ontstaan de 12 Profielen.</div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Verandert mijn Profiel op basis van mijn Type?</summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Nee. Uw Profiel is vastgesteld bij de geboorte. Hetzelfde Profiel kan echter heel anders tot uitdrukking komen door verschillende Types. Een 3/5 Generator leeft niet dezelfde ervaring als een 3/5 Projector. Uw Type is het voertuig, en uw Profiel is de rol.</div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Wat is het verschil tussen bewuste en onbewuste lijnen?</summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Het eerste nummer in uw Profiel is de bewuste lijn, die u eerder in uzelf zult herkennen en waarmee u zich zult identificeren. Het tweede nummer is de onbewuste lijn, die meer onder bewustzijn werkt en vaak gemakkelijker voor anderen op te merken is.</div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Wat zijn Persoonlijk Lot, Transpersoonlijk Karma, en Vast Lot?</summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Dit zijn oudere Human Design termen die gebruikt worden om Profiel geometrie te beschrijven. Rechtehoekkruisen zijn persoonlijk in oriëntatie. Linkerhoekkruisen zijn transpersoonlijk, met levensthema's die meer ontplooien door interactie met anderen. Juxtapositie verwijst naar het 4/1 Profiel, dat een meer vaste en consistente oriëntatie heeft. Nuttige termen, licht dramatische verpakking.</div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Wat zijn de lagere en hogere trigrammen?</summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Lijnen 1 tot en met 3 vormen het lagere trigram, dat meer persoonlijk en introspectief georiënteerd is. Lijnen 4 tot en met 6 vormen het hogere trigram, dat meer relationeel en transpersoonlijk is. Samen helpen ze beschrijven hoe een Profiel georiënteerd is.</div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Waarom heeft de 6de lijn drie levensfases?</summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">De 6de lijn neigt ertoe door het leven te gaan in drie brede fasen. De vroege jaren zijn meer experimenteel, de middenfase is vaak meer observerend of "op het dak," en het latere leven brengt het potentieel voor belichaamd rolmodel-zijn. Het is minder een rigide schema dan een ontwikkelingsboog, wat handig is, omdat het leven zelden op een stopwatch kijkt.</div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CROSS-LINKS / CONTINUE LEARNING ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">Andere Leeronderwerpen</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="/types/" class="bg-gm-light rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">De 5 Types &rarr;</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed">Strategie, Autoriteit, en auramechaniek over alle vijf Human Design types.</p>
+                </a>
+                <a href="/variables/" class="bg-gm-light rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">Diepere Mechaniek &rarr;</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed">Verken de diepere lagen van Human Design, inclusief Determinatie, Omgeving, Perspectief, en Motivatie.</p>
+                </a>
+                <a href="/sleep-design/" class="bg-gm-light rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">Slaap Design &rarr;</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed">Hoe uw Design verandert tijdens de slaap, en waarom uw slapende aura belangrijk is.</p>
+                </a>
+                <a href="../../" class="bg-gm-light rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">Learn Hub &rarr;</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed">Bekijk alle Human Design educatieve inhoud, van kernfundamenten tot gevorderde onderwerpen en tools.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="py-14 md:py-20 bg-g

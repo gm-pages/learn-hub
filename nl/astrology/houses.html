@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+ <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Astrologische Huizen Uitgelegd | Huizensystemen &amp; Berekeningsmethoden | Genetic Matrix</title>
+ <meta name="description" content="Leer over de 12 astrologische huizen, wat ze vertegenwoordigen, en de verschillende huizensystemen die gebruikt worden om ze te berekenen. Genetic Matrix ondersteunt 10 huizenmethoden waaronder Placidus, Koch, Whole Sign, en meer.">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn/astrology/houses/">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ 'gm-purple': '#6E5898',
+ 'gm-purple-light': '#9080B1',
+ 'gm-purple-soft': '#AC94D8',
+ 'gm-dark': '#3C2864',
+ 'gm-darker': '#2e1f4d',
+ 'gm-green': '#54931E',
+ 'gm-green-dark': '#468018',
+ 'gm-green-light': '#8EB86A',
+ 'gm-pink': '#F66378',
+ 'gm-orange': '#E8961D',
+ 'gm-gray': '#707070',
+ 'gm-light': '#F7F8F9',
+ 'gm-card': '#FAFBFC',
+ 'gm-card-active': '#F4F0FC',
+ 'gm-border': '#D8D4E4',
+ 'gm-warning': '#F8F8E8',
+ 'gm-text-dark': '#1A1A2E',
+ 'gm-text': '#444444',
+ 'gm-text-light': '#949494',
+ }
+ }
+ }
+ }
+ </script>
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+ body { font-family: 'Inter', sans-serif; }
+ details summary { cursor: pointer; list-style: none; }
+ details summary::-webkit-details-marker { display: none; }
+ details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+ details[open] summary::after { content: '\2212'; }
+ details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+ @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+ /* Starfield for astro hero */
+ .astro-stars {
+     position: absolute; inset: 0; pointer-events: none;
+     background-image:
+         radial-gradient(1.5px 1.5px at 10% 20%, rgba(255,255,255,0.8) 0%, transparent 100%),
+         radial-gradient(2px 2px at 30% 50%, rgba(255,255,255,0.9) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 50% 15%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 70% 60%, rgba(255,255,255,0.85) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 85% 30%, rgba(255,255,255,0.75) 0%, transparent 100%),
+         radial-gradient(2px 2px at 15% 70%, rgba(172,148,216,0.8) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 60% 80%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 90% 85%, rgba(232,150,29,0.5) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 40% 90%, rgba(255,255,255,0.6) 0%, transparent 100%),
+         radial-gradient(2px 2px at 25% 40%, rgba(255,255,255,0.8) 0%, transparent 100%);
+     animation: astroTwinkle 4s ease-in-out infinite alternate;
+ }
+ @keyframes astroTwinkle {
+     0% { opacity: 0.7; }
+     100% { opacity: 1; }
+ }
+
+ /* Hero decorations */
+ .hero-chart-layer { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+ .hero-chart-layer svg { position: absolute; opacity: 0.12; }
+
+ /* Hero text entrance animation */
+ .hero-fade-in { opacity: 0; transform: translateY(12px); animation: heroEntrance 0.8s ease-out forwards; }
+ .hero-fade-in:nth-child(1) { animation-delay: 0.2s; }
+ .hero-fade-in:nth-child(2) { animation-delay: 0.4s; }
+ .hero-fade-in:nth-child(3) { animation-delay: 0.6s; }
+ @keyframes heroEntrance {
+     to { opacity: 1; transform: translateY(0); }
+ }
+
+ /* Slow spin for house wheel */
+ @keyframes slowSpin {
+     from { transform: rotate(0deg); }
+     to { transform: rotate(360deg); }
+ }
+ @keyframes counterSpin {
+     from { rotate: 0deg; }
+     to { rotate: -360deg; }
+ }
+ .house-wheel-container {
+     animation: slowSpin 120s linear infinite;
+ }
+ .house-wheel-container text {
+     animation: counterSpin 120s linear infinite;
+     transform-box: fill-box;
+     transform-origin: center;
+ }
+ .house-wheel-container svg {
+     filter: drop-shadow(0 0 8px rgba(212,168,67,0.15));
+ }
+
+ /* House card hover */
+ .house-card {
+     transition: all 0.3s ease;
+ }
+ .house-card:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 8px 30px rgba(110,88,152,0.15);
+ }
+
+ /* Lavender hover for cross-links */
+ .learn-link:hover {
+     border-color: #AC94D8 !important;
+     background: #faf8ff !important;
+ }
+
+ /* Subtle divider */
+ .house-divider {
+     border: none;
+     height: 1px;
+     background: linear-gradient(to right, transparent, rgba(110,88,152,0.2), transparent);
+     margin: 2rem 0;
+ }
+ </style>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Astrologische Huizen Uitgelegd | Huizensystemen & Berekeningsmethoden","description":"Leer over de 12 astrologische huizen, wat ze vertegenwoordigen, en de verschillende huizensystemen die gebruikt worden om ze te berekenen. Genetic Matrix ondersteunt 10 huizenmethoden waaronder Placidus, Koch, Whole Sign, en meer.","publisher":{"@type":"Organization","name":"Genetic Matrix","url":"https://www.geneticmatrix.com"},"mainEntityOfPage":"https://www.geneticmatrix.com/learn/astrology/houses/","datePublished":"2025-01-15","dateModified":"2026-03-06"}
+</script>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Welk huizensysteem moet ik gebruiken?","acceptedAnswer":{"@type":"Answer","text":"Als u nieuw bent in de astrologie, begin dan met Placidus. Het is het meest gebruikte en de meeste bronnen verwijzen ernaar. Naarmate u uw praktijk verdiept, experimenteer dan met Whole Sign (favoriet in traditionele astrologie) en Gelijke Huizen om te zien welk systeem uw levenservaring het beste beschrijft."}},
+{"@type":"Question","name":"Veranderen huizensystemen mijn planeten of tekens?","acceptedAnswer":{"@type":"Answer","text":"Nee. Uw planeten blijven in dezelfde tekens, ongeacht het huizensysteem. Alleen de huisplaatsingen veranderen. Uw Zon staat nog steeds in Schorpioen, maar kan verschuiven van het 4de Huis naar het 5de Huis, afhankelijk van het systeem."}},
+{"@type":"Question","name":"Waarom biedt Genetic Matrix 10 huizensystemen?","acceptedAnswer":{"@type":"Answer","text":"Verschillende astrologische tradities en technieken werken het beste met verschillende huizensystemen. Horary astrologen geven vaak de voorkeur aan Regiomontanus, Vedische astrologen gebruiken Whole Sign, en de meeste moderne westerse astrologen gebruiken Placidus. Het aanbieden van alle 10 laat u werken binnen welke traditie dan ook die bij u resoneert."}},
+{"@type":"Question","name":"Hoeveel huizensystemen ondersteunt Genetic Matrix?","acceptedAnswer":{"@type":"Answer","text":"Genetic Matrix ondersteunt 10 huizensystemen waaronder Placidus, Koch, Whole Sign, Gelijke Huizen, Porphyry, Regiomontanus, Campanus, Meridian, Morinus, en 0-Graden Ram. Pro leden kunnen schakelen tussen alle 10 systemen."}},
+{"@type":"Question","name":"Beïnvloeden huizensystemen mijn Human Design chart?","acceptedAnswer":{"@type":"Answer","text":"Human Design gebruikt zijn eigen berekeningssysteem dat niet afhankelijk is van traditionele astrologische huizensystemen. De huizen die hier besproken worden gelden specifiek voor uw astrologie of Astro HD chart."}}
+]}
+</script>
+</head>
+<body class="bg-white text-gray-700">
+
+ <!-- ==================== NAV BAR ==================== -->
+ <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../../assets/logo.svg" alt="Genetic Matrix - Ken uzelf" class="h-14">
+            </a>
+            <div class="flex items-center gap-8">
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Rapporten">
+                    <img src="../../assets/icon-report.svg" alt="Rapporten" class="h-9 w-9">
+                </a>
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Talking Charts">
+                    <img src="../../assets/icon-talking-chart.svg" alt="Talking Charts" class="h-7 w-7">
+                </a>
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Gratis Chart</a>
+                <!-- Learn -->
+                <a href="../../" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Leren</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Onze Plannen</a>
+                <a href="https://www.geneticmatrix.com/cart/" title="Winkelwagen">
+                    <img src="../../assets/icon-cart.svg" alt="Winkelwagen" class="h-5 w-auto">
+                </a>
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>Nederlands</span>
+                    <img src="../../assets/icon-english.svg" alt="Nederlands" class="h-5 w-7">
+                </div>
+                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Inloggen</a>
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Registreren</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-50 border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 py-2.5">
+            <a href="../../" class="text-sm text-gm-purple hover:text-gm-dark font-medium transition">&larr; Terug naar Learn Hub</a>
+        </div>
+    </div>
+
+ <!-- ==================== HERO BANNER ==================== -->
+ <section class="relative bg-gm-dark text-white text-center pt-12 md:pt-16 pb-2 md:pb-3 overflow-hidden">
+     <!-- Star dots -->
+     <div class="astro-stars"></div>
+     <!-- Decorative chart wheel illustrations -->
+     <div class="hero-chart-layer">
+         <!-- Left edge: partial chart wheel -->
+         <svg width="280" height="280" viewBox="0 0 280 280" style="left: -80px; top: 50%; transform: translateY(-50%);" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="140" cy="140" r="120" stroke="#AC94D8" stroke-width="1.5"/>
+             <circle cx="140" cy="140" r="80" stroke="#AC94D8" stroke-width="1"/>
+             <circle cx="140" cy="140" r="40" stroke="#7B4FBF" stroke-width="0.8"/>
+             <line x1="140" y1="20" x2="140" y2="260" stroke="#AC94D8" stroke-width="0.8"/>
+             <line x1="20" y1="140" x2="260" y2="140" stroke="#AC94D8" stroke-width="0.8"/>
+             <line x1="55" y1="55" x2="225" y2="225" stroke="#7B4FBF" stroke-width="0.6"/>
+             <line x1="225" y1="55" x2="55" y2="225" stroke="#7B4FBF" stroke-width="0.6"/>
+             <line x1="140" y1="20" x2="80" y2="244" stroke="#E066A0" stroke-width="0.5"/>
+             <line x1="140" y1="20" x2="200" y2="244" stroke="#E066A0" stroke-width="0.5"/>
+             <line x1="20" y1="140" x2="244" y2="80" stroke="#4ECDC4" stroke-width="0.5"/>
+             <line x1="20" y1="140" x2="244" y2="200" stroke="#4ECDC4" stroke-width="0.5"/>
+         </svg>
+         <!-- Right edge: partial chart wheel -->
+         <svg width="280" height="280" viewBox="0 0 280 280" style="right: -80px; top: 50%; transform: translateY(-50%);" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="140" cy="140" r="120" stroke="#AC94D8" stroke-width="1.5"/>
+             <circle cx="140" cy="140" r="80" stroke="#AC94D8" stroke-width="1"/>
+             <circle cx="140" cy="140" r="40" stroke="#7B4FBF" stroke-width="0.8"/>
+             <line x1="140" y1="20" x2="140" y2="260" stroke="#AC94D8" stroke-width="0.8"/>
+             <line x1="20" y1="140" x2="260" y2="140" stroke="#AC94D8" stroke-width="0.8"/>
+             <line x1="55" y1="55" x2="225" y2="225" stroke="#7B4FBF" stroke-width="0.6"/>
+             <line x1="225" y1="55" x2="55" y2="225" stroke="#7B4FBF" stroke-width="0.6"/>
+             <line x1="140" y1="20" x2="80" y2="244" stroke="#E066A0" stroke-width="0.5"/>
+             <line x1="140" y1="20" x2="200" y2="244" stroke="#E066A0" stroke-width="0.5"/>
+             <line x1="20" y1="140" x2="244" y2="80" stroke="#4ECDC4" stroke-width="0.5"/>
+             <line x1="20" y1="140" x2="244" y2="200" stroke="#4ECDC4" stroke-width="0.5"/>
+         </svg>
+     </div>
+     <div class="max-w-3xl mx-auto px-6 relative z-10">
+         <span class="hero-fade-in inline-block bg-gm-purple text-white text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">Astrologie</span>
+         <h1 class="hero-fade-in text-3xl md:text-4xl font-bold mb-3">Astrologische Huizen Uitgelegd</h1>
+         <p class="hero-fade-in text-gray-300 text-sm md:text-base leading-relaxed max-w-xl mx-auto">Leer over de 12 astrologische huizen, wat ze vertegenwoordigen, en de verschillende huizensystemen die gebruikt worden om ze te berekenen. Genetic Matrix ondersteunt 10 huizenmethoden waaronder Placidus, Koch, Whole Sign, en meer.</p>
+     </div>
+ </section>
+
+ <!-- ==================== ANIMATED HOUSE WHEEL ==================== -->
+ <section class="pt-0 pb-6 md:pb-8 bg-gradient-to-b from-gm-dark to-[#2a1b45] overflow-hidden">
+     <div class="max-w-4xl mx-auto px-6 text-center">
+         <!-- Animated house wheel diagram -->
+         <div class="relative w-64 h-64 md:w-80 md:h-80 mx-auto mb-6">
+             <div class="house-wheel-container w-full h-full">
+                 <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                     <!-- Outer circle -->
+                     <circle cx="150" cy="150" r="120" stroke="#d4a843" stroke-width="1.5" fill="none"/>
+                     <!-- Inner circle -->
+                     <circle cx="150" cy="150" r="70" stroke="#d4a843" stroke-width="1" fill="none"/>
+                     <!-- 12 radial lines at 30-degree intervals, outer r=120 to inner r=70 -->
+                     <!-- x = 150 + r*sin(angle), y = 150 - r*cos(angle) -->
+                     <line x1="150" y1="30" x2="150" y2="80" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="210" y1="46.1" x2="185" y2="89.4" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="253.9" y1="90" x2="210.6" y2="115" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="270" y1="150" x2="220" y2="150" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="253.9" y1="210" x2="210.6" y2="185" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="210" y1="253.9" x2="185" y2="210.6" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="150" y1="270" x2="150" y2="220" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="90" y1="253.9" x2="115" y2="210.6" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="46.1" y1="210" x2="89.4" y2="185" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="30" y1="150" x2="80" y2="150" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="46.1" y1="90" x2="89.4" y2="115" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="90" y1="46.1" x2="115" y2="89.4" stroke="#d4a843" stroke-width="0.8"/>
+                     <!-- House numbers 1-12 positioned at segment midpoints (15° between divider lines) -->
+                     <!-- r=95 (midway between outer 120 and inner 70), center 150,150 -->
+                     <!-- x = 150 + 95*sin(angle), y = 150 - 95*cos(angle) + 4 (baseline adjust) -->
+                     <text x="175" y="62" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">10</text>
+                     <text x="217" y="87" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">11</text>
+                     <text x="242" y="129" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">12</text>
+                     <text x="242" y="179" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">1</text>
+                     <text x="217" y="221" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">2</text>
+                     <text x="175" y="246" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">3</text>
+                     <text x="125" y="246" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">4</text>
+                     <text x="83" y="221" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">5</text>
+                     <text x="58" y="179" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">6</text>
+                     <text x="58" y="129" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">7</text>
+                     <text x="83" y="87" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">8</text>
+                     <text x="125" y="62" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">9</text>
+                 </svg>
+             </div>
+         </div>
+         <p class="text-gray-400 text-sm">De 12 huizen verdelen de hemel in gebieden van levenservaring</p>
+     </div>
+ </section>
+
+ <!-- ==================== WHAT ARE ASTROLOGY HOUSES? ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="what-are-astrology-houses">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Wat Zijn Astrologische Huizen?</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">De 12 huizen in de astrologie vertegenwoordigen verschillende gebieden van levenservaring. Terwijl de sterrenbeelden beschrijven <em>hoe</em> energie zich uit, beschrijven de huizen <em>waar</em> die energie zich afspeelt in uw leven. Denk aan de sterrenbeelden als een achtergrond en de huizen als het toneel. De planeten zijn de acteurs die optreden in specifieke gebieden van uw leven op basis van in welk huis ze staan.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Het huizensysteem begint met de <strong class="text-gray-800">Ascendant (Rijzend teken)</strong>, die de spits van het 1ste Huis markeert. Dit is het teken dat opging aan de oostelijke horizon op het exacte moment van uw geboorte. Vanaf daar verdelen de overige 11 huizen de hemel in secties, elk beheersend een ander levensdomein.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Wanneer een planeet in een bepaald huis staat, brengt het zijn energie en thema's naar dat gebied van uw leven. Bijvoorbeeld, Venus in het 7de Huis benadrukt liefde, schoonheid en harmonie binnen partnerschappen, terwijl Mars in het 10de Huis ambitie en assertiviteit aandrijft in carrièrezaken.</p>
+     </div>
+ </section>
+
+ <!-- ==================== THE 12 HOUSES ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="the-12-houses">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> De 12 Huizen</h2>
+
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">1</span> Zelf</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Het 1ste Huis, ook wel de Ascendant genoemd, vertegenwoordigt uw uitwendige persoonlijkheid, fysieke verschijning, eerste indrukken, en hoe u de wereld benadert. Het is het meest persoonlijke huis in de horoscoop en vormt hoe anderen u waarnemen voordat ze u diep kennen. Elke planeet die hier staat heeft een buitengewoon grote invloed op uw identiteit.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">2</span> Waarde</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Het 2de Huis beheerst uw persoonlijke financiën, materiële bezittingen, eigenwaarde, en relatie met geld. Het beschrijft hoe u verdient, uitgeeft, en bronnen waardeert, zowel tastbaar als ontastbaar. Dit huis spreekt ook tot uw gevoel van persoonlijke zekerheid en wat u nodig heeft om u stabiel te voelen.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">3</span> Communicatie</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Het 3de Huis beheerst communicatie, korte afstandsreizen, broers en zussen, buren, en vroege educatie. Het beschrijft hoe u denkt, spreekt, schrijft, en informatie verwerkt in het dagelijks leven. Dit is het huis van de dagelijkse werking van de geest: uw leerstijl, nieuwsgierigheid, en lokale omgeving.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">4</span> Thuis &amp; Familie</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Het 4de Huis, ook wel de IC (Imum Coeli) genoemd, vertegenwoordigt uw thuis, familiewortels, voorouders, emotionele fundamenten, en privéleven. Het beschrijft uw relatie met uw ouders (vooral de verzorgende ouder), uw gevoel van erbij horen, en de omstandigheden van uw latere jaren in het leven.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">5</span> Creativiteit &amp; Plezier</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Het 5de Huis beheerst creatieve zelfexpressie, romantiek, kinderen, hobby's, plezier, en speculatie. Dit is waar u speelt, risico's neemt, en vreugde uit. Het beschrijft wat u plezier brengt, uw datingstijl voor commitment, en uw relatie met kinderen (uw eigen of in het algemeen).</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">6</span> Gezondheid &amp; Service</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Het 6de Huis beheerst dagelijkse routines, gezondheidsgewoonten, werkomgeving, en service aan anderen. Het beschrijft hoe u uw dag-tot-dag verantwoordelijkheden benadert, uw relatie met collega's, en uw fysieke welzijn. Dit huis richt zich op het praktische, onglamoureuze werk van het onderhouden van uw leven.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">7</span> Partnerschap</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Het 7de Huis, ook wel de Descendant genoemd, beheerst toegewijde partnerschappen, huwelijk, zakenpartners, en openlijke vijanden. Het beschrijft wat u zoekt in een partner, hoe u zich verhoudt binnen één-op-één relaties, en de kwaliteiten die u projecteert op anderen. Het staat direct tegenover het 1ste Huis, wat de balans tussen zelf en ander weergeeft.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">8</span> Transformatie</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Het 8ste Huis beheerst gedeelde bronnen, intimiteit, dood, wedergeboorte, belastingen, erfenis, en diepe psychologische transformatie. Het beheerst wat er gebeurt wanneer twee mensen hun levens samenvoegen, financieel, emotioneel, en seksueel. Dit huis dekt ook occulte kennis, verborgen zaken, en het proces van loslaten.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">9</span> Filosofie</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Het 9de Huis beheerst hoger onderwijs, lange afstandsreizen, filosofie, religie, wet, en de zoektocht naar betekenis. Het beschrijft uw geloofssystemen, uw relatie met buitenlandse culturen, en uw drang om het grote geheel te begrijpen. Waar het 3de Huis lokale kennis is, is het 9de Huis wereldwijze wijsheid.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">10</span> Carrière &amp; Publiek Imago</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Het 10de Huis, ook wel de MC (Midhemel) genoemd, vertegenwoordigt uw carrière, publieke reputatie, prestaties, en nalatenschap. Het beschrijft uw hoogste aspiraties, uw relatie met autoriteit, en hoe de wereld uw professionele bijdragen ziet. Dit is het meest zichtbare huis in de horoscoop.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">11</span> Gemeenschap</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Het 11de Huis beheerst vriendschappen, sociale groepen, humanitaire doelen, hoop, en wensen voor de toekomst. Het beschrijft de gemeenschappen waartoe u behoort, uw relatie met collectieve doelen, en waar u over droomt voor de wereld. Dit is waar persoonlijke identiteit het grotere sociale weefsel ontmoet.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">12</span> Het Onbewuste</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Het 12de Huis beheerst het onderbewustzijn, verborgen vijanden, zelfondergang, spiritualiteit, isolatie, en eindigen. Het beschrijft wat onder het oppervlak ligt: uw dromen, angsten, karmische patronen, en verbinding met het transcendente. Planeten hier opereren achter de schermen, vaak op manieren waarvan u zich niet bewust bent.</p>
+             </div>
+
+         </div>
+
+         <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Belangrijk Inzicht</p>
+             <p class="text-gm-text text-sm leading-relaxed italic">Het huizensysteem begint met de Ascendant, het teken dat opging aan de oostelijke horizon op uw exacte geboortemoment. Dit is waarom astrologie een nauwkeurige geboortетijd vereist. Zelfs een verschil van enkele minuten kan huisspitten verschuiven en veranderen in welk huis een planeet valt.</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== WHAT IS A HOUSE SYSTEM? ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="what-is-a-house-system">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Wat Is Een Huizensysteem?</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Hier wordt astrologie interessant, en waar astrologen het vaak oneens zijn. Iedereen is het eens over de 12 huizen en wat ze vertegenwoordigen. De onenigheid gaat over <em>hoe te berekenen waar het ene huis eindigt en het volgende begint</em>.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Het sterrenbeeldenwiel is 360 graden. De Ascendant (rijzend teken) markeert altijd het begin van het 1ste Huis, en de MC (Midhemel) markeert altijd het begin van het 10de Huis in de meeste systemen. Maar hoe verdeel je de resterende ruimte in 12 secties? Verschillende wiskundige benaderingen van deze vraag produceren verschillende huizensystemen, wat betekent dat dezelfde planeet in verschillende huizen kan vallen afhankelijk van welk systeem u gebruikt.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Dit doet ertoe omdat een planeet in het 12de Huis (verborgen, onderbewust) een heel ander verhaal vertelt dan dezelfde planeet in het 1ste Huis (zichtbaar, identiteit). Voor mensen geboren op extreme breedtegraden kunnen de verschillen tussen huizensystemen dramatisch zijn.</p>
+     </div>
+ </section>
+
+ <!-- ==================== HOUSE SYSTEMS SUPPORTED BY GENETIC MATRIX ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="house-systems">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Huizensystemen Ondersteund Door Genetic Matrix</h2>
+
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Placidus</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Placidus is het populairste huizensysteem in de moderne westerse astrologie en de standaard in de meeste astrologiesoftware wereldwijd. Ontwikkeld door de 17de-eeuwse Italiaanse monnik Placidus de Titis, verdeelt het de huizen op basis van de tijd die elke graad van de ecliptica nodig heeft om van de horizon naar de meridiaan te bewegen. Dit creëert ongelijke huisgroottes die de werkelijke beweging van de hemel op uw geboortelocatie weerspiegelen. Placidus werkt goed voor de meeste geboortelocaties maar produceert verwrongen huizen op zeer hoge breedtegraden (boven 60 graden noord of zuid) waar sommige graden nooit opkomen of ondergaan.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Koch</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Vernoemd naar Walter Koch, was dit systeem populair in Duitstalige landen gedurende de 20ste eeuw. Koch huizen worden berekend op basis van de tijd die de MC graad nodig heeft om op te komen vanaf de horizon, vervolgens die boog verdelend. Net als Placidus produceert het ongelijke huizen en kan problemen hebben op extreme breedtegraden. Koch heeft de neiging het belang van de Midhemel in horoscoopinterpretatie te benadrukken en produceert huizen die sommige astrologen vinden dat beter carrière en publieke levensthema's weerspiegelen.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Porphyrius</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Een van de oudste huizensystemen, toegeschreven aan de 3de-eeuwse filosoof Porphyry. Het gebruikt een eenvoudige en elegante benadering: na het vaststellen van de Ascendant en MC, verdeelt het elk kwadrant van de horoscoop in drie gelijke delen. Dit betekent dat huizen binnen hetzelfde kwadrant gelijk zijn in grootte, hoewel kwadranten zelf kunnen verschillen. Porphyrius wordt gewaardeerd om zijn wiskundige eenvoud en zijn wortels in klassieke astrologie.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Regiomontanus</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Ontwikkeld door de 15de-eeuwse Duitse wiskundige Johannes Muller (bekend als Regiomontanus), verdeelt dit systeem de hemelequator in 12 gelijke segmenten en projecteert vervolgens die verdelingen op de ecliptica. Het was het standaard huizensysteem tijdens de Renaissance en blijft populair in horary astrologie (de praktijk van het opstellen van horoscopen om specifieke vragen te beantwoorden). Veel traditionele astrologen geven de voorkeur aan Regiomontanus om zijn wiskundige elegantie.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Campanus</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Vernoemd naar de 13de-eeuwse Italiaanse wiskundige Campanus van Novara, verdeelt dit systeem de prime vertical (de grote cirkel die door het zenit en oost/west punten gaat) in 12 gelijke 30-graden segmenten, dan projecteert ze op de ecliptica. Campanus huizen weerspiegelen de werkelijke ruimtelijke verdelingen van de hemel zoals gezien vanaf de geboorteplaats. Sommige astrologen geven er de voorkeur aan vanwege de nadruk op de lokale horizon en het idee dat huizen werkelijke ruimtelijke relaties zouden moeten vertegenwoordigen.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Gelijke Huizen</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Het Gelijke Huizen systeem is een van de eenvoudigste en oudste benaderingen. Het neemt de graad van de Ascendant en creëert 12 huizen van precies 30 graden elk. Als uw Ascendant op 15 graden Ram staat, is uw 2de Huisspits op 15 graden Stier, uw 3de op 15 graden Tweelingen, enzovoort rond het wiel. Het voordeel is consistentie en eenvoud. De afweging is dat de MC (Midhemel) niet noodzakelijkerwijs op de 10de Huisspits valt, wat betekent dat de natuurlijke associatie tussen de MC en het 10de Huis wordt verbroken. Gelijke Huizen wordt veel gebruikt in Hellenistische astrologie en maakt een comeback onder moderne beoefenaars.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Whole Sign</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Whole Sign is waarschijnlijk het oudste huizensysteem, uitgebreid gebruikt in Hellenistische en oude Indiase (Vedische) astrologie. In dit systeem wordt welk teken de Ascendant ook valt het gehele 1ste Huis. Het volgende teken wordt het gehele 2de Huis, enzovoort. Elk huis is precies een sterrenbeeld, 30 graden breed. Dit betekent dat twee mensen met Ascendanten op 1 graad Ram en 29 graden Ram dezelfde huisplaatsingen hebben. Whole Sign heeft een grote heropleving gezien in de moderne astrologie door de invloed van Project Hindsight en de vertaling van oude Griekse astrologische teksten. De eenvoud maakt het bijzonder nuttig voor beginners en voor timing technieken.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Carter Poli-Equatorial</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Ontwikkeld door de invloedrijke Britse astroloog Charles E.O. Carter, projecteert dit systeem huisverdelingen vanaf het equatoriale vlak. Het is een relatief zeldzaam systeem maar heeft een toegewijde aanhang onder astrologen die Carter's methoden bestuderen. Het Poli-Equatorial systeem probeert enkele van de breedtegraadproblemen op te lossen die andere kwadrant-gebaseerde systemen beïnvloeden door de verdelingen anders te verankeren.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Whole (0 graden Ram)</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Deze variatie van Whole Sign huizen fixeert het 1ste Huis op 0 graden Ram ongeacht de Ascendant. Elke horoscoop begint met Ram als het 1ste Huis, Stier als het 2de, enzovoort. Dit wordt soms de "natuurlijke huis" of "zonne-horoscoop" benadering genoemd en wordt gebruikt in bepaalde takken van mundane astrologie (de astrologie van wereldgebeurtenissen) en als een vereenvoudigd systeem voor zonneteken-gebaseerde horoscopen. De Ascendant verschijnt nog steeds in de horoscoop maar bepaalt niet de huisplaatsing.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Whole (0 graden Ram) - Fix Asc</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Een variatie van het 0-graden Ram Whole Sign systeem die bovendien de Ascendant op 0 graden Ram fixeert. Dit creëert een volledig gestandaardiseerd horoscoopkader waar zowel het huizensysteem als de Ascendant verankerd zijn aan hetzelfde punt. Het wordt primair gebruikt voor gespecialiseerd onderzoek en vergelijkende analyse in plaats van geboortehoroscoop lezing.</p>
+
+         <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Belangrijk Inzicht</p>
+             <p class="text-gm-text text-sm leading-relaxed italic">Genetic Matrix ondersteunt 10 huizensystemen. Pro leden kunnen schakelen tussen alle 10 systemen om te verkennen hoe hun horoscopen verschuiven.</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== HOW HOUSES INTERACT WITH PLANETS AND SIGNS ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="houses-planets-signs">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Hoe Huizen Interacteren Met Planeten En Tekens</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Het begrijpen van huizen wordt het krachtigst wanneer u ze combineert met planeten en tekens.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Een <strong class="text-gray-800">planeet in een huis</strong> vertelt u welk levensgebied die planetaire energie activeert. Mars in het 7de Huis brengt assertiviteit en soms conflict in partnerschappen. Jupiter in het 2de Huis wijst vaak op gemak met financiën en een genereuze relatie met geld.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Een <strong class="text-gray-800">teken op een huisspits</strong> beschrijft de stijl en smaak van dat levensgebied. Schorpioen op de 4de Huisspits suggereert een privé, intens thuisleven met diepe familiedynamiek. Tweelingen op de 10de Huisspits suggereert een carrière die communicatie, variëteit, of meerdere professionele paden behelst. De <strong class="text-gray-800">huisheerser</strong> (de planeet die het teken op de spits beheerst) voegt nog een laag toe. Als Schorpioen op uw 4de Huisspits staat, dan worden Mars en Pluto (Schorpioen's heersers) de heersers van uw 4de Huis. Waar die planeten staan in uw horoscoop vertelt u meer over hoe uw thuis en familie thema's zich afspelen.</p>
+     </div>
+ </section>
+
+ <!-- ==================== WHY HOUSE SYSTEMS MATTER FOR YOUR CHART ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="why-house-systems-matter">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Waarom Huizensystemen Belangrijk Zijn Voor Uw Horoscoop</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Als u planeten heeft nabij de grens tussen twee huizen (binnen enkele graden van een spits), kan het wisselen van huizensystemen die planeet naar een ander huis verplaatsen. Dit kan de interpretatie significant veranderen. Veel ervaren astrologen raden aan uw horoscoop te controleren in meerdere huizensystemen om te zien welke het meest resoneert met uw geleefde ervaring.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Genetic Matrix Pro leden kunnen direct schakelen tussen alle 10 huizensystemen om te zien hoe hun horoscoop verschuift. Dit is bijzonder waardevol voor iedereen met planeten nabij huisspitten of voor degenen geboren op hogere breedtegraden waar huizensysteemverschillen het meest uitgesproken zijn.</p>
+     </div>
+ </section>
+
+    <!-- ==================== CELEBRITY SEARCH BANNER ==================== -->
+    <section class="py-10 md:py-12 bg-gm-dark text-white text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <p class="text-gm-pink text-xs font-semibold tracking-widest uppercase mb-3">Beroemdhedendatabase</p>
+            <h2 class="text-xl md:text-2xl font-bold mb-3">Verken 88.600+ Beroemdhedenhoroscopen</h2>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6 max-w-xl mx-auto">Zoek op naam en verken gratis Human Design horoscopen berekend over 7 systemen. Filter op Type, Profiel, Autoriteit, Zonneteken, Maanteken, en meer.</p>
+            <a href="/celebrities/" class="inline-block bg-gm-pink hover:bg-[#e04d63] text-white font-semibold py-3 px-8 rounded-xl transition text-sm">
+                Zoek Beroemdheden →
+            </a>
+        </div>
+    </section>
+
+ <!-- ==================== FAQ ACCORDION ==================== -->
+ <section class="py-10 md:py-14 bg-white">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Veelgestelde Vragen</h2>
+         <div class="space-y-3">
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Welk huizensysteem moet ik gebruiken?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Als u nieuw bent in de astrologie, begin dan met Placidus. Het is het meest gebruikte en de meeste bronnen verwijzen ernaar. Naarmate u uw praktijk verdiept, experimenteer dan met Whole Sign (favoriet in traditionele astrologie) en Gelijke Huizen om te zien welk systeem uw levenservaring het beste beschrijft.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Veranderen huizensystemen mijn planeten of tekens?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Nee. Uw planeten blijven in dezelfde tekens, ongeacht het huizensysteem. Alleen de huisplaatsingen veranderen. Uw Zon staat nog steeds in Schorpioen, maar kan verschuiven van het 4de Huis naar het 5de Huis, afhankelijk van het systeem.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Waarom biedt Genetic Matrix 10 huizensystemen?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Verschillende astrologische tradities en technieken werken het beste met verschillende huizensystemen. Horary astrologen geven vaak de voorkeur aan Regiomontanus, Vedische astrologen gebruiken Whole Sign, en de meeste moderne westerse astrologen gebruiken Placidus. Het aanbieden van alle 10 laat u werken binnen welke traditie dan ook die bij u resoneert.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Hoeveel huizensystemen ondersteunt Genetic Matrix?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Genetic Matrix ondersteunt 10 huizensystemen waaronder Placidus, Koch, Whole Sign, Gelijke Huizen, Porphyry, Regiomontanus, Campanus, Meridian, Morinus, en 0-Graden Ram. Pro leden kunnen schakelen tussen alle 10 systemen om te verkennen hoe hun horoscopen verschuiven.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Beïnvloeden huizensystemen mijn Human Design chart?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Human Design gebruikt zijn eigen berekeningssysteem dat niet afhankelijk is van traditionele astrologische huizensystemen. De huizen die hier besproken worden gelden specifiek voor uw astrologie of Astro HD chart.</div>
+             </details>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== CONTINUE LEARNING ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Andere Leeronderwerpen</h2>
+         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+             <a href="/astrology/zodiac-signs.html" class="learn-link bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text

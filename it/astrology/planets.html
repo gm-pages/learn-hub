@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+ <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>I Pianeti in Astrologia Spiegati | Significato di Ogni Pianeta nel Suo Tema Natale | Genetic Matrix</title>
+ <meta name="description" content="Scopra cosa significa ogni pianeta in astrologia. Dal Sole e dalla Luna attraverso Giove, Saturno e i pianeti esterni, scopra come le energie planetarie modellano il Suo tema natale e influenzano la Sua vita.">
+ <meta name="keywords" content="pianeti astrologia, pianeti in astrologia, pianeti tema natale, sole in astrologia, luna in astrologia, mercurio astrologia, venere astrologia, marte astrologia, giove astrologia, saturno astrologia, urano astrologia, nettuno astrologia, plutone astrologia, chirone astrologia, nodo nord astrologia, nodo sud astrologia, pianeti personali, pianeti esterni, pianeti tema natale">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn/astrology/planets/">
+ <meta property="og:title" content="I Pianeti in Astrologia Spiegati - Significato di Ogni Pianeta nella Sua Carta">
+ <meta property="og:description" content="Scopra cosa significa ogni pianeta in astrologia. Dal Sole e dalla Luna attraverso i pianeti esterni, scopra come le energie planetarie modellano il Suo tema natale.">
+ <meta property="og:type" content="article">
+ <meta property="og:url" content="https://www.geneticmatrix.com/learn/astrology/planets/">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="I Pianeti in Astrologia Spiegati - Significato di Ogni Pianeta nella Sua Carta">
+ <meta name="twitter:description" content="Scopra cosa significa ogni pianeta in astrologia. Dal Sole e dalla Luna attraverso i pianeti esterni, scopra come le energie planetarie modellano il Suo tema natale.">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ 'gm-purple': '#6E5898',
+ 'gm-purple-light': '#9080B1',
+ 'gm-purple-soft': '#AC94D8',
+ 'gm-dark': '#3C2864',
+ 'gm-darker': '#2e1f4d',
+ 'gm-green': '#54931E',
+ 'gm-green-dark': '#468018',
+ 'gm-green-light': '#8EB86A',
+ 'gm-pink': '#F66378',
+ 'gm-orange': '#E8961D',
+ 'gm-gray': '#707070',
+ 'gm-light': '#F7F8F9',
+ 'gm-card': '#FAFBFC',
+ 'gm-card-active': '#F4F0FC',
+ 'gm-border': '#D8D4E4',
+ 'gm-warning': '#F8F8E8',
+ 'gm-text-dark': '#1A1A2E',
+ 'gm-text': '#444444',
+ 'gm-text-light': '#949494',
+ }
+ }
+ }
+ }
+ </script>
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+ body { font-family: 'Inter', sans-serif; }
+ details summary { cursor: pointer; list-style: none; }
+ details summary::-webkit-details-marker { display: none; }
+ details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+ details[open] summary::after { content: '\2212'; }
+ details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+ @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+ /* Starfield for hero */
+ .astro-stars {
+     position: absolute; inset: 0; pointer-events: none;
+     background-image:
+         radial-gradient(1.5px 1.5px at 10% 20%, rgba(255,255,255,0.8) 0%, transparent 100%),
+         radial-gradient(2px 2px at 30% 50%, rgba(255,255,255,0.9) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 50% 15%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 70% 60%, rgba(255,255,255,0.85) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 85% 30%, rgba(255,255,255,0.75) 0%, transparent 100%),
+         radial-gradient(2px 2px at 15% 70%, rgba(172,148,216,0.8) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 60% 80%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 90% 85%, rgba(232,150,29,0.5) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 40% 90%, rgba(255,255,255,0.6) 0%, transparent 100%),
+         radial-gradient(2px 2px at 25% 40%, rgba(255,255,255,0.8) 0%, transparent 100%);
+     animation: astroTwinkle 4s ease-in-out infinite alternate;
+ }
+ @keyframes astroTwinkle {
+     0% { opacity: 0.7; }
+     100% { opacity: 1; }
+ }
+
+ /* Hero decorative planet illustrations */
+ .hero-planet-layer {
+     position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+ }
+ .hero-planet-layer svg {
+     position: absolute; opacity: 0.12;
+ }
+
+ /* Hero text entrance */
+ .hero-fade-in { opacity: 0; transform: translateY(12px); animation: heroEntrance 0.8s ease-out forwards; }
+ .hero-fade-in:nth-child(1) { animation-delay: 0.2s; }
+ .hero-fade-in:nth-child(2) { animation-delay: 0.4s; }
+ .hero-fade-in:nth-child(3) { animation-delay: 0.6s; }
+ @keyframes heroEntrance {
+     to { opacity: 1; transform: translateY(0); }
+ }
+
+ /* Planet group tabs */
+ .planet-tab {
+     padding: 0.5rem 1.25rem;
+     border-radius: 9999px;
+     font-size: 0.875rem;
+     font-weight: 500;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     border: 1px solid rgba(110,88,152,0.3);
+     color: #9080B1;
+     background: transparent;
+ }
+ .planet-tab:hover {
+     border-color: rgba(172,148,216,0.6);
+     color: #AC94D8;
+ }
+ .planet-tab.active {
+     background: rgba(110,88,152,0.2);
+     border-color: #AC94D8;
+     color: white;
+ }
+
+ /* Planet card styles */
+ .planet-card {
+     transition: all 0.3s ease;
+     background: #F4F0FC;
+     border: 1px solid rgba(172,148,216,0.3);
+     border-radius: 1rem;
+     padding: 1.75rem 1.5rem;
+     text-align: center;
+ }
+ .planet-card:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 8px 30px rgba(110,88,152,0.2);
+     border-color: rgba(172,148,216,0.5);
+ }
+ .planet-icon-badge {
+     width: 56px;
+     height: 56px;
+     border-radius: 50%;
+     background: rgba(110,88,152,0.1);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto 0.75rem;
+ }
+ .planet-icon-badge span {
+     font-size: 1.75rem;
+     color: #6E5898;
+ }
+ .planet-card:hover .planet-icon-badge {
+     background: rgba(110,88,152,0.18);
+ }
+ .planet-category {
+     display: inline-block;
+     font-size: 0.625rem;
+     font-weight: 700;
+     letter-spacing: 0.1em;
+     text-transform: uppercase;
+     padding: 0.25rem 0.75rem;
+     border-radius: 9999px;
+     margin-top: 0.75rem;
+ }
+ .planet-category-personal { background: rgba(110,88,152,0.15); color: #6E5898; }
+ .planet-category-social { background: rgba(212,168,67,0.15); color: #b8942a; }
+ .planet-category-generational { background: rgba(78,205,196,0.15); color: #2a9d96; }
+ .planet-category-special { background: rgba(224,102,160,0.15); color: #c74e8a; }
+
+ /* Filtered states */
+ .planet-filtered-in {
+     animation: cardFadeIn 0.3s ease forwards;
+ }
+ .planet-filtered-out {
+     animation: cardFadeOut 0.3s ease forwards;
+     pointer-events: none;
+     position: absolute;
+     width: 0;
+     height: 0;
+     overflow: hidden;
+     opacity: 0;
+ }
+ @keyframes cardFadeIn {
+     from { opacity: 0; transform: scale(0.95); }
+     to { opacity: 1; transform: scale(1); }
+ }
+ @keyframes cardFadeOut {
+     from { opacity: 1; }
+     to { opacity: 0; }
+ }
+
+ /* Gold planet icons */
+ .planet-icon-gold { color: #d4a843; }
+
+ /* Subtle divider between planet sections */
+ .planet-divider {
+     border: none;
+     height: 1px;
+     background: linear-gradient(to right, transparent, rgba(110,88,152,0.2), transparent);
+     margin: 2rem 0;
+ }
+
+ /* Tip box */
+ .tip-box {
+     background: linear-gradient(135deg, #F4F0FC 0%, #faf8ff 100%);
+     border-left: 3px solid #d4a843;
+     border-radius: 0 0.75rem 0.75rem 0;
+     padding: 1rem 1.25rem;
+ }
+
+ /* Lavender hover for cross-links */
+ .learn-link:hover {
+     border-color: #AC94D8 !important;
+     background: #faf8ff !important;
+ }
+ </style>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"I Pianeti in Astrologia Spiegati | Significato di Ogni Pianeta nel Suo Tema Natale","description":"Scopra cosa significa ogni pianeta in astrologia. Dal Sole e dalla Luna attraverso i pianeti esterni, scopra come le energie planetarie modellano il Suo tema natale e influenzano la Sua vita.","publisher":{"@type":"Organization","name":"Genetic Matrix","url":"https://www.geneticmatrix.com"},"mainEntityOfPage":"https://www.geneticmatrix.com/learn/astrology/planets/","datePublished":"2025-01-15","dateModified":"2026-03-13"}
+</script>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Cosa rappresentano i pianeti in astrologia?","acceptedAnswer":{"@type":"Answer","text":"In astrologia, ogni pianeta rappresenta una spinta o una dimensione fondamentale dell'esperienza umana. Il Sole governa l'identità e lo scopo della vita. La Luna regola le emozioni e gli istinti. Mercurio gestisce la comunicazione e il pensiero. Venere governa l'amore e i valori. Marte guida l'azione e l'ambizione. Giove espande e porta crescita. Saturno struttura e insegna la disciplina. I pianeti esterni (Urano, Nettuno, Plutone) modellano i temi generazionali e la trasformazione profonda. Il segno e la casa occupati da un pianeta nel Suo tema natale colorano il modo in cui quell'energia si esprime nella Sua vita."}},
+{"@type":"Question","name":"Qual è la differenza tra i pianeti personali e quelli esterni?","acceptedAnswer":{"@type":"Answer","text":"I pianeti personali (Sole, Luna, Mercurio, Venere, Marte) si muovono relativamente velocemente attraverso lo zodiaco e modellano la Sua personalità individuale, le abitudini quotidiane e le relazioni strette. I pianeti sociali (Giove, Saturno) fanno da ponte tra il personale e il collettivo, influenzando la crescita, l'ambizione e la struttura della vita attraverso cicli più lunghi. I pianeti esterni (Urano, Nettuno, Plutone) si muovono così lentamente che rimangono in un singolo segno per anni o decenni, modellando i temi di intere generazioni piuttosto che solo i tratti individuali."}},
+{"@type":"Question","name":"Perché il Sole e la Luna sono chiamati pianeti in astrologia?","acceptedAnswer":{"@type":"Answer","text":"In astrologia, il Sole e la Luna sono tradizionalmente raggruppati con i pianeti e chiamati luminari. Anche se astronomicamente il Sole è una stella e la Luna è un satellite, l'astrologia usa il termine pianeti come abbreviazione per tutti i corpi celesti che si muovono attraverso lo zodiaco e portano significato simbolico in un tema natale. Questa convenzione risale a migliaia di anni fa quando tutti gli oggetti celesti mobili visibili erano chiamati stelle erranti."}},
+{"@type":"Question","name":"Cos'è un ritorno planetario in astrologia?","acceptedAnswer":{"@type":"Answer","text":"Un ritorno planetario si verifica quando un pianeta in transito ritorna alla posizione esatta che occupava al momento della Sua nascita. Il più noto è il Ritorno di Saturno intorno ai 29 e 58 anni, che segna periodi importanti di ristrutturazione e maturità. Il Ritorno di Giove avviene circa ogni 12 anni e spesso porta espansione e opportunità. Il Ritorno di Chirone intorno ai 50 anni segnala un periodo di guarigione profonda e saggezza."}},
+{"@type":"Question","name":"Cosa significa quando un pianeta è retrogrado?","acceptedAnswer":{"@type":"Answer","text":"Quando un pianeta sembra muoversi all'indietro attraverso lo zodiaco dalla prospettiva della Terra, si dice che sia retrogrado. I periodi retrogradi sono associati a revisione, riflessione e rivisitazione dei temi legati a quel pianeta. Mercurio retrogrado è il più discusso, spesso collegato a confusioni nella comunicazione e ritardi nei viaggi. Tutti i pianeti tranne il Sole e la Luna diventano retrogradi periodicamente, e questi periodi sono generalmente visti come momenti per rallentare e guardare dentro piuttosto che spingere avanti."}}
+]}
+</script>
+</head>
+<body class="bg-white text-gray-700">
+
+ <!-- ==================== NAV BAR ==================== -->
+ <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../../assets/logo.svg" alt="Genetic Matrix - Conosci te stesso" class="h-14">
+            </a>
+            <div class="flex items-center gap-8">
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Report">
+                    <img src="../../assets/icon-report.svg" alt="Report" class="h-9 w-9">
+                </a>
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Talking Charts">
+                    <img src="../../assets/icon-talking-chart.svg" alt="Talking Charts" class="h-7 w-7">
+                </a>
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Carta Gratuita</a>
+                <!-- Learn -->
+                <a href="../../" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Learn Hub</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">I Nostri Piani</a>
+                <a href="https://www.geneticmatrix.com/cart/" title="Carrello">
+                    <img src="../../assets/icon-cart.svg" alt="Carrello" class="h-5 w-auto">
+                </a>
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>Italiano</span>
+                    <img src="../../assets/icon-english.svg" alt="Italiano" class="h-5 w-7">
+                </div>
+                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Accedi</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Registrati</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-50 border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 py-2.5">
+            <a href="../../" class="text-sm text-gm-purple hover:text-gm-dark font-medium transition">&larr; Torna a Learn Hub</a>
+        </div>
+    </div>
+
+ <!-- ==================== HERO BANNER ==================== -->
+ <section class="relative bg-gm-dark text-white text-center pt-14 md:pt-20 pb-6 md:pb-8 overflow-hidden">
+     <!-- Starfield -->
+     <div class="astro-stars"></div>
+
+     <!-- Decorative planet/constellation illustrations at edges -->
+     <div class="hero-planet-layer">
+         <!-- Saturn-like planet, top-left -->
+         <svg width="120" height="120" viewBox="0 0 120 120" style="top: 10%; left: 3%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="60" cy="60" r="30" stroke="#d4a843" stroke-width="1.5"/>
+             <ellipse cx="60" cy="60" rx="55" ry="12" stroke="#d4a843" stroke-width="1" transform="rotate(-20 60 60)"/>
+         </svg>
+         <!-- Jupiter with bands, top-right -->
+         <svg width="100" height="100" viewBox="0 0 100 100" style="top: 8%; right: 5%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="50" cy="50" r="35" stroke="#d4a843" stroke-width="1.5"/>
+             <path d="M20 42 Q50 38 80 42" stroke="#d4a843" stroke-width="0.8" fill="none"/>
+             <path d="M18 52 Q50 56 82 52" stroke="#d4a843" stroke-width="0.8" fill="none"/>
+             <path d="M22 62 Q50 58 78 62" stroke="#d4a843" stroke-width="0.8" fill="none"/>
+         </svg>
+         <!-- Small crescent moon, bottom-left -->
+         <svg width="60" height="60" viewBox="0 0 60 60" style="bottom: 12%; left: 8%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M35 10 A22 22 0 1 0 35 50 A16 16 0 1 1 35 10Z" stroke="#d4a843" stroke-width="1.2" fill="none"/>
+         </svg>
+         <!-- Small constellation cluster, bottom-right -->
+         <svg width="80" height="80" viewBox="0 0 80 80" style="bottom: 10%; right: 6%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="20" cy="20" r="2" fill="#d4a843"/>
+             <circle cx="55" cy="15" r="2" fill="#d4a843"/>
+             <circle cx="40" cy="45" r="2" fill="#d4a843"/>
+             <circle cx="65" cy="55" r="2" fill="#d4a843"/>
+             <circle cx="25" cy="65" r="2" fill="#d4a843"/>
+             <line x1="20" y1="20" x2="55" y2="15" stroke="#d4a843" stroke-width="0.5"/>
+             <line x1="55" y1="15" x2="40" y2="45" stroke="#d4a843" stroke-width="0.5"/>
+             <line x1="40" y1="45" x2="65" y2="55" stroke="#d4a843" stroke-width="0.5"/>
+             <line x1="40" y1="45" x2="25" y2="65" stroke="#d4a843" stroke-width="0.5"/>
+         </svg>
+     </div>
+
+     <div class="relative z-10 max-w-3xl mx-auto px-6">
+         <div class="hero-fade-in">
+             <span class="inline-block bg-white/10 backdrop-blur-sm text-white/90 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">Astrologia</span>
+         </div>
+         <h1 class="hero-fade-in text-3xl md:text-4xl font-bold mb-4">I Pianeti in Astrologia Spiegati</h1>
+         <p class="hero-fade-in text-gray-300 text-sm md:text-base leading-relaxed max-w-xl mx-auto">Scopra cosa significa ogni pianeta in astrologia, dai pianeti personali (Sole, Luna, Mercurio, Venere, Marte) attraverso i pianeti esterni (Giove, Saturno, Urano, Nettuno, Plutone) più Chirone e Lilith.</p>
+     </div>
+ </section>
+
+
+ <!-- ==================== SOLAR SYSTEM ILLUSTRATION ==================== -->
+ <section class="pt-4 md:pt-6 pb-6 md:pb-8 bg-gradient-to-b from-gm-dark to-[#2a1b45]">
+     <div class="max-w-3xl mx-auto px-6 text-center">
+         <img src="Maja_Planets.png" alt="Sistema solare illustrato che mostra i pianeti utilizzati in astrologia" class="w-full max-w-2xl mx-auto rounded-2xl">
+     </div>
+ </section>
+
+
+ <!-- ==================== THE PLANETS IN HUMAN DESIGN ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="planets-in-astrology">
+     <div class="max-w-6xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> I Pianeti in Astrologia</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4 max-w-3xl">In astrologia, ogni pianeta rappresenta una spinta o una dimensione centrale dell'esperienza umana. Il segno occupato da un pianeta alla Sua nascita colora il modo in cui quell'energia si esprime, mentre la casa in cui cade mostra l'area della vita dove si manifesta più fortemente. Insieme, i pianeti formano le fondamenta del Suo tema natale.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8 max-w-3xl">I pianeti personali (dal Sole a Marte) si muovono rapidamente e modellano la Sua personalità individuale e la vita quotidiana. I pianeti sociali (Giove, Saturno) governano la crescita e la struttura attraverso cicli più lunghi. I pianeti esterni (Urano, Nettuno, Plutone) si muovono così lentamente che definiscono i temi di intere generazioni.</p>
+
+         <!-- Planet group filter tabs -->
+         <div class="flex flex-wrap gap-2 mb-8 justify-center">
+             <button class="planet-tab active" data-group="all" onclick="filterPlanets('all')">Tutti i Pianeti</button>
+             <button class="planet-tab" data-group="personal" onclick="filterPlanets('personal')">Personali</button>
+             <button class="planet-tab" data-group="social" onclick="filterPlanets('social')">Sociali</button>
+             <button class="planet-tab" data-group="outer" onclick="filterPlanets('outer')">Esterni</button>
+             <button class="planet-tab" data-group="special" onclick="filterPlanets('special')">Corpi Speciali</button>
+         </div>
+
+         <!-- Planet cards grid -->
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="planet-grid">
+
+             <!-- Sun -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x2609;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Sole</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Identità e Scopo di Vita</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Il Sole rappresenta la Sua identità centrale, l'ego e lo scopo della vita. È la forza centrale del tema natale, che descrive chi Lei è al livello più profondo, cosa guida il Suo senso di sé e dove cerca di brillare.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Domicilio: <strong class="text-gm-purple">Leone</strong></span>
+                     <span>Ciclo: <strong class="text-gm-purple">1 anno</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Personale</span>
+             </div>
+
+             <!-- Earth -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x2641;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Terra</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Radicamento e Realtà Fisica</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">La Terra è sempre direttamente opposta al Sole nella Sua carta. Rappresenta dove Lei radica la Sua energia solare nella realtà pratica e fisica. Il segno e la casa della Terra indicano le risorse e le fondamenta materiali che supportano il Suo scopo di vita.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Domicilio: <strong class="text-gm-purple">Toro</strong></span>
+                     <span>Ciclo: <strong class="text-gm-purple">1 anno</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Personale</span>
+             </div>
+
+             <!-- Moon -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x263D;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Luna</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Emozioni e Mondo Interiore</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">La Luna governa la Sua natura emotiva, gli istinti e i modelli subconsci. Rivela come Lei elabora i sentimenti, cosa La fa sentire al sicuro e di cosa ha bisogno per il nutrimento emotivo. Il Suo segno lunare descrive il Suo mondo interiore e le risposte abituali.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Domicilio: <strong class="text-gm-purple">Cancro</strong></span>
+                     <span>Ciclo: <strong class="text-gm-purple">28 giorni</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Personale</span>
+             </div>
+
+             <!-- Mercury -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x263F;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Mercurio</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Comunicazione e Pensiero</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Mercurio governa la mente, la comunicazione e come Lei elabora e condivide le informazioni. Governa lo stile di apprendimento, il pensiero logico, il parlato, la scrittura e gli scambi quotidiani. Il Suo segno di Mercurio modella il modo in cui Lei pensa, argomenta e dà senso al mondo.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Domicilio: <strong class="text-gm-purple">Gemelli / Vergine</strong></span>
+                     <span>Ciclo: <strong class="text-gm-purple">88 giorni</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Personale</span>
+             </div>
+
+             <!-- Venus -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Venere</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Amore, Bellezza e Valori</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Venere governa l'amore, la bellezza, il piacere e ciò che Lei apprezza di più. Modella come Lei attrae e si relaziona con gli altri, le Sue sensibilità estetiche e il Suo approccio al romanticismo e all'armonia. Il Suo segno di Venere rivela cosa Lei trova bello e come esprime l'affetto.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Domicilio: <strong class="text-gm-purple">Toro / Bilancia</strong></span>
+                     <span>Ciclo: <strong class="text-gm-purple">225 giorni</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Personale</span>
+             </div>
+
+             <!-- Mars -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x2642;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Marte</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Azione e Spinta</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Marte è il pianeta dell'azione, del desiderio, dell'energia fisica e del coraggio. Governa come Lei si afferma, persegue ciò che vuole e gestisce il conflitto. Il Suo segno di Marte descrive il Suo stile di combattimento, la Sua spinta fisica e come Lei canalizza la rabbia e l'ambizione.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Domicilio: <strong class="text-gm-purple">Ariete / Scorpione</strong></span>
+                     <span>Ciclo: <strong class="text-gm-purple">687 giorni</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Personale</span>
+             </div>
+
+             <!-- Jupiter -->
+             <div class="planet-card" data-group="social">
+                 <div class="planet-icon-badge"><span>&#x2643;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Giove</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Espansione e Abbondanza</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Giove è il grande benefico, il pianeta dell'espansione, dell'ottimismo, dell'abbondanza e dell'apprendimento superiore. Governa la filosofia, i viaggi, la fede e la ricerca di significato. Il Suo segno e la Sua casa di Giove mostrano dove la vita tende ad aprirLe le porte e dove Lei trova il Suo scopo più grande.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Domicilio: <strong class="text-gm-purple">Sagittario</strong></span>
+                     <span>Ciclo: <strong class="text-gm-purple">12 anni</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-social">Sociale</span>
+             </div>
+
+             <!-- Saturn -->
+             <div class="planet-card" data-group="social">
+                 <div class="planet-icon-badge"><span>&#x2644;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Saturno</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Struttura e Disciplina</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Saturno è il maestro del compito dello zodiaco, che governa la disciplina, la responsabilità, i confini e i risultati a lungo termine. Rappresenta le aree della vita dove Lei affronta le Sue sfide più grandi e, attraverso la perseveranza, guadagna la Sua maestria più profonda. Il Ritorno di Saturno intorno ai 29 e 58 anni segna periodi fondamentali di ristrutturazione.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Domicilio: <strong class="text-gm-purple">Capricorno</strong></span>
+                     <span>Ciclo: <strong class="text-gm-purple">29,5 anni</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-social">Sociale</span>
+             </div>
+
+             <!-- Uranus -->
+             <div class="planet-card" data-group="outer">
+                 <div class="planet-icon-badge"><span>&#x2645;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Urano</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Rivoluzione e Innovazione</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Urano è il pianeta del cambiamento improvviso, della ribellione, dell'innovazione e della liberazione. Governa dove Lei si libera dalle convenzioni, abbraccia la Sua individualità e sperimenta svolta inaspettate. Urano passa circa 7 anni in ogni segno, modellando gli atteggiamenti generazionali verso la libertà e il progresso.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Domicilio: <strong class="text-gm-purple">Acquario</strong></span>
+                     <span>Ciclo: <strong class="text-gm-purple">84 anni</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-generational">Generazionale</span>
+             </div>
+
+             <!-- Neptune -->
+             <div class="planet-card" data-group="outer">
+                 <div class="planet-icon-badge"><span>&#x2646;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Nettuno</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Spiritualità e Immaginazione</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Nettuno governa i sogni, l'intuizione, la spiritualità, la compassione e la dissoluzione dei confini. Regola l'immaginazione e l'ispirazione artistica ma può anche portare confusione, illusione e fuga. Nettuno trascorre circa 14 anni in ogni segno, modellando gli ideali generazionali intorno alla fede, all'arte e al desiderio collettivo.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Domicilio: <strong class="text-gm-purple">Pesci</strong></span>
+                     <span>Ciclo: <strong class="text-gm-purple">165 anni</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-generational">Generazionale</span>
+             </div>
+
+             <!-- Pluto -->
+             <div class="planet-card" data-group="outer">
+                 <div class="planet-icon-badge"><span>&#x2647;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Plutone</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Trasformazione e Potere</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Plutone è il pianeta della trasformazione, della morte e rinascita, del potere e dell'inconscio. Governa i processi psicologici profondi, l'ossessione, la rigenerazione e la distruzione di ciò che non serve più alla crescita. Plutone trascorre dai 12 ai 30 anni in un segno, guidando cambiamenti generazionali profondi nel modo in cui la società si relaziona al potere.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Domicilio: <strong class="text-gm-purple">Scorpione</strong></span>
+                     <span>Ciclo: <strong class="text-gm-purple">248 anni</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-generational">Generazionale</span>
+             </div>
+
+             <!-- North Node -->
+             <div class="planet-card" data-group="special">
+                 <div class="planet-icon-badge"><span>&#x260A;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Nodo Nord</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Direzione di Crescita dell'Anima</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Il Nodo Nord indica le qualità, le esperienze e la direzione di vita verso cui la Sua anima sta crescendo in questa vita. Rappresenta un territorio sconosciuto che si sente sfidante ma alla fine appagante. Il segno e la casa del Suo Nodo Nord descrivono le lezioni che Lei è qui per imparare.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Ciclo: <strong class="text-gm-purple">18,6 anni</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-special">Speciale</span>
+             </div>
+
+             <!-- South Node -->
+             <div class="planet-card" data-group="special">
+                 <div class="planet-icon-badge"><span>&#x260B;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Nodo Sud</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Passato Karmico e Zona di Comfort</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Il Nodo Sud rappresenta talenti innati, modelli predefiniti e qualità portate avanti dall'esperienza passata. Descrive la Sua zona di comfort e le abilità che Le vengono naturali ma che possono anche trattenerLa se Lei vi fa troppo affidamento. Bilanciare i temi del Nodo Nord e Sud è centrale per il viaggio dell'anima.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Ciclo: <strong class="text-gm-purple">18,6 anni</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-special">Speciale</span>
+             </div>
+
+             <!-- Chiron -->
+             <div class="planet-card" data-group="special">
+                 <div class="planet-icon-badge"><span>&#x26B7;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Chirone</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Il Guaritore Ferito</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Chirone orbita tra Saturno e Urano, noto come il Guaritore Ferito. Rappresenta una ferita profonda e centrale che Lei porta attraverso la vita e, attraverso il confrontarsi con essa, sviluppa la capacità di guarire gli altri. Il Suo segno e la Sua casa di Chirone rivelano dove giacciono la Sua più grande vulnerabilità e la Sua saggezza più profonda.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Ciclo: <strong class="text-gm-purple">~50 anni</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-special">Speciale</span>
+             </div>
+
+             <!-- Black Moon Lilith -->
+             <div class="planet-card" data-group="special">
+                 <div class="planet-icon-badge"><span>&#x26B8;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Lilith</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Desiderio Grezzo e Sé Ombra</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Lilith non è un corpo fisico ma un punto matematico che rappresenta l'apogeo lunare, il punto in cui la Luna è più lontana dalla Terra nella sua orbita. Simboleggia i Suoi desideri grezzi e indomiti, gli istinti soppressi e le parti di sé che la società La spinge a nascondere. Il Suo segno e la Sua casa di Lilith rivelano dove Lei rifiuta di scendere a compromessi, dove sente vergogna o rabbia, e dove rivendicare il Suo potere autentico porta alla liberazione.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Ciclo: <strong class="text-gm-purple">~9 anni</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-special">Speciale</span>
+             </div>
+
+         </div>
+
+         <hr class="planet-divider">
+
+         <div class="tip-box my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Suggerimento</p>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed">Due persone nate a distanza di pochi giorni possono avere carte molto diverse. La Luna cambia segno ogni 2,5 giorni, e Mercurio e Venere si spostano frequentemente. Anche piccole differenze nell'orario di nascita possono spostare i pianeti in case diverse, cambiando il modo in cui la loro energia si manifesta nella Sua vita.</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== PLANETS IN SIGNS ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="planets-in-signs">
+     <div class="max-w-6xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4"><span class="text-gm-purple">|</span> Pianeti nei Segni</h2>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8 max-w-3xl">Il segno occupato da un pianeta colora <strong class="text-gray-800">come</strong> l'energia di quel pianeta si esprime. Lo stesso pianeta si comporta molto diversamente a seconda del segno in cui cade. Di seguito sono riportati esempi che mostrano come un singolo pianeta cambia la sua espressione attraverso lo zodiaco.</p>
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-4">Mercurio Attraverso i Segni</h3>
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x263F;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Mercurio in Ariete</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Veloce e Diretto</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Pensa velocemente, parla schiettamente e prende decisioni immediate. Mercurio in Ariete è competitivo nel dibattito e impaziente con le spiegazioni prolisse. Le idee arrivano a raffiche e vengono messe in atto immediatamente.</p>
+             </div>
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x263F;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Mercurio in Vergine</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Analitico e Preciso</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Mercurio è nel suo domicilio ed esaltazione in Vergine, rendendolo uno dei suoi posizionamenti più forti. Il pensiero è metodico, orientato ai dettagli e pratico. Mercurio in Vergine eccelle nell'organizzare le informazioni e nel risolvere i problemi.</p>
+             </div>
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x263F;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Mercurio in Pesci</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Intuitivo e Poetico</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Pensa in immagini, metafore e sentimenti piuttosto che in logica lineare. Mercurio in Pesci assorbe le informazioni attraverso l'atmosfera e l'intuizione. La comunicazione è creativa ed empatica ma può essere vaga o elusiva.</p>
+             </div>
+         </div>
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-4">Venere Attraverso i Segni</h3>
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Venere in Toro</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Sensuale e Stabile</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Venere è nel suo segno domestico in Toro. L'amore si esprime attraverso il tocco fisico, la lealtà e la creazione di spazi belli e confortevoli. Apprezza la sicurezza e la coerenza nelle relazioni sopra ogni altra cosa.</p>
+             </div>
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Venere in Scorpione</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Intenso e Trasformativo</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">L'amore è tutto o niente. Venere in Scorpione brama intimità emotiva e fisica profonda, è ferocemente leale e lotta con la gelosia o la possessività. Le relazioni sono veicoli per una trasformazione profonda.</p>
+             </div>
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Venere in Acquario</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Indipendente e Non Convenzionale</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Apprezza la connessione intellettuale e la libertà personale nell'amore. Venere in Acquario è attratta da persone uniche e originali e resiste alle strutture relazionali tradizionali. L'amicizia è il fondamento del romanticismo.</p>
+             </div>
+         </div>
+
+         <div class="tip-box my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Suggerimento</p>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed">Il Suo segno solare è solo l'inizio. Per capire il Suo stile di comunicazione completo, guardi il Suo segno di Mercurio. Per l'amore e le relazioni, guardi Venere. Per la spinta e l'ambizione, controlli Marte. Ogni pianeta racconta una parte diversa della Sua storia.</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== PLANETS IN HOUSES ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="planets-in-houses">
+     <div class="max-w-6xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4"><span class="text-gm-purple">|</span> Pianeti nelle Case</h2>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8 max-w-3xl">Mentre il segno mostra <strong class="text-gray-800">come</strong> un pianeta si esprime, la casa mostra <strong class="text-gray-800">dove</strong> nella Sua vita quell'energia si manifesta. Lo stesso pianeta nello stesso segno si manifesterà molto diversamente a seconda della casa che occupa.</p>
+
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">1ª Casa</p>
+                 <div class="planet-icon-badge"><span>&#x2642;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Marte nella 1ª</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Identità e Aspetto</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">L'energia di Marte è visibile a tutti. Lei appare assertiva, competitiva e fisicamente energica. Le prime impressioni sono audaci e dirette. C'è un atletismo naturale e una spinta inconfondibile nella Sua personalità.</p>
+             </div>
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">7ª Casa</p>
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Venere nella 7ª</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Partnership e Matrimonio</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Venere è a casa nella 7ª Casa della partnership. Le relazioni tendono ad essere armoniose e centrali nella Sua vita. Lei attrae partner con grazia e bellezza, e creare equilibrio all'interno delle connessioni uno a uno è un tema centrale della vita.</p>
+             </div>
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">10ª Casa</p>
+                 <div class="planet-icon-badge"><span>&#x2609;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Sole nella 10ª</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Carriera e Immagine Pubblica</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">La Sua identità è strettamente legata alla Sua carriera e reputazione pubblica. C'è una forte spinta verso il successo, la visibilità e il riconoscimento. L'autorità viene naturalmente, e il Suo scopo di vita spesso si dispiega attraverso i risultati professionali.</p>
+             </div>
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">12ª Casa</p>
+                 <div class="planet-icon-badge"><span>&#x2644;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Saturno nella 12ª</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Solitudine e Karma</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Paure e responsabilità nascoste, disciplina spirituale attraverso la solitudine, lavoro karmico fatto dietro le quinte. Saturno qui esige che Lei confronti le limitazioni subconsce e sviluppi la forza interiore attraverso periodi di ritiro e riflessione.</p>
+             </div>
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">4ª Casa</p>
+                 <div class="planet-icon-badge"><span>&#x263D;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Luna nella 4ª</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Casa e Radici Emotive</p>
+                 <p class="text-gm-text text-
