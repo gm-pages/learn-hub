@@ -17,22 +17,33 @@ if (is_user_logged_in()) {
     $user = wp_get_current_user();
     $response['username'] = $user->display_name;
 
-    // Get cart from usermeta (_cart_details_ key, serialized + base64 encoded)
+    // Get cart from usermeta
     $cart_raw = get_user_meta($user->ID, '_cart_details_', true);
     if ($cart_raw) {
-        // Unwrap serialized layers
+        // The value is double-serialized with base64 inside
+        // Unwrap serialized layers to get to the base64 string
         $decoded = $cart_raw;
-        // May be double-serialized, unwrap until we get the base64 string
-        while (is_serialized($decoded)) {
+        $max_attempts = 5;
+        $attempt = 0;
+        while (is_serialized($decoded) && $attempt < $max_attempts) {
             $decoded = maybe_unserialize($decoded);
+            $attempt++;
         }
-        // Decode base64 if present
-        $b64_decoded = base64_decode($decoded);
-        if ($b64_decoded) {
-            $cart_array = maybe_unserialize($b64_decoded);
-            if (is_array($cart_array)) {
-                $response['cart_count'] = count($cart_array);
+
+        // Now try base64 decode
+        if (is_string($decoded)) {
+            $b64 = base64_decode($decoded, true);
+            if ($b64 !== false) {
+                $cart_array = maybe_unserialize($b64);
+                if (is_array($cart_array)) {
+                    // Count top-level cart items
+                    $response['cart_count'] = count($cart_array);
+                }
             }
+        }
+        // If decoded is already an array (no base64 layer)
+        if (is_array($decoded)) {
+            $response['cart_count'] = count($decoded);
         }
     }
 }
