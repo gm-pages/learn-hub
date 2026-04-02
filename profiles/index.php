@@ -171,7 +171,7 @@
                 <!-- Cart -->
                 <a href="https://www.geneticmatrix.com/cart/" title="Cart" class="relative">
                     <img src="../assets/icon-cart.svg" alt="Cart" class="h-8 w-auto">
-                    <span id="gm-cart-count" class="absolute -top-0.5 -right-1.5 bg-gm-pink text-white text-[10px] font-bold rounded-full min-w-[18px] h-[18px] flex items-center justify-center px-1 hidden">0</span>
+                    <span id="gm-cart-count" class="absolute -top-1 -right-3 text-gm-green font-bold text-sm hidden">0</span>
                 </a>
                 <!-- Language Selector -->
                 <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
