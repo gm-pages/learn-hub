@@ -96,7 +96,7 @@
  <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Our Plans</a>
  <!-- Cart -->
  <a href="https://www.geneticmatrix.com/cart/" title="Cart" class="relative">
- <img src="../assets/icon-cart.svg" alt="Cart" class="h-8 w-auto">
+ <img src="../assets/icon-cart.svg" alt="Cart" class="h-6 w-auto">
                     <span id="gm-cart-count" class="absolute -top-1 -right-3 text-gm-green font-bold text-sm hidden">0</span>
  </a>
  <!-- Language Selector -->
@@ -110,9 +110,9 @@
  <!-- Register -->
  <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Register</a>
                 </div>
-                <div id="gm-logged-in" class="hidden flex items-center gap-4">
-                    <a href="https://www.geneticmatrix.com/my-account/" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium">My Account</a>
-                    <a href="https://www.geneticmatrix.com/my-account/customer-logout/" class="text-gm-gray hover:text-gray-900 text-sm font-medium">Logout</a>
+                <div id="gm-logged-in" class="hidden items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="text-gm-gray hover:text-gray-900 text-sm font-medium">Log Out</a>
+                    <a href="https://www.geneticmatrix.com/user-home/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">My Hub</a>
                 </div>
  </div>
  </div>

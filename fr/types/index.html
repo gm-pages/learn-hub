@@ -5,11 +5,11 @@
  <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les 5 Types de Human Design - Générateur, Projecteur, Manifesteur, Générateur Manifesteur, Réflecteur | Genetic Matrix</title>
-    <meta name="description" content="Découvrez les 5 Types de Human Design : Générateur, Générateur Manifesteur, Projecteur, Manifesteur et Réflecteur. Apprenez la Stratégie, l'Autorité, la mécanique de l'aura, le thème non-soi et la signature de chaque Type - la fondation pour vivre votre design.">
-    <meta name="keywords" content="types human design, générateur human design, projecteur human design, manifesteur human design, générateur manifesteur human design, réflecteur human design, stratégie human design, autorité human design, aura human design, centre sacré, thème non-soi, signature human design, répondre, informer avant d'agir, attendre l'invitation, cycle lunaire, frustration, amertume, colère, déception, satisfaction, succès, paix, surprise, types human design expliqués, carte types human design, quel est mon type human design, 5 types human design">
+    <meta name="description" content="Découvrez les 5 Types de Human Design : Générateur, Générateur Manifesteur, Projecteur, Manifesteur et Réflecteur. Apprenez la Stratégie, l'Autorité, les mécaniques d'aura, le thème du Non-Soi et la Signature de chaque Type - les fondements pour vivre votre design.">
+    <meta name="keywords" content="types human design, générateur human design, projecteur human design, manifesteur human design, générateur manifesteur human design, réflecteur human design, stratégie human design, autorité human design, aura human design, centre sacré, thème non-soi, signature human design, répondre, informer, attendre l'invitation, cycle lunaire, frustration, amertume, colère, déception, satisfaction, succès, paix, surprise, types human design expliqués, carte types human design, quel est mon type human design, 5 types human design">
     <link rel="canonical" href="https://www.geneticmatrix.com/learn/types/">
-    <meta property="og:title" content="Les 5 Types de Human Design - Votre Plan Énergétique">
-    <meta property="og:description" content="Le Type est la fondation de Human Design. Découvrez les 5 Types, leurs Stratégies, et comment votre aura est conçue pour interagir avec le monde.">
+    <meta property="og:title" content="Les 5 Types de Human Design - Votre Schéma Énergétique">
+    <meta property="og:description" content="Le Type est la fondation du Human Design. Découvrez les 5 Types, leurs Stratégies, et comment votre aura est conçue pour interagir avec le monde.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.geneticmatrix.com/learn/types/">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -62,7 +62,7 @@
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "Les 5 Types de Human Design - Générateur, Projecteur, Manifesteur, Générateur Manifesteur, Réflecteur",
-        "description": "Le Type est la fondation de Human Design. Découvrez les 5 Types - leurs Stratégies, Autorités, mécaniques d'aura, thèmes non-soi et signatures.",
+        "description": "Le Type est la fondation du Human Design. Découvrez les 5 Types - leurs Stratégies, Autorités, mécaniques d'aura, thèmes du Non-Soi et Signatures.",
         "publisher": {
             "@type": "Organization",
             "name": "Genetic Matrix",
@@ -82,7 +82,7 @@
         <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
             <!-- Logo -->
             <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
-                <img src="../../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14">
+                <img src="../../assets/logo.svg" alt="Genetic Matrix - Vous connaître" class="h-14">
             </a>
 
             <!-- Right Nav: LOGGED OUT (default for static pages) -->
@@ -100,20 +100,27 @@
                 <!-- Learn -->
                 <a href="../../" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Apprendre</a>
                 <!-- Our Plans -->
-                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Nos Formules</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Nos Plans</a>
                 <!-- Cart -->
-                <a href="https://www.geneticmatrix.com/cart/" title="Panier">
+                <a href="https://www.geneticmatrix.com/cart/" title="Panier" class="relative">
                     <img src="../../assets/icon-cart.svg" alt="Panier" class="h-8 w-auto">
+                    <span id="gm-cart-count" class="absolute -top-1 -right-3 text-gm-green font-bold text-sm hidden">0</span>
                 </a>
                 <!-- Language Selector -->
                 <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
                     <span>Français</span>
                     <img src="../../assets/icon-english.svg" alt="Français" class="h-5 w-7">
                 </div>
-                <!-- Sign In (popup on live site - Shafik to wire up) -->
-                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Se Connecter</a>
-                <!-- Register -->
-                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">S'inscrire</a>
+                <!-- Logged OUT state -->
+                <div id="gm-logged-out" class="flex items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/my-account/" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium">Se connecter</a>
+                    <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">S'inscrire</a>
+                </div>
+                <!-- Logged IN state (hidden by default) -->
+                <div id="gm-logged-in" class="hidden items-center gap-4">
+                    PLACEHOLDER_LOGOUT
+                    PLACEHOLDER_LOGOUT
+                </div>
             </div>
         </div>
     </nav>
@@ -131,7 +138,7 @@
             <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Fondation &middot; Types</p>
             <h1 class="text-3xl md:text-4xl font-bold mb-4">Les 5 Types de Human Design</h1>
             <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
-                Le Type est la fondation de tout en Human Design. Il révèle comment votre énergie fonctionne, comment vous êtes conçu pour interagir avec le monde, et la Stratégie qui transforme votre vie quand vous la suivez.
+                Le Type est la fondation de tout en Human Design. Il révèle comment votre énergie fonctionne, comment vous êtes conçu pour interagir avec le monde, et la Stratégie qui transforme votre vie lorsque vous la suivez.
             </p>
         </div>
         <div class="max-w-3xl mx-auto px-6 mt-8 md:mt-10">
@@ -145,19 +152,19 @@
                 <span class="text-gm-purple">|</span> Qu'est-ce que le Type ?
             </h2>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
-                Dans le système Human Design, chaque personne appartient à l'un des cinq Types : <strong>Générateur, Générateur Manifesteur, Projecteur, Manifesteur ou Réflecteur</strong>. Votre Type n'est pas une étiquette de personnalité, c'est une description mécanique de la façon dont votre énergie fonctionne et dont votre aura interagit avec le monde qui vous entoure.
+                Dans le système Human Design, chaque personne appartient à l'un des cinq Types : <strong>Générateur, Générateur Manifesteur, Projecteur, Manifesteur ou Réflecteur</strong>. Votre Type n'est pas une étiquette de personnalité, c'est une description mécanique de la façon dont votre énergie fonctionne et comment votre aura interagit avec le monde qui vous entoure.
             </p>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
-                Le Type est déterminé par quels centres énergétiques sont <strong>définis</strong> (colorés) sur votre Bodygraph, particulièrement le Centre Sacré et ses connexions. Que vous ayez une énergie vitale constante (Sacré), comment cette énergie atteint l'expression (connexions à la Gorge), et ce qui se passe quand vous n'avez aucune définition du tout, ces mécaniques créent cinq façons fondamentalement différentes d'être humain.
+                Le Type est déterminé par quels Centres d'énergie sont <strong>définis</strong> (colorés) sur votre Bodygraph, particulièrement le Centre Sacré et ses connexions. Que vous ayez une énergie vitale constante (Sacré), comment cette énergie atteint l'expression (connexions de la Gorge), et ce qui se passe quand vous n'avez aucune définition du tout, ces mécaniques créent cinq façons fondamentalement différentes d'être humain.
             </p>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
-                Chaque Type vient avec une <strong>Stratégie</strong>, la façon spécifique dont vous êtes conçu pour vous engager avec le monde. Suivre votre Stratégie réduit la résistance et vous aligne avec la vie qui vous convient. L'ignorer produit votre <strong>thème non-soi</strong> : le signal émotionnel qui vous dit que quelque chose ne va pas. Et quand vous vivez correctement, vous expérimentez votre <strong>signature</strong> : le sentiment qui confirme que vous êtes sur la bonne voie.
+                Chaque Type vient avec une <strong>Stratégie</strong>, la façon spécifique dont vous êtes conçu pour vous engager avec le monde. Suivre votre Stratégie réduit la résistance et vous aligne avec la vie qui est correcte pour vous. L'ignorer produit votre <strong>thème du Non-Soi</strong> : le signal émotionnel qui vous dit que quelque chose ne va pas. Et quand vous vivez correctement, vous expérimentez votre <strong>Signature</strong> : le sentiment qui confirme que vous êtes sur la bonne voie.
             </p>
 
             <!-- Insight box -->
             <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5 mb-2">
                 <p class="text-gm-text text-sm leading-relaxed italic">
-                    Le Type est le point d'entrée. Avant d'explorer votre Profil, vos Centres, vos Portes, votre Variable, commencez ici. La Stratégie et l'Autorité sont l'expérience. Tout le reste devient significatif seulement après que vous ayez commencé à vivre les mécaniques de votre Type.
+                    Le Type est le point d'entrée. Avant d'explorer votre Profil, vos Centres, vos Portes, vos Variables, commencez ici. La Stratégie et l'Autorité sont l'expérience. Tout le reste devient significatif seulement après que vous ayez commencé à vivre les mécaniques de votre Type.
                 </p>
             </div>
         </div>
@@ -181,7 +188,7 @@
                         </div>
                     </div>
                     <p class="text-gm-text text-sm leading-relaxed mb-4">
-                        Les Générateurs sont la force vitale de la planète, les constructeurs, les travailleurs, ceux qui ont une énergie durable pour créer et donner vie aux choses. Avec un Centre Sacré défini, ils ont un accès constant à une puissante énergie vitale qui se régénère par le sommeil. Leur aura ouverte et enveloppante attire la vie à eux, et leur design est de répondre à ce qui se présente plutôt que d'initier à partir du mental.
+                        Les Générateurs sont la force vitale de la planète, les bâtisseurs, les travailleurs, ceux qui ont l'énergie durable pour créer et donner vie aux choses. Avec un Centre Sacré défini, ils ont un accès constant à une puissante énergie vitale qui se régénère par le sommeil. Leur aura ouverte et enveloppante attire la vie vers eux, et leur design est de répondre à ce qui se présente plutôt que d'initier depuis le mental.
                     </p>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 border-t border-gm-border">
                         <div>
@@ -189,7 +196,7 @@
                             <div class="text-sm text-gm-text">Répondre</div>
                         </div>
                         <div>
-                            <div class="text-[0.65rem] font-bold text-gray-800 uppercase tracking-wider mb-0.5">Thème Non-Soi</div>
+                            <div class="text-[0.65rem] font-bold text-gray-800 uppercase tracking-wider mb-0.5">Thème du Non-Soi</div>
                             <div class="text-sm text-gm-text">Frustration</div>
                         </div>
                         <div>
@@ -213,7 +220,7 @@
                         </div>
                     </div>
                     <p class="text-gm-text text-sm leading-relaxed mb-4">
-                        Les Générateurs Manifesteurs font partie de la famille des Générateurs, ce qui signifie qu'ils ont une énergie vitale sacrée définie. Ce qui les distingue, c'est qu'un moteur est connecté à la Gorge, ce qui peut les faire paraître plus rapides, plus itératifs et plus "manifestants" dans la façon dont ils exécutent une fois qu'ils sont en mouvement. Ils apprennent souvent en faisant, peuvent pivoter rapidement et peuvent gérer de multiples intérêts. Ils sont au mieux quand ils suivent ce pour quoi ils ont vraiment de l'énergie.
+                        Les Générateurs Manifesteurs font partie de la famille des Générateurs, ce qui signifie qu'ils ont une énergie vitale Sacrée définie. Ce qui les distingue est qu'un moteur est connecté à la Gorge, ce qui peut les faire paraître plus rapides, plus itératifs, et plus "manifestants" dans leur façon d'exécuter une fois qu'ils sont en mouvement. Ils apprennent souvent en faisant, peuvent pivoter rapidement, et peuvent gérer des intérêts multiples. Ils sont au mieux quand ils suivent ce pour quoi ils ont véritablement de l'énergie.
                     </p>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 border-t border-gm-border">
                         <div>
@@ -221,8 +228,8 @@
                             <div class="text-sm text-gm-text">Répondre &rarr; informer &rarr; agir</div>
                         </div>
                         <div>
-                            <div class="text-[0.65rem] font-bold text-gray-800 uppercase tracking-wider mb-0.5">Thème Non-Soi</div>
-                            <div class="text-sm text-gm-text">Frustration (colère en forçant)</div>
+                            <div class="text-[0.65rem] font-bold text-gray-800 uppercase tracking-wider mb-0.5">Thème du Non-Soi</div>
+                            <div class="text-sm text-gm-text">Frustration (colère quand on pousse)</div>
                         </div>
                         <div>
                             <div class="text-[0.65rem] font-bold text-gray-800 uppercase tracking-wider mb-0.5">Signature</div>
@@ -245,15 +252,15 @@
                         </div>
                     </div>
                     <p class="text-gm-text text-sm leading-relaxed mb-4">
-                        Les Projecteurs sont là pour guider, évaluer et diriger l'énergie. Ils sont naturellement à l'écoute des gens et des systèmes et peuvent reconnaître ce qui marche, ce qui ne marche pas, et comment utiliser l'énergie plus efficacement. Sans Centre Sacré défini, ils ne sont pas construits pour un rendement constant de travail. Leur aura focalisée et absorbante peut sembler profondément pénétrante pour les autres. Les Projecteurs excellent quand ils sont reconnus et invités dans les bons rôles, relations et environnements.
+                        Les Projecteurs sont ici pour guider, évaluer et diriger l'énergie. Ils sont naturellement branchés sur les personnes et les systèmes et peuvent reconnaître ce qui fonctionne, ce qui ne fonctionne pas, et comment utiliser l'énergie plus efficacement. Sans Centre Sacré défini, ils ne sont pas conçus pour un rendement constant de force de travail. Leur aura focalisée et absorbante peut sembler profondément pénétrante aux autres. Les Projecteurs réussissent mieux quand ils sont reconnus et invités dans les bons rôles, relations et environnements.
                     </p>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 border-t border-gm-border">
                         <div>
                             <div class="text-[0.65rem] font-bold text-gray-800 uppercase tracking-wider mb-0.5">Stratégie</div>
-                            <div class="text-sm text-gm-text">Attendre l'invitation (amour, carrière, grands engagements)</div>
+                            <div class="text-sm text-gm-text">Attendre l'invitation (amour, carrière, gros engagements)</div>
                         </div>
                         <div>
-                            <div class="text-[0.65rem] font-bold text-gray-800 uppercase tracking-wider mb-0.5">Thème Non-Soi</div>
+                            <div class="text-[0.65rem] font-bold text-gray-800 uppercase tracking-wider mb-0.5">Thème du Non-Soi</div>
                             <div class="text-sm text-gm-text">Amertume</div>
                         </div>
                         <div>
@@ -277,7 +284,7 @@
                         </div>
                     </div>
                     <p class="text-gm-text text-sm leading-relaxed mb-4">
-                        Les Manifesteurs sont les initiateurs, le seul Type conçu pour agir indépendamment sans attendre d'input extérieur. Avec un centre moteur connecté directement à la Gorge (mais sans Sacré défini), ils ont de puissantes poussées d'énergie créatrice et initiatrice. Leur aura fermée et repoussante les protège de l'influence extérieure, leur permettant de se mouvoir dans le monde indépendamment. Historiquement, ils étaient les dirigeants et les monarques.
+                        Les Manifesteurs sont les initiateurs, le seul Type conçu pour agir indépendamment sans attendre d'apport extérieur. Avec un centre moteur connecté directement à la Gorge (mais pas de Sacré défini), ils ont de puissantes poussées d'énergie créatrice et d'initiation. Leur aura fermée et repoussante les protège de l'influence extérieure, leur permettant de se mouvoir dans le monde indépendamment. Historiquement, ils étaient les dirigeants et les monarques.
                     </p>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 border-t border-gm-border">
                         <div>
@@ -285,7 +292,7 @@
                             <div class="text-sm text-gm-text">Informer avant d'agir</div>
                         </div>
                         <div>
-                            <div class="text-[0.65rem] font-bold text-gray-800 uppercase tracking-wider mb-0.5">Thème Non-Soi</div>
+                            <div class="text-[0.65rem] font-bold text-gray-800 uppercase tracking-wider mb-0.5">Thème du Non-Soi</div>
                             <div class="text-sm text-gm-text">Colère</div>
                         </div>
                         <div>
@@ -309,7 +316,7 @@
                         </div>
                     </div>
                     <p class="text-gm-text text-sm leading-relaxed mb-4">
-                        Les Réflecteurs sont le Type le plus rare et le plus fondamentalement différent. Sans centres définis du tout, chaque centre de leur carte est ouvert. Ils absorbent, amplifient et reflètent l'énergie de tous et de tout ce qui les entoure. Ils amplifient aussi le champ de transit. Leur aura d'échantillonnage les rend extraordinairement sensibles à leur environnement, et ils servent de miroirs pour la santé de leurs communautés. Leur identité est fluide, non fixe.
+                        Les Réflecteurs sont le Type le plus rare et le plus fondamentalement différent. Sans centres définis du tout, chaque centre de leur carte est ouvert. Ils absorbent, amplifient et reflètent l'énergie de tout le monde et de tout ce qui les entoure. Ils amplifient aussi le champ de transit. Leur aura échantillonneuse les rend extraordinairement sensibles à leur environnement, et ils servent de miroirs pour la santé de leurs communautés. Leur identité est fluide, pas fixe.
                     </p>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 border-t border-gm-border">
                         <div>
@@ -317,7 +324,7 @@
                             <div class="text-sm text-gm-text">Attendre un cycle lunaire (28 jours)</div>
                         </div>
                         <div>
-                            <div class="text-[0.65rem] font-bold text-gray-800 uppercase tracking-wider mb-0.5">Thème Non-Soi</div>
+                            <div class="text-[0.65rem] font-bold text-gray-800 uppercase tracking-wider mb-0.5">Thème du Non-Soi</div>
                             <div class="text-sm text-gm-text">Déception</div>
                         </div>
                         <div>
@@ -326,7 +333,7 @@
                         </div>
                         <div>
                             <div class="text-[0.65rem] font-bold text-gray-800 uppercase tracking-wider mb-0.5">Aura</div>
-                            <div class="text-sm text-gm-text">Résistante &amp; échantillonnante</div>
+                            <div class="text-sm text-gm-text">Résistante &amp; échantillonneuse</div>
                         </div>
                     </div>
                 </a>
@@ -339,7 +346,7 @@
     <section class="py-10 md:py-14 bg-white" id="comparison">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
-                <span class="text-gm-purple">|</span> Types en un Coup d'Œil
+                <span class="text-gm-purple">|</span> Types en un coup d'œil
             </h2>
             <div class="overflow-x-auto rounded-xl border border-gm-border">
                 <table class="w-full text-sm">
@@ -397,7 +404,7 @@
                             <td class="py-3 px-4">Attendre un cycle lunaire</td>
                             <td class="py-3 px-4">Déception</td>
                             <td class="py-3 px-4">Surprise</td>
-                            <td class="py-3 px-4">Résistante &amp; échantillonnante</td>
+                            <td class="py-3 px-4">Résistante &amp; échantillonneuse</td>
                             <td class="py-3 px-4">Non-défini</td>
                         </tr>
                     </tbody>
@@ -410,32 +417,32 @@
     <section class="py-10 md:py-14 bg-gm-light">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
-                <span class="text-gm-purple">|</span> Autres Sujets d'Apprentissage
+                <span class="text-gm-purple">|</span> Autres sujets d'apprentissage
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <a href="generator.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
                     <h3 class="text-sm font-bold text-gm-purple mb-1">Générateur &rarr;</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed">La force vitale de la planète. Stratégie, Autorité, mécaniques sacrées et le chemin vers la satisfaction.</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">La force vitale de la planète. Stratégie, Autorité, mécaniques Sacrées, et le chemin vers la satisfaction.</p>
                 </a>
                 <a href="manifesting-generator.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
                     <h3 class="text-sm font-bold text-gm-purple mb-1">Générateur Manifesteur &rarr;</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed">L'hybride multi-passionné. Vitesse, réponse et l'art de l'action informée.</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">L'hybride multi-passionné. Vitesse, réponse, et l'art de l'action informée.</p>
                 </a>
                 <a href="projector.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
                     <h3 class="text-sm font-bold text-gm-purple mb-1">Projecteur &rarr;</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed">Le guide et le voyant. Reconnaissance, invitation et le chemin vers le succès.</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">Le guide et voyant. Reconnaissance, invitation, et le chemin vers le succès.</p>
                 </a>
                 <a href="manifestor.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
                     <h3 class="text-sm font-bold text-gm-purple mb-1">Manifesteur &rarr;</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed">L'initiateur. Indépendance, information et le chemin vers la paix.</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">L'initiateur. Indépendance, information, et le chemin vers la paix.</p>
                 </a>
                 <a href="reflector.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
                     <h3 class="text-sm font-bold text-gm-purple mb-1">Réflecteur &rarr;</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed">Le miroir. Ouverture, le cycle lunaire et le chemin vers la surprise.</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">Le miroir. Ouverture, le cycle lunaire, et le chemin vers la surprise.</p>
                 </a>
                 <a href="/profiles/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
                     <h3 class="text-sm font-bold text-gm-purple mb-1">Les 12 Profils &rarr;</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed">Votre rôle, personnalité et arc de vie, façonnés par deux lignes de l'hexagramme.</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">Votre rôle, personnalité, et arc de vie, façonnés par deux lignes de l'hexagramme.</p>
                 </a>
             </div>
         </div>
@@ -444,9 +451,9 @@
     <!-- ==================== CTA BANNER ==================== -->
     <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
         <div class="max-w-2xl mx-auto px-6">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4">Découvrez Votre Type</h2>
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Découvrez votre Type</h2>
             <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
-                Générez votre carte gratuite et découvrez lequel des 5 Types vous êtes, plus votre Stratégie, Autorité et toute l'architecture de votre design.
+                Générez votre carte gratuite et découvrez lequel des 5 Types vous êtes, plus votre Stratégie, Autorité, et toute l'architecture de votre design.
             </p>
             <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
                 Get Pro &rarr;
@@ -465,7 +472,7 @@
                     <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
                     <p class="text-sm text-gray-600 mb-2">Tous droits réservés.</p>
                     <p class="text-sm">
-                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Confidentialité, Conditions Générales</a>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Confidentialité, Conditions générales</a>
                         <span class="mx-1">&bull;</span>
                         <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
                     </p>
@@ -473,15 +480,15 @@
 
                 <!-- Center: Newsletter (Shafik to wire up form backend) -->
                 <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
-                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Abonnez-vous à Notre Newsletter</h3>
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Abonnez-vous à notre newsletter</h3>
                     <p class="text-gray-600 text-sm mb-4 leading-relaxed">
-                        Inscrivez-vous à notre newsletter pour recevoir des mises à jour, offres,
-                        nouvelles sorties et tout ce qui concerne Genetic Matrix.
+                        Inscrivez-vous à notre newsletter pour recevoir des mises à jour, des offres,
+                        les nouveautés, et tout ce qui concerne Genetic Matrix.
                     </p>
                     <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
                         <input
                             type="email"
-                            placeholder="Votre Adresse Email"
+                            placeholder="Votre adresse email"
                             class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400"
                         >
                         <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
@@ -494,7 +501,7 @@
 
                 <!-- Right: Social & Contact -->
                 <div class="text-center md:text-right">
-                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connectez-vous avec Nous</h3>
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connectez-vous avec nous</h3>
                     <div class="flex justify-center md:justify-end gap-3 mb-4">
                         <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener">
                             <img src="../../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
@@ -509,13 +516,54 @@
                             <img src="../../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
                         </a>
                     </div>
-                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Nous Contacter</a>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Nous contacter</a>
                 </div>
 
             </div>
         </div>
     </footer>
 
+<script>
+// Dynamic cart count and auth state from WordPress cookies
+(function() {
+    // Cart count: WooCommerce stores items in woocommerce_items_in_cart cookie
+    function getCartCount() {
+        var match = document.cookie.match(/woocommerce_items_in_cart=(\d+)/);
+        if (match) return parseInt(match[1]);
+        // Fallback: check cart hash exists (means cart has items)
+        var hashMatch = document.cookie.match(/woocommerce_cart_hash=([^;]+)/);
+        if (hashMatch && hashMatch[1]) return -1; // has items but count unknown
+        return 0;
+    }
+
+    var count = getCartCount();
+    var badge = document.getElementById('gm-cart-count');
+    if (badge) {
+        if (count > 0) {
+            badge.textContent = count;
+            badge.classList.remove('hidden');
+        } else if (count === -1) {
+            badge.textContent = '';
+            badge.classList.remove('hidden');
+        }
+        // count === 0: badge stays hidden
+    }
+
+    // Auth state: WordPress sets wordpress_logged_in_* cookie when user is logged in
+    function isLoggedIn() {
+        return document.cookie.split(';').some(function(c) {
+            return c.trim().indexOf('wordpress_logged_in_') === 0;
+        });
+    }
+
+    var loggedOut = document.getElementById('gm-logged-out');
+    var loggedIn = document.getElementById('gm-logged-in');
+    if (isLoggedIn()) {
+        if (loggedOut) loggedOut.classList.add('hidden');
+        if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
+    }
+})();
+</script>
 <script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
 </body>
 </html>
