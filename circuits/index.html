@@ -901,30 +901,22 @@
 
 <script>
 (function() {
-    function getCartCount() {
-        var match = document.cookie.match(/woocommerce_items_in_cart=(d+)/);
-        if (match) return parseInt(match[1]);
-        var hashMatch = document.cookie.match(/woocommerce_cart_hash=([^;]+)/);
-        if (hashMatch && hashMatch[1]) return -1;
-        return 0;
-    }
-    var count = getCartCount();
-    var badge = document.getElementById('gm-cart-count');
-    if (badge) {
-        if (count > 0) { badge.textContent = count; badge.classList.remove('hidden'); }
-        else if (count === -1) { badge.textContent = ''; badge.classList.remove('hidden'); }
-    }
-    function isLoggedIn() {
-        return document.cookie.split(';').some(function(c) {
-            return c.trim().indexOf('wordpress_logged_in_') === 0;
-        });
-    }
-    var loggedOut = document.getElementById('gm-logged-out');
-    var loggedIn = document.getElementById('gm-logged-in');
-    if (isLoggedIn()) {
-        if (loggedOut) loggedOut.classList.add('hidden');
-        if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
-    }
+    fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            var badge = document.getElementById('gm-cart-count');
+            if (badge && data.cart_count > 0) {
+                badge.textContent = data.cart_count;
+                badge.classList.remove('hidden');
+            }
+            var loggedOut = document.getElementById('gm-logged-out');
+            var loggedIn = document.getElementById('gm-logged-in');
+            if (data.logged_in) {
+                if (loggedOut) loggedOut.classList.add('hidden');
+                if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
+            }
+        })
+        .catch(function() {});
 })();
 </script>
 <script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
