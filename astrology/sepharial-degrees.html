@@ -137,7 +137,7 @@
 
     <!-- ==================== NAV BAR ==================== -->
         <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-[1400px] mx-auto px-10 md:px-16 flex items-center justify-between h-[80px]">
+        <div class="w-full px-8 md:px-12 flex items-center justify-between h-[80px]">
             <!-- Logo -->
             <a href="/" class="flex-shrink-0">
                 <img src="/learn-hub/assets/logo.svg" alt="Genetic Matrix - Know you" class="h-8 md:h-14">
@@ -149,7 +149,7 @@
             </button>
 
             <!-- Desktop Nav -->
-            <div class="hidden lg:flex items-center gap-4">
+            <div class="hidden lg:flex items-center gap-5">
                 <!-- Calendar -->
                 <a href="https://www.geneticmatrix.com/calendar/" class="flex items-center justify-center w-9 h-9 rounded-lg border border-[#dee2e6] hover:border-gm-purple/30 hover:bg-gray-50 transition" title="Calendar">
                     <img src="/learn-hub/assets/icon-calendar.svg" alt="Calendar" class="h-5 w-5">
