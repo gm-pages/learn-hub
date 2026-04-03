@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True Sidereal Human Design Charts - Kanatas, Chimenti &amp; Midpoint | Genetic Matrix</title>
+    <meta name="description" content="Genetic Matrix bietet drei True Sidereal Berechnungsmethoden: Kanatas, Chimenti und Midpoint. True Sidereal verwendet die tatsächlich sichtbaren Positionen der Sternbilder am Himmel. Entdecken Sie, wie sich True Sidereal von Standard-Sidereal und Tropical unterscheidet und was sich in Ihrem Human Design Chart verändert.">
+    <meta name="keywords" content="true sidereal human design, true sidereal astrology, true sidereal chart, kanatas ayanamsa, chimenti ayanamsa, midpoint ayanamsa, true sidereal vs sidereal, true sidereal vs tropical, constellation boundaries, ophiuchus, true sidereal human design chart, sidereal zodiac, true sidereal calculation, athen chimenti, vasilis kanatas, mastering the zodiac, true sidereal birth chart, constellational astrology, astronomical astrology, sky-based astrology, true sidereal genetic matrix, sidereal ayanamsa human design">
+    <link rel="canonical" href="https://www.geneticmatrix.com/learn/calculations/true-sidereal/">
+    <meta property="og:title" content="True Sidereal Human Design Charts - Kanatas, Chimenti &amp; Midpoint">
+    <meta property="og:description" content="True Sidereal Astrologie verwendet die tatsächlich sichtbaren Positionen der Sternbilder. Genetic Matrix bietet drei Varianten - Kanatas, Chimenti und Midpoint - die jeweils einen anderen Ansatz für die Kartierung von Sternbildgrenzen verwenden.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.geneticmatrix.com/learn/calculations/true-sidereal/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gm-purple': '#6E5898',
+                        'gm-purple-light': '#9080B1',
+                        'gm-purple-soft': '#AC94D8',
+                        'gm-dark': '#3C2864',
+                        'gm-darker': '#2e1f4d',
+                        'gm-green': '#54931E',
+                        'gm-green-dark': '#468018',
+                        'gm-green-light': '#8EB86A',
+                        'gm-pink': '#F66378',
+                        'gm-orange': '#E8961D',
+                        'gm-gray': '#707070',
+                        'gm-light': '#F7F8F9',
+                        'gm-card': '#FAFBFC',
+                        'gm-card-active': '#F4F0FC',
+                        'gm-border': '#D8D4E4',
+                        'gm-warning': '#F8F8E8',
+                        'gm-text-dark': '#1A1A2E',
+                        'gm-text': '#444444',
+                        'gm-text-light': '#949494',
+                    },
+                    fontFamily: {
+                        'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        details summary { cursor: pointer; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+        details[open] summary::after { content: '\2212'; }
+        details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+
+    <!-- Article JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "True Sidereal Human Design Charts - Kanatas, Chimenti und Midpoint",
+        "description": "True Sidereal Astrologie verwendet die tatsächlich sichtbaren Positionen der Sternbilder am Himmel. Genetic Matrix bietet drei True Sidereal Varianten - Kanatas, Chimenti und Midpoint - die jeweils einen anderen Ansatz für die Kartierung von Sternbildgrenzen verwenden.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Genetic Matrix",
+            "url": "https://www.geneticmatrix.com"
+        },
+        "mainEntityOfPage": "https://www.geneticmatrix.com/learn/calculations/true-sidereal/",
+        "datePublished": "2025-01-15",
+        "dateModified": "2026-03-06"
+    }
+    </script>
+
+    <!-- FAQ JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was ist True Sidereal Astrologie?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "True Sidereal Astrologie verwendet die tatsächlich sichtbaren Positionen der Sternbilder am Himmel zur Definition des Tierkreises. Im Gegensatz zur Standard-Sidereal-Astrologie, die gleiche 30-Grad-Zeichen mit einem festen Offset von Tropical verwendet, berücksichtigt True Sidereal die Tatsache, dass Sternbilder unterschiedlich groß sind. Manche Sternbilder umfassen über 40 Grad, während andere weniger als 10 Grad umfassen. True Sidereal spiegelt diese astronomische Realität wider."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist ein Ayanamsha?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ayanamsha ist ein Sanskrit-Begriff, der die Winkeldifferenz zwischen dem tropischen und dem siderischen Tierkreis bezeichnet. Er berücksichtigt die Präzession der Tagundnachtgleichen - die langsame Drift der Erdachse, die bewirkt, dass sich der jahreszeitliche Tierkreis und der sternbasierte Tierkreis allmählich voneinander entfernen. Verschiedene Ayanamsha (Kanatas, Chimenti, Midpoint, Lahiri, Fagan-Bradley usw.) verwenden verschiedene Kalibrierungssterne oder Methoden, weshalb siderische Charts je nach verwendetem Ayanamsha variieren können."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Kanatas, Chimenti und Midpoint?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Alle drei sind True Sidereal Systeme, die die tatsächlichen Sternbildgrößen verwenden. Sie unterscheiden sich darin, wie sie Sternbildgrenzen definieren. Kanatas verwendet sein eigenes Grenzsystem. Chimenti kalibriert sich am Fixstern Beta Aries (Sharatan) bei 2 Grad 15 Minuten Widder. Midpoint verwendet die Mittelpunkte zwischen den Stellen, wo Sternbilder die Ekliptik kreuzen, und korrigiert die astronomischen IAU-Grenzen, um astrologisch relevant zu sein. Die Unterschiede zwischen den drei sind typischerweise gering - aber bei den feinen Unterteilungen von Human Design können selbst kleine Unterschiede verschiedene Chart-Ergebnisse hervorbringen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Schließt True Sidereal Ophiuchus ein?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja. Alle drei True Sidereal Varianten auf Genetic Matrix schließen Ophiuchus als Sternbild ein, durch das die Sonne wandert. Im Kanatas-System verbringt die Sonne etwa 18 Tage in Ophiuchus (ungefähr vom 7. bis 18. Dezember). Wie Ophiuchus jedoch in einem Human Design Kontext behandelt wird, hängt vom spezifischen System und seinen Tor-Zuordnungen ab."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ändert sich mein Typ mit True Sidereal?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das kann sein. Da True Sidereal Planetenpositionen um über 20 Grad im Vergleich zu Tropical verschieben kann, könnten Tore und Kanäle völlig anders sein. Falls dies ändert, welche Zentren in Ihrem Bodygraph definiert sind, könnten sich auch Ihr Typ und Ihre Autorität ändern. Manche Menschen finden, dass ihr True Sidereal Chart Elemente bestätigt, die sie immer als wahr empfunden haben, aber nicht in ihrem tropischen Chart sahen. Andere finden, dass ihr tropisches Chart die zutreffendste Beschreibung bleibt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ist True Sidereal genauer als Tropical?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das hängt davon ab, was Sie mit genau meinen. Tropical wird seit Tausenden von Jahren erfolgreich in der westlichen Astrologie verwendet und war das System, das Ra Uru Hu für Human Design verwendete. True Sidereal spiegelt die astronomischen Positionen wider, wie sie am Himmel erscheinen. Es sind verschiedene Rahmenwerke, jedes mit seiner eigenen Logik und Gültigkeit. Genetic Matrix bietet beide, damit Sie vergleichen und bestimmen können, welches System Ihre Erfahrung am besten beschreibt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie unterscheidet sich True Sidereal von Standard-Sidereal?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Standard-Sidereal (wie das Lahiri Ayanamsha) nimmt den tropischen Tierkreis und verschiebt ihn um einen festen Offset, um ihn mit den Sternen neu auszurichten, behält aber alle zwölf Zeichen bei exakt 30 Grad. True Sidereal geht weiter - es verwendet die tatsächlichen Größen der Sternbilder, die erheblich variieren. Das bedeutet, dass True Sidereal wesentlich andere Ergebnisse als Standard-Sidereal hervorbringen kann, besonders bei Positionen nahe Zeichengrenzen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche True Sidereal Variante sollte ich verwenden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Es gibt keine universelle Antwort. Jede Variante stellt einen gültigen Ansatz zur Kartierung des sichtbaren Himmels dar. Wir empfehlen, Ihr Chart mit allen drei zu erstellen und die Ergebnisse zu vergleichen. Viele Praktizierende, die mit True Sidereal arbeiten, empfehlen das Chimenti Ayanamsha für seine Konsistenz mit traditionellen Sternbildreferenzen, während Kanatas in der westlichen siderischen Astrologie weit verbreitet ist. Das Midpoint-System bietet eine astrologisch verfeinerte Alternative zu den astronomischen IAU-Grenzen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Hat Ra Uru Hu True Sidereal befürwortet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ra Uru Hu entwickelte Human Design unter Verwendung des tropischen Tierkreises. Er verwendete keine siderischen oder True Sidereal Berechnungen. Genetic Matrix bietet True Sidereal als zusätzliches Erkundungswerkzeug für diejenigen, die ihr Chart durch diese Linse betrachten möchten. Wir stellen Werkzeuge bereit, keine Doktrin - und wir behaupten nicht zu wissen, was Ra befürwortet hätte oder nicht."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich Prominenten-Charts in True Sidereal sehen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja. Genetic Matrix berechnet Prominenten-Charts für alle verfügbaren Berechnungsmethoden, einschließlich aller drei True Sidereal Varianten. Das ist eine nützliche Möglichkeit, das System zu bewerten - schauen Sie sich Charts von Menschen an, deren Leben und Eigenschaften Sie bereits kennen, und sehen Sie, welche Berechnungsmethode am genauesten widerspiegelt, was Sie über sie beobachten."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche anderen Berechnungsmethoden bietet Genetic Matrix?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Genetic Matrix bietet Tropical, Tropical (J2000), Sidereal, 13-Sign Sidereal, drei True Sidereal Varianten (Kanatas, Chimenti und Midpoint) sowie zwei drakonitische Optionen (mittlerer Mondknoten und wahrer Mondknoten). Jede dient einem anderen Rahmenwerk und einer anderen Philosophie. Sie können zwischen allen auf jedem Chart wechseln und Ergebnisse sofort vergleichen."
+                }
+            }
+        ]
+    }
+    </script>
+
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- ==================== NAV BAR ==================== -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <!-- Logo -->
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14">
+            </a>
+
+            <!-- Right Nav: LOGGED OUT (default for static pages) -->
+            <div class="flex items-center gap-8">
+                <!-- Report Icon -->
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Berichte">
+                    <img src="../../assets/icon-report.svg" alt="Berichte" class="h-9 w-9">
+                </a>
+                <!-- Talking Chart Icon -->
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Talking Charts">
+                    <img src="../../assets/icon-talking-chart.svg" alt="Talking Charts" class="h-7 w-7">
+                </a>
+                <!-- Free Chart (popup on live site - Shafik to wire up) -->
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Kostenloses Chart</a>
+                <!-- Learn -->
+                <!-- Learn Dropdown -->
+                <div class="hidden lg:block relative group">
+                    <button class="text-gm-purple hover:text-gm-dark text-sm font-semibold flex items-center gap-1">
+                        Lernen
+                        <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[420px] bg-white rounded-xl shadow-xl border border-gray-100 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="grid grid-cols-2 gap-1">
+                            <a href="/learn-hub/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-9 h-9 bg-gm-card-active rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-800">Learn Hub</div>
+                                    <div class="text-xs text-gm-text-light mt-0.5">HD und Astrologie Bildung</div>
+                                </div>
+                            </a>
+                            <a href="/learn-hub/celebrities/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-9 h-9 bg-gm-card-active rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-800">Prominenten-Suche</div>
+                                    <div class="text-xs text-gm-text-light mt-0.5">88.600+ Prominenten-Charts</div>
+                                </div>
+                            </a>
+                            <a href="/dictionary/dictionary.html" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-9 h-9 bg-gm-card-active rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-800">Lexikon</div>
+                                    <div class="text-xs text-gm-text-light mt-0.5">HD und Astrologie Begriffe</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Our Plans -->
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Unsere Pläne</a>
+                <!-- Cart -->
+                <a href="https://www.geneticmatrix.com/cart/" title="Warenkorb" class="relative">
+                    <img src="../../assets/icon-cart.svg" alt="Warenkorb" class="h-5 w-auto">
+                    <span id="gm-cart-count" class="absolute top-0 left-1/2 -translate-x-1/2 text-gm-green font-bold text-[11px] hidden">0</span>
+                </a>
+                <!-- Language Selector -->
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>Deutsch</span>
+                    <img src="../../assets/icon-english.svg" alt="Deutsch" class="h-5 w-7">
+                </div>
+                                <!-- Logged OUT state -->
+                <div id="gm-logged-out" class="flex items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/my-account/" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium">Anmelden</a>
+                    <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Registrieren</a>
+                </div>
+                <!-- Logged IN state (hidden by default) -->
+                <div id="gm-logged-in" class="hidden items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="text-gm-gray hover:text-gray-900 text-sm font-medium">Abmelden</a>
+                    <a href="https://www.geneticmatrix.com/user-home/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Mein Hub</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== BREADCRUMB ==================== -->
+    <div class="bg-gm-light border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-6 py-3">
+            <a href="/learn-hub/" class="text-gm-purple hover:text-gm-dark text-sm font-medium transition">&larr; Zurück zum Learn Hub</a>
+        </div>
+    </div>
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+        <div class="max-w-3xl mx-auto px-6">
+            <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Berechnungsmethoden &middot; True Sidereal</p>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">True Sidereal Human Design Charts</h1>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
+                True Sidereal Astrologie verwendet die tatsächlich sichtbaren Positionen der Sternbilder am Himmel. Genetic Matrix bietet drei True Sidereal Varianten - Kanatas, Chimenti und Midpoint - die jeweils einen anderen Ansatz für die Kartierung von Sternbildgrenzen verwenden.
+            </p>
+        </div>
+    </section>
+    <!-- ==================== AVAILABLE CALCULATION METHODS ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Verfügbare Berechnungsmethoden
+            </h2>
+            <div class="flex flex-wrap gap-2 mb-8">
+                <a href="/learn/calculations/j2000/" class="inline-block px-4 py-2 rounded-full text-xs font-semibold border border-gm-border text-gm-text bg-white hover:border-gm-purple hover:text-gm-purple transition">Tropical</a>
+                <a href="/learn/calculations/j2000/" class="inline-block px-4 py-2 rounded-full text-xs font-semibold border border-gm-border text-gm-text bg-white hover:border-gm-purple hover:text-gm-purple transition">Tropical (J2000)</a>
+                <a href="/learn/calculations/sidereal/" class="inline-block px-4 py-2 rounded-full text-xs font-semibold border border-gm-border text-gm-text bg-white hover:border-gm-purple hover:text-gm-purple transition">Sidereal</a>
+                <a href="/learn/calculations/13-sign/" class="inline-block px-4 py-2 rounded-full text-xs font-semibold border border-gm-border text-gm-text bg-white hover:border-gm-purple hover:text-gm-purple transition">13-Zeichen Sidereal</a>
+                <span class="inline-block px-4 py-2 rounded-full text-xs font-semibold bg-gm-purple text-white">True Sidereal-K</span>
+                <span class="inline-block px-4 py-2 rounded-full text-xs font-semibold bg-gm-purple text-white">True Sidereal-C</span>
+                <span class="inline-block px-4 py-2 rounded-full text-xs font-semibold bg-gm-purple text-white">True Sidereal-M</span>
+                <a href="/learn/calculations/draconic/" class="inline-block px-4 py-2 rounded-full text-xs font-semibold border border-gm-border text-gm-text bg-white hover:border-gm-purple hover:text-gm-purple transition">Drakonitisch (Mittlerer)</a>
+                <a href="/learn/calculations/draconic/" class="inline-block px-4 py-2 rounded-full text-xs font-semibold border border-gm-border text-gm-text bg-white hover:border-gm-purple hover:text-gm-purple transition">Drakonitisch (Wahrer)</a>
+            </div>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                True Sidereal ist eine Familie von Berechnungsmethoden, die das widerspiegeln sollen, was tatsächlich am Himmel zum Zeitpunkt einer Chart-Berechnung geschieht. Anstatt gleiche 30-Grad-Zeichen-Einteilungen oder einen einzigen Offset-Wert zu verwenden, arbeiten True Sidereal Systeme mit den Sternbildern, wie sie tatsächlich erscheinen - was bedeutet, dass die Tierkreiszeichen unterschiedliche Größen haben können und die Grenzen zwischen ihnen davon abhängen, welches Kalibrierungssystem Sie wählen.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Das ist für Human Design wichtig, weil das System den Tierkreis in sehr feine Unterteilungen gliedert - 64 Tore, 384 Linien und tiefere Ebenen von Farbe, Ton und Basis. Bei dieser Auflösung können selbst kleine Unterschiede darin, wo eine Sternbildgrenze fällt, verändern, was in Ihrem Chart erscheint.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== THE THREE VARIANTS ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="three-variants">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Drei True Sidereal Systeme auf Genetic Matrix
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Der Kernunterschied zwischen den drei True Sidereal Optionen liegt darin, wie jede den Ausgangspunkt und die Grenzen der Sternbilder definiert. Alle drei verwenden den sichtbaren Himmel als Referenz anstelle der jahreszeitlichen Tagundnachtgleiche, aber sie sind sich uneinig darüber, wo genau ein Sternbild endet und das nächste beginnt.
+            </p>
+
+            <!-- Variant Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <div class="bg-gm-card rounded-xl border border-gm-border p-6">
+                    <span class="inline-block bg-gm-dark text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3">True Sidereal-K</span>
+                    <h3 class="text-base font-bold text-gray-800 mb-2">Kanatas</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">
+                        Das Kanatas Ayanamsha, entwickelt vom griechischen Astronomen Vasilis Kanatas, verwendet Sternbildgrenzen, die Ophiuchus als 13. Tierkreis-Sternbild einbeziehen. Die Sonne verbringt unterschiedlich viel Zeit in jedem Zeichen - von nur 8 Tagen im Skorpion bis zu über 44 Tagen in der Jungfrau. Dieses System wird in der westlichen siderischen Astrologie neben dem Fagan-Bradley Ayanamsha weit verbreitet verwendet.
+                    </p>
+                </div>
+                <div class="bg-gm-card rounded-xl border border-gm-border p-6">
+                    <span class="inline-block bg-gm-dark text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3">True Sidereal-C</span>
+                    <h3 class="text-base font-bold text-gray-800 mb-2">Chimenti</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">
+                        Das Chimenti Ayanamsha, entwickelt vom Astrologen Athen Chimenti von Mastering the Zodiac, verwendet den Fixstern Beta Aries (Sharatan) als Kalibrierungspunkt und platziert ihn bei 2&#176;15' Widder im True Sidereal Tierkreis. Dieses System verwendet auch tatsächliche Sternbildgrößen und wird von vielen Praktizierenden als konsistenter mit traditionellen Sternbildgrenzen betrachtet.
+                    </p>
+                </div>
+                <div class="bg-gm-card rounded-xl border border-gm-border p-6">
+                    <span class="inline-block bg-gm-dark text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3">True Sidereal-M</span>
+                    <h3 class="text-base font-bold text-gray-800 mb-2">Midpoint</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">
+                        Das Midpoint Ayanamsha, ebenfalls von Mastering the Zodiac erstellt, verwendet die tatsächlichen Größen der Sternbilder wie das IAU-System - aber mit astrologisch definierten Grenzen anstelle von astronomischen. Die IAU-Grenzen wurden für die Observatoriumskatalogisierung entworfen, nicht für die Astrologie, und beziehen sich nicht auf die Ekliptik (den Pfad von Sonne und Planeten). Das Midpoint-System korrigiert dies.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Why Three Options insight box -->
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-xs font-semibold uppercase tracking-wider text-gm-purple mb-2">Warum drei Optionen?</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Es gibt kein einziges "richtiges" True Sidereal System - jedes repräsentiert einen anderen Ansatz für dieselbe grundlegende Frage: Wo genau beginnen und enden die Sternbilder? Indem Genetic Matrix alle drei anbietet, können Sie Ergebnisse vergleichen und bestimmen, welches System ein Chart erzeugt, das Ihre Erfahrung am genauesten widerspiegelt.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TRUE SIDEREAL VS OTHER SYSTEMS ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="how-it-differs">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> True Sidereal vs andere Systeme
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                Um zu verstehen, was True Sidereal ist, hilft es zu sehen, was es nicht ist. Der Hauptunterschied liegt darin, wie jedes System den Tierkreis definiert - den 360-Grad-Kreis, der zur Kartierung von Planetenpositionen verwendet wird.
+            </p>
+
+            <h3 class="text-base font-bold text-gray-800 mb-2">Tropical - An den Jahreszeiten verankert</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                Der tropische Tierkreis definiert 0&#176; Widder als den Punkt, an dem die Sonne zur März-Tagundnachtgleiche den Himmelsäquator kreuzt. Es ist ein jahreszeitliches Rahmenwerk - an die Beziehung der Erde zur Sonne gebunden, nicht an die Sterne. Dies ist das System, das Ra Uru Hu für Human Design verwendete, und es bleibt die häufigste Berechnungsmethode. Der Tierkreis ist in zwölf gleiche 30-Grad-Zeichen unterteilt.
+            </p>
+
+            <h3 class="text-base font-bold text-gray-800 mb-2">Standard Sidereal - An den Sternen verankert, gleiche Zeichen</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                Standard Sidereal (wie das Lahiri Ayanamsha, das in weiten Teilen der indischen Astrologie verwendet wird) verschiebt den gesamten Tierkreis um einen Offset-Wert - das Ayanamsha - um die Präzession der Tagundnachtgleichen zu berücksichtigen. Dies richtet die Zeichen enger an den Fixsternen aus. Es teilt den Tierkreis jedoch immer noch in zwölf gleiche 30-Grad-Zeichen, die nicht den tatsächlichen Größen der Sternbilder am Himmel entsprechen.
+            </p>
+
+            <h3 class="text-base font-bold text-gray-800 mb-2">True Sidereal - Am sichtbaren Himmel verankert</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                True Sidereal geht weiter. Anstatt einen einfachen Offset anzuwenden und gleiche Zeichengrößen beizubehalten, arbeitet es mit den Sternbildern, wie sie tatsächlich erscheinen. Manche Sternbilder umfassen weit mehr als 30 Grad (Jungfrau umfasst etwa 44 Grad), während andere viel kleiner sind (Skorpion umfasst nur etwa 8 Grad). Das Ergebnis ist ein ungleicher Tierkreis, der die astronomische Realität des Himmels widerspiegelt.
+            </p>
+
+            <!-- Everyday Example -->
+            <div class="bg-white border-l-4 border-gm-purple rounded-r-xl p-5 mb-8">
+                <p class="text-xs font-semibold uppercase tracking-wider text-gm-purple mb-2">Alltags-Beispiel</p>
+                <p class="text-gm-text text-sm leading-relaxed">
+                    Stellen Sie sich vor, Sie kartieren Stadtteile in einer Stadt. Der tropische Ansatz teilt die Stadt in zwölf perfekt gleiche Zonen, unabhängig davon, wo die tatsächlichen Stadtteile liegen. Standard Sidereal verschiebt diese Zonen, um besser zu den Stadtteilen zu passen, macht sie aber immer noch alle gleich groß. True Sidereal verfolgt die tatsächlichen Grenzen jedes Stadtteils - manche groß, manche klein - wie sie wirklich vor Ort existieren.
+                </p>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="bg-white rounded-lg overflow-hidden border border-gm-border">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="bg-gm-dark text-white">
+                            <th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider">System</th>
+                            <th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider">Verankert an</th>
+                            <th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider">Zeichengrößen</th>
+                            <th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider">Ophiuchus</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gm-text">
+                        <tr class="border-b border-gray-100">
+                            <td class="px-4 py-3 font-semibold text-gray-800">Tropical</td>
+                            <td class="px-4 py-3">Frühjahrs-Tagundnachtgleiche (Jahreszeiten)</td>
+                            <td class="px-4 py-3">Gleich (je 30&#176;)</td>
+                            <td class="px-4 py-3">Nein</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 bg-gm-light">
+                            <td class="px-4 py-3 font-semibold text-gray-800">Sidereal</td>
+                            <td class="px-4 py-3">Fixsterne (über Ayanamsha Offset)</td>
+                            <td class="px-4 py-3">Gleich (je 30&#176;)</td>
+                            <td class="px-4 py-3">Nein</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="px-4 py-3 font-semibold text-gray-800">13-Zeichen Sidereal</td>
+                            <td class="px-4 py-3">Sternbildgrenzen</td>
+                            <td class="px-4 py-3">Ungleich</td>
+                            <td class="px-4 py-3">Ja</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-semibold text-gray-800">True Sidereal (K, C, M)</td>
+                            <td class="px-4 py-3">Sichtbarer Himmel / Sternbildpositionen</td>
+                            <td class="px-4 py-3">Ungleich</td>
+                            <td class="px-4 py-3">Je nach Variante</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT CHANGES IN YOUR CHART ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="what-changes">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Was sich in Ihrem Chart ändern kann
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Da True Sidereal Planetenpositionen verschiebt und andere Zeichengrenzen im Vergleich zu Tropical verwendet, können die Unterschiede in einem Human Design Chart erheblich sein. Anders als beim Vergleich Tropical-zu-J2000, wo Unterschiede zunächst auf feinkörnigen Ebenen auftreten, kann das Wechseln zu True Sidereal Positionen um 20 Grad oder mehr verschieben - genug, um nahezu alles zu verändern.
+            </p>
+
+            <h3 class="text-base font-bold text-gray-800 mb-2">Elemente, die sich ändern können</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Ihr <strong>Sonnen-Tor</strong> - und damit möglicherweise Ihr Inkarnationskreuz - kann sich zu einem völlig anderen Tor verschieben. Ihr <strong>Profil</strong> (die Linien Ihrer Persönlichkeits- und Design-Sonne) kann sich völlig ändern. <strong>Kanäle</strong> können erscheinen oder verschwinden, wenn Planetentore sich verschieben, was Ihre <strong>Zentrums-Definition</strong> beeinflusst und daher Ihren <strong>Typ und Ihre Autorität</strong> ändern kann.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                Auf den feineren Ebenen werden Ihre <strong>Farben, Töne und Basen</strong> mit ziemlicher Sicherheit anders sein, was bedeutet, dass Ihre <strong>Variable</strong> - Ihre kognitive Architektur - eine völlig andere Konfiguration zeigen kann.
+            </p>
+
+            <!-- Everyday Example -->
+            <div class="bg-gm-light border-l-4 border-gm-purple rounded-r-xl p-5 mb-6">
+                <p class="text-xs font-semibold uppercase tracking-wider text-gm-purple mb-2">Alltags-Beispiel</p>
+                <p class="text-gm-text text-sm leading-relaxed">
+                    Wenn das Wechseln von Tropical zu J2000 wie die Neukalibrierung Ihres GPS ist, um eine kleine Abweichung zu korrigieren, ist das Wechseln zu True Sidereal wie die Verwendung einer völlig anderen Kartenprojektion. Das Territorium ist dasselbe - die Planeten waren zum Zeitpunkt Ihrer Geburt genau da, wo sie waren - aber das Koordinatensystem, das ihre Positionen beschreibt, ist grundlegend anders.
+                </p>
+            </div>
+
+            <!-- Important insight box -->
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-xs font-semibold uppercase tracking-wider text-gm-purple mb-2">Wichtig</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Ein anderes Chart bedeutet nicht, dass Ihr vorheriges Chart "falsch" war. Tropical und True Sidereal sind verschiedene Koordinatensysteme, die denselben Himmel beschreiben. Viele Menschen finden Wert in beiden. Die Frage ist, welches Rahmenwerk ein Chart erzeugt, das Ihre gelebte Erfahrung genauer beschreibt - und nur Sie können das beantworten.
+                </p>
+            </div>
+        </div>
+    </section>
+<!-- ==================== KANATAS VS CHIMENTI VS MIDPOINT ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="comparison">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Kanatas vs Chimenti vs Midpoint
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Obwohl alle drei True Sidereal Optionen auf Genetic Matrix die gleiche Philosophie teilen - die Ausrichtung am sichtbaren Himmel - erzeugen sie unterschiedliche Ergebnisse, weil sie ihre Sternbildgrenzen unterschiedlich kalibrieren.
+            </p>
+
+            <!-- Comparison Table -->
+            <div class="bg-white rounded-lg overflow-hidden border border-gm-border mb-8">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="bg-gm-dark text-white">
+                            <th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider">Merkmal</th>
+                            <th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider">Kanatas</th>
+                            <th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider">Chimenti</th>
+                            <th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider">Midpoint</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gm-text">
+                        <tr class="border-b border-gray-100">
+                            <td class="px-4 py-3 font-semibold text-gray-800">Kalibrierung</td>
+                            <td class="px-4 py-3">Eigenes Sternbildgrenzensystem</td>
+                            <td class="px-4 py-3">Beta Aries (Sharatan) bei 2&#176;15' Widder</td>
+                            <td class="px-4 py-3">Mittelpunkte zwischen Ekliptikkreuzungen der Sternbilder</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 bg-gm-light">
+                            <td class="px-4 py-3 font-semibold text-gray-800">Zeichengrößen</td>
+                            <td class="px-4 py-3">Ungleich</td>
+                            <td class="px-4 py-3">Ungleich</td>
+                            <td class="px-4 py-3">Ungleich</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="px-4 py-3 font-semibold text-gray-800">Schlangenträger</td>
+                            <td class="px-4 py-3">Enthalten</td>
+                            <td class="px-4 py-3">Enthalten</td>
+                            <td class="px-4 py-3">Enthalten</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 bg-gm-light">
+                            <td class="px-4 py-3 font-semibold text-gray-800">Ursprung</td>
+                            <td class="px-4 py-3">Vasilis Kanatas (Griechenland)</td>
+                            <td class="px-4 py-3">Athen Chimenti (Mastering the Zodiac)</td>
+                            <td class="px-4 py-3">Mastering the Zodiac</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="px-4 py-3 font-semibold text-gray-800">Philosophie</td>
+                            <td class="px-4 py-3">Astronomische Beobachtung</td>
+                            <td class="px-4 py-3">Traditionelle Sternausrichtung</td>
+                            <td class="px-4 py-3">Ekliptik-bezogene Grenzen (korrigiert IAU)</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-semibold text-gray-800">Auf Genetic Matrix</td>
+                            <td class="px-4 py-3">True Sidereal-K</td>
+                            <td class="px-4 py-3">True Sidereal-C</td>
+                            <td class="px-4 py-3">True Sidereal-M</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Der praktische Effekt ist, dass die drei Systeme für ein bestimmtes Geburtsdatum und eine bestimmte Zeit Planeten in leicht unterschiedlichen Positionen platzieren können - manchmal in unterschiedlichen Toren oder sogar in unterschiedlichen Zeichen. Die Unterschiede zwischen den drei True Sidereal Varianten sind typischerweise geringer als der Unterschied zwischen einem beliebigen True Sidereal System und dem tropischen System, können aber dennoch auf der Ebene von Linie, Farbe und Ton, die Human Design verwendet, bedeutsam sein.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== PRECESSION AND THE AYANAMSA ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="precession">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Präzession und die Ayanamsha
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Der Grund, warum das tropische und das siderische Tierkreissystem überhaupt nicht übereinstimmen, ist ein Phänomen namens <strong>Präzession der Tagundnachtgleichen</strong>. Die Erdachse taumelt langsam wie ein Kreisel und zeichnet über etwa 26.000 Jahre einen Kreis in den Weltraum. Das bedeutet, dass der Punkt, an dem die Sonne zur Frühlings-Tagundnachtgleiche den Himmelsäquator überquert - 0&#176; Widder im tropischen System - langsam relativ zu den Fixsternen driftet.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Vor etwa 2.000 Jahren waren das tropische und das siderische Tierkreissystem grob ausgerichtet. Heute beträgt die Differenz (genannt Ayanamsha) etwa 24 Grad - was bedeutet, dass ein Planet bei 0&#176; Widder im tropischen System bei etwa 6&#176; Fische im siderischen System stehen würde. Diese Drift setzt sich mit etwa 1 Grad alle 72 Jahre fort.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                Das Standard-Siderische berücksichtigt dies durch Anwendung einer einzigen Verschiebung. True Sidereal geht weiter, indem es auch die Tatsache berücksichtigt, dass Sternbilder nicht gleich groß sind - und dann unterscheiden sich die drei Varianten (Kanatas, Chimenti, Midpoint) darin, wie genau sie die Sternbildgrenzen entlang der Ekliptik definieren.
+            </p>
+
+            <!-- Everyday Example -->
+            <div class="bg-gm-light border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-xs font-semibold uppercase tracking-wider text-gm-purple mb-2">Alltagsbeispiel</p>
+                <p class="text-gm-text text-sm leading-relaxed">
+                    Die Präzession ist wie eine Uhr, deren Stundenmarkierungen sich langsam relativ zu den Zeigern gedreht haben. Die Zeit hat sich nicht geändert - Mittag ist immer noch Mittag - aber die Zahl, auf die der Stundenzeiger zeigt, hat sich verschoben. Das tropische System liest die Uhr anhand der aktuellen Position der Markierungen. Das siderische System liest sie anhand der Position, an der sich die Markierungen befanden, als die Uhr gebaut wurde. True Sidereal sagt, dass die Markierungen von Anfang an nie gleichmäßig verteilt waren.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HOW TO EXPLORE ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="how-to-explore">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Wie Sie True Sidereal auf Genetic Matrix erkunden können
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                Alle drei True Sidereal Berechnungsmethoden sind auf Genetic Matrix verfügbar. Sie können zwischen ihnen wechseln - und mit dem tropischen, dem Standard-Siderischen und allen anderen Methoden vergleichen - bei jedem Chart-Typ.
+            </p>
+
+            <h3 class="text-base font-bold text-gray-800 mb-2">Drei Möglichkeiten, True Sidereal zu nutzen</h3>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                <strong>Schneller Vergleich:</strong> Wählen Sie "True Sidereal-K", "True Sidereal-C" oder "True Sidereal-M" aus dem Dropdown-Menü für Berechnungsmethoden bei jedem Chart. Wechseln Sie zwischen den Methoden, um Ergebnisse sofort zu vergleichen.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                <strong>Als Standard festlegen:</strong> Wählen Sie Ihre bevorzugte True Sidereal Variante als Standard-Berechnungsmethode in den Einstellungen. Alle Ihre Charts werden mit dieser Methode erstellt, bis Sie sie ändern.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                <strong>Prominenten-Vergleich:</strong> Durchsuchen Sie Prominenten-Charts über verschiedene Berechnungsmethoden hinweg, um zu sehen, wie True Sidereal die Charts von Menschen verändert, deren Leben und Eigenschaften Sie bereits kennen. Dies kann ein kraftvoller Weg sein, zu bewerten, welches System resoniert.
+            </p>
+
+            <!-- Recommendation insight box -->
+            <div class="bg-white border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-xs font-semibold uppercase tracking-wider text-gm-purple mb-2">Empfehlung</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Wenn Sie neu bei True Sidereal sind, empfehlen wir, mit Ihrem tropischen Chart zu beginnen - dem System, mit dem Human Design ursprünglich entwickelt wurde - und dann ein True Sidereal Chart zum Vergleich zu erstellen. Schauen Sie sich zuerst die wichtigsten Elemente an: Typ, Autorität, Profil und Inkarnationskreuz. Sehen Sie, welches Chart Ihre gelebte Erfahrung besser beschreibt.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ACCORDION ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Häufig gestellte Fragen
+            </h2>
+            <div class="space-y-3">
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Was ist True Sidereal Astrologie?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        True Sidereal Astrologie verwendet die tatsächlichen sichtbaren Positionen der Sternbilder am Himmel, um den Tierkreis zu definieren. Anders als das Standard-Siderische, das gleichmäßige 30-Grad-Zeichen mit einer festen Verschiebung vom tropischen System verwendet, berücksichtigt True Sidereal die Tatsache, dass Sternbilder unterschiedlich groß sind. Einige Sternbilder erstrecken sich über mehr als 40 Grad, während andere weniger als 10 Grad umfassen. True Sidereal spiegelt diese astronomische Realität wider.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Was ist eine Ayanamsha?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Ayanamsha ist ein Sanskrit-Begriff, der die Winkeldifferenz zwischen dem tropischen und dem siderischen Tierkreis bedeutet. Er berücksichtigt die Präzession der Tagundnachtgleichen - die langsame Drift der Erdachse, die dazu führt, dass sich der jahreszeitliche Tierkreis und der sterne-basierte Tierkreis allmählich voneinander entfernen. Verschiedene Ayanamshas (Kanatas, Chimenti, Midpoint, Lahiri, Fagan-Bradley usw.) verwenden unterschiedliche Kalibrierungssterne oder -methoden, weshalb siderische Charts je nach verwendeter Ayanamsha variieren können.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Was ist der Unterschied zwischen Kanatas, Chimenti und Midpoint?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Alle drei sind True Sidereal Systeme, die die tatsächlichen Sternbildgrößen verwenden. Sie unterscheiden sich darin, wie sie die Sternbildgrenzen definieren. Kanatas verwendet sein eigenes Grenzensystem. Chimenti kalibriert zum Fixstern Beta Aries (Sharatan) bei 2&#176;15' Widder. Midpoint verwendet die Mittelpunkte zwischen den Stellen, an denen Sternbilder die Ekliptik kreuzen, und korrigiert dabei die astronomischen IAU-Grenzen so, dass sie astrologisch relevant werden. Die Unterschiede zwischen den drei sind typischerweise klein - aber bei den feinen Unterteilungen von Human Design können selbst kleine Unterschiede unterschiedliche Chart-Ergebnisse erzeugen.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Enthält True Sidereal den Schlangenträger?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Ja. Alle drei True Sidereal Varianten auf Genetic Matrix enthalten den Schlangenträger als Sternbild, durch das die Sonne wandert. Im Kanatas-System verbringt die Sonne etwa 18 Tage im Schlangenträger (ungefähr 7.-18. Dezember). Wie jedoch der Schlangenträger in einem Human Design Kontext behandelt wird, hängt vom spezifischen System und seinen Tor-Zuordnungen ab.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Wird sich mein Typ mit True Sidereal ändern?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Das kann passieren. Da True Sidereal Planetenpositionen um mehr als 20 Grad im Vergleich zum tropischen System verschieben kann, können Tore und Kanäle völlig unterschiedlich sein. Wenn dies ändert, welche Zentren in Ihrem Bodygraph definiert sind, könnten sich auch Ihr Typ und Ihre Autorität ändern. Manche Menschen finden, dass ihr True Sidereal Chart Elemente bestätigt, die sie immer für wahr hielten, aber nicht in ihrem tropischen Chart sahen. Andere finden, dass ihr tropisches Chart die genaueste Beschreibung bleibt.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Ist True Sidereal genauer als das tropische System?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Das hängt davon ab, was Sie mit "genauer" meinen. Das tropische System wird seit Tausenden von Jahren erfolgreich in der westlichen Astrologie verwendet und war das System, das Ra Uru Hu für Human Design nutzte. True Sidereal spiegelt die astronomischen Positionen wider, wie sie am Himmel erscheinen. Es sind verschiedene Rahmenwerke, jedes mit seiner eigenen Logik und Gültigkeit. Genetic Matrix stellt beide zur Verfügung, damit Sie vergleichen und bestimmen können, welches System Ihre Erfahrung am besten beschreibt.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Wie unterscheidet sich True Sidereal vom Standard-Siderischen?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Das Standard-Siderische (wie die Lahiri Ayanamsha) nimmt den tropischen Tierkreis und verschiebt ihn um eine feste Verschiebung, um ihn wieder mit den Sternen auszurichten, aber hält alle zwölf Zeichen bei genau 30 Grad. True Sidereal geht weiter - es verwendet die tatsächlichen Größen der Sternbilder, die erheblich variieren. Das bedeutet, dass True Sidereal wesentlich andere Ergebnisse als das Standard-Siderische erzeugen kann, besonders bei Stellungen nahe den Zeichengrenzen.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Welche True Sidereal Variante sollte ich verwenden?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Es gibt keine universelle Antwort. Jede Variante repräsentiert einen gültigen Ansatz zur Kartierung des sichtbaren Himmels. Wir empfehlen, Ihr Chart mit allen drei zu erstellen und die Ergebnisse zu vergleichen. Viele Praktiker, die mit True Sidereal arbeiten, empfehlen die Chimenti Ayanamsha für ihre Konsistenz mit traditionellen Sternbild-Referenzen, während Kanatas weit verbreitet in der westlichen siderischen Astrologie verwendet wird. Das Midpoint-System bietet eine astrologisch verfeinerte Alternative zu den astronomischen IAU-Grenzen.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Hat Ra Uru Hu True Sidereal befürwortet?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Ra Uru Hu entwickelte Human Design mit dem tropischen Tierkreis. Er verwendete keine siderischen oder True Sidereal Berechnungen. Genetic Matrix bietet True Sidereal als zusätzliches Erkundungswerkzeug für diejenigen, die ihr Chart durch diese Brille betrachten möchten. Wir stellen Werkzeuge zur Verfügung, keine Doktrin - und wir behaupten nicht zu wissen, was Ra befürwortet hätte oder nicht.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Kann ich Prominenten-Charts in True Sidereal sehen?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Ja. Genetic Matrix berechnet Prominenten-Charts für alle verfügbaren Berechnungsmethoden, einschließlich aller drei True Sidereal Varianten. Dies ist ein nützlicher Weg, das System zu bewerten - schauen Sie sich Charts von Menschen an, deren Leben und Eigenschaften Sie bereits kennen, und sehen Sie, welche Berechnungsmethode am genauesten widerspiegelt, was Sie über sie beobachten.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border" open>
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Welche anderen Berechnungsmethoden bietet Genetic Matrix?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Genetic Matrix bietet Tropisch, Tropisch (J2000), Siderisch, 13-Zeichen Siderisch, drei True Sidereal Varianten (Kanatas, Chimenti und Midpoint) und zwei Drakonitische Optionen (Mittlerer Mondknoten und Wahrer Mondknoten). Jede dient einem anderen Rahmenwerk und einer anderen Philosophie. Sie können bei jedem Chart zwischen allen wechseln und Ergebnisse sofort vergleichen.
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTINUE LEARNING ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Weitere Lernthemen
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="/calculations/sidereal/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Siderisch &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Standard-Siderisch verwendet eine Fixstern-Verschiebung mit gleichmäßigen 30-Grad-Zeichen - der traditionelle vedische Ansatz.</p>
+                </a>
+                <a href="/calculations/13-sign/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">13-Zeichen Siderisch &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">13-Zeichen Siderisch enthält den Schlangenträger und verwendet ungleiche Sternbildgrößen basierend auf IAU-Grenzen.</p>
+                </a>
+                <a href="/calculations/draconic/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Drakonitisch &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Drakonitische Charts verwenden den aufsteigenden Mondknoten als 0 Grad Widder - eine seelische Perspektive auf Ihr Design.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Erkunden Sie True Sidereal</h2>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+                Erstellen Sie Ihr Human Design Chart mit allen drei True Sidereal Varianten und vergleichen Sie es mit Ihrem tropischen Chart, um zu sehen, was sich ändert.
+            </p>
+            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+                Get Pro &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+
+                <!-- Left: Logo & Copyright -->
+                <div class="text-center md:text-left">
+                    <img src="../../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">Alle Rechte vorbehalten.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Datenschutz, Geschäftsbedingungen</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+
+                <!-- Center: Newsletter (Shafik to wire up form backend) -->
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Abonnieren Sie unseren Newsletter</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Melden Sie sich für unseren Newsletter an, um Updates, Angebote,
+                        neue Veröffentlichungen und alles rund um Genetic Matrix zu erhalten.
+                    </p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input
+                            type="email"
+                            placeholder="Ihre E-Mail-Adresse"
+                            class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400"
+                        >
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Social & Contact -->
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Verbinden Sie sich mit uns</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener">
+                            <img src="../../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
+                        </a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener">
+                            <img src="../../assets/icon-x.svg" alt="X" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener">
+                            <img src="../../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener">
+                            <img src="../../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
+                        </a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Kontakt aufnehmen</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+<script>
+(function() {
+    fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            var badge = document.getElementById('gm-cart-count');
+            if (badge && data.cart_count > 0) {
+                badge.textContent = data.cart_count;
+                badge.classList.remove('hidden');
+            }
+            var loggedOut = document.getElementById('gm-logged-out');
+            var loggedIn = document.getElementById('gm-logged-in');
+            if (data.logged_in) {
+                if (loggedOut) loggedOut.classList.add('hidden');
+                if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
+            }
+        })
+        .catch(function() {});
+})();
+</script>
+<script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
+</body>
+</html>

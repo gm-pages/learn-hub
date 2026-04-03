@@ -1,0 +1,4298 @@
+{
+  "terms": [
+    {
+      "id": "1-3-profile",
+      "term": "1/3 Profile",
+      "category": "Foundation",
+      "definition": "Combines the Investigator (Line 1) and Martyr (Line 3). Needs a solid foundation of knowledge and learns through trial and error.",
+      "aliases": [
+        "Investigator Martyr"
+      ],
+      "url": ""
+    },
+    {
+      "id": "1-4-profile",
+      "term": "1/4 Profile",
+      "category": "Foundation",
+      "definition": "Combines the Investigator (Line 1) and Opportunist (Line 4). Builds a secure knowledge foundation then shares it through their personal network.",
+      "aliases": [
+        "Investigator Opportunist"
+      ],
+      "url": ""
+    },
+    {
+      "id": "10th-house",
+      "term": "10th House",
+      "category": "Astrology",
+      "definition": "The house of career, public reputation, authority, and achievements. The 10th House cusp is the Midheaven (MC), and this house governs professional ambitions, social standing, and one's legacy.",
+      "aliases": [
+        "Tenth House",
+        "House of Career"
+      ],
+      "url": ""
+    },
+    {
+      "id": "11th-house",
+      "term": "11th House",
+      "category": "Astrology",
+      "definition": "The house of friendships, groups, social networks, and hopes for the future. The 11th House governs community involvement, humanitarian causes, and the broader social circles that support one's aspirations.",
+      "aliases": [
+        "Eleventh House",
+        "House of Friendship"
+      ],
+      "url": ""
+    },
+    {
+      "id": "12th-house",
+      "term": "12th House",
+      "category": "Astrology",
+      "definition": "The house of the unconscious, hidden matters, solitude, and spiritual transcendence. The 12th House governs isolation, self-undoing, dreams, institutions, and the dissolution of the ego.",
+      "aliases": [
+        "Twelfth House",
+        "House of the Unconscious"
+      ],
+      "url": ""
+    },
+    {
+      "id": "13-sign-zodiac",
+      "term": "13-Sign Zodiac",
+      "category": "Astrology",
+      "definition": "An alternative zodiac system that includes Ophiuchus as a 13th sign between Scorpio and Sagittarius, based on the actual constellations the Sun passes through. It uses IAU constellation boundaries, resulting in signs of unequal length. It is not used in mainstream astrology but periodically generates public interest.",
+      "aliases": [
+        "13-Sign Astrology",
+        "Thirteen-Sign Zodiac"
+      ],
+      "url": ""
+    },
+    {
+      "id": "1st-house",
+      "term": "1st House",
+      "category": "Astrology",
+      "definition": "The house of self, identity, physical appearance, and first impressions. The 1st House cusp is the Ascendant, making it one of the most significant houses, governing how a person presents themselves to the world.",
+      "aliases": [
+        "First House",
+        "House of Self"
+      ],
+      "url": ""
+    },
+    {
+      "id": "2-4-profile",
+      "term": "2/4 Profile",
+      "category": "Foundation",
+      "definition": "Combines the Hermit (Line 2) and Opportunist (Line 4). Has natural talents that need to be called out by others through their network.",
+      "aliases": [
+        "Hermit Opportunist"
+      ],
+      "url": ""
+    },
+    {
+      "id": "2-5-profile",
+      "term": "2/5 Profile",
+      "category": "Foundation",
+      "definition": "Combines the Hermit (Line 2) and Heretic (Line 5). Carries a natural gift combined with the 5th line projection field where others project expectations.",
+      "aliases": [
+        "Hermit Heretic"
+      ],
+      "url": ""
+    },
+    {
+      "id": "2nd-house",
+      "term": "2nd House",
+      "category": "Astrology",
+      "definition": "The house of personal finances, possessions, values, and self-worth. The 2nd House governs material resources, earning potential, and what a person finds valuable or worthy of investment.",
+      "aliases": [
+        "Second House",
+        "House of Value"
+      ],
+      "url": ""
+    },
+    {
+      "id": "3-5-profile",
+      "term": "3/5 Profile",
+      "category": "Foundation",
+      "definition": "Combines the Martyr (Line 3) and Heretic (Line 5). Learns through trial and error while carrying a projection field others look to for practical solutions.",
+      "aliases": [
+        "Martyr Heretic"
+      ],
+      "url": ""
+    },
+    {
+      "id": "3-6-profile",
+      "term": "3/6 Profile",
+      "category": "Foundation",
+      "definition": "Combines the Martyr (Line 3) and Role Model (Line 6). Three life phases: intense trial-and-error until about 30, observing from the roof until around 50, then stepping into authenticity.",
+      "aliases": [
+        "Martyr Role Model"
+      ],
+      "url": ""
+    },
+    {
+      "id": "3rd-house",
+      "term": "3rd House",
+      "category": "Astrology",
+      "definition": "The house of communication, siblings, short journeys, and the immediate environment. The 3rd House governs how a person thinks, speaks, writes, and interacts with their local community and neighbors.",
+      "aliases": [
+        "Third House",
+        "House of Communication"
+      ],
+      "url": ""
+    },
+    {
+      "id": "4-1-profile",
+      "term": "4/1 Profile",
+      "category": "Foundation",
+      "definition": "Combines the Opportunist (Line 4) and Investigator (Line 1). A fixed fate profile with a rigid foundation and strong network orientation.",
+      "aliases": [
+        "Opportunist Investigator"
+      ],
+      "url": ""
+    },
+    {
+      "id": "4-6-profile",
+      "term": "4/6 Profile",
+      "category": "Foundation",
+      "definition": "Combines the Opportunist (Line 4) and Role Model (Line 6). Deeply connected to their network, going through three life phases to develop into authentic role models.",
+      "aliases": [
+        "Opportunist Role Model"
+      ],
+      "url": ""
+    },
+    {
+      "id": "4th-house",
+      "term": "4th House",
+      "category": "Astrology",
+      "definition": "The house of home, family, roots, and emotional foundations. The 4th House cusp is the IC (Imum Coeli), and this house governs private life, ancestry, real estate, and the conditions at the end of life.",
+      "aliases": [
+        "Fourth House",
+        "House of Home"
+      ],
+      "url": ""
+    },
+    {
+      "id": "5-1-profile",
+      "term": "5/1 Profile",
+      "category": "Foundation",
+      "definition": "Combines the Heretic (Line 5) and Investigator (Line 1). Carries a strong projection field and builds authority on deep investigation and research.",
+      "aliases": [
+        "Heretic Investigator"
+      ],
+      "url": ""
+    },
+    {
+      "id": "5-2-profile",
+      "term": "5/2 Profile",
+      "category": "Foundation",
+      "definition": "Combines the Heretic (Line 5) and Hermit (Line 2). Carries a projection field while possessing natural talents, called out to provide solutions while needing retreat.",
+      "aliases": [
+        "Heretic Hermit"
+      ],
+      "url": ""
+    },
+    {
+      "id": "5th-house",
+      "term": "5th House",
+      "category": "Astrology",
+      "definition": "The house of creativity, romance, children, pleasure, and self-expression. The 5th House governs hobbies, love affairs, artistic pursuits, and all forms of joyful, spontaneous activity.",
+      "aliases": [
+        "Fifth House",
+        "House of Pleasure"
+      ],
+      "url": ""
+    },
+    {
+      "id": "6-2-profile",
+      "term": "6/2 Profile",
+      "category": "Foundation",
+      "definition": "Combines the Role Model (Line 6) and Hermit (Line 2). Moves through three life phases while carrying natural talents that others must call out.",
+      "aliases": [
+        "Role Model Hermit"
+      ],
+      "url": ""
+    },
+    {
+      "id": "6-3-profile",
+      "term": "6/3 Profile",
+      "category": "Foundation",
+      "definition": "Combines the Role Model (Line 6) and Martyr (Line 3). Intensely experiential, with both lines involving learning through trial and error across the three life phases.",
+      "aliases": [
+        "Role Model Martyr"
+      ],
+      "url": ""
+    },
+    {
+      "id": "6th-house",
+      "term": "6th House",
+      "category": "Astrology",
+      "definition": "The house of daily routines, health, work, and service. The 6th House governs employment (as opposed to career), physical wellness, habits, and one's relationship to duty and practical tasks.",
+      "aliases": [
+        "Sixth House",
+        "House of Health"
+      ],
+      "url": ""
+    },
+    {
+      "id": "7th-house",
+      "term": "7th House",
+      "category": "Astrology",
+      "definition": "The house of partnerships, marriage, open enemies, and one-on-one relationships. The 7th House cusp is the Descendant, and this house governs committed relationships, business partnerships, and contracts.",
+      "aliases": [
+        "Seventh House",
+        "House of Partnership"
+      ],
+      "url": ""
+    },
+    {
+      "id": "8th-house",
+      "term": "8th House",
+      "category": "Astrology",
+      "definition": "The house of transformation, shared resources, death, and rebirth. The 8th House governs inheritance, taxes, debts, intimacy, psychology, and the deeper mysteries of life and the occult.",
+      "aliases": [
+        "Eighth House",
+        "House of Transformation"
+      ],
+      "url": ""
+    },
+    {
+      "id": "9th-house",
+      "term": "9th House",
+      "category": "Astrology",
+      "definition": "The house of higher education, philosophy, long-distance travel, and belief systems. The 9th House governs religion, law, publishing, foreign cultures, and the search for meaning and truth.",
+      "aliases": [
+        "Ninth House",
+        "House of Philosophy"
+      ],
+      "url": ""
+    },
+    {
+      "id": "advisor",
+      "term": "Advisor",
+      "category": "BG5/Penta",
+      "definition": "BG5 Career Type equivalent of the Projector. Natural guide who excels at directing others' energy when recognized and invited.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "air-element",
+      "term": "Air Element",
+      "category": "Astrology",
+      "definition": "One of the four classical elements in astrology, encompassing Gemini, Libra, and Aquarius. Air signs are associated with intellect, communication, social connection, and abstract thinking.",
+      "aliases": [
+        "Air Signs"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ajna-center",
+      "term": "Ajna Center",
+      "category": "Foundation",
+      "definition": "The awareness center for conceptualization and mental processing, located between the Head and Throat Centers. Responsible for how we process information and form opinions.",
+      "aliases": [
+        "Ajna",
+        "Mind Center"
+      ],
+      "url": ""
+    },
+    {
+      "id": "aldebaran",
+      "term": "Aldebaran",
+      "category": "Astrology",
+      "definition": "One of the four Royal Stars of Persia, located at approximately 9 degrees Gemini in tropical astrology. Aldebaran is the eye of the constellation Taurus and is associated with honor, courage, eloquence, and material success, provided integrity is maintained.",
+      "aliases": [
+        "Eye of the Bull"
+      ],
+      "url": ""
+    },
+    {
+      "id": "algol",
+      "term": "Algol",
+      "category": "Astrology",
+      "definition": "A binary star system in the constellation Perseus, located at approximately 26 degrees Taurus in tropical astrology. Algol is traditionally considered one of the most malefic fixed stars, associated with losing one's head (literally or metaphorically), violence, and intense transformation.",
+      "aliases": [
+        "Caput Algol",
+        "Demon Star"
+      ],
+      "url": ""
+    },
+    {
+      "id": "almuten",
+      "term": "Almuten",
+      "category": "Astrology",
+      "definition": "The planet with the most essential dignity points at a given degree, calculated by tallying domicile, exaltation, triplicity, term, and face rulerships. The almuten of the chart (almuten figuris) is the planet with the greatest combined dignity across several key chart points.",
+      "aliases": [
+        "Almuten Figuris"
+      ],
+      "url": ""
+    },
+    {
+      "id": "alpha-channel",
+      "term": "Alpha Channel",
+      "category": "BG5/Penta",
+      "definition": "The channel of leadership within a small group in Penta mechanics, connecting to natural hierarchy and decision-making flow.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "amatyakaraka",
+      "term": "Amatyakaraka",
+      "category": "Astrology",
+      "definition": "The planet with the second-highest degree in the birth chart, serving as the significator of career and professional life in Jaimini astrology. It acts as the advisor or minister to the atmakaraka (soul significator). Its sign and house placement indicate the field through which the native expresses their professional purpose.",
+      "aliases": [
+        "AmK"
+      ],
+      "url": ""
+    },
+    {
+      "id": "anaretic-degree",
+      "term": "Anaretic Degree",
+      "category": "Astrology",
+      "definition": "The 29th degree (29 degrees 0 minutes through 29 degrees 59 minutes) of any zodiac sign, considered a point of urgency and culmination. Planets at the anaretic degree are finishing their journey through a sign and carry a sense of crisis, completion, or karmic intensity.",
+      "aliases": [
+        "29th Degree",
+        "Degree of Fate"
+      ],
+      "url": ""
+    },
+    {
+      "id": "anger",
+      "term": "Anger",
+      "category": "Foundation",
+      "definition": "The Not-Self theme of the Manifestor Type. When not informing before acting, they encounter resistance that generates anger.",
+      "aliases": [
+        "Manifestor Not-Self"
+      ],
+      "url": ""
+    },
+    {
+      "id": "angular-houses",
+      "term": "Angular Houses",
+      "category": "Astrology",
+      "definition": "The 1st, 4th, 7th, and 10th houses, which correspond to the four chart angles. Angular houses are considered the most powerful and visible positions in a chart, and planets placed here tend to have a strong, direct influence on a person's life.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "annual-profection",
+      "term": "Annual Profection",
+      "category": "Astrology",
+      "definition": "A traditional timing technique that advances the Ascendant one whole sign per year of life, activating a new house and its ruling planet each birthday. The activated house lord becomes the Lord of the Year, whose transits and condition carry special significance for that twelve-month period.",
+      "aliases": [
+        "Annual Profections",
+        "Profection Year"
+      ],
+      "url": ""
+    },
+    {
+      "id": "antardasha",
+      "term": "Antardasha",
+      "category": "Astrology",
+      "definition": "The sub-period within a mahadasha in the Vimshottari Dasha system. Each mahadasha is subdivided into antardasha periods ruled by each of the nine grahas in sequence. The antardasha planet modifies and refines the themes of the ruling mahadasha planet.",
+      "aliases": [
+        "Antar Dasha",
+        "Bhukti"
+      ],
+      "url": ""
+    },
+    {
+      "id": "antares",
+      "term": "Antares",
+      "category": "Astrology",
+      "definition": "One of the four Royal Stars of Persia, located at approximately 9 degrees Sagittarius in tropical astrology. Antares is the heart of the constellation Scorpius and is associated with courage, intensity, obsessive drive, and success through bold action, but with a risk of self-destruction.",
+      "aliases": [
+        "Heart of the Scorpion"
+      ],
+      "url": ""
+    },
+    {
+      "id": "antiscia",
+      "term": "Antiscia",
+      "category": "Astrology",
+      "definition": "Mirror points across the Cancer-Capricorn axis (the solstice axis) where two zodiac degrees share the same amount of daylight. Planets in antiscia form a hidden connection, functioning as a covert conjunction, and are used in traditional astrology to reveal secret alliances or unseen influences.",
+      "aliases": [
+        "Antiscium"
+      ],
+      "url": ""
+    },
+    {
+      "id": "anuradha",
+      "term": "Anuradha",
+      "category": "Astrology",
+      "definition": "The seventeenth nakshatra in Vedic astrology, spanning 3 degrees 20 minutes to 16 degrees 40 minutes of Scorpio. Its ruling deity is Mitra (god of friendship), and its planetary ruler is Saturn. It is associated with devotion, loyalty, and the ability to maintain deep friendships and alliances.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "appetite",
+      "term": "Appetite",
+      "category": "Variables",
+      "definition": "One of six Determination types (Color 1). The body eats based on hunger signals, with natural appetite guiding when and what to consume.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "applying-aspect",
+      "term": "Applying Aspect",
+      "category": "Astrology",
+      "definition": "An aspect where the faster-moving planet is approaching the exact degree of the aspect with the slower-moving planet. Applying aspects are generally considered stronger and more active than separating aspects because the energy is building toward its peak.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "aquarius",
+      "term": "Aquarius",
+      "category": "Astrology",
+      "definition": "The eleventh sign of the zodiac, spanning 300 to 330 degrees of the ecliptic. Aquarius is a fixed air sign traditionally ruled by Saturn and modernly by Uranus, associated with innovation, humanitarianism, and individuality.",
+      "aliases": [
+        "The Water Bearer"
+      ],
+      "url": ""
+    },
+    {
+      "id": "arabic-parts-lots",
+      "term": "Arabic Parts/Lots",
+      "category": "Astrology",
+      "definition": "Calculated sensitive points derived from the mathematical relationships between three chart factors, typically two planets and an angle. Arabic Parts (or Lots) have origins in Hellenistic astrology and include dozens of variations addressing specific life topics such as fortune, spirit, marriage, and career.",
+      "aliases": [
+        "Arabic Parts",
+        "Lots",
+        "Hermetic Lots"
+      ],
+      "url": ""
+    },
+    {
+      "id": "archetypal-astrology",
+      "term": "Archetypal Astrology",
+      "category": "Astrology",
+      "definition": "A philosophical approach to astrology developed by Richard Tarnas and others that views planetary alignments as correlating with archetypal patterns in human experience and world events. It draws heavily on the work of C.G. Jung and emphasizes that planets do not cause events but reflect universal archetypal dynamics. Tarnas's book Cosmos and Psyche is the foundational text of this approach.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "ardra",
+      "term": "Ardra",
+      "category": "Astrology",
+      "definition": "The sixth nakshatra in Vedic astrology, spanning 6 degrees 40 minutes to 20 degrees of Gemini. Its ruling deity is Rudra (the storm god), and its planetary ruler is Rahu. It is associated with destruction that precedes renewal, effort, and intellectual intensity.",
+      "aliases": [
+        "Arudra"
+      ],
+      "url": ""
+    },
+    {
+      "id": "aries",
+      "term": "Aries",
+      "category": "Astrology",
+      "definition": "The first sign of the zodiac, spanning 0 to 30 degrees of the ecliptic. Aries is a cardinal fire sign ruled by Mars, associated with initiative, courage, and assertiveness.",
+      "aliases": [
+        "The Ram"
+      ],
+      "url": ""
+    },
+    {
+      "id": "arrow",
+      "term": "Arrow",
+      "category": "Variables",
+      "definition": "One of four directional indicators at the top of the Human Design bodygraph. Each Arrow points either left (focused, strategic) or right (receptive, peripheral). The four Arrows relate to Determination, Environment, Cognition, and Perspective.",
+      "aliases": [
+        "Arrows"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ascendant",
+      "term": "Ascendant",
+      "category": "Astrology",
+      "definition": "The zodiac sign and degree rising on the eastern horizon at the exact time and place of birth. The Ascendant defines the cusp of the 1st House and strongly influences outward personality, physical appearance, and how others perceive you.",
+      "aliases": [
+        "Rising Sign",
+        "ASC"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ashlesha",
+      "term": "Ashlesha",
+      "category": "Astrology",
+      "definition": "The ninth nakshatra in Vedic astrology, spanning 16 degrees 40 minutes to 30 degrees of Cancer. Its ruling deity is the Nagas (serpent deities), and its planetary ruler is Mercury. It is associated with mystical power, clinging, and kundalini energy.",
+      "aliases": [
+        "Aslesha"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ashtakavarga",
+      "term": "Ashtakavarga",
+      "category": "Astrology",
+      "definition": "A numerical scoring system in Vedic astrology that evaluates the benefic and malefic contributions of each planet to every sign. Each sign receives points (bindus) from each of the seven planets and the ascendant, producing a score out of a maximum of 8 per planet. The total score (Sarvashtakavarga) for each sign helps determine favorable and unfavorable transits.",
+      "aliases": [
+        "Sarvashtakavarga"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ashwini",
+      "term": "Ashwini",
+      "category": "Astrology",
+      "definition": "The first nakshatra in Vedic astrology, spanning 0 to 13 degrees 20 minutes of Aries. Its ruling deity is the Ashwini Kumaras (divine physicians), and its planetary ruler is Ketu. It is associated with healing, speed, and new beginnings.",
+      "aliases": [
+        "Aswini"
+      ],
+      "url": ""
+    },
+    {
+      "id": "aspect",
+      "term": "Aspect",
+      "category": "Astrology",
+      "definition": "An angular relationship between two planets in an astrological chart. Major aspects include Conjunction (0 degrees), Sextile (60), Square (90), Trine (120), and Opposition (180). Aspects reveal how planetary energies interact.",
+      "aliases": [
+        "Aspects"
+      ],
+      "url": ""
+    },
+    {
+      "id": "atmakaraka",
+      "term": "Atmakaraka",
+      "category": "Astrology",
+      "definition": "The planet that holds the highest degree in any sign in the birth chart, considered the significator of the soul in Jaimini astrology. It reveals the deepest desires and karmic lessons the soul is working through in this lifetime. The sign and house placement of the atmakaraka in the navamsa (karakamsa) are especially significant.",
+      "aliases": [
+        "AK"
+      ],
+      "url": ""
+    },
+    {
+      "id": "authority",
+      "term": "Authority",
+      "category": "Foundation",
+      "definition": "The body's inner decision-making mechanism in Human Design. Authority tells you how to make correct decisions for yourself. Types of Authority include Emotional, Sacral, Splenic, Ego, Self-Projected, Mental, and Lunar.",
+      "aliases": [
+        "Inner Authority"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ayanamsa",
+      "term": "Ayanamsa",
+      "category": "Astrology",
+      "definition": "The angular difference between the Tropical and Sidereal zodiacs caused by the precession of the equinoxes. Different ayanamsa values (such as Lahiri or Fagan-Bradley) produce slightly different sidereal chart placements. The value increases by approximately one degree every 72 years.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "base",
+      "term": "Base",
+      "category": "Variables",
+      "definition": "The foundational sub-frequency beneath Tone in the hierarchy of Color, Tone, Base. There are five Bases (1-5) further differentiating each Tone.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "benefic",
+      "term": "Benefic",
+      "category": "Astrology",
+      "definition": "A classification for planets considered to produce favorable or supportive outcomes in traditional astrology. Jupiter is the Greater Benefic and Venus is the Lesser Benefic, generally bringing expansion, harmony, and ease to the areas they influence.",
+      "aliases": [
+        "Benefic Planets"
+      ],
+      "url": ""
+    },
+    {
+      "id": "bg5",
+      "term": "BG5",
+      "category": "BG5/Penta",
+      "definition": "The career and business application of Human Design. BG5 analyzes how individuals function within small group dynamics (Penta) and larger organizational structures (WA/OC16).",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "bg5-career-design",
+      "term": "BG5 Career Design",
+      "category": "BG5/Penta",
+      "definition": "The business application of Human Design focused on individual career potential and team dynamics. Uses five Career Types.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "bharani",
+      "term": "Bharani",
+      "category": "Astrology",
+      "definition": "The second nakshatra in Vedic astrology, spanning 13 degrees 20 minutes to 26 degrees 40 minutes of Aries. Its ruling deity is Yama (god of death and dharma), and its planetary ruler is Venus. It is associated with creation, restraint, and transformation.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "bhava",
+      "term": "Bhava",
+      "category": "Astrology",
+      "definition": "The Sanskrit term for an astrological house in Vedic astrology. There are 12 bhavas, each governing specific areas of life such as wealth, relationships, or career. Vedic astrology most commonly uses the Whole Sign house system for bhava calculation.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "bi-quintile",
+      "term": "Bi-quintile",
+      "category": "Astrology",
+      "definition": "A minor aspect formed when two planets are approximately 144 degrees apart in the zodiac. Like the quintile, the bi-quintile relates to creative expression and special abilities, often indicating a talent that develops through conscious effort.",
+      "aliases": [
+        "Biquintile"
+      ],
+      "url": ""
+    },
+    {
+      "id": "bird",
+      "term": "Bird",
+      "category": "Foundation",
+      "definition": "One of four animal categories in the Variable system. Carries a specific combination of strategic and receptive orientations influencing cognitive and metabolic design.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "bitterness",
+      "term": "Bitterness",
+      "category": "Foundation",
+      "definition": "The Not-Self theme of the Projector Type. When initiating or seeking attention without waiting for invitation, deep bitterness results.",
+      "aliases": [
+        "Projector Not-Self"
+      ],
+      "url": ""
+    },
+    {
+      "id": "black-moon-lilith",
+      "term": "Black Moon Lilith",
+      "category": "Astrology",
+      "definition": "A mathematical point representing the lunar apogee, or the point in the Moon's orbit farthest from Earth. Black Moon Lilith symbolizes repressed desires, raw feminine power, and the shadow side of the psyche.",
+      "aliases": [
+        "Lilith",
+        "Mean Lilith",
+        "True Lilith"
+      ],
+      "url": ""
+    },
+    {
+      "id": "bodygraph",
+      "term": "Bodygraph",
+      "category": "Foundation",
+      "definition": "The visual map of a person's Human Design, showing nine Centers connected by Channels and Gates. The bodygraph combines elements of the I Ching, Kabbalah Tree of Life, Hindu-Brahmin Chakra system, and quantum physics.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "bonification",
+      "term": "Bonification",
+      "category": "Astrology",
+      "definition": "A Hellenistic concept where a benefic planet (Jupiter or Venus) improves the condition of another planet or house through aspect, conjunction, or reception. It is the positive counterpart to maltreatment and is used to assess whether a planet receives helpful support. The concept was central to the Hellenistic framework for evaluating planetary condition.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "cadent-houses",
+      "term": "Cadent Houses",
+      "category": "Astrology",
+      "definition": "The 3rd, 6th, 9th, and 12th houses, which precede the angular houses. Cadent houses are associated with learning, adaptation, and mental or spiritual processes, and planets here are traditionally considered less outwardly powerful.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "campanus",
+      "term": "Campanus",
+      "category": "Astrology",
+      "definition": "A house system attributed to the 13th-century mathematician Campanus of Novara that divides the prime vertical into equal 30-degree arcs. These arcs are then projected onto the ecliptic to determine house cusps. It emphasizes the local spatial environment of the birthplace.",
+      "aliases": [
+        "Campanus House System"
+      ],
+      "url": ""
+    },
+    {
+      "id": "cancer",
+      "term": "Cancer",
+      "category": "Astrology",
+      "definition": "The fourth sign of the zodiac, spanning 90 to 120 degrees of the ecliptic. Cancer is a cardinal water sign ruled by the Moon, associated with nurturing, emotional sensitivity, and home.",
+      "aliases": [
+        "The Crab"
+      ],
+      "url": ""
+    },
+    {
+      "id": "capricorn",
+      "term": "Capricorn",
+      "category": "Astrology",
+      "definition": "The tenth sign of the zodiac, spanning 270 to 300 degrees of the ecliptic. Capricorn is a cardinal earth sign ruled by Saturn, associated with ambition, discipline, and structure.",
+      "aliases": [
+        "The Sea-Goat",
+        "The Goat"
+      ],
+      "url": ""
+    },
+    {
+      "id": "cardinal",
+      "term": "Cardinal",
+      "category": "Astrology",
+      "definition": "One of the three modalities in astrology, encompassing Aries, Cancer, Libra, and Capricorn. Cardinal signs initiate action and mark the beginning of each season, representing leadership and new beginnings.",
+      "aliases": [
+        "Cardinal Signs",
+        "Cardinal Modality"
+      ],
+      "url": ""
+    },
+    {
+      "id": "caves",
+      "term": "Caves",
+      "category": "Variables",
+      "definition": "One of six Environment types (Color 1). An enclosed, selective space where one thrives by being sheltered and choosing carefully who enters.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "cazimi",
+      "term": "Cazimi",
+      "category": "Astrology",
+      "definition": "A planetary condition where a planet is within 17 minutes of arc from the exact center of the Sun. A cazimi planet is considered to be in the heart of the Sun and is traditionally viewed as greatly strengthened, receiving royal favor and exceptional clarity.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "center",
+      "term": "Center",
+      "category": "Foundation",
+      "definition": "One of nine energy hubs in the Human Design bodygraph. Centers can be defined (colored in, consistent energy) or undefined/open (white, taking in and amplifying energy from others). The nine Centers are Head, Ajna, Throat, G/Self, Heart/Ego, Sacral, Solar Plexus, Spleen, and Root.",
+      "aliases": [
+        "Centers"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ceres",
+      "term": "Ceres",
+      "category": "Astrology",
+      "definition": "A dwarf planet and the largest body in the asteroid belt, representing nurturing, sustenance, and the cycles of loss and return in astrology. Ceres indicates how a person gives and receives care, as well as themes of food, agriculture, and mothering.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "channel",
+      "term": "Channel",
+      "category": "Foundation",
+      "definition": "A connection between two Centers in the bodygraph, created when both Gates on either end are defined. There are 36 Channels in Human Design. A defined Channel creates Definition and brings specific life force energy and themes.",
+      "aliases": [
+        "Channels"
+      ],
+      "url": ""
+    },
+    {
+      "id": "chara-karakas",
+      "term": "Chara Karakas",
+      "category": "Astrology",
+      "definition": "A system of variable planetary significators in Jaimini astrology where each planet is assigned a specific role based on its degree position in the chart. The seven or eight chara karakas include Atmakaraka (soul), Amatyakaraka (career), and others signifying children, spouse, parents, and siblings. Unlike fixed karakas, these change from chart to chart.",
+      "aliases": [
+        "Jaimini Karakas"
+      ],
+      "url": ""
+    },
+    {
+      "id": "chart-ruler",
+      "term": "Chart Ruler",
+      "category": "Astrology",
+      "definition": "The planet that rules the sign on the Ascendant, serving as the primary significator for the native in traditional and modern astrology. The chart ruler's sign, house, and aspects provide key information about a person's overall life direction and temperament.",
+      "aliases": [
+        "Ruler of the Ascendant"
+      ],
+      "url": ""
+    },
+    {
+      "id": "chiron",
+      "term": "Chiron",
+      "category": "Astrology",
+      "definition": "A small celestial body orbiting between Saturn and Uranus, known as the Wounded Healer in astrology. Chiron's placement in the birth chart indicates deep wounds and the potential for profound healing and teaching through personal experience.",
+      "aliases": [
+        "The Wounded Healer"
+      ],
+      "url": ""
+    },
+    {
+      "id": "chiron-return",
+      "term": "Chiron Return",
+      "category": "Cycles",
+      "definition": "Around age 50-51. Brings encounter with core wounds and potential for profound healing, wisdom, and ability to guide others.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "chitra",
+      "term": "Chitra",
+      "category": "Astrology",
+      "definition": "The fourteenth nakshatra in Vedic astrology, spanning 23 degrees 20 minutes of Virgo to 6 degrees 40 minutes of Libra. Its ruling deity is Vishvakarma (divine architect), and its planetary ruler is Mars. It is associated with brilliance, artistry, and the creation of beautiful forms.",
+      "aliases": [
+        "Chitta"
+      ],
+      "url": ""
+    },
+    {
+      "id": "circuit",
+      "term": "Circuit",
+      "category": "Foundation",
+      "definition": "A grouping of channels sharing a common theme and energy flow. Three main groups: Individual, Tribal, and Collective, each with a distinct way of operating.",
+      "aliases": [
+        "Circuit Group",
+        "Circuitry"
+      ],
+      "url": ""
+    },
+    {
+      "id": "classic-builder",
+      "term": "Classic Builder",
+      "category": "BG5/Penta",
+      "definition": "BG5 Career Type equivalent of the Generator. Workforce powerhouse with sustainable life force, designed to respond to the right work.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "cognition",
+      "term": "Cognition",
+      "category": "Variables",
+      "definition": "The perceptual awareness aspect of Variable in Human Design, derived from the top-right Arrow. It indicates how your mind is designed to take in and process information from the world.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "collective-circuit",
+      "term": "Collective Circuit",
+      "category": "Foundation",
+      "definition": "Contains the Understanding (Logic) and Sensing (Abstract) Circuits. Theme is sharing, designed to benefit humanity through patterns and experience.",
+      "aliases": [
+        "Collective Circuitry"
+      ],
+      "url": ""
+    },
+    {
+      "id": "color",
+      "term": "Color",
+      "category": "Variables",
+      "definition": "A layer beneath the Line in the substructure of each activation. There are six Colors per Line. Color is the basis for Determination, Environment, Cognition, and Perspective in the Variable system.",
+      "aliases": [
+        "Colors"
+      ],
+      "url": ""
+    },
+    {
+      "id": "combust",
+      "term": "Combust",
+      "category": "Astrology",
+      "definition": "A planetary condition where a planet is within approximately 8 degrees of the Sun but outside cazimi range. A combust planet is considered weakened or hidden because the Sun's light overwhelms its visibility and capacity to function.",
+      "aliases": [
+        "Combustion"
+      ],
+      "url": ""
+    },
+    {
+      "id": "composite-chart",
+      "term": "Composite Chart",
+      "category": "Astrology",
+      "definition": "A single chart created by calculating the midpoints between corresponding planets in two natal charts. The composite chart represents the relationship itself as its own entity, revealing the purpose, dynamics, and potential of the partnership.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "composite-midpoint",
+      "term": "Composite Midpoint",
+      "category": "Astrology",
+      "definition": "A relationship chart created by calculating the midpoint between each pair of corresponding planets and points in two people's charts. The resulting composite chart represents the relationship itself as a distinct entity with its own dynamics. It is typically used alongside synastry to gain a fuller picture of how a partnership functions.",
+      "aliases": [
+        "Composite Chart"
+      ],
+      "url": ""
+    },
+    {
+      "id": "conditioning",
+      "term": "Conditioning",
+      "category": "Foundation",
+      "definition": "Energy entering through undefined and open centers from others, planets, and the neutrino field. Problematic when identified with and used for decision-making.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "conjunction",
+      "term": "Conjunction",
+      "category": "Astrology",
+      "definition": "A major aspect formed when two planets occupy the same or nearly the same degree of the zodiac, typically within an orb of 0 to 10 degrees. Conjunctions represent a fusion of planetary energies, intensifying and blending their combined influence.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "contra-antiscia",
+      "term": "Contra-antiscia",
+      "category": "Astrology",
+      "definition": "Mirror points across the Aries-Libra axis (the equinox axis), representing the opposite of antiscia. Planets in contra-antiscia form a hidden opposition and can indicate concealed tensions or adversarial relationships that operate beneath the surface.",
+      "aliases": [
+        "Contra-antiscium"
+      ],
+      "url": ""
+    },
+    {
+      "id": "critical-degree",
+      "term": "Critical Degree",
+      "category": "Astrology",
+      "definition": "Specific degrees within the zodiac considered to carry heightened energy and significance. The most commonly cited critical degrees are 0, 13, and 26 degrees of cardinal signs, 8 to 9 and 21 to 22 degrees of fixed signs, and 4 and 17 degrees of mutable signs.",
+      "aliases": [
+        "Critical Degrees"
+      ],
+      "url": ""
+    },
+    {
+      "id": "dashamsa",
+      "term": "Dashamsa (D10)",
+      "category": "Astrology",
+      "definition": "A divisional chart in Vedic astrology created by dividing each sign into ten equal parts of 3 degrees each. It is specifically used to analyze career, professional achievements, and public status. The placement and strength of planets in the dashamsa refine the career indications of the birth chart.",
+      "aliases": [
+        "Dasamsa",
+        "D10 Chart"
+      ],
+      "url": ""
+    },
+    {
+      "id": "davison-chart",
+      "term": "Davison Chart",
+      "category": "Astrology",
+      "definition": "A relationship chart calculated using the midpoint in time and space between two people's births, then casting a real chart for that moment and location. Unlike the composite chart, the Davison chart represents an actual moment in time and can be read like a standard natal chart.",
+      "aliases": [
+        "Davison Relationship Chart"
+      ],
+      "url": ""
+    },
+    {
+      "id": "davison-relationship-chart",
+      "term": "Davison Relationship Chart",
+      "category": "Astrology",
+      "definition": "A relationship chart calculated by finding the midpoint in time and space between two people's birth data, producing a single chart for an actual moment in time. Unlike the composite chart, the Davison chart corresponds to a real date, time, and location. It is used to assess the overall character, purpose, and trajectory of a relationship.",
+      "aliases": [
+        "Davison Chart"
+      ],
+      "url": ""
+    },
+    {
+      "id": "decan",
+      "term": "Decan",
+      "category": "Astrology",
+      "definition": "A 10-degree subdivision of each zodiac sign, dividing it into three equal parts. Each decan has its own planetary ruler and adds subtle variation to a sign's expression, distinguishing planets at early, middle, and late degrees of the same sign.",
+      "aliases": [
+        "Decanate"
+      ],
+      "url": ""
+    },
+    {
+      "id": "decennials",
+      "term": "Decennials",
+      "category": "Astrology",
+      "definition": "A Hellenistic time lord technique that divides life into successive periods ruled by pairs of planets, based on the sect of the chart and the position of the luminaries. Each major period lasts a specific number of years, with sub-periods ruled by a second planet. The system was described by the 2nd-century astrologer Vettius Valens.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "deconditioning",
+      "term": "Deconditioning",
+      "category": "Foundation",
+      "definition": "The process of releasing conditioning patterns from open and undefined centers. Takes approximately seven years as every cell is replaced. Begins when living by Strategy and Authority.",
+      "aliases": [
+        "Seven-Year Deconditioning"
+      ],
+      "url": ""
+    },
+    {
+      "id": "defined-center",
+      "term": "Defined Center",
+      "category": "Foundation",
+      "definition": "A center that is colored in with at least one complete channel. Represents consistent, reliable energy that radiates outward to condition others.",
+      "aliases": [
+        "Fixed Center"
+      ],
+      "url": ""
+    },
+    {
+      "id": "definition",
+      "term": "Definition",
+      "category": "Foundation",
+      "definition": "How the defined Centers in a bodygraph are connected to each other. Types of Definition include Single (all defined Centers connected), Split (two separate groups), Triple Split (three groups), and Quadruple Split (four groups). No Definition is a Reflector.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "demon-realm",
+      "term": "Demon Realm",
+      "category": "Foundation",
+      "definition": "A deep sleep state where the Personality Crystal leaves the body entirely, leaving it to the Design Crystal's intelligence. Part of why sleeping alone in one's own aura matters.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "descendant",
+      "term": "Descendant",
+      "category": "Astrology",
+      "definition": "The zodiac sign and degree setting on the western horizon at the time of birth, directly opposite the Ascendant. The Descendant defines the cusp of the 7th House and reveals qualities a person seeks in partners and close relationships.",
+      "aliases": [
+        "DSC",
+        "DC"
+      ],
+      "url": ""
+    },
+    {
+      "id": "design",
+      "term": "Design",
+      "category": "Foundation",
+      "definition": "The unconscious side of a Human Design chart, calculated approximately 88 days before birth. Design activations are shown in red on the bodygraph. These represent qualities that operate unconsciously and are often more visible to others.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "design-crystal",
+      "term": "Design Crystal",
+      "category": "Foundation",
+      "definition": "The body's unconscious intelligence and bio-genetic inheritance. Calculated from approximately 88 degrees of the Sun's arc before birth. Corresponds to the red activations.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "desire-motivation",
+      "term": "Desire (Motivation)",
+      "category": "Variables",
+      "definition": "One of six Motivation types (Color 3). Drives awareness through wanting and passion, locking onto specific goals.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "determination",
+      "term": "Determination",
+      "category": "Variables",
+      "definition": "The dietary regimen aspect of Variable in Human Design, derived from the top-left Arrow. It indicates how you are designed to best take in food and nourishment for optimal health and well-being.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "detriment",
+      "term": "Detriment",
+      "category": "Astrology",
+      "definition": "The sign opposite a planet's domicile, where the planet is considered weakened and uncomfortable. A planet in detriment must work harder to express its nature, such as Mars in Libra or Venus in Scorpio.",
+      "aliases": [
+        "Exile"
+      ],
+      "url": ""
+    },
+    {
+      "id": "dhana-yoga",
+      "term": "Dhana Yoga",
+      "category": "Astrology",
+      "definition": "A wealth-producing combination in Vedic astrology formed when lords of specific houses (especially the 2nd, 5th, 9th, and 11th) combine by conjunction, aspect, or exchange. The number and strength of dhana yogas in a chart indicate the native's potential for financial prosperity. Multiple dhana yogas amplify the effect.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "dhanishta",
+      "term": "Dhanishta",
+      "category": "Astrology",
+      "definition": "The twenty-third nakshatra in Vedic astrology, spanning 23 degrees 20 minutes of Capricorn to 6 degrees 40 minutes of Aquarius. Its ruling deity is the Vasus (eight elemental gods), and its planetary ruler is Mars. It is associated with wealth, rhythm, music, and abundance.",
+      "aliases": [
+        "Dhanishtha",
+        "Avittam"
+      ],
+      "url": ""
+    },
+    {
+      "id": "digestion",
+      "term": "Digestion",
+      "category": "Variables",
+      "definition": "How the body is designed to take in and process food. Determined by Design Sun/Earth Color and Tone, a key component of PHS.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "direct-motion",
+      "term": "Direct Motion",
+      "category": "Astrology",
+      "definition": "The normal forward movement of a planet through the zodiac signs in their natural order. A planet in direct motion is considered to be functioning normally and expressing its energies in a straightforward, outward manner.",
+      "aliases": [
+        "Direct"
+      ],
+      "url": ""
+    },
+    {
+      "id": "disappointment",
+      "term": "Disappointment",
+      "category": "Foundation",
+      "definition": "The Not-Self theme of the Reflector Type. When making decisions too quickly without waiting a full lunar cycle, disappointment results.",
+      "aliases": [
+        "Reflector Not-Self"
+      ],
+      "url": ""
+    },
+    {
+      "id": "dispositor",
+      "term": "Dispositor",
+      "category": "Astrology",
+      "definition": "The planet that rules the sign another planet occupies, thereby having authority over that planet. For example, if Venus is in Capricorn, Saturn is the dispositor of Venus because Saturn rules Capricorn.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "diurnal-chart",
+      "term": "Diurnal Chart",
+      "category": "Astrology",
+      "definition": "A birth chart where the Sun is above the horizon, indicating a daytime birth. In a diurnal chart, the Sun, Jupiter, and Saturn belong to the diurnal sect and tend to express their energies more favorably.",
+      "aliases": [
+        "Day Chart"
+      ],
+      "url": ""
+    },
+    {
+      "id": "divisional-charts",
+      "term": "Divisional Charts/Vargas",
+      "category": "Astrology",
+      "definition": "A system of sub-charts in Vedic astrology created by dividing each zodiac sign into smaller segments, with each division mapped to a new chart. There are 16 primary divisional charts (Shodashavarga), each revealing specific life areas such as marriage (D9), career (D10), or parents (D12). They provide a layered, detailed analysis that supplements the birth chart.",
+      "aliases": [
+        "Vargas",
+        "Varga Charts",
+        "Amsa Charts"
+      ],
+      "url": ""
+    },
+    {
+      "id": "domicile",
+      "term": "Domicile",
+      "category": "Astrology",
+      "definition": "The sign a planet rules and where it is considered most at home and powerful. A planet in its domicile can express its nature freely and effectively, such as Mars in Aries or Venus in Taurus.",
+      "aliases": [
+        "Rulership"
+      ],
+      "url": ""
+    },
+    {
+      "id": "draconic-chart",
+      "term": "Draconic Chart",
+      "category": "Astrology",
+      "definition": "An astrological chart created by rotating the entire natal chart so that the north lunar node becomes 0 degrees Aries. All other planets and points shift by the same amount, revealing what is considered the soul's blueprint or pre-incarnation intent. It is used to explore karmic patterns and is often compared with the natal chart for deeper insight.",
+      "aliases": [
+        "Draconic Natal Chart"
+      ],
+      "url": ""
+    },
+    {
+      "id": "draconic-zodiac",
+      "term": "Draconic Zodiac",
+      "category": "Astrology",
+      "definition": "A zodiac framework anchored to the north lunar node rather than the vernal equinox or fixed stars. The north node defines 0 degrees Aries, and all planetary positions are recalculated relative to this point. It is interpreted as representing the soul level of the chart, distinct from the personality-level tropical or sidereal placements.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "drekkana",
+      "term": "Drekkana (D3)",
+      "category": "Astrology",
+      "definition": "A divisional chart in Vedic astrology created by dividing each sign into three equal parts of 10 degrees each. It is primarily used to examine siblings, courage, and communication abilities. The drekkana also has applications in assessing the nature of illness in medical astrology.",
+      "aliases": [
+        "Dreshkana",
+        "D3 Chart"
+      ],
+      "url": ""
+    },
+    {
+      "id": "dusthana-houses",
+      "term": "Dusthana Houses",
+      "category": "Astrology",
+      "definition": "The 6th, 8th, and 12th houses in Vedic astrology, traditionally considered challenging or inauspicious placements. They relate to enemies and disease (6th), sudden upheaval and transformation (8th), and loss and liberation (12th). Planets placed in dusthana houses face obstacles but can also produce spiritual growth and hidden strength.",
+      "aliases": [
+        "Dusthana Bhavas",
+        "Trik Houses"
+      ],
+      "url": ""
+    },
+    {
+      "id": "earth-element",
+      "term": "Earth Element",
+      "category": "Astrology",
+      "definition": "One of the four classical elements in astrology, encompassing Taurus, Virgo, and Capricorn. Earth signs are associated with practicality, material concerns, stability, and grounded energy.",
+      "aliases": [
+        "Earth Signs"
+      ],
+      "url": ""
+    },
+    {
+      "id": "earth-plane",
+      "term": "Earth Plane",
+      "category": "Foundation",
+      "definition": "A concept related to sleep states where the body processes daily conditioning. Represents the grounded, physical realm of experience in the sleep cycle.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "eclipse-season",
+      "term": "Eclipse Season",
+      "category": "Astrology",
+      "definition": "A period of approximately 34 to 38 days occurring twice a year when the Sun is close enough to the lunar nodes for eclipses to take place. Eclipse seasons are considered times of accelerated change, fated developments, and heightened sensitivity to the nodal axis themes.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "ego-manifested-authority",
+      "term": "Ego Manifested Authority",
+      "category": "Foundation",
+      "definition": "Found exclusively in Manifestors with the Heart Center connected directly to the Throat. Decisions are made through willpower expressed directly through speech.",
+      "aliases": [
+        "Heart Manifested Authority"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ego-projected-authority",
+      "term": "Ego Projected Authority",
+      "category": "Foundation",
+      "definition": "A rare authority found only in Projectors with the Heart Center connected to the G Center. Correct decisions come from listening to what they say about their desires when invited.",
+      "aliases": [
+        "Heart Projected Authority"
+      ],
+      "url": ""
+    },
+    {
+      "id": "electional-astrology",
+      "term": "Electional Astrology",
+      "category": "Astrology",
+      "definition": "A branch of astrology focused on selecting the most favorable time to begin an important activity or event. Electional astrology applies chart analysis in reverse, choosing planetary alignments that support the desired outcome for weddings, business launches, surgeries, and other significant undertakings.",
+      "aliases": [
+        "Electional"
+      ],
+      "url": ""
+    },
+    {
+      "id": "electromagnetic-connection",
+      "term": "Electromagnetic Connection",
+      "category": "Foundation",
+      "definition": "When one person has a Gate on one end of a channel and another has the Gate on the other end, completing the channel. Creates powerful attraction and shared energy.",
+      "aliases": [
+        "EM Connection"
+      ],
+      "url": ""
+    },
+    {
+      "id": "emotional-authority",
+      "term": "Emotional Authority",
+      "category": "Foundation",
+      "definition": "The most common inner authority, found in approximately 50% of the population. The Solar Plexus operates as a wave that must be ridden over time. The key principle is there is no truth in the now.",
+      "aliases": [
+        "Solar Plexus Authority"
+      ],
+      "url": ""
+    },
+    {
+      "id": "environment",
+      "term": "Environment",
+      "category": "Variables",
+      "definition": "The spatial awareness aspect of Variable in Human Design, derived from the bottom-left Arrow. It indicates the type of physical environment where you thrive and operate most correctly.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "ephemeris",
+      "term": "Ephemeris",
+      "category": "Astrology",
+      "definition": "A table or reference listing the daily positions of celestial bodies over a period of time. Astrologers use an ephemeris to look up planetary positions for chart calculation, transit tracking, and predictive work.",
+      "aliases": [
+        "Ephemerides"
+      ],
+      "url": ""
+    },
+    {
+      "id": "equal-house",
+      "term": "Equal House",
+      "category": "Astrology",
+      "definition": "A house system where each house spans exactly 30 degrees starting from the Ascendant degree. The Midheaven floats freely and may fall in a house other than the 10th. It is valued for its simplicity and works well at all latitudes.",
+      "aliases": [
+        "Equal House System"
+      ],
+      "url": ""
+    },
+    {
+      "id": "evaluator",
+      "term": "Evaluator",
+      "category": "BG5/Penta",
+      "definition": "BG5 Career Type equivalent of the Reflector. Samples and assesses work environment health, providing valuable organizational feedback.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "evolutionary-astrology",
+      "term": "Evolutionary Astrology",
+      "category": "Astrology",
+      "definition": "A modern astrological approach developed primarily by Jeffrey Wolf Green and Steven Forrest that interprets the birth chart through the lens of soul evolution and reincarnation. It emphasizes the lunar nodes (especially Pluto's relationship to them) as indicators of past-life patterns and current evolutionary intentions. The approach focuses on growth, choice, and the soul's ongoing development across lifetimes.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "exaltation",
+      "term": "Exaltation",
+      "category": "Astrology",
+      "definition": "A sign where a planet is honored and elevated, functioning with special strength though in a different manner than in domicile. For example, the Sun is exalted in Aries and Saturn is exalted in Libra.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "express-builder",
+      "term": "Express Builder",
+      "category": "BG5/Penta",
+      "definition": "BG5 Career Type equivalent of the Manifesting Generator. Combines sustainable life force with ability to initiate, fast and multi-capable.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "face-decan",
+      "term": "Face/Decan",
+      "category": "Astrology",
+      "definition": "A system of essential dignity that divides each zodiac sign into three equal 10-degree segments, each ruled by a different planet. Faces or decans represent the weakest level of essential dignity and add subtle coloring to a planet's expression within a sign.",
+      "aliases": [
+        "Face",
+        "Decan"
+      ],
+      "url": ""
+    },
+    {
+      "id": "fagan-bradley-ayanamsa",
+      "term": "Fagan-Bradley Ayanamsa",
+      "category": "Astrology",
+      "definition": "An ayanamsa developed by Western sidereal astrologers Cyril Fagan and Donald Bradley in the mid-20th century. It differs from the Lahiri ayanamsa by approximately 1 degree and is the standard reference point for Western sidereal astrology. Its value is based on the synetic vernal point derived from ancient Egyptian and Babylonian records.",
+      "aliases": [
+        "Fagan-Bradley"
+      ],
+      "url": ""
+    },
+    {
+      "id": "fall",
+      "term": "Fall",
+      "category": "Astrology",
+      "definition": "The sign opposite a planet's exaltation, where the planet is considered at its weakest essential dignity. A planet in fall struggles to express its best qualities, such as the Sun in Libra or Saturn in Aries.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "fear-motivation",
+      "term": "Fear (Motivation)",
+      "category": "Variables",
+      "definition": "One of six Motivation types (Color 1). Drives awareness through alertness and caution, a survival-oriented focus.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "feeling-cognition",
+      "term": "Feeling (Cognition)",
+      "category": "Variables",
+      "definition": "One of six Cognition types (Tone 5). Processes information through emotional and sensory impressions, sensitivity to atmosphere.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "feminine-yin-polarity",
+      "term": "Feminine/Yin Polarity",
+      "category": "Astrology",
+      "definition": "One of the two polarities in astrology, assigned to earth and water signs. Feminine or yin signs (Taurus, Cancer, Virgo, Scorpio, Capricorn, Pisces) are considered introverted, receptive, and inwardly directed.",
+      "aliases": [
+        "Negative Signs",
+        "Yin Signs",
+        "Feminine Signs"
+      ],
+      "url": ""
+    },
+    {
+      "id": "final-dispositor",
+      "term": "Final Dispositor",
+      "category": "Astrology",
+      "definition": "A planet in its own domicile that sits at the end of the dispositor chain, meaning all other planets ultimately trace their rulership back to it. A chart with a final dispositor has a single planet that anchors and unifies the entire chart's energy.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "firdaria",
+      "term": "Firdaria",
+      "category": "Astrology",
+      "definition": "A medieval timing technique that assigns sequential planetary rulership periods across a person's life, with different sequences for diurnal and nocturnal charts. Each planet rules a multi-year period and collaborates with sub-period rulers, coloring the themes and experiences of those years.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "fire-element",
+      "term": "Fire Element",
+      "category": "Astrology",
+      "definition": "One of the four classical elements in astrology, encompassing Aries, Leo, and Sagittarius. Fire signs are associated with energy, enthusiasm, inspiration, and action-oriented behavior.",
+      "aliases": [
+        "Fire Signs"
+      ],
+      "url": ""
+    },
+    {
+      "id": "first-quarter",
+      "term": "First Quarter",
+      "category": "Astrology",
+      "definition": "The lunar phase when the Moon is 90 degrees ahead of the Sun and appears half-illuminated. The first quarter represents a crisis of action, requiring decisions, adjustments, and commitment to overcome early obstacles in the lunar cycle.",
+      "aliases": [
+        "First Quarter Moon"
+      ],
+      "url": ""
+    },
+    {
+      "id": "fish",
+      "term": "Fish",
+      "category": "Foundation",
+      "definition": "One of four animal categories in the Variable system. A specific pattern of strategic and receptive orientations influencing dietary requirements and information processing.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "fixed",
+      "term": "Fixed",
+      "category": "Astrology",
+      "definition": "One of the three modalities in astrology, encompassing Taurus, Leo, Scorpio, and Aquarius. Fixed signs sustain and stabilize energy in the middle of each season, representing determination and persistence.",
+      "aliases": [
+        "Fixed Signs",
+        "Fixed Modality"
+      ],
+      "url": ""
+    },
+    {
+      "id": "fixed-stars",
+      "term": "Fixed Stars",
+      "category": "Astrology",
+      "definition": "Stars and stellar objects beyond the solar system that are used as interpretive points in astrology, particularly in traditional and medieval practice. Despite their name, fixed stars precess slowly through the tropical zodiac at about one degree every 72 years, and they add powerful layers of meaning when conjunct natal planets or angles.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "fomalhaut",
+      "term": "Fomalhaut",
+      "category": "Astrology",
+      "definition": "One of the four Royal Stars of Persia, located at approximately 4 degrees Pisces in tropical astrology. Fomalhaut is associated with idealism, mystical vision, fame, and great potential, with the condition that success requires maintaining integrity and avoiding corruption.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "frustration",
+      "term": "Frustration",
+      "category": "Foundation",
+      "definition": "The Not-Self theme of the Generator Type. When initiating rather than responding, the result is frustration from using Sacral energy on wrong things.",
+      "aliases": [
+        "Generator Not-Self"
+      ],
+      "url": ""
+    },
+    {
+      "id": "full-moon",
+      "term": "Full Moon",
+      "category": "Astrology",
+      "definition": "The lunar phase when the Sun and Moon are in opposition, approximately 180 degrees apart, and the Moon appears fully illuminated. The full moon represents culmination, completion, heightened emotions, and the manifestation of intentions set at the previous new moon.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "g-center",
+      "term": "G Center",
+      "category": "Foundation",
+      "definition": "The center of identity, love, and direction. It houses the Magnetic Monopole, which holds together our illusion of separateness and guides us along our correct geometry in life.",
+      "aliases": [
+        "Self Center",
+        "Identity Center"
+      ],
+      "url": ""
+    },
+    {
+      "id": "gaja-kesari-yoga",
+      "term": "Gaja Kesari Yoga",
+      "category": "Astrology",
+      "definition": "A beneficial yoga in Vedic astrology formed when Jupiter is in a kendra (1st, 4th, 7th, or 10th house) from the Moon. The name means 'elephant-lion,' signifying strength and nobility. It bestows wisdom, reputation, and the capacity to influence and lead others.",
+      "aliases": [
+        "Gajakesari Yoga"
+      ],
+      "url": ""
+    },
+    {
+      "id": "gandanta",
+      "term": "Gandanta",
+      "category": "Astrology",
+      "definition": "The junction points between water and fire signs in Vedic astrology (Pisces-Aries, Cancer-Leo, Scorpio-Sagittarius), considered spiritually sensitive and karmically intense zones. Planets or the Ascendant placed in gandanta degrees (the last 3 degrees 20 minutes of a water sign or first 3 degrees 20 minutes of a fire sign) indicate deep karmic knots. These points are especially significant for the Moon's placement at birth.",
+      "aliases": [
+        "Gandanta Points"
+      ],
+      "url": ""
+    },
+    {
+      "id": "gate",
+      "term": "Gate",
+      "category": "Foundation",
+      "definition": "One of 64 energy points in the bodygraph, corresponding to the 64 hexagrams of the I Ching. Each Gate carries a specific theme and energy. When two Gates at opposite ends of a Channel are both defined, they form a complete Channel.",
+      "aliases": [
+        "Gates"
+      ],
+      "url": ""
+    },
+    {
+      "id": "gemini",
+      "term": "Gemini",
+      "category": "Astrology",
+      "definition": "The third sign of the zodiac, spanning 60 to 90 degrees of the ecliptic. Gemini is a mutable air sign ruled by Mercury, associated with communication, curiosity, and adaptability.",
+      "aliases": [
+        "The Twins"
+      ],
+      "url": ""
+    },
+    {
+      "id": "generator",
+      "term": "Generator",
+      "category": "Foundation",
+      "definition": "One of the five Types in Human Design. Generators have a defined Sacral Center and are designed to respond to life rather than initiate. They have sustainable life force energy when engaged in work they love.",
+      "aliases": [
+        "Generators"
+      ],
+      "url": "/celebrities/type/generator/"
+    },
+    {
+      "id": "global-cycle",
+      "term": "Global Cycle",
+      "category": "Cycles",
+      "definition": "Large-scale evolutionary cycles affecting humanity, determined by slow-moving outer planets through the Rave Mandala gates.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "graha",
+      "term": "Graha",
+      "category": "Astrology",
+      "definition": "The Sanskrit term for a planet or celestial body used in Vedic astrology. The traditional scheme includes nine grahas: Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, and Ketu. The word graha literally means 'that which seizes or grasps.'",
+      "aliases": [
+        "Navagraha"
+      ],
+      "url": ""
+    },
+    {
+      "id": "grand-cross",
+      "term": "Grand Cross",
+      "category": "Astrology",
+      "definition": "An aspect pattern formed when four planets create two oppositions that square each other, forming a cross or square shape in the chart. The grand cross represents intense tension, tremendous drive, and significant challenges that demand constant effort to manage.",
+      "aliases": [
+        "Grand Square"
+      ],
+      "url": ""
+    },
+    {
+      "id": "grand-trine",
+      "term": "Grand Trine",
+      "category": "Astrology",
+      "definition": "An aspect pattern formed when three planets are each approximately 120 degrees apart, creating an equilateral triangle in the chart. A grand trine indicates exceptional ease and flow in one element, though it can also represent complacency if not actively utilized.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "guilt-motivation",
+      "term": "Guilt (Motivation)",
+      "category": "Variables",
+      "definition": "One of six Motivation types (Color 5). Drives awareness through duty and responsibility, attuned to obligations.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "hanging-gate",
+      "term": "Hanging Gate",
+      "category": "Foundation",
+      "definition": "An activated Gate without its corresponding harmonic Gate to form a channel. Creates an electromagnetic pull toward people who carry the other half.",
+      "aliases": [
+        "Dormant Gate"
+      ],
+      "url": ""
+    },
+    {
+      "id": "hasta",
+      "term": "Hasta",
+      "category": "Astrology",
+      "definition": "The thirteenth nakshatra in Vedic astrology, spanning 10 degrees to 23 degrees 20 minutes of Virgo. Its ruling deity is Savitar (the Sun as creative force), and its planetary ruler is the Moon. It is associated with skillfulness, craftsmanship, and the ability to manifest goals.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "hayz",
+      "term": "Hayz",
+      "category": "Astrology",
+      "definition": "A condition of accidental dignity where a planet is in agreement with the chart's sect, the correct hemisphere, and a sign of matching gender. A planet in hayz is considered to be in its most comfortable and effective condition, fully aligned with its nature.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "head-center",
+      "term": "Head Center",
+      "category": "Foundation",
+      "definition": "A pressure center at the top of the Bodygraph that creates mental pressure to think, question, and seek inspiration. It is the center of inspiration and mental anxiety.",
+      "aliases": [
+        "Head"
+      ],
+      "url": ""
+    },
+    {
+      "id": "heart-center",
+      "term": "Heart Center",
+      "category": "Foundation",
+      "definition": "The motor center of willpower, self-worth, and the material world, also called the Ego Center. Governs the capacity to make and keep promises and compete. Only about 30% of the population has it defined.",
+      "aliases": [
+        "Ego Center",
+        "Will Center"
+      ],
+      "url": ""
+    },
+    {
+      "id": "heliacal-rising",
+      "term": "Heliacal Rising",
+      "category": "Astrology",
+      "definition": "The first visible appearance of a star or planet on the eastern horizon just before sunrise, after a period of invisibility due to conjunction with the Sun. The heliacal rising of Sirius was critically important in ancient Egyptian astrology, and heliacal phases of planets carry special significance in traditional practice.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "hexagram",
+      "term": "Hexagram",
+      "category": "Foundation",
+      "definition": "A six-line figure from the I Ching forming the basis of each of the 64 Gates. Consists of two trigrams creating six lines corresponding to the Lines of each Gate.",
+      "aliases": [
+        "Hex"
+      ],
+      "url": ""
+    },
+    {
+      "id": "hope-motivation",
+      "term": "Hope (Motivation)",
+      "category": "Variables",
+      "definition": "One of six Motivation types (Color 2). Drives awareness through optimism and trust in positive outcomes.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "horary-astrology",
+      "term": "Horary Astrology",
+      "category": "Astrology",
+      "definition": "A branch of astrology that answers specific questions by casting a chart for the moment the question is clearly understood by the astrologer. Horary uses strict traditional rules and dignities to provide concrete yes-or-no answers and detailed descriptions of outcomes.",
+      "aliases": [
+        "Horary"
+      ],
+      "url": ""
+    },
+    {
+      "id": "i-ching",
+      "term": "I Ching",
+      "category": "Foundation",
+      "definition": "The ancient Chinese Book of Changes providing the 64 hexagrams for the 64 Gates. Ra Uru Hu synthesized it with astrology, Kabbalah, and the Chakra system.",
+      "aliases": [
+        "Book of Changes",
+        "Yi Jing"
+      ],
+      "url": ""
+    },
+    {
+      "id": "iau-constellation-boundaries",
+      "term": "IAU Constellation Boundaries",
+      "category": "Astrology",
+      "definition": "The official boundaries of the 88 constellations as defined by the International Astronomical Union in 1930. In true sidereal astrology, these boundaries determine when the Sun, Moon, and planets transition from one constellation-sign to another. Because constellations vary in size, some zodiacal constellations span as little as 7 degrees (Scorpius) or as much as 44 degrees (Virgo).",
+      "aliases": [
+        "IAU Boundaries"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ic",
+      "term": "IC",
+      "category": "Astrology",
+      "definition": "The lowest point of the ecliptic in a birth chart, marking the cusp of the 4th House and directly opposing the Midheaven. The IC represents private life, emotional roots, family heritage, and the foundation of one's inner world.",
+      "aliases": [
+        "Imum Coeli",
+        "Nadir"
+      ],
+      "url": ""
+    },
+    {
+      "id": "incarnation-cross",
+      "term": "Incarnation Cross",
+      "category": "Foundation",
+      "definition": "The primary life purpose theme in Human Design, determined by the Sun and Earth positions in both Personality and Design. There are 192 basic Incarnation Crosses, each carrying a unique life theme.",
+      "aliases": [
+        "Incarnation Crosses",
+        "Cross"
+      ],
+      "url": ""
+    },
+    {
+      "id": "individual-circuit",
+      "term": "Individual Circuit",
+      "category": "Foundation",
+      "definition": "Contains the Knowing and Centering Circuits. Theme is empowerment and mutation. Operates in pulses of melancholy and inspiration.",
+      "aliases": [
+        "Individual Circuitry"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ingress",
+      "term": "Ingress",
+      "category": "Astrology",
+      "definition": "The moment a planet enters a new zodiac sign, marking a shift in how that planet's energy is expressed. Ingresses are significant in mundane astrology, where the Sun's entry into cardinal signs (the equinoxes and solstices) is used to forecast seasonal and national themes.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "inner-vision",
+      "term": "Inner Vision",
+      "category": "Variables",
+      "definition": "One of six Cognition types (Tone 4). Processes information through internal imagery, visualization, and dreams.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "innocence-motivation",
+      "term": "Innocence (Motivation)",
+      "category": "Variables",
+      "definition": "One of six Motivation types (Color 6). Drives awareness through pure, unfiltered perception without agenda.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "integration-channels",
+      "term": "Integration Channels",
+      "category": "Foundation",
+      "definition": "Four special channels not belonging to any circuit group. Self-oriented, focused on survival: 20-57, 20-34, 10-57, and 34-57.",
+      "aliases": [
+        "Integration Circuit"
+      ],
+      "url": ""
+    },
+    {
+      "id": "interception",
+      "term": "Interception",
+      "category": "Astrology",
+      "definition": "A condition in certain house systems where an entire zodiac sign is contained within a house without appearing on either cusp. Intercepted signs and their rulers are considered blocked or hidden, requiring extra effort to access their energies consciously.",
+      "aliases": [
+        "Intercepted Sign"
+      ],
+      "url": ""
+    },
+    {
+      "id": "investigator-bg5",
+      "term": "Investigator (BG5)",
+      "category": "BG5/Penta",
+      "definition": "BG5 Career Type equivalent of the Manifestor. Initiator designed to inform others, excelling in roles requiring independent vision.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "j2000-epoch",
+      "term": "J2000 Epoch",
+      "category": "Astrology",
+      "definition": "A standard astronomical reference point defined as January 1, 2000, at 12:00 Terrestrial Time. It provides a fixed coordinate system for measuring celestial positions without ongoing precessional drift. In J2000-based astrology, planetary positions are calculated relative to this fixed reference frame.",
+      "aliases": [
+        "J2000.0",
+        "Epoch J2000"
+      ],
+      "url": ""
+    },
+    {
+      "id": "j2000-zodiac",
+      "term": "J2000 Zodiac",
+      "category": "Astrology",
+      "definition": "A zodiac system that fixes the sign boundaries at their positions as of the J2000 epoch (January 1, 2000). Unlike the tropical zodiac, it does not shift with the seasons, and unlike the traditional sidereal zodiac, it does not rely on a specific star as its anchor point. It provides a stable, astronomically defined coordinate framework for chart calculation.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "juno",
+      "term": "Juno",
+      "category": "Astrology",
+      "definition": "An asteroid representing committed partnerships, marriage, and the balance of power in relationships. Juno indicates what a person needs in a long-term partner and how they navigate themes of loyalty, equality, and compromise.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "jupiter",
+      "term": "Jupiter",
+      "category": "Astrology",
+      "definition": "The planet of expansion, growth, abundance, and wisdom in astrology. Jupiter rules Sagittarius and traditionally co-rules Pisces, representing optimism, higher learning, and good fortune.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "jupiter-return",
+      "term": "Jupiter Return",
+      "category": "Cycles",
+      "definition": "Approximately every 12 years. Each return brings expansion, opportunity, and a new growth chapter at ages 12, 24, 36, 48, 60.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "jyeshtha",
+      "term": "Jyeshtha",
+      "category": "Astrology",
+      "definition": "The eighteenth nakshatra in Vedic astrology, spanning 16 degrees 40 minutes to 30 degrees of Scorpio. Its ruling deity is Indra (king of the gods), and its planetary ruler is Mercury. It is associated with seniority, protective power, and the responsibilities that come with authority.",
+      "aliases": [
+        "Jyeshta",
+        "Kettai"
+      ],
+      "url": ""
+    },
+    {
+      "id": "jyotish",
+      "term": "Jyotish",
+      "category": "Astrology",
+      "definition": "The traditional Hindu system of astrology, also known as Vedic astrology, rooted in ancient Indian scriptures. It uses the Sidereal zodiac and incorporates unique techniques such as nakshatras, dashas, and divisional charts. Jyotish translates to 'science of light' in Sanskrit.",
+      "aliases": [
+        "Vedic Astrology",
+        "Hindu Astrology",
+        "Indian Astrology"
+      ],
+      "url": ""
+    },
+    {
+      "id": "kaal-sarpa-dosha",
+      "term": "Kaal Sarpa Dosha",
+      "category": "Astrology",
+      "definition": "A condition in Vedic astrology where all seven visible planets are hemmed between Rahu and Ketu in the birth chart. It is believed to create recurring obstacles, karmic intensity, and sudden reversals in the native's life. The severity varies depending on which houses Rahu and Ketu occupy.",
+      "aliases": [
+        "Kala Sarpa Dosha",
+        "Kala Sarpa Yoga"
+      ],
+      "url": ""
+    },
+    {
+      "id": "karana",
+      "term": "Karana",
+      "category": "Astrology",
+      "definition": "Half of a tithi in the Vedic calendar, representing the time it takes for the Moon to gain 6 degrees from the Sun. There are 11 karanas, with four fixed and seven rotating through the lunar month. Karanas are one of the five elements of the panchang and influence the quality of time for initiating activities.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "kendra-houses",
+      "term": "Kendra Houses",
+      "category": "Astrology",
+      "definition": "The 1st, 4th, 7th, and 10th houses in Vedic astrology, corresponding to the four angles of the chart. They are the pillars of the horoscope and represent the most visible and action-oriented areas of life. Strong planets in kendra houses give the native power, stability, and the ability to manifest results.",
+      "aliases": [
+        "Angular Houses (Vedic)",
+        "Kendra Bhavas"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ketu",
+      "term": "Ketu",
+      "category": "Astrology",
+      "definition": "The south lunar node in Vedic astrology, considered a shadow planet that represents spiritual liberation, detachment, past-life mastery, and dissolution of material attachments. Ketu's house and sign placement indicate areas of innate skill but also loss, apathy, or renunciation. It is always exactly opposite Rahu in the chart.",
+      "aliases": [
+        "South Node (Vedic)"
+      ],
+      "url": ""
+    },
+    {
+      "id": "kitchens",
+      "term": "Kitchens",
+      "category": "Variables",
+      "definition": "One of six Environment types (Color 3). A warm, communal gathering space centered around nourishment and transformation.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "kite",
+      "term": "Kite",
+      "category": "Astrology",
+      "definition": "An aspect pattern formed when a grand trine has one planet that also opposes a fourth planet, which sextiles the other two trine planets. The kite adds focus and direction to the ease of a grand trine, channeling talent into productive achievement through the opposition.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "koch",
+      "term": "Koch",
+      "category": "Astrology",
+      "definition": "A house system developed by Walter Koch that divides the houses based on the time it takes for the Ascendant degree to reach each house cusp. It is similar to Placidus but uses a different method of time-based division. Like Placidus, it becomes problematic at very high latitudes.",
+      "aliases": [
+        "Koch House System",
+        "GOH"
+      ],
+      "url": ""
+    },
+    {
+      "id": "krishnamurti-ayanamsa",
+      "term": "Krishnamurti Ayanamsa",
+      "category": "Astrology",
+      "definition": "An ayanamsa developed by K.S. Krishnamurti as part of his Krishnamurti Paddhati (KP) system of Vedic astrology. It is very close to the Lahiri ayanamsa but differs by a few arc-minutes. The KP system uses this ayanamsa along with a unique sub-lord system based on nakshatra subdivisions for precise prediction.",
+      "aliases": [
+        "KP Ayanamsa"
+      ],
+      "url": ""
+    },
+    {
+      "id": "krittika",
+      "term": "Krittika",
+      "category": "Astrology",
+      "definition": "The third nakshatra in Vedic astrology, spanning 26 degrees 40 minutes of Aries to 10 degrees of Taurus. Its ruling deity is Agni (god of fire), and its planetary ruler is the Sun. It is associated with purification, sharpness, and cutting through illusion.",
+      "aliases": [
+        "Karthika",
+        "Krttika"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lagna",
+      "term": "Lagna",
+      "category": "Astrology",
+      "definition": "The Sanskrit term for the Ascendant or rising sign in Vedic astrology, representing the degree of the zodiac rising on the eastern horizon at the time of birth. It is the most important point in the Vedic chart, determining the arrangement of all houses. The lagna signifies the native's physical body, personality, and overall life direction.",
+      "aliases": [
+        "Vedic Ascendant"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lahiri-ayanamsa",
+      "term": "Lahiri Ayanamsa",
+      "category": "Astrology",
+      "definition": "The most commonly used ayanamsa in Vedic astrology, officially adopted by the Indian government in 1956 based on the work of astronomer N.C. Lahiri. It places the starting point of the sidereal zodiac based on the star Spica (Chitra) at exactly 0 degrees Libra. As of 2024, the Lahiri ayanamsa is approximately 24 degrees 12 minutes.",
+      "aliases": [
+        "Chitrapaksha Ayanamsa"
+      ],
+      "url": ""
+    },
+    {
+      "id": "last-quarter",
+      "term": "Last Quarter",
+      "category": "Astrology",
+      "definition": "The lunar phase when the Moon is 90 degrees behind the Sun and appears half-illuminated on the left side. The last quarter represents a crisis of consciousness, prompting reflection, re-evaluation, and the release of what no longer serves.",
+      "aliases": [
+        "Last Quarter Moon",
+        "Third Quarter"
+      ],
+      "url": ""
+    },
+    {
+      "id": "left-arrow",
+      "term": "Left Arrow",
+      "category": "Variables",
+      "definition": "In Variable notation, a left-pointing arrow indicates a strategic, focused, and active quality. Represents a consistent, reliable pattern operating through concentration.",
+      "aliases": [
+        "Strategic Arrow"
+      ],
+      "url": ""
+    },
+    {
+      "id": "leo",
+      "term": "Leo",
+      "category": "Astrology",
+      "definition": "The fifth sign of the zodiac, spanning 120 to 150 degrees of the ecliptic. Leo is a fixed fire sign ruled by the Sun, associated with creativity, self-expression, and leadership.",
+      "aliases": [
+        "The Lion"
+      ],
+      "url": ""
+    },
+    {
+      "id": "libra",
+      "term": "Libra",
+      "category": "Astrology",
+      "definition": "The seventh sign of the zodiac, spanning 180 to 210 degrees of the ecliptic. Libra is a cardinal air sign ruled by Venus, associated with relationships, balance, and justice.",
+      "aliases": [
+        "The Scales"
+      ],
+      "url": ""
+    },
+    {
+      "id": "light-determination",
+      "term": "Light (Determination)",
+      "category": "Variables",
+      "definition": "One of six Determination types (Color 6). Lighting conditions during meals affect how the body digests correctly.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "light-field",
+      "term": "Light Field",
+      "category": "Foundation",
+      "definition": "One of the dream states in Human Design's understanding of sleep. Associated with the first phase of sleep where consciousness begins to withdraw from the waking state.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "line",
+      "term": "Line",
+      "category": "Foundation",
+      "definition": "One of six positions within each Gate, corresponding to the six lines of an I Ching hexagram. Each Line carries a distinct theme: 1-Investigator, 2-Hermit, 3-Martyr, 4-Opportunist, 5-Heretic, 6-Role Model.",
+      "aliases": [
+        "Lines"
+      ],
+      "url": ""
+    },
+    {
+      "id": "line-1-investigator",
+      "term": "Line 1 Investigator",
+      "category": "Foundation",
+      "definition": "The foundation of the hexagram. An intrinsic need to research and build a secure base of knowledge before feeling comfortable. Security comes from thorough understanding.",
+      "aliases": [
+        "Line 1",
+        "Investigator"
+      ],
+      "url": ""
+    },
+    {
+      "id": "line-2-hermit",
+      "term": "Line 2 Hermit",
+      "category": "Foundation",
+      "definition": "Represents natural talent and the need for withdrawal. Has gifts they may not recognize and requires time alone to develop abilities. Needs to be called out by others.",
+      "aliases": [
+        "Line 2",
+        "Hermit"
+      ],
+      "url": ""
+    },
+    {
+      "id": "line-3-martyr",
+      "term": "Line 3 Martyr",
+      "category": "Foundation",
+      "definition": "The process of trial and error. Learns through direct experience, discovering what works and what does not by bumping into life. Resilience from practical wisdom.",
+      "aliases": [
+        "Line 3",
+        "Martyr"
+      ],
+      "url": ""
+    },
+    {
+      "id": "line-4-opportunist",
+      "term": "Line 4 Opportunist",
+      "category": "Foundation",
+      "definition": "The foundation of the upper trigram and the power of relationships. Finds opportunities through personal network rather than strangers.",
+      "aliases": [
+        "Line 4",
+        "Opportunist"
+      ],
+      "url": ""
+    },
+    {
+      "id": "line-5-heretic",
+      "term": "Line 5 Heretic",
+      "category": "Foundation",
+      "definition": "Represents universalization and the projection field. Others project expectations and savior qualities. Seen as a practical problem-solver who can deliver universal solutions.",
+      "aliases": [
+        "Line 5",
+        "Heretic"
+      ],
+      "url": ""
+    },
+    {
+      "id": "line-6-role-model",
+      "term": "Line 6 Role Model",
+      "category": "Foundation",
+      "definition": "A unique three-phase life process: trial and error until about 30, observing from the roof until about 50, then stepping down as a living example of authenticity.",
+      "aliases": [
+        "Line 6",
+        "Role Model"
+      ],
+      "url": ""
+    },
+    {
+      "id": "luminaries",
+      "term": "Luminaries",
+      "category": "Astrology",
+      "definition": "The Sun and Moon, the two brightest celestial bodies as seen from Earth. In astrology, the luminaries are considered the most important chart factors, representing the core self (Sun) and the emotional nature (Moon).",
+      "aliases": [
+        "Lights"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lunar-authority",
+      "term": "Lunar Authority",
+      "category": "Foundation",
+      "definition": "Unique to Reflectors, who have no defined centers. They are designed to wait through a full Moon cycle, approximately 28.5 days, before making major decisions.",
+      "aliases": [
+        "Moon Authority"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lunar-eclipse",
+      "term": "Lunar Eclipse",
+      "category": "Astrology",
+      "definition": "A full moon that occurs near one of the lunar nodes, where the Earth passes between the Sun and Moon, casting its shadow on the Moon. Lunar eclipses are associated with emotional revelations, endings, release, and the culmination of themes that have been building over months.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "lunar-return",
+      "term": "Lunar Return",
+      "category": "Astrology",
+      "definition": "A chart cast for the moment each month when the transiting Moon returns to its natal position. The lunar return chart forecasts emotional themes and events for the approximately 27.3-day lunar cycle ahead.",
+      "aliases": [
+        "Lunar Return Chart"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lunar-return-cycle",
+      "term": "Lunar Return",
+      "category": "Cycles",
+      "definition": "Monthly cycle every 27.3 days when the Moon returns to its natal position. Snapshot of emotional themes for the coming month.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "magha",
+      "term": "Magha",
+      "category": "Astrology",
+      "definition": "The tenth nakshatra in Vedic astrology, spanning 0 to 13 degrees 20 minutes of Leo. Its ruling deity is the Pitris (ancestral spirits), and its planetary ruler is Ketu. It is associated with royalty, authority, and honoring one's lineage.",
+      "aliases": [
+        "Makha"
+      ],
+      "url": ""
+    },
+    {
+      "id": "magnetic-monopole",
+      "term": "Magnetic Monopole",
+      "category": "Foundation",
+      "definition": "A unique particle in the G Center holding together the Personality and Design Crystals. Functions as a driver pulling the individual along their correct geometry. Only attracts, never repels.",
+      "aliases": [
+        "Monopole",
+        "Driver"
+      ],
+      "url": ""
+    },
+    {
+      "id": "mahadasha",
+      "term": "Mahadasha",
+      "category": "Astrology",
+      "definition": "The major planetary period in the Vimshottari Dasha system, during which one graha dominates the native's experience. Each mahadasha lasts a specific number of years (ranging from 6 years for the Sun to 20 years for Venus). It sets the overarching theme for that chapter of life.",
+      "aliases": [
+        "Maha Dasha"
+      ],
+      "url": ""
+    },
+    {
+      "id": "malefic",
+      "term": "Malefic",
+      "category": "Astrology",
+      "definition": "A classification for planets considered to produce challenging or difficult outcomes in traditional astrology. Saturn is the Greater Malefic and Mars is the Lesser Malefic, generally bringing restriction, conflict, or hardship to the areas they influence.",
+      "aliases": [
+        "Malefic Planets"
+      ],
+      "url": ""
+    },
+    {
+      "id": "maltreatment",
+      "term": "Maltreatment",
+      "category": "Astrology",
+      "definition": "A Hellenistic concept where a malefic planet (Mars or Saturn) damages the condition of another planet or house through hard aspect, conjunction, or adverse configuration. Specific forms include being overcome, enclosure, and striking with a ray. It is the negative counterpart to bonification in the Hellenistic system of planetary condition.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "mammal",
+      "term": "Mammal",
+      "category": "Foundation",
+      "definition": "One of four animal categories in the Variable system, determined by the four arrow orientations. Each combination influences cognitive architecture and dietary needs.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "mandala",
+      "term": "Mandala",
+      "category": "Foundation",
+      "definition": "The circular wheel chart that shows the 64 Gates arranged around the zodiac. The Mandala displays planetary positions in the context of the I Ching hexagrams and their relationship to the bodygraph.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "manglik-dosha",
+      "term": "Manglik Dosha",
+      "category": "Astrology",
+      "definition": "A condition in Vedic astrology caused by Mars occupying the 1st, 2nd, 4th, 7th, 8th, or 12th house from the Ascendant, Moon, or Venus. It is traditionally believed to create challenges in marriage and partnerships. Various cancellation conditions can mitigate its effects.",
+      "aliases": [
+        "Mangal Dosha",
+        "Kuja Dosha"
+      ],
+      "url": ""
+    },
+    {
+      "id": "manifesting-generator",
+      "term": "Manifesting Generator",
+      "category": "Foundation",
+      "definition": "One of the five Types in Human Design. Manifesting Generators have a defined Sacral Center and a motor connected to the Throat. They are designed to respond and then inform before acting, with the ability to move quickly between tasks.",
+      "aliases": [
+        "Manifesting Generators",
+        "MG"
+      ],
+      "url": "/celebrities/type/manifesting-generator/"
+    },
+    {
+      "id": "manifestor",
+      "term": "Manifestor",
+      "category": "Foundation",
+      "definition": "One of the five Types in Human Design. Manifestors have a motor center connected to the Throat but no defined Sacral. They are designed to initiate and inform others before acting.",
+      "aliases": [
+        "Manifestors"
+      ],
+      "url": "/celebrities/type/manifestor/"
+    },
+    {
+      "id": "markets",
+      "term": "Markets",
+      "category": "Variables",
+      "definition": "One of six Environment types (Color 2). A busy, commercial space. Those with this Environment thrive in bustling, populated areas.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "mars",
+      "term": "Mars",
+      "category": "Astrology",
+      "definition": "The planet of action, desire, aggression, and physical energy in astrology. Mars rules Aries and traditionally co-rules Scorpio, representing drive, ambition, and how a person asserts themselves.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "masculine-yang-polarity",
+      "term": "Masculine/Yang Polarity",
+      "category": "Astrology",
+      "definition": "One of the two polarities in astrology, assigned to fire and air signs. Masculine or yang signs (Aries, Gemini, Leo, Libra, Sagittarius, Aquarius) are considered extroverted, active, and outwardly directed.",
+      "aliases": [
+        "Positive Signs",
+        "Yang Signs",
+        "Masculine Signs"
+      ],
+      "url": ""
+    },
+    {
+      "id": "mental-authority",
+      "term": "Mental Authority",
+      "category": "Foundation",
+      "definition": "Found in Projectors with no centers defined below the Throat except possibly the Root. These individuals must discuss decisions with trusted others and pay attention to the environment.",
+      "aliases": [
+        "Environmental Authority",
+        "Sounding Board Authority",
+        "Outer Authority"
+      ],
+      "url": ""
+    },
+    {
+      "id": "mercury",
+      "term": "Mercury",
+      "category": "Astrology",
+      "definition": "The planet of communication, thought, and short-distance travel in astrology. Mercury rules Gemini and Virgo and governs how a person processes information, learns, and expresses ideas.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "midheaven",
+      "term": "Midheaven",
+      "category": "Astrology",
+      "definition": "The highest point of the ecliptic in a birth chart, marking the cusp of the 10th House. The Midheaven represents public image, career direction, reputation, and one's highest aspirations in life.",
+      "aliases": [
+        "MC",
+        "Medium Coeli"
+      ],
+      "url": ""
+    },
+    {
+      "id": "moon",
+      "term": "Moon",
+      "category": "Astrology",
+      "definition": "One of the two luminaries in astrology, representing emotions, instincts, habits, and the inner self. The Moon changes signs approximately every two and a half days, making it the fastest-moving body used in chart interpretation.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "mountains",
+      "term": "Mountains",
+      "category": "Variables",
+      "definition": "One of six Environment types (Color 4). An elevated space with broad view. Those with this Environment thrive in high places.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "mrigashira",
+      "term": "Mrigashira",
+      "category": "Astrology",
+      "definition": "The fifth nakshatra in Vedic astrology, spanning 23 degrees 20 minutes of Taurus to 6 degrees 40 minutes of Gemini. Its ruling deity is Soma (the Moon god), and its planetary ruler is Mars. It is associated with searching, curiosity, and the pursuit of knowledge.",
+      "aliases": [
+        "Mrigashirsha"
+      ],
+      "url": ""
+    },
+    {
+      "id": "mula",
+      "term": "Mula",
+      "category": "Astrology",
+      "definition": "The nineteenth nakshatra in Vedic astrology, spanning 0 to 13 degrees 20 minutes of Sagittarius. Its ruling deity is Nirriti (goddess of dissolution), and its planetary ruler is Ketu. It is associated with getting to the root of things, uprooting, and foundational transformation.",
+      "aliases": [
+        "Moola"
+      ],
+      "url": ""
+    },
+    {
+      "id": "mundane-astrology",
+      "term": "Mundane Astrology",
+      "category": "Astrology",
+      "definition": "The branch of astrology concerned with world events, politics, nations, and collective experience rather than individual lives. Mundane astrology examines ingress charts, eclipses, and major planetary cycles to understand historical patterns and forecast geopolitical trends.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "mutable",
+      "term": "Mutable",
+      "category": "Astrology",
+      "definition": "One of the three modalities in astrology, encompassing Gemini, Virgo, Sagittarius, and Pisces. Mutable signs adapt and transition energy at the end of each season, representing flexibility and change.",
+      "aliases": [
+        "Mutable Signs",
+        "Mutable Modality"
+      ],
+      "url": ""
+    },
+    {
+      "id": "mutual-reception",
+      "term": "Mutual Reception",
+      "category": "Astrology",
+      "definition": "A condition where two planets each occupy a sign ruled by the other, creating a reciprocal exchange of dignity. For example, Mars in Taurus and Venus in Aries are in mutual reception by domicile, which strengthens both planets by giving them a cooperative link.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "mystic-rectangle",
+      "term": "Mystic Rectangle",
+      "category": "Astrology",
+      "definition": "An aspect pattern formed by two oppositions connected by sextiles and trines, creating a rectangle shape in the chart. The mystic rectangle blends the tension of oppositions with the ease of trines and sextiles, offering practical outlets for resolving internal conflicts.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "nakshatra-pada",
+      "term": "Nakshatra Pada",
+      "category": "Astrology",
+      "definition": "Each nakshatra is divided into four equal quarters called padas, each spanning 3 degrees 20 minutes. Each pada corresponds to a sign of the navamsa chart, adding a layer of nuance to the nakshatra's expression. The 108 total padas (27 nakshatras x 4) map to the 12 navamsa signs in a repeating cycle.",
+      "aliases": [
+        "Pada"
+      ],
+      "url": ""
+    },
+    {
+      "id": "natal-chart",
+      "term": "Natal Chart",
+      "category": "Astrology",
+      "definition": "A map of the sky at the exact moment and location of a person's birth, showing the positions of all planets, signs, and houses. The natal chart is the foundational tool of astrology, serving as a blueprint for an individual's personality, potential, and life themes.",
+      "aliases": [
+        "Birth Chart",
+        "Nativity",
+        "Radix"
+      ],
+      "url": ""
+    },
+    {
+      "id": "navamsa",
+      "term": "Navamsa (D9)",
+      "category": "Astrology",
+      "definition": "The most important divisional chart in Vedic astrology, created by dividing each sign into nine equal parts of 3 degrees 20 minutes. It is primarily used to assess the strength of planets, the quality of marriage, and the deeper spiritual purpose of the native. A planet's navamsa placement can confirm or modify its promise in the birth chart.",
+      "aliases": [
+        "Navamsha",
+        "D9 Chart"
+      ],
+      "url": ""
+    },
+    {
+      "id": "need-motivation",
+      "term": "Need (Motivation)",
+      "category": "Variables",
+      "definition": "One of six Motivation types (Color 4). Drives awareness through necessity and practical requirement.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "neptune",
+      "term": "Neptune",
+      "category": "Astrology",
+      "definition": "The planet of dreams, illusion, spirituality, and transcendence in astrology. Neptune is the modern ruler of Pisces and takes approximately 165 years to orbit the Sun, spending about 14 years in each sign.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "neutrino",
+      "term": "Neutrino",
+      "category": "Foundation",
+      "definition": "Subatomic particles streaming through everything, carrying infinitesimally small mass and therefore information. Approximately 70% of the conditioning neutrino stream comes from the Sun.",
+      "aliases": [
+        "Neutrino Stream"
+      ],
+      "url": ""
+    },
+    {
+      "id": "new-moon",
+      "term": "New Moon",
+      "category": "Astrology",
+      "definition": "The lunar phase when the Sun and Moon are conjunct in the same zodiac sign, making the Moon invisible from Earth. The new moon represents new beginnings, fresh starts, and the planting of seeds for intentions that will develop over the coming lunar cycle.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "no-definition",
+      "term": "No Definition",
+      "category": "Foundation",
+      "definition": "The definition type of Reflectors, who have no defined centers. All nine centers are open, making them completely receptive to conditioning from their environment.",
+      "aliases": [
+        "None Definition"
+      ],
+      "url": ""
+    },
+    {
+      "id": "nocturnal-chart",
+      "term": "Nocturnal Chart",
+      "category": "Astrology",
+      "definition": "A birth chart where the Sun is below the horizon, indicating a nighttime birth. In a nocturnal chart, the Moon, Venus, and Mars belong to the nocturnal sect and tend to express their energies more favorably.",
+      "aliases": [
+        "Night Chart"
+      ],
+      "url": ""
+    },
+    {
+      "id": "nodal-return",
+      "term": "Nodal Return",
+      "category": "Cycles",
+      "definition": "Every 18.6 years when Lunar Nodes return to natal positions. Activates themes of life direction and purpose.",
+      "aliases": [
+        "North Node Return"
+      ],
+      "url": ""
+    },
+    {
+      "id": "north-node",
+      "term": "North Node",
+      "category": "Astrology",
+      "definition": "One of the two lunar nodes, representing the point where the Moon's orbit crosses the ecliptic moving northward. The North Node indicates karmic direction, soul growth, and qualities a person is developing in this lifetime.",
+      "aliases": [
+        "Rahu",
+        "True Node",
+        "Mean Node",
+        "Dragon's Head"
+      ],
+      "url": ""
+    },
+    {
+      "id": "not-self",
+      "term": "Not-Self",
+      "category": "Foundation",
+      "definition": "The conditioned identity arising from decisions made from open and undefined centers rather than Authority. The false self shaped by external conditioning.",
+      "aliases": [
+        "Not Self"
+      ],
+      "url": ""
+    },
+    {
+      "id": "oc16",
+      "term": "OC16",
+      "category": "BG5/Penta",
+      "definition": "Large group dynamic for organizations of 16 or more, representing how large groups function as a transpersonal entity with emergent properties.",
+      "aliases": [
+        "OC-16"
+      ],
+      "url": ""
+    },
+    {
+      "id": "open-center",
+      "term": "Open Center",
+      "category": "Foundation",
+      "definition": "A center with no activated Gates at all, completely receptive to outside conditioning. Amplifies energy received and represents areas of potential wisdom.",
+      "aliases": [
+        "Completely Open Center"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ophiuchus",
+      "term": "Ophiuchus",
+      "category": "Astrology",
+      "definition": "A constellation that lies along the ecliptic between Scorpius and Sagittarius, sometimes proposed as a 13th zodiac sign. The Sun passes through Ophiuchus from approximately November 30 to December 18 based on IAU boundaries. It is not recognized in traditional Western or Vedic astrology but is included in 13-sign and some true sidereal systems.",
+      "aliases": [
+        "Serpent Bearer"
+      ],
+      "url": ""
+    },
+    {
+      "id": "opposition",
+      "term": "Opposition",
+      "category": "Astrology",
+      "definition": "A major aspect formed when two planets are approximately 180 degrees apart in the zodiac. Oppositions represent tension, polarity, and the need to balance or integrate two competing areas of life.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "orb",
+      "term": "Orb",
+      "category": "Astrology",
+      "definition": "The degree of deviation allowed from an exact aspect angle for the aspect to still be considered active. For example, a conjunction is exact at 0 degrees, but with an orb of 8 degrees, planets within 8 degrees of each other would still be considered conjunct.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "out-of-bounds",
+      "term": "Out of Bounds",
+      "category": "Astrology",
+      "definition": "A planetary condition where a planet's declination exceeds 23 degrees 27 minutes, beyond the Sun's maximum declination. Out of bounds planets are considered to operate outside normal rules and boundaries, expressing their energies in extreme, unconventional, or exceptional ways.",
+      "aliases": [
+        "OOB"
+      ],
+      "url": ""
+    },
+    {
+      "id": "outer-vision",
+      "term": "Outer Vision",
+      "category": "Variables",
+      "definition": "One of six Cognition types (Tone 3). Processes information through direct visual observation of the external environment.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "pallas",
+      "term": "Pallas",
+      "category": "Astrology",
+      "definition": "An asteroid named after Pallas Athena, representing wisdom, strategy, creative intelligence, and pattern recognition in astrology. Pallas indicates how a person perceives patterns, fights for justice, and applies strategic thinking.",
+      "aliases": [
+        "Pallas Athena"
+      ],
+      "url": ""
+    },
+    {
+      "id": "pancha-mahapurusha-yoga",
+      "term": "Pancha Mahapurusha Yoga",
+      "category": "Astrology",
+      "definition": "A set of five powerful yogas in Vedic astrology formed when Mars, Mercury, Jupiter, Venus, or Saturn occupies its own sign or exaltation sign in a kendra house. Each yoga has a specific name: Ruchaka (Mars), Bhadra (Mercury), Hamsa (Jupiter), Malavya (Venus), and Shasha (Saturn). These yogas produce individuals of exceptional character and achievement.",
+      "aliases": [
+        "Panch Mahapurusha Yoga"
+      ],
+      "url": ""
+    },
+    {
+      "id": "panchang",
+      "term": "Panchang",
+      "category": "Astrology",
+      "definition": "The traditional Hindu almanac based on five elements of time: tithi (lunar day), vara (weekday), nakshatra (lunar mansion), yoga (Sun-Moon angular relationship), and karana (half tithi). It is used daily in Vedic astrology for muhurta (electional timing), festival scheduling, and determining the quality of any given moment.",
+      "aliases": [
+        "Panchangam",
+        "Panchanga"
+      ],
+      "url": ""
+    },
+    {
+      "id": "part-of-fortune",
+      "term": "Part of Fortune",
+      "category": "Astrology",
+      "definition": "An Arabic Part calculated from the positions of the Sun, Moon, and Ascendant that indicates areas of natural talent and worldly success. The formula differs for diurnal and nocturnal charts, reflecting the importance of sect in traditional astrology.",
+      "aliases": [
+        "Lot of Fortune",
+        "Fortuna"
+      ],
+      "url": ""
+    },
+    {
+      "id": "part-of-spirit",
+      "term": "Part of Spirit",
+      "category": "Astrology",
+      "definition": "An Arabic Part calculated as the reverse formula of the Part of Fortune, switching the positions of the Sun and Moon in the calculation. The Part of Spirit relates to the mind, intellect, career actions, and matters of purpose, will, and conscious direction in life.",
+      "aliases": [
+        "Lot of Spirit"
+      ],
+      "url": ""
+    },
+    {
+      "id": "partile-aspect",
+      "term": "Partile Aspect",
+      "category": "Astrology",
+      "definition": "An aspect that is exact or within one degree of exactitude. Partile aspects are considered especially powerful because the planetary energies are at their tightest connection, producing the most concentrated and noticeable effects.",
+      "aliases": [
+        "Exact Aspect"
+      ],
+      "url": ""
+    },
+    {
+      "id": "peace",
+      "term": "Peace",
+      "category": "Foundation",
+      "definition": "The Signature theme of the Manifestor Type. When correctly informing before initiating, they encounter less resistance and experience deep peace.",
+      "aliases": [
+        "Manifestor Signature"
+      ],
+      "url": ""
+    },
+    {
+      "id": "penta",
+      "term": "Penta",
+      "category": "BG5/Penta",
+      "definition": "A transpersonal form that emerges when three to five people come together. The Penta has its own mechanical dynamics that influence how small groups function, communicate, and work together.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "penta-assimilation",
+      "term": "Penta Assimilation",
+      "category": "BG5/Penta",
+      "definition": "One of three Penta functional areas governing how a group integrates new members, ideas, and resources.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "penta-communication",
+      "term": "Penta Communication",
+      "category": "BG5/Penta",
+      "definition": "One of three Penta functional areas governing how information flows, ideas are shared, and verbal exchange maintained.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "penta-management",
+      "term": "Penta Management",
+      "category": "BG5/Penta",
+      "definition": "One of three Penta functional areas governing resources, logistics, task organization, and practical workflow.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "peregrine",
+      "term": "Peregrine",
+      "category": "Astrology",
+      "definition": "A planetary condition where a planet has no essential dignity in its current sign position, meaning it holds no rulership, exaltation, triplicity, term, or face. A peregrine planet is considered a wanderer without resources, weakened and less able to act effectively.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "personal-perspective",
+      "term": "Personal (Perspective)",
+      "category": "Variables",
+      "definition": "One of six Perspective types (Color 6). Sees the world through a deeply subjective, individual lens.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "personal-planets",
+      "term": "Personal Planets",
+      "category": "Astrology",
+      "definition": "The fast-moving planets closest to the Sun that shape individual personality traits. The personal planets include the Sun, Moon, Mercury, Venus, and Mars, and they change signs frequently enough to differentiate individuals born close together in time.",
+      "aliases": [
+        "Inner Planets"
+      ],
+      "url": ""
+    },
+    {
+      "id": "personality",
+      "term": "Personality",
+      "category": "Foundation",
+      "definition": "The conscious side of a Human Design chart, calculated from the moment of birth. Personality activations are shown in black on the bodygraph. These represent qualities the person is consciously aware of and identifies with.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "personality-crystal",
+      "term": "Personality Crystal",
+      "category": "Foundation",
+      "definition": "The consciousness aspect of the self, entering the body at birth. Corresponds to the black activations on the right side of the Bodygraph. Calculated from the exact moment of birth.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "perspective",
+      "term": "Perspective",
+      "category": "Variables",
+      "definition": "The visual awareness aspect of Variable in Human Design, derived from the bottom-right Arrow. It indicates how you are designed to see and observe the world around you.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "phasis",
+      "term": "Phasis",
+      "category": "Astrology",
+      "definition": "A Hellenistic astrological concept referring to the visible appearance or disappearance of a planet relative to the Sun's beams (typically within 15 degrees of the Sun). A planet making its phasis (emerging from the Sun's rays) was considered to gain prominence and power. Planets under the beams were considered weakened or hidden.",
+      "aliases": [
+        "Appearance"
+      ],
+      "url": ""
+    },
+    {
+      "id": "phs",
+      "term": "PHS",
+      "category": "Variables",
+      "definition": "Primary Health System, the body-focused branch of Variables addressing how to eat and digest. Derived from Design Sun/Earth Tone and Color.",
+      "aliases": [
+        "Primary Health System"
+      ],
+      "url": ""
+    },
+    {
+      "id": "pisces",
+      "term": "Pisces",
+      "category": "Astrology",
+      "definition": "The twelfth sign of the zodiac, spanning 330 to 360 degrees of the ecliptic. Pisces is a mutable water sign traditionally ruled by Jupiter and modernly by Neptune, associated with intuition, compassion, and transcendence.",
+      "aliases": [
+        "The Fish"
+      ],
+      "url": ""
+    },
+    {
+      "id": "placidus",
+      "term": "Placidus",
+      "category": "Astrology",
+      "definition": "The most widely used house system in modern Western astrology, developed by the 17th-century mathematician Placidus de Titis. It divides houses based on the time it takes for each degree of the ecliptic to rise from the nadir to the horizon. It can produce unequal house sizes and becomes unreliable at extreme latitudes.",
+      "aliases": [
+        "Placidus House System"
+      ],
+      "url": ""
+    },
+    {
+      "id": "planetary-days",
+      "term": "Planetary Days",
+      "category": "Astrology",
+      "definition": "The assignment of each day of the week to one of the seven classical planets, a system reflected in the names of the days in many languages. Sunday is ruled by the Sun, Monday by the Moon, Tuesday by Mars, Wednesday by Mercury, Thursday by Jupiter, Friday by Venus, and Saturday by Saturn.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "planetary-hours",
+      "term": "Planetary Hours",
+      "category": "Astrology",
+      "definition": "A traditional system that divides each day and night into segments, each ruled by one of the seven classical planets in a fixed sequence. Planetary hours are used in electional and horary astrology to select auspicious times for activities aligned with a specific planet's nature.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "planetary-joy",
+      "term": "Planetary Joy",
+      "category": "Astrology",
+      "definition": "A traditional system assigning each of the seven classical planets a house where it rejoices and expresses itself most naturally. For example, Mercury rejoices in the 1st House, the Moon in the 3rd, Venus in the 5th, Mars in the 6th, the Sun in the 9th, Jupiter in the 11th, and Saturn in the 12th.",
+      "aliases": [
+        "Planetary Joys"
+      ],
+      "url": ""
+    },
+    {
+      "id": "planetary-speed",
+      "term": "Planetary Speed",
+      "category": "Astrology",
+      "definition": "The rate at which a planet moves through the zodiac, which varies throughout its orbit. In traditional astrology, a fast-moving planet is considered more active and capable, while a slow-moving planet may indicate delays or reduced effectiveness.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "pluto",
+      "term": "Pluto",
+      "category": "Astrology",
+      "definition": "The planet of transformation, power, death and rebirth, and the unconscious in astrology. Pluto is the modern ruler of Scorpio and has an irregular orbit of approximately 248 years, spending between 12 and 31 years in each sign.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "porphyry",
+      "term": "Porphyry",
+      "category": "Astrology",
+      "definition": "A house system attributed to the 3rd-century philosopher Porphyry of Tyre that trisects the arcs between the four angles (Ascendant, IC, Descendant, MC). Each quadrant is divided into three equal parts to create the intermediate house cusps. It is one of the simplest quadrant-based house systems.",
+      "aliases": [
+        "Porphyry House System"
+      ],
+      "url": ""
+    },
+    {
+      "id": "possibility-perspective",
+      "term": "Possibility (Perspective)",
+      "category": "Variables",
+      "definition": "One of six Perspective types (Color 2). Sees the world through potential and opportunity.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "power-perspective",
+      "term": "Power (Perspective)",
+      "category": "Variables",
+      "definition": "One of six Perspective types (Color 3). Sees the world through influence and control dynamics.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "pratyantar-dasha",
+      "term": "Pratyantar Dasha",
+      "category": "Astrology",
+      "definition": "The sub-sub-period within an antardasha in the Vimshottari Dasha system. It provides an even finer level of timing by further dividing each antardasha into nine smaller periods. Pratyantar dashas are used for precise event prediction.",
+      "aliases": [
+        "Pratyantardasha"
+      ],
+      "url": ""
+    },
+    {
+      "id": "precession-of-the-equinoxes",
+      "term": "Precession of the Equinoxes",
+      "category": "Astrology",
+      "definition": "The slow westward drift of the equinox points along the ecliptic caused by the wobble of Earth's rotational axis. This cycle takes approximately 25,772 years to complete and is the reason the Tropical and Sidereal zodiacs diverge over time.",
+      "aliases": [
+        "Axial Precession"
+      ],
+      "url": ""
+    },
+    {
+      "id": "primary-directions",
+      "term": "Primary Directions",
+      "category": "Astrology",
+      "definition": "One of the oldest predictive techniques in astrology, based on the diurnal rotation of the Earth rather than planetary motion. Primary directions measure the time it takes for a natal planet to reach the position of another planet or angle through the Earth's daily rotation, using approximately one degree equals one year.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "probability-perspective",
+      "term": "Probability (Perspective)",
+      "category": "Variables",
+      "definition": "One of six Perspective types (Color 5). Sees the world through likelihood and patterns, calculating odds.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "profile",
+      "term": "Profile",
+      "category": "Foundation",
+      "definition": "A combination of two Lines (one conscious, one unconscious) that describes your costume in life and how you interact with others. There are 12 Profiles in Human Design, from 1/3 to 6/3.",
+      "aliases": [
+        "Profiles"
+      ],
+      "url": ""
+    },
+    {
+      "id": "program-field",
+      "term": "Program Field",
+      "category": "Cycles",
+      "definition": "The collective conditioning field from planetary movement through the Mandala. Defines the backdrop of collective experience at any given moment.",
+      "aliases": [
+        "The Program"
+      ],
+      "url": ""
+    },
+    {
+      "id": "progressed-ascendant",
+      "term": "Progressed Ascendant",
+      "category": "Astrology",
+      "definition": "The Ascendant degree in the secondary progressed chart, which moves forward through the zodiac at a rate determined by the latitude and time of birth. When the progressed Ascendant changes signs, the native's outward persona and approach to life undergo a noticeable shift. It typically takes many years to progress through a single sign.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "progressed-chart",
+      "term": "Progressed Chart",
+      "category": "Astrology",
+      "definition": "A chart derived from the natal chart using a symbolic time scale, most commonly secondary progressions where each day after birth equals one year of life. The progressed chart shows the gradual internal evolution of a person's character and life direction over time.",
+      "aliases": [
+        "Progressions"
+      ],
+      "url": ""
+    },
+    {
+      "id": "progressed-lunar-return",
+      "term": "Progressed Lunar Return",
+      "category": "Astrology",
+      "definition": "The moment when the progressed Moon returns to its exact natal position, occurring approximately every 27 to 28 years. It marks the beginning of a new emotional and developmental cycle, similar in significance to a Saturn return but focused on inner life and emotional maturity. The first progressed lunar return happens around age 27.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "progressed-moon",
+      "term": "Progressed Moon",
+      "category": "Astrology",
+      "definition": "The position of the Moon in the secondary progressed chart, which moves approximately one degree per month of real time and completes a full zodiac cycle every 27 to 28 years. Its sign and house placement indicate the native's evolving emotional focus and inner needs. The progressed Moon's aspects to natal and progressed planets mark significant emotional turning points.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "projector",
+      "term": "Projector",
+      "category": "Foundation",
+      "definition": "One of the five Types in Human Design. Projectors have no motor connected to the Throat and no defined Sacral. They are designed to wait for recognition and invitation before sharing their guidance.",
+      "aliases": [
+        "Projectors"
+      ],
+      "url": "/celebrities/type/projector/"
+    },
+    {
+      "id": "psychological-astrology",
+      "term": "Psychological Astrology",
+      "category": "Astrology",
+      "definition": "An approach to astrology that integrates Jungian psychology and depth psychology with traditional chart interpretation. Pioneered by astrologers such as Dane Rudhyar, Liz Greene, and Howard Sasportas, it views the birth chart as a map of the psyche rather than a deterministic fate map. It emphasizes archetypes, individuation, and personal growth.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "punarvasu",
+      "term": "Punarvasu",
+      "category": "Astrology",
+      "definition": "The seventh nakshatra in Vedic astrology, spanning 20 degrees of Gemini to 3 degrees 20 minutes of Cancer. Its ruling deity is Aditi (mother of the gods), and its planetary ruler is Jupiter. It is associated with restoration, renewal, and the return of light.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "purva-ashadha",
+      "term": "Purva Ashadha",
+      "category": "Astrology",
+      "definition": "The twentieth nakshatra in Vedic astrology, spanning 13 degrees 20 minutes to 26 degrees 40 minutes of Sagittarius. Its ruling deity is Apas (goddess of water), and its planetary ruler is Venus. It is associated with invincibility, purification, and the power of rejuvenation.",
+      "aliases": [
+        "Poorva Ashadha",
+        "Purvashada"
+      ],
+      "url": ""
+    },
+    {
+      "id": "purva-bhadrapada",
+      "term": "Purva Bhadrapada",
+      "category": "Astrology",
+      "definition": "The twenty-fifth nakshatra in Vedic astrology, spanning 20 degrees of Aquarius to 3 degrees 20 minutes of Pisces. Its ruling deity is Aja Ekapada (one-footed serpent), and its planetary ruler is Jupiter. It is associated with intensity, penance, and transformative spiritual fire.",
+      "aliases": [
+        "Poorva Bhadrapada",
+        "Poorattathi"
+      ],
+      "url": ""
+    },
+    {
+      "id": "purva-phalguni",
+      "term": "Purva Phalguni",
+      "category": "Astrology",
+      "definition": "The eleventh nakshatra in Vedic astrology, spanning 13 degrees 20 minutes to 26 degrees 40 minutes of Leo. Its ruling deity is Bhaga (god of fortune), and its planetary ruler is Venus. It is associated with pleasure, relaxation, creativity, and romantic fulfillment.",
+      "aliases": [
+        "Poorva Phalguni",
+        "Pubba"
+      ],
+      "url": ""
+    },
+    {
+      "id": "pushkara-navamsa",
+      "term": "Pushkara Navamsa",
+      "category": "Astrology",
+      "definition": "Specific navamsa divisions within certain signs that are considered especially auspicious and nourishing in Vedic astrology. A planet placed in a pushkara navamsa gains additional benefic strength regardless of its other dignities. These special divisions enhance the planet's ability to deliver positive results.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "pushya",
+      "term": "Pushya",
+      "category": "Astrology",
+      "definition": "The eighth nakshatra in Vedic astrology, spanning 3 degrees 20 minutes to 16 degrees 40 minutes of Cancer. Its ruling deity is Brihaspati (Jupiter as divine teacher), and its planetary ruler is Saturn. It is considered one of the most auspicious nakshatras, associated with nourishment and spiritual growth.",
+      "aliases": [
+        "Pushyami"
+      ],
+      "url": ""
+    },
+    {
+      "id": "quadruple-split-definition",
+      "term": "Quadruple Split Definition",
+      "category": "Foundation",
+      "definition": "The rarest definition type with four separate areas. Less than 1% of the population. Very fixed and resilient nature, needing time for complex energy processing.",
+      "aliases": [
+        "Quad Split"
+      ],
+      "url": ""
+    },
+    {
+      "id": "quantum",
+      "term": "Quantum",
+      "category": "Foundation",
+      "definition": "A chart view in Genetic Matrix that shows both the Personality (black/conscious) and Design (red/unconscious) activations together on the bodygraph, giving the complete picture of someone's design.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "quarter-of-civilization",
+      "term": "Quarter of Civilization",
+      "category": "Cycles",
+      "definition": "Second of four Quarters. Purpose fulfilled through Form. Energy of building, structuring, and manifesting.",
+      "aliases": [
+        "Quarter 2",
+        "Quarter of Form"
+      ],
+      "url": ""
+    },
+    {
+      "id": "quarter-of-duality",
+      "term": "Quarter of Duality",
+      "category": "Cycles",
+      "definition": "Third of four Quarters. Purpose fulfilled through Bonding. Energy of relationships and partnerships.",
+      "aliases": [
+        "Quarter 3",
+        "Quarter of Bonding"
+      ],
+      "url": ""
+    },
+    {
+      "id": "quarter-of-initiation",
+      "term": "Quarter of Initiation",
+      "category": "Cycles",
+      "definition": "First of four Quarters in the HD Wheel. Purpose fulfilled through Mind. Energy of beginning and initiating new cycles.",
+      "aliases": [
+        "Quarter 1",
+        "Quarter of Mind"
+      ],
+      "url": ""
+    },
+    {
+      "id": "quarter-of-mutation",
+      "term": "Quarter of Mutation",
+      "category": "Cycles",
+      "definition": "Fourth of four Quarters. Purpose fulfilled through Transformation. Energy of change, evolution, and transcendence.",
+      "aliases": [
+        "Quarter 4",
+        "Quarter of Transformation"
+      ],
+      "url": ""
+    },
+    {
+      "id": "quincunx",
+      "term": "Quincunx",
+      "category": "Astrology",
+      "definition": "An aspect formed when two planets are approximately 150 degrees apart in the zodiac. The quincunx creates a sense of awkwardness or misalignment between two areas of life that require ongoing adjustment and adaptation.",
+      "aliases": [
+        "Inconjunct"
+      ],
+      "url": ""
+    },
+    {
+      "id": "quintile",
+      "term": "Quintile",
+      "category": "Astrology",
+      "definition": "A minor aspect formed when two planets are approximately 72 degrees apart in the zodiac. The quintile is associated with creative talent, unique gifts, and the ability to produce something original from the combination of planetary energies.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "rahu",
+      "term": "Rahu",
+      "category": "Astrology",
+      "definition": "The north lunar node in Vedic astrology, considered a shadow planet (chhaya graha) that represents worldly desire, obsession, amplification, and unconventional pursuits. Rahu's house and sign placement indicate areas where the native experiences intense craving and karmic growth through unfamiliar territory. It is always exactly opposite Ketu in the chart.",
+      "aliases": [
+        "North Node (Vedic)"
+      ],
+      "url": ""
+    },
+    {
+      "id": "raja-yoga",
+      "term": "Raja Yoga",
+      "category": "Astrology",
+      "definition": "A powerful combination in Vedic astrology formed when lords of kendra (angular) and trikona (trinal) houses connect through conjunction, mutual aspect, or exchange. It signifies rise in status, power, and authority in the native's life. The strength of the yoga depends on the dignity and placement of the planets involved.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "raman-ayanamsa",
+      "term": "Raman Ayanamsa",
+      "category": "Astrology",
+      "definition": "An ayanamsa developed by the prominent Indian astrologer B.V. Raman, differing from the Lahiri ayanamsa by approximately 2 degrees. It is based on Raman's independent astronomical calculations of the precessional rate. It is less widely used than Lahiri but has a dedicated following among practitioners of Raman's approach.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "rashi",
+      "term": "Rashi",
+      "category": "Astrology",
+      "definition": "The Sanskrit term for a zodiac sign in Vedic astrology. There are 12 rashis, each spanning 30 degrees of the sidereal ecliptic. The rashis correspond to the same signs as Western astrology but are measured against the fixed stars rather than the seasons.",
+      "aliases": [
+        "Rasi"
+      ],
+      "url": ""
+    },
+    {
+      "id": "rave-chart",
+      "term": "Rave Chart",
+      "category": "Foundation",
+      "definition": "The technical name for an individual's Human Design Bodygraph. Calculated from birth data, displaying nine centers, 36 channels, and 64 Gates.",
+      "aliases": [
+        "HD Chart"
+      ],
+      "url": ""
+    },
+    {
+      "id": "rave-new-year",
+      "term": "Rave New Year",
+      "category": "Foundation",
+      "definition": "The beginning of the Human Design solar cycle when the Sun enters Gate 41 around January 22nd. Gate 41 is the initiating codon representing pressure to start new experiences.",
+      "aliases": [
+        "HD New Year"
+      ],
+      "url": ""
+    },
+    {
+      "id": "reflector",
+      "term": "Reflector",
+      "category": "Foundation",
+      "definition": "One of the five Types in Human Design. Reflectors have no defined centers at all. They are designed to wait a full lunar cycle (28 days) before making major decisions, sampling and reflecting the energy around them.",
+      "aliases": [
+        "Reflectors"
+      ],
+      "url": "/celebrities/type/reflector/"
+    },
+    {
+      "id": "regiomontanus",
+      "term": "Regiomontanus",
+      "category": "Astrology",
+      "definition": "A house system developed by the 15th-century astronomer Johannes Muller (Regiomontanus) that divides the celestial equator into equal 30-degree segments and projects them onto the ecliptic. It was the dominant system in European astrology from the Renaissance through the 17th century. It is still favored by some horary astrologers.",
+      "aliases": [
+        "Regiomontanus House System"
+      ],
+      "url": ""
+    },
+    {
+      "id": "regulus",
+      "term": "Regulus",
+      "category": "Astrology",
+      "definition": "One of the four Royal Stars of Persia, located at approximately 0 degrees Virgo in modern tropical astrology. Regulus is the brightest star in the constellation Leo and is associated with glory, fame, leadership, and success, but with a warning against revenge.",
+      "aliases": [
+        "Cor Leonis",
+        "Heart of the Lion"
+      ],
+      "url": ""
+    },
+    {
+      "id": "reptile",
+      "term": "Reptile",
+      "category": "Foundation",
+      "definition": "One of four animal categories in the Variable system. A particular combination of left/right arrows shaping how one is designed to eat, think, and interact.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "retrograde",
+      "term": "Retrograde",
+      "category": "Astrology",
+      "definition": "The apparent backward motion of a planet as observed from Earth, caused by differences in orbital speed. In astrology, retrograde periods are associated with review, revision, delays, and internalization of the planet's themes.",
+      "aliases": [
+        "Rx"
+      ],
+      "url": ""
+    },
+    {
+      "id": "retrograde-shadow",
+      "term": "Retrograde Shadow",
+      "category": "Astrology",
+      "definition": "The period before and after a planet's retrograde when it traverses the same degrees it will revisit or has revisited during retrograde. The pre-shadow introduces themes that will be reviewed during retrograde, while the post-shadow completes the integration process.",
+      "aliases": [
+        "Shadow Period",
+        "Retrograde Zone"
+      ],
+      "url": ""
+    },
+    {
+      "id": "revati",
+      "term": "Revati",
+      "category": "Astrology",
+      "definition": "The twenty-seventh and final nakshatra in Vedic astrology, spanning 16 degrees 40 minutes to 30 degrees of Pisces. Its ruling deity is Pushan (the nourisher and protector of travelers), and its planetary ruler is Mercury. It is associated with safe journeys, completion, and transcendence.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "right-arrow",
+      "term": "Right Arrow",
+      "category": "Variables",
+      "definition": "In Variable notation, a right-pointing arrow indicates a receptive, peripheral, and passive quality. Represents a flexible, sampling pattern through openness.",
+      "aliases": [
+        "Receptive Arrow"
+      ],
+      "url": ""
+    },
+    {
+      "id": "rohini",
+      "term": "Rohini",
+      "category": "Astrology",
+      "definition": "The fourth nakshatra in Vedic astrology, spanning 10 degrees to 23 degrees 20 minutes of Taurus. Its ruling deity is Brahma (the creator), and its planetary ruler is the Moon. It is associated with growth, beauty, fertility, and material abundance.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "root-center",
+      "term": "Root Center",
+      "category": "Foundation",
+      "definition": "A pressure and motor center at the base of the Bodygraph creating adrenaline-based pressure to act and move forward. Fuels the drive to get things done.",
+      "aliases": [
+        "Root"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sacral-authority",
+      "term": "Sacral Authority",
+      "category": "Foundation",
+      "definition": "Belongs to Generators and Manifesting Generators with a defined Sacral but undefined Solar Plexus. The Sacral responds in the moment with gut sounds or physical sensations indicating yes or no.",
+      "aliases": [
+        "Gut Authority"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sacral-center",
+      "term": "Sacral Center",
+      "category": "Foundation",
+      "definition": "The powerhouse motor Center in the bodygraph, responsible for life force and workforce energy. A defined Sacral is what makes someone a Generator or Manifesting Generator Type.",
+      "aliases": [
+        "Sacral"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sagittarius",
+      "term": "Sagittarius",
+      "category": "Astrology",
+      "definition": "The ninth sign of the zodiac, spanning 240 to 270 degrees of the ecliptic. Sagittarius is a mutable fire sign ruled by Jupiter, associated with exploration, philosophy, and higher learning.",
+      "aliases": [
+        "The Archer"
+      ],
+      "url": ""
+    },
+    {
+      "id": "saros-cycle",
+      "term": "Saros Cycle",
+      "category": "Astrology",
+      "definition": "A cycle of approximately 18 years, 11 days, and 8 hours after which nearly identical eclipses recur. Astrologers use Saros cycles to connect thematically related eclipses across decades, tracing long-term evolutionary patterns and recurring life themes.",
+      "aliases": [
+        "Saros Series"
+      ],
+      "url": ""
+    },
+    {
+      "id": "satisfaction",
+      "term": "Satisfaction",
+      "category": "Foundation",
+      "definition": "The Signature theme of the Generator Type. When waiting to respond and using Sacral energy on things that light them up, the result is deep satisfaction.",
+      "aliases": [
+        "Generator Signature"
+      ],
+      "url": ""
+    },
+    {
+      "id": "saturn",
+      "term": "Saturn",
+      "category": "Astrology",
+      "definition": "The planet of structure, discipline, limitation, and responsibility in astrology. Saturn rules Capricorn and traditionally co-rules Aquarius, representing life lessons, boundaries, and maturation over time.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "saturn-contacts-in-synastry",
+      "term": "Saturn Contacts in Synastry",
+      "category": "Astrology",
+      "definition": "Aspects from one person's Saturn to another person's personal planets in synastry, associated with commitment, longevity, and karmic lessons in relationships. Saturn conjunctions and trines can provide stability and lasting bonds, while Saturn squares and oppositions may create feelings of restriction, criticism, or obligation. These contacts are often found in long-term partnerships.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "saturn-return",
+      "term": "Saturn Return",
+      "category": "Cycles",
+      "definition": "Major life cycle around age 29-30 when transiting Saturn returns to its natal position. Marks maturity and often brings significant life restructuring.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "scorpio",
+      "term": "Scorpio",
+      "category": "Astrology",
+      "definition": "The eighth sign of the zodiac, spanning 210 to 240 degrees of the ecliptic. Scorpio is a fixed water sign traditionally ruled by Mars and modernly by Pluto, associated with transformation, intensity, and depth.",
+      "aliases": [
+        "The Scorpion"
+      ],
+      "url": ""
+    },
+    {
+      "id": "second-saturn-return",
+      "term": "Second Saturn Return",
+      "category": "Cycles",
+      "definition": "Occurs around age 58-60. Marks elder wisdom, legacy review, and deepening relationship with life purpose.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "secondary-progressions",
+      "term": "Secondary Progressions",
+      "category": "Astrology",
+      "definition": "A predictive technique where each day after birth symbolically represents one year of life. Secondary progressions track the slow internal evolution of the psyche, with the progressed Moon changing signs approximately every two and a half years and marking significant emotional shifts.",
+      "aliases": [
+        "Day-for-a-Year Progressions"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sect",
+      "term": "Sect",
+      "category": "Astrology",
+      "definition": "A traditional astrological concept that divides planets into two teams based on whether the chart is a day (diurnal) or night (nocturnal) birth. Sect determines which benefic and malefic planets are more supportive or challenging in a given chart, fundamentally shaping how planets behave.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "sect-light",
+      "term": "Sect Light",
+      "category": "Astrology",
+      "definition": "The luminary that leads the sect of a chart. In a diurnal chart the sect light is the Sun, and in a nocturnal chart the sect light is the Moon. The sect light carries special importance in traditional techniques including profections and lots.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "self-projected-authority",
+      "term": "Self-Projected Authority",
+      "category": "Foundation",
+      "definition": "Found in Projectors with the G Center connected to the Throat. Decision-making comes through hearing oneself speak about identity and direction with trusted others.",
+      "aliases": [
+        "G Authority",
+        "Identity Authority"
+      ],
+      "url": ""
+    },
+    {
+      "id": "semi-sextile",
+      "term": "Semi-sextile",
+      "category": "Astrology",
+      "definition": "A minor aspect formed when two planets are approximately 30 degrees apart in the zodiac. The semi-sextile connects adjacent signs with different elements and modalities, creating a subtle tension that requires conscious integration.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "semi-square",
+      "term": "Semi-square",
+      "category": "Astrology",
+      "definition": "A minor aspect formed when two planets are approximately 45 degrees apart in the zodiac. The semi-square produces mild irritation and internal friction, similar to a square but less intense, prompting small but persistent adjustments.",
+      "aliases": [
+        "Octile"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sense",
+      "term": "Sense",
+      "category": "Variables",
+      "definition": "The Cognition derived from Personality Sun/Earth Tone. The specific sensory mode for taking in information, operating beneath conscious awareness.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "separating-aspect",
+      "term": "Separating Aspect",
+      "category": "Astrology",
+      "definition": "An aspect where the faster-moving planet has already passed the exact degree of the aspect and is moving away. Separating aspects are considered to be waning in influence, representing energy that has already peaked and is dissipating.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "sesquiquadrate",
+      "term": "Sesquiquadrate",
+      "category": "Astrology",
+      "definition": "A minor aspect formed when two planets are approximately 135 degrees apart in the zodiac. The sesquiquadrate produces agitation and restlessness similar to a semi-square, often manifesting as external frustrations or compulsive behavior.",
+      "aliases": [
+        "Sesquisquare",
+        "Trioctile"
+      ],
+      "url": ""
+    },
+    {
+      "id": "seven-year-cycle",
+      "term": "Seven-Year Cycle",
+      "category": "Cycles",
+      "definition": "The foundational deconditioning timeline. Ra taught it takes seven years of living by Strategy and Authority to release conditioning at a cellular level.",
+      "aliases": [
+        "Deconditioning Cycle"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sextile",
+      "term": "Sextile",
+      "category": "Astrology",
+      "definition": "A major aspect formed when two planets are approximately 60 degrees apart in the zodiac. Sextiles represent opportunity, cooperation, and gentle support that can be activated through conscious effort.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "shadbala",
+      "term": "Shadbala",
+      "category": "Astrology",
+      "definition": "A system for calculating planetary strength in Vedic astrology based on six sources of power: positional, directional, temporal, motional, natural, and aspectual strength. The total shadbala score determines how effectively a planet can deliver its results. It is measured in units called rupas or shashtiamsas.",
+      "aliases": [
+        "Shad Bala"
+      ],
+      "url": ""
+    },
+    {
+      "id": "shatabhisha",
+      "term": "Shatabhisha",
+      "category": "Astrology",
+      "definition": "The twenty-fourth nakshatra in Vedic astrology, spanning 6 degrees 40 minutes to 20 degrees of Aquarius. Its ruling deity is Varuna (god of cosmic waters), and its planetary ruler is Rahu. It is associated with healing, secrecy, and the ability to contain or veil something.",
+      "aliases": [
+        "Shatabhishak",
+        "Sadayam"
+      ],
+      "url": ""
+    },
+    {
+      "id": "shores",
+      "term": "Shores",
+      "category": "Variables",
+      "definition": "One of six Environment types (Color 6). A transitional space where two elements meet, such as land and water.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "shravana",
+      "term": "Shravana",
+      "category": "Astrology",
+      "definition": "The twenty-second nakshatra in Vedic astrology, spanning 10 degrees to 23 degrees 20 minutes of Capricorn. Its ruling deity is Vishnu (the preserver), and its planetary ruler is the Moon. It is associated with listening, learning, and the transmission of knowledge.",
+      "aliases": [
+        "Sravana",
+        "Thiruvonam"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sidereal-zodiac",
+      "term": "Sidereal Zodiac",
+      "category": "Astrology",
+      "definition": "A zodiac system based on the actual positions of fixed star constellations rather than the seasons. It accounts for the precession of the equinoxes using an ayanamsa correction and is the primary system used in Vedic astrology.",
+      "aliases": [
+        "Sidereal System"
+      ],
+      "url": ""
+    },
+    {
+      "id": "signature-theme",
+      "term": "Signature",
+      "category": "Foundation",
+      "definition": "The feeling confirming a person is living correctly by their Type, Strategy, and Authority. Peace (Manifestor), Satisfaction (Generator), Success (Projector), Surprise (Reflector).",
+      "aliases": [
+        "Signature Theme"
+      ],
+      "url": ""
+    },
+    {
+      "id": "single-definition",
+      "term": "Single Definition",
+      "category": "Foundation",
+      "definition": "All defined centers are connected in one continuous circuit. About 41% of the population. Self-contained in energy flow, not depending on others to bridge gaps.",
+      "aliases": [
+        "Single Def"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sirius",
+      "term": "Sirius",
+      "category": "Astrology",
+      "definition": "The brightest star in the night sky, located at approximately 14 degrees Cancer in tropical astrology. Sirius is associated with ambition, fame, devotion, wealth, and honor, and has been one of the most important stars in astrology since ancient Egyptian times.",
+      "aliases": [
+        "Dog Star"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sleep-design",
+      "term": "Sleep Design",
+      "category": "Foundation",
+      "definition": "The importance of sleeping alone in one's own aura, especially with undefined centers. During sleep, the body processes daily conditioning. Ra emphasized sleeping in another's aura deeply conditions open centers.",
+      "aliases": [
+        "HD Sleep"
+      ],
+      "url": ""
+    },
+    {
+      "id": "smell-cognition",
+      "term": "Smell (Cognition)",
+      "category": "Variables",
+      "definition": "One of six Cognition types (Tone 1). Processes information through instinctive, primal sense of right or wrong.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "social-planets",
+      "term": "Social Planets",
+      "category": "Astrology",
+      "definition": "Jupiter and Saturn, which orbit between the personal and transpersonal planets. The social planets represent societal themes, cultural values, and generational trends over shorter periods than the outer planets, with Jupiter spending about a year in each sign and Saturn about two and a half years.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "solar-arc",
+      "term": "Solar Arc",
+      "category": "Astrology",
+      "definition": "A predictive technique that advances every planet and point in the natal chart by the same arc, which equals the distance the secondary progressed Sun has traveled from its natal position. This means all planets move at roughly one degree per year. Solar arc directions are valued for their simplicity and for timing major life events.",
+      "aliases": [
+        "Solar Arc Directions"
+      ],
+      "url": ""
+    },
+    {
+      "id": "solar-arc-directions",
+      "term": "Solar Arc Directions",
+      "category": "Astrology",
+      "definition": "A predictive technique that advances every planet and point in the natal chart by the same arc, equal to the distance the progressed Sun has traveled. Solar arc directions produce one major activation per year and are widely used for timing significant life events.",
+      "aliases": [
+        "Solar Arc"
+      ],
+      "url": ""
+    },
+    {
+      "id": "solar-eclipse",
+      "term": "Solar Eclipse",
+      "category": "Astrology",
+      "definition": "A new moon that occurs near one of the lunar nodes, where the Moon passes between the Earth and Sun, partially or fully blocking sunlight. Solar eclipses are considered powerful catalysts for major new beginnings, fate-driven events, and significant turning points that unfold over six months to a year.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "solar-plexus",
+      "term": "Solar Plexus Center",
+      "category": "Foundation",
+      "definition": "The emotional awareness Center in the bodygraph. When defined, it becomes the Emotional Authority, operating in a wave pattern. Decisions should be made over time, not in the heat of emotional highs or lows.",
+      "aliases": [
+        "Solar Plexus",
+        "Emotional Center"
+      ],
+      "url": ""
+    },
+    {
+      "id": "solar-return",
+      "term": "Solar Return",
+      "category": "Astrology",
+      "definition": "A chart cast for the exact moment each year when the transiting Sun returns to its natal position. The solar return chart is used to forecast themes, opportunities, and challenges for the year ahead, from one birthday to the next.",
+      "aliases": [
+        "Solar Return Chart"
+      ],
+      "url": ""
+    },
+    {
+      "id": "solar-return-cycle",
+      "term": "Solar Return",
+      "category": "Cycles",
+      "definition": "Annual cycle when the Sun returns to its exact natal position, on or near one's birthday. Reveals themes for the coming year.",
+      "aliases": [
+        "Birthday Chart"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sound-determination",
+      "term": "Sound (Determination)",
+      "category": "Variables",
+      "definition": "One of six Determination types (Color 5). The acoustic environment during meals matters for proper digestion.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "south-node",
+      "term": "South Node",
+      "category": "Astrology",
+      "definition": "One of the two lunar nodes, representing the point where the Moon's orbit crosses the ecliptic moving southward. The South Node indicates past-life tendencies, innate gifts, and comfort zones that may need to be released for growth.",
+      "aliases": [
+        "Ketu",
+        "Dragon's Tail"
+      ],
+      "url": ""
+    },
+    {
+      "id": "spica",
+      "term": "Spica",
+      "category": "Astrology",
+      "definition": "A bright fixed star in the constellation Virgo, located at approximately 24 degrees Libra in tropical astrology. Spica is considered one of the most fortunate stars, associated with brilliance, fame, wealth, artistic talent, and protection from harm.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "spleen-center",
+      "term": "Spleen Center",
+      "category": "Foundation",
+      "definition": "The body consciousness Center in the bodygraph, responsible for intuition, instinct, taste, and immune system awareness. Splenic awareness is in-the-moment and does not repeat its signals.",
+      "aliases": [
+        "Spleen",
+        "Splenic"
+      ],
+      "url": ""
+    },
+    {
+      "id": "splenic-authority",
+      "term": "Splenic Authority",
+      "category": "Foundation",
+      "definition": "Operates through the Spleen Center, providing instantaneous awareness rooted in survival instinct and intuition. It speaks only once and very quietly.",
+      "aliases": [
+        "Intuitive Authority"
+      ],
+      "url": ""
+    },
+    {
+      "id": "split-definition",
+      "term": "Split Definition",
+      "category": "Foundation",
+      "definition": "Two separate areas of definition not connected to each other. About 46% of the population. Drawn to people and transits that bridge the gap.",
+      "aliases": [
+        "Simple Split"
+      ],
+      "url": ""
+    },
+    {
+      "id": "square",
+      "term": "Square",
+      "category": "Astrology",
+      "definition": "A major aspect formed when two planets are approximately 90 degrees apart in the zodiac. Squares represent friction, challenge, and dynamic tension that motivates action and growth through effort.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "station-direct",
+      "term": "Station Direct",
+      "category": "Astrology",
+      "definition": "The moment when a retrograde planet appears to stop its backward motion and resumes forward (direct) movement. A planet stationing direct is considered especially powerful, as it concentrates energy at a single degree before moving forward again.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "station-retrograde",
+      "term": "Station Retrograde",
+      "category": "Astrology",
+      "definition": "The moment when a planet appears to stop its forward motion and begins moving backward (retrograde). A planet stationing retrograde is considered intensely focused, marking a pivotal turning point in the themes governed by that planet.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "stellium",
+      "term": "Stellium",
+      "category": "Astrology",
+      "definition": "A cluster of three or more planets concentrated in the same zodiac sign or house. A stellium intensely focuses energy in that area of life, making it a dominant theme in the chart and often the defining feature of a person's experience.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "strategy",
+      "term": "Strategy",
+      "category": "Foundation",
+      "definition": "The correct way for each Type to make decisions and engage with life. Each Type has a unique Strategy: Manifestors inform, Generators and Manifesting Generators respond, Projectors wait for invitation, and Reflectors wait a lunar cycle.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "succedent-houses",
+      "term": "Succedent Houses",
+      "category": "Astrology",
+      "definition": "The 2nd, 5th, 8th, and 11th houses, which follow the angular houses. Succedent houses are associated with stability, resources, and the consolidation of energy initiated by the angular houses.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "success",
+      "term": "Success",
+      "category": "Foundation",
+      "definition": "The Signature theme of the Projector Type. When waiting for correct recognition and invitation before sharing guidance, genuine success follows.",
+      "aliases": [
+        "Projector Signature"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sun",
+      "term": "Sun",
+      "category": "Astrology",
+      "definition": "The central luminary in astrology, representing core identity, ego, vitality, and life purpose. The Sun's sign placement is the most commonly known element of a birth chart and takes approximately one month to transit each zodiac sign.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "surprise",
+      "term": "Surprise",
+      "category": "Foundation",
+      "definition": "The Signature theme of the Reflector Type. When waiting through a full lunar cycle and allowing life to unfold, they experience the delight of surprise.",
+      "aliases": [
+        "Reflector Signature"
+      ],
+      "url": ""
+    },
+    {
+      "id": "survival-perspective",
+      "term": "Survival (Perspective)",
+      "category": "Variables",
+      "definition": "One of six Perspective types (Color 1). Sees the world through security and self-preservation.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "swati",
+      "term": "Swati",
+      "category": "Astrology",
+      "definition": "The fifteenth nakshatra in Vedic astrology, spanning 6 degrees 40 minutes to 20 degrees of Libra. Its ruling deity is Vayu (god of wind), and its planetary ruler is Rahu. It is associated with independence, flexibility, and the ability to adapt and thrive in changing conditions.",
+      "aliases": [
+        "Svati"
+      ],
+      "url": ""
+    },
+    {
+      "id": "synastry",
+      "term": "Synastry",
+      "category": "Astrology",
+      "definition": "A technique for analyzing relationship compatibility by overlaying two natal charts and examining the aspects between them. Synastry reveals the dynamic interplay between two individuals, highlighting areas of harmony, attraction, and potential conflict.",
+      "aliases": [
+        "Synastry Chart"
+      ],
+      "url": ""
+    },
+    {
+      "id": "synastry-aspects",
+      "term": "Synastry Aspects",
+      "category": "Astrology",
+      "definition": "The angular relationships formed between planets in one person's chart and planets in another person's chart, used to evaluate compatibility and relational dynamics. Key aspects include conjunctions, trines, squares, and oppositions between personal planets. Synastry is the most common technique for analyzing romantic, friendship, and business partnerships.",
+      "aliases": [
+        "Synastry"
+      ],
+      "url": ""
+    },
+    {
+      "id": "t-square",
+      "term": "T-Square",
+      "category": "Astrology",
+      "definition": "An aspect pattern formed when two planets in opposition both square a third planet, creating a T-shape in the chart. The focal planet at the apex of the T-Square receives concentrated tension and becomes a driving force for action and achievement.",
+      "aliases": [
+        "T Square"
+      ],
+      "url": ""
+    },
+    {
+      "id": "taste-cognition",
+      "term": "Taste (Cognition)",
+      "category": "Variables",
+      "definition": "One of six Cognition types (Tone 2). Processes information by sampling and discerning quality.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "taste-determination",
+      "term": "Taste (Determination)",
+      "category": "Variables",
+      "definition": "One of six Determination types (Color 2). The body selects food based on how it tastes, using the palate as the primary guide.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "taurus",
+      "term": "Taurus",
+      "category": "Astrology",
+      "definition": "The second sign of the zodiac, spanning 30 to 60 degrees of the ecliptic. Taurus is a fixed earth sign ruled by Venus, associated with stability, sensuality, and material security.",
+      "aliases": [
+        "The Bull"
+      ],
+      "url": ""
+    },
+    {
+      "id": "terms-bounds",
+      "term": "Terms/Bounds",
+      "category": "Astrology",
+      "definition": "A system of essential dignity that divides each zodiac sign into unequal segments, each ruled by a different planet. The terms or bounds provide a finer level of dignity assessment, with multiple systems (Egyptian, Ptolemaic) offering slightly different divisions.",
+      "aliases": [
+        "Terms",
+        "Bounds"
+      ],
+      "url": ""
+    },
+    {
+      "id": "thema-mundi",
+      "term": "Thema Mundi",
+      "category": "Astrology",
+      "definition": "A legendary mythical chart representing the birth of the world, used as a teaching tool in Hellenistic astrology. The Thema Mundi places Cancer on the Ascendant with the classical planets in their domiciles, illustrating the rationale behind sign rulerships, aspects, and the structure of the zodiac.",
+      "aliases": [
+        "Chart of the World"
+      ],
+      "url": ""
+    },
+    {
+      "id": "thirst",
+      "term": "Thirst",
+      "category": "Variables",
+      "definition": "One of six Determination types (Color 3). Proper hydration is key to digestion, with liquid intake playing a central role.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "throat-center",
+      "term": "Throat Center",
+      "category": "Foundation",
+      "definition": "The center of manifestation, communication, and expression. It is the hub through which all energy seeks to express itself, whether through speech or action.",
+      "aliases": [
+        "Throat"
+      ],
+      "url": ""
+    },
+    {
+      "id": "time-lords",
+      "term": "Time Lords",
+      "category": "Astrology",
+      "definition": "A collective term for various planetary period systems used in Hellenistic and medieval astrology to determine which planets are most active during specific life periods. These include techniques such as decennials, zodiacal releasing, and annual profections. Time lord systems share a conceptual similarity with the Vedic dasha system.",
+      "aliases": [
+        "Chronocrators"
+      ],
+      "url": ""
+    },
+    {
+      "id": "tithi",
+      "term": "Tithi",
+      "category": "Astrology",
+      "definition": "A lunar day in the Vedic calendar, defined as the time it takes for the Moon to gain 12 degrees of separation from the Sun. There are 30 tithis in a complete lunar month (15 in the waxing half, 15 in the waning half). Tithis are a core element of the panchang and are used for muhurta (electional) timing.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "tone",
+      "term": "Tone",
+      "category": "Variables",
+      "definition": "The specific frequency within a Color that further refines how energy operates. There are six Tones in each Color, adding another layer of differentiation to the Line, Color, and Base structure of each activation.",
+      "aliases": [
+        "Tones"
+      ],
+      "url": ""
+    },
+    {
+      "id": "touch-cognition",
+      "term": "Touch (Cognition)",
+      "category": "Variables",
+      "definition": "One of six Cognition types (Tone 6). Processes information through physical contact and tactile, hands-on experience.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "touch-determination",
+      "term": "Touch (Determination)",
+      "category": "Variables",
+      "definition": "One of six Determination types (Color 4). The body is sensitive to temperature and texture of food.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "trajectory",
+      "term": "Trajectory",
+      "category": "Variables",
+      "definition": "The overall left or right orientation. Left Trajectory means strategic and focused. Right Trajectory means receptive and open.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "transit",
+      "term": "Transit",
+      "category": "Foundation",
+      "definition": "The current planetary positions and their effect on the global neutrino field. Transits affect everyone and create a background frequency that can activate Gates and Channels temporarily, influencing collective themes.",
+      "aliases": [
+        "Transits"
+      ],
+      "url": ""
+    },
+    {
+      "id": "transit-chart",
+      "term": "Transit Chart",
+      "category": "Astrology",
+      "definition": "A chart showing the current or future positions of planets compared to a natal chart. Transits are the primary predictive technique in modern astrology, revealing how ongoing planetary movements activate and influence natal placements over time.",
+      "aliases": [
+        "Transits"
+      ],
+      "url": ""
+    },
+    {
+      "id": "transpersonal-planets",
+      "term": "Transpersonal Planets",
+      "category": "Astrology",
+      "definition": "The slow-moving outer planets Uranus, Neptune, and Pluto, which represent collective and generational forces. Because they spend many years in each sign, transpersonal planets shape the characteristics and challenges of entire generations rather than individuals.",
+      "aliases": [
+        "Outer Planets",
+        "Generational Planets"
+      ],
+      "url": ""
+    },
+    {
+      "id": "tribal-circuit",
+      "term": "Tribal Circuit",
+      "category": "Foundation",
+      "definition": "Contains the Ego and Defense Circuits. Theme is support, resources, values, and community bonds. Operates through touch and the material world.",
+      "aliases": [
+        "Tribal Circuitry"
+      ],
+      "url": ""
+    },
+    {
+      "id": "trikona-houses",
+      "term": "Trikona Houses",
+      "category": "Astrology",
+      "definition": "The 1st, 5th, and 9th houses in Vedic astrology, considered the most auspicious and dharmic positions in the chart. Trikona lords are natural benefics for any ascendant and their conjunction with kendra lords produces raja yoga. These houses relate to purpose (1st), creativity and merit (5th), and fortune and higher wisdom (9th).",
+      "aliases": [
+        "Trinal Houses",
+        "Trikona Bhavas"
+      ],
+      "url": ""
+    },
+    {
+      "id": "trine",
+      "term": "Trine",
+      "category": "Astrology",
+      "definition": "A major aspect formed when two planets are approximately 120 degrees apart, typically connecting signs of the same element. Trines represent harmony, natural talent, and an easy flow of energy between the planets involved.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "triple-split-definition",
+      "term": "Triple Split Definition",
+      "category": "Foundation",
+      "definition": "Three separate areas of definition with no connections between them. About 11% of the population. Need to move through different environments to experience bridging.",
+      "aliases": [
+        "Triple Split"
+      ],
+      "url": ""
+    },
+    {
+      "id": "triplicity",
+      "term": "Triplicity",
+      "category": "Astrology",
+      "definition": "A system of essential dignity that assigns planetary rulers to each of the four elements (fire, earth, air, water). Triplicity rulers vary by sect, with different planets ruling an element by day and by night, adding nuance to planetary strength assessment.",
+      "aliases": [
+        "Triplicity Rulers"
+      ],
+      "url": ""
+    },
+    {
+      "id": "tropical-zodiac",
+      "term": "Tropical Zodiac",
+      "category": "Astrology",
+      "definition": "The zodiac system based on the seasons, where 0 degrees Aries aligns with the vernal equinox. It is the standard framework used in Western astrology and does not account for the precession of the equinoxes.",
+      "aliases": [
+        "Tropical System"
+      ],
+      "url": ""
+    },
+    {
+      "id": "true-sidereal-zodiac",
+      "term": "True Sidereal Zodiac",
+      "category": "Astrology",
+      "definition": "A zodiac system that aligns sign boundaries with the actual astronomical constellations as defined by the International Astronomical Union (IAU). Unlike the standard sidereal zodiac (which uses equal 30-degree signs), true sidereal accounts for the unequal sizes of constellations. This means some signs span more or less than 30 degrees.",
+      "aliases": [
+        "Astronomical Sidereal Zodiac"
+      ],
+      "url": ""
+    },
+    {
+      "id": "type",
+      "term": "Type",
+      "category": "Foundation",
+      "definition": "One of the five energy types in Human Design that determines how a person is designed to interact with the world. The five Types are Manifestor, Generator, Manifesting Generator, Projector, and Reflector.",
+      "aliases": [
+        "Types"
+      ],
+      "url": ""
+    },
+    {
+      "id": "undefined-center",
+      "term": "Undefined Center",
+      "category": "Foundation",
+      "definition": "A white center containing activated Gates but no complete channel. Takes in and amplifies energy from others, creating areas of conditioning and potential wisdom.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "under-the-beams",
+      "term": "Under the Beams",
+      "category": "Astrology",
+      "definition": "A planetary condition where a planet is within approximately 15 to 17 degrees of the Sun but outside the combust range. Under the beams is a milder debility than combustion, where the planet's significations are somewhat obscured but not entirely overwhelmed.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "upachaya-houses",
+      "term": "Upachaya Houses",
+      "category": "Astrology",
+      "definition": "The 3rd, 6th, 10th, and 11th houses in Vedic astrology, known as houses of growth and improvement over time. Natural malefics (Sun, Mars, Saturn, Rahu, Ketu) perform well in upachaya houses because their aggressive energy is channeled into productive effort. Results associated with these houses tend to improve as the native ages.",
+      "aliases": [
+        "Upachaya Bhavas"
+      ],
+      "url": ""
+    },
+    {
+      "id": "uranus",
+      "term": "Uranus",
+      "category": "Astrology",
+      "definition": "The planet of revolution, innovation, sudden change, and individuality in astrology. Uranus is the modern ruler of Aquarius and takes approximately 84 years to orbit the Sun, spending about seven years in each sign.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "uranus-opposition",
+      "term": "Uranus Opposition",
+      "category": "Cycles",
+      "definition": "Around age 38-42, the classic midlife crisis point. In Human Design, this is when pressure to awaken to authentic self peaks.",
+      "aliases": [
+        "Midlife Crisis"
+      ],
+      "url": ""
+    },
+    {
+      "id": "uttara-ashadha",
+      "term": "Uttara Ashadha",
+      "category": "Astrology",
+      "definition": "The twenty-first nakshatra in Vedic astrology, spanning 26 degrees 40 minutes of Sagittarius to 10 degrees of Capricorn. Its ruling deity is the Vishvadevas (universal gods), and its planetary ruler is the Sun. It is associated with final victory, lasting achievement, and unchallengeable authority.",
+      "aliases": [
+        "Uttarashada"
+      ],
+      "url": ""
+    },
+    {
+      "id": "uttara-bhadrapada",
+      "term": "Uttara Bhadrapada",
+      "category": "Astrology",
+      "definition": "The twenty-sixth nakshatra in Vedic astrology, spanning 3 degrees 20 minutes to 16 degrees 40 minutes of Pisces. Its ruling deity is Ahir Budhnya (serpent of the deep), and its planetary ruler is Saturn. It is associated with deep wisdom, spiritual depth, and the ability to control kundalini energy.",
+      "aliases": [
+        "Uttarattathi"
+      ],
+      "url": ""
+    },
+    {
+      "id": "uttara-phalguni",
+      "term": "Uttara Phalguni",
+      "category": "Astrology",
+      "definition": "The twelfth nakshatra in Vedic astrology, spanning 26 degrees 40 minutes of Leo to 10 degrees of Virgo. Its ruling deity is Aryaman (god of patronage and friendship), and its planetary ruler is the Sun. It is associated with social contracts, marriage, and helpful generosity.",
+      "aliases": [
+        "Uttara Phalguni",
+        "Uttara"
+      ],
+      "url": ""
+    },
+    {
+      "id": "vakri",
+      "term": "Vakri",
+      "category": "Astrology",
+      "definition": "The Sanskrit term for retrograde motion in Vedic astrology, when a planet appears to move backward through the zodiac from Earth's perspective. A vakri planet is considered strong in Vedic tradition (unlike the Western view of weakened retrograde planets) because it is closest to Earth during retrograde. However, it may deliver its results in unexpected, internalized, or delayed ways.",
+      "aliases": [
+        "Vakra"
+      ],
+      "url": ""
+    },
+    {
+      "id": "valleys",
+      "term": "Valleys",
+      "category": "Variables",
+      "definition": "One of six Environment types (Color 5). A low-lying, acoustically rich space where sound and vibration channel naturally.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "vargottama",
+      "term": "Vargottama",
+      "category": "Astrology",
+      "definition": "A planet that occupies the same sign in both the birth chart (rashi) and the navamsa chart (D9) in Vedic astrology. Vargottama planets are considered exceptionally strong because their energy is consistent and reinforced across both charts. This condition is especially powerful for the Ascendant degree.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "variable",
+      "term": "Variable",
+      "category": "Variables",
+      "definition": "An advanced area of Human Design that examines the four Arrows at the top of the bodygraph. Variable determines how you are designed to take in nutrition (Determination), perceive the world (Cognition), be in the right place (Environment), and see correctly (Perspective).",
+      "aliases": [
+        "Variables"
+      ],
+      "url": ""
+    },
+    {
+      "id": "variable-notation",
+      "term": "Variable Notation",
+      "category": "Variables",
+      "definition": "Shorthand for the four Variable arrows: P (Personality) and D (Design) combined with R (Right) and L (Left). Examples: PRL DRL, PLL DRR.",
+      "aliases": [
+        "Arrow Notation"
+      ],
+      "url": ""
+    },
+    {
+      "id": "venus",
+      "term": "Venus",
+      "category": "Astrology",
+      "definition": "The planet of love, beauty, values, and pleasure in astrology. Venus rules Taurus and Libra and represents how a person approaches relationships, aesthetics, and material comfort.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "venus-mars-aspects",
+      "term": "Venus-Mars Aspects",
+      "category": "Astrology",
+      "definition": "Aspects between Venus and Mars in synastry that are considered primary indicators of physical attraction and sexual chemistry between two people. Conjunctions, trines, and sextiles tend to produce harmonious desire, while squares and oppositions create intense but potentially volatile magnetism. These aspects are among the most immediately felt in relationship astrology.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "vernal-point",
+      "term": "Vernal Point",
+      "category": "Astrology",
+      "definition": "The position of the Sun at the moment of the vernal (spring) equinox, which defines 0 degrees Aries in the Tropical zodiac. Due to precession, the vernal point slowly moves backward through the sidereal constellations over thousands of years.",
+      "aliases": [
+        "Vernal Equinox Point"
+      ],
+      "url": ""
+    },
+    {
+      "id": "vertex",
+      "term": "Vertex",
+      "category": "Astrology",
+      "definition": "A sensitive point in the western hemisphere of the birth chart, often called the point of fate. The Vertex is associated with fated encounters, significant relationships, and turning points that feel destined rather than chosen.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "vesta",
+      "term": "Vesta",
+      "category": "Astrology",
+      "definition": "An asteroid representing devotion, sacred focus, and the inner flame in astrology. Vesta indicates where a person directs their deepest commitment and how they experience dedication, ritual, and self-sufficiency.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "view",
+      "term": "View",
+      "category": "Variables",
+      "definition": "The Perspective derived from Personality Sun/Earth Color. How the mind is designed to see and interpret the world.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "vimshottari-dasha",
+      "term": "Vimshottari Dasha",
+      "category": "Astrology",
+      "definition": "The most widely used planetary period system in Vedic astrology, based on a 120-year cycle divided among nine grahas. The sequence and starting point are determined by the Moon's nakshatra at birth. Each planet's period activates the themes of the houses it rules and occupies in the birth chart.",
+      "aliases": [
+        "Vimshottari"
+      ],
+      "url": ""
+    },
+    {
+      "id": "virgo",
+      "term": "Virgo",
+      "category": "Astrology",
+      "definition": "The sixth sign of the zodiac, spanning 150 to 180 degrees of the ecliptic. Virgo is a mutable earth sign ruled by Mercury, associated with analysis, service, and attention to detail.",
+      "aliases": [
+        "The Virgin",
+        "The Maiden"
+      ],
+      "url": ""
+    },
+    {
+      "id": "vishakha",
+      "term": "Vishakha",
+      "category": "Astrology",
+      "definition": "The sixteenth nakshatra in Vedic astrology, spanning 20 degrees of Libra to 3 degrees 20 minutes of Scorpio. Its ruling deities are Indra and Agni, and its planetary ruler is Jupiter. It is associated with determination, single-pointed focus, and achieving goals through sustained effort.",
+      "aliases": [
+        "Visakha"
+      ],
+      "url": ""
+    },
+    {
+      "id": "void-of-course",
+      "term": "Void of Course",
+      "category": "Astrology",
+      "definition": "A condition where a planet, most commonly the Moon, makes no more major aspects before leaving its current sign. A void of course Moon is traditionally considered unfavorable for initiating new projects, as actions taken during this period may not produce the intended results.",
+      "aliases": [
+        "VOC"
+      ],
+      "url": ""
+    },
+    {
+      "id": "void-of-course-moon",
+      "term": "Void of Course Moon",
+      "category": "Astrology",
+      "definition": "The specific period when the Moon makes no more major Ptolemaic aspects before changing signs. Actions initiated during a void of course Moon are traditionally considered unlikely to produce significant results, making it a better time for routine tasks and rest.",
+      "aliases": [
+        "VOC Moon"
+      ],
+      "url": ""
+    },
+    {
+      "id": "wa",
+      "term": "WA",
+      "category": "BG5/Penta",
+      "definition": "An individual's role or way within a group dynamic, describing their specific contribution within a Penta or larger structure.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "waning-crescent",
+      "term": "Waning Crescent",
+      "category": "Astrology",
+      "definition": "The final lunar phase before the new moon when only a thin sliver of light remains visible. Also called the balsamic moon, this phase represents rest, surrender, healing, and preparation for the next cycle of renewal.",
+      "aliases": [
+        "Balsamic Moon"
+      ],
+      "url": ""
+    },
+    {
+      "id": "waning-gibbous",
+      "term": "Waning Gibbous",
+      "category": "Astrology",
+      "definition": "The lunar phase following the full moon when the illumination begins to decrease. Also called the disseminating phase, this period is associated with sharing knowledge, distributing what has been gained, and beginning the process of release.",
+      "aliases": [
+        "Disseminating Moon"
+      ],
+      "url": ""
+    },
+    {
+      "id": "wanting-perspective",
+      "term": "Wanting (Perspective)",
+      "category": "Variables",
+      "definition": "One of six Perspective types (Color 4). Sees the world through what is lacking or needed.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "water-element",
+      "term": "Water Element",
+      "category": "Astrology",
+      "definition": "One of the four classical elements in astrology, encompassing Cancer, Scorpio, and Pisces. Water signs are associated with emotion, intuition, sensitivity, and depth of feeling.",
+      "aliases": [
+        "Water Signs"
+      ],
+      "url": ""
+    },
+    {
+      "id": "waxing-crescent",
+      "term": "Waxing Crescent",
+      "category": "Astrology",
+      "definition": "The lunar phase occurring after the new moon when a thin sliver of light first becomes visible on the Moon's right side. This phase represents emerging intention, gathering momentum, and the initial push to move forward with new plans.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "waxing-gibbous",
+      "term": "Waxing Gibbous",
+      "category": "Astrology",
+      "definition": "The lunar phase between the first quarter and the full moon when more than half the Moon is illuminated and growing. This phase represents refinement, analysis, and fine-tuning as efforts build toward the culmination of the full moon.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "whole-sign-houses",
+      "term": "Whole Sign Houses",
+      "category": "Astrology",
+      "definition": "The oldest known house system, originating in Hellenistic astrology, where each house corresponds to an entire zodiac sign. The sign containing the Ascendant becomes the first house, the next sign becomes the second house, and so on. It has seen a major resurgence in modern practice due to its simplicity and historical authenticity.",
+      "aliases": [
+        "Whole Sign System",
+        "WSH"
+      ],
+      "url": ""
+    },
+    {
+      "id": "yod",
+      "term": "Yod",
+      "category": "Astrology",
+      "definition": "An aspect pattern formed when two planets sextile each other and both quincunx a third planet, creating a narrow triangle pointing to the apex planet. Known as the Finger of God, the yod indicates a fated quality or special mission connected to the apex planet.",
+      "aliases": [
+        "Finger of God",
+        "Finger of Fate"
+      ],
+      "url": ""
+    },
+    {
+      "id": "yukteshwar-ayanamsa",
+      "term": "Yukteshwar Ayanamsa",
+      "category": "Astrology",
+      "definition": "An ayanamsa based on the calculations of Sri Yukteshwar Giri, the guru of Paramahansa Yogananda, as presented in his book The Holy Science. It incorporates a unique theory of cyclical yugas (ages) and a shorter precessional cycle. It differs significantly from the Lahiri ayanamsa and is used primarily by followers of the Kriya Yoga lineage.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "zodiacal-releasing",
+      "term": "Zodiacal Releasing",
+      "category": "Astrology",
+      "definition": "A Hellenistic timing technique attributed to Vettius Valens that divides life into major and minor periods based on the Lot of Spirit or Lot of Fortune. Zodiacal releasing reveals peak periods of career activity, purpose, and significant life chapters through a cascading system of time lord periods.",
+      "aliases": [],
+      "url": ""
+    }
+  ],
+  "categories": [
+    "Foundation",
+    "Variables",
+    "Astrology",
+    "BG5/Penta",
+    "Cycles"
+  ]
+}
