@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homo Solaris | Die neue menschliche Spezies | Genetic Matrix</title>
+    <meta name="description" content="Homo Solaris ist die neue Spezies, die aus der Solarplexus-Mutation im Februar 2027 hervorgeht. Erfahren Sie mehr über den evolutionären Sprung von Homo Sapiens zu Homo Solaris, dem solaren Menschen.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gm-purple': '#6E5898',
+                        'gm-purple-light': '#9080B1',
+                        'gm-purple-soft': '#AC94D8',
+                        'gm-dark': '#3C2864',
+                        'gm-darker': '#2e1f4d',
+                        'gm-green': '#54931E',
+                        'gm-green-dark': '#468018',
+                        'gm-green-light': '#8EB86A',
+                        'gm-pink': '#F66378',
+                        'gm-orange': '#E8961D',
+                        'gm-gray': '#707070',
+                        'gm-light': '#F7F8F9',
+                        'gm-card': '#FAFBFC',
+                        'gm-card-active': '#F4F0FC',
+                        'gm-border': '#D8D4E4',
+                        'gm-warning': '#F8F8E8',
+                        'gm-text-dark': '#1A1A2E',
+                        'gm-text': '#444444',
+                        'gm-text-light': '#949494',
+                    },
+                    fontFamily: {
+                        'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        /* FAQ Accordion */
+        details summary { cursor: pointer; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+        details[open] summary::after { content: '−'; }
+        details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- ==================== NAV BAR ==================== -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14">
+            </a>
+            <div class="flex items-center gap-8">
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Auswertungen">
+                    <img src="../../assets/icon-report.svg" alt="Auswertungen" class="h-9 w-9">
+                </a>
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Talking Charts">
+                    <img src="../../assets/icon-talking-chart.svg" alt="Talking Charts" class="h-7 w-7">
+                </a>
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Kostenloses Chart</a>
+                <!-- Learn Dropdown -->
+                <div class="hidden lg:block relative group">
+                    <button class="text-gm-purple hover:text-gm-dark text-sm font-semibold flex items-center gap-1">
+                        Lernen
+                        <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[420px] bg-white rounded-xl shadow-xl border border-gray-100 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="grid grid-cols-2 gap-1">
+                            <a href="/learn-hub/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-9 h-9 bg-gm-card-active rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-800">Learn Hub</div>
+                                    <div class="text-xs text-gm-text-light mt-0.5">HD und Astrologie Bildung</div>
+                                </div>
+                            </a>
+                            <a href="/learn-hub/celebrities/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-9 h-9 bg-gm-card-active rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-800">Prominenten-Suche</div>
+                                    <div class="text-xs text-gm-text-light mt-0.5">88.600+ Prominenten-Charts</div>
+                                </div>
+                            </a>
+                            <a href="/dictionary/dictionary.html" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-9 h-9 bg-gm-card-active rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-800">Lexikon</div>
+                                    <div class="text-xs text-gm-text-light mt-0.5">HD und Astrologie Begriffe</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Unsere Tarife</a>
+                <a href="https://www.geneticmatrix.com/cart/" title="Warenkorb">
+                    <img src="../../assets/icon-cart.svg" alt="Warenkorb" class="h-5 w-auto">
+                </a>
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>Deutsch</span>
+                    <img src="../../assets/icon-english.svg" alt="Deutsch" class="h-5 w-7">
+                </div>
+                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Anmelden</a>
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Registrieren</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== BREADCRUMB ==================== -->
+    <div class="bg-gm-light border-b border-gm-border">
+        <div class="max-w-4xl mx-auto px-6 py-3">
+            <a href="/learn-hub/" class="text-gm-purple text-sm font-medium hover:underline">&larr; Zurück zum Learn Hub</a>
+        </div>
+    </div>
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+        <div class="max-w-3xl mx-auto px-6">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Homo Solaris: Der evolutionäre Sprung der Menschheit</h1>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
+                Ein neues Kapitel in der Evolution der Menschheit steht bevor. Im Februar 2027 wird die Solarplexus-Mutation eine neue Spezies hervorbringen: Homo Solaris, den solaren Menschen.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== INTRODUCTION ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Die Entstehung von Homo Solaris ist mehr als eine biologische Veränderung. Sie stellt eine Neuorganisation des Bewusstseins selbst dar. Diese zukünftigen Wesen werden emotionale Stabilität verkörpern, die in der mutierten Solarplexus-Bewusstheit verwurzelt ist, und die Fähigkeit besitzen, als kollektives Bewusstsein zu funktionieren. Sie sind nicht fremd oder getrennt von uns. Sie sind wir, weiterentwickelt.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Der Übergang vom Zeitalter der Planung zum Zeitalter des Schlafenden Phoenix bildet die energetische Grundlage für diesen monumentalen Sprung in der menschlichen Evolution. Diese entscheidende Ära bringt tiefgreifende Veränderungen in der Struktur der Gesellschaft, des Bewusstseins und dem Gefüge zwischenmenschlicher Beziehungen mit sich und schafft die Voraussetzungen für die Entstehung von Homo Solaris.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Während sich das Zeitalter des Schlafenden Phoenix entfaltet, müssen Individuen und Gemeinschaften die bevorstehenden tiefgreifenden Veränderungen mit Bewusstheit und Anpassungsfähigkeit navigieren. Das Aufkommen von Homo Solaris ist nicht nur ein biologisches oder energetisches Phänomen. Es ist eine Einladung an die Menschheit, ein tieferes Verständnis ihrer selbst und ihres Platzes in der kosmischen Ordnung zu entwickeln.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== EVOLUTIONARY TIMELINE ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-3">
+                <span class="text-gm-purple">|</span> Die evolutionäre Reise der Menschheit
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Die Geschichte der Menschheit ist eine Geschichte der kontinuierlichen Evolution. Von Homo Habilis bis Homo Sapiens hat jeder evolutionäre Sprung tiefgreifende Veränderungen in unserer Art zu denken, uns zu verbinden und zu überleben mit sich gebracht. Jetzt stehen wir an der Schwelle zu einem weiteren transformationalen Kapitel.
+            </p>
+
+            <!-- Timeline Cards -->
+            <div class="space-y-4">
+                <!-- Homo Habilis -->
+                <div class="bg-white rounded-lg border border-gm-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gm-card-active rounded-full flex items-center justify-center">
+                            <span class="text-gm-purple font-bold text-sm">1</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Homo Habilis</h3>
+                            <p class="text-xs font-semibold text-gm-purple uppercase tracking-wide mb-2">Vor 2,4 bis 1,4 Millionen Jahren &middot; Der handwerklich geschickte Mensch</p>
+                            <p class="text-gm-text text-sm leading-relaxed">
+                                Die erste bekannte Spezies der Gattung Homo. Homo Habilis war der „handwerklich geschickte Mensch" aufgrund seiner Fähigkeit, Werkzeuge aus Stein und Knochen herzustellen und zu verwenden. Diese Innovation markierte den Beginn der langen Beziehung der Menschheit mit Technologie. Ihr relativ größeres Gehirn deutet auf die Anfänge komplexerer Problemlösungsfähigkeiten hin, ein entscheidender Schritt hin zu der höheren Intelligenz, die bei späteren Menschen zu sehen war.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Homo Erectus -->
+                <div class="bg-white rounded-lg border border-gm-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gm-card-active rounded-full flex items-center justify-center">
+                            <span class="text-gm-purple font-bold text-sm">2</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Homo Erectus</h3>
+                            <p class="text-xs font-semibold text-gm-purple uppercase tracking-wide mb-2">Vor 1,9 Millionen bis 110.000 Jahren &middot; Der aufrecht gehende Mensch</p>
+                            <p class="text-gm-text text-sm leading-relaxed">
+                                Als „aufrecht gehender Mensch" bekannt, beherrschte diese Spezies die zweibeinige Fortbewegung und veränderte die Art, wie Menschen mit ihrer Umwelt interagierten. Das aufrechte Gehen befreite ihre Hände für andere Aufgaben. Eine ihrer prägenden Errungenschaften war die Beherrschung des Feuers, das Wärme, Schutz und die Möglichkeit bot, Nahrung zu kochen. Dies verbesserte die Ernährung und trug zum Gehirnwachstum bei. Homo Erectus war die erste Spezies, die Afrika verließ und sich nach Europa und Asien ausbreitete.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Homo Neanderthalensis -->
+                <div class="bg-white rounded-lg border border-gm-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gm-card-active rounded-full flex items-center justify-center">
+                            <span class="text-gm-purple font-bold text-sm">3</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Homo Neanderthalensis</h3>
+                            <p class="text-xs font-semibold text-gm-purple uppercase tracking-wide mb-2">Vor 400.000 bis 40.000 Jahren &middot; Der robuste Überlebende</p>
+                            <p class="text-gm-text text-sm leading-relaxed">
+                                Neandertaler entwickelten robuste, muskulöse Körper, die perfekt für das Überleben in harten Eiszeit-Klimata geeignet waren. Über ihre körperliche Robustheit hinaus waren sie geschickte Werkzeugmacher und zeigten Anzeichen symbolischen Verhaltens und Kreativität. Neandertaler und Homo Sapiens koexistierten bis zu 200.000 bis 300.000 Jahre lang, mit Belegen für Kreuzung und kulturellen Austausch. Nicht-afrikanische moderne Menschen tragen heute 1 bis 4% Neandertaler-DNA, ein Beweis für ihr bleibendes Erbe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7-Centered Homo Sapiens -->
+                <div class="bg-white rounded-lg border border-gm-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gm-card-active rounded-full flex items-center justify-center">
+                            <span class="text-gm-purple font-bold text-sm">4</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">7-zentrige Homo Sapiens</h3>
+                            <p class="text-xs font-semibold text-gm-purple uppercase tracking-wide mb-2">Vor 300.000 Jahren bis 1781 &middot; Der weise Mensch</p>
+                            <p class="text-gm-text text-sm leading-relaxed">
+                                Die Entstehung von Homo Sapiens markierte einen dramatischen Sprung in kognitiven Fähigkeiten, Selbstbewusstsein und sozialer Organisation. Anders als ihre Vorgänger entwickelten Homo Sapiens Sprache, Kunst und Kultur und schufen die Grundlage für globale Zivilisationen. Während des größten Teils ihrer Geschichte funktionierten Homo Sapiens als 7-zentrige Wesen, mit einem Bewusstsein, das in Instinkt und mentalen Strategien verwurzelt war. Diese überlebensorientierte Architektur war auf instinktives Überleben, mentale Verarbeitung und lineares Denken ausgerichtet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9-Centered Homo Sapiens transitus -->
+                <div class="bg-white rounded-lg border border-gm-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gm-card-active rounded-full flex items-center justify-center">
+                            <span class="text-gm-purple font-bold text-sm">5</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">9-zentrige Homo Sapiens Transitus</h3>
+                            <p class="text-xs font-semibold text-gm-purple uppercase tracking-wide mb-2">1781 bis 2027 &middot; Der Übergangsmensch</p>
+                            <p class="text-gm-text text-sm leading-relaxed">
+                                1781 durchlief die Menschheit eine bedeutende energetische Veränderung mit der Entdeckung des Uranus und der Entstehung 9-zentriger Menschen. Diese Übergangsform markierte den Beginn eines neuen Paradigmas des Selbstbewusstseins, emotionaler Tiefe und innerer Autorität. Anders als ihre 7-zentrigen Vorgänger integrieren 9-zentrige Menschen sowohl strategisches (linkes) als auch empfangsbereites (rechtes) Bewusstsein und ermöglichen so ein größeres Gleichgewicht zwischen Logik und ganzheitlicher Wahrnehmung. Diese erhöhte Selbstwahrnehmung bereitete den Weg für die Menschheit, höhere Bewusstseinszustände zu erforschen und sich auf den nächsten evolutionären Sprung vorzubereiten.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Homo Solaris -->
+                <div class="bg-gm-card-active rounded-lg border-2 border-gm-purple p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gm-purple rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">6</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Homo Solaris</h3>
+                            <p class="text-xs font-semibold text-gm-purple uppercase tracking-wide mb-2">Ab 2027 &middot; Der solare Mensch</p>
+                            <p class="text-gm-text text-sm leading-relaxed">
+                                Die Entstehung von Homo Solaris stellt das nächste Kapitel in der evolutionären Geschichte der Menschheit dar. Diese Spezies wird durch geteiltes Bewusstsein, emotionale Stabilität und Interdependenz definiert werden. Anders als Homo Sapiens, die von Natur aus individualistisch und konkurrenzfähig sind, wird Homo Solaris durch kollektive Intelligenz und eine tiefe Verbindung zum Ganzen gedeihen. Die treibende Kraft hinter dieser Transformation ist die Solarplexus-Mutation, eine tiefgreifende energetische Verschiebung, die den Übergang vom 9-zentrigen Modell zu einer vollständig rechtsorientierten Architektur vollenden wird.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SPECIES OVERLAP ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Die Bedeutung der Überschneidung von Spezies
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Evolutionäre Übergänge sind niemals eindeutig. Es gibt immer bedeutende Überschneidungen zwischen Spezies oder Stadien. Diese Überschneidung ermöglicht Interaktionen, Anpassungen und Austausch, die den Verlauf der Evolution prägen.
+            </p>
+
+            <div class="bg-gm-light border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
+                <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Schlüsselprinzip</p>
+                <p class="text-gm-text text-sm leading-relaxed">
+                    Evolutionäre Eigenschaften werden nicht über Nacht angenommen. Überschneidende Stadien ermöglichen es neuen Eigenschaften, sich allmählich in die Gesellschaft zu integrieren, anstatt bestehende Systeme abrupt zu stören. So koexistierten beispielsweise Homo Sapiens und Neandertaler bis zu 300.000 Jahre lang.
+                </p>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Die Entstehung von Homo Solaris im Jahr 2027 wird die prä-mutativen 9-zentrigen Menschen nicht sofort ersetzen. Stattdessen stellt diese evolutionäre Verschiebung die Einführung eines mutierten 9-zentrigen Bewusstseins dar, das sich durch seine vollständig rechte energetische Architektur auszeichnet. Prä-mutative 9-zentrige Menschen werden mindestens weitere 100 Jahre neben dieser neuen Form existieren.
+            </p>
+
+            <h3 class="text-lg font-bold text-gray-800 mt-8 mb-4">Aktueller Übergang: 9-zentrig zu Homo Solaris</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Homo Sapiens Transitus, die aktuelle 9-zentrige Form, funktioniert mit einer Links/Rechts-Energiearchitektur. Das „rechte" Bewusstsein umfasst den 4. Ton und die nicht mutierten 5. und 6. Töne mit empfänglicher Architektur und bildet ein Gleichgewicht mit dem strategischen, mentalen Fokus des linken Bewusstseins (1., 2. und 3. Ton).
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Im Gegensatz dazu verkörpert Homo Solaris ein vollständig mutiertes Vier-Rechts-Design, das eine tiefgreifende Verschiebung hin zu ganzheitlichem, empfänglichem und nichtlinearem Bewusstsein darstellt. Dieser evolutionäre Sprung wird nicht nur das menschliche Potenzial transformieren, sondern auch den allmählichen Übergang weg von der hierarchischen, überlebensbasierten Konditionierung des 7-zentrigen Erbes und der strategischen Dominanz des linken Bewusstseins in der 9-zentrigen Form bedeuten.
+            </p>
+
+            <h3 class="text-lg font-bold text-gray-800 mt-8 mb-4">Warum die Überschneidung von Spezies wichtig ist</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                <div class="bg-gm-light rounded-lg border border-gm-border p-5">
+                    <h4 class="text-sm font-bold text-gray-800 mb-2">Genetischer und kultureller Austausch</h4>
+                    <p class="text-gm-text text-xs leading-relaxed">
+                        Überschneidende Spezies kreuzten sich oft und teilten kulturelle Praktiken, was Anpassungsfähigkeit und Überleben verbesserte. Neandertaler-DNA trug zu modernen menschlichen Eigenschaften wie Immunität und kognitiver Funktion bei.
+                    </p>
+                </div>
+                <div class="bg-gm-light rounded-lg border border-gm-border p-5">
+                    <h4 class="text-sm font-bold text-gray-800 mb-2">Allmähliche Integration</h4>
+                    <p class="text-gm-text text-xs leading-relaxed">
+                        Neue Eigenschaften integrieren sich allmählich und vermeiden abrupte gesellschaftliche Störungen. Übergangsformen wie Homo Sapiens Transitus fungieren als Brücken und stellen sicher, dass neue Formen auf bestehenden Grundlagen aufbauen.
+                    </p>
+                </div>
+                <div class="bg-gm-light rounded-lg border border-gm-border p-5">
+                    <h4 class="text-sm font-bold text-gray-800 mb-2">Vorbereitung auf die Zukunft</h4>
+                    <p class="text-gm-text text-xs leading-relaxed">
+                        Gegenwärtige 9-zentrige Menschen integrieren Individualität, gemeinschaftliche Unterstützung, „Rechtheit" in der Architektur und emotionale Tiefe ohne Kognition und legen so den Grundstein für das ganzheitliche Bewusstsein von Homo Solaris.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== KEY TRAITS ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Schlüsselmerkmale von Homo Solaris
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Shared Consciousness -->
+                <div class="bg-white rounded-lg border border-gm-border p-6">
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">Geteiltes Bewusstsein</h3>
+                    <p class="text-gray-400 text-xs uppercase tracking-wide mb-4">Kollektive Intelligenz</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Anders als Homo Sapiens, deren Bewusstsein individualisiert ist, wird Homo Solaris als kollektives Bewusstsein funktionieren. Ihre Intelligenz wird nicht auf einen einzelnen Geist beschränkt sein, sondern nahtlos durch Gruppendynamiken fließen und beispiellose Ebenen der Kooperation und Ausrichtung ermöglichen. Die strategischen Möglichkeiten für Homo Solaris entstehen durch die Penta, das energetische Rahmenwerk, das Individuen zu funktionalen Gruppeneinheiten verbindet.
+                    </p>
+                </div>
+
+                <!-- Emotional Evolution -->
+                <div class="bg-white rounded-lg border border-gm-border p-6">
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">Emotionale Evolution</h3>
+                    <p class="text-gray-400 text-xs uppercase tracking-wide mb-4">Vom Chaos zur Stille</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Die unbewussten Höhen und Tiefen der emotionalen Wellen im Homo Sapiens Transitus Design werden durch eine ruhige, stetige emotionale Intelligenz ersetzt, die durch die mutierten 5. (Gefühl/Urteil) und 6. (Berührung/Akzeptanz) Töne gefördert wird. Diese Mutation bringt eine tiefgreifende Verschiebung im emotionalen Bewusstsein mit sich und ermöglicht einen Zustand der Harmonie und Klarheit, der die reaktive und oft chaotische Natur emotionaler Wellen im 9-zentrigen Design transzendiert.
+                    </p>
+                </div>
+
+                <!-- Interdependence -->
+                <div class="bg-white rounded-lg border border-gm-border p-6">
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">Interdependenz</h3>
+                    <p class="text-gray-400 text-xs uppercase tracking-wide mb-4">Kollektives Überleben</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Während Homo Sapiens von Individualismus und Konkurrenz angetrieben werden, wird Homo Solaris durch kollektive Zusammenarbeit gedeihen und für strategische Überlebensnotwendigkeiten der Gruppe und des Individuums auf die Penta selbst angewiesen sein. Allein stehend ist es höchst unwahrscheinlich, dass ein Homo Solaris Individuum ohne Zugang zu seiner Gruppeninfrastruktur überleben kann. Sie sind nicht fremd oder getrennt von uns. Sie sind wir, weiterentwickelt.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Diet Change Note -->
+            <div class="bg-gm-warning border-l-4 border-gm-orange rounded-r-lg p-5 mt-8">
+                <p class="text-xs font-semibold text-gm-orange uppercase tracking-widest mb-2">Bedeutende Veränderung</p>
+                <p class="text-gm-text text-sm leading-relaxed">
+                    Eine der tiefgreifendsten Veränderungen, die das Aufkommen von Homo Solaris begleiten wird, ist eine Veränderung in der Ernährung. Homo Solaris wird keine Fleisch- oder Milchprodukte essen und macht diese Nahrungsmittel für diesen neuen Zweig der Menschheit obsolet. Während Homo Sapiens und Homo Solaris in den nächsten hundert Jahren koexistieren, wird die Tierhaltung eine Zeit lang bestehen bleiben, aber stetig abnehmen.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NAMING THE SPECIES (SEO Section) ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Warum wir „Homo Solaris" sagen, nicht „Rave"
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                In der traditionellen Human Design Terminologie wird die Post-2027-Spezies gemeinhin als „Rave" bezeichnet. Genetic Matrix verwendet den Begriff Homo Solaris (oder einfach Solaris), weil dieser Name die evolutionäre Bedeutung und den kollektiven Zweck dieser Wesen genauer widerspiegelt.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Es ist wichtig zu bemerken, dass die „Stimme", die das Human Design System an Ra Uru Hu übermittelte, den Namen „Rave" niemals tatsächlich nannte. Ra selbst behauptete, er habe das Wort nur indirekt während seiner Erfahrung gesehen. Da dieser Name niemals direkt übermittelt wurde und angesichts dessen, was das Wort „Rave" in der modernen Kultur hervorruft, gibt es guten Grund zu bezweifeln, ob es jemals der beabsichtigte Name für diese außergewöhnliche neue Spezies war.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Der Name Homo Solaris bedeutet „Solarmensch" und spiegelt die definierenden Eigenschaften der neuen Spezies wider: ihr leuchtendes Bewusstsein, kollektives Bewusstsein und ihre Fähigkeit, in Harmonie miteinander und mit der Welt zu leben. Im umgangssprachlichen Gebrauch bezeichnen wir sie einfach als Solaris, ein Name, der ihr Wesen erfasst und gleichzeitig ihre Verbindung zur Menschheit bewahrt.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Diese Namenskonvention spiegelt die evolutionäre Tradition der Menschheit selbst wider. So wie sich Homo Habilis („handwerklich geschickter Mensch") zu Homo Erectus („aufrecht gehender Mensch") und später zu Homo Sapiens („weiser Mensch") entwickelte, markiert die Entstehung von Homo Solaris den nächsten Schritt auf dieser Reise.
+            </p>
+
+            <div class="bg-gm-card-active rounded-2xl p-8 md:p-10 mt-6">
+                <h3 class="text-lg font-bold text-gray-800 mb-4">Respekt vor der evolutionären Abstammung</h3>
+                <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                    Die Wesen, die nach der Solarplexus-Mutation geboren werden, stellen den Höhepunkt der evolutionären Reise der Menschheit dar. Sie sind leuchtende Lichtwesen, geschaffen für kollektives Bewusstsein und geteilte Wahrnehmung. Sie sind die Verkörperung von Harmonie, Interdependenz und höherem Bewusstsein. Sie mit einem Wort zu bezeichnen, das mit drogengeschwängerter Tanzkultur assoziiert wird, ist nicht respektvoll gegenüber dem, was sie repräsentieren.
+                </p>
+                <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                    Das Wort Solaris, abgeleitet vom lateinischen Wort für „Sonne", symbolisiert Erleuchtung, Einheit und höheres Bewusstsein. Es trägt ein Gefühl von Würde, Tiefe und Zeitlosigkeit. Es ehrt die tiefgreifende Schönheit der neuen Spezies und die transformierende Rolle, die sie in der Zukunft der Menschheit spielen werden. Sprache ist wichtig, und indem wir Solaris wählen, wollen wir das wahre Wesen dieses außergewöhnlichen evolutionären Sprungs widerspiegeln.
+                </p>
+            </div>
+        </div>
+    </section>
+<!-- ==================== AGE OF THE SLEEPING PHOENIX ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Das Zeitalter des schlafenden Phönix
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Seit 1615 lebt die Menschheit im Zeitalter der Planung, einer Ära, die durch kooperative kollektive Infrastrukturen, gemeinsame Ressourcen und Gesellschaftsverträge geprägt ist. Diese Periode, verwurzelt in Stammes- und kollektiven Energien, brachte Wohlfahrtsstaaten, öffentliche Gesundheitssysteme, Gewerkschaften und andere Systeme hervor, die darauf ausgelegt waren, Sicherheit und Struktur für die Vielen zu bieten.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Diese Ära geht jedoch 2027 zu Ende und läutet das Zeitalter des schlafenden Phönix ein: eine Zeit radikaler Transformation, die auf individuelle Ermächtigung, Differenzierung und Selbstständigkeit fokussiert ist. Die Verschiebung der Hintergrundfrequenz ist kein zufälliges Ereignis, sondern eine programmierte Frequenz, die darauf ausgelegt ist, die Entstehung eines neuen menschlichen Archetyps zu unterstützen.
+            </p>
+
+            <h3 class="text-lg font-bold text-gray-800 mt-8 mb-4">Die Rolle des 41. Tores: Der genetische Auslöser</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Zentral für diesen Übergang ist die Aktivierung des 41. Tores, das in der Genetik als Start-Codon bekannt ist, der Punkt, an dem alle genetischen Prozesse beginnen. Am 15. Februar 2027 wird sich die Sonne mit dem 41. Tor ausrichten und den Höhepunkt der Solarplexus-Mutation markieren sowie den evolutionären Sprung zu Homo Solaris einleiten. Das 41. Tor dient als genetischer „Auslöser" und eröffnet das Potenzial für eine völlig neue Form von Bewusstsein und Erfahrung.
+            </p>
+
+            <h3 class="text-lg font-bold text-gray-800 mt-8 mb-4">Vom Kreuz der Planung zum Kreuz des schlafenden Phönix</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Über vier Jahrhunderte lang hat das Kreuz der Planung unsere Welt definiert. Es war eine Ära, die auf den Energien des Stammes und des Kollektivs aufbaute und Kooperation, gemeinsame Ressourcen und gegenseitige Unterstützung durch die Familie und sorgfältig verwaltete Institutionen förderte.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Mit der Ankunft von 2027 ergreift das Kreuz des schlafenden Phönix Besitz, und die zugrunde liegende Frequenz unserer Zeit verändert sich dramatisch. Der Schwerpunkt verlagert sich weg von kollektiven und stammesbasierten Energien hin zum Individuum. Die überwiegende Mehrheit der Energie in dieser neuen Ära ist individueller Natur (Tore 20, 34, 55), während die verbleibende Stammesenergie (Verteidigung) dem Durchbrechen von Barrieren gewidmet ist, das zur Fortpflanzung führt (Tor 59), nicht zur gemeinschaftlichen Unterstützung oder zu Gesellschaftsverträgen.
+            </p>
+
+            <div class="bg-white border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
+                <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Die Phönix-Metapher</p>
+                <p class="text-gm-text text-sm leading-relaxed">
+                    Die Geschichte des Phönix handelt nicht nur von feuriger Zerstörung und Wiedergeburt. Sie beginnt mit dem Erwachen. Der „schlafende" Phönix muss nach Jahrhunderten der Ruhe zuerst seine Augen öffnen. Erst dann kann er sich den Flammen hingeben, das alte Form verzehren lassen und Raum für etwas Neues schaffen, das entstehen kann. Die evolutionäre Mutation lag schlummernd in unserer DNA und wartete auf den präzisen Moment des Erwachens.
+                </p>
+            </div>
+
+            <h3 class="text-lg font-bold text-gray-800 mt-8 mb-4">Konflikt als Katalysator</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Das Verbrennen des Phönix ist nicht friedlich, und der Niedergang des Zeitalters der Planung wird von Turbulenzen geprägt sein. Während die kollektiven Strukturen ihre Unterstützung verlieren, wird die Welt Kriege um Ressourcen erleben, wobei die Knappheit von Wasser, Nahrung, Energie und bewohnbarem Land sowohl internationale als auch interne Konflikte entfachen wird. Massenmigration wird bereits fragile Systeme zusätzlich belasten.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Diese Konflikte, so tragisch sie auch sein mögen, sind nicht nur destruktiv. Sie dienen als die Flammen, die den Boden für die Transformation freimachen, integral sowohl für den Tod der alten Ordnung als auch für die Geburt der neuen. Wie der Phönix nur aus seiner eigenen Asche aufersteht, so wird auch Homo Solaris aus den Wirren und dem Zusammenbruch der Welt entstehen, die Homo Sapiens erbaut hat.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== SUPPORTING THE SHIFT ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Den Wandel unterstützen
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Um in dieser transformativen Ära zu gedeihen, ist es entscheidend, sich mit der neuen Hintergrundfrequenz auszurichten und entsprechend der eigenen Strategie und Autorität zu leben. Das bedeutet, Selbstwahrnehmung zu fördern, Unterscheidungsvermögen zu üben und Entscheidungen zu treffen, die Ihr einzigartiges Design würdigen.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-6">
+                Die Unterstützung der Entstehung von Homo Solaris erfordert mehr als nur persönliche Ausrichtung. Es erfordert die bewusste Schaffung von Umgebungen, in denen diese neuen Individuen erkannt, verstanden und unterstützt werden. Als einzelgängerische Wesen können Homo Solaris verletzlich, missverstanden oder nach konventionellen Maßstäben sogar behindert erscheinen. Ihre einzigartigen Qualitäten könnten mit Autismus oder sozialem Rückzug verwechselt werden. Das wahre Potenzial von Homo Solaris wird jedoch nur verwirklicht, wenn sie Teil einer Penta sind, einer kleinen, synergistischen Gruppe anderer Homo Solaris Individuen.
+            </p>
+
+            <h3 class="text-lg font-bold text-gray-800 mt-4 mb-4">Praktische Schritte für die Navigation des Übergangs</h3>
+            <ul class="space-y-3 text-gm-text text-sm md:text-base leading-relaxed">
+                <li class="flex items-start gap-2">
+                    <span class="text-gm-purple mt-1 flex-shrink-0">&#9679;</span>
+                    <span><strong>Definieren Sie Ihre Arbeit und Karriere neu:</strong> Konzentrieren Sie sich auf die Entwicklung von Fähigkeiten, die für KI und Roboter schwer zu replizieren bleiben, wie Kreativität, emotionale Intelligenz, nuancierte persönliche Kommunikation, Vision und Führung.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-gm-purple mt-1 flex-shrink-0">&#9679;</span>
+                    <span><strong>Kultivieren Sie Selbstständigkeit:</strong> Entwickeln Sie praktische Fähigkeiten, die Ihre Unabhängigkeit stärken. Der Aufbau belastbarer Netzwerke gleichgesinnter Individuen kann gegenseitige Unterstützung außerhalb traditioneller Institutionen bieten.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-gm-purple mt-1 flex-shrink-0">&#9679;</span>
+                    <span><strong>Stärken Sie Ihre Gesundheit und Widerstandsfähigkeit:</strong> Investieren Sie in Ihr körperliches und geistiges Wohlbefinden. Die kommende Ära wird turbulent sein. Robuste Gesundheit, emotionale Regulation und Nervensystem-Resilienz werden wichtige Vermögenswerte sein.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-gm-purple mt-1 flex-shrink-0">&#9679;</span>
+                    <span><strong>Umarmen Sie lebenslanges Lernen:</strong> Die Welt verändert sich und wird sich weiterhin schnell verändern. Fördern Sie einen Geist der Neugier und Anpassungsfähigkeit, indem Sie neues Wissen suchen, verschiedene Perspektiven erkunden und offen für Innovation bleiben.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-gm-purple mt-1 flex-shrink-0">&#9679;</span>
+                    <span><strong>Priorisieren Sie authentische Beziehungen:</strong> Während sich kollektive Strukturen auflösen, werden echte Verbindungen, die auf gegenseitigem Respekt und gemeinsamen Werten basieren, noch wichtiger. Suchen Sie Gemeinschaft, aber lassen Sie sie auf Authentizität statt auf Verpflichtung aufgebaut sein.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-gm-purple mt-1 flex-shrink-0">&#9679;</span>
+                    <span><strong>Nähren Sie Ihre einzigartigen Gaben:</strong> Die Zukunft gehört denen, die ihre Individualität umarmen. Investieren Sie Zeit in die Entdeckung und Kultivierung Ihrer einzigartigen Talente, Leidenschaften und kreativen Vision.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ==================== CONCLUSION ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Unsere Evolution umarmen
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Homo Solaris repräsentiert den nächsten evolutionären Schritt für die Menschheit, ein höheres Bewusstseinspotenzial, das nicht aus Trennung entsteht, sondern aus der Integration all dessen, was wir gelernt haben und geworden sind. Diese neue Spezies ist kein Außenseiter, noch eine Ablehnung unserer Vergangenheit, sondern eine Verfeinerung und Blüte unserer tiefsten menschlichen Qualitäten. Ihre Entstehung signalisiert einen Wendepunkt und lädt uns ein, bewusst an unserer kollektiven Transformation teilzunehmen.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Der Weg zu dieser neuen Art des Seins wird nicht ohne Herausforderungen sein. Die Turbulenzen schneller technologischer, sozialer und ökologischer Veränderungen können zeitweise überwältigend sein. Doch gerade in diesen Momenten der Ungewissheit werden unsere Fähigkeiten zur Anpassung, Widerstandsfähigkeit und Kreativität am wichtigsten. Unsere Evolution zu umarmen bedeutet, sowohl unsere Verwundbarkeiten als auch unsere Stärken anzuerkennen und zu wählen, mit Mut und Absicht voranzuschreiten.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Während wir den Aufstieg von Homo Solaris unterstützen, sind wir aufgerufen, Umgebungen in uns selbst und zwischen uns zu schaffen, in denen Authentizität, Empathie, Selbstständigkeit und kollektive Intelligenz gedeihen können. Indem wir uns bewusst auf den Übergang vorbereiten und die Entstehung von Homo Solaris unterstützen, erhöhen wir nicht nur unsere Chancen zu gedeihen, sondern tragen auch zur Schaffung einer neuen, widerstandsfähigeren und inspirierten menschlichen Geschichte bei.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT IS NEXT ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-gm-card-active rounded-2xl p-8 md:p-10 text-center">
+                <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">Was kommt als Nächstes?</h2>
+                <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                    Genetic Matrix wird weitere Bildungsmaterialien über das Design und die einzigartigen Qualitäten von Homo Solaris bereitstellen. Diese Ressourcen werden uns allen helfen, die tiefgreifenden Unterschiede und das Potenzial, das diese neue Form der Menschheit mit sich bringt, besser zu verstehen.
+                </p>
+                <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                    Bleiben Sie dran für Updates und neue Werkzeuge, um Ihre Reise in dieses aufregende evolutionäre Kapitel zu unterstützen.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Häufig gestellte Fragen
+            </h2>
+            <div class="space-y-3">
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Was ist die Solarplexus-Mutation?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Die Solarplexus-Mutation ist eine tiefgreifende energetische Verschiebung, die grundlegend verändern wird, wie neu inkarnierende Menschen Emotionen, Bewusstsein und Verbindung erleben. Sie umfasst die Mutation des 5. (Gefühl / Urteil) und 6. (Berührung / Akzeptanz) Tons und schafft eine ruhige, stetige emotionale Intelligenz, die die reaktiven emotionalen Wellen des aktuellen 9-zentrierten Designs ersetzt.
+                    </div>
+                </details>
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Wann beginnt die Mutation?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Am 15. Februar 2027 richtet sich die Sonne mit dem 41. Tor (dem Start-Codon) aus und markiert den Höhepunkt der Solarplexus-Mutation sowie den Beginn des evolutionären Sprungs zu Homo Solaris. Dies ist der Zeitpunkt, an dem die ersten Homo Solaris Wesen zu inkarnieren beginnen.
+                    </div>
+                </details>
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Werden sich bestehende Menschen in Homo Solaris verwandeln?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Nein. Bestehende 9-zentrierte Menschen werden mit ihrem aktuellen Design fortfahren. Homo Solaris bezieht sich auf neu inkarnierende Wesen, die nach der Mutation geboren werden. Prä-mutations 9-zentrierte Menschen werden mindestens weitere 100 Jahre neben Homo Solaris koexistieren, genauso wie frühere Spezies sich während evolutionärer Übergänge überlappten.
+                    </div>
+                </details>
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Was ist der Unterschied zwischen „Rave" und „Homo Solaris"?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Sie beziehen sich auf dieselbe Post-2027 Spezies. „Rave" ist der Begriff, der traditionell in Human Design verwendet wird. Genetic Matrix verwendet „Homo Solaris" (was „Solarer Mensch" bedeutet), weil es die evolutionäre Abstammung angemessen widerspiegelt, diese Wesen mit der Homo-Gattung (Habilis, Erectus, Sapiens, Solaris) verbindet und ihre Verbindung zur menschlichen Geschichte würdigt, anstatt sie als etwas Fremdes oder Losgelöstes zu behandeln.
+                    </div>
+                </details>
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Was ist das Zeitalter des schlafenden Phönix?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Das Zeitalter des schlafenden Phönix ist die neue Ära, die 2027 beginnt und das Zeitalter der Planung ablöst, das seit 1615 in Kraft war. Es markiert eine Verschiebung von kollektiven und stammesbasierten Energien hin zu individueller Ermächtigung, Differenzierung und Selbstständigkeit. Das Kreuz des schlafenden Phönix trägt überwiegend individuelle Energie (Tore 20, 34, 55) und verändert grundlegend die Hintergrundfrequenz, die die menschliche Gesellschaft formt.
+                    </div>
+                </details>
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Kann ein Homo Solaris Individuum allein überleben?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Allein stehend ist es höchst unwahrscheinlich, dass ein Homo Solaris Individuum ohne Zugang zu seiner Gruppeninfrastruktur oder verständnisvollen menschlichen Betreuern überleben kann. Ihr wahres Potenzial wird nur innerhalb einer Penta verwirklicht, einer kleinen synergistischen Gruppe von 3 bis 5 anderen Homo Solaris Individuen. Innerhalb dieser intentionalen Kollektive kann ihre individuelle Intelligenz und Kreativität ineinandergreifen und ein neues Niveau kollektiver Genialität und Widerstandsfähigkeit hervorbringen.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CROSS-LINKS ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Andere Lernthemen
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <a href="/types/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
+                    <img src="../../assets/icon-type.svg" alt="Typ" class="w-8 h-8 flex-shrink-0">
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-800">Typ</h3>
+                        <p class="text-gray-400 text-xs">Die fünf Typen</p>
+                    </div>
+                </a>
+                <a href="/centers/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
+                    <img src="../../assets/icon-centres.svg" alt="Zentren" class="w-8 h-8 flex-shrink-0">
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-800">Zentren</h3>
+                        <p class="text-gray-400 text-xs">Die neun Energiezentren</p>
+                    </div>
+                </a>
+                <a href="/variables/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
+                    <img src="../../assets/icon-arrows.svg" alt="Variablen Pfeile" class="w-8 h-8 flex-shrink-0">
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-800">Variablen Pfeile</h3>
+                        <p class="text-gray-400 text-xs">Quantendifferenzierung</p>
+                    </div>
+                </a>
+                <a href="/gates/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
+                    <img src="../../assets/icon-gates.svg" alt="Tore" class="w-8 h-8 flex-shrink-0">
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-800">Tore</h3>
+                        <p class="text-gray-400 text-xs">Die 64 Tore</p>
+                    </div>
+                </a>
+                <a href="/profiles/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
+                    <img src="../../assets/icon-profile.svg" alt="Profile" class="w-8 h-8 flex-shrink-0">
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-800">Profile</h3>
+                        <p class="text-gray-400 text-xs">Die 12 Profile</p>
+                    </div>
+                </a>
+                <a href="/definition/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition flex items-center gap-3">
+                    <img src="../../assets/icon-definition.svg" alt="Definition" class="w-8 h-8 flex-shrink-0">
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-800">Definition</h3>
+                        <p class="text-gray-400 text-xs">Wie Energie fließt</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Erkunden Sie Ihr Design</h2>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+                Das Verständnis Ihres eigenen Designs ist der erste Schritt bei der Navigation des bevorstehenden Wandels. Erstellen Sie Ihr kostenloses Chart und entdecken Sie die Mechanik Ihres einzigartigen Bodygraph.
+            </p>
+            <a href="https://www.geneticmatrix.com/pricing/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+                Get Pro &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+                <div class="text-center md:text-left">
+                    <img src="../../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">Alle Rechte vorbehalten.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Datenschutz, Allgemeine Geschäftsbedingungen</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Abonnieren Sie unseren Newsletter</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Melden Sie sich für unseren Newsletter an, um Updates, Angebote,
+                        neue Veröffentlichungen und alles rund um Genetic Matrix zu erhalten.
+                    </p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input type="email" placeholder="Ihre E-Mail-Adresse" class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400">
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Verbinden Sie sich mit uns</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener" class="hover:-translate-y-1 hover:opacity-70 transition-all duration-300">
+                            <img src="../../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
+                        </a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener" class="hover:-translate-y-1 hover:opacity-70 transition-all duration-300">
+                            <img src="../../assets/icon-x.svg" alt="X" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener" class="hover:-translate-y-1 hover:opacity-70 transition-all duration-300">
+                            <img src="../../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener" class="hover:-translate-y-1 hover:opacity-70 transition-all duration-300">
+                            <img src="../../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
+                        </a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Kontaktieren Sie uns</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+(function() {
+    fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            var badge = document.getElementById('gm-cart-count');
+            if (badge && data.cart_count > 0) {
+                badge.textContent = data.cart_count;
+                badge.classList.remove('hidden');
+            }
+            var loggedOut = document.getElementById('gm-logged-out');
+            var loggedIn = document.getElementById('gm-logged-in');
+            if (data.logged_in) {
+                if (loggedOut) loggedOut.classList.add('hidden');
+                if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
+            }
+        })
+        .catch(function() {});
+})();
+</script>
+<script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
+</body>
+</html>
