@@ -38,3 +38,5 @@ node_modules/
 run-translations.bat
 translation-progress.json
 run-large-translations.bat
+run-remaining.bat
+translate-remaining.py
