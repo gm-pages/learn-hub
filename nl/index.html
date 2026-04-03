@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
  <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -140,52 +140,110 @@
 <body class="bg-white text-gray-700">
 
     <!-- ==================== NAV BAR ==================== -->
-    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+        <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="w-full px-8 md:px-12 flex items-center justify-between h-[80px]">
             <!-- Logo -->
-            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
-                <img src="assets/logo.svg" alt="Genetic Matrix - Weet uzelf te kennen" class="h-14">
+            <a href="/" class="flex-shrink-0">
+                <img src="/learn-hub/assets/logo.svg" alt="Genetic Matrix - Ken uzelf" class="h-8 md:h-14">
             </a>
 
-            <!-- Right Nav: LOGGED OUT (default for static pages) -->
-            <div class="flex items-center gap-8">
-                <!-- Report Icon -->
-                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Rapporten">
-                    <img src="assets/icon-report.svg" alt="Rapporten" class="h-9 w-9">
+            <!-- Hamburger (mobile) -->
+            <button id="gm-hamburger" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition">
+                <svg class="w-6 h-6 text-gm-gray" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+
+            <!-- Desktop Nav -->
+            <div class="hidden lg:flex items-center gap-5">
+                <!-- Calendar -->
+                <a href="https://www.geneticmatrix.com/calendar/" class="flex items-center justify-center w-9 h-9 rounded-lg border border-[#dee2e6] hover:border-gm-purple/30 hover:bg-gray-50 transition" title="Kalender">
+                    <img src="/learn-hub/assets/icon-calendar.svg" alt="Kalender" class="h-5 w-5">
                 </a>
-                <!-- Talking Chart Icon -->
-                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Talking Charts">
-                    <img src="assets/icon-talking-chart.svg" alt="Talking Charts" class="h-7 w-7">
+                <!-- Reports -->
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="flex items-center justify-center w-9 h-9 rounded-lg border border-[#dee2e6] hover:border-gm-purple/30 hover:bg-gray-50 transition" title="Rapporten">
+                    <img src="/learn-hub/assets/icon-report.svg" alt="Rapporten" class="h-6 w-6">
                 </a>
-                <!-- Free Chart (popup on live site - Shafik to wire up) -->
-                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Gratis Chart</a>
-                <!-- Learn -->
-                <a href="index.html" class="hidden lg:block text-gm-purple hover:text-gm-dark text-sm font-semibold">Leren</a>
+                <!-- Talking Charts -->
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="flex items-center justify-center w-9 h-9 rounded-lg border border-[#dee2e6] hover:border-gm-purple/30 hover:bg-gray-50 transition" title="Sprekende Charts">
+                    <img src="/learn-hub/assets/icon-talking-chart.svg" alt="Sprekende Charts" class="h-5 w-5">
+                </a>
+                <!-- Free Chart -->
+                <a href="#" class="text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Gratis Chart</a>
+                <!-- Learn Dropdown -->
+                <div class="relative group">
+                    <button class="text-gm-purple hover:text-gm-dark text-sm font-semibold flex items-center gap-1">
+                        Leren
+                        <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[420px] bg-white rounded-xl shadow-xl border border-gray-100 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="grid grid-cols-2 gap-1">
+                            <a href="/learn-hub/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/Menu_Icon_ Hub.svg" alt="Learn Hub" class="w-6 h-6"></div>
+                                <div><div class="text-sm font-semibold text-gray-800">Learn Hub</div><div class="text-xs text-gm-text-light mt-0.5">HD en Astrologie onderwijs</div></div>
+                            </a>
+                            <a href="/learn-hub/celebrities/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/Menu_Icon _celebrity .svg" alt="Celebrity Zoeken" class="w-6 h-6"></div>
+                                <div><div class="text-sm font-semibold text-gray-800">Celebrity Zoeken</div><div class="text-xs text-gm-text-light mt-0.5">88.600+ celebrity charts</div></div>
+                            </a>
+                            <a href="/dictionary/dictionary.html" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/Menu_Icon_ dictionary.svg" alt="Woordenboek" class="w-6 h-6"></div>
+                                <div><div class="text-sm font-semibold text-gray-800">Woordenboek</div><div class="text-xs text-gm-text-light mt-0.5">HD en Astrologie termen</div></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <!-- Our Plans -->
-                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Onze Plannen</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="text-gm-gray hover:text-gray-900 text-sm font-medium">Onze abonnementen</a>
                 <!-- Cart -->
                 <a href="https://www.geneticmatrix.com/cart/" title="Winkelwagen" class="relative">
-                    <img src="assets/icon-cart.svg" alt="Winkelwagen" class="h-5 w-auto">
-                    <span id="gm-cart-count" class="absolute -top-1 -right-3 text-gm-green font-bold text-sm hidden">0</span>
+                    <img src="/learn-hub/assets/icon-cart.svg" alt="Winkelwagen" class="h-5 w-auto">
+                    <span id="gm-cart-count" class="absolute top-[2px] left-[55%] -translate-x-1/2 text-gm-green font-bold text-[10px] leading-none hidden">0</span>
                 </a>
-                <!-- Language Selector -->
-                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                <!-- Language -->
+                <div class="flex items-center gap-1 text-gm-gray text-sm">
                     <span>Nederlands</span>
-                    <img src="assets/icon-english.svg" alt="Nederlands" class="h-5 w-7">
+                    <img src="/learn-hub/assets/icon-english.svg" alt="Nederlands" class="h-5 w-7">
                 </div>
-                                <!-- Logged OUT state -->
+                <!-- Logged OUT -->
                 <div id="gm-logged-out" class="flex items-center gap-4">
-                    <a href="https://www.geneticmatrix.com/my-account/" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium">Inloggen</a>
+                    <a href="https://www.geneticmatrix.com/my-account/" class="text-gm-gray hover:text-gray-900 text-sm font-medium">Inloggen</a>
                     <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Registreren</a>
                 </div>
-                <!-- Logged IN state (hidden by default) -->
+                <!-- Logged IN -->
                 <div id="gm-logged-in" class="hidden items-center gap-4">
                     <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="text-gm-gray hover:text-gray-900 text-sm font-medium">Uitloggen</a>
                     <a href="https://www.geneticmatrix.com/user-home/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Mijn Hub</a>
                 </div>
             </div>
+
+            <!-- Mobile: Cart only (always visible) -->
+            <a href="https://www.geneticmatrix.com/cart/" title="Winkelwagen" class="lg:hidden relative">
+                <img src="/learn-hub/assets/icon-cart.svg" alt="Winkelwagen" class="h-5 w-auto">
+                <span id="gm-cart-count-mobile" class="absolute top-[2px] left-[55%] -translate-x-1/2 text-gm-green font-bold text-[10px] leading-none hidden">0</span>
+            </a>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="gm-mobile-menu" style="display:none" class="lg:hidden bg-white border-t border-gray-100 px-6 py-4">
+            <div class="flex flex-col gap-3">
+                <a href="/learn-hub/" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition">
+                    <img src="/learn-hub/assets/Menu_Icon_ Hub.svg" alt="" class="w-5 h-5"> Learn Hub
+                </a>
+                <a href="/learn-hub/celebrities/" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition">
+                    <img src="/learn-hub/assets/Menu_Icon _celebrity .svg" alt="" class="w-5 h-5"> Celebrity Zoeken
+                </a>
+                <a href="/dictionary/dictionary.html" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition">
+                    <img src="/learn-hub/assets/Menu_Icon_ dictionary.svg" alt="" class="w-5 h-5"> Woordenboek
+                </a>
+                <div class="border-t border-gray-100 my-1"></div>
+                <a href="#" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition" data-action="free-chart-popup">Gratis Chart</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Onze abonnementen</a>
+                <div class="border-t border-gray-100 my-1"></div>
+                <a href="https://www.geneticmatrix.com/user-home/" class="py-2 text-sm font-semibold text-gm-green hover:text-gm-green-dark transition">Mijn Hub</a>
+                <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Uitloggen</a>
+            </div>
         </div>
     </nav>
+
 
     <!-- ==================== HERO / PAGE HEADER ==================== -->
     <section class="relative overflow-hidden py-16 md:py-20 text-center" style="background: linear-gradient(135deg, #1e1240 0%, #3C2864 35%, #4a3070 55%, #3C2864 75%, #1a0e38 100%);">
@@ -237,7 +295,7 @@
         <div class="relative z-10 max-w-3xl mx-auto px-6">
             <h1 class="text-3xl md:text-4xl font-bold text-white mb-5">Leer Human Design & Astrologie</h1>
             <p class="text-gray-200 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-                Gratis educatieve bronnen om uw begrip van Human Design, astrologie en de tools die beschikbaar zijn op Genetic Matrix te verdiepen. Geen login vereist.
+                Gratis educatieve bronnen om uw begrip van Human Design, astrologie en de tools van Genetic Matrix te verdiepen. Geen login vereist.
             </p>
         </div>
     </section>
@@ -247,7 +305,7 @@
         <div class="max-w-6xl mx-auto px-6">
             <nav class="flex items-center gap-6 md:gap-8 overflow-x-auto scrollbar-hide py-3.5" aria-label="Sectienavigatie">
                 <a href="#human-design" class="section-nav-link text-sm font-bold text-gray-500 hover:text-gm-purple whitespace-nowrap border-b-2 border-transparent hover:border-gm-purple pb-3 -mb-[15px] transition">Human Design</a>
-                <a href="#chart-methods" class="section-nav-link text-sm font-bold text-gray-500 hover:text-gm-purple whitespace-nowrap border-b-2 border-transparent hover:border-gm-purple pb-3 -mb-[15px] transition">Berekeningsmethoden</a>
+                <a href="#chart-methods" class="section-nav-link text-sm font-bold text-gray-500 hover:text-gm-purple whitespace-nowrap border-b-2 border-transparent hover:border-gm-purple pb-3 -mb-[15px] transition">Chart methoden</a>
                 <a href="#astrology" class="section-nav-link text-sm font-bold text-gray-500 hover:text-gm-purple whitespace-nowrap border-b-2 border-transparent hover:border-gm-purple pb-3 -mb-[15px] transition">Astrologie</a>
             </nav>
         </div>
@@ -261,14 +319,14 @@
                 <span class="text-xs font-semibold tracking-widest text-gray-400 uppercase">Human Design</span>
             </div>
             <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-3">
-                <span class="text-gm-purple">|</span> Human Design Tools & Bronnen
+                <span class="text-gm-purple">|</span> Human Design tools & bronnen
             </h2>
             <p class="text-gray-500 text-sm md:text-base max-w-3xl mb-10">
-                Ontdek Human Design van de basis van Chart-fundamenten tot geavanceerde differentiatie, relatiedynamiek, cycli en gespecialiseerde studie.
+                Verken Human Design van de fundamentele chart grondslagen tot geavanceerde differentiatie, relatiedynamiek, cycli en gespecialiseerde studie.
             </p>
 
             <!-- Foundation Basics Sub-header -->
-            <h3 class="text-base md:text-lg font-semibold text-gray-700 mb-5">Basis Fundamenten</h3>
+            <h3 class="text-base md:text-lg font-semibold text-gray-700 mb-5">Basis grondslagen</h3>
 
             <!-- Cards Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -280,11 +338,11 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Type</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Het Human Design Systeem werkt primair door uw Bodygraph. Het verdeelt ons allemaal in vijf Types: Generator, Manifesterende Generator, Projector, Manifestor en Reflector.
+                                Het Human Design systeem werkt voornamelijk door uw Bodygraph. Het verdeelt ons allemaal in vijf Types: Generator, Manifesterende Generator, Projector, Manifestor, en Reflector.
                             </p>
                         </div>
                     </div>
-                    <a href="types/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="types/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- Profile Card -->
@@ -294,11 +352,11 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Profiel</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Uw Profiel beschrijft 70% van het gedragskostuum dat u belichaamt en toont als wegwijzer voor het correct leven van uw doelrol.
+                                Uw Profiel beschrijft 70% van het gedragskostuum dat u belichaamt en toont als wegwijzer voor het juist leven van uw rol met betekenis.
                             </p>
                         </div>
                     </div>
-                    <a href="profiles/" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="profiles/" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- Centers Card -->
@@ -308,11 +366,11 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Centra</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                De Bodygraph bevat negen Centra. Het begrijpen van uw gedefinieerde, ongedefinieerde en open Centra onthult uw autoriteit, definitie en conditionering.
+                                De Bodygraph bevat negen Centra. Het begrijpen van uw gedefinieerde, ongedefinieerde, en open Centra onthult uw autoriteit, definitie, en conditionering.
                             </p>
                         </div>
                     </div>
-                    <a href="centers/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="centers/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- Definition Card -->
@@ -322,11 +380,11 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Definitie</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Definitie beschrijft hoe uw gedefinieerde Centra met elkaar verbonden zijn. Enkele Definitie, Split Definitie, Drievoudige Definitie, Viervoudige Definitie of Geen Definitie - elk Definitietype vormt hoe u energie verwerkt en zich tot anderen verhoudt.
+                                Definitie beschrijft hoe uw gedefinieerde Centra met elkaar verbonden zijn. Enkele, Split, Drievoudige Split, Viervoudige Split, of Geen Definitie - elk definitietype bepaalt hoe u energie verwerkt en met anderen omgaat.
                             </p>
                         </div>
                     </div>
-                    <a href="definition/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="definition/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- Channels Card -->
@@ -340,7 +398,7 @@
                             </p>
                         </div>
                     </div>
-                    <a href="channels/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="channels/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- Gates & Lines Card -->
@@ -350,11 +408,11 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Poorten & Lijnen</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Poorten en Lijnen zijn de specifieke archetypische energieën geactiveerd in uw Chart door planetaire posities. Er zijn 64 Poorten in de Bodygraph, elk met 6 Lijnen, afgeleid van de 64 hexagrammen van de I Ching.
+                                Poorten en Lijnen zijn de specifieke archetypische energieën geactiveerd in uw chart door planetaire posities. Er zijn 64 Poorten in de Bodygraph, elk met 6 Lijnen, afgeleid van de 64 hexagrammen van de I Ching.
                             </p>
                         </div>
                     </div>
-                    <a href="gates/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="gates/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- HD Planets Card -->
@@ -364,20 +422,20 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Planeten</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                In Human Design programmeert elke planeet specifieke Poorten en Lijnen in uw Bodygraph. Leer hoe de Zon, Maan, Knopen en planeten andere betekenissen dragen dan in traditionele astrologie.
+                                In Human Design programmeert elke planeet specifieke Poorten en Lijnen in uw Bodygraph. Leer hoe de Zon, Maan, Knopen en planeten verschillende betekenissen hebben dan in de traditionele astrologie.
                             </p>
                         </div>
                     </div>
-                    <a href="astrology/planets.html#planets-in-human-design" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="astrology/planets.html#planets-in-human-design" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
             </div>
 
             <!-- Advanced Topics Header -->
-            <h3 class="text-base md:text-lg font-semibold text-gray-700 mt-12 mb-3">Gevorderde Onderwerpen</h3>
+            <h3 class="text-base md:text-lg font-semibold text-gray-700 mt-12 mb-3">Geavanceerde onderwerpen</h3>
 
             <!-- Advanced Foundation Topics Sub-header -->
-            <h4 class="text-sm md:text-base font-semibold text-gray-500 mb-5">Gevorderde Fundamentele Onderwerpen</h4>
+            <h4 class="text-sm md:text-base font-semibold text-gray-500 mb-5">Geavanceerde basis onderwerpen</h4>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
@@ -388,11 +446,11 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Incarnatiekruis</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Uw Incarnatiekruis wordt gedefinieerd door vier Poort- en Lijnactiveringen en biedt het overkoepelende thema waardoor uw doel kan ontstaan. Kruisen zijn gegroepeerd in Kwarteren en Kruistypes.
+                                Uw Incarnatiekruis wordt gedefinieerd door vier Poort- en Lijnactiveringen en biedt het overkoepelende thema waardoor uw doel kan ontstaan. Kruisen worden gegroepeerd in kwarttijden en kruistypes.
                             </p>
                         </div>
                     </div>
-                    <a href="incarnation-cross/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="incarnation-cross/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- Circuits Card -->
@@ -402,39 +460,39 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Circuits</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Kanalen, Poorten en Lijnen groeperen zich in drie overkoepelende Circuit-families - Individueel Circuit, Collectief Circuit en Stamcircuit. Individuele en Stam circuits verdelen zich verder onder in Wetende, Integratie, Centrering, Ego en Verdedigingscircuits.
+                                Kanalen, Poorten en Lijnen groeperen zich in drie overkoepelende Circuit families - Individueel, Collectief, en Stamcircuit. Individuele en Stamcircuits verdelen zich verder onder in Knowing, Integration, Centering, Ego en Defense circuits.
                             </p>
                         </div>
                     </div>
-                    <a href="circuits/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="circuits/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- Deeper Mechanics Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-deeper-mechanics.svg" alt="Diepere Mechanica" class="w-16 h-16 flex-shrink-0">
+                        <img src="assets/icon-deeper-mechanics.svg" alt="Diepere mechanismen" class="w-16 h-16 flex-shrink-0">
                         <div>
-                            <h3 class="text-lg font-bold text-gray-800 mb-1">Diepere Mechanica</h3>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Diepere mechanismen</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Determinatie, Omgeving, Perspectief en Motivatie. De vier kritieke gebieden voor het correct leven van uw Design op het diepste niveau.
+                                Determinatie, Omgeving, Perspectief, en Motivatie. De vier kritieke gebieden voor het juist leven volgens uw design op het diepste niveau.
                             </p>
                         </div>
                     </div>
-                    <a href="deeper-mechanics/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="deeper-mechanics/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- Variables & Arrows Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-arrows.svg" alt="Variabele Pijlen" class="w-16 h-16 flex-shrink-0">
+                        <img src="assets/icon-arrows.svg" alt="Variabelen pijlen" class="w-16 h-16 flex-shrink-0">
                         <div>
-                            <h3 class="text-lg font-bold text-gray-800 mb-1">Variabele Pijlen</h3>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Variabelen pijlen</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                De vier pijlen bovenaan uw Bodygraph onthullen uw Variabelen, die Toon-afgeleid zijn en het diepste niveau van kwantumdifferentiatie in Human Design vertegenwoordigen.
+                                De vier pijlen aan de bovenkant van uw Bodygraph onthullen uw Variabelen, die Toon-afgeleid zijn en het diepste niveau van kwantumdifferentiatie in Human Design vertegenwoordigen.
                             </p>
                         </div>
                     </div>
-                    <a href="variables/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="variables/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- Homo Solaris Card -->
@@ -444,17 +502,17 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Homo Solaris</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Homo Solaris is de nieuwe soort die ontstaat uit de Emotioneel centrum Mutatie beginnend in februari 2027. Gedefinieerd door quad-right architectuur en gedeeld bewustzijn, vertegenwoordigt Homo Solaris de volgende evolutionaire stap voor de mensheid.
+                                Homo Solaris is de nieuwe soort die ontstaat uit de Emotioneel centrum mutatie die begint in februari 2027. Gedefinieerd door quad-right architectuur en gedeeld bewustzijn, vertegenwoordigt Homo Solaris de volgende evolutionaire stap voor de mensheid.
                             </p>
                         </div>
                     </div>
-                    <a href="homo-solaris/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="homo-solaris/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
             </div>
 
             <!-- Transits & Life Cycles Sub-header -->
-            <h4 class="text-sm md:text-base font-semibold text-gray-500 mt-8 mb-5">Transits & Levenscycli</h4>
+            <h4 class="text-sm md:text-base font-semibold text-gray-500 mt-8 mb-5">Transits & levenscycli</h4>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
@@ -465,11 +523,11 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Levenscycli</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Saturnus Terugkeer, Uranus Oppositie en Chiron Terugkeer markeren kritieke rijping- en transformatiefasen in het leven. Andere cycli zoals Solaarhoroscoop, Maan-, Jupiter- en andere hebben specifieke conditioneringwaarde en impact.
+                                Saturnus Terugkeer, Uranus Oppositie en Chiron Terugkeer markeren kritieke rijping en transformatiefasen in het leven. Andere cycli zoals Solaarhoroscoop, Maan, Jupiter en anderen hebben specifieke conditioneringswaarde en impact.
                             </p>
                         </div>
                     </div>
-                    <a href="cycles/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="cycles/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- Transits Card -->
@@ -479,32 +537,32 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Transits</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                De neutrino-stroom draagt planetaire programmering die iedereen realtime conditioneert, wakend of slapend. De transiterende planeten activeren Poorten en Lijnen in uw Chart en onthullen een andere diepe conditioneringslaag die uw geest beïnvloedt.
+                                De neutrinostroom draagt planetaire programmering die iedereen in realtime conditioneert, wakend of slapend. De transits van planeten activeren Poorten en Lijnen in uw chart, en onthullen een andere diepe conditioneringslaag die uw geest beïnvloedt.
                             </p>
                         </div>
                     </div>
-                    <a href="transits/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="transits/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
             </div>
 
             <!-- Relationship & Group Dynamics Sub-header -->
-            <h4 class="text-sm md:text-base font-semibold text-gray-500 mt-8 mb-5">Relatie & Groepsdynamiek</h4>
+            <h4 class="text-sm md:text-base font-semibold text-gray-500 mt-8 mb-5">Relatie & groepsdynamiek</h4>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- Connection Chart Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-connection.svg" alt="Verbindings Chart" class="w-16 h-16 flex-shrink-0">
+                        <img src="assets/icon-connection.svg" alt="Verbindingschart" class="w-16 h-16 flex-shrink-0">
                         <div>
-                            <h3 class="text-lg font-bold text-gray-800 mb-1">Verbindings Chart</h3>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Verbindingschart</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Een Verbindings Design consumeert individuele designs en onthult de mechanica van een verbond. Het Verbindings Design onthult dat een verbond meer is dan de som van zijn delen.
+                                Een Verbindingsdesign verbruikt individuele designs en onthult de mechanismen van een verbond. Het Verbindingsdesign toont dat een verbond meer is dan de som van zijn delen.
                             </p>
                         </div>
                     </div>
-                    <a href="connection/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="connection/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- Family Penta Card -->
@@ -514,11 +572,11 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Familie Penta</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                De Penta is een transpersoonlijke energetische vorm die ontstaat wanneer groepen van 3 tot 5 mensen binnen aurisch contact zijn. Het heeft zijn eigen mechanica. In termen van de familie-eenheid domineren Penta-thema's hoe een familie-eenheid functioneert.
+                                De Penta is een transpersoonlijke energetische vorm die ontstaat wanneer groepen van 3 tot 5 mensen binnen aurisch contact zijn. Het heeft zijn eigen mechanismen. Wat betreft de familie-eenheid, domineren Penta-thema's hoe een familie-eenheid functioneert.
                             </p>
                         </div>
                     </div>
-                    <a href="penta/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="penta/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- Business Penta (BG5) Card -->
@@ -528,11 +586,11 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Business Penta (BG5)</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                De Business Penta is dezelfde Penta-mechanica toegepast op kleine bedrijfsteams. Het enige verschil is de terminologie, herbenoemd voor een bedrijfscontext.
+                                De Business Penta zijn dezelfde Penta-mechanismen toegepast op kleine businessteams. Het enige verschil is de terminologie, opnieuw gelabeld voor een businesscontext.
                             </p>
                         </div>
                     </div>
-                    <a href="bg5/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="bg5/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- OC16 (WA) Card -->
@@ -542,17 +600,17 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">WA (OC16)</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                De WA is een trans-aurische vorm die voortkomt uit het gecombineerde energieveld van negen of meer mensen. De OC16 zijn de 6 kernkanalen (en 10 sub-kanalen) die de WA gebruikt om individuen te conditioneren om te functioneren als specifieke 'tandwielen' die het geheel dienen.
+                                De WA is een trans-aurische vorm die ontstaat uit het gecombineerde energieveld van negen of meer mensen. De OC16 zijn de 6 kern kanalen (en 10 sub-kanalen) die de WA gebruikt om individuen te conditioneren om te functioneren als specifieke 'tandwielen' ten dienste van het geheel.
                             </p>
                         </div>
                     </div>
-                    <a href="oc16/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="oc16/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
             </div>
 
             <!-- Additional Topics Sub-header -->
-            <h4 class="text-sm md:text-base font-semibold text-gray-500 mt-8 mb-5">Extra Onderwerpen</h4>
+            <h4 class="text-sm md:text-base font-semibold text-gray-500 mt-8 mb-5">Aanvullende onderwerpen</h4>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
@@ -563,43 +621,42 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Slaap Design</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Wanneer u slaapt, verandert uw hele Design en keert terug naar een 5-gecenterd Design. Ontdek hoe dit functioneert en uw rust en regeneratie beïnvloedt.
+                                Wanneer u slaapt, verandert uw hele design en keert terug naar een 5-centrum design. Verken hoe dit functioneert en uw rust en regeneratie beïnvloedt.
                             </p>
                         </div>
                     </div>
-                    <a href="sleep-design/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="sleep-design/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- Animal Design Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-paw.svg" alt="Dier Design" class="w-16 h-16 flex-shrink-0">
+                        <img src="assets/icon-paw.svg" alt="Animal Design" class="w-16 h-16 flex-shrink-0">
                         <div>
-                            <h3 class="text-lg font-bold text-gray-800 mb-1">Dier Design</h3>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Animal Design</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Dieren dragen hun eigen unieke Design en energetische blauwdruk. Zoogdieren, reptielen, vogels, vissen, insecten en spinachtigen kunnen ook specifiek conditioneren en geconditioneerd worden door mensen.
+                                Dieren dragen hun eigen unieke design en energetische blauwdruk. Zoogdieren, reptielen, vogels, vissen, insecten en spinachtigen kunnen ook specifiek mensen conditioneren en door mensen geconditioneerd worden.
                             </p>
                         </div>
                     </div>
-                    <a href="animals/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="animals/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
             </div>
         </div>
     </section>
-
-    <!-- ==================== CALCULATION METHOD SECTION ==================== -->
+<!-- ==================== BEREKENINGSMETHOD SECTIE ==================== -->
     <section id="chart-methods" class="bg-white py-12 md:py-16 scroll-mt-[128px]">
         <div class="max-w-6xl mx-auto px-6">
             <!-- Section Header -->
             <div class="mb-2">
-                <span class="text-xs font-semibold tracking-widest text-gray-400 uppercase">Berekeningsmethoden</span>
+                <span class="text-xs font-semibold tracking-widest text-gray-400 uppercase">Berekeningssystemen</span>
             </div>
             <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-3">
-                <span class="text-gm-purple">|</span> Begrijp Hoe Charts Berekend Worden
+                <span class="text-gm-purple">|</span> Begrijp hoe Charts berekend worden
             </h2>
             <p class="text-gray-500 text-sm md:text-base max-w-4xl mb-10">
-                Genetic Matrix biedt meerdere berekeningssystemen die elk een geldig Chart produceren. Vergelijk de verschillen en kies de methode die bij uw benadering past.
+                Genetic Matrix biedt meerdere berekeningssystemen die elk een geldige horoscoop produceren. Vergelijk de verschillen en kies de methode die past bij uw benadering.
             </p>
 
             <!-- Cards Grid -->
@@ -613,11 +670,11 @@
                             <span class="text-xs font-semibold tracking-widest text-gm-purple uppercase">Tropisch</span>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Tropische Dierenriem</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Het standaardsysteem gespecificeerd door Ra Uru Hu voor Human Design. Gebaseerd op de seizoenen en de lente-equinox, dit is het meest gebruikte systeem in westerse astrologie.
+                                Het standaardsysteem zoals gespecificeerd door Ra Uru Hu voor Human Design. Gebaseerd op de seizoenen en de lente-equinox, dit is het meest gebruikte systeem in de Westerse astrologie.
                             </p>
                         </div>
                     </div>
-                    <a href="calculations/tropical.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="calculations/tropical.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- J2000 Card -->
@@ -628,11 +685,11 @@
                             <span class="text-xs font-semibold tracking-widest text-gm-pink uppercase">Tropisch</span>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">J2000 Referentiekader</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Een standaard hemels referentiekader dat de gemiddelde evenaar en equinox bevriest op 12:00 Terrestrische Tijd op 1 januari 2000. Verwijdert Precessie en Nutatie.
+                                Een standaard hemelse referentiekader dat de gemiddelde evenaar en equinox vastvriest op 12:00 Terrestrial Time op 1 januari 2000. Verwijdert Precessie en Nutatie.
                             </p>
                         </div>
                     </div>
-                    <a href="calculations/j2000.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="calculations/j2000.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- Sidereal Calculation Card -->
@@ -643,11 +700,11 @@
                             <span class="text-xs font-semibold tracking-widest text-[#2ea89e] uppercase">Siderisch</span>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Siderische Berekening</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Anders dan de tropische dierenriem meten siderische systemen tijd of beweging gebaseerd op de positie van de Aarde relatief tot de verre, 'vaste' sterren, in plaats van relatief tot de Zon. Om te compenseren voor de precessie van de equinoxen van de Aarde worden Ayanamsha's gebruikt om ervoor te zorgen dat de dierenriemtekens overeenkomen met de werkelijke, vaste sterrenbeelden aan de hemel.
+                                In tegenstelling tot de tropische dierenriem meten siderische systemen tijd of beweging gebaseerd op de positie van de Aarde ten opzichte van de verre, "vaste" sterren, in plaats van ten opzichte van de Zon. Om rekening te houden met de precessie van de equinoxen van de Aarde worden Ayanamsha's gebruikt om ervoor te zorgen dat de sterrenbeelden overeenkomen met de werkelijke, vaste sterrenbeelden aan de hemel.
                             </p>
                         </div>
                     </div>
-                    <a href="calculations/sidereal.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="calculations/sidereal.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- Draconic Zodiac Card -->
@@ -658,11 +715,11 @@
                             <span class="text-xs font-semibold tracking-widest text-[#c94040] uppercase">Draconisch</span>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Draconische Dierenriem</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                Het Draconische systeem verschuift de hele tropische dierenriem zodat de Noordknoop 0° Ram wordt. Het onthult een ziel-niveau Chart verbonden met uw karmische pad.
+                                Het Draconische systeem verschuift de gehele tropische dierenriem zodat de Noordknoop 0° Ram wordt. Het onthult een zielsniveau horoscoop die verbonden is met uw karmische pad.
                             </p>
                         </div>
                     </div>
-                    <a href="calculations/draconic.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="calculations/draconic.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- True Sidereal Variants Card -->
@@ -673,13 +730,603 @@
                             <span class="text-xs font-semibold tracking-widest text-[#d46ba3] uppercase">True Sidereal</span>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">True Sidereal Varianten</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
-                                True Sidereal astrologie gebruikt geen traditionele, vaste Indiase ayanamsa zoals Lahiri. In plaats daarvan lijnt het uit met de werkelijke, zichtbare grenzen van de sterrenbeelden. Gepopulariseerd door Clementi en Kanatas met het IAU-grenssysteem, terwijl anderen een Midpoint-systeem gebruiken. Genetic Matrix ondersteunt al deze methoden.
+                                True Sidereal astrologie gebruikt geen traditionele, vaste Indiase ayanamsa zoals Lahiri. In plaats daarvan sluit het aan bij de werkelijke, zichtbare grenzen van de sterrenbeelden. Populair gemaakt door Clementi en Kanatas met het IAU-grenssysteem, terwijl anderen een Midpoint-systeem gebruiken. Genetic Matrix ondersteunt al deze methoden.
                             </p>
                         </div>
                     </div>
-                    <a href="calculations/true-sidereal.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Ontdekken →</a>
+                    <a href="calculations/true-sidereal.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
                 </div>
 
                 <!-- 13-Sign Sidereal Card -->
                 <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#3d5a96] flex flex-col">
-                    <div class="flex items-start gap-4 mb-4
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-ophiuchus.svg" alt="13-Teken Siderisch" class="w-16 h-16 flex-shrink-0 icon-tint-navy">
+                        <div>
+                            <span class="text-xs font-semibold tracking-widest text-[#3d5a96] uppercase">True Sidereal</span>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">13-Teken True Sidereal</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                13-Teken True Sidereal erkent dat de Zon door 13 sterrenbeelden beweegt, inclusief Ophiuchus (gelegen tussen Schorpioen en Boogschutter), wat de tekens ongelijk in grootte maakt. Schorpioen is opvallend klein met deze methode.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="calculations/13-sign-sidereal.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
+                </div>
+
+                <!-- Hybrid Calculation Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#e8961d] flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-circuits.svg" alt="Hybride" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <span class="text-xs font-semibold tracking-widest text-[#e8961d] uppercase">Hybride</span>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Hybride Berekening</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Het beste van beide werelden voor siderische enthousiastelingen. Combineert echte hemel siderische posities met Tropisch-afgeleide Human Design elementen zoals Planeten, Poorten en Lijnen. Dit is uniek voor Genetic Matrix.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ASTROLOGIE SECTIE ==================== -->
+    <section id="astrology" class="bg-gm-light py-8 md:py-10 scroll-mt-[128px]">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Section Header with Solar System Animation -->
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-4">
+                <!-- Text (left side) -->
+                <div class="md:max-w-lg">
+                    <div class="mb-2">
+                        <span class="text-xs font-semibold tracking-widest text-gray-400 uppercase">Astrologie</span>
+                    </div>
+                    <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-3">
+                        <span class="text-gm-purple">|</span> Astrologie Tools & Bronnen
+                    </h2>
+                    <p class="text-gray-500 text-sm md:text-base">
+                        Genetic Matrix verbindt Human Design en Astrologie. Verken tools die extra diepte aan uw horoscooplezingen geven.
+                    </p>
+                </div>
+                <!-- Planet Transit Animation (right side, md+ screens) -->
+                <div class="hidden md:block flex-shrink-0">
+                    <svg width="340" height="130" viewBox="0 0 420 160" fill="none" style="overflow:visible" aria-hidden="true">
+                        <!-- Three orbit rings (inner → outer) -->
+                        <ellipse cx="210" cy="80" rx="75" ry="30" stroke="#6E5898" stroke-width="0.8" opacity="0.16" stroke-dasharray="3 5"/>
+                        <ellipse cx="210" cy="80" rx="140" ry="52" stroke="#6E5898" stroke-width="1.1" opacity="0.20" stroke-dasharray="4 5"/>
+                        <ellipse cx="210" cy="80" rx="200" ry="72" stroke="#6E5898" stroke-width="1.4" opacity="0.24" stroke-dasharray="6 5"/>
+                        <!-- Sun (center) with pulsing glow -->
+                        <circle cx="210" cy="80" r="18" fill="#E8961D" opacity="0.1">
+                            <animate attributeName="r" values="18;24;18" dur="5s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" values="0.1;0.04;0.1" dur="5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="210" cy="80" r="10" fill="#E8961D" opacity="0.65"/>
+                        <circle cx="210" cy="80" r="6" fill="#FBBF24" opacity="0.85"/>
+                        <!-- Inner planet - Mercury -->
+                        <g>
+                            <animateMotion dur="12s" repeatCount="indefinite">
+                                <mpath href="#orbit-inner"/>
+                            </animateMotion>
+                            <circle r="5" fill="#9080B1" opacity="0.08"/>
+                            <circle r="3.5" fill="#9080B1" opacity="0.7"/>
+                        </g>
+                        <!-- Middle planet - Earth (green) -->
+                        <g>
+                            <animateMotion dur="22s" begin="-5s" repeatCount="indefinite">
+                                <mpath href="#orbit-mid"/>
+                            </animateMotion>
+                            <circle r="12" fill="#54931E" opacity="0.06"/>
+                            <circle r="5.5" fill="#54931E" opacity="0.6"/>
+                        </g>
+                        <!-- Outer planet - Saturn (with ring) -->
+                        <g>
+                            <animateMotion dur="35s" repeatCount="indefinite">
+                                <mpath href="#orbit-outer"/>
+                            </animateMotion>
+                            <circle r="18" fill="#6E5898" opacity="0.08"/>
+                            <circle r="8" fill="#6E5898" opacity="0.8"/>
+                            <ellipse rx="13" ry="3" fill="none" stroke="#6E5898" stroke-width="1.2" opacity="0.5" transform="rotate(-25)"/>
+                        </g>
+                        <!-- Small moon on outer orbit -->
+                        <circle r="3" fill="#AC94D8" opacity="0.5">
+                            <animateMotion dur="25s" begin="-8s" repeatCount="indefinite">
+                                <mpath href="#orbit-outer"/>
+                            </animateMotion>
+                        </circle>
+                        <!-- Orbit path definitions -->
+                        <path id="orbit-inner" d="M 135,80 A 75,30 0 1,1 285,80 A 75,30 0 1,1 135,80"/>
+                        <path id="orbit-mid" d="M 70,80 A 140,52 0 1,1 350,80 A 140,52 0 1,1 70,80"/>
+                        <path id="orbit-outer" d="M 10,80 A 200,72 0 1,1 410,80 A 200,72 0 1,1 10,80"/>
+                    </svg>
+                </div>
+            </div>
+
+            <h3 class="text-base md:text-lg font-semibold text-gray-700 mb-5">Basis Astrologie</h3>
+
+            <!-- Core Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Zodiac Signs Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-zodiac.svg" alt="Dierenriemtekens" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Dierenriemtekens</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                De 12 Dierenriemtekens, plus het controversiële True Sidereal 13e teken Ophiuchus. Verken van elk teken het element, modaliteit, heersende planeet en kern karakteristieken.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/zodiac-signs.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
+                </div>
+
+                <!-- Planets Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-planets.svg" alt="Planeten" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Planeten</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Van de Zon door persoonlijke planeten zoals Mercurius en Mars tot buitenplaneten zoals Pluto, begrijp wat elk hemellichaam vertegenwoordigt in uw geboortehoroscoop.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/planets.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
+                </div>
+
+                <!-- Houses Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-houses.svg" alt="Huizen" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Huizen & Huizensystemen</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                De 12 huizen vertegenwoordigen de specifieke gebieden of "podia" van het leven waar verschillende energieën (planeten) zich afspelen en fungeren als een kaart voor uw dagelijkse ervaringen en ontwikkelingsthema's. Er zijn meer dan een dozijn erkende huizensystemen die allemaal ondersteund worden door Genetic Matrix, van Placidus en Koch tot Heel Teken en Gelijke Huizen.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/houses.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
+                </div>
+
+                <!-- Aspects Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-aspects.svg" alt="Aspecten" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Aspecten & Orbis</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Aspecten in astrologie vertegenwoordigen de geometrische hoeken en relaties tussen planeten. Ze onthullen hoe planetaire energieën op elkaar inwerken en persoonlijkheidsdynamiek, potentialen en uitdagingen beïnvloeden door specifieke hoekafstanden, zoals 0°, 90° of 120°.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/aspects.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
+                </div>
+
+                <!-- Asteroids Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-asteroids.svg" alt="Asteroïden" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Asteroïden & Planetoïden</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Asteroïden en Planetoïden (bv. Ceres) fungeren als "boodschappers" of archetypische beïnvloeders, vaak gekoppeld aan mythologie, die diepere inzichten in relaties, persoonlijkheid en levensgebeurtenissen bieden. Veelvoorkomende Asteroïden en Planetoïden zijn Ceres (verzorging), Pallas (wijsheid), Juno (partnerschap) en Vesta (toewijding).
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/asteroids.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
+                </div>
+
+                <!-- Fixed Stars Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-fixed-stars.svg" alt="Vaste Sterren" class="w-16 h-16 flex-shrink-0 icon-twinkle">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Vaste Sterren</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Vaste sterren worden in de astrologie gebruikt om specifieke, hoge-intensiteit en vaak karmische energetische nuances toe te voegen aan geboortehoroscopen, meestal werkend door nauwe conjuncties met planeten of hoeken zoals de Ascendant of Midhemel. In tegenstelling tot planeten, die persoonlijke of tijdelijke, veranderende invloeden betekenen, bieden deze stilstaande sterren blijvende, vaak dramatische levensthema's, talenten of uitdagingen.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/fixed-stars.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
+                </div>
+
+                <!-- Ayanamsha Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-ayanamsha.svg" alt="Ayanamsha" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Ayanamsha Systemen</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Ayanamsha is het hoekverschil tussen de tropische dierenriem (gebaseerd op de seizoenen) en de siderische dierenriem (gebaseerd op de vaste sterren). Het is ook de "correctiefactor" die wordt gebruikt in de Vedische astrologie (Jyotish) om de dierenriem af te stemmen op de werkelijke huidige posities van de sterren, rekening houdend met de precessie van de equinoxen. Verken 50+ ayanamsha systemen ondersteund door Genetic Matrix, van Lahiri tot aangepast.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/ayanamsha.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
+                </div>
+
+                <!-- Synastry Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-synastry.svg" alt="Synastrie" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Synastrie</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Synastrie is de tak van relatieastrologie die de geboortehoroscopen van twee mensen vergelijkt om hun compatibiliteit, sterke punten en potentiële wrijvingsgebieden te bepalen. Het fungeert als een "kosmische kaart" die de planeten van de ene persoon over die van een ander legt om te laten zien hoe hun energieën op elkaar inwerken.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/synastry.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
+                </div>
+
+                <!-- Progressions Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-progression.svg" alt="Progressies" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Progressies</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Astrologische progressies zijn een techniek die wordt gebruikt om interne psychologische ontwikkeling, persoonlijke evolutie en belangrijke levensthema's over tijd te voorspellen. Progressies vertegenwoordigen hoe uw geboortehoroscoop evolueert en rijpt van binnenuit. Genetic Matrix ondersteunt Secundaire progressies en Zonneboog Directies.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/progressions.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
+                </div>
+
+            </div>
+
+            <h3 class="text-base md:text-lg font-semibold text-gray-700 mt-10 mb-5">Aanvullende Astrologie</h3>
+
+            <!-- Additional Systems Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Sabian Symbols Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-sabian.svg" alt="Sabiaanse Symbolen" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Sabiaanse Symbolen</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                De Sabiaanse Symbolen zijn een set van 360 verschillende, metaforische beelden die in de astrologie worden gebruikt om diepe, intuïtieve en symbolische betekenis toe te voegen aan een geboortehoroscoop of om als orakel voor begeleiding te fungeren. Ze vertegenwoordigen een "levende taal" van beelden in plaats van rigide, technische regels.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/sabian-symbols.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
+                </div>
+
+                <!-- Charubel Degrees Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-charubel.svg" alt="Charubel Graden" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Charubel Graden</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Charubel Graden zijn een set van 360 unieke, vaak fatalistische, symbolische interpretaties voor elke individuele graad van de dierenriem, ontwikkeld door de 19e-eeuwse Welshe helderziende en astroloog John Thomas (onder het pseudoniem Charubel).
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/charubel-degrees.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
+                </div>
+
+                <!-- La Volasfera (Sepharial) Degrees Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-volasfera.svg" alt="La Volasfera Graden" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">La Volasfera (Sepharial)</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                La Volasfera is een set van 360 gradeninterpretaties gepubliceerd door de astroloog Sepharial, die levendige symbolische beschrijvingen biedt voor elke graad van de dierenriem gebaseerd op esoterische en divinatoire traditie.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/la-volasfera-degrees.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
+                </div>
+
+                <!-- Astro Tarot Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-tarot.svg" alt="Astro Tarot" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Astro Tarot</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Astrologie en Tarot zijn gekoppeld als zustersystemen van waarzeggerij die gedeelde archetypische symbolen, elementen en kosmische energie gebruiken om persoonlijke levenspaden te onthullen, analyseren en in kaart te brengen. Astrologie biedt de overkoepelende kosmische "kaart" van planetaire bewegingen, terwijl Tarot het specifieke, gedetailleerde "ontwerp" voor individuele situaties biedt.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/astro-tarot.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
+                </div>
+
+                <!-- Chinese Astrology Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-chinese.svg" alt="Chinese Astrologie" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Chinese Astrologie</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Chinese astrologie is een oud systeem gebaseerd op een 12-jarige maancyclus, waarbij elk jaar overeenkomt met een dierenteken (Rat, Os, Tijger, Konijn, Draak, Slang, Paard, Geit, Aap, Haan, Hond, Varken). Het voorspelt persoonlijkheid en lot gebaseerd op geboortejaar, de vijf elementen (hout, vuur, aarde, metaal, water) en Yin/Yang, wat een 60-jarige cyclus vormt. Genetic Matrix integreert Chinese astrologie met Westerse systemen voor een multi-systeem overzicht.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/chinese-astrology.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
+                </div>
+
+                <!-- Vedic Astrology Card -->
+                <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-vedic.svg" alt="Vedische Astrologie" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Vedische Astrologie</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Vedische Astrologie, in het Sanskriet bekend als Jyotish, is een oud Indiaas systeem dat de posities van sterren en planeten in kaart brengt op het exacte moment van iemands geboorte om hun levenspad, persoonlijkheid en karma te begrijpen. In tegenstelling tot de Westerse astrologie gebruikt het de siderische dierenriem (uitgelijnd met werkelijke sterrenbeelden) en vertrouwt het sterk op het Maanteken en 27 maanverblijven (Nakshatras). Genetic Matrix ondersteunt Noord-Indiase, Zuid-Indiase en Oosterse hoeroscoop stijlen en methoden.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="astrology/vedic.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Verkennen →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BEROEMDHEID HOROSCOPEN SECTIE ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="bg-gm-dark rounded-2xl p-10 md:p-14 text-center">
+                <!-- Star Icon -->
+                <img src="assets/icon-celebrity.svg" alt="" class="w-14 h-14 mb-4 brightness-0 invert mx-auto">
+                <span class="text-xs font-semibold tracking-widest text-gm-pink uppercase mb-3 block">Beroemdheid Horoscopen</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
+                    Verken 88.600+ Human Design Horoscopen van Beroemdheden
+                </h2>
+                <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-2xl mx-auto">
+                    De grootste beroemdheid Human Design database. Elke horoscoop berekend
+                    over meerdere systemen - filter op Type, Profiel, Autoriteit,
+                    Definitie, Zonneteken, Maanteken en meer.
+                </p>
+
+                <!-- Category Icons (generic outline style) -->
+                <div class="flex justify-center flex-wrap gap-6 md:gap-8 mb-3">
+                    <!-- Star / Fame -->
+                    <div class="flex flex-col items-center gap-1.5">
+                        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon points="12,2 15.1,8.3 22,9.2 17,14.1 18.2,21 12,17.8 5.8,21 7,14.1 2,9.2 8.9,8.3"/>
+                        </svg>
+                        <span class="text-[10px] text-gray-400 uppercase tracking-wider">Film & TV</span>
+                    </div>
+                    <!-- Music note -->
+                    <div class="flex flex-col items-center gap-1.5">
+                        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M9 18V5l12-2v13"/>
+                            <circle cx="6" cy="18" r="3"/>
+                            <circle cx="18" cy="16" r="3"/>
+                        </svg>
+                        <span class="text-[10px] text-gray-400 uppercase tracking-wider">Muziek</span>
+                    </div>
+                    <!-- Globe / World -->
+                    <div class="flex flex-col items-center gap-1.5">
+                        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M2 12h20"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/>
+                        </svg>
+                        <span class="text-[10px] text-gray-400 uppercase tracking-wider">Politiek</span>
+                    </div>
+                    <!-- Lightning / Sport -->
+                    <div class="flex flex-col items-center gap-1.5">
+                        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
+                        </svg>
+                        <span class="text-[10px] text-gray-400 uppercase tracking-wider">Sport</span>
+                    </div>
+                    <!-- Lightbulb / Science -->
+                    <div class="flex flex-col items-center gap-1.5">
+                        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M9 18h6"/>
+                            <path d="M10 22h4"/>
+                            <path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/>
+                        </svg>
+                        <span class="text-[10px] text-gray-400 uppercase tracking-wider">Wetenschap</span>
+                    </div>
+                    <!-- Book / Literature -->
+                    <div class="flex flex-col items-center gap-1.5">
+                        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15z"/>
+                        </svg>
+                        <span class="text-[10px] text-gray-400 uppercase tracking-wider">Auteurs</span>
+                    </div>
+                    <!-- Heart / Humanitarians -->
+                    <div class="flex flex-col items-center gap-1.5">
+                        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.3l7.8-7.8 1-1.1a5.5 5.5 0 0 0 0-7.8z"/>
+                        </svg>
+                        <span class="text-[10px] text-gray-400 uppercase tracking-wider">Leiders</span>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-xs mb-8">& 100en Meer</p>
+
+                <!-- Stats -->
+                <div class="flex justify-center gap-8 md:gap-16 mb-10">
+                    <div>
+                        <div class="text-2xl md:text-3xl font-bold text-gm-pink">88.600+</div>
+                        <div class="text-xs text-white uppercase tracking-wider mt-1">Beroemdheden</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl md:text-3xl font-bold text-gm-pink">7</div>
+                        <div class="text-xs text-white uppercase tracking-wider mt-1">Berekenings<br>systemen</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl md:text-3xl font-bold text-gm-pink">600K+</div>
+                        <div class="text-xs text-white uppercase tracking-wider mt-1">Horoscooppagina's</div>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://www.geneticmatrix.com/register/" class="btn-glow btn-scale bg-gm-green hover:bg-gm-green-dark text-white text-center font-semibold py-3.5 px-10 rounded-xl transition text-sm md:text-base min-w-[240px]">
+                        Maak Gratis Account
+                    </a>
+                    <a href="/celebrities/" class="btn-scale bg-gm-pink hover:bg-[#e04d63] text-white text-center font-semibold py-3.5 px-10 rounded-xl transition text-sm md:text-base min-w-[240px]">
+                        Zoek Hier
+                    </a>
+                    <a href="https://www.geneticmatrix.com/plans-features/" class="btn-scale border-2 border-white text-white text-center font-semibold py-3.5 px-10 rounded-xl hover:bg-white hover:text-gm-dark transition text-sm md:text-base min-w-[240px]">
+                        Bekijk Onze Abonnementen
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BEGIN MET UW EIGEN HOROSCOOP ==================== -->
+    <section class="pb-14 md:pb-20 pt-4 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="bg-[#ede8f5] rounded-2xl p-10 md:p-14 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold text-gm-dark mb-4">Begin met uw eigen horoscoop</h2>
+                <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-8 max-w-2xl mx-auto">
+                    Alles op deze pagina is gratis te lezen. Om uw eigen horoscopen te verkennen met de volledige
+                    diepte van deze tools, maak een account en kies het lidmaatschap dat
+                    bij uw behoeften past.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#" class="btn-scale bg-gm-dark text-white font-semibold py-4 px-10 rounded-xl hover:bg-gm-darker transition text-base md:text-lg">
+                        Krijg uw gratis horoscoop
+                    </a>
+                    <a href="#" class="btn-scale border-2 border-gm-dark text-gm-dark font-semibold py-4 px-10 rounded-xl hover:bg-gm-dark hover:text-white transition text-base md:text-lg">
+                        Bekijk onze abonnementen
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+
+                <!-- Left: Logo & Copyright -->
+                <div class="text-center md:text-left">
+                    <img src="assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">Alle rechten voorbehouden.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Privacy, Voorwaarden en Condities</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Veelgestelde vragen</a>
+                    </p>
+                </div>
+
+                <!-- Center: Newsletter (Shafik to wire up form backend) -->
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Abonneer op onze nieuwsbrief</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Schrijf u in voor onze nieuwsbrief om updates, aanbiedingen,
+                        nieuwe releases en alles gerelateerd aan Genetic Matrix te ontvangen.
+                    </p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input
+                            type="email"
+                            placeholder="Uw e-mailadres"
+                            class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400"
+                        >
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Social & Contact -->
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Verbind met ons</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener" class="hover:-translate-y-1 hover:opacity-70 transition-all duration-300">
+                            <img src="assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
+                        </a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener" class="hover:-translate-y-1 hover:opacity-70 transition-all duration-300">
+                            <img src="assets/icon-x.svg" alt="X" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener" class="hover:-translate-y-1 hover:opacity-70 transition-all duration-300">
+                            <img src="assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener" class="hover:-translate-y-1 hover:opacity-70 transition-all duration-300">
+                            <img src="assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
+                        </a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Neem contact op</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Card reveal on scroll -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card-reveal');
+            // Assign stagger delay per card within its grid row
+            document.querySelectorAll('.grid').forEach(grid => {
+                grid.querySelectorAll('.card-reveal').forEach((card, i) => {
+                    card.style.transitionDelay = `${(i % 3) * 0.12}s`;
+                });
+            });
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            cards.forEach(card => observer.observe(card));
+
+            // Section nav active state
+            const navLinks = document.querySelectorAll('.section-nav-link');
+            const sections = document.querySelectorAll('section[id]');
+            const activeClass = ['text-gm-purple', 'border-gm-purple'];
+            const inactiveClass = ['text-gray-500', 'border-transparent'];
+
+            function updateActiveNav() {
+                let current = '';
+                sections.forEach(section => {
+                    const top = section.offsetTop - 160;
+                    if (window.scrollY >= top) current = section.id;
+                });
+                navLinks.forEach(link => {
+                    const isActive = link.getAttribute('href') === '#' + current;
+                    link.classList.toggle('text-gm-purple', isActive);
+                    link.classList.toggle('border-gm-purple', isActive);
+                    link.classList.toggle('text-gray-500', !isActive);
+                    link.classList.toggle('border-transparent', !isActive);
+                });
+            }
+            window.addEventListener('scroll', updateActiveNav, { passive: true });
+            updateActiveNav();
+        });
+    </script>
+
+<script>
+(function() {
+    fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            var badge = document.getElementById('gm-cart-count');
+            if (badge && data.cart_count > 0) {
+                badge.textContent = data.cart_count;
+                badge.classList.remove('hidden');
+            }
+            var loggedOut = document.getElementById('gm-logged-out');
+            var loggedIn = document.getElementById('gm-logged-in');
+            if (data.logged_in) {
+                if (loggedOut) loggedOut.classList.add('hidden');
+                if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
+            }
+        })
+        .catch(function() {});
+})();
+</script>
+<script id="gm-hamburger-script">(function(){var h=document.getElementById("gm-hamburger");var m=document.getElementById("gm-mobile-menu");if(h&&m){h.onclick=function(){if(m.style.display==="block"){m.style.display="none";}else{m.style.display="block";}};}})()</script>
+<script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
+</body>
+</html>
