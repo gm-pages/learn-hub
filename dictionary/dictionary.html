@@ -169,16 +169,16 @@
     <!-- Hero -->
     <div class="bg-gradient-to-b from-gm-dark to-gm-darker text-white py-5 md:py-6 px-6">
         <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-4">
-            <div class="flex-1 text-center md:text-left">
+            <div class="flex-1 text-center md:text-left md:pl-8">
                 <h1 class="text-3xl md:text-4xl font-bold mb-3">Genetic Matrix Dictionary</h1>
                 <p class="text-gm-purple-soft text-lg opacity-80 mb-6">Human Design, Astrology, BG5, and related terms</p>
                 <div class="max-w-md relative mx-auto md:mx-0">
-                    <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                     </svg>
                     <input type="text" id="dictSearch" placeholder="Search terms..." oninput="filterDictionary()"
-                        class="w-full pl-12 pr-10 py-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-gm-purple focus:bg-white/15 text-sm" />
-                    <button onclick="clearSearch()" id="clearSearchBtn" class="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-white/20 text-white/70 hover:bg-white/30 hover:text-white flex items-center justify-center text-sm hidden">&times;</button>
+                        class="w-full pl-12 pr-10 py-3 rounded-full bg-white border border-gray-200 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gm-purple text-sm shadow-lg" />
+                    <button onclick="clearSearch()" id="clearSearchBtn" class="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-gray-200 text-gray-500 hover:bg-gray-300 hover:text-gray-700 flex items-center justify-center text-sm hidden">&times;</button>
                 </div>
             </div>
             <div class="hidden md:block flex-shrink-0 w-[320px] lg:w-[400px]">
@@ -189,10 +189,10 @@
 
     <!-- Category filters -->
     <div class="bg-white border-b border-gray-200 sticky top-[80px] z-40">
-        <div class="max-w-4xl mx-auto px-6 py-3 flex items-center gap-3 flex-wrap">
+        <div class="max-w-4xl mx-auto px-6 py-3 flex items-center gap-4 flex-wrap">
             <span class="text-xs text-gray-400 uppercase tracking-wide mr-2">Filter:</span>
-            <button onclick="setCategory('')" class="dict-cat-btn text-xs px-3 py-1 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-50" data-cat="">All <span id="countAll" class="text-gray-400"></span></button>
-            <div id="categoryButtons"></div>
+            <button onclick="setCategory('')" class="dict-cat-btn text-xs px-4 py-1.5 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-50" data-cat="">All <span id="countAll" class="text-gray-400"></span></button>
+            <div id="categoryButtons" class="flex items-center gap-3 flex-wrap"></div>
         </div>
     </div>
 
