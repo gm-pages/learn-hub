@@ -600,9 +600,13 @@
             c.n.toLowerCase().includes(query)
         ).slice(0, 20);
 
-        // If fewer than 20 results, also search other loaded chunks
-        // This catches lastname/middle name matches (e.g., searching "pitt" finds Brad Pitt in B chunk)
+        // If fewer than 20 results, search ALL chunks (loaded or not)
+        // This catches lastname/middle name matches (e.g., "pitt" finds Brad Pitt in B chunk)
         if (matches.length < 20) {
+            // Load all chunks first to ensure complete search
+            const allLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ_'.split('');
+            await Promise.all(allLetters.map(loadChunk));
+
             const otherMatches = [];
             for (const letter of Object.keys(chunkCache)) {
                 if (letter === primaryLetter) continue;
