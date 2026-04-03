@@ -165,7 +165,7 @@
                         <div class="grid grid-cols-2 gap-1">
                             <a href="/learn-hub/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
                                 <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <img src="../assets/Menu_Icon_ Hub.svg" alt="Learn Hub" class="w-6 h-6">
+                                    <img src="assets/Menu_Icon_ Hub.svg" alt="Learn Hub" class="w-6 h-6">
                                 </div>
                                 <div>
                                     <div class="text-sm font-semibold text-gray-800">Learn Hub</div>
@@ -174,7 +174,7 @@
                             </a>
                             <a href="/learn-hub/celebrities/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
                                 <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <img src="../assets/Menu_Icon _celebrity .svg" alt="Celebrity Search" class="w-6 h-6">
+                                    <img src="assets/Menu_Icon _celebrity .svg" alt="Celebrity Search" class="w-6 h-6">
                                 </div>
                                 <div>
                                     <div class="text-sm font-semibold text-gray-800">Celebrity Search</div>
@@ -183,7 +183,7 @@
                             </a>
                             <a href="/dictionary/dictionary.html" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
                                 <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <img src="../assets/Menu_Icon_ dictionary.svg" alt="Dictionary" class="w-6 h-6">
+                                    <img src="assets/Menu_Icon_ dictionary.svg" alt="Dictionary" class="w-6 h-6">
                                 </div>
                                 <div>
                                     <div class="text-sm font-semibold text-gray-800">Dictionary</div>
