@@ -819,6 +819,8 @@ The 6 Profile Lines
             var loggedOut = document.getElementById('gm-logged-out');
             var loggedIn = document.getElementById('gm-logged-in');
             if (data.logged_in) {
+                var freeChart = document.getElementById("gm-free-chart");
+                if (freeChart) freeChart.classList.add("hidden");
                 if (loggedOut) loggedOut.classList.add('hidden');
                 if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
             }
