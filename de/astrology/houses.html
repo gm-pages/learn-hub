@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Astrologische Häuser erklärt | Häusersysteme & Berechnungsmethoden | Genetic Matrix</title>
+ <meta name="description" content="Erfahren Sie mehr über die 12 astrologischen Häuser, was sie repräsentieren und die verschiedenen Häusersysteme, die zu ihrer Berechnung verwendet werden. Genetic Matrix unterstützt 10 Häusermethoden einschließlich Placidus, Koch, Ganzzeichenhäuser und mehr.">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn/astrology/houses/">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ 'gm-purple': '#6E5898',
+ 'gm-purple-light': '#9080B1',
+ 'gm-purple-soft': '#AC94D8',
+ 'gm-dark': '#3C2864',
+ 'gm-darker': '#2e1f4d',
+ 'gm-green': '#54931E',
+ 'gm-green-dark': '#468018',
+ 'gm-green-light': '#8EB86A',
+ 'gm-pink': '#F66378',
+ 'gm-orange': '#E8961D',
+ 'gm-gray': '#707070',
+ 'gm-light': '#F7F8F9',
+ 'gm-card': '#FAFBFC',
+ 'gm-card-active': '#F4F0FC',
+ 'gm-border': '#D8D4E4',
+ 'gm-warning': '#F8F8E8',
+ 'gm-text-dark': '#1A1A2E',
+ 'gm-text': '#444444',
+ 'gm-text-light': '#949494',
+ }
+ }
+ }
+ }
+ </script>
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+ body { font-family: 'Inter', sans-serif; }
+ details summary { cursor: pointer; list-style: none; }
+ details summary::-webkit-details-marker { display: none; }
+ details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+ details[open] summary::after { content: '\2212'; }
+ details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+ @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+ /* Starfield for astro hero */
+ .astro-stars {
+     position: absolute; inset: 0; pointer-events: none;
+     background-image:
+         radial-gradient(1.5px 1.5px at 10% 20%, rgba(255,255,255,0.8) 0%, transparent 100%),
+         radial-gradient(2px 2px at 30% 50%, rgba(255,255,255,0.9) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 50% 15%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 70% 60%, rgba(255,255,255,0.85) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 85% 30%, rgba(255,255,255,0.75) 0%, transparent 100%),
+         radial-gradient(2px 2px at 15% 70%, rgba(172,148,216,0.8) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 60% 80%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 90% 85%, rgba(232,150,29,0.5) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 40% 90%, rgba(255,255,255,0.6) 0%, transparent 100%),
+         radial-gradient(2px 2px at 25% 40%, rgba(255,255,255,0.8) 0%, transparent 100%);
+     animation: astroTwinkle 4s ease-in-out infinite alternate;
+ }
+ @keyframes astroTwinkle {
+     0% { opacity: 0.7; }
+     100% { opacity: 1; }
+ }
+
+ /* Hero decorations */
+ .hero-chart-layer { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+ .hero-chart-layer svg { position: absolute; opacity: 0.12; }
+
+ /* Hero text entrance animation */
+ .hero-fade-in { opacity: 0; transform: translateY(12px); animation: heroEntrance 0.8s ease-out forwards; }
+ .hero-fade-in:nth-child(1) { animation-delay: 0.2s; }
+ .hero-fade-in:nth-child(2) { animation-delay: 0.4s; }
+ .hero-fade-in:nth-child(3) { animation-delay: 0.6s; }
+ @keyframes heroEntrance {
+     to { opacity: 1; transform: translateY(0); }
+ }
+
+ /* Slow spin for house wheel */
+ @keyframes slowSpin {
+     from { transform: rotate(0deg); }
+     to { transform: rotate(360deg); }
+ }
+ @keyframes counterSpin {
+     from { rotate: 0deg; }
+     to { rotate: -360deg; }
+ }
+ .house-wheel-container {
+     animation: slowSpin 120s linear infinite;
+ }
+ .house-wheel-container text {
+     animation: counterSpin 120s linear infinite;
+     transform-box: fill-box;
+     transform-origin: center;
+ }
+ .house-wheel-container svg {
+     filter: drop-shadow(0 0 8px rgba(212,168,67,0.15));
+ }
+
+ /* House card hover */
+ .house-card {
+     transition: all 0.3s ease;
+ }
+ .house-card:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 8px 30px rgba(110,88,152,0.15);
+ }
+
+ /* Lavender hover for cross-links */
+ .learn-link:hover {
+     border-color: #AC94D8 !important;
+     background: #faf8ff !important;
+ }
+
+ /* Subtle divider */
+ .house-divider {
+     border: none;
+     height: 1px;
+     background: linear-gradient(to right, transparent, rgba(110,88,152,0.2), transparent);
+     margin: 2rem 0;
+ }
+ </style>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Astrologische Häuser erklärt | Häusersysteme & Berechnungsmethoden","description":"Erfahren Sie mehr über die 12 astrologischen Häuser, was sie repräsentieren und die verschiedenen Häusersysteme, die zu ihrer Berechnung verwendet werden. Genetic Matrix unterstützt 10 Häusermethoden einschließlich Placidus, Koch, Ganzzeichenhäuser und mehr.","publisher":{"@type":"Organization","name":"Genetic Matrix","url":"https://www.geneticmatrix.com"},"mainEntityOfPage":"https://www.geneticmatrix.com/learn/astrology/houses/","datePublished":"2025-01-15","dateModified":"2026-03-06"}
+</script>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Welches Häusersystem sollte ich verwenden?","acceptedAnswer":{"@type":"Answer","text":"Wenn Sie neu in der Astrologie sind, beginnen Sie mit Placidus. Es ist das am weitesten verbreitete System und die meisten Ressourcen beziehen sich darauf. Während Sie Ihre Praxis vertiefen, experimentieren Sie mit Ganzzeichenhäuser (bevorzugt in der traditionellen Astrologie) und Äquale Häuser, um zu sehen, welches System Ihre Lebenserfahrung am besten beschreibt."}},
+{"@type":"Question","name":"Verändern Häusersysteme meine Planeten oder Zeichen?","acceptedAnswer":{"@type":"Answer","text":"Nein. Ihre Planeten bleiben unabhängig vom Häusersystem in denselben Zeichen. Nur die Hausplatzierungen ändern sich. Ihre Sonne steht immer noch im Skorpion, aber sie könnte je nach System vom 4. Haus zum 5. Haus wechseln."}},
+{"@type":"Question","name":"Warum bietet Genetic Matrix 10 Häusersysteme an?","acceptedAnswer":{"@type":"Answer","text":"Verschiedene astrologische Traditionen und Techniken funktionieren am besten mit unterschiedlichen Häusersystemen. Stundenastrologie-Praktiker bevorzugen oft Regiomontanus, vedische Astrologen verwenden Ganzzeichenhäuser, und die meisten modernen westlichen Astrologen nutzen Placidus. Das Angebot aller 10 Systeme ermöglicht Ihnen, innerhalb der Tradition zu arbeiten, die mit Ihnen resoniert."}},
+{"@type":"Question","name":"Wie viele Häusersysteme unterstützt Genetic Matrix?","acceptedAnswer":{"@type":"Answer","text":"Genetic Matrix unterstützt 10 Häusersysteme einschließlich Placidus, Koch, Ganzzeichenhäuser, Äquale Häuser, Porphyrius, Regiomontanus, Campanus, Meridian, Morinus und 0-Grad-Widder. Pro-Mitglieder können zwischen allen 10 Systemen wechseln."}},
+{"@type":"Question","name":"Beeinflussen Häusersysteme mein Human Design Chart?","acceptedAnswer":{"@type":"Answer","text":"Human Design verwendet sein eigenes Berechnungssystem, das nicht von traditionellen astrologischen Häusersystemen abhängt. Die hier diskutierten Häuser gelten speziell für Ihr Astrologie- oder Astro-HD-Chart."}}
+]}
+</script>
+</head>
+<body class="bg-white text-gray-700">
+
+ <!-- ==================== NAV BAR ==================== -->
+ <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../../assets/logo.svg" alt="Genetic Matrix - Erkenne dich selbst" class="h-14">
+            </a>
+            <div class="flex items-center gap-8">
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Berichte">
+                    <img src="../../assets/icon-report.svg" alt="Berichte" class="h-9 w-9">
+                </a>
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Sprechende Charts">
+                    <img src="../../assets/icon-talking-chart.svg" alt="Sprechende Charts" class="h-7 w-7">
+                </a>
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Kostenloses Chart</a>
+                <!-- Learn -->
+                <!-- Learn Dropdown -->
+                <div class="hidden lg:block relative group">
+                    <button class="text-gm-purple hover:text-gm-dark text-sm font-semibold flex items-center gap-1">
+                        Lernen
+                        <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[420px] bg-white rounded-xl shadow-xl border border-gray-100 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="grid grid-cols-2 gap-1">
+                            <a href="../../" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-9 h-9 bg-gm-card-active rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-800">Learn Hub</div>
+                                    <div class="text-xs text-gm-text-light mt-0.5">HD und Astrologie Bildung</div>
+                                </div>
+                            </a>
+                            <a href="../celebrities/index.html" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-9 h-9 bg-gm-card-active rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-800">Promi-Suche</div>
+                                    <div class="text-xs text-gm-text-light mt-0.5">88.600+ Promi-Charts</div>
+                                </div>
+                            </a>
+                            <a href="https://www.geneticmatrix.com/dictionary/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-9 h-9 bg-gm-card-active rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-800">Wörterbuch</div>
+                                    <div class="text-xs text-gm-text-light mt-0.5">HD und Astrologie Begriffe</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Unsere Pläne</a>
+                <a href="https://www.geneticmatrix.com/cart/" title="Warenkorb">
+                    <img src="../../assets/icon-cart.svg" alt="Warenkorb" class="h-5 w-auto">
+                </a>
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>Deutsch</span>
+                    <img src="../../assets/icon-english.svg" alt="Deutsch" class="h-5 w-7">
+                </div>
+                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Anmelden</a>
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Registrieren</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-50 border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 py-2.5">
+            <a href="../../" class="text-sm text-gm-purple hover:text-gm-dark font-medium transition">&larr; Zurück zum Learn Hub</a>
+        </div>
+    </div>
+
+ <!-- ==================== HERO BANNER ==================== -->
+ <section class="relative bg-gm-dark text-white text-center pt-12 md:pt-16 pb-2 md:pb-3 overflow-hidden">
+     <!-- Star dots -->
+     <div class="astro-stars"></div>
+     <!-- Decorative chart wheel illustrations -->
+     <div class="hero-chart-layer">
+         <!-- Left edge: partial chart wheel -->
+         <svg width="280" height="280" viewBox="0 0 280 280" style="left: -80px; top: 50%; transform: translateY(-50%);" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="140" cy="140" r="120" stroke="#AC94D8" stroke-width="1.5"/>
+             <circle cx="140" cy="140" r="80" stroke="#AC94D8" stroke-width="1"/>
+             <circle cx="140" cy="140" r="40" stroke="#7B4FBF" stroke-width="0.8"/>
+             <line x1="140" y1="20" x2="140" y2="260" stroke="#AC94D8" stroke-width="0.8"/>
+             <line x1="20" y1="140" x2="260" y2="140" stroke="#AC94D8" stroke-width="0.8"/>
+             <line x1="55" y1="55" x2="225" y2="225" stroke="#7B4FBF" stroke-width="0.6"/>
+             <line x1="225" y1="55" x2="55" y2="225" stroke="#7B4FBF" stroke-width="0.6"/>
+             <line x1="140" y1="20" x2="80" y2="244" stroke="#E066A0" stroke-width="0.5"/>
+             <line x1="140" y1="20" x2="200" y2="244" stroke="#E066A0" stroke-width="0.5"/>
+             <line x1="20" y1="140" x2="244" y2="80" stroke="#4ECDC4" stroke-width="0.5"/>
+             <line x1="20" y1="140" x2="244" y2="200" stroke="#4ECDC4" stroke-width="0.5"/>
+         </svg>
+         <!-- Right edge: partial chart wheel -->
+         <svg width="280" height="280" viewBox="0 0 280 280" style="right: -80px; top: 50%; transform: translateY(-50%);" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="140" cy="140" r="120" stroke="#AC94D8" stroke-width="1.5"/>
+             <circle cx="140" cy="140" r="80" stroke="#AC94D8" stroke-width="1"/>
+             <circle cx="140" cy="140" r="40" stroke="#7B4FBF" stroke-width="0.8"/>
+             <line x1="140" y1="20" x2="140" y2="260" stroke="#AC94D8" stroke-width="0.8"/>
+             <line x1="20" y1="140" x2="260" y2="140" stroke="#AC94D8" stroke-width="0.8"/>
+             <line x1="55" y1="55" x2="225" y2="225" stroke="#7B4FBF" stroke-width="0.6"/>
+             <line x1="225" y1="55" x2="55" y2="225" stroke="#7B4FBF" stroke-width="0.6"/>
+             <line x1="140" y1="20" x2="80" y2="244" stroke="#E066A0" stroke-width="0.5"/>
+             <line x1="140" y1="20" x2="200" y2="244" stroke="#E066A0" stroke-width="0.5"/>
+             <line x1="20" y1="140" x2="244" y2="80" stroke="#4ECDC4" stroke-width="0.5"/>
+             <line x1="20" y1="140" x2="244" y2="200" stroke="#4ECDC4" stroke-width="0.5"/>
+         </svg>
+     </div>
+     <div class="max-w-3xl mx-auto px-6 relative z-10">
+         <span class="hero-fade-in inline-block bg-gm-purple text-white text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">Astrologie</span>
+         <h1 class="hero-fade-in text-3xl md:text-4xl font-bold mb-3">Astrologische Häuser erklärt</h1>
+         <p class="hero-fade-in text-gray-300 text-sm md:text-base leading-relaxed max-w-xl mx-auto">Erfahren Sie mehr über die 12 astrologischen Häuser, was sie repräsentieren und die verschiedenen Häusersysteme, die zu ihrer Berechnung verwendet werden. Genetic Matrix unterstützt 10 Häusermethoden einschließlich Placidus, Koch, Ganzzeichenhäuser und mehr.</p>
+     </div>
+ </section>
+
+ <!-- ==================== ANIMATED HOUSE WHEEL ==================== -->
+ <section class="pt-0 pb-6 md:pb-8 bg-gradient-to-b from-gm-dark to-[#2a1b45] overflow-hidden">
+     <div class="max-w-4xl mx-auto px-6 text-center">
+         <!-- Animated house wheel diagram -->
+         <div class="relative w-64 h-64 md:w-80 md:h-80 mx-auto mb-6">
+             <div class="house-wheel-container w-full h-full">
+                 <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                     <!-- Outer circle -->
+                     <circle cx="150" cy="150" r="120" stroke="#d4a843" stroke-width="1.5" fill="none"/>
+                     <!-- Inner circle -->
+                     <circle cx="150" cy="150" r="70" stroke="#d4a843" stroke-width="1" fill="none"/>
+                     <!-- 12 radial lines at 30-degree intervals, outer r=120 to inner r=70 -->
+                     <!-- x = 150 + r*sin(angle), y = 150 - r*cos(angle) -->
+                     <line x1="150" y1="30" x2="150" y2="80" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="210" y1="46.1" x2="185" y2="89.4" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="253.9" y1="90" x2="210.6" y2="115" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="270" y1="150" x2="220" y2="150" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="253.9" y1="210" x2="210.6" y2="185" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="210" y1="253.9" x2="185" y2="210.6" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="150" y1="270" x2="150" y2="220" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="90" y1="253.9" x2="115" y2="210.6" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="46.1" y1="210" x2="89.4" y2="185" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="30" y1="150" x2="80" y2="150" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="46.1" y1="90" x2="89.4" y2="115" stroke="#d4a843" stroke-width="0.8"/>
+                     <line x1="90" y1="46.1" x2="115" y2="89.4" stroke="#d4a843" stroke-width="0.8"/>
+                     <!-- House numbers 1-12 positioned at segment midpoints (15° between divider lines) -->
+                     <!-- r=95 (midway between outer 120 and inner 70), center 150,150 -->
+                     <!-- x = 150 + 95*sin(angle), y = 150 - 95*cos(angle) + 4 (baseline adjust) -->
+                     <text x="175" y="62" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">10</text>
+                     <text x="217" y="87" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">11</text>
+                     <text x="242" y="129" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">12</text>
+                     <text x="242" y="179" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">1</text>
+                     <text x="217" y="221" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">2</text>
+                     <text x="175" y="246" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">3</text>
+                     <text x="125" y="246" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">4</text>
+                     <text x="83" y="221" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">5</text>
+                     <text x="58" y="179" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">6</text>
+                     <text x="58" y="129" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">7</text>
+                     <text x="83" y="87" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">8</text>
+                     <text x="125" y="62" text-anchor="middle" fill="#d4a843" font-size="11" font-family="Inter, sans-serif" font-weight="500">9</text>
+                 </svg>
+             </div>
+         </div>
+         <p class="text-gray-400 text-sm">Die 12 Häuser teilen den Himmel in Bereiche der Lebenserfahrung</p>
+     </div>
+ </section>
+
+ <!-- ==================== WHAT ARE ASTROLOGY HOUSES? ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="what-are-astrology-houses">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Was sind astrologische Häuser?</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Die 12 Häuser in der Astrologie repräsentieren verschiedene Bereiche der Lebenserfahrung. Während die Tierkreiszeichen beschreiben, <em>wie</em> sich Energie ausdrückt, beschreiben die Häuser, <em>wo</em> diese Energie in Ihrem Leben zur Geltung kommt. Stellen Sie sich das Tierkreiszeichen als Kulisse vor und die Häuser als Bühne. Die Planeten sind die Akteure, die in bestimmten Bereichen Ihres Lebens auftreten, basierend darauf, in welchem Haus sie sich befinden.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Das Häusersystem beginnt mit dem <strong class="text-gray-800">Aszendent</strong>, der die Spitze des 1. Hauses markiert. Das ist das Zeichen, das zum genauen Zeitpunkt Ihrer Geburt am östlichen Horizont aufging. Von dort aus teilen die verbleibenden 11 Häuser den Himmel in Abschnitte, die jeweils einen anderen Lebensbereich regieren.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Wenn ein Planet in einem bestimmten Haus steht, bringt er seine Energie und Themen in diesen Bereich Ihres Lebens. Zum Beispiel betont Venus im 7. Haus Liebe, Schönheit und Harmonie innerhalb von Partnerschaften, während Mars im 10. Haus Ehrgeiz und Durchsetzungskraft in beruflichen Angelegenheiten antreibt.</p>
+     </div>
+ </section>
+
+ <!-- ==================== THE 12 HOUSES ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="the-12-houses">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Die 12 Häuser</h2>
+
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">1</span> Selbst</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Das 1. Haus, auch Aszendent genannt, repräsentiert Ihre äußere Persönlichkeit, körperliche Erscheinung, erste Eindrücke und wie Sie der Welt begegnen. Es ist das persönlichste Haus im Chart und formt, wie andere Sie wahrnehmen, bevor sie Sie tief kennenlernen. Jeder Planet, der hier platziert ist, hat einen übergroßen Einfluss auf Ihre Identität.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">2</span> Wert</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Das 2. Haus regiert Ihre persönlichen Finanzen, materiellen Besitztümer, Selbstwert und Ihre Beziehung zu Geld. Es beschreibt, wie Sie Ressourcen verdienen, ausgeben und schätzen, sowohl materielle als auch immaterielle. Dieses Haus spricht auch zu Ihrem Gefühl persönlicher Sicherheit und was Sie brauchen, um sich stabil zu fühlen.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">3</span> Kommunikation</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Das 3. Haus regiert Kommunikation, Kurzstreckenreisen, Geschwister, Nachbarn und frühe Bildung. Es beschreibt, wie Sie denken, sprechen, schreiben und Informationen im täglichen Leben verarbeiten. Das ist das Haus der alltäglichen Gedankenprozesse: Ihr Lernstil, Ihre Neugier und Ihre lokale Umgebung.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">4</span> Heim &amp; Familie</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Das 4. Haus, auch Imum Coeli (IC) genannt, repräsentiert Ihr Zuhause, familiäre Wurzeln, Abstammung, emotionale Grundlagen und Ihr Privatleben. Es beschreibt Ihre Beziehung zu Ihren Eltern (besonders dem nährenden Elternteil), Ihr Gefühl der Zugehörigkeit und die Umstände Ihrer späteren Lebensjahre.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">5</span> Kreativität &amp; Vergnügen</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Das 5. Haus regiert kreativen Selbstausdruck, Romantik, Kinder, Hobbys, Spaß und Spekulation. Hier spielen Sie, gehen Risiken ein und drücken Freude aus. Es beschreibt, was Ihnen Vergnügen bereitet, Ihren Dating-Stil vor einer festen Bindung und Ihre Beziehung zu Kindern (Ihren eigenen oder im Allgemeinen).</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">6</span> Gesundheit &amp; Dienst</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Das 6. Haus regiert tägliche Routinen, Gesundheitsgewohnheiten, Arbeitsumgebung und Dienst an anderen. Es beschreibt, wie Sie Ihre täglichen Verantwortlichkeiten angehen, Ihre Beziehung zu Kollegen und Ihr körperliches Wohlbefinden. Dieses Haus konzentriert sich auf die praktische, unspektakuläre Arbeit der Lebensführung.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">7</span> Partnerschaft</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Das 7. Haus, auch Deszendent genannt, regiert feste Partnerschaften, Ehe, Geschäftspartner und offene Feinde. Es beschreibt, was Sie bei einem Partner suchen, wie Sie sich in Eins-zu-Eins-Beziehungen verhalten und die Qualitäten, die Sie auf andere projizieren. Es liegt direkt gegenüber dem 1. Haus und spiegelt die Balance zwischen Selbst und dem anderen wider.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">8</span> Transformation</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Das 8. Haus regiert gemeinsame Ressourcen, Intimität, Tod, Wiedergeburt, Steuern, Erbschaften und tiefe psychologische Transformation. Es regiert, was passiert, wenn zwei Menschen ihr Leben finanziell, emotional und sexuell verschmelzen. Dieses Haus umfasst auch okkultes Wissen, verborgene Angelegenheiten und den Prozess des Loslassens.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">9</span> Philosophie</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Das 9. Haus regiert Hochschulbildung, Fernreisen, Philosophie, Religion, Recht und die Suche nach Bedeutung. Es beschreibt Ihre Glaubenssysteme, Ihre Beziehung zu fremden Kulturen und Ihren Drang, das größere Bild zu verstehen. Während das 3. Haus lokales Wissen ist, ist das 9. Haus globale Weisheit.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">10</span> Karriere &amp; Öffentliches Image</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Das 10. Haus, auch Medium Coeli (MC) genannt, repräsentiert Ihre Karriere, öffentlichen Ruf, Errungenschaften und Ihr Vermächtnis. Es beschreibt Ihre höchsten Bestrebungen, Ihre Beziehung zur Autorität und wie die Welt Ihre beruflichen Beiträge sieht. Das ist das sichtbarste Haus im Chart.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">11</span> Gemeinschaft</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Das 11. Haus regiert Freundschaften, soziale Gruppen, humanitäre Anliegen, Hoffnungen und Wünsche für die Zukunft. Es beschreibt die Gemeinschaften, denen Sie angehören, Ihre Beziehung zu kollektiven Zielen und wovon Sie für die Welt träumen. Hier trifft persönliche Identität auf das größere gesellschaftliche Gefüge.</p>
+             </div>
+
+             <div class="house-card bg-white rounded-xl border border-gm-border p-5">
+                 <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2"><span class="text-gm-orange font-bold">12</span> Das Unbewusste</h3>
+                 <p class="text-gm-text text-sm leading-relaxed">Das 12. Haus regiert den Unterbewusstsein, verborgene Feinde, Selbstsabotage, Spiritualität, Isolation und Endungen. Es beschreibt, was unter der Oberfläche liegt: Ihre Träume, Ängste, karmische Muster und Verbindung zum Transzendenten. Planeten hier operieren hinter den Kulissen, oft auf Weise, deren Sie sich nicht bewusst sind.</p>
+             </div>
+
+         </div>
+
+         <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Wichtiger Einblick</p>
+             <p class="text-gm-text text-sm leading-relaxed italic">Das Häusersystem beginnt mit dem Aszendent, dem Zeichen, das zum exakten Zeitpunkt Ihrer Geburt am östlichen Horizont aufsteigt. Deshalb benötigt die Astrologie eine genaue Geburtszeit. Selbst ein Unterschied von wenigen Minuten kann Häuserspitzen verschieben und ändern, in welches Haus ein Planet fällt.</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== WHAT IS A HOUSE SYSTEM? ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="what-is-a-house-system">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Was ist ein Häusersystem?</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Hier wird die Astrologie interessant und hier sind sich Astrologen oft uneinig. Alle sind sich über die 12 Häuser und was sie repräsentieren einig. Der Streitpunkt liegt darin, <em>wie berechnet wird, wo ein Haus endet und das nächste beginnt</em>.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Der Tierkreis hat 360 Grad. Der Aszendent markiert immer den Beginn des 1. Hauses, und das Medium Coeli (MC) markiert in den meisten Systemen immer den Beginn des 10. Hauses. Aber wie teilt man den verbleibenden Raum in 12 Abschnitte? Verschiedene mathematische Ansätze zu dieser Frage produzieren verschiedene Häusersysteme, was bedeutet, dass derselbe Planet je nach verwendetem System in verschiedene Häuser fallen kann.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Das ist wichtig, weil ein Planet im 12. Haus (verborgen, unbewusst) eine ganz andere Geschichte erzählt als derselbe Planet im 1. Haus (sichtbar, Identität). Für Menschen, die in extremen Breitengraden geboren wurden, können die Unterschiede zwischen Häusersystemen dramatisch sein.</p>
+     </div>
+ </section>
+
+ <!-- ==================== HOUSE SYSTEMS SUPPORTED BY GENETIC MATRIX ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="house-systems">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Von Genetic Matrix unterstützte Häusersysteme</h2>
+
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Placidus</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Placidus ist das beliebteste Häusersystem in der modernen westlichen Astrologie und der Standard in der meisten Astrologie-Software weltweit. Entwickelt vom italienischen Mönch Placidus de Titis im 17. Jahrhundert, teilt es die Häuser basierend auf der Zeit, die jeder Grad der Ekliptik benötigt, um sich vom Horizont zum Meridian zu bewegen. Das schafft ungleiche Hausgrößen, die die tatsächliche Bewegung des Himmels an Ihrem Geburtsort widerspiegeln. Placidus funktioniert gut für die meisten Geburtsorte, produziert aber verzerrte Häuser in sehr hohen Breitengraden (über 60 Grad Nord oder Süd), wo einige Grade niemals auf- oder untergehen.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Koch</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Benannt nach Walter Koch, war dieses System im deutschsprachigen Raum während des 20. Jahrhunderts populär. Koch-Häuser werden basierend auf der Zeit berechnet, die der MC-Grad benötigt, um vom Horizont aufzusteigen, dann wird dieser Bogen geteilt. Wie Placidus produziert es ungleiche Häuser und kann Probleme in extremen Breitengraden haben. Koch neigt dazu, die Bedeutung des Midheaven in der Chart-Interpretation zu betonen und produziert Häuser, von denen manche Astrologen glauben, dass sie Karriere- und öffentliche Lebensthemen besser widerspiegeln.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Porphyrius</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Eines der ältesten Häusersysteme, dem Philosophen Porphyrius aus dem 3. Jahrhundert zugeschrieben. Es verwendet einen einfachen und eleganten Ansatz: Nach der Festlegung von Aszendent und MC teilt es jeden Quadranten des Charts in drei gleiche Teile. Das bedeutet, Häuser innerhalb desselben Quadranten sind gleich groß, obwohl sich Quadranten selbst unterscheiden können. Porphyrius wird für seine mathematische Einfachheit und seine Wurzeln in der klassischen Astrologie geschätzt.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Regiomontanus</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Entwickelt vom deutschen Mathematiker Johannes Muller (bekannt als Regiomontanus) im 15. Jahrhundert, teilt dieses System den Himmelsäquator in 12 gleiche Segmente und projiziert dann diese Teilungen auf die Ekliptik. Es war das Standard-Häusersystem während der Renaissance und bleibt in der Stundenastrologie (der Praxis, Charts zu erstellen, um spezifische Fragen zu beantworten) beliebt. Viele traditionelle Astrologen bevorzugen Regiomontanus für seine mathematische Eleganz.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Campanus</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Benannt nach dem italienischen Mathematiker Campanus von Novara aus dem 13. Jahrhundert, teilt dieses System den Primvertical (der Großkreis, der durch den Zenit und die Ost/West-Punkte verläuft) in 12 gleiche 30-Grad-Segmente und projiziert sie dann auf die Ekliptik. Campanus-Häuser spiegeln die tatsächlichen räumlichen Teilungen des Himmels wider, wie sie vom Geburtsort gesehen werden. Manche Astrologen bevorzugen es für seine Betonung des lokalen Horizonts und die Idee, dass Häuser echte räumliche Beziehungen repräsentieren sollten.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Equal</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Das Äquale Häuser System ist einer der einfachsten und ältesten Ansätze. Es nimmt den Grad des Aszendenten und erstellt 12 Häuser von jeweils exakt 30 Grad. Wenn Ihr Aszendent bei 15 Grad Widder steht, ist Ihre 2. Hausspitze bei 15 Grad Stier, Ihr 3. bei 15 Grad Zwillinge und so weiter um das Rad. Der Vorteil ist Konsistenz und Einfachheit. Der Kompromiss ist, dass das Medium Coeli (MC) nicht notwendigerweise auf die 10. Hausspitze fällt, was bedeutet, dass die natürliche Verbindung zwischen MC und 10. Haus gebrochen wird. Äquale Häuser werden weitgehend in der hellenistischen Astrologie verwendet und erleben ein Comeback unter modernen Praktikern.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Ganzzeichenhäuser</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Ganzzeichenhäuser sind wohl das älteste Häusersystem, das umfassend in der hellenistischen und alten indischen (vedischen) Astrologie verwendet wurde. In diesem System wird das Zeichen, in dem der Aszendent steht, zum gesamten 1. Haus. Das nächste Zeichen wird zum gesamten 2. Haus und so weiter. Jedes Haus ist exakt ein Tierkreiszeichen, 30 Grad breit. Das bedeutet, zwei Menschen mit Aszendenten bei 1 Grad Widder und 29 Grad Widder haben dieselben Hausplatzierungen. Ganzzeichenhäuser haben eine große Wiederbelebung in der modernen Astrologie erlebt aufgrund des Einflusses des Hindsight-Projekts und der Übersetzung alter griechischer astrologischer Texte. Seine Einfachheit macht es besonders nützlich für Anfänger und für Timing-Techniken.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Carter Poli-Equatorial</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Entwickelt vom einflussreichen britischen Astrologen Charles E.O. Carter, projiziert dieses System Hausteilungen von der Äquatorialebene. Es ist ein relativ seltenes System, hat aber eine engagierte Anhängerschaft unter Astrologen, die Carters Methoden studieren. Das Poli-Äquatoriale System versucht, einige der Breitengradprobleme zu lösen, die andere quadrantenbasierte Systeme betreffen, indem es die Teilungen anders verankert.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Ganzzeichenhäuser (0 Grad Widder)</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Diese Variation der Ganzzeichenhäuser fixiert das 1. Haus bei 0 Grad Widder unabhängig vom Aszendenten. Jedes Chart beginnt mit Widder als 1. Haus, Stier als 2. und so weiter. Das wird manchmal der "natürliche Häuser"- oder "Solar-Chart"-Ansatz genannt und wird in bestimmten Zweigen der Mundanastrologie (der Astrologie von Weltereignissen) und als vereinfachtes System für Sonnenzeichen-basierte Horoskope verwendet. Der Aszendent erscheint noch im Chart, bestimmt aber nicht die Hausplatzierung.</p>
+
+         <hr class="house-divider">
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-3">Ganzzeichenhäuser (0 Grad Widder) - Fix Asc</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Eine Variation des 0-Grad-Widder-Ganzzeichensystems, das zusätzlich den Aszendenten bei 0 Grad Widder fixiert. Das schafft einen vollständig standardisierten Chart-Rahmen, wo sowohl das Häusersystem als auch der Aszendent am selben Punkt verankert sind. Es wird primär für spezialisierte Forschung und Vergleichsanalysen verwendet, nicht für die Natal-Chart-Deutung.</p>
+
+         <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Wichtiger Einblick</p>
+             <p class="text-gm-text text-sm leading-relaxed italic">Genetic Matrix unterstützt 10 Häusersysteme. Pro-Mitglieder können zwischen allen 10 Systemen wechseln, um zu erforschen, wie sich ihre Charts verschieben.</p>
+         </div>
+     </div>
+ </section>
+<!-- ==================== HOW HOUSES INTERACT WITH PLANETS AND SIGNS ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="houses-planets-signs">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Wie Häuser mit Planeten und Zeichen interagieren</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Das Verständnis der Häuser wird am stärksten, wenn Sie sie mit Planeten und Zeichen kombinieren.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Ein <strong class="text-gray-800">Planet in einem Haus</strong> zeigt Ihnen, welcher Lebensbereich von dieser Planetenenergie aktiviert wird. Mars im 7. Haus bringt Durchsetzungskraft und manchmal Konflikte in Partnerschaften. Jupiter im 2. Haus deutet oft auf Leichtigkeit mit Finanzen und eine großzügige Beziehung zum Geld hin.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Ein <strong class="text-gray-800">Zeichen an einer Hausspitze</strong> beschreibt den Stil und die Färbung dieses Lebensbereichs. Skorpion an der 4. Hausspitze deutet auf ein privates, intensives Zuhause mit tiefen Familiendynamiken hin. Zwillinge an der 10. Hausspitze deuten auf eine Karriere hin, die Kommunikation, Vielfalt oder mehrere berufliche Wege beinhaltet. Der <strong class="text-gray-800">Hausherrscher</strong> (der Planet, der das Zeichen an der Spitze beherrscht) fügt eine weitere Schicht hinzu. Wenn Skorpion an Ihrer 4. Hausspitze steht, werden Mars und Pluto (Skorpions Herrscher) zu den Herrschern Ihres 4. Hauses. Wo diese Planeten in Ihrem Chart stehen, verrät Ihnen mehr darüber, wie sich Ihre Themen von Zuhause und Familie entfalten.</p>
+     </div>
+ </section>
+
+ <!-- ==================== WHY HOUSE SYSTEMS MATTER FOR YOUR CHART ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="why-house-systems-matter">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Warum Häusersysteme für Ihr Chart wichtig sind</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Wenn Sie Planeten nahe der Grenze zwischen zwei Häusern haben (innerhalb weniger Grade einer Spitze), könnte der Wechsel des Häusersystems diesen Planeten in ein anderes Haus verschieben. Dies kann die Interpretation erheblich verändern. Viele erfahrene Astrologen empfehlen, Ihr Chart in mehreren Häusersystemen zu überprüfen, um zu sehen, welches am besten mit Ihrer gelebten Erfahrung übereinstimmt.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Genetic Matrix Pro-Mitglieder können sofort zwischen allen 10 Häusersystemen wechseln, um zu sehen, wie sich ihr Chart verändert. Dies ist besonders wertvoll für alle, die Planeten nahe Hausspitzen haben oder für diejenigen, die in höheren Breitengraden geboren wurden, wo die Unterschiede zwischen Häusersystemen am ausgeprägtesten sind.</p>
+     </div>
+ </section>
+
+    <!-- ==================== CELEBRITY SEARCH BANNER ==================== -->
+    <section class="py-10 md:py-12 bg-gm-dark text-white text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <p class="text-gm-pink text-xs font-semibold tracking-widest uppercase mb-3">Prominentendatenbank</p>
+            <h2 class="text-xl md:text-2xl font-bold mb-3">Entdecken Sie 88.600+ Prominenten-Charts</h2>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6 max-w-xl mx-auto">Suchen Sie nach Namen und erkunden Sie kostenlose Human Design Charts, die in 7 Systemen berechnet wurden. Filtern Sie nach Typ, Profil, Autorität, Sonnenzeichen, Mondzeichen und mehr.</p>
+            <a href="/celebrities/" class="inline-block bg-gm-pink hover:bg-[#e04d63] text-white font-semibold py-3 px-8 rounded-xl transition text-sm">
+                Prominente suchen →
+            </a>
+        </div>
+    </section>
+
+ <!-- ==================== FAQ ACCORDION ==================== -->
+ <section class="py-10 md:py-14 bg-white">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Häufig gestellte Fragen</h2>
+         <div class="space-y-3">
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Welches Häusersystem sollte ich verwenden?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Wenn Sie neu in der Astrologie sind, beginnen Sie mit Placidus. Es ist das am weitesten verbreitete System und die meisten Ressourcen beziehen sich darauf. Wenn Sie Ihre Praxis vertiefen, experimentieren Sie mit Ganzzeichenhäuser (bevorzugt in traditioneller Astrologie) und Äquale Häuser, um zu sehen, welches System Ihre Lebenserfahrung am besten beschreibt.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Verändern Häusersysteme meine Planeten oder Zeichen?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Nein. Ihre Planeten bleiben in denselben Zeichen, unabhängig vom Häusersystem. Nur die Hausplatzierungen ändern sich. Ihre Sonne ist immer noch im Skorpion, aber sie könnte vom 4. Haus ins 5. Haus wechseln, je nach System.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Warum bietet Genetic Matrix 10 Häusersysteme an?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Verschiedene astrologische Traditionen und Techniken arbeiten am besten mit unterschiedlichen Häusersystemen. Horar-Astrologen bevorzugen oft Regiomontanus, vedische Astrologen verwenden Ganzzeichenhäuser, und die meisten modernen westlichen Astrologen verwenden Placidus. Das Angebot aller 10 Systeme ermöglicht es Ihnen, innerhalb der Tradition zu arbeiten, die mit Ihnen in Resonanz steht.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Wie viele Häusersysteme unterstützt Genetic Matrix?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Genetic Matrix unterstützt 10 Häusersysteme, einschließlich Placidus, Koch, Ganzzeichenhäuser, Äquale Häuser, Porphyry, Regiomontanus, Campanus, Meridian, Morinus und 0-Grad-Widder. Pro-Mitglieder können zwischen allen 10 Systemen wechseln, um zu erkunden, wie sich ihre Charts verändern.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Beeinflussen Häusersysteme mein Human Design Chart?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Human Design verwendet sein eigenes Berechnungssystem, das nicht von traditionellen astrologischen Häusersystemen abhängt. Die hier besprochenen Häuser gelten speziell für Ihr Astrologie- oder Astro HD Chart.</div>
+             </details>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== CONTINUE LEARNING ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Weitere Lernthemen</h2>
+         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+             <a href="/astrology/zodiac-signs.html" class="learn-link bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Tierkreiszeichen &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Die 12 Zeichen plus das 13. Zeichen Schlangenträger.</p>
+             </a>
+             <a href="/astrology/planets.html" class="learn-link bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Planeten &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Sonne bis Pluto, Chiron und Lilith.</p>
+             </a>
+             <a href="/astrology/aspects.html" class="learn-link bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Aspekte &amp; Orben &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Konjunktionen, Trigone, Quadrate und mehr.</p>
+             </a>
+             <a href="/astrology/asteroids.html" class="learn-link bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Asteroiden &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Ceres, Pallas, Juno, Vesta und darüber hinaus.</p>
+             </a>
+             <a href="/astrology/fixed-stars.html" class="learn-link bg-white rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Fixsterne &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Königssterne, Sirius, Spica und Algol.</p>
+             </a>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== CTA BANNER ==================== -->
+ <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+     <div class="max-w-2xl mx-auto px-6">
+         <h2 class="text-2xl md:text-3xl font-bold mb-4">Entschlüsseln Sie Ihr vollständiges Geburtshoroskop</h2>
+         <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">Erhalten Sie Zugang zu detaillierten Astrologie-Charts, Human Design Charts und Hunderten von Ansichten und Tools mit einer Genetic Matrix Pro-Mitgliedschaft.</p>
+        <a href="https://www.geneticmatrix.com/pricing/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+            Get Pro &rarr;
+        </a>
+    </div>
+ </section>
+
+ <!-- ==================== FOOTER ==================== -->
+ <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+                <div class="text-center md:text-left">
+                    <img src="../../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">Alle Rechte vorbehalten.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Datenschutz, Allgemeine Geschäftsbedingungen</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Abonnieren Sie unseren Newsletter</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Melden Sie sich für unseren Newsletter an, um Updates, Angebote, neue Veröffentlichungen und alles rund um Genetic Matrix zu erhalten.</p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input type="email" placeholder="Ihre E-Mail-Adresse" class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400">
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Verbinden Sie sich mit uns</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener"><img src="../../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10"></a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener"><img src="../../assets/icon-x.svg" alt="X" class="w-10 h-10"></a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener"><img src="../../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10"></a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener"><img src="../../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10"></a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Kontakt aufnehmen</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+(function() {
+    fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            var badge = document.getElementById('gm-cart-count');
+            if (badge && data.cart_count > 0) {
+                badge.textContent = data.cart_count;
+                badge.classList.remove('hidden');
+            }
+            var loggedOut = document.getElementById('gm-logged-out');
+            var loggedIn = document.getElementById('gm-logged-in');
+            if (data.logged_in) {
+                if (loggedOut) loggedOut.classList.add('hidden');
+                if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
+            }
+        })
+        .catch(function() {});
+})();
+</script>
+<script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
+</body>
+</html>

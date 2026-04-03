@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+ <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Astrologische Planeten erklärt | Was jeder Planet in Ihrem Geburtshoroskop bedeutet | Genetic Matrix</title>
+ <meta name="description" content="Erfahren Sie, was jeder Planet in der Astrologie bedeutet. Von der Sonne und dem Mond über Jupiter, Saturn bis zu den äußeren Planeten - entdecken Sie, wie die Planetenenergien Ihr Geburtshoroskop prägen und Ihr Leben beeinflussen.">
+ <meta name="keywords" content="astrology planets, planets in astrology, birth chart planets, sun in astrology, moon in astrology, mercury astrology, venus astrology, mars astrology, jupiter astrology, saturn astrology, uranus astrology, neptune astrology, pluto astrology, chiron astrology, north node astrology, south node astrology, personal planets, outer planets, natal chart planets">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn/astrology/planets/">
+ <meta property="og:title" content="Astrologische Planeten erklärt - Was jeder Planet in Ihrem Chart bedeutet">
+ <meta property="og:description" content="Erfahren Sie, was jeder Planet in der Astrologie bedeutet. Von der Sonne und dem Mond bis zu den äußeren Planeten - entdecken Sie, wie die Planetenenergien Ihr Geburtshoroskop prägen.">
+ <meta property="og:type" content="article">
+ <meta property="og:url" content="https://www.geneticmatrix.com/learn/astrology/planets/">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="Astrologische Planeten erklärt - Was jeder Planet in Ihrem Chart bedeutet">
+ <meta name="twitter:description" content="Erfahren Sie, was jeder Planet in der Astrologie bedeutet. Von der Sonne und dem Mond bis zu den äußeren Planeten - entdecken Sie, wie die Planetenenergien Ihr Geburtshoroskop prägen.">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ 'gm-purple': '#6E5898',
+ 'gm-purple-light': '#9080B1',
+ 'gm-purple-soft': '#AC94D8',
+ 'gm-dark': '#3C2864',
+ 'gm-darker': '#2e1f4d',
+ 'gm-green': '#54931E',
+ 'gm-green-dark': '#468018',
+ 'gm-green-light': '#8EB86A',
+ 'gm-pink': '#F66378',
+ 'gm-orange': '#E8961D',
+ 'gm-gray': '#707070',
+ 'gm-light': '#F7F8F9',
+ 'gm-card': '#FAFBFC',
+ 'gm-card-active': '#F4F0FC',
+ 'gm-border': '#D8D4E4',
+ 'gm-warning': '#F8F8E8',
+ 'gm-text-dark': '#1A1A2E',
+ 'gm-text': '#444444',
+ 'gm-text-light': '#949494',
+ }
+ }
+ }
+ }
+ </script>
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+ body { font-family: 'Inter', sans-serif; }
+ details summary { cursor: pointer; list-style: none; }
+ details summary::-webkit-details-marker { display: none; }
+ details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+ details[open] summary::after { content: '\2212'; }
+ details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+ @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+ /* Starfield for hero */
+ .astro-stars {
+     position: absolute; inset: 0; pointer-events: none;
+     background-image:
+         radial-gradient(1.5px 1.5px at 10% 20%, rgba(255,255,255,0.8) 0%, transparent 100%),
+         radial-gradient(2px 2px at 30% 50%, rgba(255,255,255,0.9) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 50% 15%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 70% 60%, rgba(255,255,255,0.85) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 85% 30%, rgba(255,255,255,0.75) 0%, transparent 100%),
+         radial-gradient(2px 2px at 15% 70%, rgba(172,148,216,0.8) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 60% 80%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 90% 85%, rgba(232,150,29,0.5) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 40% 90%, rgba(255,255,255,0.6) 0%, transparent 100%),
+         radial-gradient(2px 2px at 25% 40%, rgba(255,255,255,0.8) 0%, transparent 100%);
+     animation: astroTwinkle 4s ease-in-out infinite alternate;
+ }
+ @keyframes astroTwinkle {
+     0% { opacity: 0.7; }
+     100% { opacity: 1; }
+ }
+
+ /* Hero decorative planet illustrations */
+ .hero-planet-layer {
+     position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+ }
+ .hero-planet-layer svg {
+     position: absolute; opacity: 0.12;
+ }
+
+ /* Hero text entrance */
+ .hero-fade-in { opacity: 0; transform: translateY(12px); animation: heroEntrance 0.8s ease-out forwards; }
+ .hero-fade-in:nth-child(1) { animation-delay: 0.2s; }
+ .hero-fade-in:nth-child(2) { animation-delay: 0.4s; }
+ .hero-fade-in:nth-child(3) { animation-delay: 0.6s; }
+ @keyframes heroEntrance {
+     to { opacity: 1; transform: translateY(0); }
+ }
+
+ /* Planet group tabs */
+ .planet-tab {
+     padding: 0.5rem 1.25rem;
+     border-radius: 9999px;
+     font-size: 0.875rem;
+     font-weight: 500;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     border: 1px solid rgba(110,88,152,0.3);
+     color: #9080B1;
+     background: transparent;
+ }
+ .planet-tab:hover {
+     border-color: rgba(172,148,216,0.6);
+     color: #AC94D8;
+ }
+ .planet-tab.active {
+     background: rgba(110,88,152,0.2);
+     border-color: #AC94D8;
+     color: white;
+ }
+
+ /* Planet card styles */
+ .planet-card {
+     transition: all 0.3s ease;
+     background: #F4F0FC;
+     border: 1px solid rgba(172,148,216,0.3);
+     border-radius: 1rem;
+     padding: 1.75rem 1.5rem;
+     text-align: center;
+ }
+ .planet-card:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 8px 30px rgba(110,88,152,0.2);
+     border-color: rgba(172,148,216,0.5);
+ }
+ .planet-icon-badge {
+     width: 56px;
+     height: 56px;
+     border-radius: 50%;
+     background: rgba(110,88,152,0.1);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto 0.75rem;
+ }
+ .planet-icon-badge span {
+     font-size: 1.75rem;
+     color: #6E5898;
+ }
+ .planet-card:hover .planet-icon-badge {
+     background: rgba(110,88,152,0.18);
+ }
+ .planet-category {
+     display: inline-block;
+     font-size: 0.625rem;
+     font-weight: 700;
+     letter-spacing: 0.1em;
+     text-transform: uppercase;
+     padding: 0.25rem 0.75rem;
+     border-radius: 9999px;
+     margin-top: 0.75rem;
+ }
+ .planet-category-personal { background: rgba(110,88,152,0.15); color: #6E5898; }
+ .planet-category-social { background: rgba(212,168,67,0.15); color: #b8942a; }
+ .planet-category-generational { background: rgba(78,205,196,0.15); color: #2a9d96; }
+ .planet-category-special { background: rgba(224,102,160,0.15); color: #c74e8a; }
+
+ /* Filtered states */
+ .planet-filtered-in {
+     animation: cardFadeIn 0.3s ease forwards;
+ }
+ .planet-filtered-out {
+     animation: cardFadeOut 0.3s ease forwards;
+     pointer-events: none;
+     position: absolute;
+     width: 0;
+     height: 0;
+     overflow: hidden;
+     opacity: 0;
+ }
+ @keyframes cardFadeIn {
+     from { opacity: 0; transform: scale(0.95); }
+     to { opacity: 1; transform: scale(1); }
+ }
+ @keyframes cardFadeOut {
+     from { opacity: 1; }
+     to { opacity: 0; }
+ }
+
+ /* Gold planet icons */
+ .planet-icon-gold { color: #d4a843; }
+
+ /* Subtle divider between planet sections */
+ .planet-divider {
+     border: none;
+     height: 1px;
+     background: linear-gradient(to right, transparent, rgba(110,88,152,0.2), transparent);
+     margin: 2rem 0;
+ }
+
+ /* Tip box */
+ .tip-box {
+     background: linear-gradient(135deg, #F4F0FC 0%, #faf8ff 100%);
+     border-left: 3px solid #d4a843;
+     border-radius: 0 0.75rem 0.75rem 0;
+     padding: 1rem 1.25rem;
+ }
+
+ /* Lavender hover for cross-links */
+ .learn-link:hover {
+     border-color: #AC94D8 !important;
+     background: #faf8ff !important;
+ }
+ </style>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Astrologische Planeten erklärt | Was jeder Planet in Ihrem Geburtshoroskop bedeutet","description":"Erfahren Sie, was jeder Planet in der Astrologie bedeutet. Von der Sonne und dem Mond über die äußeren Planeten - entdecken Sie, wie die Planetenenergien Ihr Geburtshoroskop prägen und Ihr Leben beeinflussen.","publisher":{"@type":"Organization","name":"Genetic Matrix","url":"https://www.geneticmatrix.com"},"mainEntityOfPage":"https://www.geneticmatrix.com/learn/astrology/planets/","datePublished":"2025-01-15","dateModified":"2026-03-13"}
+</script>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Was repräsentieren Planeten in der Astrologie?","acceptedAnswer":{"@type":"Answer","text":"In der Astrologie repräsentiert jeder Planet einen fundamentalen Antrieb oder eine Dimension menschlicher Erfahrung. Die Sonne regiert Identität und Lebenszweck. Der Mond beherrscht Emotionen und Instinkte. Merkur behandelt Kommunikation und Gedanken. Venus regiert Liebe und Werte. Mars treibt Handlung und Ehrgeiz an. Jupiter expandiert und bringt Wachstum. Saturn strukturiert und lehrt Disziplin. Die äußeren Planeten (Uranus, Neptun, Pluto) prägen Generationsthemen und tiefe Transformation. Das Zeichen und Haus, in dem ein Planet in Ihrem Geburtshoroskop steht, färbt, wie sich diese Energie in Ihrem Leben ausdrückt."}},
+{"@type":"Question","name":"Was ist der Unterschied zwischen persönlichen und äußeren Planeten?","acceptedAnswer":{"@type":"Answer","text":"Persönliche Planeten (Sonne, Mond, Merkur, Venus, Mars) bewegen sich relativ schnell durch den Tierkreis und prägen Ihre individuelle Persönlichkeit, tägliche Gewohnheiten und enge Beziehungen. Soziale Planeten (Jupiter, Saturn) überbrücken das Persönliche und Kollektive und beeinflussen Wachstum, Ehrgeiz und Lebensstruktur über längere Zyklen. Äußere Planeten (Uranus, Neptun, Pluto) bewegen sich so langsam, dass sie jahrelang oder jahrzehntelang in einem einzigen Zeichen bleiben und die Themen ganzer Generationen prägen, anstatt allein individuelle Eigenschaften."}},
+{"@type":"Question","name":"Warum werden die Sonne und der Mond in der Astrologie als Planeten bezeichnet?","acceptedAnswer":{"@type":"Answer","text":"In der Astrologie werden die Sonne und der Mond traditionell mit den Planeten gruppiert und Lichter genannt. Obwohl astronomisch gesehen die Sonne ein Stern und der Mond ein Satellit ist, verwendet die Astrologie den Begriff Planeten als Abkürzung für alle Himmelskörper, die sich durch den Tierkreis bewegen und symbolische Bedeutung in einem Geburtshoroskop tragen. Diese Konvention reicht Tausende von Jahren zurück, als alle sichtbaren beweglichen Himmelsobjekte wandernde Sterne genannt wurden."}},
+{"@type":"Question","name":"Was ist eine Planetenwiederkehr in der Astrologie?","acceptedAnswer":{"@type":"Answer","text":"Eine Planetenwiederkehr tritt auf, wenn ein transitierender Planet zur exakten Position zurückkehrt, die er zum Zeitpunkt Ihrer Geburt eingenommen hat. Die bekannteste ist die Sonnenwiederkehr um die Alter 29 und 58, die große Perioden der Umstrukturierung und Reife markiert. Die Jupiterwiederkehr geschieht etwa alle 12 Jahre und bringt oft Expansion und Gelegenheit. Die Chiron-Wiederkehr um das Alter 50 signalisiert eine Periode tiefer Heilung und Weisheit."}},
+{"@type":"Question","name":"Was bedeutet es, wenn ein Planet rückläufig ist?","acceptedAnswer":{"@type":"Answer","text":"Wenn ein Planet aus der Erdperspektive rückwärts durch den Tierkreis zu ziehen scheint, wird er als rückläufig bezeichnet. Rückläufige Perioden werden mit Überprüfung, Reflexion und Wiederaufgreifen von Themen in Verbindung gebracht, die mit diesem Planeten zusammenhängen. Merkur rückläufig ist das am häufigsten diskutierte, oft verbunden mit Kommunikationspannen und Reiseverzögerungen. Alle Planeten außer der Sonne und dem Mond werden periodisch rückläufig, und diese Perioden werden allgemein als Zeiten gesehen, um zu entschleunigen und nach innen zu schauen, anstatt voranzutreiben."}}
+]}
+</script>
+</head>
+<body class="bg-white text-gray-700">
+
+ <!-- ==================== NAV BAR ==================== -->
+ <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14">
+            </a>
+            <div class="flex items-center gap-8">
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Berichte">
+                    <img src="../../assets/icon-report.svg" alt="Berichte" class="h-9 w-9">
+                </a>
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Talking Charts">
+                    <img src="../../assets/icon-talking-chart.svg" alt="Talking Charts" class="h-7 w-7">
+                </a>
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Kostenloses Chart</a>
+                <!-- Learn -->
+                <!-- Learn Dropdown -->
+                <div class="hidden lg:block relative group">
+                    <button class="text-gm-purple hover:text-gm-dark text-sm font-semibold flex items-center gap-1">
+                        Lernen
+                        <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[420px] bg-white rounded-xl shadow-xl border border-gray-100 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="grid grid-cols-2 gap-1">
+                            <a href="../../" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-9 h-9 bg-gm-card-active rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-800">Learn Hub</div>
+                                    <div class="text-xs text-gm-text-light mt-0.5">HD und Astrologie Bildung</div>
+                                </div>
+                            </a>
+                            <a href="../celebrities/index.html" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-9 h-9 bg-gm-card-active rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-800">Prominentensuche</div>
+                                    <div class="text-xs text-gm-text-light mt-0.5">88.600+ Prominenten-Charts</div>
+                                </div>
+                            </a>
+                            <a href="https://www.geneticmatrix.com/dictionary/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-9 h-9 bg-gm-card-active rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-800">Wörterbuch</div>
+                                    <div class="text-xs text-gm-text-light mt-0.5">HD und Astrologie Begriffe</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Unsere Pläne</a>
+                <a href="https://www.geneticmatrix.com/cart/" title="Warenkorb">
+                    <img src="../../assets/icon-cart.svg" alt="Warenkorb" class="h-5 w-auto">
+                </a>
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>Deutsch</span>
+                    <img src="../../assets/icon-english.svg" alt="Deutsch" class="h-5 w-7">
+                </div>
+                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Anmelden</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Registrieren</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-50 border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 py-2.5">
+            <a href="../../" class="text-sm text-gm-purple hover:text-gm-dark font-medium transition">&larr; Zurück zum Learn Hub</a>
+        </div>
+    </div>
+
+ <!-- ==================== HERO BANNER ==================== -->
+ <section class="relative bg-gm-dark text-white text-center pt-14 md:pt-20 pb-6 md:pb-8 overflow-hidden">
+     <!-- Starfield -->
+     <div class="astro-stars"></div>
+
+     <!-- Decorative planet/constellation illustrations at edges -->
+     <div class="hero-planet-layer">
+         <!-- Saturn-like planet, top-left -->
+         <svg width="120" height="120" viewBox="0 0 120 120" style="top: 10%; left: 3%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="60" cy="60" r="30" stroke="#d4a843" stroke-width="1.5"/>
+             <ellipse cx="60" cy="60" rx="55" ry="12" stroke="#d4a843" stroke-width="1" transform="rotate(-20 60 60)"/>
+         </svg>
+         <!-- Jupiter with bands, top-right -->
+         <svg width="100" height="100" viewBox="0 0 100 100" style="top: 8%; right: 5%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="50" cy="50" r="35" stroke="#d4a843" stroke-width="1.5"/>
+             <path d="M20 42 Q50 38 80 42" stroke="#d4a843" stroke-width="0.8" fill="none"/>
+             <path d="M18 52 Q50 56 82 52" stroke="#d4a843" stroke-width="0.8" fill="none"/>
+             <path d="M22 62 Q50 58 78 62" stroke="#d4a843" stroke-width="0.8" fill="none"/>
+         </svg>
+         <!-- Small crescent moon, bottom-left -->
+         <svg width="60" height="60" viewBox="0 0 60 60" style="bottom: 12%; left: 8%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M35 10 A22 22 0 1 0 35 50 A16 16 0 1 1 35 10Z" stroke="#d4a843" stroke-width="1.2" fill="none"/>
+         </svg>
+         <!-- Small constellation cluster, bottom-right -->
+         <svg width="80" height="80" viewBox="0 0 80 80" style="bottom: 10%; right: 6%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="20" cy="20" r="2" fill="#d4a843"/>
+             <circle cx="55" cy="15" r="2" fill="#d4a843"/>
+             <circle cx="40" cy="45" r="2" fill="#d4a843"/>
+             <circle cx="65" cy="55" r="2" fill="#d4a843"/>
+             <circle cx="25" cy="65" r="2" fill="#d4a843"/>
+             <line x1="20" y1="20" x2="55" y2="15" stroke="#d4a843" stroke-width="0.5"/>
+             <line x1="55" y1="15" x2="40" y2="45" stroke="#d4a843" stroke-width="0.5"/>
+             <line x1="40" y1="45" x2="65" y2="55" stroke="#d4a843" stroke-width="0.5"/>
+             <line x1="40" y1="45" x2="25" y2="65" stroke="#d4a843" stroke-width="0.5"/>
+         </svg>
+     </div>
+
+     <div class="relative z-10 max-w-3xl mx-auto px-6">
+         <div class="hero-fade-in">
+             <span class="inline-block bg-white/10 backdrop-blur-sm text-white/90 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">Astrologie</span>
+         </div>
+         <h1 class="hero-fade-in text-3xl md:text-4xl font-bold mb-4">Astrologische Planeten erklärt</h1>
+         <p class="hero-fade-in text-gray-300 text-sm md:text-base leading-relaxed max-w-xl mx-auto">Erfahren Sie, was jeder Planet in der Astrologie bedeutet, von den persönlichen Planeten (Sonne, Mond, Merkur, Venus, Mars) über die äußeren Planeten (Jupiter, Saturn, Uranus, Neptun, Pluto) sowie Chiron und Lilith.</p>
+     </div>
+ </section>
+
+
+ <!-- ==================== SOLAR SYSTEM ILLUSTRATION ==================== -->
+ <section class="pt-4 md:pt-6 pb-6 md:pb-8 bg-gradient-to-b from-gm-dark to-[#2a1b45]">
+     <div class="max-w-3xl mx-auto px-6 text-center">
+         <img src="Maja_Planets.png" alt="Illustriertes Sonnensystem mit den in der Astrologie verwendeten Planeten" class="w-full max-w-2xl mx-auto rounded-2xl">
+     </div>
+ </section>
+
+
+ <!-- ==================== THE PLANETS IN ASTROLOGY ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="planets-in-astrology">
+     <div class="max-w-6xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Die Planeten in der Astrologie</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4 max-w-3xl">In der Astrologie repräsentiert jeder Planet einen fundamentalen Antrieb oder eine Dimension menschlicher Erfahrung. Das Zeichen, das ein Planet zum Zeitpunkt Ihrer Geburt besetzt, färbt, wie sich diese Energie ausdrückt, während das Haus, in das er fällt, den Lebensbereich zeigt, in dem er sich am stärksten abspielt. Zusammen bilden die Planeten die Grundlage Ihres Geburtshoroskops.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8 max-w-3xl">Die persönlichen Planeten (Sonne bis Mars) bewegen sich schnell und prägen Ihre individuelle Persönlichkeit und Ihr tägliches Leben. Die sozialen Planeten (Jupiter, Saturn) regieren Wachstum und Struktur über längere Zyklen. Die äußeren Planeten (Uranus, Neptun, Pluto) bewegen sich so langsam, dass sie die Themen ganzer Generationen definieren.</p>
+
+         <!-- Planet group filter tabs -->
+         <div class="flex flex-wrap gap-2 mb-8 justify-center">
+             <button class="planet-tab active" data-group="all" onclick="filterPlanets('all')">Alle Planeten</button>
+             <button class="planet-tab" data-group="personal" onclick="filterPlanets('personal')">Persönlich</button>
+             <button class="planet-tab" data-group="social" onclick="filterPlanets('social')">Sozial</button>
+             <button class="planet-tab" data-group="outer" onclick="filterPlanets('outer')">Äußere</button>
+             <button class="planet-tab" data-group="special" onclick="filterPlanets('special')">Spezielle Körper</button>
+         </div>
+
+         <!-- Planet cards grid -->
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="planet-grid">
+
+             <!-- Sun -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x2609;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Sonne</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Identität & Lebenszweck</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Die Sonne repräsentiert Ihre Kernidentität, Ihr Ego und Ihren Lebenszweck. Sie ist die zentrale Kraft des Geburtshoroskops und beschreibt, wer Sie auf der tiefsten Ebene sind, was Ihr Selbstgefühl antreibt und wo Sie zu strahlen suchen.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Herrscher: <strong class="text-gm-purple">Löwe</strong></span>
+                     <span>Zyklus: <strong class="text-gm-purple">1 Jahr</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Persönlich</span>
+             </div>
+
+             <!-- Earth -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x2641;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Erde</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Erdung & Physische Realität</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Die Erde steht in Ihrem Chart immer direkt gegenüber der Sonne. Sie repräsentiert, wo Sie Ihre Sonnenenergie in praktische, physische Realität erden. Das Erdzeichen und Haus zeigen auf die Ressourcen und materiellen Grundlagen, die Ihren Lebenszweck unterstützen.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Herrscher: <strong class="text-gm-purple">Stier</strong></span>
+                     <span>Zyklus: <strong class="text-gm-purple">1 Jahr</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Persönlich</span>
+             </div>
+
+             <!-- Moon -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x263D;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Mond</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Emotionen & Innere Welt</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Der Mond regiert Ihre emotionale Natur, Instinkte und unbewussten Muster. Er offenbart, wie Sie Gefühle verarbeiten, was Sie sich sicher fühlen lässt und was Sie für emotionale Nahrung brauchen. Ihr Mondzeichen beschreibt Ihre innere Welt und gewohnheitsmäßigen Reaktionen.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Herrscher: <strong class="text-gm-purple">Krebs</strong></span>
+                     <span>Zyklus: <strong class="text-gm-purple">28 Tage</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Persönlich</span>
+             </div>
+
+             <!-- Mercury -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x263F;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Merkur</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Kommunikation & Denken</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Merkur beherrscht den Geist, die Kommunikation und wie Sie Informationen verarbeiten und teilen. Er regiert Lernstil, logisches Denken, Sprache, Schreiben und alltägliche Austausche. Ihr Merkurzeichen prägt die Art, wie Sie denken, argumentieren und die Welt verstehen.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Herrscher: <strong class="text-gm-purple">Zwillinge / Jungfrau</strong></span>
+                     <span>Zyklus: <strong class="text-gm-purple">88 Tage</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Persönlich</span>
+             </div>
+
+             <!-- Venus -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Venus</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Liebe, Schönheit & Werte</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Venus regiert Liebe, Schönheit, Vergnügen und was Sie am meisten schätzen. Sie prägt, wie Sie andere anziehen und sich zu ihnen verhalten, Ihre ästhetischen Empfindungen und Ihren Ansatz zu Romantik und Harmonie. Ihr Venuszeichen offenbart, was Sie schön finden und wie Sie Zuneigung ausdrücken.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Herrscher: <strong class="text-gm-purple">Stier / Waage</strong></span>
+                     <span>Zyklus: <strong class="text-gm-purple">225 Tage</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Persönlich</span>
+             </div>
+
+             <!-- Mars -->
+             <div class="planet-card" data-group="personal">
+                 <div class="planet-icon-badge"><span>&#x2642;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Mars</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Handlung & Antrieb</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Mars ist der Planet der Handlung, des Verlangens, der physischen Energie und des Mutes. Er regiert, wie Sie sich durchsetzen, verfolgen, was Sie wollen, und mit Konflikten umgehen. Ihr Marszeichen beschreibt Ihren Kampfstil, Ihren physischen Antrieb und wie Sie Wut und Ehrgeiz kanalisieren.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Herrscher: <strong class="text-gm-purple">Widder / Skorpion</strong></span>
+                     <span>Zyklus: <strong class="text-gm-purple">687 Tage</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-personal">Persönlich</span>
+             </div>
+
+             <!-- Jupiter -->
+             <div class="planet-card" data-group="social">
+                 <div class="planet-icon-badge"><span>&#x2643;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Jupiter</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Expansion & Fülle</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Jupiter ist der große Wohltäter, der Planet der Expansion, des Optimismus, der Fülle und des höheren Lernens. Er regiert Philosophie, Reisen, Glauben und die Suche nach Bedeutung. Ihr Jupiterzeichen und Haus zeigen, wo das Leben dazu neigt, Ihnen Türen zu öffnen und wo Sie Ihren größten Zweck finden.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Herrscher: <strong class="text-gm-purple">Schütze</strong></span>
+                     <span>Zyklus: <strong class="text-gm-purple">12 Jahre</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-social">Sozial</span>
+             </div>
+
+             <!-- Saturn -->
+             <div class="planet-card" data-group="social">
+                 <div class="planet-icon-badge"><span>&#x2644;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Saturn</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Struktur & Disziplin</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Saturn ist der Aufgabenmeister des Tierkreises und regiert Disziplin, Verantwortung, Grenzen und langfristige Erfolge. Er repräsentiert die Lebensbereiche, in denen Sie Ihren größten Herausforderungen begegnen und durch Ausdauer Ihre tiefste Meisterschaft erwerben. Die Saturnwiederkehr um die Alter 29 und 58 markiert wichtige Perioden der Umstrukturierung.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Herrscher: <strong class="text-gm-purple">Steinbock</strong></span>
+                     <span>Zyklus: <strong class="text-gm-purple">29,5 Jahre</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-social">Sozial</span>
+             </div>
+
+             <!-- Uranus -->
+             <div class="planet-card" data-group="outer">
+                 <div class="planet-icon-badge"><span>&#x2645;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Uranus</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Revolution & Innovation</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Uranus ist der Planet des plötzlichen Wandels, der Rebellion, Innovation und Befreiung. Er regiert, wo Sie sich von Konventionen befreien, Ihre Individualität annehmen und unerwartete Durchbrüche erleben. Uranus verbringt etwa 7 Jahre in jedem Zeichen und prägt Generationshaltungen zu Freiheit und Fortschritt.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Herrscher: <strong class="text-gm-purple">Wassermann</strong></span>
+                     <span>Zyklus: <strong class="text-gm-purple">84 Jahre</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-generational">Generational</span>
+             </div>
+
+             <!-- Neptune -->
+             <div class="planet-card" data-group="outer">
+                 <div class="planet-icon-badge"><span>&#x2646;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Neptun</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Spiritualität & Vorstellungskraft</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Neptun regiert Träume, Intuition, Spiritualität, Mitgefühl und die Auflösung von Grenzen. Er beherrscht Vorstellungskraft und künstlerische Inspiration, kann aber auch Verwirrung, Illusion und Eskapismus bringen. Neptun verbringt etwa 14 Jahre in jedem Zeichen und prägt Generationsideale um Glauben, Kunst und kollektive Sehnsucht.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Herrscher: <strong class="text-gm-purple">Fische</strong></span>
+                     <span>Zyklus: <strong class="text-gm-purple">165 Jahre</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-generational">Generational</span>
+             </div>
+
+             <!-- Pluto -->
+             <div class="planet-card" data-group="outer">
+                 <div class="planet-icon-badge"><span>&#x2647;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Pluto</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Transformation & Macht</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Pluto ist der Planet der Transformation, des Todes und der Wiedergeburt, der Macht und des Unbewussten. Er regiert tiefe psychologische Prozesse, Besessenheit, Regeneration und die Zerstörung dessen, was dem Wachstum nicht länger dient. Pluto verbringt 12 bis 30 Jahre in einem Zeichen und treibt tiefgreifende generationale Veränderungen darin, wie die Gesellschaft sich zur Macht verhält.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Herrscher: <strong class="text-gm-purple">Skorpion</strong></span>
+                     <span>Zyklus: <strong class="text-gm-purple">248 Jahre</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-generational">Generational</span>
+             </div>
+
+             <!-- North Node -->
+             <div class="planet-card" data-group="special">
+                 <div class="planet-icon-badge"><span>&#x260A;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Aufsteigender Mondknoten</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Wachstumsrichtung der Seele</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Der Aufsteigende Mondknoten zeigt auf die Qualitäten, Erfahrungen und Lebensrichtung, zu denen Ihre Seele in diesem Leben wächst. Er repräsentiert unvertrautes Territorium, das sich herausfordernd, aber letztendlich erfüllend anfühlt. Das Zeichen und Haus Ihres Aufsteigenden Mondknotens beschreiben die Lektionen, die Sie hier lernen sollen.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Zyklus: <strong class="text-gm-purple">18,6 Jahre</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-special">Speziell</span>
+             </div>
+
+             <!-- South Node -->
+             <div class="planet-card" data-group="special">
+                 <div class="planet-icon-badge"><span>&#x260B;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Absteigender Mondknoten</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Karmische Vergangenheit & Komfortzone</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Der Absteigende Mondknoten repräsentiert angeborene Talente, Standardmuster und Qualitäten, die aus vergangener Erfahrung mitgebracht wurden. Er beschreibt Ihre Komfortzone und die Fähigkeiten, die Ihnen natürlich kommen, aber Sie auch zurückhalten können, wenn Sie sich zu sehr auf sie verlassen. Das Ausbalancieren der Themen von Aufsteigendem und Absteigendem Mondknoten ist zentral für die Reise der Seele.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Zyklus: <strong class="text-gm-purple">18,6 Jahre</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-special">Speziell</span>
+             </div>
+
+             <!-- Chiron -->
+             <div class="planet-card" data-group="special">
+                 <div class="planet-icon-badge"><span>&#x26B7;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Chiron</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Der verwundete Heiler</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Chiron umkreist zwischen Saturn und Uranus und ist als der verwundete Heiler bekannt. Er repräsentiert eine tiefe, zentrale Wunde, die Sie durch das Leben tragen und durch die Konfrontation mit ihr die Fähigkeit entwickeln, andere zu heilen. Ihr Chiron-Zeichen und Haus offenbaren, wo Ihre größte Verletzlichkeit und tiefste Weisheit liegen.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Zyklus: <strong class="text-gm-purple">~50 Jahre</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-special">Speziell</span>
+             </div>
+
+             <!-- Black Moon Lilith -->
+             <div class="planet-card" data-group="special">
+                 <div class="planet-icon-badge"><span>&#x26B8;</span></div>
+                 <h3 class="text-lg font-bold text-gray-800">Lilith</h3>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Rohe Begierde & Schattenselbst</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Lilith ist kein physischer Körper, sondern ein mathematischer Punkt, der das Mondapogäum repräsentiert, den Punkt, an dem der Mond in seiner Umlaufbahn am weitesten von der Erde entfernt ist. Sie symbolisiert Ihre rohen, ungezähmten Begierden, unterdrückten Instinkte und die Teile von Ihnen, die die Gesellschaft Sie zu verstecken drängt. Ihr Lilith-Zeichen und Haus offenbaren, wo Sie sich weigern, Kompromisse zu machen, wo Sie Scham oder Wut fühlen und wo das Zurückfordern Ihrer authentischen Macht zur Befreiung führt.</p>
+                 <div class="flex items-center justify-center gap-4 mt-3 text-xs text-gm-text-light">
+                     <span>Zyklus: <strong class="text-gm-purple">~9 Jahre</strong></span>
+                 </div>
+                 <span class="planet-category planet-category-special">Speziell</span>
+             </div>
+
+         </div>
+
+         <hr class="planet-divider">
+
+         <div class="tip-box my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Tipp</p>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed">Zwei Menschen, die nur wenige Tage auseinander geboren sind, können sehr unterschiedliche Charts haben. Der Mond wechselt alle 2,5 Tage die Zeichen, und auch Merkur und Venus wechseln häufig. Sogar kleine Unterschiede in der Geburtszeit können Planeten in verschiedene Häuser bewegen und verändern, wie ihre Energie in Ihrem Leben spielt.</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== PLANETS IN SIGNS ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="planets-in-signs">
+     <div class="max-w-6xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4"><span class="text-gm-purple">|</span> Planeten in Zeichen</h2>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8 max-w-3xl">Das Zeichen, das ein Planet besetzt, färbt <strong class="text-gray-800">wie</strong> sich die Energie dieses Planeten ausdrückt. Derselbe Planet verhält sich sehr unterschiedlich, je nachdem, in welches Zeichen er fällt. Unten sind Beispiele, die zeigen, wie ein einzelner Planet seinen Ausdruck durch den Tierkreis verändert.</p>
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-4">Merkur durch die Zeichen</h3>
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x263F;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Merkur im Widder</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Schnell & Direkt</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Denkt schnell, spricht unverblümt und trifft spontane Entscheidungen. Widder-Merkur ist wettbewerbsorientiert in Debatten und ungeduldig mit langwierigen Erklärungen. Ideen kommen stoßweise und werden sofort umgesetzt.</p>
+             </div>
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x263F;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Merkur in der Jungfrau</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Analytisch & Präzise</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Merkur steht in seiner Herrschaft und Erhöhung in der Jungfrau, was dies zu einer seiner stärksten Positionen macht. Das Denken ist methodisch, detailorientiert und praktisch. Jungfrau-Merkur zeichnet sich beim Organisieren von Informationen und Problemlösung aus.</p>
+             </div>
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x263F;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Merkur in den Fischen</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Intuitiv & Poetisch</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Denkt in Bildern, Metaphern und Gefühlen statt in linearer Logik. Fische-Merkur absorbiert Informationen durch Atmosphäre und Intuition. Kommunikation ist kreativ und empathisch, kann aber vage oder schwer fassbar sein.</p>
+             </div>
+         </div>
+
+         <h3 class="text-lg font-semibold text-gray-800 mb-4">Venus durch die Zeichen</h3>
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Venus im Stier</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Sinnlich & Beständig</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Venus ist in ihrem Heimatzeichen im Stier. Liebe wird durch körperliche Berührung, Loyalität und das Schaffen schöner, komfortabler Räume ausgedrückt. Schätzt Sicherheit und Beständigkeit in Beziehungen über alles.</p>
+             </div>
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Venus im Skorpion</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Intensiv & Transformierend</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Liebe ist alles oder nichts. Skorpion-Venus sehnt sich nach tiefer emotionaler und physischer Intimität, ist äußerst loyal und kämpft mit Eifersucht oder Besitzdenken. Beziehungen sind Vehikel für tiefgreifende Transformation.</p>
+             </div>
+             <div class="planet-card">
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Venus im Wassermann</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Unabhängig & Unkonventionell</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Schätzt intellektuelle Verbindung und persönliche Freiheit in der Liebe. Wassermann-Venus fühlt sich zu einzigartigen, originellen Menschen hingezogen und widersteht traditionellen Beziehungsstrukturen. Freundschaft ist das Fundament der Romantik.</p>
+             </div>
+         </div>
+
+         <div class="tip-box my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Tipp</p>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed">Ihr Sonnenzeichen ist nur der Anfang. Um Ihren vollständigen Kommunikationsstil zu verstehen, schauen Sie auf Ihr Merkurzeichen. Für Liebe und Beziehungen schauen Sie auf Venus. Für Antrieb und Ehrgeiz prüfen Sie Mars. Jeder Planet erzählt einen anderen Teil Ihrer Geschichte.</p>
+         </div>
+     </div>
+ </section>
+<!-- ==================== PLANETS IN HOUSES ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="planets-in-houses">
+     <div class="max-w-6xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4"><span class="text-gm-purple">|</span> Planeten in Häusern</h2>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8 max-w-3xl">Während das Zeichen zeigt, <strong class="text-gray-800">wie</strong> sich ein Planet ausdrückt, zeigt das Haus, <strong class="text-gray-800">wo</strong> in Ihrem Leben sich diese Energie entfaltet. Derselbe Planet im selben Zeichen wird sich sehr unterschiedlich manifestieren, je nachdem, welches Haus er besetzt.</p>
+
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">1. Haus</p>
+                 <div class="planet-icon-badge"><span>&#x2642;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Mars im 1. Haus</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Identität & Erscheinungsbild</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Die Mars-Energie ist für jeden sichtbar. Sie wirken durchsetzungsfähig, wettbewerbsorientiert und körperlich energiegeladen. Erste Eindrücke sind stark und direkt. Es gibt eine natürliche Athletik und einen unverkennbaren Antrieb in Ihrer Persönlichkeit.</p>
+             </div>
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">7. Haus</p>
+                 <div class="planet-icon-badge"><span>&#x2640;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Venus im 7. Haus</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Partnerschaft & Ehe</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Venus ist im 7. Haus der Partnerschaft zu Hause. Beziehungen neigen dazu, harmonisch und zentral für Ihr Leben zu sein. Sie ziehen Partner mit Anmut und Schönheit an, und die Schaffung von Balance in persönlichen Verbindungen ist ein zentrales Lebensthema.</p>
+             </div>
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">10. Haus</p>
+                 <div class="planet-icon-badge"><span>&#x2609;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Sonne im 10. Haus</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Karriere & Öffentliches Image</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Ihre Identität ist eng mit Ihrer Karriere und Ihrem öffentlichen Ansehen verbunden. Es gibt einen starken Antrieb zu Leistung, Sichtbarkeit und Anerkennung. Autorität kommt natürlich, und Ihr Lebenszweck entfaltet sich oft durch berufliche Errungenschaften.</p>
+             </div>
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">12. Haus</p>
+                 <div class="planet-icon-badge"><span>&#x2644;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Saturn im 12. Haus</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Einsamkeit & Karma</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Verborgene Ängste und Verantwortlichkeiten, spirituelle Disziplin durch Einsamkeit, karmische Arbeit hinter den Kulissen. Saturn hier verlangt, dass Sie unbewusste Beschränkungen konfrontieren und innere Stärke durch Phasen des Rückzugs und der Reflexion entwickeln.</p>
+             </div>
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">4. Haus</p>
+                 <div class="planet-icon-badge"><span>&#x263D;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Mond im 4. Haus</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Zuhause & Emotionale Wurzeln</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Der Mond ist kraftvoll in seinem natürlichen Haus platziert. Emotionale Sicherheit ist tief mit Zuhause, Familie und einem Gefühl der Zugehörigkeit verbunden. Es gibt eine starke Verbindung zur Ahnenschaft und Kindheitserinnerungen prägen erwachsene emotionale Muster tiefgreifend.</p>
+             </div>
+             <div class="planet-card">
+                 <p class="text-[0.65rem] font-bold text-gm-purple uppercase tracking-widest mb-2">2. Haus</p>
+                 <div class="planet-icon-badge"><span>&#x2643;</span></div>
+                 <h4 class="text-base font-bold text-gray-800">Jupiter im 2. Haus</h4>
+                 <p class="text-xs text-gm-purple font-semibold uppercase tracking-wide mb-3">Wohlstand & Selbstwert</p>
+                 <p class="text-gm-text text-sm leading-relaxed text-left">Jupiter erweitert alles, was er berührt, und im 2. Haus bringt er natürlichen Überfluss und eine großzügige Beziehung zum Geld. Verdienst neigt dazu, durch Optimismus, Weisheit oder Lehren zu kommen. Es gibt ein angeborenes Gefühl des Selbstwerts und materielles Vertrauen.</p>
+             </div>
+         </div>
+
+         <div class="tip-box my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Tipp</p>
+             <p class="text-gm-text text-sm md:text-base leading-relaxed">Ein leeres Haus bedeutet nicht, dass dieser Lebensbereich inaktiv ist. Das Zeichen an der Hausspitze und sein Herrscher beeinflussen diesen Bereich weiterhin. Planeten in Häusern fügen diesen Lebensbereichen einfach zusätzliche Betonung und Komplexität hinzu.</p>
+         </div>
+     </div>
+ </section>
+
+    <!-- ==================== CELEBRITY SEARCH BANNER ==================== -->
+    <section class="py-10 md:py-12 bg-gm-dark text-white text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <p class="text-gm-pink text-xs font-semibold tracking-widest uppercase mb-3">Prominenten-Datenbank</p>
+            <h2 class="text-xl md:text-2xl font-bold mb-3">Entdecken Sie über 88.600 Prominenten-Charts</h2>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6 max-w-xl mx-auto">Suchen Sie nach Namen und erkunden Sie kostenlose Human Design Charts, die in 7 Systemen berechnet wurden. Filtern Sie nach Typ, Profil, Autorität, Sonnenzeichen, Mondzeichen und mehr.</p>
+            <a href="/celebrities/" class="inline-block bg-gm-pink hover:bg-[#e04d63] text-white font-semibold py-3 px-8 rounded-xl transition text-sm">
+                Prominente durchsuchen →
+            </a>
+        </div>
+    </section>
+
+ <!-- ==================== FAQ ACCORDION ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="faq">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Häufig gestellte Fragen</h2>
+         <div class="space-y-4">
+             <details class="bg-white rounded-xl border border-gm-border p-5">
+                 <summary class="text-sm md:text-base font-bold text-gray-800 pr-8 py-5 px-6">Was repräsentieren Planeten in der Astrologie?</summary>
+                 <div class="mt-4 text-gm-text text-sm md:text-base leading-relaxed">
+                     <p>In der Astrologie repräsentiert jeder Planet einen grundlegenden Antrieb oder eine Dimension der menschlichen Erfahrung. Die Sonne regiert Identität und Lebenszweck. Der Mond beherrscht Emotionen und Instinkte. Merkur behandelt Kommunikation und Denken. Venus regiert Liebe und Werte. Mars treibt Handlung und Ehrgeiz an. Jupiter erweitert und bringt Wachstum. Saturn strukturiert und lehrt Disziplin. Die äußeren Planeten (Uranus, Neptun, Pluto) prägen Generationsthemen und tiefe Transformation. Das Zeichen und Haus, das ein Planet in Ihrem Geburtshoroskop besetzt, färbt, wie sich diese Energie in Ihrem Leben ausdrückt.</p>
+                 </div>
+             </details>
+             <details class="bg-white rounded-xl border border-gm-border p-5">
+                 <summary class="text-sm md:text-base font-bold text-gray-800 pr-8 py-5 px-6">Was ist der Unterschied zwischen persönlichen und äußeren Planeten?</summary>
+                 <div class="mt-4 text-gm-text text-sm md:text-base leading-relaxed">
+                     <p>Persönliche Planeten (Sonne, Mond, Merkur, Venus, Mars) bewegen sich relativ schnell durch den Tierkreis und prägen Ihre individuelle Persönlichkeit, täglichen Gewohnheiten und engen Beziehungen. Gesellschaftliche Planeten (Jupiter, Saturn) verbinden das Persönliche und Kollektive und beeinflussen Wachstum, Ehrgeiz und Lebensstruktur über längere Zyklen. Äußere Planeten (Uranus, Neptun, Pluto) bewegen sich so langsam, dass sie jahrelang oder jahrzehntelang in einem einzigen Zeichen verbleiben und die Themen ganzer Generationen prägen, anstatt nur individuelle Eigenschaften.</p>
+                 </div>
+             </details>
+             <details class="bg-white rounded-xl border border-gm-border p-5">
+                 <summary class="text-sm md:text-base font-bold text-gray-800 pr-8 py-5 px-6">Warum werden Sonne und Mond in der Astrologie Planeten genannt?</summary>
+                 <div class="mt-4 text-gm-text text-sm md:text-base leading-relaxed">
+                     <p>In der Astrologie werden Sonne und Mond traditionell mit den Planeten gruppiert und Lichter genannt. Obwohl astronomisch die Sonne ein Stern und der Mond ein Satellit ist, verwendet die Astrologie den Begriff "Planeten" als Kurzform für alle Himmelskörper, die sich durch den Tierkreis bewegen und symbolische Bedeutung in einem Geburtshoroskop tragen. Diese Konvention reicht Tausende von Jahren zurück, als alle sichtbaren beweglichen Himmelsobjekte wandernde Sterne genannt wurden.</p>
+                 </div>
+             </details>
+             <details class="bg-white rounded-xl border border-gm-border p-5">
+                 <summary class="text-sm md:text-base font-bold text-gray-800 pr-8 py-5 px-6">Was ist eine Planetenwiederkehr in der Astrologie?</summary>
+                 <div class="mt-4 text-gm-text text-sm md:text-base leading-relaxed">
+                     <p>Eine Planetenwiederkehr tritt auf, wenn ein transitierender Planet zur exakten Position zurückkehrt, die er zum Zeitpunkt Ihrer Geburt einnahm. Die bekannteste ist die Saturwiederkehr um die 29 und 58 Jahre, die wichtige Perioden der Umstrukturierung und Reife markiert. Die Jupiterwiederkehr geschieht etwa alle 12 Jahre und bringt oft Expansion und Gelegenheit. Die Chironwiederkehr um das 50. Lebensjahr signalisiert eine Periode tiefer Heilung und Weisheit.</p>
+                 </div>
+             </details>
+             <details class="bg-white rounded-xl border border-gm-border p-5">
+                 <summary class="text-sm md:text-base font-bold text-gray-800 pr-8 py-5 px-6">Was bedeutet es, wenn ein Planet rückläufig ist?</summary>
+                 <div class="mt-4 text-gm-text text-sm md:text-base leading-relaxed">
+                     <p>Wenn ein Planet sich von der Erdperspektive aus rückwärts durch den Tierkreis zu bewegen scheint, wird er als rückläufig bezeichnet. Rückläufige Perioden werden mit Überprüfung, Reflexion und Wiederaufgreifen von Themen verbunden, die mit diesem Planeten zusammenhängen. Merkur rückläufig ist das meistdiskutierte und oft mit Kommunikationspannen und Reiseverzögerungen verbunden. Alle Planeten außer Sonne und Mond werden periodisch rückläufig, und diese Perioden werden allgemein als Zeiten gesehen, um zu verlangsamen und nach innen zu schauen, anstatt vorwärtszudrängen.</p>
+                 </div>
+             </details>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== CONTINUE LEARNING ==================== -->
+ <section class="py-10 md:py-14 bg-white">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Weitere Lernthemen</h2>
+         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+             <a href="/astrology/zodiac-signs.html" class="learn-link bg-white rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Tierkreiszeichen &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Entdecken Sie alle 12 Tierkreiszeichen, ihre Elemente, Modalitäten und die Persönlichkeitsmerkmale, die jedes Zeichen in Ihr Chart bringt.</p>
+             </a>
+             <a href="/astrology/houses.html" class="learn-link bg-white rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Die 12 Häuser &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Entdecken Sie die 12 Häuser des Geburtshoroskops und wie sie die wichtigsten Bereiche Ihrer Lebenserfahrung abbilden.</p>
+             </a>
+             <a href="/astrology/aspects.html" class="learn-link bg-white rounded-lg border border-gm-border p-5 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Aspekte & Orbis &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Lernen Sie, wie Planeten durch Aspekte wie Konjunktionen, Trigone, Quadrate und Oppositionen in Ihrem Chart interagieren.</p>
+             </a>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== CTA BANNER ==================== -->
+ <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+     <div class="max-w-2xl mx-auto px-6">
+         <h2 class="text-2xl md:text-3xl font-bold mb-4">Entschlüsseln Sie Ihr vollständiges Geburtshoroskop</h2>
+         <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+             Erhalten Sie Zugang zu detaillierten Astrologie-Charts, Human Design Charts und Hunderten von Ansichten und Tools mit einer Genetic Matrix Pro-Mitgliedschaft.
+         </p>
+         <a href="https://www.geneticmatrix.com/pricing/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+             Get Pro &rarr;
+         </a>
+     </div>
+ </section>
+
+ <!-- ==================== FOOTER ==================== -->
+ <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+                <div class="text-center md:text-left">
+                    <img src="../../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">Alle Rechte vorbehalten.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Datenschutz, Geschäftsbedingungen</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Abonnieren Sie unseren Newsletter</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Melden Sie sich für unseren Newsletter an, um Updates, Angebote, Neuerscheinungen und alles rund um Genetic Matrix zu erhalten.</p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input type="email" placeholder="Ihre E-Mail-Adresse" class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400">
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Verbinden Sie sich mit uns</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener"><img src="../../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10"></a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener"><img src="../../assets/icon-x.svg" alt="X" class="w-10 h-10"></a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener"><img src="../../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10"></a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener"><img src="../../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10"></a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Kontakt aufnehmen</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+ <!-- Planet filter JS -->
+ <script>
+ function filterPlanets(group) {
+     const cards = document.querySelectorAll('.planet-card');
+     const tabs = document.querySelectorAll('.planet-tab');
+     tabs.forEach(t => t.classList.remove('active'));
+     document.querySelector(`[data-group="${group}"]`).classList.add('active');
+     cards.forEach(card => {
+         if (group === 'all' || card.dataset.group === group) {
+             card.classList.remove('planet-filtered-out');
+             card.classList.add('planet-filtered-in');
+             card.style.display = '';
+         } else {
+             card.classList.remove('planet-filtered-in');
+             card.classList.add('planet-filtered-out');
+             setTimeout(() => { card.style.display = 'none'; }, 300);
+         }
+     });
+ }
+ </script>
+
+<script>
+(function() {
+    fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            var badge = document.getElementById('gm-cart-count');
+            if (badge && data.cart_count > 0) {
+                badge.textContent = data.cart_count;
+                badge.classList.remove('hidden');
+            }
+            var loggedOut = document.getElementById('gm-logged-out');
+            var loggedIn = document.getElementById('gm-logged-in');
+            if (data.logged_in) {
+                if (loggedOut) loggedOut.classList.add('hidden');
+                if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
+            }
+        })
+        .catch(function() {});
+})();
+</script>
+<script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
+</body>
+</html>

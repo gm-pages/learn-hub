@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+ <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Astrologische Aspekte erklärt | Konjunktionen, Trigone, Quadrate & mehr | Genetic Matrix</title>
+ <meta name="description" content="Lernen Sie über astrologische Aspekte einschließlich Konjunktionen, Trigone, Quadrate, Sextile und mehr. Verstehen Sie Orbis, Aspektmuster und Genetic Matrix's exklusives True Astrology Feature für Human Design Integration.">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn/astrology/aspects/">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ 'gm-purple': '#6E5898',
+ 'gm-purple-light': '#9080B1',
+ 'gm-purple-soft': '#AC94D8',
+ 'gm-dark': '#3C2864',
+ 'gm-darker': '#2e1f4d',
+ 'gm-green': '#54931E',
+ 'gm-green-dark': '#468018',
+ 'gm-green-light': '#8EB86A',
+ 'gm-pink': '#F66378',
+ 'gm-orange': '#E8961D',
+ 'gm-gray': '#707070',
+ 'gm-light': '#F7F8F9',
+ 'gm-card': '#FAFBFC',
+ 'gm-card-active': '#F4F0FC',
+ 'gm-border': '#D8D4E4',
+ 'gm-warning': '#F8F8E8',
+ 'gm-text-dark': '#1A1A2E',
+ 'gm-text': '#444444',
+ 'gm-text-light': '#949494',
+ }
+ }
+ }
+ }
+ </script>
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+ body { font-family: 'Inter', sans-serif; }
+ details summary { cursor: pointer; list-style: none; }
+ details summary::-webkit-details-marker { display: none; }
+ details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+ details[open] summary::after { content: '\2212'; }
+ details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+ @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+ /* Starfield for astro hero */
+ .astro-stars {
+     position: absolute; inset: 0; pointer-events: none;
+     background-image:
+         radial-gradient(1.5px 1.5px at 10% 20%, rgba(255,255,255,0.8) 0%, transparent 100%),
+         radial-gradient(2px 2px at 30% 50%, rgba(255,255,255,0.9) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 50% 15%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 70% 60%, rgba(255,255,255,0.85) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 85% 30%, rgba(255,255,255,0.75) 0%, transparent 100%),
+         radial-gradient(2px 2px at 15% 70%, rgba(172,148,216,0.8) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 60% 80%, rgba(255,255,255,0.7) 0%, transparent 100%),
+         radial-gradient(2px 2px at 90% 85%, rgba(232,150,29,0.5) 0%, transparent 100%),
+         radial-gradient(1.5px 1.5px at 40% 90%, rgba(255,255,255,0.6) 0%, transparent 100%),
+         radial-gradient(2px 2px at 25% 40%, rgba(255,255,255,0.8) 0%, transparent 100%);
+     animation: astroTwinkle 4s ease-in-out infinite alternate;
+ }
+ @keyframes astroTwinkle {
+     0% { opacity: 0.7; }
+     100% { opacity: 1; }
+ }
+
+ /* Hero glyph decorations */
+ .hero-glyph-layer {
+     position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+ }
+ .hero-glyph-layer svg {
+     position: absolute; opacity: 0.12;
+ }
+
+ /* Hero text entrance animation */
+ .hero-fade-in { opacity: 0; transform: translateY(12px); animation: heroEntrance 0.8s ease-out forwards; }
+ .hero-fade-in:nth-child(1) { animation-delay: 0.2s; }
+ .hero-fade-in:nth-child(2) { animation-delay: 0.4s; }
+ .hero-fade-in:nth-child(3) { animation-delay: 0.6s; }
+ @keyframes heroEntrance {
+     to { opacity: 1; transform: translateY(0); }
+ }
+
+ /* Aspect icon gold style */
+ .aspect-icon-gold { color: #d4a843; font-size: 1.5rem; line-height: 1; }
+
+ /* Aspect wheel slow spin */
+ @keyframes slowSpin {
+     from { transform: rotate(0deg); }
+     to { transform: rotate(360deg); }
+ }
+
+ /* Cross-link lavender hover */
+ .learn-link { transition: all 0.2s ease; }
+ .learn-link:hover { border-color: #AC94D8 !important; background: #faf8ff !important; }
+ </style>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Astrologische Aspekte erklärt | Konjunktionen, Trigone, Quadrate & mehr","description":"Lernen Sie über astrologische Aspekte einschließlich Konjunktionen, Trigone, Quadrate, Sextile und mehr. Verstehen Sie Orbis, Aspektmuster und Genetic Matrix's exklusives True Astrology Feature für Human Design Integration.","publisher":{"@type":"Organization","name":"Genetic Matrix","url":"https://www.geneticmatrix.com"},"mainEntityOfPage":"https://www.geneticmatrix.com/learn/astrology/aspects/","datePublished":"2025-01-15","dateModified":"2026-03-06"}
+</script>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Welche Aspekte sind die stärksten?","acceptedAnswer":{"@type":"Answer","text":"Konjunktionen, Oppositionen und Quadrate sind die kraftvollsten Aspekte. Trigone und Sextile sind bedeutsam, aber subtiler. Kleine Aspekte (Halbsextil, Quintil, etc.) fügen Details und Nuancen hinzu."}},
+{"@type":"Question","name":"Sind Quadrate und Oppositionen schlecht?","acceptedAnswer":{"@type":"Answer","text":"Nein. Sie sind herausfordernd, aber Herausforderung fördert Wachstum. Viele der erfolgreichsten Menschen der Geschichte haben Geburtshoroskope mit dominierenden Quadraten und Oppositionen. Diese Aspekte erzeugen die Spannung und Motivation, die für bedeutsame Erfolge nötig sind."}},
+{"@type":"Question","name":"Kann ich auf Genetic Matrix meine eigenen Orbis einstellen?","acceptedAnswer":{"@type":"Answer","text":"Ja. Genetic Matrix Pro Mitglieder erhalten ein eigenes ORB Aspekte Einstellungsfeld, wo Sie individuelle Orbis-Werte (in Grad) für jeden der 11 Aspekttypen einstellen können."}},
+{"@type":"Question","name":"Kann ich Aspekte ausschalten, die ich nicht verwende?","acceptedAnswer":{"@type":"Answer","text":"Ja. Pro Mitglieder haben individuelle Ein/Aus-Schalter für jeden Aspekttyp. Sie können Ihr Geburtshoroskop so anpassen, dass nur die für Ihre astrologische Praxis relevanten Aspekte angezeigt werden."}},
+{"@type":"Question","name":"Was ist Hybrid Calculation?","acceptedAnswer":{"@type":"Answer","text":"Hybrid ist ein exklusives Genetic Matrix Feature, das Ihnen erlaubt, siderische Tierkreispositionen für die Astrologie zu verwenden, während die tropischen Human Design Berechnungen aus Ra Uru Hus originalem System erhalten bleiben. Dies gibt Ihnen siderische Astrologie und tropisches Human Design in einem einzigen Chart, das Beste aus beiden Welten."}},
+{"@type":"Question","name":"Was ist True Astrology?","acceptedAnswer":{"@type":"Answer","text":"True Astrology ist ein Genetic Matrix Pro Feature, das astrologische Aspekte durch die Linse des Human Design bewertet. Ein Aspekt wird nur dann als vollständig betrachtet, wenn die Planetenverbindungen auch definierte Kanäle durch Ihr Human Design Bodygraph erzeugen. Dies bietet ein tieferes Verständnis dafür, welche Aspekte beständig in Ihrem Leben aktiv sind gegenüber jenen, die als Konditionierung erfahren werden."}},
+{"@type":"Question","name":"Welche Aspekte unterstützt Genetic Matrix?","acceptedAnswer":{"@type":"Answer","text":"Genetic Matrix unterstützt 11 Aspekttypen: Konjunktion, Opposition, Trigon, Quadrat, Sextil, Halbsextil, Halbquadrat, Anderthalbquadrat, Quintil, Bi-Quintil und Quinkunx."}}
+]}
+</script>
+</head>
+<body class="bg-white text-gray-700">
+
+ <!-- ==================== NAV BAR ==================== -->
+ <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+            <a href="https://www.geneticmatrix.com" class="flex-shrink-0">
+                <img src="../../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14">
+            </a>
+            <div class="flex items-center gap-8">
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="hidden md:block" title="Berichte">
+                    <img src="../../assets/icon-report.svg" alt="Berichte" class="h-9 w-9">
+                </a>
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="hidden md:block" title="Sprechende Charts">
+                    <img src="../../assets/icon-talking-chart.svg" alt="Sprechende Charts" class="h-7 w-7">
+                </a>
+                <a href="#" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Kostenloses Chart</a>
+                <!-- Learn -->
+                <!-- Learn Dropdown -->
+                <div class="hidden lg:block relative group">
+                    <button class="text-gm-purple hover:text-gm-dark text-sm font-semibold flex items-center gap-1">
+                        Lernen
+                        <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[420px] bg-white rounded-xl shadow-xl border border-gray-100 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="grid grid-cols-2 gap-1">
+                            <a href="../../" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-9 h-9 bg-gm-card-active rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-800">Learn Hub</div>
+                                    <div class="text-xs text-gm-text-light mt-0.5">HD- und Astrologie-Bildung</div>
+                                </div>
+                            </a>
+                            <a href="../celebrities/index.html" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-9 h-9 bg-gm-card-active rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-800">Celebrity-Suche</div>
+                                    <div class="text-xs text-gm-text-light mt-0.5">88.600+ Promi-Charts</div>
+                                </div>
+                            </a>
+                            <a href="https://www.geneticmatrix.com/dictionary/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-9 h-9 bg-gm-card-active rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-semibold text-gray-800">Wörterbuch</div>
+                                    <div class="text-xs text-gm-text-light mt-0.5">HD- und Astrologie-Begriffe</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="hidden lg:block text-gm-gray hover:text-gray-900 text-sm font-medium">Unsere Pläne</a>
+                <a href="https://www.geneticmatrix.com/cart/" title="Warenkorb">
+                    <img src="../../assets/icon-cart.svg" alt="Warenkorb" class="h-5 w-auto">
+                </a>
+                <div class="hidden md:flex items-center gap-1 text-gm-gray text-sm">
+                    <span>Deutsch</span>
+                    <img src="../../assets/icon-english.svg" alt="Deutsch" class="h-5 w-7">
+                </div>
+                <a href="#" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="sign-in-popup">Anmelden</a>
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Registrieren</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-50 border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 py-2.5">
+            <a href="../../" class="text-sm text-gm-purple hover:text-gm-dark font-medium transition">&larr; Zurück zum Learn Hub</a>
+        </div>
+    </div>
+
+ <!-- ==================== HERO BANNER ==================== -->
+ <section class="relative bg-gm-dark text-white text-center py-12 md:py-16 overflow-hidden">
+     <!-- Starfield -->
+     <div class="astro-stars"></div>
+
+     <!-- Decorative zodiac glyphs (left edge) -->
+     <div class="hero-glyph-layer">
+         <svg viewBox="0 0 100 100" class="w-16 md:w-20" style="left:2%;top:15%"><text x="50" y="60" text-anchor="middle" font-size="48" fill="#AC94D8">&#9800;</text></svg>
+         <svg viewBox="0 0 100 100" class="w-14 md:w-16" style="left:5%;top:55%"><text x="50" y="60" text-anchor="middle" font-size="44" fill="#AC94D8">&#9802;</text></svg>
+         <svg viewBox="0 0 100 100" class="w-12 md:w-14" style="left:1%;top:80%"><text x="50" y="60" text-anchor="middle" font-size="40" fill="#AC94D8">&#9804;</text></svg>
+         <svg viewBox="0 0 100 100" class="w-10 md:w-12" style="left:8%;top:35%"><text x="50" y="60" text-anchor="middle" font-size="36" fill="#AC94D8">&#9807;</text></svg>
+
+         <!-- Decorative aspect lines (right edge, pink/magenta) -->
+         <svg viewBox="0 0 120 120" class="w-20 md:w-28" style="right:2%;top:10%">
+             <line x1="10" y1="60" x2="110" y2="60" stroke="#F66378" stroke-width="1.5"/>
+             <line x1="60" y1="10" x2="60" y2="110" stroke="#F66378" stroke-width="1.5"/>
+             <line x1="15" y1="15" x2="105" y2="105" stroke="#d946a8" stroke-width="1"/>
+             <line x1="105" y1="15" x2="15" y2="105" stroke="#d946a8" stroke-width="1"/>
+             <circle cx="60" cy="60" r="45" fill="none" stroke="#F66378" stroke-width="1"/>
+         </svg>
+         <svg viewBox="0 0 100 100" class="w-16 md:w-20" style="right:4%;top:60%">
+             <polygon points="50,5 95,75 5,75" fill="none" stroke="#d946a8" stroke-width="1.5"/>
+             <rect x="20" y="20" width="60" height="60" fill="none" stroke="#F66378" stroke-width="1"/>
+         </svg>
+         <svg viewBox="0 0 80 80" class="w-12 md:w-16" style="right:8%;top:35%">
+             <line x1="5" y1="40" x2="75" y2="40" stroke="#F66378" stroke-width="1.5"/>
+             <circle cx="5" cy="40" r="4" fill="none" stroke="#d946a8" stroke-width="1.5"/>
+             <circle cx="75" cy="40" r="4" fill="none" stroke="#d946a8" stroke-width="1.5"/>
+         </svg>
+     </div>
+
+     <div class="relative z-10 max-w-3xl mx-auto px-6">
+         <span class="hero-fade-in inline-block bg-gm-purple text-white text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">Astrologie</span>
+         <h1 class="hero-fade-in text-3xl md:text-4xl font-bold mb-3">Astrologische Aspekte &amp; Orbis</h1>
+         <p class="hero-fade-in text-gray-400 text-sm md:text-base leading-relaxed max-w-xl mx-auto">Aspekte sind die Winkelbeziehungen zwischen Planeten in Ihrem Geburtshoroskop. Lernen Sie über Konjunktionen, Trigone, Quadrate, Sextile, Orbis, Aspektmuster und Genetic Matrix's exklusives True Astrology Feature.</p>
+     </div>
+ </section>
+
+ <!-- ==================== ASPECT WHEEL ILLUSTRATION ==================== -->
+ <section class="relative py-12 md:py-16 overflow-hidden" style="background: linear-gradient(135deg, #2e1f4d 0%, #3C2864 40%, #2e1f4d 100%);">
+     <!-- Starfield background -->
+     <div class="astro-stars"></div>
+     <div class="relative z-10 max-w-md mx-auto px-6 flex justify-center">
+         <!-- Zodiac Wheel with Aspect Lines -->
+         <div class="relative" style="width:320px;height:320px;">
+             <!-- Slowly rotating wheel -->
+             <svg viewBox="0 0 400 400" class="w-full h-full" style="animation: slowSpin 120s linear infinite; filter: drop-shadow(0 0 12px rgba(212,168,67,0.15));">
+                 <!-- Outer ring -->
+                 <circle cx="200" cy="200" r="180" fill="none" stroke="#d4a843" stroke-width="1.5" opacity="0.6"/>
+                 <circle cx="200" cy="200" r="160" fill="none" stroke="#d4a843" stroke-width="0.8" opacity="0.4"/>
+                 <!-- Division lines (12 segments) -->
+                 <g stroke="#d4a843" stroke-width="0.8" opacity="0.5">
+                     <line x1="200" y1="20" x2="200" y2="40"/>
+                     <line x1="290" y1="46" x2="278" y2="60"/>
+                     <line x1="354" y1="110" x2="340" y2="120"/>
+                     <line x1="380" y1="200" x2="360" y2="200"/>
+                     <line x1="354" y1="290" x2="340" y2="280"/>
+                     <line x1="290" y1="354" x2="278" y2="340"/>
+                     <line x1="200" y1="380" x2="200" y2="360"/>
+                     <line x1="110" y1="354" x2="122" y2="340"/>
+                     <line x1="46" y1="290" x2="60" y2="280"/>
+                     <line x1="20" y1="200" x2="40" y2="200"/>
+                     <line x1="46" y1="110" x2="60" y2="120"/>
+                     <line x1="110" y1="46" x2="122" y2="60"/>
+                 </g>
+                 <!-- Zodiac glyphs around the edge -->
+                 <g fill="#d4a843" font-size="18" text-anchor="middle" dominant-baseline="central" opacity="0.7">
+                     <text x="200" y="12">&#9800;</text><!-- Aries -->
+                     <text x="296" y="40">&#9801;</text><!-- Taurus -->
+                     <text x="362" y="106">&#9802;</text><!-- Gemini -->
+                     <text x="390" y="200">&#9803;</text><!-- Cancer -->
+                     <text x="362" y="296">&#9804;</text><!-- Leo -->
+                     <text x="296" y="362">&#9805;</text><!-- Virgo -->
+                     <text x="200" y="392">&#9806;</text><!-- Libra -->
+                     <text x="106" y="362">&#9807;</text><!-- Scorpio -->
+                     <text x="40" y="296">&#9808;</text><!-- Sagittarius -->
+                     <text x="12" y="200">&#9809;</text><!-- Capricorn -->
+                     <text x="40" y="106">&#9810;</text><!-- Aquarius -->
+                     <text x="106" y="40">&#9811;</text><!-- Pisces -->
+                 </g>
+             </svg>
+             <!-- Aspect lines overlay (non-rotating) -->
+             <svg viewBox="0 0 400 400" class="absolute inset-0 w-full h-full">
+                 <!-- Conjunction dot (0 deg, top) -->
+                 <circle cx="200" cy="55" r="5" fill="#d4a843" opacity="0.8"/>
+                 <!-- Opposition line (0-180) -->
+                 <line x1="200" y1="55" x2="200" y2="345" stroke="#F66378" stroke-width="1.5" opacity="0.6"/>
+                 <!-- Trine lines (0-120-240) -->
+                 <line x1="200" y1="55" x2="325" y2="290" stroke="#54931E" stroke-width="1.5" opacity="0.5"/>
+                 <line x1="200" y1="55" x2="75" y2="290" stroke="#54931E" stroke-width="1.5" opacity="0.5"/>
+                 <line x1="325" y1="290" x2="75" y2="290" stroke="#54931E" stroke-width="1.5" opacity="0.5"/>
+                 <!-- Square lines (0-90-180-270) -->
+                 <line x1="200" y1="55" x2="345" y2="200" stroke="#E8961D" stroke-width="1.2" opacity="0.45"/>
+                 <line x1="345" y1="200" x2="200" y2="345" stroke="#E8961D" stroke-width="1.2" opacity="0.45"/>
+                 <line x1="200" y1="345" x2="55" y2="200" stroke="#E8961D" stroke-width="1.2" opacity="0.45"/>
+                 <line x1="55" y1="200" x2="200" y2="55" stroke="#E8961D" stroke-width="1.2" opacity="0.45"/>
+                 <!-- Sextile lines (0-60) -->
+                 <line x1="200" y1="55" x2="325" y2="127" stroke="#AC94D8" stroke-width="1" opacity="0.4" stroke-dasharray="6 3"/>
+                 <line x1="200" y1="55" x2="75" y2="127" stroke="#AC94D8" stroke-width="1" opacity="0.4" stroke-dasharray="6 3"/>
+                 <!-- Small dots at vertices -->
+                 <circle cx="200" cy="345" r="3.5" fill="#F66378" opacity="0.7"/>
+                 <circle cx="345" cy="200" r="3.5" fill="#E8961D" opacity="0.6"/>
+                 <circle cx="55" cy="200" r="3.5" fill="#E8961D" opacity="0.6"/>
+                 <circle cx="325" cy="290" r="3" fill="#54931E" opacity="0.6"/>
+                 <circle cx="75" cy="290" r="3" fill="#54931E" opacity="0.6"/>
+                 <circle cx="325" cy="127" r="2.5" fill="#AC94D8" opacity="0.5"/>
+                 <circle cx="75" cy="127" r="2.5" fill="#AC94D8" opacity="0.5"/>
+             </svg>
+         </div>
+     </div>
+     <!-- Legend -->
+     <div class="relative z-10 flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6 text-xs text-gray-400">
+         <span class="flex items-center gap-1.5"><span class="inline-block w-3 h-0.5 rounded" style="background:#d4a843"></span> Konjunktion</span>
+         <span class="flex items-center gap-1.5"><span class="inline-block w-3 h-0.5 rounded" style="background:#F66378"></span> Opposition</span>
+         <span class="flex items-center gap-1.5"><span class="inline-block w-3 h-0.5 rounded" style="background:#54931E"></span> Trigon</span>
+         <span class="flex items-center gap-1.5"><span class="inline-block w-3 h-0.5 rounded" style="background:#E8961D"></span> Quadrat</span>
+         <span class="flex items-center gap-1.5"><span class="inline-block w-3 h-0.5 rounded" style="background:#AC94D8"></span> Sextil</span>
+     </div>
+ </section>
+
+ <!-- ==================== WHAT ARE ASPECTS? ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="what-are-aspects">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Was sind Aspekte?</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Aspekte sind die Winkelbeziehungen zwischen Planeten in Ihrem Geburtshoroskop. Wenn zwei Planeten durch eine bestimmte Anzahl von Grad getrennt sind, bilden sie einen Aspekt, eine geometrische Verbindung, die beschreibt, wie diese beiden planetaren Energien miteinander interagieren.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Stellen Sie sich Aspekte als Gespräche zwischen Planeten vor. Manche Gespräche sind leicht und unterstützend (Trigone, Sextile). Manche sind angespannt und herausfordernd (Quadrate, Oppositionen). Manche sind verschmelzend und intensiv (Konjunktionen). Die Aspekte in Ihrem Horoskop zeigen die inneren Dynamiken Ihrer Persönlichkeit auf, wo Energie reibungslos fließt und wo sie Reibung erzeugt.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Aspekte sind eine der wichtigsten Komponenten der Horoskop-Interpretation. Zwei Menschen können das gleiche Sonnenzeichen, Mondzeichen und den gleichen Aszendenten haben, aber völlig unterschiedliche Leben führen, weil ihre Aspekte verschiedene innere Muster erzeugen.</p>
+     </div>
+ </section>
+
+ <!-- ==================== MAJOR ASPECTS ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="major-aspects">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Hauptaspekte</h2>
+
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-2"><span class="aspect-icon-gold">&#9740;</span> Konjunktion (0&deg;)</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Eine Konjunktion entsteht, wenn zwei Planeten denselben Grad des Tierkreises besetzen (oder sehr nahe daran). Dies ist der kraftvollste Aspekt, weil die beiden planetaren Energien verschmelzen und sich gegenseitig verstärken. Die beteiligten Planeten werden untrennbar im Ausdruck. Sie können den einen nicht aktivieren, ohne auch den anderen zu aktivieren.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Eine Sonne-Mond-Konjunktion erschafft jemanden, dessen bewusste Identität und emotionale Natur aufeinander abgestimmt sind. Eine Mars-Saturn-Konjunktion verbindet Antrieb mit Disziplin (oder Frustration mit Beschränkung, je nach Horoskop). Konjunktionen sind weder von Natur aus positiv noch negativ. Ihre Wirkung hängt vollständig von den beteiligten Planeten und ihrer Verbindung ab.</p>
+
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-2"><span class="aspect-icon-gold">&#9741;</span> Opposition (180&deg;)</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Eine Opposition entsteht, wenn zwei Planeten direkt gegenüber im Tierkreis stehen. Dieser Aspekt erzeugt Bewusstsein durch Polarität. Sie erleben beide Energien, pendeln aber oft zwischen ihnen oder projizieren eine auf andere Menschen.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Eine Mond-Saturn-Opposition könnte die Spannung zwischen emotionalen Bedürfnissen (Mond) und Verantwortlichkeiten oder Beschränkungen (Saturn) erleben. Der Schlüssel zur Arbeit mit Oppositionen ist <strong class="text-gray-800">Integration</strong>, den Gleichgewichtspunkt zwischen zwei gültigen, aber gegensätzlichen Kräften zu finden, anstatt eine über die andere zu wählen.</p>
+
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-2"><span class="aspect-icon-gold">&#9651;</span> Trigon (120&deg;)</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Ein Trigon entsteht, wenn zwei Planeten 120 Grad voneinander entfernt sind, normalerweise in Zeichen desselben Elements (beide in Feuerzeichen, beide in Wasserzeichen, etc.). Trigone repräsentieren natürliches Talent und Leichtigkeit. Die beiden Planeten kooperieren mühelos.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Ein Venus-Jupiter-Trigon erschafft eine natürliche Großzügigkeit und gesellschaftliche Anmut. Ein Mars-Pluto-Trigon verschafft Zugang zu tiefen Kraftreserven und Entschlossenheit ohne die destruktive Intensität, die härtere Mars-Pluto-Aspekte hervorbringen können. Die Vorsicht bei Trigonen ist, dass ihre Leichtigkeit zu Selbstzufriedenheit werden kann. Gaben, die zu leicht kommen, könnten unentwickelt bleiben.</p>
+
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-2"><span class="aspect-icon-gold">&#9633;</span> Quadrat (90&deg;)</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Ein Quadrat entsteht, wenn zwei Planeten 90 Grad voneinander entfernt sind. Dies ist der klassische Spannungsaspekt. Die beiden Planeten stehen im Konflikt und erzeugen Reibung, Frustration und den Druck zu handeln. Quadrate sind oft dort, wo das meiste Wachstum passiert, weil sie Sie nicht ruhen lassen.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Ein Merkur-Mars-Quadrat erzeugt einen scharfen, streitsüchtigen Geist, der auch brillant messerscharf sein kann. Ein Venus-Pluto-Quadrat erzeugt intensive, transformative Beziehungen, die Machtkämpfe beinhalten können. Quadrate fordern Anstrengung, aber die Anstrengung baut Stärke auf.</p>
+
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3 flex items-center gap-2"><span class="aspect-icon-gold">&#10038;</span> Sextil (60&deg;)</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Ein Sextil entsteht, wenn zwei Planeten 60 Grad voneinander entfernt sind, normalerweise in kompatiblen Elementen (Feuer-Luft oder Erde-Wasser). Sextile repräsentieren Möglichkeiten. Die Planeten können zusammenarbeiten, aber Sie müssen sie durch bewusste Anstrengung aktivieren. Im Gegensatz zu Trigonen, die automatisch fließen, erfordern Sextile, dass Sie handeln.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Ein Merkur-Venus-Sextil gibt das Potenzial für eloquente, charmante Kommunikation, aber Sie müssen es entwickeln. Ein Mars-Jupiter-Sextil bietet Möglichkeiten für kühne, expansive Handlungen, aber Sie müssen sie ergreifen.</p>
+
+         <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Wichtige Erkenntnis</p>
+             <p class="text-gm-text text-sm leading-relaxed italic">Aspekte sind eine der wichtigsten Komponenten der Horoskop-Interpretation. Zwei Menschen können das gleiche Sonnenzeichen, Mondzeichen und den gleichen Aszendenten haben, aber völlig unterschiedliche Leben führen, weil ihre Aspekte verschiedene innere Muster erzeugen.</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== MINOR ASPECTS ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="minor-aspects">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Nebenaspekte</h2>
+
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Halbsextil (30&deg;)</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Das Halbsextil verbindet Planeten in benachbarten Zeichen. Da benachbarte Zeichen nichts gemeinsam haben (verschiedenes Element, verschiedene Modalität, verschiedene Polarität), erzeugt dieser Aspekt ein subtiles Gefühl von Unbehagen oder Anpassung. Die beiden Planeten sind sich bewusst, sprechen aber verschiedene Sprachen. Die Arbeit mit Halbsextilen erfordert bewusste Anpassung und kann kreative Lösungen hervorbringen, die aus der Reibung zwischen unvereinbaren Energien entstehen.</p>
+
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Halbquadrat (45&deg;)</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Das Halbquadrat ist ein kleinerer Spannungsaspekt, eine schwächere Version des Quadrats. Es erzeugt Irritation, Unruhe und schwelende Reibung, die produktiv sein kann, wenn bewusst kanalisiert, aber ärgerlich, wenn ignoriert. Halbquadrate manifestieren sich oft als wiederkehrende kleine Frustrationen, die Sie schließlich zur Veränderung drängen.</p>
+
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Anderthalbquadrat (135&deg;)</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Auch Sesquiquadrat genannt, ist dieser Aspekt 135 Grad (ein Quadrat plus ein Halbquadrat). Wie das Halbquadrat erzeugt er Spannung und Unruhe, aber auf einem etwas höheren Intensitätsniveau. Anderthalbquadrate zeigen oft auf Probleme hin, die sich über die Zeit aufbauen und schließlich eine Lösung fordern.</p>
+
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Quintil (72&deg;)</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Das Quintil teilt den Kreis in fünf gleiche Teile und wird mit Kreativität, Talent und einzigartigen Gaben verbunden. Quintile zeigen auf Fähigkeiten hin, die Sie unterscheiden, Dinge, die Sie tun können und die sich natürlich und unverwechselbar anfühlen. Sie sind besonders relevant in den Horoskopen von Künstlern, Innovatoren und jedem, dessen Arbeit kreative Problemlösung beinhaltet.</p>
+
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Bi-Quintil (144&deg;)</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Das Bi-Quintil sind zwei Quintile und trägt ähnliche kreative Energie. Es zeigt oft eine verfeinerte oder entwickeltere Form der Quintil-Gabe an, ein Talent, das sich durch Meisterschaft statt durch rohe Inspiration ausdrückt.</p>
+
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Quinkunx (150&deg;)</h3>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Der Quinkunx verbindet Planeten, die absolut nichts gemeinsam haben: verschiedenes Element, verschiedene Modalität, verschiedene Polarität. Dies erzeugt ein anhaltendes Gefühl, dass etwas angepasst werden muss, aber Sie können nicht ganz herausfinden, was. Quinkunkse manifestieren sich oft als Gesundheitsprobleme, chronische Lebensanpassungen oder Situationen, bei denen zwei wichtige Teile Ihres Lebens sich weigern, reibungslos zu integrieren.</p>
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Der Quinkunx wird manchmal der "Aspekt der Anpassung" genannt, weil er konstante Feinabstimmung fordert. Er ist auch eine Schlüsselkomponente des <strong class="text-gray-800">Yod-Musters</strong> (auch bekannt als der "Finger Gottes"), das entsteht, wenn zwei Planeten beide Quinkunkse zu einem dritten Planeten bilden, während sie sich gegenseitig im Sextil stehen.</p>
+     </div>
+ </section>
+
+ <!-- ==================== UNDERSTANDING ORBS ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="understanding-orbs">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Orbis verstehen</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Ein Orbis ist der Gradbereich, innerhalb dessen ein Aspekt als aktiv betrachtet wird. Keine zwei Planeten müssen im exakten Winkel stehen, um einen Aspekt zu bilden. Es gibt eine Toleranzspanne.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Zum Beispiel ist ein Trigon bei 120 Grad exakt. Mit einem Orbis von 8 Grad würden alle zwei Planeten zwischen 112 und 128 Grad Abstand noch als in einer Trigon-Beziehung stehend betrachtet. Je näher an exakt der Aspekt ist, desto stärker seine Wirkung. Ein Aspekt bei 0 Grad Orbis (exakt) ist kraftvoller als einer bei 7 Grad.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Verschiedene Astrologen verwenden verschiedene Orbiswerte. Häufige Bereiche umfassen <strong class="text-gray-800">enge Orbis</strong> (3-5 Grad für Hauptaspekte, 1-2 Grad für Nebenaspekte), die von traditionellen und vedischen Astrologen verwendet werden, <strong class="text-gray-800">mittlere Orbis</strong> (6-8 Grad für Hauptaspekte, 2-3 für Nebenaspekte), die von den meisten modernen westlichen Astrologen verwendet werden, und <strong class="text-gray-800">weite Orbis</strong> (10-12 Grad für Hauptaspekte, besonders für Sonne und Mond), die von einigen psychologischen Astrologen verwendet werden. Genetic Matrix Pro Mitglieder erhalten ein eigenes <strong class="text-gray-800">Astro HD ORB Aspekte Einstellungsfeld</strong>, wo Sie Ihren eigenen benutzerdefinierten Orbiswert (in Grad) für jeden einzelnen Aspekttyp einstellen können. Die Standardwerte sind großzügig: 10,00 Grad für Konjunktion, Opposition, Trigon und Quadrat, 8,00 für Sextil, 6,00 für Halbsextil und Halbquadrat, 5,00 für Quinkunx, 4,00 für Quintil, Bi-Quintil und Anderthalbquadrat. Sie können jeden davon enger oder weiter stellen, um Ihrer bevorzugten astrologischen Tradition zu entsprechen.</p>
+     </div>
+ </section>
+
+ <!-- ==================== TURNING ASPECTS ON AND OFF ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="turning-aspects-on-off">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Aspekte ein- und ausschalten</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Nicht jeder Astrologe arbeitet mit jedem Aspekt. Manche Praktiker konzentrieren sich ausschließlich auf die Hauptaspekte (Konjunktion, Opposition, Trigon, Quadrat, Sextil) und ignorieren die Nebenaspekte. Andere wollen das vollständige Bild einschließlich Quintile und Anderthalbquadrate.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Genetic Matrix Pro Mitglieder haben ein <strong class="text-gray-800">Astro HD Aspekte Einstellungsfeld</strong> mit individuellen Ein/Aus-Schaltern für jeden der 11 unterstützten Aspekte. Das bedeutet, Sie können Ihr Horoskop so anpassen, dass nur die für Ihre Praxis relevanten Aspekte angezeigt werden. Wenn Sie nur an Hauptaspekten interessiert sind, schalten Sie die Nebenaspekte aus. Wenn Sie das vollständige detaillierte Bild wollen, lassen Sie alle eingeschaltet.</p>
+     </div>
+ </section>
+<!-- ==================== HYBRID CALCULATION ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="hybrid-calculation">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Hybrid-Berechnung: Das Beste aus beiden Welten</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Genetic Matrix bietet eine Funktion, die in der Welt der Astrologie- und Human Design-Software einzigartig ist: <strong class="text-gray-800">Hybrid-Berechnung</strong>. Wenn Sie ein siderisches Astrologiesystem auswählen, haben Sie die Option, den Hybrid-Modus zu aktivieren. Dieser verwendet den siderischen Tierkreis für alle astrologischen Positionen (Planetenzeichen, Häuserspitzen, Aspekte), während die tropisch abgeleiteten Human Design-Elemente beibehalten werden, die nach Ra Uru Hus ursprünglicher Methode berechnet wurden.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Warum ist das wichtig? Human Design wurde mit tropischen Berechnungen entwickelt. Wenn Sie zur siderischen Astrologie wechseln, möchten Sie vielleicht, dass Ihre Tierkreispositionen das tatsächliche Sternenfeld widerspiegeln, aber Sie möchten möglicherweise auch Ihr Human Design Bodygraph, Ihren Typ, Ihr Profil und Ihre Kanäle genau so behalten, wie Ra sie definiert hat. Der Hybrid-Modus gibt Ihnen dies: <strong class="text-gray-800">siderische Astrologie mit tropischem Human Design</strong>, sodass Sie das Beste aus beiden Systemen ohne Kompromisse erhalten. Dies steht ausschließlich Genetic Matrix Pro-Mitgliedern zur Verfügung und wird von keiner anderen Plattform angeboten.</p>
+
+         <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Wichtige Erkenntnis</p>
+             <p class="text-gm-text text-sm leading-relaxed italic">Genetic Matrix' Hybrid-Berechnung ist einzigartig in der Welt der Astrologie-Software. Sie ermöglicht Ihnen, siderische Tierkreispositionen für die Astrologie zu verwenden, während die tropisch basierten Human Design-Berechnungen aus Ra Uru Hus ursprünglichem System erhalten bleiben.</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== ASPECT PATTERNS ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="aspect-patterns">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Aspektmuster</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Wenn mehrere Aspekte sich verbinden und geometrische Formen im Horoskop bilden, entstehen Aspektmuster, Konfigurationen, die komplexere Dynamiken beschreiben.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Großes Trigon:</strong> Drei Planeten, die jeweils 120 Grad voneinander entfernt sind und ein gleichseitiges Dreieck bilden. Normalerweise alle im selben Element. Stellt einen Kreislauf fließender, harmonischer Energie dar, der ein großes Geschenk oder eine Komfortzone sein kann, die dem Wachstum widersteht.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">T-Quadrat:</strong> Zwei Planeten in Opposition mit einem dritten Planeten, der beide quadriert und eine T-Form bildet. Erzeugt dynamische Spannung, die sich auf den Planeten am Scheitelpunkt konzentriert. Sehr motivierend, kann sich aber wie konstanter Druck anfühlen.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Großkreuz:</strong> Vier Planeten, die zwei Oppositionen und vier Quadrate bilden und eine Kreuz- oder Quadratform schaffen. Extrem dynamisch und herausfordernd, mit Spannung, die gleichzeitig in vier Richtungen zieht. Kann durch den schieren Handlungsdruck bemerkenswerte Leistungen hervorbringen.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Yod (Finger Gottes):</strong> Zwei Planeten im Sextil, die beide Quinkunxe zu einem dritten Planeten bilden. Erzeugt ein Gefühl von schicksalhafter oder zwanghafter Energie, die auf den Scheitelpunkt-Planeten gerichtet ist. Oft mit einer besonderen Mission oder einem wiederkehrenden Lebensthema verbunden, das Anpassung erfordert.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Drachen:</strong> Ein großes Trigon mit einem vierten Planeten, der einem der Trigon-Planeten gegenübersteht und die anderen beiden sextilt. Fügt der fließenden Energie des großen Trigons Fokus und Richtung hinzu und verwandelt passives Talent in aktive Leistung.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Stellium:</strong> Drei oder mehr Planeten in Konjunktion im selben Zeichen oder Haus. Konzentriert enorme Energie in einem Lebensbereich und macht ihn zu einem dominanten Thema.</p>
+     </div>
+ </section>
+
+ <!-- ==================== TRUE ASTROLOGY ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="true-astrology">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> True Astrology: Aspekte im Human Design</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Genetic Matrix bietet Pro-Mitgliedern eine einzigartige Funktion namens <strong class="text-gray-800">True Astrology</strong>. In der Standard-Astrologie gilt ein Aspekt als aktiv, solange die beiden Planeten innerhalb des Orbis sind. True Astrology fügt eine zusätzliche Anforderung hinzu, die in Human Design-Prinzipien verwurzelt ist: Damit ein Aspekt "vollständig" ist, müssen alle Verbindungen des Aspekts durch definierte Zentren in Ihrem Human Design Bodygraph verlaufen.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Das bedeutet, ein Aspekt zwischen zwei Planeten wird nur vollständig ausgedrückt, wenn die Tore und Kanäle, die sie aktivieren, eine kontinuierliche definierte Verbindung durch Ihr Bodygraph schaffen. Wenn eine Verbindung durch ein offenes (undefiniertes) Zentrum verläuft, ist der Aspekt vorhanden, wird aber als Konditionierung erlebt und nicht als konsistenter, verlässlicher Teil Ihrer Natur. Diese Integration von Astrologie und Human Design fügt eine Nuance hinzu, die keine andere Plattform bietet. Sie hilft zu erklären, warum manche Menschen ihre Chart-Aspekte stark spüren, während andere sie kaum bemerken. Die Antwort könnte darin liegen, ob diese Aspekte durch ihre Bodygraph-Definition "vervollständigt" werden.</p>
+     </div>
+ </section>
+
+    <!-- ==================== CELEBRITY SEARCH BANNER ==================== -->
+    <section class="py-10 md:py-12 bg-gm-dark text-white text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <p class="text-gm-pink text-xs font-semibold tracking-widest uppercase mb-3">Prominenten-Datenbank</p>
+            <h2 class="text-xl md:text-2xl font-bold mb-3">Entdecken Sie 88.600+ Prominenten-Charts</h2>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6 max-w-xl mx-auto">Suchen Sie nach Namen und erkunden Sie kostenlose Human Design-Charts, die in 7 Systemen berechnet wurden. Filtern Sie nach Typ, Profil, Autorität, Sonnenzeichen, Mondzeichen und mehr.</p>
+            <a href="/celebrities/" class="inline-block bg-gm-pink hover:bg-[#e04d63] text-white font-semibold py-3 px-8 rounded-xl transition text-sm">
+                Prominente durchsuchen →
+            </a>
+        </div>
+    </section>
+
+ <!-- ==================== FAQ ACCORDION ==================== -->
+ <section class="py-10 md:py-14 bg-white">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Häufig gestellte Fragen</h2>
+         <div class="space-y-3">
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Welche Aspekte sind die stärksten?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Konjunktionen, Oppositionen und Quadrate sind die kraftvollsten Aspekte. Trigone und Sextile sind bedeutsam, aber subtiler. Nebenaspekte (Halbsextil, Quintil usw.) fügen Detail und Nuancen hinzu.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Sind Quadrate und Oppositionen schlecht?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Nein. Sie sind herausfordernd, aber Herausforderung treibt das Wachstum voran. Viele der erfolgreichsten Menschen in der Geschichte haben Charts, die von Quadraten und Oppositionen dominiert werden. Diese Aspekte schaffen die Spannung und Motivation, die für bedeutende Leistungen erforderlich sind.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Kann ich meine eigenen Orbes auf Genetic Matrix einstellen?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Ja. Genetic Matrix Pro-Mitglieder erhalten ein dediziertes ORB Aspekte-Einstellungen-Panel, wo Sie benutzerdefinierte Orbis-Werte (in Grad) für jeden der 11 Aspekttypen einzeln einstellen können.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Kann ich Aspekte ausschalten, die ich nicht verwende?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Ja. Pro-Mitglieder haben individuelle Ein-/Ausschalter für jeden Aspekttyp. Sie können Ihr Chart anpassen, um nur die für Ihre astrologische Praxis relevanten Aspekte anzuzeigen.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Was ist Hybrid-Berechnung?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Hybrid ist eine exklusive Genetic Matrix-Funktion, die es Ihnen ermöglicht, siderische Tierkreispositionen für die Astrologie zu verwenden, während die tropisch basierten Human Design-Berechnungen aus Ra Uru Hus ursprünglichem System erhalten bleiben. Dies gibt Ihnen siderische Astrologie und tropisches Human Design in einem einzigen Chart, das Beste aus beiden Welten.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Was ist True Astrology?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">True Astrology ist eine Genetic Matrix Pro-Funktion, die Astrologie-Aspekte durch die Linse des Human Design bewertet. Ein Aspekt gilt nur dann als vollständig, wenn die planetarischen Verbindungen auch definierte Kanäle durch Ihr Human Design Bodygraph schaffen. Dies bietet ein tieferes Verständnis dafür, welche Aspekte in Ihrem Leben konsistent aktiv sind im Gegensatz zu denen, die als Konditionierung erlebt werden.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Welche Aspekte unterstützt Genetic Matrix?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Genetic Matrix unterstützt 11 Aspekttypen: Konjunktion, Opposition, Trigon, Quadrat, Sextil, Halbsextil, Halbquadrat, Anderthalbquadrat, Quintil, Bi-Quintil und Quinkunx.</div>
+             </details>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== CONTINUE LEARNING ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Andere Lernthemen</h2>
+         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+             <a href="/astrology/zodiac-signs.html" class="learn-link bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Tierkreiszeichen &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Die 12 Zeichen plus das 13. Zeichen.</p>
+             </a>
+             <a href="/astrology/planets.html" class="learn-link bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Planeten &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Von der Sonne bis Pluto, Chiron und Lilith.</p>
+             </a>
+             <a href="/astrology/houses.html" class="learn-link bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Häuser &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">12 Häuser und 10 Häusersysteme erklärt.</p>
+             </a>
+             <a href="/astrology/asteroids.html" class="learn-link bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Asteroiden &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Ceres, Pallas, Juno, Vesta und darüber hinaus.</p>
+             </a>
+             <a href="/astrology/fixed-stars.html" class="learn-link bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Fixsterne &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Königssterne, Sirius, Spica und Algol.</p>
+             </a>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== CTA BANNER ==================== -->
+ <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+     <div class="max-w-2xl mx-auto px-6">
+         <h2 class="text-2xl md:text-3xl font-bold mb-4">Entschlüsseln Sie Ihr vollständiges Geburtshoroskop</h2>
+         <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">Erhalten Sie Zugang zu detaillierten Astrologiecharts, Human Design-Charts und Hunderten von Ansichten und Tools mit einer Genetic Matrix Pro-Mitgliedschaft.</p>
+        <a href="https://www.geneticmatrix.com/pricing/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+            Get Pro &rarr;
+        </a>
+    </div>
+ </section>
+
+ <!-- ==================== FOOTER ==================== -->
+ <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+                <div class="text-center md:text-left">
+                    <img src="../../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">Alle Rechte vorbehalten.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Datenschutz, Geschäftsbedingungen</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Abonnieren Sie unseren Newsletter</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Melden Sie sich für unseren Newsletter an, um Updates, Angebote, Neuveröffentlichungen und alles rund um Genetic Matrix zu erhalten.</p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input type="email" placeholder="Ihre E-Mail-Adresse" class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400">
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Verbinden Sie sich mit uns</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener"><img src="../../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10"></a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener"><img src="../../assets/icon-x.svg" alt="X" class="w-10 h-10"></a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener"><img src="../../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10"></a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener"><img src="../../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10"></a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Kontakt aufnehmen</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+(function() {
+    fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            var badge = document.getElementById('gm-cart-count');
+            if (badge && data.cart_count > 0) {
+                badge.textContent = data.cart_count;
+                badge.classList.remove('hidden');
+            }
+            var loggedOut = document.getElementById('gm-logged-out');
+            var loggedIn = document.getElementById('gm-logged-in');
+            if (data.logged_in) {
+                if (loggedOut) loggedOut.classList.add('hidden');
+                if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
+            }
+        })
+        .catch(function() {});
+})();
+</script>
+<script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
+</body>
+</html>
