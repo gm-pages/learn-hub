@@ -37,3 +37,4 @@ __pycache__/
 node_modules/
 run-translations.bat
 translation-progress.json
+run-large-translations.bat
