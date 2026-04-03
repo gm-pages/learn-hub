@@ -80,7 +80,7 @@
 
  <!-- Right Nav: LOGGED OUT (default for static pages) -->
  <!-- Hamburger button (mobile) -->
-            <button id="gm-hamburger" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition" onclick="document.getElementById('gm-mobile-menu').classList.toggle('hidden')">
+            <button id="gm-hamburger" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition">
                 <svg class="w-6 h-6 text-gm-gray" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
             </button>
 
@@ -453,6 +453,7 @@ Other Learn Topics
         .catch(function() {});
 })();
 </script>
+<script id="gm-hamburger-script">var h=document.getElementById("gm-hamburger");var m=document.getElementById("gm-mobile-menu");if(h&&m){h.addEventListener("click",function(e){e.preventDefault();m.classList.toggle("hidden");});h.addEventListener("touchend",function(e){e.preventDefault();m.classList.toggle("hidden");});}</script>
 <script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
 </body>
 </html>

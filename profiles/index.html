@@ -154,7 +154,7 @@
 
             <!-- Right Nav: LOGGED OUT (default for static pages) -->
             <!-- Hamburger button (mobile) -->
-            <button id="gm-hamburger" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition" onclick="document.getElementById('gm-mobile-menu').classList.toggle('hidden')">
+            <button id="gm-hamburger" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition">
                 <svg class="w-6 h-6 text-gm-gray" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
             </button>
 
@@ -252,13 +252,18 @@
     </div>
 
     <!-- ==================== HERO BANNER ==================== -->
-    <section class="bg-gm-dark text-white text-center py-12 md:py-16">
-        <div class="max-w-3xl mx-auto px-6">
-            <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Foundation &middot; Profiles</p>
-            <h1 class="text-3xl md:text-4xl font-bold mb-4">The 12 Profiles</h1>
-            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
-                Your Profile is your role in life, the costume you wear, and a key part of how your Type gets expressed in the world. It is built from the line values of your conscious and unconscious Sun/Earth, and it is one of the main things that makes two people of the same Type look very different in practice.
-            </p>
+    <section class="bg-gm-dark text-white py-8 md:py-12">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-1 text-center md:text-left">
+                <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Foundation &middot; Profiles</p>
+                <h1 class="text-3xl md:text-4xl font-bold mb-4">The 12 Profiles</h1>
+                <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl italic">
+                    Your Profile is your role in life, the costume you wear, and a key part of how your Type gets expressed in the world. It is built from the line values of your conscious and unconscious Sun/Earth, and it is one of the main things that makes two people of the same Type look very different in practice.
+                </p>
+            </div>
+            <div class="hidden md:block flex-shrink-0 w-[240px] lg:w-[300px]">
+                <img src="../assets/profiles-hero.webp" alt="The 12 Human Design Profiles" class="w-full h-auto max-h-[280px] object-contain">
+            </div>
         </div>
     </section>
 
@@ -816,6 +821,7 @@ The 6 Profile Lines
         .catch(function() {});
 })();
 </script>
+<script id="gm-hamburger-script">var h=document.getElementById("gm-hamburger");var m=document.getElementById("gm-mobile-menu");if(h&&m){h.addEventListener("click",function(e){e.preventDefault();m.classList.toggle("hidden");});h.addEventListener("touchend",function(e){e.preventDefault();m.classList.toggle("hidden");});}</script>
 <script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
 </body>
 </html>
