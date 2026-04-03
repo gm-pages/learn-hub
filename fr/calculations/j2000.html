@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Méthode de Calcul Tropicale (J2000) - Système de Référence Fixe | Genetic Matrix</title>
+    <meta name="description" content="Découvrez la méthode de calcul Tropicale (J2000) en Human Design. Comprenez comment un système de référence astronomique fixe diffère des calculs Tropicaux traditionnels et pourquoi la précision est importante.">
+    <meta name="keywords" content="tropical j2000, j2000 human design, human design calculation methods, tropical of date, fixed reference frame, precession, nutation, j2k notifications, genetic matrix j2000, human design chart accuracy, planetary positions human design, j2000 epoch, equinox of date">
+    <link rel="canonical" href="https://www.geneticmatrix.com/learn/calculations/j2000/">
+    <meta property="og:title" content="Méthode de Calcul Tropicale (J2000) - Système de Référence Fixe">
+    <meta property="og:description" content="La Tropicale (J2000) utilise un système de référence astronomique fixe pour les calculs Human Design. Découvrez comment elle diffère de la Tropicale traditionnelle et pourquoi la précision est importante.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.geneticmatrix.com/learn/calculations/j2000/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gm-purple': '#6E5898',
+                        'gm-purple-light': '#9080B1',
+                        'gm-purple-soft': '#AC94D8',
+                        'gm-dark': '#3C2864',
+                        'gm-darker': '#2e1f4d',
+                        'gm-green': '#54931E',
+                        'gm-green-dark': '#468018',
+                        'gm-green-light': '#8EB86A',
+                        'gm-pink': '#F66378',
+                        'gm-orange': '#E8961D',
+                        'gm-gray': '#707070',
+                        'gm-light': '#F7F8F9',
+                        'gm-card': '#FAFBFC',
+                        'gm-card-active': '#F4F0FC',
+                        'gm-border': '#D8D4E4',
+                        'gm-warning': '#F8F8E8',
+                        'gm-text-dark': '#1A1A2E',
+                        'gm-text': '#444444',
+                        'gm-text-light': '#949494',
+                    },
+                    fontFamily: {
+                        'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        details summary { cursor: pointer; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+        details[open] summary::after { content: '\2212'; }
+        details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+
+    <!-- Article JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Méthode de Calcul Tropicale (J2000) - Système de Référence Fixe pour le Human Design",
+        "description": "Découvrez la méthode de calcul Tropicale (J2000) en Human Design. Comprenez comment un système de référence astronomique fixe diffère des calculs Tropicaux traditionnels et pourquoi la précision est importante.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Genetic Matrix",
+            "url": "https://www.geneticmatrix.com"
+        },
+        "mainEntityOfPage": "https://www.geneticmatrix.com/learn/calculations/j2000/",
+        "datePublished": "2025-01-15",
+        "dateModified": "2026-03-06"
+    }
+    </script>
+
+    <!-- FAQ JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Cela signifie-t-il que mon ancienne carte est complètement fausse ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pas nécessairement. Tropicale (De l'Époque) et Tropicale (J2000) sont deux façons d'exprimer la longitude tropicale en utilisant différentes époques de référence. Parce que le décodage Human Design utilise des limites précises (Porte/Ligne/Couleur/Ton/Base), certaines personnes verront des changements significatifs, surtout dans les Variables, tandis que d'autres peuvent en voir très peu. La seule façon de le savoir est de comparer les deux méthodes sur les mêmes données de naissance."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Pourquoi tout le monde n'utilise-t-il pas J2000 ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Principalement par tradition et en raison des outils. Les logiciels Human Design ont historiquement utilisé la Tropicale (De l'Époque), et de nombreuses écoles enseignent ce que les matériaux originaux de Ra et les premiers calculateurs utilisaient. Pendant ce temps, J2000 est une époque de référence courante dans les catalogues astronomiques modernes et les systèmes de coordonnées, donc certains logiciels et praticiens préfèrent un système tropical à époque fixe pour la cohérence."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quelle méthode de calcul dois-je utiliser ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Utilisez une méthode de manière cohérente, puis évaluez votre expérience. Si vous pratiquez le Human Design tel qu'il est couramment enseigné, la Tropicale (De l'Époque) est la référence habituelle. Si vous voulez explorer une référence tropicale à époque fixe, essayez la Tropicale (J2000), mais évitez de mélanger et d'assortir les résultats individuels entre les méthodes."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "La Tropicale (J2000) est-elle toujours Tropicale ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui. La Tropicale (J2000) est toujours un système tropical. Le zodiac reste ancré aux saisons, avec l'équinoxe de printemps définissant 0 degré Bélier. Elle diffère de la Tropicale traditionnelle seulement dans la stabilité du système de référence utilisé pour calculer les positions planétaires, non pas dans l'endroit où commence la roue du zodiac ou dans sa relation au cycle saisonnier de la Terre."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Que signifie l'icône J2K sur ma carte ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "L'icône J2K indique un cas limite : une activation planétaire qui se situe près d'une frontière. Lorsque vous activez les Notifications J2K, ces icônes apparaissent sur votre carte Tropicale traditionnelle pour signaler les positions qui sont susceptibles de changer si vous passez à la Tropicale (J2000)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ma carte va-t-elle définitivement changer avec la Tropicale (J2000) ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Si certains de vos placements planétaires tombent près des frontières entre les Lignes ou les Portes, vous verrez probablement une différence. Si vos placements tombent solidement au milieu des Lignes, les deux méthodes peuvent produire des résultats identiques pour ces positions. La fonction de notification J2K vous aide à voir en un coup d'œil quelles activations pourraient changer."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Qu'en est-il des transits et des prévisions ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Si vous suivez les transits, utiliser J2000 assure la cohérence avec les données d'éphémérides modernes. Votre thème natal et les transits doivent utiliser le même système de référence pour une analyse précise. Mélanger les méthodes peut introduire des divergences."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Qu'en est-il des autres méthodes de calcul que vous proposez ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Genetic Matrix propose Tropicale, Tropicale (J2000), Sidérale, Sidérale à 13 Signes, trois variantes Sidérale Vraie (Kanatas, Chimenti, Point Médian), et deux options Draconiques. Chacune sert des objectifs et des cadres philosophiques différents. La Tropicale (J2000) est spécifiquement pour ceux qui veulent rester dans le cadre tropical tout en utilisant une référence astronomique fixe."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Genetic Matrix dit-il que la méthode traditionnelle est fausse ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non. Nous disons qu'il y a plus d'une façon valide de calculer une carte, et nous croyons à vous donner des options. La méthode Tropicale traditionnelle reste disponible. La Tropicale (J2000) est un outil supplémentaire pour ceux qui veulent l'explorer. Nous ne sommes pas là pour vous dire quoi croire, nous sommes là pour vous donner les outils pour le découvrir par vous-même."
+                }
+            }
+        ]
+    }
+    </script>
+
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- ==================== NAV BAR ==================== -->
+        <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[60px] md:h-[80px]">
+            <!-- Logo -->
+            <a href="/" class="flex-shrink-0">
+                <img src="/learn-hub/assets/logo.svg" alt="Genetic Matrix - Know you" class="h-8 md:h-14">
+            </a>
+
+            <!-- Hamburger (mobile) -->
+            <button id="gm-hamburger" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition">
+                <svg class="w-6 h-6 text-gm-gray" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+
+            <!-- Desktop Nav -->
+            <div class="hidden lg:flex items-center gap-6">
+                <!-- Calendar -->
+                <a href="https://www.geneticmatrix.com/calendar/" class="flex items-center justify-center w-9 h-9 rounded-lg border border-[#dee2e6] hover:border-gm-purple/30 hover:bg-gray-50 transition" title="Calendrier">
+                    <img src="/learn-hub/assets/icon-calendar.svg" alt="Calendrier" class="h-5 w-5">
+                </a>
+                <!-- Reports -->
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="flex items-center justify-center w-9 h-9 rounded-lg border border-[#dee2e6] hover:border-gm-purple/30 hover:bg-gray-50 transition" title="Rapports">
+                    <img src="/learn-hub/assets/icon-report.svg" alt="Rapports" class="h-6 w-6">
+                </a>
+                <!-- Talking Charts -->
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="flex items-center justify-center w-9 h-9 rounded-lg border border-[#dee2e6] hover:border-gm-purple/30 hover:bg-gray-50 transition" title="Cartes Parlantes">
+                    <img src="/learn-hub/assets/icon-talking-chart.svg" alt="Cartes Parlantes" class="h-5 w-5">
+                </a>
+                <!-- Free Chart -->
+                <a href="#" class="text-gm-gray hover:text-gray-900 text-sm font-medium" data-action="free-chart-popup">Carte Gratuite</a>
+                <!-- Learn Dropdown -->
+                <div class="relative group">
+                    <button class="text-gm-purple hover:text-gm-dark text-sm font-semibold flex items-center gap-1">
+                        Apprendre
+                        <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[420px] bg-white rounded-xl shadow-xl border border-gray-100 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="grid grid-cols-2 gap-1">
+                            <a href="/learn-hub/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/Menu_Icon_ Hub.svg" alt="Learn Hub" class="w-6 h-6"></div>
+                                <div><div class="text-sm font-semibold text-gray-800">Learn Hub</div><div class="text-xs text-gm-text-light mt-0.5">Éducation HD et astrologie</div></div>
+                            </a>
+                            <a href="/learn-hub/celebrities/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/Menu_Icon _celebrity .svg" alt="Recherche de Célébrités" class="w-6 h-6"></div>
+                                <div><div class="text-sm font-semibold text-gray-800">Recherche de Célébrités</div><div class="text-xs text-gm-text-light mt-0.5">88 600+ cartes de célébrités</div></div>
+                            </a>
+                            <a href="/dictionary/dictionary.html" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/Menu_Icon_ dictionary.svg" alt="Dictionnaire" class="w-6 h-6"></div>
+                                <div><div class="text-sm font-semibold text-gray-800">Dictionnaire</div><div class="text-xs text-gm-text-light mt-0.5">Termes HD et astrologie</div></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Our Plans -->
+                <a href="https://www.geneticmatrix.com/plans-features/" class="text-gm-gray hover:text-gray-900 text-sm font-medium">Nos Formules</a>
+                <!-- Cart -->
+                <a href="https://www.geneticmatrix.com/cart/" title="Panier" class="relative">
+                    <img src="/learn-hub/assets/icon-cart.svg" alt="Panier" class="h-5 w-auto">
+                    <span id="gm-cart-count" class="absolute top-0 left-1/2 -translate-x-1/2 text-gm-green font-bold text-[11px] hidden">0</span>
+                </a>
+                <!-- Language -->
+                <div class="flex items-center gap-1 text-gm-gray text-sm">
+                    <span>English</span>
+                    <img src="/learn-hub/assets/icon-english.svg" alt="English" class="h-5 w-7">
+                </div>
+                <!-- Logged OUT -->
+                <div id="gm-logged-out" class="flex items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/my-account/" class="text-gm-gray hover:text-gray-900 text-sm font-medium">Se Connecter</a>
+                    <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">S'inscrire</a>
+                </div>
+                <!-- Logged IN -->
+                <div id="gm-logged-in" class="hidden items-center gap-4">
+                    <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="text-gm-gray hover:text-gray-900 text-sm font-medium">Se Déconnecter</a>
+                    <a href="https://www.geneticmatrix.com/user-home/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Mon Hub</a>
+                </div>
+            </div>
+
+            <!-- Mobile: Cart only (always visible) -->
+            <a href="https://www.geneticmatrix.com/cart/" title="Panier" class="lg:hidden relative">
+                <img src="/learn-hub/assets/icon-cart.svg" alt="Panier" class="h-5 w-auto">
+                <span id="gm-cart-count-mobile" class="absolute top-0 left-1/2 -translate-x-1/2 text-gm-green font-bold text-[11px] hidden">0</span>
+            </a>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="gm-mobile-menu" style="display:none" class="lg:hidden bg-white border-t border-gray-100 px-6 py-4">
+            <div class="flex flex-col gap-3">
+                <a href="/learn-hub/" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition">
+                    <img src="/learn-hub/assets/Menu_Icon_ Hub.svg" alt="" class="w-5 h-5"> Learn Hub
+                </a>
+                <a href="/learn-hub/celebrities/" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition">
+                    <img src="/learn-hub/assets/Menu_Icon _celebrity .svg" alt="" class="w-5 h-5"> Recherche de Célébrités
+                </a>
+                <a href="/dictionary/dictionary.html" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition">
+                    <img src="/learn-hub/assets/Menu_Icon_ dictionary.svg" alt="" class="w-5 h-5"> Dictionnaire
+                </a>
+                <div class="border-t border-gray-100 my-1"></div>
+                <a href="#" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition" data-action="free-chart-popup">Carte Gratuite</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Nos Formules</a>
+                <div class="border-t border-gray-100 my-1"></div>
+                <a href="https://www.geneticmatrix.com/user-home/" class="py-2 text-sm font-semibold text-gm-green hover:text-gm-green-dark transition">Mon Hub</a>
+                <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Se Déconnecter</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ==================== BREADCRUMB ==================== -->
+    <div class="bg-gm-light border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-6 py-3">
+            <a href="/learn-hub/" class="text-gm-purple hover:text-gm-dark text-sm font-medium transition">&larr; Retour au Learn Hub</a>
+        </div>
+    </div>
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+        <div class="max-w-3xl mx-auto px-6">
+            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-green hover:bg-gm-green-dark text-white text-xs font-semibold tracking-wide px-5 py-2 rounded-full mb-6 transition">
+                Disponible avec l'abonnement Pro
+            </a>
+            <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Méthodes de Calcul &middot; J2000</p>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Tropicale (J2000)</h1>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
+                Pourquoi les cartes peuvent différer entre les méthodes de calcul. Explication des systèmes de référence Tropicale (De l'Époque) vs Tropicale (J2000).
+            </p>
+        </div>
+    </section>
+    <!-- ==================== INTRO BOX ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Qu'est-ce que la Tropicale (J2000) ?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Si vous avez étudié votre carte Human Design, vous avez peut-être remarqué quelque chose appelé Tropicale (J2000) ou vu un petit indicateur J2K. Cette page explique ce que cela signifie et pourquoi c'est important pour la précision de votre carte.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                <strong>La Tropicale (J2000) est disponible avec un abonnement Genetic Matrix Pro.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== AVAILABLE CALCULATION METHODS ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Méthodes de Calcul Disponibles
+            </h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <a href="/calculations/tropical/" class="bg-white rounded-xl border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Tropicale</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Zodiaque saisonnier traditionnel</p>
+                </a>
+                <div class="bg-gm-card-active rounded-xl border-2 border-gm-purple p-5">
+                    <div class="flex items-center gap-3">
+                        <h3 class="text-sm font-bold text-gm-purple">Tropicale (J2000)</h3>
+                        <span class="bg-gm-green text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Cette Page</span>
+                    </div>
+                    <p class="text-gray-400 text-xs leading-relaxed mt-1">Système de référence fixe</p>
+                </div>
+                <a href="/calculations/sidereal/" class="bg-white rounded-xl border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Sidérale</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Zodiaque basé sur les étoiles</p>
+                </a>
+                <a href="#" class="bg-white rounded-xl border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Sidérale à 13 Signes</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Inclut Ophiuchus</p>
+                </a>
+                <a href="#" class="bg-white rounded-xl border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Sidérale Vraie-K</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Ayanamsha Kanatas</p>
+                </a>
+                <a href="#" class="bg-white rounded-xl border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Sidérale Vraie-C</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Ayanamsha Chimenti</p>
+                </a>
+                <a href="#" class="bg-white rounded-xl border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Sidérale Vraie-M</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Ayanamsha point médian</p>
+                </a>
+                <a href="/calculations/draconic/" class="bg-white rounded-xl border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Draconique-Tropicale (Moyenne)</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Basée sur les nœuds lunaires</p>
+                </a>
+                <a href="#" class="bg-white rounded-xl border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Draconique-Tropicale (Vraie)</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Variante du nœud vrai</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== J2K EDGE CASE NOTIFICATIONS ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Notifications de Cas Limites J2K
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                L'icône J2K marque les activations où la valeur décodée diffère entre Tropicale (De l'Époque) et Tropicale (J2000), ou où elle tombe dans un petit seuil d'une frontière qui pourrait basculer sous une méthode différente.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Cela vous permet de voir instantanément quelles parties de votre carte pourraient sembler différentes sous les calculs J2000, sans avoir à passer d'une méthode à l'autre.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== UNDERSTANDING EARTH'S MOTION ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="earths-motion">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Comprendre le Mouvement de la Terre
+            </h2>
+
+            <!-- Precession -->
+            <h3 class="text-base md:text-lg font-bold text-gm-purple mb-3">Précession : L'Oscillation de 26 000 Ans</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                La Terre tourne sur son axe comme une toupie. Mais tout comme une toupie qui ralentit, l'axe de la Terre ne pointe pas dans une direction fixe : il trace lentement un cercle dans l'espace sur environ 26 000 ans. C'est ce qu'on appelle la <strong>précession axiale.</strong>
+            </p>
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5 mb-8">
+                <p class="text-gm-purple font-bold text-xs tracking-wide uppercase mb-2">Exemple Quotidien</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Imaginez une toupie qui tourne sur une table. Pendant qu'elle tourne, la toupie ne reste pas parfaitement droite : elle oscille lentement en décrivant un cercle. La Terre fait exactement la même chose, juste très lentement. Le pôle Nord, qui pointe actuellement vers Polaris (l'étoile polaire), pointait vers une étoile différente il y a des milliers d'années et pointera vers encore une autre étoile dans des milliers d'années.
+                </p>
+            </div>
+
+            <!-- Nutation -->
+            <h3 class="text-base md:text-lg font-bold text-gm-purple mb-3">Nutation : Le Plus Petit Mouvement de Balancement</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Par-dessus la précession se superpose une oscillation plus petite et plus rapide appelée nutation. Tandis que la précession est le grand cercle lent, la nutation est un léger balancement ou oscillation qui complète son cycle environ tous les 18,6 ans. Ceci est principalement causé par l'attraction gravitationnelle de la Lune sur le renflement équatorial de la Terre.
+            </p>
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5 mb-8">
+                <p class="text-gm-purple font-bold text-xs tracking-wide uppercase mb-2">Exemple Quotidien</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Pensez à quelqu'un qui porte une tasse de café pleine en marchant. Il y a le grand mouvement de la marche en avant, mais il y a aussi un plus petit mouvement plus rapide de balancement du café à chaque pas. La précession, c'est la marche ; la nutation, c'est le balancement. Les deux affectent l'endroit où se trouve réellement le café (ou dans notre cas, le pointage précis de l'axe de la Terre) à un moment donné.
+                </p>
+            </div>
+
+            <!-- Other Perturbations -->
+            <h3 class="text-base md:text-lg font-bold text-gm-purple mb-3">Autres Perturbations</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Au-delà de la précession et de la nutation, la Terre subit d'autres petits mouvements : les attractions gravitationnelles d'autres planètes, de légères variations dans la forme de l'orbite terrestre, et même la redistribution de masse à la surface de la Terre peuvent affecter l'orientation de notre planète. Ce sont de très petits effets, mais ils existent.
+            </p>
+
+            <!-- Why a fraction of a degree matters -->
+            <div class="bg-gm-warning border-l-4 border-gm-orange rounded-r-xl p-6">
+                <p class="text-gm-orange font-bold text-xs tracking-wide uppercase mb-3">Pourquoi une Fraction de Degré Importe-t-elle ?</p>
+                <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                    Le Human Design subdivise le zodiaque en étapes très fines (porte, ligne, couleur, ton, base). Une différence d'même 0,3 à 0,6 degré, l'échelle que vous obtenez en comparant une référence J2000 fixe à une référence d'équinoxe de date sur les dernières décennies, peut changer le résultat décodé.
+                </p>
+                <div class="text-sm text-gm-text space-y-1 mt-4">
+                    <p>1 Porte = 360 / 64 = <strong>5,625 degrés</strong></p>
+                    <p>1 Ligne = 5,625 / 6 = <strong>0,9375 degré</strong></p>
+                    <p>1 Couleur = 0,9375 / 6 = <strong>0,15625 degré</strong></p>
+                    <p>1 Ton = 0,15625 / 6 = <strong>0,026 degré</strong> (environ 1 min 34 sec)</p>
+                    <p>1 Base = 0,026 / 5 = <strong>0,0052 degré</strong> (environ 18,75 sec)</p>
+                </div>
+                <p class="text-gm-text text-sm md:text-base leading-relaxed mt-4">
+                    Donc un changement d'environ 0,3 degré (échelle 2000-2026) peut vraisemblablement changer les Couleurs et parfois les Lignes, et changera très souvent les résultats dérivés Ton/Base si vous les utilisez.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HOW THIS AFFECTS CALCULATIONS ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="how-it-affects">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Comment Cela Affecte les Calculs
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Lors du calcul d'une carte Human Design, nous devons savoir exactement où étaient les planètes au moment de la naissance. Cela nécessite un système de coordonnées, une façon de définir les positions dans l'espace.
+            </p>
+
+            <!-- Two methods side by side -->
+            <div class="grid sm:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white rounded-xl border border-gm-border p-6">
+                    <h3 class="text-sm font-bold text-gm-purple mb-2">Tropicale Traditionnelle</h3>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Utilise l'équinoxe de date comme point zéro pour la longitude tropicale (0 degré Bélier). En d'autres termes, les longitudes sont référencées à l'équinoxe au moment de la carte (moyen ou apparent, selon le système).
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-6">
+                    <h3 class="text-sm font-bold text-gm-purple mb-2">Tropicale (J2000)</h3>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Utilise l'équinoxe/écliptique moyen de J2000.0 comme référence. Les longitudes sont exprimées par rapport à une époque fixe plutôt que des valeurs d'équinoxe de date pour le même moment de naissance.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5 mb-8">
+                <p class="text-gm-purple font-bold text-xs tracking-wide uppercase mb-2">Exemple Quotidien</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Différents datums de coordonnées peuvent attribuer différentes coordonnées numériques au même emplacement physique. L'emplacement n'a pas bougé, seule la référence utilisée pour le décrire a changé. De même, les planètes ne "bougent" pas quand nous passons de De l'Époque à J2000 ; seuls les nombres utilisés pour exprimer leurs longitudes changent.
+                </p>
+            </div>
+
+            <h3 class="text-base md:text-lg font-bold text-gm-purple mb-3">Le Standard Astronomique</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Les systèmes de référence de type J2000/ICRS sont largement utilisés en astronomie moderne, dans la navigation spatiale, et dans de nombreux ensembles de données d'éphémérides. Les logiciels d'astrologie et de Human Design peuvent convertir ces positions en un zodiaque tropical d'équinoxe de date comme convention la plus courante. Parce que le Human Design utilise des subdivisions très fines dans la pratique HD, les deux approches sont bien définies ; elles peuvent produire différents résultats décodés.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== ADDRESSING THE "MOVING PLATFORM" ARGUMENT ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Répondre à l'Argument de la "Plateforme Mobile"
+            </h2>
+
+            <h3 class="text-base md:text-lg font-bold text-gm-purple mb-3">Une Question Légitime</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed italic mb-4">
+                "La méthode traditionnelle ne capture-t-elle pas ce qui se passait réellement au moment de la naissance ? Si la Terre oscillait, nos calculs ne devraient-ils pas refléter cette oscillation ? L'approche 'de date' n'est-elle pas plus précise parce qu'elle suit la réalité ?"
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                C'est une question raisonnable, et elle mérite une réponse réfléchie.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Voici le point : les planètes ne bougent pas réellement quand nous changeons de système de référence. Mars était exactement où elle était à votre naissance, quel que soit le système de coordonnées que nous utilisons pour décrire sa position. Ce qui change, c'est comment nous décrivons cette position, quels nombres nous lui attribuons.
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-6 mb-8">
+                <div class="bg-gm-light rounded-xl border border-gm-border p-6">
+                    <h3 class="text-sm font-bold text-gm-purple mb-2">La Méthode "De Date" Dit :</h3>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        "Décrivons les positions planétaires par rapport à l'endroit où pointe l'axe de la Terre en ce moment, oscillations comprises."
+                    </p>
+                </div>
+                <div class="bg-gm-light rounded-xl border border-gm-border p-6">
+                    <h3 class="text-sm font-bold text-gm-purple mb-2">La Méthode J2000 Dit :</h3>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        "Décrivons les positions planétaires par rapport à un point de référence fixe, afin d'avoir un standard stable qui ne change pas avec les mouvements de la Terre."
+                    </p>
+                </div>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Aucune approche n'est plus "réelle" que l'autre : ce sont différentes conventions pour décrire la même réalité physique. La question est de savoir quelle convention produit des résultats plus cohérents et significatifs pour les calculs Human Design.
+            </p>
+
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-gm-purple font-bold text-xs tracking-wide uppercase mb-2">Exemple Quotidien</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Imaginez que vous essayez d'enregistrer l'emplacement exact d'un oiseau rare observé. Vous pourriez le décrire par rapport à l'endroit où vous vous trouvez ("20 mètres à ma gauche"). Mais si vous êtes sur une plateforme qui tourne lentement, "à ma gauche" signifie quelque chose de différent selon le moment où vous prenez la mesure. Alternativement, vous pourriez utiliser les coordonnées GPS, un système de référence fixe qui ne dépend pas de l'endroit où vous vous trouvez ou de la direction que vous regardez. L'oiseau est au même endroit dans les deux cas. La question est simplement : quelle description est plus utile et cohérente ?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== A NOTE ON RA URU HU ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Une Note sur Ra Uru Hu et l'Évolution des Outils
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Cette page ne concerne pas la réinterprétation des origines du Human Design ou le fait de mettre des mots dans la bouche de qui que ce soit. Elle explique simplement que le calcul des positions planétaires peut utiliser différentes conventions de référence astronomique (par exemple, équinoxe de date vs une époque fixe comme J2000), ce qui peut changer les résultats de décodage fins. Nous encourageons la comparaison et l'exploration méthode par méthode.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Tropicale (De l'Époque) et Tropicale (J2000) sont toutes deux des conventions tropicales valides. Elles diffèrent dans le fait que la référence d'équinoxe soit mise à jour pour la date ou maintenue fixe à l'époque J2000, donc le décodage Human Design fin peut différer.
+            </p>
+
+            <div class="bg-gm-warning border-l-4 border-gm-orange rounded-r-xl p-6 mb-8">
+                <p class="text-gm-orange font-bold text-xs tracking-wide uppercase mb-3">Nous Ne Pouvons Pas Parler au Nom de Ra</p>
+                <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                    Quiconque prétend savoir définitivement ce que Ra aurait pensé de J2000 spécule. Ra n'est plus là pour qu'on lui demande, et lui mettre des mots dans la bouche n'est pas quelque chose qui nous intéresse. Ce que nous pouvons faire, c'est fournir des outils et vous laisser expérimenter. Générez votre carte des deux façons. Comparez les résultats. Voyez ce qui résonne avec votre expérience vécue. C'est la voie Human Design : ne prenez la parole de personne pour argent comptant. Testez par vous-même.
+                </p>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Le Human Design a toujours évolué à mesure que de meilleurs outils devenaient disponibles. Les premières cartes étaient calculées à la main. Puis sont venus les logiciels de base. Puis des calculs d'éphémérides plus sophistiqués. J2000 est simplement la prochaine étape dans cette évolution : utiliser le même standard astronomique qui alimente la navigation spatiale moderne et les calculs d'observatoire.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                La question n'est pas ce que Ra aurait pensé. La question est : <strong>cela produit-il une carte qui reflète plus précisément qui vous êtes ? Vous seul pouvez répondre à cela.</strong>
+            </p>
+        </div>
+    </section>
+<!-- ==================== WHY PRECISION MATTERS ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Pourquoi la Précision Compte en Human Design
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Une carte Human Design divise le zodiaque de 360 degrés en 64 Portes, chaque Porte s'étendant sur 5,625 degrés. Mais le système va plus loin : chaque Porte contient 6 Lignes, chaque Ligne contient 6 Couleurs, chaque Couleur contient 6 Tons, et chaque Ton contient 5 Bases.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Lorsque vous atteignez le niveau de la Base, vous divisez chaque Porte en 1 080 petites tranches. À cette résolution, même de petites différences positionnelles entre les méthodes de calcul peuvent produire des résultats différents.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Le marqueur J2K indique les activations dont le résultat décodé diffère entre Tropicale (Of-Date) et Tropicale (J2000).
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT MIGHT CHANGE IN YOUR CHART ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="what-might-change">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Ce qui Pourrait Changer dans votre Carte
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Lors de la comparaison de Tropicale (J2000) avec les calculs tropicaux traditionnels, les différences tendent à apparaître d'abord aux niveaux les plus fins, mais peuvent remonter :
+            </p>
+
+            <div class="overflow-x-auto rounded-xl border border-gm-border bg-white mb-8">
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-gm-light">
+                        <tr>
+                            <th class="px-6 py-4 font-semibold text-sm text-gray-800">Niveau</th>
+                            <th class="px-6 py-4 font-semibold text-sm text-gray-800">Ce que Cela Affecte</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gm-border">
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Base</td>
+                            <td class="px-6 py-4 text-gm-text">La Fréquence d'Entrée dans votre architecture cognitive</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Ton</td>
+                            <td class="px-6 py-4 text-gm-text">La couche interne des cristaux de conscience</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Couleur</td>
+                            <td class="px-6 py-4 text-gm-text">La fréquence de sortie - Motivation ou Détermination. Le Non-Soi émerge lorsqu'une fréquence de sortie déformée permet au mental de contrôler les décisions</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Ligne</td>
+                            <td class="px-6 py-4 text-gm-text">Pourrait affecter votre Profil - le rôle que vous jouez dans la vie</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Porte</td>
+                            <td class="px-6 py-4 text-gm-text">Un passage vers une Porte différente, changeant potentiellement les canaux</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Centre</td>
+                            <td class="px-6 py-4 text-gm-text">Un nouveau canal pourrait définir ou laisser non-défini un centre énergétique</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Type</td>
+                            <td class="px-6 py-4 text-gm-text">Dans certains cas, un changement de centre pourrait modifier entièrement votre Type</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                La plupart des cartes montreront des différences au niveau de la Couleur ou du Ton. Certaines montreront des différences de Ligne. Occasionnellement, lorsqu'une planète se trouve dans une 6e Ligne près de la frontière de la Porte suivante, un changement de Porte peut se produire - et c'est à ce moment-là que le Type ou le Profil pourrait changer.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== EXAMPLE: SAME PERSON, TWO CALCULATIONS ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Exemple : Même Personne, Deux Calculs
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Voici comment les mêmes données de naissance peuvent produire des résultats différents :
+            </p>
+
+            <div class="overflow-x-auto rounded-xl border border-gm-border bg-white mb-8">
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-gm-light">
+                        <tr>
+                            <th class="px-6 py-4 font-semibold text-sm text-gray-800">Élément</th>
+                            <th class="px-6 py-4 font-semibold text-sm text-gray-800">Tropicale Traditionnelle</th>
+                            <th class="px-6 py-4 font-semibold text-sm text-gray-800">Tropicale J2000</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gm-border">
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Profil</td>
+                            <td class="px-6 py-4 text-gm-text">6/2</td>
+                            <td class="px-6 py-4 text-gm-text">1/3</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Porte du Soleil</td>
+                            <td class="px-6 py-4 text-gm-text">Porte 4, Ligne 6</td>
+                            <td class="px-6 py-4 text-gm-text">Porte 63, Ligne 1</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Canaux</td>
+                            <td class="px-6 py-4 text-gm-text">4-63, 47-64, 11-56</td>
+                            <td class="px-6 py-4 text-gm-text">47-64, 24-61, 11-56</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-gray-800">Centres Définis</td>
+                            <td class="px-6 py-4 text-gm-text">Tête, Ajna, Gorge</td>
+                            <td class="px-6 py-4 text-gm-text">Tête, Ajna, Gorge</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Remarquez comment le Profil est passé de 6/2 à 1/3, deux chemins de vie complètement différents. La configuration des canaux a également changé, ce qui modifierait la façon dont l'énergie circule à travers le design.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== STILL TROPICAL, NOT SIDEREAL ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Toujours Tropicale, Pas Sidérale
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Une clarification importante : Tropicale (J2000) est toujours un système tropical. Le zodiaque reste ancré aux saisons, avec l'équinoxe de printemps définissant 0 degré Bélier. C'est le cadre que Ra Uru Hu a utilisé pour le Human Design.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Tropicale (J2000) diffère de la Tropicale traditionnelle seulement par la stabilité du cadre de référence utilisé pour calculer les positions planétaires - pas par l'endroit où la roue du zodiaque commence ou comment elle se rapporte au cycle saisonnier de la Terre.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Ceci est distinct des options sidérales que nous offrons également (Sidérale, Sidérale 13 Signes, variantes Sidérale Vraie), qui s'ancrent aux étoiles fixes et décalent toute la roue d'environ 24 degrés. Si vous êtes un astrologue qui travaille avec le sidéral et que vous souhaitez explorer le Human Design à travers cette perspective, nous offrons ces options. Tropicale (J2000) est un type d'option différent - un raffinement de la précision tropicale plutôt qu'un passage vers un cadre zodiacal différent.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== HOW TO EXPLORE ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Comment Explorer Tropicale (J2000)
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Prêt à l'essayer ? Voici trois façons d'accéder à Tropicale (J2000) dans votre compte Genetic Matrix :
+            </p>
+
+            <div class="grid sm:grid-cols-3 gap-6 mb-8">
+                <div class="bg-gm-light rounded-xl border border-gm-border p-6">
+                    <h3 class="text-sm font-bold text-gm-purple mb-3">Comparaison Rapide</h3>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Sélectionnez « Tropicale (J2000) » dans le menu déroulant de méthode de calcul sur n'importe quelle carte. Basculez entre les méthodes pour comparer vos résultats instantanément.
+                    </p>
+                </div>
+                <div class="bg-gm-light rounded-xl border border-gm-border p-6">
+                    <h3 class="text-sm font-bold text-gm-purple mb-3">Activer les Notifications J2K</h3>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Allez dans Paramètres, puis Paramètres de Notification J2000 et activez-le. Une icône J2K apparaîtra à côté des activations qui se trouvent près des frontières de décodage clés, où les résultats sont plus susceptibles de changer lorsque vous changez de méthodes.
+                    </p>
+                </div>
+                <div class="bg-gm-light rounded-xl border border-gm-border p-6">
+                    <h3 class="text-sm font-bold text-gm-purple mb-3">Définir par Défaut</h3>
+                    <p class="text-gm-text text-sm leading-relaxed">
+                        Choisissez Tropicale (J2000) comme méthode de calcul permanente dans les Paramètres. Toutes vos cartes se généreront en utilisant cette méthode jusqu'à ce que vous la changiez.
+                    </p>
+                </div>
+            </div>
+
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Nous vous encourageons à explorer. Générez votre carte avec la Tropicale traditionnelle, vérifiez quelles activations affichent le drapeau J2K, puis basculez vers Tropicale (J2000) et voyez ce qui change. Considérez si les nouvelles informations résonnent avec votre expérience.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== QUOTE ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-gm-card-active rounded-2xl p-8 border-l-4 border-gm-purple">
+                <p class="text-gm-purple text-lg italic leading-relaxed">
+                    « Différents cadres de référence peuvent décrire le même ciel. Ce qui change, c'est le système de coordonnées, pas les planètes. »
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ACCORDION ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Questions Fréquemment Posées
+            </h2>
+            <div class="space-y-3">
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Est-ce que cela signifie que mon ancienne carte est complètement fausse ?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Pas nécessairement. Tropicale (Of-Date) et Tropicale (J2000) sont deux façons d'exprimer la longitude tropicale en utilisant différentes époques de référence. Parce que le décodage Human Design utilise des frontières précises (Porte/Ligne/Couleur/Ton/Base), certaines personnes verront des changements significatifs, surtout dans les Variables, tandis que d'autres peuvent voir peu ou aucun changement. La seule façon de savoir est de comparer les deux méthodes sur les mêmes données de naissance.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Pourquoi tout le monde n'utilise-t-il pas J2000 ?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Principalement par tradition et outillage. Le logiciel Human Design a historiquement utilisé Tropicale (Of-Date), et beaucoup d'écoles enseignent ce que les matériaux originaux de Ra et les premiers calculateurs utilisaient. Pendant ce temps, J2000 est une époque de référence commune dans les catalogues astronomiques modernes et les systèmes de coordonnées, donc certains logiciels et praticiens préfèrent un cadre tropical d'époque fixe pour la cohérence. C'est moins une question de savoir laquelle est « correcte », et plus sur quelle convention vous choisissez pour ancrer votre décodage.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Quel calcul dois-je utiliser ?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Utilisez une méthode de façon cohérente, puis évaluez votre expérience. Si vous pratiquez le Human Design comme couramment enseigné, Tropicale (Of-Date) est la base habituelle. Si vous voulez explorer une référence tropicale d'époque fixe, essayez Tropicale (J2000) - mais évitez de mélanger les résultats individuels entre les méthodes.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Est-ce toujours Tropical ?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Ra a rejeté le Sidéral. Les zodiaques sidéraux décalent le zodiaque par rapport aux étoiles d'un ayanamsa (environ ~24 degrés aujourd'hui, selon la tradition). Tropicale (Of-Date) ancre le Bélier à l'équinoxe de la référence mobile due à la précession. Tropicale (J2000) ancre le Bélier à l'équinoxe J2000 (un cadre tropical d'époque fixe). Même concept tropical - époques de référence différentes, donc les sorties décodées peuvent différer au niveau fin.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Que signifie l'icône J2K sur ma carte ?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        L'icône J2K indique un « cas limite » - une activation planétaire qui se trouve près d'une frontière. Lorsque vous activez les Notifications J2K, ces icônes apparaissent sur votre carte Tropicale traditionnelle pour marquer les positions qui sont susceptibles de changer si vous basculez vers Tropicale (J2000).
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Ma carte changera-t-elle définitivement avec Tropicale (J2000) ?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Si l'un de vos placements planétaires tombe près des frontières entre les Lignes ou les Portes, vous verrez probablement une certaine différence - que ce soit au niveau de la Base, du Ton, de la Couleur, de la Ligne, ou occasionnellement de la Porte. Si vos placements tombent solidement au milieu des Lignes, les deux méthodes peuvent produire des résultats identiques pour ces positions. La fonctionnalité de notification J2K vous aide à voir en un coup d'œil quelles activations pourraient changer.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Qu'en est-il des transits et des prévisions ?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Si vous suivez les transits, utiliser J2000 assure la cohérence avec les données d'éphémérides modernes. Votre carte natale et les transits devraient utiliser le même cadre de référence pour une analyse précise. Mélanger les méthodes peut introduire des divergences.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Qu'en est-il des autres méthodes de calcul que vous offrez ?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Genetic Matrix offre Tropicale, Tropicale (J2000), Sidérale, Sidérale 13 Signes, trois variantes Sidérale Vraie (Kanatas, Chimenti, Midpoint), et deux options Draconiques. Chacune sert différents buts et cadres philosophiques. Les astrologues venant au Human Design depuis les traditions sidérales ou védiques peuvent vouloir explorer ces options. Tropicale (J2000) est spécifiquement pour ceux qui veulent rester dans le cadre tropical tout en utilisant une référence astronomique fixe.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Genetic Matrix dit-elle que la méthode traditionnelle est fausse ?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Non. Nous disons qu'il y a plus d'une façon valide de calculer une carte, et nous croyons à vous donner des options. La méthode Tropicale traditionnelle reste disponible. Tropicale (J2000) est un outil supplémentaire pour ceux qui veulent l'explorer. Nous ne sommes pas là pour vous dire quoi croire - nous sommes là pour vous donner les outils pour découvrir par vous-même.
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTINUE LEARNING ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Autres Sujets du Learn Hub
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="/calculations/tropical/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Tropicale &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">La méthode saisonnière originale de Ra - le zodiaque tropical traditionnel utilisé en Human Design.</p>
+                </a>
+                <a href="/calculations/sidereal/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Sidérale &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Zodiaque ancré aux étoiles - explorez le Human Design à travers un cadre de calcul basé sur les étoiles.</p>
+                </a>
+                <a href="/calculations/draconic/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Draconique &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Calcul basé sur les nœuds lunaires - une méthode unique ancrée à l'axe nodal de la Lune.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Obtenez votre Carte Précise</h2>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+                Générez votre carte Human Design en utilisant Tropicale (J2000) et comparez-la avec votre carte Tropicale traditionnelle pour voir ce qui change pour vous.
+            </p>
+            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+                Get Pro &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+
+                <!-- Left: Logo & Copyright -->
+                <div class="text-center md:text-left">
+                    <img src="../../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">Tous droits réservés.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Confidentialité, Conditions Générales</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+
+                <!-- Center: Newsletter -->
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Abonnez-vous à notre Newsletter</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Inscrivez-vous à notre newsletter pour recevoir les mises à jour, les offres,
+                        les nouvelles sorties, et tout ce qui concerne Genetic Matrix.
+                    </p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input
+                            type="email"
+                            placeholder="Votre Adresse Email"
+                            class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400"
+                        >
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Social & Contact -->
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connectez-vous avec Nous</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener">
+                            <img src="../../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
+                        </a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener">
+                            <img src="../../assets/icon-x.svg" alt="X" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener">
+                            <img src="../../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener">
+                            <img src="../../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
+                        </a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Nous Contacter</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+<script>
+(function() {
+    fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            var badge = document.getElementById('gm-cart-count');
+            if (badge && data.cart_count > 0) {
+                badge.textContent = data.cart_count;
+                badge.classList.remove('hidden');
+            }
+            var loggedOut = document.getElementById('gm-logged-out');
+            var loggedIn = document.getElementById('gm-logged-in');
+            if (data.logged_in) {
+                if (loggedOut) loggedOut.classList.add('hidden');
+                if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
+            }
+        })
+        .catch(function() {});
+})();
+</script>
+<script id="gm-hamburger-script">(function(){var h=document.getElementById("gm-hamburger");var m=document.getElementById("gm-mobile-menu");if(h&&m){h.onclick=function(){if(m.style.display==="block"){m.style.display="none";}else{m.style.display="block";}};}})()</script>
+<script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
+</body>
+</html>
