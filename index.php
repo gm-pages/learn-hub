@@ -143,6 +143,11 @@
                 <img src="assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14">
             </a>
 
+            <!-- Hamburger button (mobile) -->
+            <button id="gm-hamburger" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition" onclick="document.getElementById('gm-mobile-menu').classList.toggle('hidden')">
+                <svg class="w-6 h-6 text-gm-gray" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+
             <!-- Right Nav: LOGGED OUT (default for static pages) -->
             <div class="flex items-center gap-8">
                 <!-- Report Icon -->
