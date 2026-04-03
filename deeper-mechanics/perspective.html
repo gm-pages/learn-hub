@@ -63,9 +63,9 @@
 
  <!-- ==================== NAV BAR ==================== -->
  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[80px]">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-[60px] md:h-[80px]">
             <a href="/" class="flex-shrink-0">
-                <img src="../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-14 max-w-[200px] sm:max-w-none">
+                <img src="../assets/logo.svg" alt="Genetic Matrix - Know you" class="h-10 md:h-14">
             </a>
             <!-- Hamburger button (mobile) -->
             <button id="gm-hamburger" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition" onclick="document.getElementById('gm-mobile-menu').classList.toggle('hidden')">
@@ -118,7 +118,7 @@
                     <span>English</span>
                     <img src="../assets/icon-english.svg" alt="English" class="h-5 w-7">
                 </div>
-                <div id="gm-logged-out" class="flex items-center gap-4">
+                <div id="gm-logged-out" class="hidden lg:flex items-center gap-4">
                     <a href="https://www.geneticmatrix.com/my-account/" class="hidden md:block text-gm-gray hover:text-gray-900 text-sm font-medium">Sign In</a>
                 <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">Register</a>
                 </div>
@@ -143,6 +143,9 @@
                 <div class="border-t border-gray-100 my-1"></div>
                 <a href="#" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition" data-action="free-chart-popup">Free Chart</a>
                 <a href="https://www.geneticmatrix.com/plans-features/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Our Plans</a>
+                <div class="border-t border-gray-100 my-1"></div>
+                <a href="https://www.geneticmatrix.com/user-home/" class="py-2 text-sm font-semibold text-gm-green hover:text-gm-green-dark transition">My Hub</a>
+                <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Log Out</a>
             </div>
         </div>
     </nav>
