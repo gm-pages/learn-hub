@@ -43,27 +43,50 @@ function gm_lang_log($msg) {
  * Decide whether the current request is a real WPML-controlled WordPress page
  * where we should trust WPML's reported language.
  *
- * Returns true only if URL path is "/" (English home) or starts with a
- * supported language segment like /de/, /fr/, etc.
- *
- * This prevents WordPress-handled non-WPML URLs (celebrity category pages,
- * theme asset requests, 404s) from writing cookie=en and wiping the user's
- * language preference.
+ * Returns true for normal WordPress pages (English or with /{lang}/ prefix).
+ * Returns false for:
+ *   - Static assets (.js, .css, .map, images, fonts)
+ *   - wp-content, wp-admin, wp-includes paths
+ *   - Non-WPML static sections (celebrities, celebrity, dictionary, learn-hub)
+ *   - Bogus filesystem paths (/home/staging/...)
  */
 function gm_lang_is_wpml_page() {
     $uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '/';
     // Strip query string
     $q = strpos($uri, '?');
     if ($q !== false) $uri = substr($uri, 0, $q);
-    // Normalize trailing slash for the root check
+
+    // Empty or root = definitely WPML
     if ($uri === '' || $uri === '/') return true;
-    // Explicit language segment: /de/, /de, /fr/..., etc.
-    foreach (['de','es','fr','it','nl','pt'] as $code) {
-        if ($uri === '/' . $code || strpos($uri, '/' . $code . '/') === 0) {
-            return true;
-        }
+
+    // Blacklisted path prefixes (case insensitive on prefix match)
+    $blacklist_prefixes = [
+        '/wp-content/',
+        '/wp-admin/',
+        '/wp-includes/',
+        '/wp-json/',
+        '/xmlrpc.php',
+        '/wp-login.php',
+        '/home/',         // bogus filesystem paths leaking into URLs
+        '/celebrities/',  // static celebrities section
+        '/celebrity/',    // individual celebrity pages (static)
+        '/dictionary/',   // static dictionary
+        '/learn-hub/',    // static learn hub
+    ];
+    foreach ($blacklist_prefixes as $pref) {
+        if (strpos($uri, $pref) === 0) return false;
     }
-    return false;
+
+    // Blacklisted file extensions (static assets)
+    $path_part = parse_url($uri, PHP_URL_PATH);
+    if ($path_part) {
+        $ext = strtolower(pathinfo($path_part, PATHINFO_EXTENSION));
+        $asset_exts = ['js','css','map','png','jpg','jpeg','gif','svg','webp','ico','woff','woff2','ttf','eot','otf','mp4','webm','ogg','mp3','pdf','zip','json','xml','txt'];
+        if (in_array($ext, $asset_exts, true)) return false;
+    }
+
+    // Otherwise assume it's a WordPress page under WPML control
+    return true;
 }
 
 /**
