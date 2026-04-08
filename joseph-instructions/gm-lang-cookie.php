@@ -40,6 +40,33 @@ function gm_lang_log($msg) {
 }
 
 /**
+ * Decide whether the current request is a real WPML-controlled WordPress page
+ * where we should trust WPML's reported language.
+ *
+ * Returns true only if URL path is "/" (English home) or starts with a
+ * supported language segment like /de/, /fr/, etc.
+ *
+ * This prevents WordPress-handled non-WPML URLs (celebrity category pages,
+ * theme asset requests, 404s) from writing cookie=en and wiping the user's
+ * language preference.
+ */
+function gm_lang_is_wpml_page() {
+    $uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '/';
+    // Strip query string
+    $q = strpos($uri, '?');
+    if ($q !== false) $uri = substr($uri, 0, $q);
+    // Normalize trailing slash for the root check
+    if ($uri === '' || $uri === '/') return true;
+    // Explicit language segment: /de/, /de, /fr/..., etc.
+    foreach (['de','es','fr','it','nl','pt'] as $code) {
+        if ($uri === '/' . $code || strpos($uri, '/' . $code . '/') === 0) {
+            return true;
+        }
+    }
+    return false;
+}
+
+/**
  * PART 1: Sync WordPress -> Learn Hub
  * Hooked to `wp` action at priority 999 so every other plugin (including WPML)
  * has finished initializing the current language before we read it.
@@ -53,10 +80,18 @@ function gm_lang_write_cookie() {
     if (headers_sent($file, $line)) { gm_lang_log("Part1 skip: headers_sent at $file:$line"); return; }
     if (!function_exists('apply_filters')) { gm_lang_log('Part1 skip: no apply_filters'); return; }
 
+    $request_uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '?';
     $wpml_raw = apply_filters('wpml_current_language', null);
     $icl_const = defined('ICL_LANGUAGE_CODE') ? ICL_LANGUAGE_CODE : 'undef';
-    $request_uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '?';
     $existing_cookie = isset($_COOKIE['gm_lang']) ? $_COOKIE['gm_lang'] : 'none';
+
+    // Guard: only write cookie when the URL is actually WPML-controlled.
+    // Otherwise celebrity/theme/404/asset requests will clobber user preference.
+    if (!gm_lang_is_wpml_page()) {
+        gm_lang_log("Part1 skip: URI=$request_uri not a WPML page (cookie=$existing_cookie preserved)");
+        return;
+    }
+
     gm_lang_log("Part1 URI=$request_uri wpml_filter=" . var_export($wpml_raw, true) . " ICL_LANGUAGE_CODE=$icl_const cookie=$existing_cookie");
 
     $lang = $wpml_raw;
@@ -94,6 +129,8 @@ function gm_lang_follow_cookie() {
     if (defined('DOING_CRON') && DOING_CRON) return;
     if (defined('REST_REQUEST') && REST_REQUEST) return;
     if (!function_exists('apply_filters')) return;
+
+    if (!gm_lang_is_wpml_page()) { gm_lang_log('Part2 skip: not a WPML page'); return; }
 
     if (empty($_COOKIE['gm_lang'])) { gm_lang_log('Part2 skip: no cookie'); return; }
     $cookie_lang = gm_lang_normalize($_COOKIE['gm_lang']);
