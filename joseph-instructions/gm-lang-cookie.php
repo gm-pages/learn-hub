@@ -103,7 +103,32 @@ function gm_lang_write_cookie() {
     $existing = isset($_COOKIE['gm_lang']) ? $_COOKIE['gm_lang'] : null;
     if ($existing === $lang) { gm_lang_log("Part1 noop: cookie already $lang"); return; }
 
-    gm_lang_log("Part1 WRITING cookie: $existing -> $lang");
+    // ASYMMETRIC PROTECTION for non-default languages.
+    // English is the default: hitting / reports wpml=en even for background
+    // requests. Protect existing non-en cookies UNLESS the referer indicates
+    // the user deliberately navigated from their current language to English.
+    if ($lang === 'en' && !empty($existing) && $existing !== 'en') {
+        $referer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '';
+        $referer_path = $referer ? parse_url($referer, PHP_URL_PATH) : '';
+        $referer_host = $referer ? parse_url($referer, PHP_URL_HOST) : '';
+        $current_host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '';
+
+        // Deliberate switch = same host, referer path starts with /{existing}/
+        $deliberate = false;
+        if ($referer_host === $current_host && $referer_path) {
+            if ($referer_path === '/' . $existing || strpos($referer_path, '/' . $existing . '/') === 0) {
+                $deliberate = true;
+            }
+        }
+
+        if (!$deliberate) {
+            gm_lang_log("Part1 protect: WPML en but cookie=$existing (non-default), referer=$referer not deliberate, preserving");
+            return;
+        }
+        gm_lang_log("Part1 allow: deliberate EN switch from $existing (referer=$referer)");
+    }
+
+    gm_lang_log("Part1 WRITING cookie: " . ($existing ?: 'none') . " -> $lang");
     setcookie('gm_lang', $lang, [
         'expires'  => time() + 31536000, // 1 year
         'path'     => '/',
