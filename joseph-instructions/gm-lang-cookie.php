@@ -31,30 +31,44 @@ function gm_lang_normalize($lang) {
     return $lang;
 }
 
+// Toggle debug logging (writes to PHP error log)
+define('GM_LANG_DEBUG', true);
+function gm_lang_log($msg) {
+    if (defined('GM_LANG_DEBUG') && GM_LANG_DEBUG) {
+        error_log('[GM_LANG] ' . $msg);
+    }
+}
+
 /**
  * PART 1: Sync WordPress -> Learn Hub
- * On every frontend page load, write current WPML language to gm_lang cookie.
- * Hooked to template_redirect (priority 5) so WPML is fully initialized before
- * we read apply_filters('wpml_current_language') and BEFORE Part 2 runs.
+ * Hooked to `wp` action at priority 999 so every other plugin (including WPML)
+ * has finished initializing the current language before we read it.
  */
-add_action('template_redirect', 'gm_lang_write_cookie', 5);
+add_action('wp', 'gm_lang_write_cookie', 999);
 function gm_lang_write_cookie() {
-    if (is_admin()) return;
-    if (defined('DOING_AJAX') && DOING_AJAX) return;
-    if (defined('DOING_CRON') && DOING_CRON) return;
-    if (defined('REST_REQUEST') && REST_REQUEST) return;
-    if (headers_sent()) return;
-    if (!function_exists('apply_filters')) return;
+    if (is_admin()) { gm_lang_log('Part1 skip: admin'); return; }
+    if (defined('DOING_AJAX') && DOING_AJAX) { gm_lang_log('Part1 skip: ajax'); return; }
+    if (defined('DOING_CRON') && DOING_CRON) { gm_lang_log('Part1 skip: cron'); return; }
+    if (defined('REST_REQUEST') && REST_REQUEST) { gm_lang_log('Part1 skip: rest'); return; }
+    if (headers_sent($file, $line)) { gm_lang_log("Part1 skip: headers_sent at $file:$line"); return; }
+    if (!function_exists('apply_filters')) { gm_lang_log('Part1 skip: no apply_filters'); return; }
 
-    $lang = apply_filters('wpml_current_language', null);
-    if (!$lang) return;
+    $wpml_raw = apply_filters('wpml_current_language', null);
+    $icl_const = defined('ICL_LANGUAGE_CODE') ? ICL_LANGUAGE_CODE : 'undef';
+    $request_uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '?';
+    $existing_cookie = isset($_COOKIE['gm_lang']) ? $_COOKIE['gm_lang'] : 'none';
+    gm_lang_log("Part1 URI=$request_uri wpml_filter=" . var_export($wpml_raw, true) . " ICL_LANGUAGE_CODE=$icl_const cookie=$existing_cookie");
+
+    $lang = $wpml_raw;
+    if (!$lang) { gm_lang_log('Part1 skip: wpml returned empty'); return; }
     $lang = gm_lang_normalize($lang);
 
-    if (!in_array($lang, gm_lang_supported(), true)) return;
+    if (!in_array($lang, gm_lang_supported(), true)) { gm_lang_log("Part1 skip: lang $lang not supported"); return; }
 
     $existing = isset($_COOKIE['gm_lang']) ? $_COOKIE['gm_lang'] : null;
-    if ($existing === $lang) return;
+    if ($existing === $lang) { gm_lang_log("Part1 noop: cookie already $lang"); return; }
 
+    gm_lang_log("Part1 WRITING cookie: $existing -> $lang");
     setcookie('gm_lang', $lang, [
         'expires'  => time() + 31536000, // 1 year
         'path'     => '/',
@@ -81,14 +95,15 @@ function gm_lang_follow_cookie() {
     if (defined('REST_REQUEST') && REST_REQUEST) return;
     if (!function_exists('apply_filters')) return;
 
-    if (empty($_COOKIE['gm_lang'])) return;
+    if (empty($_COOKIE['gm_lang'])) { gm_lang_log('Part2 skip: no cookie'); return; }
     $cookie_lang = gm_lang_normalize($_COOKIE['gm_lang']);
-    if (!in_array($cookie_lang, gm_lang_supported(), true)) return;
+    if (!in_array($cookie_lang, gm_lang_supported(), true)) { gm_lang_log("Part2 skip: bad cookie $cookie_lang"); return; }
 
     $wpml_lang = apply_filters('wpml_current_language', null);
-    if (!$wpml_lang) return;
+    if (!$wpml_lang) { gm_lang_log('Part2 skip: wpml empty'); return; }
     $wpml_lang = gm_lang_normalize($wpml_lang);
 
+    gm_lang_log("Part2 cookie=$cookie_lang wpml=$wpml_lang");
     if ($cookie_lang === $wpml_lang) return; // already in sync
 
     // Get the current post's translated URL
