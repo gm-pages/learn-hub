@@ -31,8 +31,8 @@ function gm_lang_normalize($lang) {
     return $lang;
 }
 
-// Toggle debug logging (writes to PHP error log)
-define('GM_LANG_DEBUG', true);
+// Toggle debug logging (writes to PHP error log). Set to true only when troubleshooting.
+define('GM_LANG_DEBUG', false);
 function gm_lang_log($msg) {
     if (defined('GM_LANG_DEBUG') && GM_LANG_DEBUG) {
         error_log('[GM_LANG] ' . $msg);
