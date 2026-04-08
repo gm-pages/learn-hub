@@ -8,15 +8,30 @@
   var current = m ? m[1] : "en";
   var v = ("; " + document.cookie).split("; gm_lang=");
   var cookieLang = v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
-  if (cookieLang && SUPPORTED.indexOf(cookieLang) !== -1 && cookieLang !== current) {
-    var rest = m ? path.substring(("/learn-hub/" + current).length) : path.replace(/^\/learn-hub/, "");
+
+  // URL is the source of truth on direct navigation. If the URL has an
+  // explicit language prefix, trust it and update the cookie to match.
+  // Only redirect when the URL is the default (English, no prefix) AND
+  // the cookie indicates a non-default language preference.
+  if (current !== "en") {
+    if (cookieLang !== current) {
+      var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
+      var domain = location.hostname.indexOf("geneticmatrix.com") !== -1 ? "; domain=.geneticmatrix.com" : "";
+      document.cookie = "gm_lang=" + current + "; expires=" + d.toUTCString() + "; path=/" + domain;
+    }
+    return;
+  }
+
+  // current === "en" (no language prefix in URL). Honor cookie if non-en.
+  if (cookieLang && SUPPORTED.indexOf(cookieLang) !== -1 && cookieLang !== "en") {
+    var rest = path.replace(/^\/learn-hub/, "");
     if (!rest) rest = "/";
-    var target = cookieLang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + cookieLang + rest);
+    var target = "/learn-hub/" + cookieLang + rest;
     window.location.replace(target + window.location.search + window.location.hash);
   }
 })();</script>
 
- <meta charset="UTF-8">
+    <meta charset="UTF-8">
  <link rel="icon" href="/favicon.ico" type="image/x-icon">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>4/6 Profile in Human Design - Opportunist / Role Model | Genetic Matrix</title>
