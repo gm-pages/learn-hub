@@ -1,0 +1,14 @@
+<script id="gm-lang-redirect">(function(){
+  var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
+  var path = window.location.pathname;
+  var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
+  var current = m ? m[1] : "en";
+  var v = ("; " + document.cookie).split("; gm_lang=");
+  var cookieLang = v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
+  if (cookieLang && SUPPORTED.indexOf(cookieLang) !== -1 && cookieLang !== current) {
+    var rest = m ? path.substring(("/learn-hub/" + current).length) : path.replace(/^\/learn-hub/, "");
+    if (!rest) rest = "/";
+    var target = cookieLang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + cookieLang + rest);
+    window.location.replace(target + window.location.search + window.location.hash);
+  }
+})();</script>

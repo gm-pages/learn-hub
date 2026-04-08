@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script id="gm-lang-redirect">(function(){
+  var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
+  var path = window.location.pathname;
+  var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
+  var current = m ? m[1] : "en";
+  var v = ("; " + document.cookie).split("; gm_lang=");
+  var cookieLang = v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
+  if (cookieLang && SUPPORTED.indexOf(cookieLang) !== -1 && cookieLang !== current) {
+    var rest = m ? path.substring(("/learn-hub/" + current).length) : path.replace(/^\/learn-hub/, "");
+    if (!rest) rest = "/";
+    var target = cookieLang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + cookieLang + rest);
+    window.location.replace(target + window.location.search + window.location.hash);
+  }
+})();</script>
+
     <meta charset="UTF-8">
  <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -307,14 +322,8 @@
         document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/" + domain;
       }
 
-      // Auto-redirect: if cookie says a different language than the URL, switch
+      // Sync cookie to current URL language (head script handles redirect before render)
       var cookieLang = getCookie("gm_lang");
-      if (cookieLang && SUPPORTED.indexOf(cookieLang) !== -1 && cookieLang !== current) {
-        var target = cookieLang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + cookieLang + rest);
-        window.location.replace(target);
-        return;
-      }
-      // Sync cookie to current URL language (so first-visitor URL choice persists)
       if (cookieLang !== current) setCookie("gm_lang", current);
 
       var label = document.getElementById("gm-lang-current");

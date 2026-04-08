@@ -129,14 +129,8 @@
         document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/" + domain;
       }
 
-      // Auto-redirect: if cookie says a different language than the URL, switch
+      // Sync cookie to current URL language (head script handles redirect before render)
       var cookieLang = getCookie("gm_lang");
-      if (cookieLang && SUPPORTED.indexOf(cookieLang) !== -1 && cookieLang !== current) {
-        var target = cookieLang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + cookieLang + rest);
-        window.location.replace(target);
-        return;
-      }
-      // Sync cookie to current URL language (so first-visitor URL choice persists)
       if (cookieLang !== current) setCookie("gm_lang", current);
 
       var label = document.getElementById("gm-lang-current");
