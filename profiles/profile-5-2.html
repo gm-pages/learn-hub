@@ -272,7 +272,7 @@
  </div>
  </div>
  <div class="w-64 lg:w-72 flex-shrink-0">
- <img src="/profiles/images/5-2-Franz-Schubert.png" alt="5/2 Profile Bodygraph chart for Franz Schubert" class="rounded-xl w-full h-auto">
+ <img src="/learn-hub/profiles/images/5-2-Franz-Schubert.png" alt="5/2 Profile Bodygraph chart for Franz Schubert" class="rounded-xl w-full h-auto">
  </div>
  </div>
  </div>

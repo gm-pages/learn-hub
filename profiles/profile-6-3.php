@@ -272,7 +272,7 @@
  </div>
  </div>
  <div class="w-64 lg:w-72 flex-shrink-0">
- <img src="/profiles/images/6-3-Marc-Chagall.png" alt="6/3 Profile Bodygraph chart for Marc Chagall" class="rounded-xl w-full h-auto">
+ <img src="/learn-hub/profiles/images/6-3-Marc-Chagall.png" alt="6/3 Profile Bodygraph chart for Marc Chagall" class="rounded-xl w-full h-auto">
  </div>
  </div>
  </div>

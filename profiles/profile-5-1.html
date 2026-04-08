@@ -272,7 +272,7 @@
  </div>
  </div>
  <div class="w-64 lg:w-72 flex-shrink-0">
- <img src="/profiles/images/5-1-Napoleon.png" alt="5/1 Profile Bodygraph chart for Napoleon" class="rounded-xl w-full h-auto">
+ <img src="/learn-hub/profiles/images/5-1-Napoleon.png" alt="5/1 Profile Bodygraph chart for Napoleon" class="rounded-xl w-full h-auto">
  </div>
  </div>
  </div>
