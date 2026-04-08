@@ -33,10 +33,16 @@ function gm_lang_normalize($lang) {
 
 /**
  * PART 1: Sync WordPress -> Learn Hub
- * On every page load, write current WPML language to gm_lang cookie.
+ * On every frontend page load, write current WPML language to gm_lang cookie.
+ * Hooked to template_redirect (priority 5) so WPML is fully initialized before
+ * we read apply_filters('wpml_current_language') and BEFORE Part 2 runs.
  */
-add_action('init', 'gm_lang_write_cookie', 1);
+add_action('template_redirect', 'gm_lang_write_cookie', 5);
 function gm_lang_write_cookie() {
+    if (is_admin()) return;
+    if (defined('DOING_AJAX') && DOING_AJAX) return;
+    if (defined('DOING_CRON') && DOING_CRON) return;
+    if (defined('REST_REQUEST') && REST_REQUEST) return;
     if (headers_sent()) return;
     if (!function_exists('apply_filters')) return;
 
