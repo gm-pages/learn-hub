@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrity Charts | Free Astrology & Human Design | Genetic Matrix</title>
+    <meta name="description" content="Search thousands of free celebrity Human Design charts. Explore bodygraphs for your favorite celebrities across 7 calculation methods including Tropical, Sidereal, Vedic, and more.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gm-purple': '#6E5898',
+                        'gm-purple-light': '#9080B1',
+                        'gm-purple-soft': '#AC94D8',
+                        'gm-dark': '#3C2864',
+                        'gm-darker': '#2e1f4d',
+                        'gm-green': '#54931E',
+                        'gm-green-dark': '#468018',
+                        'gm-green-light': '#8EB86A',
+                        'gm-pink': '#F66378',
+                        'gm-orange': '#E8961D',
+                        'gm-gray': '#707070',
+                        'gm-light': '#F7F8F9',
+                        'gm-card': '#FAFBFC',
+                        'gm-card-active': '#F4F0FC',
+                        'gm-border': '#D8D4E4',
+                        'gm-warning': '#F8F8E8',
+                        'gm-text-dark': '#1A1A2E',
+                        'gm-text': '#444444',
+                        'gm-text-light': '#949494',
+                    },
+                    fontFamily: {
+                        'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+
+        /* Search autocomplete */
+        .search-results {
+            max-height: 400px;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #AC94D8 transparent;
+        }
+        .search-results::-webkit-scrollbar { width: 6px; }
+        .search-results::-webkit-scrollbar-thumb { background: #AC94D8; border-radius: 3px; }
+        .search-result-item {
+            transition: background 0.15s;
+        }
+        .search-result-item:hover,
+        .search-result-item.active {
+            background: #F4F0FC;
+        }
+
+        /* Fade in animation */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-up { animation: fadeInUp 0.4s ease-out; }
+
+        /* Subtle pulse on search icon */
+        @keyframes subtlePulse {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+        .search-hint { animation: subtlePulse 3s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-white text-gm-text">
+
+    <!-- Nav -->
+                        <nav class="bg-white border-b border-gray-200 sticky top-0 z-50" style="font-family: Bilo, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
+        <div class="w-full px-[30px] flex items-center h-[80px]">
+            <!-- Logo -->
+            <a href="/" class="flex-shrink-0">
+                <img src="/learn-hub/assets/logo.svg" alt="Genetic Matrix - Know you" class="h-8 md:h-14">
+            </a>
+
+            <!-- Mobile: Cart + Hamburger (right side) -->
+            <div class="lg:hidden flex items-center gap-4">
+                <a href="https://www.geneticmatrix.com/cart/" title="Cart" class="px-3 relative">
+                    <img src="/learn-hub/assets/icon-cart.svg" alt="Cart" class="h-5 w-auto">
+                    <span id="gm-cart-count-mobile" class="absolute top-[2px] left-[55%] -translate-x-1/2 text-gm-green font-bold text-[10px] leading-none hidden">0</span>
+                </a>
+                <button id="gm-hamburger" class="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition">
+                    <svg class="w-6 h-6 text-gm-gray" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+
+            <!-- Desktop Nav -->
+            <div class="hidden lg:flex flex-1 items-center justify-end">
+                <!-- Reports -->
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="mx-3 flex items-center justify-center w-9 h-9 rounded-lg border border-[#dee2e6] hover:border-gm-purple/30 hover:bg-gray-50 transition" title="Reports">
+                    <img src="/learn-hub/assets/icon-report.svg" alt="Reports" class="h-6 w-6">
+                </a>
+                <!-- Talking Charts -->
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="mx-3 flex items-center justify-center w-9 h-9 rounded-lg border border-[#dee2e6] hover:border-gm-purple/30 hover:bg-gray-50 transition" title="Talking Charts">
+                    <img src="/learn-hub/assets/icon-talking-chart.svg" alt="Talking Charts" class="h-5 w-5">
+                </a>
+                <!-- Free Chart (hidden when logged in) -->
+                <a id="gm-free-chart" href="#" class="px-3 text-gm-gray hover:text-gray-900 text-base font-medium" data-action="free-chart-popup">Free Chart</a>
+                <!-- Learn Dropdown -->
+                <div class="relative group">
+                    <button class="px-3 text-gm-purple hover:text-gm-dark text-base font-semibold flex items-center gap-1">
+                        Learn
+                        <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[420px] bg-white rounded-xl shadow-xl border border-gray-100 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="grid grid-cols-2 gap-1">
+                            <a href="/learn-hub/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/Menu_Icon_ Hub.svg" alt="Learn Hub" class="w-6 h-6"></div>
+                                <div><div class="text-sm font-semibold text-gray-800">Learn Hub</div><div class="text-xs text-gm-text-light mt-0.5">HD and Astrology education</div></div>
+                            </a>
+                            <a href="/learn-hub/celebrities/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/Menu_Icon _celebrity .svg" alt="Celebrity Search" class="w-6 h-6"></div>
+                                <div><div class="text-sm font-semibold text-gray-800">Celebrity Search</div><div class="text-xs text-gm-text-light mt-0.5">88,600+ celebrity charts</div></div>
+                            </a>
+                            <a href="/dictionary/dictionary.html" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/Menu_Icon_ dictionary.svg" alt="Dictionary" class="w-6 h-6"></div>
+                                <div><div class="text-sm font-semibold text-gray-800">Dictionary</div><div class="text-xs text-gm-text-light mt-0.5">HD and Astrology terms</div></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Our Plans -->
+                <a href="https://www.geneticmatrix.com/plans-features/" class="px-3 text-gm-gray hover:text-gray-900 text-base font-medium">Our Plans</a>
+                <!-- Cart -->
+                <a href="https://www.geneticmatrix.com/cart/" title="Cart" class="px-3 relative">
+                    <img src="/learn-hub/assets/icon-cart.svg" alt="Cart" class="h-5 w-auto">
+                    <span id="gm-cart-count" class="absolute top-[2px] left-[55%] -translate-x-1/2 text-gm-green font-bold text-[10px] leading-none hidden">0</span>
+                </a>
+                <!-- Language Switcher -->
+                <div class="relative group px-3">
+                    <button class="flex items-center gap-1 text-gm-gray hover:text-gray-900 text-base">
+                        <span id="gm-lang-current">English</span>
+                        <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="absolute top-full right-0 mt-4 w-44 bg-white rounded-xl shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <a data-lang="en" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">English</a>
+                        <a data-lang="de" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Deutsch</a>
+                        <a data-lang="es" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Español</a>
+                        <a data-lang="fr" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Français</a>
+                        <a data-lang="it" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Italiano</a>
+                        <a data-lang="nl" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Nederlands</a>
+                        <a data-lang="pt" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Português</a>
+                    </div>
+                </div>
+                <!-- Logged OUT -->
+                <div id="gm-logged-out" class="flex items-center">
+                    <a href="https://www.geneticmatrix.com/my-account/" class="px-3 text-gm-gray hover:text-gray-900 text-base font-medium" class="px-3">Sign In</a>
+                    <a href="https://www.geneticmatrix.com/register/" class="bg-red-500 hover:bg-red-600 text-white text-base font-semibold px-5 py-2 rounded-full transition">Register</a>
+                </div>
+                <!-- Logged IN -->
+                <div id="gm-logged-in" class="hidden items-center">
+                    <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="px-3 text-gm-gray hover:text-gray-900 text-base font-medium" class="px-3">Log Out</a>
+                    <a href="https://www.geneticmatrix.com/user-home/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">My Hub</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="gm-mobile-menu" style="display:none" class="lg:hidden bg-white border-t border-gray-100 px-6 py-4">
+            <div class="flex flex-col gap-3">
+                <a href="/learn-hub/" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition">
+                    <img src="/learn-hub/assets/Menu_Icon_ Hub.svg" alt="" class="w-5 h-5"> Learn Hub
+                </a>
+                <a href="/learn-hub/celebrities/" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition">
+                    <img src="/learn-hub/assets/Menu_Icon _celebrity .svg" alt="" class="w-5 h-5"> Celebrity Search
+                </a>
+                <a href="/dictionary/dictionary.html" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition">
+                    <img src="/learn-hub/assets/Menu_Icon_ dictionary.svg" alt="" class="w-5 h-5"> Dictionary
+                </a>
+                <div class="border-t border-gray-100 my-1"></div>
+                <a href="#" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition" data-action="free-chart-popup">Free Chart</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Our Plans</a>
+                <div class="border-t border-gray-100 my-1"></div>
+                <a href="https://www.geneticmatrix.com/user-home/" class="py-2 text-sm font-semibold text-gm-green hover:text-gm-green-dark transition">My Hub</a>
+                <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition" class="px-3">Log Out</a>
+            </div>
+        </div>
+    </nav>
+    <script id="gm-lang-switcher">(function(){
+      var LANGS = {en:"English",de:"Deutsch",es:"Español",fr:"Français",it:"Italiano",nl:"Nederlands",pt:"Português"};
+      var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
+      var path = window.location.pathname;
+      var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
+      var current = m ? m[1] : "en";
+      var rest = m ? path.substring(("/learn-hub/" + current).length) : path.replace(/^\/learn-hub/, "");
+      if (!rest) rest = "/";
+
+      // Cookie helpers (shared with WordPress/WPML on .geneticmatrix.com)
+      function getCookie(name){
+        var v = ("; " + document.cookie).split("; " + name + "=");
+        return v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
+      }
+      function setCookie(name, value){
+        var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
+        var domain = location.hostname.indexOf("geneticmatrix.com") !== -1 ? "; domain=.geneticmatrix.com" : "";
+        document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/" + domain;
+      }
+
+      // Auto-redirect: if cookie says a different language than the URL, switch
+      var cookieLang = getCookie("gm_lang");
+      if (cookieLang && SUPPORTED.indexOf(cookieLang) !== -1 && cookieLang !== current) {
+        var target = cookieLang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + cookieLang + rest);
+        window.location.replace(target);
+        return;
+      }
+      // Sync cookie to current URL language (so first-visitor URL choice persists)
+      if (cookieLang !== current) setCookie("gm_lang", current);
+
+      var label = document.getElementById("gm-lang-current");
+      if (label) label.textContent = LANGS[current];
+
+      document.querySelectorAll('a[data-lang]').forEach(function(a){
+        var lang = a.getAttribute('data-lang');
+        a.href = lang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + lang + rest);
+        if (lang === current) a.classList.add('text-gm-purple','font-semibold');
+        a.addEventListener('click', function(){ setCookie("gm_lang", lang); });
+      });
+    })();</script>
+<!-- Breadcrumb -->
+    <div class="max-w-5xl mx-auto px-6 pt-4 pb-2">
+        <a href="/learn-hub/" class="text-sm text-gm-purple hover:text-gm-dark font-medium transition">&larr; Voltar ao Learn Hub</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-b from-gm-dark to-gm-darker text-white pt-6 pb-6 md:pt-8 md:pb-8">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-4 mb-6">
+                <div class="flex-1 text-center md:text-left md:pl-8">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-3">Gráficos de Celebridades</h1>
+                    <p class="text-gm-purple-soft text-lg max-w-xl">
+                        Explore gráficos gratuitos de Human Design de milhares de celebridades com 7 métodos de cálculo.
+                    </p>
+                </div>
+                <div class="hidden md:block flex-shrink-0 w-[160px] lg:w-[200px]">
+                    <img src="/learn-hub/assets/celebrities-hero.webp" alt="Gráficos de Human Design de Celebridades" class="w-full h-auto max-h-[180px] object-contain">
+                </div>
+            </div>
+            <div class="max-w-3xl mx-auto text-center">
+
+            <!-- Search Box -->
+            <div class="relative max-w-xl mx-auto" id="searchContainer">
+                <div class="flex items-center bg-white rounded-full shadow-lg overflow-hidden">
+                    <!-- Search Icon -->
+                    <div class="pl-5 pr-2">
+                        <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Pesquisar por nome, ex. Brad Pitt"
+                        autocomplete="off"
+                        class="flex-1 py-4 px-2 text-gray-800 text-base outline-none placeholder:text-gray-400"
+                    >
+                    <!-- Clear button -->
+                    <button id="clearBtn" class="pr-5 hidden" onclick="clearSearch()">
+                        <svg class="w-5 h-5 text-gray-400 hover:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Results Dropdown -->
+                <div id="searchResults" class="hidden absolute left-0 right-0 mt-2 bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden z-40">
+                    <div class="search-results" id="resultsList"></div>
+                    <div id="resultsFooter" class="hidden px-5 py-3 bg-gray-50 text-sm text-gm-gray border-t border-gray-100"></div>
+                </div>
+            </div>
+
+            <p class="search-hint text-white/70 text-sm mt-4">Pesquisar entre mais de 88.000 celebridades</p>
+        </div>
+    </section>
+
+    <!-- Browse by Category -->
+    <section class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl font-bold text-gm-text-dark text-center mb-10">Explorar por Categoria</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Human Design Categories -->
+                <a href="/celebrities/type/" class="group block bg-gm-light rounded-xl p-6 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center">
+                            <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition">Por Tipo</h3>
+                    </div>
+                    <p class="text-sm text-gm-gray">Gerador, Manifestador, Projetor, Refletor, GM</p>
+                </a>
+
+                <a href="/celebrities/profile/" class="group block bg-gm-light rounded-xl p-6 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center">
+                            <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition">Por Perfil</h3>
+                    </div>
+                    <p class="text-sm text-gm-gray">1/3, 2/4, 3/5, 4/6, 5/1, 6/2 e outros</p>
+                </a>
+
+                <a href="/celebrities/incarnation-cross/" class="group block bg-gm-light rounded-xl p-6 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center">
+                            <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition">Por Cruz de Encarnação</h3>
+                    </div>
+                    <p class="text-sm text-gm-gray">Cruzes RAX, LAX e JXP</p>
+                </a>
+
+                <a href="/celebrities/definition/" class="group block bg-gm-light rounded-xl p-6 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center">
+                            <svg class="w-5 h-5 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition">Por Definição</h3>
+                    </div>
+                    <p class="text-sm text-gm-gray">Simples, Dividida, Tripla Divisão, Quádrupla</p>
+                </a>
+
+                <!-- Astrology Categories -->
+                <a href="/celebrities/sun-sign/" class="group block bg-gm-light rounded-xl p-6 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-10 h-10 rounded-full bg-gm-orange/10 flex items-center justify-center">
+                            <span class="text-gm-orange text-lg">&#9737;</span>
+                        </div>
+                        <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition">Por Signo Solar</h3>
+                    </div>
+                    <p class="text-sm text-gm-gray">Carneiro, Touro, Gémeos, Caranguejo e outros</p>
+                </a>
+
+                <a href="/celebrities/moon-sign/" class="group block bg-gm-light rounded-xl p-6 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-10 h-10 rounded-full bg-gm-orange/10 flex items-center justify-center">
+                            <span class="text-gm-orange text-lg">&#9789;</span>
+                        </div>
+                        <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition">Por Signo Lunar</h3>
+                    </div>
+                    <p class="text-sm text-gm-gray">Explore celebridades pela colocação da Lua</p>
+                </a>
+
+                <a href="/celebrities/ascendant/" class="group block bg-gm-light rounded-xl p-6 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-10 h-10 rounded-full bg-gm-orange/10 flex items-center justify-center">
+                            <span class="text-gm-orange text-lg">&uarr;</span>
+                        </div>
+                        <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition">Por Signo Ascendente</h3>
+                    </div>
+                    <p class="text-sm text-gm-gray">Ascendente em Carneiro, Leão, Escorpião e outros</p>
+                </a>
+
+                <a href="/celebrities/midheaven/" class="group block bg-gm-light rounded-xl p-6 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-10 h-10 rounded-full bg-gm-orange/10 flex items-center justify-center">
+                            <span class="text-gm-orange text-sm font-bold">MC</span>
+                        </div>
+                        <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition">Por Meio do Céu</h3>
+                    </div>
+                    <p class="text-sm text-gm-gray">Carreira e imagem pública por signo MC</p>
+                </a>
+
+                <a href="/celebrities/authority/" class="group block bg-gm-light rounded-xl p-6 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center">
+                            <span class="text-gm-purple text-lg">&#9829;</span>
+                        </div>
+                        <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition">Por Autoridade</h3>
+                    </div>
+                    <p class="text-sm text-gm-gray">Emocional, Sacral, Esplénica, Coração e outras</p>
+                </a>
+
+                <a href="/celebrities/strategy/" class="group block bg-gm-light rounded-xl p-6 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center">
+                            <span class="text-gm-purple text-lg">&#9889;</span>
+                        </div>
+                        <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition">Por Estratégia</h3>
+                    </div>
+                    <p class="text-sm text-gm-gray">Responder, Informar, Esperar e outras</p>
+                </a>
+
+                <a href="/celebrities/descendant/" class="group block bg-gm-light rounded-xl p-6 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-10 h-10 rounded-full bg-gm-orange/10 flex items-center justify-center">
+                            <span class="text-gm-orange text-lg">&darr;</span>
+                        </div>
+                        <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition">Por Descendente</h3>
+                    </div>
+                    <p class="text-sm text-gm-gray">Relacionamentos e parcerias por signo</p>
+                </a>
+
+                <a href="/celebrities/imum-coeli/" class="group block bg-gm-light rounded-xl p-6 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-10 h-10 rounded-full bg-gm-orange/10 flex items-center justify-center">
+                            <span class="text-gm-orange text-sm font-bold">IC</span>
+                        </div>
+                        <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition">Por Fundo do Céu</h3>
+                    </div>
+                    <p class="text-sm text-gm-gray">Raízes, casa e fundação interna por signo</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculation Methods -->
+    <section class="py-16 bg-gm-light">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl font-bold text-gm-text-dark text-center mb-3">7 Métodos de Cálculo</h2>
+            <p class="text-gm-gray text-center mb-10 max-w-2xl mx-auto">Cada gráfico de celebridade está disponível nos sete sistemas. Compare como as colocações mudam entre métodos.</p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4">
+                <div class="bg-white rounded-xl p-4 text-center border border-gray-100">
+                    <div class="text-2xl mb-1">&#9737;</div>
+                    <p class="text-sm font-semibold text-gm-text-dark">Tropical</p>
+                    <p class="text-xs text-gm-gray mt-1">Padrão ocidental</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 text-center border border-gray-100">
+                    <div class="text-2xl mb-1">&#9790;</div>
+                    <p class="text-sm font-semibold text-gm-text-dark">Sideral</p>
+                    <p class="text-xs text-gm-gray mt-1">Baseado em estrelas</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 text-center border border-gray-100">
+                    <div class="text-2xl mb-1">&#9741;</div>
+                    <p class="text-sm font-semibold text-gm-text-dark">Védico</p>
+                    <p class="text-xs text-gm-gray mt-1">Jyotish</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 text-center border border-gray-100">
+                    <div class="text-2xl mb-1">&#9738;</div>
+                    <p class="text-sm font-semibold text-gm-text-dark">Dracónico</p>
+                    <p class="text-xs text-gm-gray mt-1">Nível da alma</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 text-center border border-gray-100">
+                    <div class="text-2xl mb-1">&#10026;</div>
+                    <p class="text-sm font-semibold text-gm-text-dark">True Sidereal</p>
+                    <p class="text-xs text-gm-gray mt-1">Constelação</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 text-center border border-gray-100">
+                    <div class="text-2xl mb-1">&#9765;</div>
+                    <p class="text-sm font-semibold text-gm-text-dark">13 Signos</p>
+                    <p class="text-xs text-gm-gray mt-1">+ Ofiúco</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 text-center border border-gray-100">
+                    <div class="text-2xl mb-1">&#127776;</div>
+                    <p class="text-sm font-semibold text-gm-text-dark">J2000</p>
+                    <p class="text-xs text-gm-gray mt-1">Astronómico</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-gradient-to-b from-gm-dark to-gm-darker text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-2xl font-bold mb-3">Quer ver o seu próprio gráfico?</h2>
+            <p class="text-gm-purple-soft mb-8">Criar uma conta gratuita e obtenha o seu próprio Bodygraph de Human Design. Os membros Pro desbloqueiam astrologia, vistas avançadas de HD e mais de 100 tipos de gráficos.</p>
+            <div class="flex justify-center gap-4">
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white font-semibold px-8 py-3 rounded-full transition">Criar Conta Gratuita</a>
+                <a href="https://www.geneticmatrix.com/our-plans/" class="border border-white/30 hover:border-white/60 text-white font-semibold px-8 py-3 rounded-full transition">Ver Planos Pro</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer --><footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+                <div class="text-center md:text-left">
+                    <img src="assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">All right reserved.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Privacy, Terms and Conditions</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Subscribe to Our Newsletter</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Sign up to our newsletter to receive updates, offers, new releases, and everything related to Genetic Matrix.</p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto">
+                        <input type="email" placeholder="Your Email Address" class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400">
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connect With Us</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener">
+                            <img src="assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
+                        </a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener">
+                            <img src="assets/icon-x.svg" alt="X" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener">
+                            <img src="assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener">
+                            <img src="assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
+                        </a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // ============================================================
+    // Celebrity Search — Chunked Index (88,627 celebs)
+    // ============================================================
+    // Data split into A-Z + _ chunks loaded on demand.
+    // Fields: n=name, p=profession, s=slug
+
+    const CELEB_BASE = "https://www.staginggm.com/celebrity/";
+    const DATA_PATH = "data/";
+
+    // Cache loaded chunks: { A: [...], B: [...], ... }
+    const chunkCache = {};
+    const loadingChunks = {};
+    let selectedIndex = -1;
+    let searchTimeout = null;
+
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    const resultsList = document.getElementById('resultsList');
+    const resultsFooter = document.getElementById('resultsFooter');
+    const clearBtn = document.getElementById('clearBtn');
+
+    // Load a chunk by letter, returns promise
+    function loadChunk(letter) {
+        if (chunkCache[letter]) return Promise.resolve(chunkCache[letter]);
+        if (loadingChunks[letter]) return loadingChunks[letter];
+        loadingChunks[letter] = fetch(DATA_PATH + letter + '.json')
+            .then(r => r.json())
+            .then(data => {
+                chunkCache[letter] = data;
+                delete loadingChunks[letter];
+                return data;
+            })
+            .catch(() => {
+                delete loadingChunks[letter];
+                return [];
+            });
+        return loadingChunks[letter];
+    }
+
+    // Figure out which chunks to search based on query
+    function getChunksForQuery(query) {
+        // First character of query tells us the primary chunk
+        const first = query.charAt(0).toUpperCase();
+        if (/[A-Z]/.test(first)) return [first];
+        return ['_'];
+    }
+
+    // Search across all loaded chunks (for lastname/middle matches)
+    function searchAllLoaded(query, limit) {
+        const results = [];
+        for (const letter of Object.keys(chunkCache)) {
+            const chunk = chunkCache[letter];
+            for (const c of chunk) {
+                if (c.n.toLowerCase().includes(query)) {
+                    results.push(c);
+                    if (results.length >= limit) return results;
+                }
+            }
+        }
+        return results;
+    }
+
+    // Preload all chunks in background (after first search)
+    let preloadStarted = false;
+    function preloadAllChunks() {
+        if (preloadStarted) return;
+        preloadStarted = true;
+        const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ_'.split('');
+        let i = 0;
+        function loadNext() {
+            if (i >= letters.length) return;
+            const letter = letters[i++];
+            if (!chunkCache[letter]) {
+                loadChunk(letter).then(() => setTimeout(loadNext, 50));
+            } else {
+                setTimeout(loadNext, 10);
+            }
+        }
+        // Start after a short delay so it doesn't compete with active search
+        setTimeout(loadNext, 500);
+    }
+
+    searchInput.addEventListener('input', function() {
+        const query = this.value.trim().toLowerCase();
+        clearBtn.classList.toggle('hidden', !this.value);
+
+        if (query.length < 2) {
+            hideResults();
+            return;
+        }
+
+        // Debounce: wait 150ms after typing stops
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => performSearch(query), 150);
+    });
+
+    async function performSearch(query) {
+        // Start background preload on first search
+        preloadAllChunks();
+
+        // Load the primary chunk for the first letter typed
+        const chunksNeeded = getChunksForQuery(query);
+        await Promise.all(chunksNeeded.map(loadChunk));
+
+        // Search the primary chunk first (fastest, matches firstname)
+        const primaryLetter = chunksNeeded[0];
+        const primaryChunk = chunkCache[primaryLetter] || [];
+        let matches = primaryChunk.filter(c =>
+            c.n.toLowerCase().includes(query)
+        ).slice(0, 20);
+
+        // If fewer than 20 results, search ALL chunks (loaded or not)
+        // This catches lastname/middle name matches (e.g., "pitt" finds Brad Pitt in B chunk)
+        if (matches.length < 20) {
+            // Load all chunks first to ensure complete search
+            const allLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ_'.split('');
+            await Promise.all(allLetters.map(loadChunk));
+
+            const otherMatches = [];
+            for (const letter of Object.keys(chunkCache)) {
+                if (letter === primaryLetter) continue;
+                const chunk = chunkCache[letter];
+                for (const c of chunk) {
+                    if (c.n.toLowerCase().includes(query)) {
+                        otherMatches.push(c);
+                        if (matches.length + otherMatches.length >= 20) break;
+                    }
+                }
+                if (matches.length + otherMatches.length >= 20) break;
+            }
+            matches = matches.concat(otherMatches).slice(0, 20);
+        }
+
+        selectedIndex = -1;
+        showResults(matches, query);
+    }
+
+    searchInput.addEventListener('keydown', function(e) {
+        const items = resultsList.querySelectorAll('.search-result-item');
+        if (!items.length) return;
+
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            selectedIndex = Math.min(selectedIndex + 1, items.length - 1);
+            updateSelection(items);
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            selectedIndex = Math.max(selectedIndex - 1, 0);
+            updateSelection(items);
+        } else if (e.key === 'Enter' && selectedIndex >= 0) {
+            e.preventDefault();
+            items[selectedIndex].click();
+        } else if (e.key === 'Escape') {
+            hideResults();
+            searchInput.blur();
+        }
+    });
+
+    // Close on click outside
+    document.addEventListener('click', function(e) {
+        if (!document.getElementById('searchContainer').contains(e.target)) {
+            hideResults();
+        }
+    });
+
+    function showResults(matches, query) {
+        if (!matches.length) {
+            resultsList.innerHTML = `
+                <div class="px-5 py-8 text-center text-gm-gray">
+                    <p class="text-sm">No celebrities found for "<strong class="text-gm-text-dark">${escapeHtml(query)}</strong>"</p>
+                    <p class="text-xs mt-1">Try a different spelling or search by last name</p>
+                </div>`;
+            resultsFooter.classList.add('hidden');
+            searchResults.classList.remove('hidden');
+            return;
+        }
+
+        resultsList.innerHTML = matches.map((celeb, i) => `
+            <a href="${CELEB_BASE}${celeb.s}/"
+               class="search-result-item flex items-center gap-4 px-5 py-3 cursor-pointer border-b border-gray-50 last:border-0"
+               data-index="${i}">
+                <div class="w-9 h-9 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-semibold text-sm">${celeb.n.charAt(0)}</span>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <p class="text-sm font-medium text-gm-text-dark truncate">${highlightMatch(celeb.n, query)}</p>
+                    <p class="text-xs text-gm-gray truncate">${escapeHtml(celeb.p || '')}</p>
+                </div>
+                <svg class="w-4 h-4 text-gm-gray/40 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+            </a>
+        `).join('');
+
+        if (matches.length >= 20) {
+            resultsFooter.textContent = 'Showing first 20 results. Type more to narrow down.';
+            resultsFooter.classList.remove('hidden');
+        } else {
+            resultsFooter.textContent = `${matches.length} result${matches.length === 1 ? '' : 's'}`;
+            resultsFooter.classList.remove('hidden');
+        }
+
+        searchResults.classList.remove('hidden');
+    }
+
+    function hideResults() {
+        searchResults.classList.add('hidden');
+        selectedIndex = -1;
+    }
+
+    function updateSelection(items) {
+        items.forEach((item, i) => {
+            item.classList.toggle('active', i === selectedIndex);
+        });
+        if (selectedIndex >= 0) {
+            items[selectedIndex].scrollIntoView({ block: 'nearest' });
+        }
+    }
+
+    function clearSearch() {
+        searchInput.value = '';
+        clearBtn.classList.add('hidden');
+        hideResults();
+        searchInput.focus();
+    }
+
+    function highlightMatch(text, query) {
+        const escaped = escapeHtml(text);
+        const idx = text.toLowerCase().indexOf(query.toLowerCase());
+        if (idx === -1) return escaped;
+        const before = escapeHtml(text.substring(0, idx));
+        const match = escapeHtml(text.substring(idx, idx + query.length));
+        const after = escapeHtml(text.substring(idx + query.length));
+        return `${before}<span class="text-gm-purple font-semibold">${match}</span>${after}`;
+    }
+
+    function escapeHtml(str) {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+    }
+    </script>
+
+<script>
+(function() {
+    fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            var badge = document.getElementById('gm-cart-count');
+            if (badge && data.cart_count > 0) {
+                badge.textContent = data.cart_count;
+                badge.classList.remove('hidden');
+            }
+            var loggedOut = document.getElementById('gm-logged-out');
+            var loggedIn = document.getElementById('gm-logged-in');
+            if (data.logged_in) {
+                var freeChart = document.getElementById("gm-free-chart");
+                if (freeChart) freeChart.classList.add("hidden");
+                if (loggedOut) loggedOut.classList.add('hidden');
+                if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
+            }
+        })
+        .catch(function() {});
+})();
+</script>
+</body>
+</html>

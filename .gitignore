@@ -40,3 +40,6 @@ translation-progress.json
 run-large-translations.bat
 run-remaining.bat
 translate-remaining.py
+run-celebrities.bat
+translate-celebrities.py
+translate-dictionary.py

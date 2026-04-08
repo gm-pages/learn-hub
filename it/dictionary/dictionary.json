@@ -1,0 +1,4332 @@
+{
+  "terms": [
+    {
+      "id": "1-3-profile",
+      "term": "Profilo 1/3",
+      "category": "Foundation",
+      "definition": "Combina l'Investigatore (Linea 1) e il Martire (Linea 3). Ha bisogno di una solida base di conoscenze e impara attraverso tentativi ed errori.",
+      "aliases": [
+        "Investigatore Martire"
+      ],
+      "url": ""
+    },
+    {
+      "id": "1-4-profile",
+      "term": "Profilo 1/4",
+      "category": "Foundation",
+      "definition": "Combina l'Investigatore (Linea 1) e l'Opportunista (Linea 4). Costruisce una solida base di conoscenze e poi la condivide attraverso la propria rete personale.",
+      "aliases": [
+        "Investigatore Opportunista"
+      ],
+      "url": ""
+    },
+    {
+      "id": "10th-house",
+      "term": "10ª Casa",
+      "category": "Astrology",
+      "definition": "La casa della carriera, della reputazione pubblica, dell'autorità e dei risultati. La cuspide della 10ª Casa è il Medio Cielo (MC), e questa casa governa le ambizioni professionali, il prestigio sociale e l'eredità che si lascia.",
+      "aliases": [
+        "Decima Casa",
+        "Casa della Carriera"
+      ],
+      "url": ""
+    },
+    {
+      "id": "11th-house",
+      "term": "11ª Casa",
+      "category": "Astrology",
+      "definition": "La casa delle amicizie, dei gruppi, delle reti sociali e delle speranze per il futuro. L'11ª Casa governa il coinvolgimento nella comunità, le cause umanitarie e le cerchie sociali più ampie che supportano le proprie aspirazioni.",
+      "aliases": [
+        "Undicesima Casa",
+        "Casa dell'Amicizia"
+      ],
+      "url": ""
+    },
+    {
+      "id": "12th-house",
+      "term": "12ª Casa",
+      "category": "Astrology",
+      "definition": "La casa dell'inconscio, delle questioni nascoste, della solitudine e della trascendenza spirituale. La 12ª Casa governa l'isolamento, l'autodistruzione, i sogni, le istituzioni e la dissoluzione dell'ego.",
+      "aliases": [
+        "Dodicesima Casa",
+        "Casa dell'Inconscio"
+      ],
+      "url": ""
+    },
+    {
+      "id": "13-sign-zodiac",
+      "term": "Zodiaco a 13 Segni",
+      "category": "Astrology",
+      "definition": "Un sistema zodiacale alternativo che include Ofiuco come 13° segno tra Scorpione e Sagittario, basato sulle costellazioni effettive che il Sole attraversa. Utilizza i confini delle costellazioni IAU, risultando in segni di lunghezza ineguale. Non viene utilizzato nell'astrologia tradizionale ma genera periodicamente interesse pubblico.",
+      "aliases": [
+        "Astrologia a 13 Segni",
+        "Zodiaco a Tredici Segni"
+      ],
+      "url": ""
+    },
+    {
+      "id": "1st-house",
+      "term": "1ª Casa",
+      "category": "Astrology",
+      "definition": "La casa del sé, dell'identità, dell'aspetto fisico e delle prime impressioni. La cuspide della 1ª Casa è l'Ascendente, rendendola una delle case più significative, che governa come una persona si presenta al mondo.",
+      "aliases": [
+        "Prima Casa",
+        "Casa del Sé"
+      ],
+      "url": ""
+    },
+    {
+      "id": "2-4-profile",
+      "term": "Profilo 2/4",
+      "category": "Foundation",
+      "definition": "Combina l'Eremita (Linea 2) e l'Opportunista (Linea 4). Possiede talenti naturali che devono essere richiamati da altri attraverso la propria rete.",
+      "aliases": [
+        "Eremita Opportunista"
+      ],
+      "url": ""
+    },
+    {
+      "id": "2-5-profile",
+      "term": "Profilo 2/5",
+      "category": "Foundation",
+      "definition": "Combina l'Eremita (Linea 2) e l'Eretico (Linea 5). Porta un dono naturale combinato con il campo di proiezione della 5ª linea dove gli altri proiettano aspettative.",
+      "aliases": [
+        "Eremita Eretico"
+      ],
+      "url": ""
+    },
+    {
+      "id": "2nd-house",
+      "term": "2ª Casa",
+      "category": "Astrology",
+      "definition": "La casa delle finanze personali, dei beni, dei valori e dell'autostima. La 2ª Casa governa le risorse materiali, il potenziale di guadagno e ciò che una persona trova prezioso o degno di investimento.",
+      "aliases": [
+        "Seconda Casa",
+        "Casa del Valore"
+      ],
+      "url": ""
+    },
+    {
+      "id": "3-5-profile",
+      "term": "Profilo 3/5",
+      "category": "Foundation",
+      "definition": "Combina il Martire (Linea 3) e l'Eretico (Linea 5). Impara attraverso tentativi ed errori mentre porta un campo di proiezione che gli altri guardano per soluzioni pratiche.",
+      "aliases": [
+        "Martire Eretico"
+      ],
+      "url": ""
+    },
+    {
+      "id": "3-6-profile",
+      "term": "Profilo 3/6",
+      "category": "Foundation",
+      "definition": "Combina il Martire (Linea 3) e il Modello di Ruolo (Linea 6). Tre fasi di vita: intensi tentativi ed errori fino ai 30 anni circa, osservazione dal tetto fino ai 50 anni circa, poi entrare nell'autenticità.",
+      "aliases": [
+        "Martire Modello di Ruolo"
+      ],
+      "url": ""
+    },
+    {
+      "id": "3rd-house",
+      "term": "3ª Casa",
+      "category": "Astrology",
+      "definition": "La casa della comunicazione, dei fratelli, dei viaggi brevi e dell'ambiente immediato. La 3ª Casa governa come una persona pensa, parla, scrive e interagisce con la propria comunità locale e i vicini.",
+      "aliases": [
+        "Terza Casa",
+        "Casa della Comunicazione"
+      ],
+      "url": ""
+    },
+    {
+      "id": "4-1-profile",
+      "term": "Profilo 4/1",
+      "category": "Foundation",
+      "definition": "Combina l'Opportunista (Linea 4) e l'Investigatore (Linea 1). Un profilo di destino fisso con una base rigida e forte orientamento verso la rete.",
+      "aliases": [
+        "Opportunista Investigatore"
+      ],
+      "url": ""
+    },
+    {
+      "id": "4-6-profile",
+      "term": "Profilo 4/6",
+      "category": "Foundation",
+      "definition": "Combina l'Opportunista (Linea 4) e il Modello di Ruolo (Linea 6). Profondamente connesso alla propria rete, attraversa tre fasi di vita per svilupparsi in autentici modelli di ruolo.",
+      "aliases": [
+        "Opportunista Modello di Ruolo"
+      ],
+      "url": ""
+    },
+    {
+      "id": "4th-house",
+      "term": "4ª Casa",
+      "category": "Astrology",
+      "definition": "La casa del focolare, della famiglia, delle radici e delle fondamenta emotive. La cuspide della 4ª Casa è il Fondo del Cielo (IC), e questa casa governa la vita privata, l'ascendenza, l'immobiliare e le condizioni alla fine della vita.",
+      "aliases": [
+        "Quarta Casa",
+        "Casa del Focolare"
+      ],
+      "url": ""
+    },
+    {
+      "id": "5-1-profile",
+      "term": "Profilo 5/1",
+      "category": "Foundation",
+      "definition": "Combina l'Eretico (Linea 5) e l'Investigatore (Linea 1). Porta un forte campo di proiezione e costruisce autorità su ricerca e investigazione approfondite.",
+      "aliases": [
+        "Eretico Investigatore"
+      ],
+      "url": ""
+    },
+    {
+      "id": "5-2-profile",
+      "term": "Profilo 5/2",
+      "category": "Foundation",
+      "definition": "Combina l'Eretico (Linea 5) e l'Eremita (Linea 2). Porta un campo di proiezione mentre possiede talenti naturali, chiamato a fornire soluzioni mentre ha bisogno di ritirarsi.",
+      "aliases": [
+        "Eretico Eremita"
+      ],
+      "url": ""
+    },
+    {
+      "id": "5th-house",
+      "term": "5ª Casa",
+      "category": "Astrology",
+      "definition": "La casa della creatività, del romanticismo, dei figli, del piacere e dell'espressione personale. La 5ª Casa governa gli hobby, le relazioni amorose, le attività artistiche e tutte le forme di attività gioiose e spontanee.",
+      "aliases": [
+        "Quinta Casa",
+        "Casa del Piacere"
+      ],
+      "url": ""
+    },
+    {
+      "id": "6-2-profile",
+      "term": "Profilo 6/2",
+      "category": "Foundation",
+      "definition": "Combina il Modello di Ruolo (Linea 6) e l'Eremita (Linea 2). Si muove attraverso tre fasi di vita mentre porta talenti naturali che altri devono richiamare.",
+      "aliases": [
+        "Modello di Ruolo Eremita"
+      ],
+      "url": ""
+    },
+    {
+      "id": "6-3-profile",
+      "term": "Profilo 6/3",
+      "category": "Foundation",
+      "definition": "Combina il Modello di Ruolo (Linea 6) e il Martire (Linea 3). Intensamente esperienziale, con entrambe le linee che implicano l'apprendimento attraverso tentativi ed errori nelle tre fasi di vita.",
+      "aliases": [
+        "Modello di Ruolo Martire"
+      ],
+      "url": ""
+    },
+    {
+      "id": "6th-house",
+      "term": "6ª Casa",
+      "category": "Astrology",
+      "definition": "La casa delle routine quotidiane, della salute, del lavoro e del servizio. La 6ª Casa governa l'impiego (in contrasto con la carriera), il benessere fisico, le abitudini e il rapporto con il dovere e i compiti pratici.",
+      "aliases": [
+        "Sesta Casa",
+        "Casa della Salute"
+      ],
+      "url": ""
+    },
+    {
+      "id": "7th-house",
+      "term": "7ª Casa",
+      "category": "Astrology",
+      "definition": "La casa delle partnership, del matrimonio, dei nemici aperti e delle relazioni uno a uno. La cuspide della 7ª Casa è il Discendente, e questa casa governa le relazioni impegnate, le partnership commerciali e i contratti.",
+      "aliases": [
+        "Settima Casa",
+        "Casa delle Partnership"
+      ],
+      "url": ""
+    },
+    {
+      "id": "8th-house",
+      "term": "8ª Casa",
+      "category": "Astrology",
+      "definition": "La casa della trasformazione, delle risorse condivise, della morte e della rinascita. L'8ª Casa governa l'eredità, le tasse, i debiti, l'intimità, la psicologia e i misteri più profondi della vita e dell'occulto.",
+      "aliases": [
+        "Ottava Casa",
+        "Casa della Trasformazione"
+      ],
+      "url": ""
+    },
+    {
+      "id": "9th-house",
+      "term": "9ª Casa",
+      "category": "Astrology",
+      "definition": "La casa dell'istruzione superiore, della filosofia, dei viaggi a lunga distanza e dei sistemi di credenze. La 9ª Casa governa la religione, il diritto, l'editoria, le culture straniere e la ricerca di significato e verità.",
+      "aliases": [
+        "Nona Casa",
+        "Casa della Filosofia"
+      ],
+      "url": ""
+    },
+    {
+      "id": "advisor",
+      "term": "Advisor",
+      "category": "BG5/Penta",
+      "definition": "Tipo di Carriera BG5 equivalente al Proiettore. Guida naturale che eccelle nel dirigere l'energia degli altri quando viene riconosciuto e invitato.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "air-element",
+      "term": "Elemento Aria",
+      "category": "Astrology",
+      "definition": "Uno dei quattro elementi classici in astrologia, che comprende Gemelli, Bilancia e Acquario. I segni d'aria sono associati all'intelletto, alla comunicazione, alla connessione sociale e al pensiero astratto.",
+      "aliases": [
+        "Segni d'Aria"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ajna-center",
+      "term": "Centro Ajna",
+      "category": "Foundation",
+      "definition": "Il centro di consapevolezza per la concettualizzazione e l'elaborazione mentale, situato tra il Centro della Testa e il Centro della Gola. Responsabile di come elaboriamo le informazioni e formiamo le opinioni.",
+      "aliases": [
+        "Ajna",
+        "Centro della Mente"
+      ],
+      "url": ""
+    },
+    {
+      "id": "aldebaran",
+      "term": "Aldebaran",
+      "category": "Astrology",
+      "definition": "Una delle quattro Stelle Reali di Persia, situata a circa 9 gradi Gemelli in astrologia tropicale. Aldebaran è l'occhio della costellazione del Toro ed è associata all'onore, al coraggio, all'eloquenza e al successo materiale, purché si mantenga l'integrità.",
+      "aliases": [
+        "Occhio del Toro"
+      ],
+      "url": ""
+    },
+    {
+      "id": "algol",
+      "term": "Algol",
+      "category": "Astrology",
+      "definition": "Un sistema di stelle binarie nella costellazione di Perseo, situato a circa 26 gradi Toro in astrologia tropicale. Algol è tradizionalmente considerata una delle stelle fisse più malefi che, associata al perdere la testa (letteralmente o metaforicamente), alla violenza e alla trasformazione intensa.",
+      "aliases": [
+        "Caput Algol",
+        "Stella del Demonio"
+      ],
+      "url": ""
+    },
+    {
+      "id": "almuten",
+      "term": "Almuten",
+      "category": "Astrology",
+      "definition": "Il pianeta con il maggior numero di punti di dignità essenziale a un dato grado, calcolato sommando i domini di domicilio, esaltazione, triplicità, termine e faccia. L'almuten della carta (almuten figuris) è il pianeta con la maggiore dignità combinata tra diversi punti chiave della carta.",
+      "aliases": [
+        "Almuten Figuris"
+      ],
+      "url": ""
+    },
+    {
+      "id": "alpha-channel",
+      "term": "Alpha Channel",
+      "category": "BG5/Penta",
+      "definition": "Il canale di leadership all'interno di un piccolo gruppo nella meccanica Penta, che si collega alla gerarchia naturale e al flusso decisionale.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "amatyakaraka",
+      "term": "Amatyakaraka",
+      "category": "Astrology",
+      "definition": "Il pianeta con il secondo grado più alto nel tema natale, che funge da significatore della carriera e della vita professionale nell'astrologia Jaimini. Agisce come consigliere o ministro dell'atmakaraka (significatore dell'anima). Il suo segno e posizione di casa indicano il campo attraverso cui il nativo esprime il proprio proposito professionale.",
+      "aliases": [
+        "AmK"
+      ],
+      "url": ""
+    },
+    {
+      "id": "anaretic-degree",
+      "term": "Grado Anaretico",
+      "category": "Astrology",
+      "definition": "Il 29° grado (da 29 gradi 0 minuti a 29 gradi 59 minuti) di qualsiasi segno zodiacale, considerato un punto di urgenza e culminazione. I pianeti al grado anaretico stanno completando il loro viaggio attraverso un segno e portano un senso di crisi, completamento o intensità karmica.",
+      "aliases": [
+        "29° Grado",
+        "Grado del Destino"
+      ],
+      "url": ""
+    },
+    {
+      "id": "anger",
+      "term": "Rabbia",
+      "category": "Foundation",
+      "definition": "Il tema Non-Sé del Tipo Manifestatore. Quando non informa prima di agire, incontra resistenza che genera rabbia.",
+      "aliases": [
+        "Non-Sé del Manifestatore"
+      ],
+      "url": ""
+    },
+    {
+      "id": "angular-houses",
+      "term": "Case Angolari",
+      "category": "Astrology",
+      "definition": "La 1ª, 4ª, 7ª e 10ª casa, che corrispondono ai quattro angoli della carta. Le case angolari sono considerate le posizioni più potenti e visibili in una carta, e i pianeti qui collocati tendono ad avere un'influenza forte e diretta sulla vita di una persona.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "annual-profection",
+      "term": "Profezione Annuale",
+      "category": "Astrology",
+      "definition": "Una tecnica tradizionale di timing che avanza l'Ascendente di un segno intero per anno di vita, attivando una nuova casa e il suo pianeta governatore a ogni compleanno. Il signore della casa attivata diventa il Signore dell'Anno, i cui transiti e condizione hanno particolare significato per quel periodo di dodici mesi.",
+      "aliases": [
+        "Profezioni Annuali",
+        "Anno di Profezione"
+      ],
+      "url": ""
+    },
+    {
+      "id": "antardasha",
+      "term": "Antardasha",
+      "category": "Astrology",
+      "definition": "Il sotto-periodo all'interno di un mahadasha nel sistema Vimshottari Dasha. Ogni mahadasha è suddiviso in periodi antardasha governati da ciascuno dei nove graha in sequenza. Il pianeta antardasha modifica e affina i temi del pianeta mahadasha governante.",
+      "aliases": [
+        "Antar Dasha",
+        "Bhukti"
+      ],
+      "url": ""
+    },
+    {
+      "id": "antares",
+      "term": "Antares",
+      "category": "Astrology",
+      "definition": "Una delle quattro Stelle Reali di Persia, situata a circa 9 gradi Sagittario in astrologia tropicale. Antares è il cuore della costellazione dello Scorpione ed è associata al coraggio, all'intensità, alla spinta ossessiva e al successo attraverso l'azione audace, ma con un rischio di autodistruzione.",
+      "aliases": [
+        "Cuore dello Scorpione"
+      ],
+      "url": ""
+    },
+    {
+      "id": "antiscia",
+      "term": "Antiscia",
+      "category": "Astrology",
+      "definition": "Punti speculari attraverso l'asse Cancro-Capricorno (l'asse del solstizio) dove due gradi zodiacali condividono la stessa quantità di luce diurna. I pianeti in antiscia formano una connessione nascosta, funzionando come una congiunzione segreta, e sono usati nell'astrologia tradizionale per rivelare alleanze segrete o influenze non viste.",
+      "aliases": [
+        "Antiscium"
+      ],
+      "url": ""
+    },
+    {
+      "id": "anuradha",
+      "term": "Anuradha",
+      "category": "Astrology",
+      "definition": "La diciassettesima nakshatra nell'astrologia vedica, che si estende da 3 gradi 20 minuti a 16 gradi 40 minuti dello Scorpione. La sua divinità governante è Mitra (dio dell'amicizia), e il suo governatore planetario è Saturno. È associata alla devozione, alla lealtà e alla capacità di mantenere amicizie profonde e alleanze.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "appetite",
+      "term": "Appetito",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Determinazione (Colore 1). Il corpo mangia basandosi sui segnali della fame, con l'appetito naturale che guida quando e cosa consumare.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "applying-aspect",
+      "term": "Aspetto in Applicazione",
+      "category": "Astrology",
+      "definition": "Un aspetto in cui il pianeta che si muove più velocemente si sta avvicinando al grado esatto dell'aspetto con il pianeta che si muove più lentamente. Gli aspetti in applicazione sono generalmente considerati più forti e più attivi di quelli in separazione perché l'energia si sta costruendo verso il suo picco.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "aquarius",
+      "term": "Acquario",
+      "category": "Astrology",
+      "definition": "L'undicesimo segno dello zodiaco, che si estende da 300 a 330 gradi dell'eclittica. L'Acquario è un segno fisso d'aria tradizionalmente governato da Saturno e modernamente da Urano, associato all'innovazione, all'umanitarismo e all'individualità.",
+      "aliases": [
+        "L'Acquario"
+      ],
+      "url": ""
+    },
+    {
+      "id": "arabic-parts-lots",
+      "term": "Parti Arabe/Sorti",
+      "category": "Astrology",
+      "definition": "Punti sensibili calcolati derivati dalle relazioni matematiche tra tre fattori della carta, tipicamente due pianeti e un angolo. Le Parti Arabe (o Sorti) hanno origini nell'astrologia ellenistica e includono dozzine di variazioni che affrontano specifici argomenti di vita come fortuna, spirito, matrimonio e carriera.",
+      "aliases": [
+        "Parti Arabe",
+        "Sorti",
+        "Sorti Ermetiche"
+      ],
+      "url": ""
+    },
+    {
+      "id": "archetypal-astrology",
+      "term": "Astrologia Archetipica",
+      "category": "Astrology",
+      "definition": "Un approccio filosofico all'astrologia sviluppato da Richard Tarnas e altri che vede gli allineamenti planetari come correlati ai modelli archetipici nell'esperienza umana e negli eventi mondiali. Si basa molto sul lavoro di C.G. Jung e sottolinea che i pianeti non causano eventi ma riflettono dinamiche archetipiche universali. Il libro di Tarnas Cosmos e Psiche è il testo fondamentale di questo approccio.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "ardra",
+      "term": "Ardra",
+      "category": "Astrology",
+      "definition": "La sesta nakshatra nell'astrologia vedica, che si estende da 6 gradi 40 minuti a 20 gradi dei Gemelli. La sua divinità governante è Rudra (il dio della tempesta), e il suo governatore planetario è Rahu. È associata alla distruzione che precede il rinnovamento, allo sforzo e all'intensità intellettuale.",
+      "aliases": [
+        "Arudra"
+      ],
+      "url": ""
+    },
+    {
+      "id": "aries",
+      "term": "Ariete",
+      "category": "Astrology",
+      "definition": "Il primo segno dello zodiaco, che si estende da 0 a 30 gradi dell'eclittica. L'Ariete è un segno cardinale di fuoco governato da Marte, associato all'iniziativa, al coraggio e all'assertività.",
+      "aliases": [
+        "L'Ariete"
+      ],
+      "url": ""
+    },
+    {
+      "id": "arrow",
+      "term": "Freccia",
+      "category": "Variables",
+      "definition": "Uno dei quattro indicatori direzionali nella parte superiore del bodygraph di Human Design. Ogni Freccia punta a sinistra (focalizzata, strategica) o a destra (ricettiva, periferica). Le quattro Frecce si riferiscono a Determinazione, Ambiente, Cognizione e Prospettiva.",
+      "aliases": [
+        "Frecce"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ascendant",
+      "term": "Ascendente",
+      "category": "Astrology",
+      "definition": "Il segno zodiacale e il grado che sorge all'orizzonte orientale nel momento e luogo esatti di nascita. L'Ascendente definisce la cuspide della 1ª Casa e influenza fortemente la personalità esteriore, l'aspetto fisico e come gli altri La percepiscono.",
+      "aliases": [
+        "Segno Ascendente",
+        "ASC"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ashlesha",
+      "term": "Ashlesha",
+      "category": "Astrology",
+      "definition": "La nona nakshatra nell'astrologia vedica, che si estende da 16 gradi 40 minuti a 30 gradi del Cancro. La sua divinità reggente sono i Naga (divinità serpente), e il suo sovrano planetario è Mercurio. È associata al potere mistico, all'attaccamento e all'energia kundalini.",
+      "aliases": [
+        "Aslesha"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ashtakavarga",
+      "term": "Ashtakavarga",
+      "category": "Astrology",
+      "definition": "Un sistema di punteggio numerico nell'astrologia vedica che valuta i contributi benefici e malefici di ogni pianeta per ogni segno. Ogni segno riceve punti (bindu) da ciascuno dei sette pianeti e dall'ascendente, producendo un punteggio su un massimo di 8 per pianeta. Il punteggio totale (Sarvashtakavarga) per ogni segno aiuta a determinare transiti favorevoli e sfavorevoli.",
+      "aliases": [
+        "Sarvashtakavarga"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ashwini",
+      "term": "Ashwini",
+      "category": "Astrology",
+      "definition": "La prima nakshatra nell'astrologia vedica, che si estende da 0 a 13 gradi 20 minuti dell'Ariete. La sua divinità reggente sono gli Ashwini Kumara (medici divini), e il suo sovrano planetario è Ketu. È associata alla guarigione, alla velocità e ai nuovi inizi.",
+      "aliases": [
+        "Aswini"
+      ],
+      "url": ""
+    },
+    {
+      "id": "aspect",
+      "term": "Aspetto",
+      "category": "Astrology",
+      "definition": "Una relazione angolare tra due pianeti in una carta astrologica. Gli aspetti maggiori includono Congiunzione (0 gradi), Sestile (60), Quadratura (90), Trigono (120) e Opposizione (180). Gli aspetti rivelano come le energie planetarie interagiscono.",
+      "aliases": [
+        "Aspetti"
+      ],
+      "url": ""
+    },
+    {
+      "id": "atmakaraka",
+      "term": "Atmakaraka",
+      "category": "Astrology",
+      "definition": "Il pianeta che detiene il grado più alto in qualsiasi segno nel tema natale, considerato il significatore dell'anima nell'astrologia Jaimini. Rivela i desideri più profondi e le lezioni karmiche che l'anima sta elaborando in questa vita. Il segno e la posizione di casa dell'atmakaraka nella navamsa (karakamsa) sono particolarmente significativi.",
+      "aliases": [
+        "AK"
+      ],
+      "url": ""
+    },
+    {
+      "id": "authority",
+      "term": "Autorità",
+      "category": "Foundation",
+      "definition": "Il meccanismo decisionale interiore del corpo in Human Design. L'Autorità Le dice come prendere decisioni corrette per se stessa. I tipi di Autorità includono Emotiva, Sacrale, Splenica, del Cuore, auto-proiettata, Mentale e Lunare.",
+      "aliases": [
+        "Autorità interiore"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ayanamsa",
+      "term": "Ayanamsha",
+      "category": "Astrology",
+      "definition": "La differenza angolare tra i zodiaci tropicale e siderale causata dalla precessione degli equinozi. Diversi valori di ayanamsha (come Lahiri o Fagan-Bradley) producono posizionamenti siderali leggermente diversi nella carta. Il valore aumenta di circa un grado ogni 72 anni.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "base",
+      "term": "Base",
+      "category": "Variables",
+      "definition": "La sotto-frequenza fondamentale sotto il Tono nella gerarchia di Colore, Tono, Base. Ci sono cinque Basi (1-5) che differenziano ulteriormente ogni Tono.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "benefic",
+      "term": "Benefico",
+      "category": "Astrology",
+      "definition": "Una classificazione per pianeti considerati produrre risultati favorevoli o di supporto nell'astrologia tradizionale. Giove è il Grande Benefico e Venere è il Piccolo Benefico, portando generalmente espansione, armonia e facilità alle aree che influenzano.",
+      "aliases": [
+        "Pianeti Benefici"
+      ],
+      "url": ""
+    },
+    {
+      "id": "bg5",
+      "term": "BG5",
+      "category": "BG5/Penta",
+      "definition": "L'applicazione di carriera e business di Human Design. BG5 analizza come gli individui funzionano nelle dinamiche di piccoli gruppi (Penta) e nelle strutture organizzative più grandi (WA/OC16).",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "bg5-career-design",
+      "term": "BG5 Career Design",
+      "category": "BG5/Penta",
+      "definition": "L'applicazione business di Human Design focalizzata sul potenziale di carriera individuale e le dinamiche di squadra. Utilizza cinque Tipi di Carriera.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "bharani",
+      "term": "Bharani",
+      "category": "Astrology",
+      "definition": "La seconda nakshatra nell'astrologia vedica, che si estende da 13 gradi 20 minuti a 26 gradi 40 minuti dell'Ariete. La sua divinità reggente è Yama (dio della morte e del dharma), e il suo sovrano planetario è Venere. È associata alla creazione, alla moderazione e alla trasformazione.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "bhava",
+      "term": "Bhava",
+      "category": "Astrology",
+      "definition": "Il termine sanscrito per una casa astrologica nell'astrologia vedica. Ci sono 12 bhava, ognuna che governa aree specifiche della vita come ricchezza, relazioni o carriera. L'astrologia vedica utilizza più comunemente il sistema di Case Intere per il calcolo dei bhava.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "bi-quintile",
+      "term": "Bi-quintile",
+      "category": "Astrology",
+      "definition": "Un aspetto minore formato quando due pianeti sono approssimativamente a 144 gradi di distanza nello zodiaco. Come il quintile, il bi-quintile si riferisce all'espressione creativa e alle abilità speciali, indicando spesso un talento che si sviluppa attraverso lo sforzo consapevole.",
+      "aliases": [
+        "Biquintile"
+      ],
+      "url": ""
+    },
+    {
+      "id": "bird",
+      "term": "Bird",
+      "category": "Foundation",
+      "definition": "Una delle quattro categorie animali nel sistema delle Variabili. Porta una combinazione specifica di orientamenti strategici e ricettivi che influenzano il disegno cognitivo e metabolico.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "bitterness",
+      "term": "Amarezza",
+      "category": "Foundation",
+      "definition": "Il tema del Non-Sé del Tipo Proiettore. Quando inizia o cerca attenzione senza aspettare l'invito, ne risulta una profonda amarezza.",
+      "aliases": [
+        "Non-Sé del Proiettore"
+      ],
+      "url": ""
+    },
+    {
+      "id": "black-moon-lilith",
+      "term": "Lilith",
+      "category": "Astrology",
+      "definition": "Un punto matematico che rappresenta l'apogeo lunare, o il punto nell'orbita della Luna più lontano dalla Terra. Lilith simbolizza desideri repressi, potere femminile grezzo e il lato ombra della psiche.",
+      "aliases": [
+        "Lilith",
+        "Mean Lilith",
+        "True Lilith"
+      ],
+      "url": ""
+    },
+    {
+      "id": "bodygraph",
+      "term": "Bodygraph",
+      "category": "Foundation",
+      "definition": "La mappa visiva del Human Design di una persona, che mostra nove Centri collegati da Canali e Porte. Il Bodygraph combina elementi dell'I Ching, dell'Albero della Vita cabalistico, del sistema dei chakra indù-brahminico e della fisica quantistica.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "bonification",
+      "term": "Bonificazione",
+      "category": "Astrology",
+      "definition": "Un concetto ellenistico dove un pianeta benefico (Giove o Venere) migliora la condizione di un altro pianeta o casa attraverso aspetto, congiunzione o ricezione. È la controparte positiva del maltrattamento ed è usata per valutare se un pianeta riceve supporto utile. Il concetto era centrale nel framework ellenistico per valutare la condizione planetaria.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "cadent-houses",
+      "term": "Case Cadenti",
+      "category": "Astrology",
+      "definition": "La 3ª, 6ª, 9ª e 12ª casa, che precedono le case angolari. Le case cadenti sono associate all'apprendimento, all'adattamento e ai processi mentali o spirituali, e i pianeti qui sono tradizionalmente considerati meno potenti esteriormente.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "campanus",
+      "term": "Campanus",
+      "category": "Astrology",
+      "definition": "Un sistema di case attribuito al matematico del XIII secolo Campanus di Novara che divide il verticale primo in archi uguali di 30 gradi. Questi archi sono poi proiettati sull'eclittica per determinare le cuspidi delle case. Enfatizza l'ambiente spaziale locale del luogo di nascita.",
+      "aliases": [
+        "Sistema di Case Campanus"
+      ],
+      "url": ""
+    },
+    {
+      "id": "cancer",
+      "term": "Cancro",
+      "category": "Astrology",
+      "definition": "Il quarto segno dello zodiaco, che si estende da 90 a 120 gradi dell'eclittica. Il Cancro è un segno d'acqua cardinale governato dalla Luna, associato al nutrimento, alla sensibilità emotiva e alla casa.",
+      "aliases": [
+        "Il Granchio"
+      ],
+      "url": ""
+    },
+    {
+      "id": "capricorn",
+      "term": "Capricorno",
+      "category": "Astrology",
+      "definition": "Il decimo segno dello zodiaco, che si estende da 270 a 300 gradi dell'eclittica. Il Capricorno è un segno di terra cardinale governato da Saturno, associato all'ambizione, alla disciplina e alla struttura.",
+      "aliases": [
+        "La Capra di Mare",
+        "La Capra"
+      ],
+      "url": ""
+    },
+    {
+      "id": "cardinal",
+      "term": "Cardinale",
+      "category": "Astrology",
+      "definition": "Una delle tre modalità in astrologia, che comprende Ariete, Cancro, Bilancia e Capricorno. I segni cardinali iniziano l'azione e segnano l'inizio di ogni stagione, rappresentando la leadership e i nuovi inizi.",
+      "aliases": [
+        "Segni Cardinali",
+        "Modalità Cardinale"
+      ],
+      "url": ""
+    },
+    {
+      "id": "caves",
+      "term": "Caves",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Ambiente (Colore 1). Uno spazio chiuso e selettivo dove si prospera stando al riparo e scegliendo attentamente chi entra.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "cazimi",
+      "term": "Cazimi",
+      "category": "Astrology",
+      "definition": "Una condizione planetaria in cui un pianeta si trova entro 17 minuti d'arco dal centro esatto del Sole. Un pianeta cazimi è considerato nel cuore del Sole ed è tradizionalmente visto come notevolmente rafforzato, ricevendo favore regale e chiarezza eccezionale.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "center",
+      "term": "Centro",
+      "category": "Foundation",
+      "definition": "Uno dei nove centri energetici nel Bodygraph di Human Design. I Centri possono essere definiti (colorati, energia costante) o indefiniti/aperti (bianchi, assorbono e amplificano l'energia dagli altri). I nove Centri sono: Testa, Ajna, Gola, G/Sé, Cuore/Ego, Sacrale, Plesso Solare, Milza e Radice.",
+      "aliases": [
+        "Centri"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ceres",
+      "term": "Cerere",
+      "category": "Astrology",
+      "definition": "Un pianeta nano e il corpo più grande nella cintura degli asteroidi, che rappresenta il nutrimento, il sostentamento e i cicli di perdita e ritorno in astrologia. Cerere indica come una persona dà e riceve cure, così come i temi del cibo, dell'agricoltura e della maternità.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "channel",
+      "term": "Canale",
+      "category": "Foundation",
+      "definition": "Una connessione tra due Centri nel Bodygraph, creata quando entrambe le Porte su ciascuna estremità sono definite. Ci sono 36 Canali in Human Design. Un Canale definito crea Definizione e porta energia vitale e temi specifici.",
+      "aliases": [
+        "Canali"
+      ],
+      "url": ""
+    },
+    {
+      "id": "chara-karakas",
+      "term": "Chara Karaka",
+      "category": "Astrology",
+      "definition": "Un sistema di significatori planetari variabili nell'astrologia Jaimini dove a ogni pianeta viene assegnato un ruolo specifico basato sulla sua posizione in gradi nella carta. I sette o otto chara karaka includono Atmakaraka (anima), Amatyakaraka (carriera), e altri che significano figli, coniuge, genitori e fratelli. A differenza dei karaka fissi, questi cambiano da carta a carta.",
+      "aliases": [
+        "Jaimini Karaka"
+      ],
+      "url": ""
+    },
+    {
+      "id": "chart-ruler",
+      "term": "Governatore della Carta",
+      "category": "Astrology",
+      "definition": "Il pianeta che governa il segno sull'Ascendente, servendo come significatore primario per il nativo nell'astrologia tradizionale e moderna. Il segno, la casa e gli aspetti del governatore della carta forniscono informazioni chiave sulla direzione generale della vita e il temperamento di una persona.",
+      "aliases": [
+        "Governatore dell'Ascendente"
+      ],
+      "url": ""
+    },
+    {
+      "id": "chiron",
+      "term": "Chirone",
+      "category": "Astrology",
+      "definition": "Un piccolo corpo celeste in orbita tra Saturno e Urano, conosciuto come il Guaritore Ferito in astrologia. La posizione di Chirone nel tema natale indica ferite profonde e il potenziale per una guarigione profonda e l'insegnamento attraverso l'esperienza personale.",
+      "aliases": [
+        "Il Guaritore Ferito"
+      ],
+      "url": ""
+    },
+    {
+      "id": "chiron-return",
+      "term": "Ritorno di Chirone",
+      "category": "Cycles",
+      "definition": "Intorno ai 50-51 anni. Porta l'incontro con le ferite centrali e il potenziale per una guarigione profonda, saggezza e capacità di guidare gli altri.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "chitra",
+      "term": "Chitra",
+      "category": "Astrology",
+      "definition": "La quattordicesima nakshatra nell'astrologia vedica, che si estende da 23 gradi e 20 minuti della Vergine a 6 gradi e 40 minuti della Bilancia. La sua divinità governante è Vishvakarma (architetto divino), e il suo pianeta governatore è Marte. È associata con brillantezza, arte e creazione di forme belle.",
+      "aliases": [
+        "Chitta"
+      ],
+      "url": ""
+    },
+    {
+      "id": "circuit",
+      "term": "Circuito",
+      "category": "Foundation",
+      "definition": "Un raggruppamento di canali che condividono un tema comune e un flusso energetico. Tre gruppi principali: Individuale, Tribale e Collettivo, ognuno con un modo distinto di operare.",
+      "aliases": [
+        "Gruppo di Circuiti",
+        "Circuiteria"
+      ],
+      "url": ""
+    },
+    {
+      "id": "classic-builder",
+      "term": "Classic Builder",
+      "category": "BG5/Penta",
+      "definition": "Tipo di Carriera BG5 equivalente al Generatore. Potenza della forza lavoro con forza vitale sostenibile, progettato per rispondere al lavoro giusto.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "cognition",
+      "term": "Cognizione",
+      "category": "Variables",
+      "definition": "L'aspetto di consapevolezza percettiva delle Variabili in Human Design, derivato dalla Freccia in alto a destra. Indica come la Sua mente è progettata per assorbire ed elaborare informazioni dal mondo.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "collective-circuit",
+      "term": "Circuito Collettivo",
+      "category": "Foundation",
+      "definition": "Contiene i Circuiti della Comprensione (Logico) e della Percezione (Astratto). Il tema è la condivisione, progettato per beneficiare l'umanità attraverso modelli ed esperienza.",
+      "aliases": [
+        "Circuiteria Collettiva"
+      ],
+      "url": ""
+    },
+    {
+      "id": "color",
+      "term": "Colore",
+      "category": "Variables",
+      "definition": "Uno strato sotto la Linea nella sottostruttura di ogni attivazione. Ci sono sei Colori per Linea. Il Colore è la base per Determinazione, Ambiente, Cognizione e Prospettiva nel sistema delle Variabili.",
+      "aliases": [
+        "Colori"
+      ],
+      "url": ""
+    },
+    {
+      "id": "combust",
+      "term": "Combusto",
+      "category": "Astrology",
+      "definition": "Una condizione planetaria in cui un pianeta si trova entro circa 8 gradi dal Sole ma al di fuori della gamma cazimi. Un pianeta combusto è considerato indebolito o nascosto perché la luce del Sole sopraffa la sua visibilità e capacità di funzionare.",
+      "aliases": [
+        "Combustione"
+      ],
+      "url": ""
+    },
+    {
+      "id": "composite-chart",
+      "term": "Carta Composita",
+      "category": "Astrology",
+      "definition": "Una singola carta creata calcolando i punti medi tra i pianeti corrispondenti in due temi natali. La carta composita rappresenta la relazione stessa come entità propria, rivelando lo scopo, le dinamiche e il potenziale della partnership.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "composite-midpoint",
+      "term": "Punto Medio Composito",
+      "category": "Astrology",
+      "definition": "Una carta relazionale creata calcolando il punto medio tra ogni coppia di pianeti e punti corrispondenti nelle carte di due persone. La carta composita risultante rappresenta la relazione stessa come entità distinta con le proprie dinamiche. È tipicamente usata insieme alla sinastria per ottenere un quadro più completo di come funziona una partnership.",
+      "aliases": [
+        "Carta Composita"
+      ],
+      "url": ""
+    },
+    {
+      "id": "conditioning",
+      "term": "Condizionamento",
+      "category": "Foundation",
+      "definition": "Energia che entra attraverso centri indefiniti e aperti da altri, pianeti e il campo dei neutrini. Problematico quando viene identificato e usato per prendere decisioni.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "conjunction",
+      "term": "Congiunzione",
+      "category": "Astrology",
+      "definition": "Un aspetto maggiore formato quando due pianeti occupano lo stesso grado o quasi dello zodiaco, tipicamente entro un orbe da 0 a 10 gradi. Le congiunzioni rappresentano una fusione di energie planetarie, intensificando e mescolando la loro influenza combinata.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "contra-antiscia",
+      "term": "Contra-antiscia",
+      "category": "Astrology",
+      "definition": "Punti speculari attraverso l'asse Ariete-Bilancia (l'asse degli equinozi), rappresentando l'opposto delle antiscia. I pianeti in contra-antiscia formano un'opposizione nascosta e possono indicare tensioni celate o relazioni avversarie che operano sotto la superficie.",
+      "aliases": [
+        "Contra-antiscio"
+      ],
+      "url": ""
+    },
+    {
+      "id": "critical-degree",
+      "term": "Grado Critico",
+      "category": "Astrology",
+      "definition": "Gradi specifici all'interno dello zodiaco considerati portatori di energia e significato intensificati. I gradi critici più comunemente citati sono 0, 13 e 26 gradi dei segni cardinali, da 8 a 9 e da 21 a 22 gradi dei segni fissi, e 4 e 17 gradi dei segni mobili.",
+      "aliases": [
+        "Gradi Critici"
+      ],
+      "url": ""
+    },
+    {
+      "id": "dashamsa",
+      "term": "Dashamsa (D10)",
+      "category": "Astrology",
+      "definition": "Una carta divisionale nell'astrologia vedica creata dividendo ogni segno in dieci parti uguali di 3 gradi ciascuna. È utilizzata specificamente per analizzare la carriera, i successi professionali e lo status pubblico. La posizione e la forza dei pianeti nel dashamsa raffinano le indicazioni di carriera del tema natale.",
+      "aliases": [
+        "Dasamsa",
+        "Carta D10"
+      ],
+      "url": ""
+    },
+    {
+      "id": "davison-chart",
+      "term": "Carta Davison",
+      "category": "Astrology",
+      "definition": "Una carta relazionale calcolata usando il punto medio nel tempo e nello spazio tra le nascite di due persone, poi creando una carta reale per quel momento e luogo. A differenza della carta composita, la carta Davison rappresenta un momento reale nel tempo e può essere letta come un tema natale standard.",
+      "aliases": [
+        "Carta Relazionale Davison"
+      ],
+      "url": ""
+    },
+    {
+      "id": "davison-relationship-chart",
+      "term": "Carta Relazionale Davison",
+      "category": "Astrology",
+      "definition": "Una carta relazionale calcolata trovando il punto medio nel tempo e nello spazio tra i dati di nascita di due persone, producendo una singola carta per un momento reale nel tempo. A differenza della carta composita, la carta Davison corrisponde a una data, ora e luogo reali. È usata per valutare il carattere generale, lo scopo e la traiettoria di una relazione.",
+      "aliases": [
+        "Carta Davison"
+      ],
+      "url": ""
+    },
+    {
+      "id": "decan",
+      "term": "Decano",
+      "category": "Astrology",
+      "definition": "Una suddivisione di 10 gradi di ogni segno zodiacale, dividendolo in tre parti uguali. Ogni decano ha il proprio governatore planetario e aggiunge variazione sottile all'espressione di un segno, distinguendo i pianeti nei gradi iniziali, medi e tardivi dello stesso segno.",
+      "aliases": [
+        "Decanato"
+      ],
+      "url": ""
+    },
+    {
+      "id": "decennials",
+      "term": "Decennials",
+      "category": "Astrology",
+      "definition": "Una tecnica ellenistica di signoria temporale che divide la vita in periodi successivi governati da coppie di pianeti, basata sulla setta della carta e sulla posizione delle luminarie. Ogni periodo principale dura un numero specifico di anni, con sotto-periodi governati da un secondo pianeta. Il sistema fu descritto dall'astrologo del II secolo Vettio Valente.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "deconditioning",
+      "term": "Decondizionamento",
+      "category": "Foundation",
+      "definition": "Il processo di rilascio dei modelli di condizionamento dai centri aperti e indefiniti. Richiede circa sette anni, poiché ogni cellula viene sostituita. Inizia quando si vive secondo Strategia e Autorità.",
+      "aliases": [
+        "Decondizionamento di sette anni"
+      ],
+      "url": ""
+    },
+    {
+      "id": "defined-center",
+      "term": "Centro Definito",
+      "category": "Foundation",
+      "definition": "Un centro colorato con almeno un canale completo. Rappresenta energia costante e affidabile che si irradia verso l'esterno per condizionare gli altri.",
+      "aliases": [
+        "Centro fisso"
+      ],
+      "url": ""
+    },
+    {
+      "id": "definition",
+      "term": "Definizione",
+      "category": "Foundation",
+      "definition": "Come i Centri definiti in un bodygraph sono collegati tra loro. I tipi di Definizione includono Singola (tutti i Centri definiti collegati), Divisa (due gruppi separati), Tripla Divisione (tre gruppi) e Quadrupla Divisione (quattro gruppi). Nessuna definizione è un Riflettore.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "demon-realm",
+      "term": "Regno Demoniaco",
+      "category": "Foundation",
+      "definition": "Uno stato di sonno profondo in cui il Cristallo di Personalità lascia completamente il corpo, affidandolo all'intelligenza del Cristallo Design. Parte del motivo per cui dormire da soli nella propria aura è importante.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "descendant",
+      "term": "Discendente",
+      "category": "Astrology",
+      "definition": "Il segno zodiacale e il grado che sorge sull'orizzonte occidentale al momento della nascita, direttamente opposto all'Ascendente. Il Discendente definisce la cuspide della 7ª Casa e rivela qualità che una persona cerca nei partner e nelle relazioni strette.",
+      "aliases": [
+        "DSC",
+        "DC"
+      ],
+      "url": ""
+    },
+    {
+      "id": "design",
+      "term": "Design",
+      "category": "Foundation",
+      "definition": "Il lato inconscio di una carta Human Design, calcolato circa 88 giorni prima della nascita. Le attivazioni Design sono mostrate in rosso sul bodygraph. Queste rappresentano qualità che operano inconsciamente e sono spesso più visibili agli altri.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "design-crystal",
+      "term": "Cristallo Design",
+      "category": "Foundation",
+      "definition": "L'intelligenza inconscia del corpo e l'eredità bio-genetica. Calcolato da circa 88 gradi dell'arco del Sole prima della nascita. Corrisponde alle attivazioni rosse.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "desire-motivation",
+      "term": "Desiderio (Motivazione)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Motivazione (Colore 3). Guida la consapevolezza attraverso il volere e la passione, concentrandosi su obiettivi specifici.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "determination",
+      "term": "Determinazione",
+      "category": "Variables",
+      "definition": "L'aspetto del regime dietetico delle Variabili in Human Design, derivato dalla Freccia in alto a sinistra. Indica come Lei è progettato per assumere al meglio cibo e nutrimento per una salute e un benessere ottimali.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "detriment",
+      "term": "Esilio",
+      "category": "Astrology",
+      "definition": "Il segno opposto al domicilio di un pianeta, dove il pianeta è considerato indebolito e a disagio. Un pianeta in esilio deve lavorare di più per esprimere la sua natura, come Marte in Bilancia o Venere in Scorpione.",
+      "aliases": [
+        "Detrimento"
+      ],
+      "url": ""
+    },
+    {
+      "id": "dhana-yoga",
+      "term": "Dhana Yoga",
+      "category": "Astrology",
+      "definition": "Una combinazione produttrice di ricchezza nell'astrologia vedica formata quando i signori di case specifiche (specialmente 2ª, 5ª, 9ª e 11ª) si combinano per congiunzione, aspetto o scambio. Il numero e la forza dei dhana yoga in una carta indicano il potenziale del nativo per la prosperità finanziaria. Dhana yoga multipli amplificano l'effetto.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "dhanishta",
+      "term": "Dhanishta",
+      "category": "Astrology",
+      "definition": "La ventitreesima nakshatra nell'astrologia vedica, che si estende da 23 gradi e 20 minuti del Capricorno a 6 gradi e 40 minuti dell'Acquario. La sua divinità governante è i Vasu (otto dèi elementali) e il suo pianeta governante è Marte. È associata a ricchezza, ritmo, musica e abbondanza.",
+      "aliases": [
+        "Dhanishtha",
+        "Avittam"
+      ],
+      "url": ""
+    },
+    {
+      "id": "digestion",
+      "term": "Digestione",
+      "category": "Variables",
+      "definition": "Come il corpo è progettato per assumere e processare il cibo. Determinata dal Colore e Tono del Sole/Terra Design, un componente chiave del PHS.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "direct-motion",
+      "term": "Moto Diretto",
+      "category": "Astrology",
+      "definition": "Il normale movimento in avanti di un pianeta attraverso i segni zodiacali nel loro ordine naturale. Un pianeta in moto diretto è considerato funzionare normalmente ed esprimere le sue energie in modo diretto e verso l'esterno.",
+      "aliases": [
+        "Diretto"
+      ],
+      "url": ""
+    },
+    {
+      "id": "disappointment",
+      "term": "Delusione",
+      "category": "Foundation",
+      "definition": "Il tema Non-Sé del Tipo Riflettore. Quando si prendono decisioni troppo velocemente senza aspettare un ciclo lunare completo, ne risulta delusione.",
+      "aliases": [
+        "Non-Sé del Riflettore"
+      ],
+      "url": ""
+    },
+    {
+      "id": "dispositor",
+      "term": "Dispositore",
+      "category": "Astrology",
+      "definition": "Il pianeta che governa il segno occupato da un altro pianeta, avendo così autorità su quel pianeta. Ad esempio, se Venere è in Capricorno, Saturno è il dispositore di Venere perché Saturno governa il Capricorno.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "diurnal-chart",
+      "term": "Carta Diurna",
+      "category": "Astrology",
+      "definition": "Una carta natale in cui il Sole è sopra l'orizzonte, indicando una nascita diurna. In una carta diurna, il Sole, Giove e Saturno appartengono alla setta diurna e tendono ad esprimere le loro energie più favorevolmente.",
+      "aliases": [
+        "Carta del giorno"
+      ],
+      "url": ""
+    },
+    {
+      "id": "divisional-charts",
+      "term": "Carte Divisionali/Varga",
+      "category": "Astrology",
+      "definition": "Un sistema di sotto-carte nell'astrologia vedica creato dividendo ogni segno zodiacale in segmenti più piccoli, con ogni divisione mappata su una nuova carta. Ci sono 16 carte divisionali primarie (Shodashavarga), ognuna rivela aree specifiche della vita come matrimonio (D9), carriera (D10) o genitori (D12). Forniscono un'analisi stratificata e dettagliata che integra la carta natale.",
+      "aliases": [
+        "Varga",
+        "Carte Varga",
+        "Carte Amsa"
+      ],
+      "url": ""
+    },
+    {
+      "id": "domicile",
+      "term": "Domicilio",
+      "category": "Astrology",
+      "definition": "Il segno che un pianeta governa e dove è considerato più a casa e potente. Un pianeta nel suo domicilio può esprimere la sua natura liberamente ed efficacemente, come Marte in Ariete o Venere in Toro.",
+      "aliases": [
+        "Reggenza"
+      ],
+      "url": ""
+    },
+    {
+      "id": "draconic-chart",
+      "term": "Carta Draconica",
+      "category": "Astrology",
+      "definition": "Una carta astrologica creata ruotando l'intera carta natale in modo che il nodo lunare nord diventi 0 gradi Ariete. Tutti gli altri pianeti e punti si spostano della stessa quantità, rivelando quello che è considerato il progetto dell'anima o l'intento pre-incarnazione. È usata per esplorare modelli karmici ed è spesso confrontata con la carta natale per una comprensione più profonda.",
+      "aliases": [
+        "Carta Natale Draconica"
+      ],
+      "url": ""
+    },
+    {
+      "id": "draconic-zodiac",
+      "term": "Zodiaco Draconico",
+      "category": "Astrology",
+      "definition": "Un sistema zodiacale ancorato al nodo lunare nord piuttosto che all'equinozio di primavera o alle stelle fisse. Il nodo nord definisce 0 gradi Ariete, e tutte le posizioni planetarie sono ricalcolate relativamente a questo punto. È interpretato come rappresentante il livello dell'anima della carta, distinto dai posizionamenti tropicali o siderali a livello di personalità.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "drekkana",
+      "term": "Drekkana (D3)",
+      "category": "Astrology",
+      "definition": "Una carta divisionale nell'astrologia vedica creata dividendo ogni segno in tre parti uguali di 10 gradi ciascuna. È usata principalmente per esaminare fratelli, coraggio e capacità comunicative. La drekkana ha anche applicazioni nella valutazione della natura delle malattie nell'astrologia medica.",
+      "aliases": [
+        "Dreshkana",
+        "Carta D3"
+      ],
+      "url": ""
+    },
+    {
+      "id": "dusthana-houses",
+      "term": "Case Dusthana",
+      "category": "Astrology",
+      "definition": "La 6ª, 8ª e 12ª casa nell'astrologia vedica, tradizionalmente considerate posizionamenti sfidanti o infausti. Si riferiscono a nemici e malattie (6ª), sconvolgimento improvviso e trasformazione (8ª), e perdita e liberazione (12ª). I pianeti posizionati nelle case dusthana affrontano ostacoli ma possono anche produrre crescita spirituale e forza nascosta.",
+      "aliases": [
+        "Bhava Dusthana",
+        "Case Trik"
+      ],
+      "url": ""
+    },
+    {
+      "id": "earth-element",
+      "term": "Elemento Terra",
+      "category": "Astrology",
+      "definition": "Uno dei quattro elementi classici in astrologia, che comprende Toro, Vergine e Capricorno. I segni di Terra sono associati con praticità, preoccupazioni materiali, stabilità ed energia fondata.",
+      "aliases": [
+        "Segni di Terra"
+      ],
+      "url": ""
+    },
+    {
+      "id": "earth-plane",
+      "term": "Piano Terrestre",
+      "category": "Foundation",
+      "definition": "Un concetto legato agli stati del sonno in cui il corpo elabora il condizionamento quotidiano. Rappresenta il regno radicato e fisico dell'esperienza nel ciclo del sonno.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "eclipse-season",
+      "term": "Stagione delle eclissi",
+      "category": "Astrology",
+      "definition": "Un periodo di circa 34-38 giorni che si verifica due volte l'anno quando il Sole è abbastanza vicino ai nodi lunari perché si possano verificare eclissi. Le stagioni delle eclissi sono considerate momenti di cambiamento accelerato, sviluppi fatali e sensibilità elevata ai temi dell'asse nodale.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "ego-manifested-authority",
+      "term": "Autorità Manifestata del Cuore",
+      "category": "Foundation",
+      "definition": "Si trova esclusivamente nei Manifestatori con il Centro del Cuore collegato direttamente alla Gola. Le decisioni vengono prese attraverso la forza di volontà espressa direttamente attraverso la parola.",
+      "aliases": [
+        "Autorità Manifestata del Cuore"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ego-projected-authority",
+      "term": "Autorità Proiettata del Cuore",
+      "category": "Foundation",
+      "definition": "Un'autorità rara che si trova solo nei Proiettori con il Centro del Cuore collegato al Centro G. Le decisioni corrette arrivano dall'ascolto di ciò che dicono sui loro desideri quando sono invitati.",
+      "aliases": [
+        "Autorità Proiettata del Cuore"
+      ],
+      "url": ""
+    },
+    {
+      "id": "electional-astrology",
+      "term": "Astrologia elettiva",
+      "category": "Astrology",
+      "definition": "Un ramo dell'astrologia focalizzato sulla selezione del momento più favorevole per iniziare un'attività o evento importante. L'astrologia elettiva applica l'analisi del tema natale in senso inverso, scegliendo allineamenti planetari che supportino l'esito desiderato per matrimoni, lanci di attività commerciali, interventi chirurgici e altre iniziative significative.",
+      "aliases": [
+        "Elettiva"
+      ],
+      "url": ""
+    },
+    {
+      "id": "electromagnetic-connection",
+      "term": "Connessione elettromagnetica",
+      "category": "Foundation",
+      "definition": "Quando una persona ha una Porta a un'estremità di un canale e un'altra ha la Porta all'altra estremità, completando il canale. Crea un'attrazione potente ed energia condivisa.",
+      "aliases": [
+        "Connessione EM"
+      ],
+      "url": ""
+    },
+    {
+      "id": "emotional-authority",
+      "term": "Autorità Emotiva",
+      "category": "Foundation",
+      "definition": "L'autorità interiore più comune, presente in circa il 50% della popolazione. Il Plesso Solare opera come un'onda che deve essere cavalcata nel tempo. Il principio chiave è che non c'è verità nel momento presente.",
+      "aliases": [
+        "Autorità del Plesso Solare"
+      ],
+      "url": ""
+    },
+    {
+      "id": "environment",
+      "term": "Ambiente",
+      "category": "Variables",
+      "definition": "L'aspetto della consapevolezza spaziale delle Variabili nell'Human Design, derivato dalla Freccia in basso a sinistra. Indica il tipo di ambiente fisico in cui prospera e opera più correttamente.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "ephemeris",
+      "term": "Effemeridi",
+      "category": "Astrology",
+      "definition": "Una tabella o riferimento che elenca le posizioni quotidiane dei corpi celesti per un periodo di tempo. Gli astrologi utilizzano le effemeridi per cercare le posizioni planetarie per il calcolo dei temi natali, il monitoraggio dei transiti e il lavoro predittivo.",
+      "aliases": [
+        "Effemeridi"
+      ],
+      "url": ""
+    },
+    {
+      "id": "equal-house",
+      "term": "Case Uguali",
+      "category": "Astrology",
+      "definition": "Un sistema di case in cui ogni casa copre esattamente 30 gradi a partire dal grado dell'Ascendente. Il Medio Cielo fluttua liberamente e può cadere in una casa diversa dalla 10ª. È apprezzato per la sua semplicità e funziona bene a tutte le latitudini.",
+      "aliases": [
+        "Sistema delle Case Uguali"
+      ],
+      "url": ""
+    },
+    {
+      "id": "evaluator",
+      "term": "Evaluator",
+      "category": "BG5/Penta",
+      "definition": "Tipo di Carriera BG5 equivalente al Riflettore. Campiona e valuta la salute dell'ambiente di lavoro, fornendo preziosi feedback organizzativi.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "evolutionary-astrology",
+      "term": "Astrologia evolutiva",
+      "category": "Astrology",
+      "definition": "Un approccio astrologico moderno sviluppato principalmente da Jeffrey Wolf Green e Steven Forrest che interpreta il tema natale attraverso la lente dell'evoluzione dell'anima e della reincarnazione. Enfatizza i nodi lunari (specialmente la relazione di Plutone con essi) come indicatori di schemi di vite passate e intenzioni evolutive attuali. L'approccio si concentra sulla crescita, la scelta e lo sviluppo continuo dell'anima attraverso le vite.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "exaltation",
+      "term": "Esaltazione",
+      "category": "Astrology",
+      "definition": "Un segno in cui un pianeta è onorato ed elevato, funzionando con forza speciale sebbene in maniera diversa rispetto al domicilio. Ad esempio, il Sole è esaltato in Ariete e Saturno è esaltato in Bilancia.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "express-builder",
+      "term": "Express Builder",
+      "category": "BG5/Penta",
+      "definition": "Tipo di Carriera BG5 equivalente al Generatore Manifestante. Combina forza vitale sostenibile con capacità di iniziativa, veloce e multi-capace.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "face-decan",
+      "term": "Faccia/Decano",
+      "category": "Astrology",
+      "definition": "Un sistema di dignità essenziali che divide ogni segno zodiacale in tre segmenti uguali di 10 gradi, ognuno governato da un pianeta diverso. Le facce o decani rappresentano il livello più debole di dignità essenziale e aggiungono una colorazione sottile all'espressione di un pianeta all'interno di un segno.",
+      "aliases": [
+        "Faccia",
+        "Decano"
+      ],
+      "url": ""
+    },
+    {
+      "id": "fagan-bradley-ayanamsa",
+      "term": "Ayanamsha Fagan-Bradley",
+      "category": "Astrology",
+      "definition": "Un ayanamsha sviluppato dagli astrologi siderali occidentali Cyril Fagan e Donald Bradley a metà del XX secolo. Differisce dall'ayanamsha Lahiri di circa 1 grado ed è il punto di riferimento standard per l'astrologia siderale occidentale. Il suo valore si basa sul punto vernale sinetico derivato da antichi documenti egizi e babilonesi.",
+      "aliases": [
+        "Fagan-Bradley"
+      ],
+      "url": ""
+    },
+    {
+      "id": "fall",
+      "term": "Caduta",
+      "category": "Astrology",
+      "definition": "Il segno opposto all'esaltazione di un pianeta, dove il pianeta è considerato nella sua dignità essenziale più debole. Un pianeta in caduta fatica ad esprimere le sue migliori qualità, come il Sole in Bilancia o Saturno in Ariete.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "fear-motivation",
+      "term": "Paura (Motivazione)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Motivazione (Colore 1). Guida la consapevolezza attraverso vigilanza e cautela, un focus orientato alla sopravvivenza.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "feeling-cognition",
+      "term": "Sentimento (Cognizione)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Cognizione (Tono 5). Elabora le informazioni attraverso impressioni emotive e sensoriali, sensibilità all'atmosfera.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "feminine-yin-polarity",
+      "term": "Polarità Femminile/Yin",
+      "category": "Astrology",
+      "definition": "Una delle due polarità in astrologia, assegnata ai segni di terra e acqua. I segni femminili o yin (Toro, Cancro, Vergine, Scorpione, Capricorno, Pesci) sono considerati introversi, ricettivi e diretti verso l'interno.",
+      "aliases": [
+        "Segni Negativi",
+        "Segni Yin",
+        "Segni Femminili"
+      ],
+      "url": ""
+    },
+    {
+      "id": "final-dispositor",
+      "term": "Dispositore finale",
+      "category": "Astrology",
+      "definition": "Un pianeta nel proprio domicilio che si trova alla fine della catena di dispositore, il che significa che tutti gli altri pianeti risalgono ultimamente al suo dominio. Un tema natale con un dispositore finale ha un singolo pianeta che ancora e unifica l'energia dell'intero tema.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "firdaria",
+      "term": "Firdaria",
+      "category": "Astrology",
+      "definition": "Una tecnica di timing medievale che assegna periodi di dominio planetario sequenziali attraverso la vita di una persona, con sequenze diverse per temi diurni e notturni. Ogni pianeta governa un periodo di più anni e collabora con i dominatori di sotto-periodi, colorando i temi e le esperienze di quegli anni.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "fire-element",
+      "term": "Elemento Fuoco",
+      "category": "Astrology",
+      "definition": "Uno dei quattro elementi classici in astrologia, che comprende Ariete, Leone e Sagittario. I segni di fuoco sono associati con energia, entusiasmo, ispirazione e comportamento orientato all'azione.",
+      "aliases": [
+        "Segni di Fuoco"
+      ],
+      "url": ""
+    },
+    {
+      "id": "first-quarter",
+      "term": "Primo quarto",
+      "category": "Astrology",
+      "definition": "La fase lunare quando la Luna è 90 gradi avanti rispetto al Sole e appare illuminata per metà. Il primo quarto rappresenta una crisi di azione, che richiede decisioni, aggiustamenti e impegno per superare gli ostacoli iniziali del ciclo lunare.",
+      "aliases": [
+        "Luna del Primo Quarto"
+      ],
+      "url": ""
+    },
+    {
+      "id": "fish",
+      "term": "Pesce",
+      "category": "Foundation",
+      "definition": "Una delle quattro categorie animali nel sistema delle Variabili. Un pattern specifico di orientamenti strategici e ricettivi che influenza i requisiti dietetici e l'elaborazione delle informazioni.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "fixed",
+      "term": "Fisso",
+      "category": "Astrology",
+      "definition": "Una delle tre modalità in astrologia, che comprende Toro, Leone, Scorpione e Acquario. I segni fissi sostengono e stabilizzano l'energia al centro di ogni stagione, rappresentando determinazione e persistenza.",
+      "aliases": [
+        "Segni Fissi",
+        "Modalità Fissa",
+        "Fixed Signs",
+        "Fixed Modality"
+      ],
+      "url": ""
+    },
+    {
+      "id": "fixed-stars",
+      "term": "Stelle fisse",
+      "category": "Astrology",
+      "definition": "Stelle e oggetti stellari oltre il sistema solare che vengono utilizzati come punti interpretativi in astrologia, particolarmente nella pratica tradizionale e medievale. Nonostante il nome, le stelle fisse precedono lentamente attraverso lo zodiaco tropicale di circa un grado ogni 72 anni, e aggiungono potenti strati di significato quando sono congiunte a pianeti o angoli natali.",
+      "aliases": [
+        "Fixed Stars"
+      ],
+      "url": ""
+    },
+    {
+      "id": "fomalhaut",
+      "term": "Fomalhaut",
+      "category": "Astrology",
+      "definition": "Una delle quattro Stelle Reali di Persia, situata a circa 4 gradi dei Pesci nell'astrologia tropicale. Fomalhaut è associata all'idealismo, alla visione mistica, alla fama e a un grande potenziale, a condizione che il successo richieda di mantenere l'integrità ed evitare la corruzione.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "frustration",
+      "term": "Frustrazione",
+      "category": "Foundation",
+      "definition": "Il tema del Non-Sé del Tipo Generatore. Quando inizia anziché rispondere, il risultato è frustrazione dall'uso dell'energia Sacrale su cose sbagliate.",
+      "aliases": [
+        "Non-Sé del Generatore",
+        "Generator Not-Self"
+      ],
+      "url": ""
+    },
+    {
+      "id": "full-moon",
+      "term": "Luna piena",
+      "category": "Astrology",
+      "definition": "La fase lunare in cui il Sole e la Luna sono in opposizione, approssimativamente a 180 gradi di distanza, e la Luna appare completamente illuminata. La luna piena rappresenta culminazione, completamento, emozioni intensificate e la manifestazione delle intenzioni stabilite nella precedente luna nuova.",
+      "aliases": [
+        "Full Moon"
+      ],
+      "url": ""
+    },
+    {
+      "id": "g-center",
+      "term": "Centro G",
+      "category": "Foundation",
+      "definition": "Il centro dell'identità, dell'amore e della direzione. Ospita il Monopolo Magnetico, che mantiene unita la nostra illusione di separatezza e ci guida lungo la nostra geometria corretta nella vita.",
+      "aliases": [
+        "Centro del Sé",
+        "Centro dell'Identità",
+        "Self Center",
+        "Identity Center"
+      ],
+      "url": ""
+    },
+    {
+      "id": "gaja-kesari-yoga",
+      "term": "Gaja Kesari Yoga",
+      "category": "Astrology",
+      "definition": "Uno yoga benefico nell'astrologia vedica formato quando Giove si trova in un kendra (1ª, 4ª, 7ª o 10ª casa) dalla Luna. Il nome significa 'elefante-leone', significando forza e nobiltà. Conferisce saggezza, reputazione e la capacità di influenzare e guidare gli altri.",
+      "aliases": [
+        "Gajakesari Yoga"
+      ],
+      "url": ""
+    },
+    {
+      "id": "gandanta",
+      "term": "Gandanta",
+      "category": "Astrology",
+      "definition": "I punti di giunzione tra segni d'acqua e di fuoco nell'astrologia vedica (Pesci-Ariete, Cancro-Leone, Scorpione-Sagittario), considerati zone spiritualmente sensibili e karmicamente intense. I pianeti o l'Ascendente posizionati nei gradi gandanta (gli ultimi 3 gradi e 20 minuti di un segno d'acqua o i primi 3 gradi e 20 minuti di un segno di fuoco) indicano profondi nodi karmici. Questi punti sono particolarmente significativi per la posizione della Luna alla nascita.",
+      "aliases": [
+        "Gandanta Points"
+      ],
+      "url": ""
+    },
+    {
+      "id": "gate",
+      "term": "Porta",
+      "category": "Foundation",
+      "definition": "Uno dei 64 punti energetici nel bodygraph, corrispondente ai 64 esagrammi dell'I Ching. Ogni Porta porta un tema e un'energia specifica. Quando due Porte alle estremità opposte di un Canale sono entrambe definite, formano un Canale completo.",
+      "aliases": [
+        "Porte",
+        "Gates"
+      ],
+      "url": ""
+    },
+    {
+      "id": "gemini",
+      "term": "Gemelli",
+      "category": "Astrology",
+      "definition": "Il terzo segno dello zodiaco, che va da 60 a 90 gradi dell'eclittica. I Gemelli sono un segno d'aria mutevole governato da Mercurio, associato alla comunicazione, curiosità e adattabilità.",
+      "aliases": [
+        "I Gemelli",
+        "The Twins",
+        "Gemini"
+      ],
+      "url": ""
+    },
+    {
+      "id": "generator",
+      "term": "Generatore",
+      "category": "Foundation",
+      "definition": "Uno dei cinque Tipi in Human Design. I Generatori hanno un Centro Sacrale definito e sono progettati per rispondere alla vita piuttosto che iniziare. Hanno energia vitale sostenibile quando sono impegnati in lavori che amano.",
+      "aliases": [
+        "Generatori",
+        "Generators"
+      ],
+      "url": "/celebrities/type/generator/"
+    },
+    {
+      "id": "global-cycle",
+      "term": "Ciclo globale",
+      "category": "Cycles",
+      "definition": "Cicli evolutivi su larga scala che influenzano l'umanità, determinati dai pianeti esterni lenti attraverso le porte del Rave Mandala.",
+      "aliases": [
+        "Global Cycle"
+      ],
+      "url": ""
+    },
+    {
+      "id": "graha",
+      "term": "Graha",
+      "category": "Astrology",
+      "definition": "Il termine sanscrito per un pianeta o corpo celeste usato nell'astrologia vedica. Lo schema tradizionale include nove graha: Sole, Luna, Marte, Mercurio, Giove, Venere, Saturno, Rahu e Ketu. La parola graha significa letteralmente 'ciò che afferra o cattura'.",
+      "aliases": [
+        "Navagraha"
+      ],
+      "url": ""
+    },
+    {
+      "id": "grand-cross",
+      "term": "Grande Croce",
+      "category": "Astrology",
+      "definition": "Un modello di aspetti formato quando quattro pianeti creano due opposizioni che si quadrano a vicenda, formando una croce o forma quadrata nella carta. La grande croce rappresenta tensione intensa, spinta tremenda e sfide significative che richiedono uno sforzo costante per essere gestite.",
+      "aliases": [
+        "Grande Quadrato",
+        "Grand Square"
+      ],
+      "url": ""
+    },
+    {
+      "id": "grand-trine",
+      "term": "Grande Trigono",
+      "category": "Astrology",
+      "definition": "Un modello di aspetti formato quando tre pianeti sono ciascuno a circa 120 gradi di distanza, creando un triangolo equilatero nella carta. Un grande trigono indica facilità e fluidità eccezionali in un elemento, anche se può rappresentare compiacenza se non utilizzato attivamente.",
+      "aliases": [
+        "Grand Trine"
+      ],
+      "url": ""
+    },
+    {
+      "id": "guilt-motivation",
+      "term": "Senso di colpa (Motivazione)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Motivazione (Colore 5). Guida la consapevolezza attraverso il dovere e la responsabilità, sintonizzato sugli obblighi.",
+      "aliases": [
+        "Guilt (Motivation)"
+      ],
+      "url": ""
+    },
+    {
+      "id": "hanging-gate",
+      "term": "Porta sospesa",
+      "category": "Foundation",
+      "definition": "Una Porta attivata senza la sua corrispondente Porta armonica per formare un canale. Crea un'attrazione elettromagnetica verso persone che portano l'altra metà.",
+      "aliases": [
+        "Porta dormiente",
+        "Dormant Gate",
+        "Hanging Gate"
+      ],
+      "url": ""
+    },
+    {
+      "id": "hasta",
+      "term": "Hasta",
+      "category": "Astrology",
+      "definition": "La tredicesima nakshatra nell'astrologia vedica, che va da 10 gradi a 23 gradi e 20 minuti della Vergine. La sua divinità reggente è Savitar (il Sole come forza creativa), e il suo pianeta reggente è la Luna. È associata all'abilità, all'artigianato e alla capacità di manifestare obiettivi.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "hayz",
+      "term": "Hayz",
+      "category": "Astrology",
+      "definition": "Una condizione di dignità accidentale in cui un pianeta è in accordo con la setta della carta, l'emisfero corretto e un segno di genere corrispondente. Un pianeta in hayz è considerato nella sua condizione più confortevole ed efficace, completamente allineato con la sua natura.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "head-center",
+      "term": "Centro della Testa",
+      "category": "Foundation",
+      "definition": "Un centro di pressione nella parte superiore del Bodygraph che crea pressione mentale per pensare, questionare e cercare ispirazione. È il centro dell'ispirazione e dell'ansia mentale.",
+      "aliases": [
+        "Testa",
+        "Head"
+      ],
+      "url": ""
+    },
+    {
+      "id": "heart-center",
+      "term": "Centro del Cuore",
+      "category": "Foundation",
+      "definition": "Il centro motore della forza di volontà, dell'autostima e del mondo materiale, chiamato anche Centro dell'Ego. Governa la capacità di fare e mantenere promesse e competere. Solo circa il 30% della popolazione ce l'ha definito.",
+      "aliases": [
+        "Centro dell'Ego",
+        "Centro della Volontà",
+        "Ego Center",
+        "Will Center"
+      ],
+      "url": ""
+    },
+    {
+      "id": "heliacal-rising",
+      "term": "Sorgere eliaco",
+      "category": "Astrology",
+      "definition": "La prima apparizione visibile di una stella o pianeta all'orizzonte orientale poco prima dell'alba, dopo un periodo di invisibilità dovuto alla congiunzione con il Sole. Il sorgere eliaco di Sirio era di importanza critica nell'astrologia egizia antica, e le fasi eliache dei pianeti portano significato speciale nella pratica tradizionale.",
+      "aliases": [
+        "Heliacal Rising"
+      ],
+      "url": ""
+    },
+    {
+      "id": "hexagram",
+      "term": "Esagramma",
+      "category": "Foundation",
+      "definition": "Una figura a sei linee dall'I Ching che forma la base di ciascuna delle 64 Porte. Consiste di due trigrammi che creano sei linee corrispondenti alle Linee di ogni Porta.",
+      "aliases": [
+        "Hex",
+        "Hexagram"
+      ],
+      "url": ""
+    },
+    {
+      "id": "hope-motivation",
+      "term": "Speranza (Motivazione)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Motivazione (Colore 2). Guida la consapevolezza attraverso l'ottimismo e la fiducia in risultati positivi.",
+      "aliases": [
+        "Hope (Motivation)"
+      ],
+      "url": ""
+    },
+    {
+      "id": "horary-astrology",
+      "term": "Astrologia oraria",
+      "category": "Astrology",
+      "definition": "Un ramo dell'astrologia che risponde a domande specifiche erigendo una carta per il momento in cui la domanda è chiaramente compresa dall'astrologo. L'astrologia oraria usa regole tradizionali rigorose e dignità per fornire risposte concrete sì-o-no e descrizioni dettagliate dei risultati.",
+      "aliases": [
+        "Oraria",
+        "Horary"
+      ],
+      "url": ""
+    },
+    {
+      "id": "i-ching",
+      "term": "I Ching",
+      "category": "Foundation",
+      "definition": "L'antico Libro cinese dei Mutamenti che fornisce i 64 esagrammi per le 64 Porte. Ra Uru Hu lo ha sintetizzato con l'astrologia, la Kabbalah e il sistema dei Chakra.",
+      "aliases": [
+        "Libro dei Mutamenti",
+        "Yi Jing"
+      ],
+      "url": ""
+    },
+    {
+      "id": "iau-constellation-boundaries",
+      "term": "IAU Constellation Boundaries",
+      "category": "Astrology",
+      "definition": "I confini ufficiali delle 88 costellazioni come definiti dall'Unione Astronomica Internazionale nel 1930. Nell'astrologia siderale reale, questi confini determinano quando il Sole, la Luna e i pianeti transitano da una costellazione-segno all'altra. Poiché le costellazioni variano in dimensioni, alcune costellazioni zodiacali si estendono per soli 7 gradi (Scorpione) o fino a 44 gradi (Vergine).",
+      "aliases": [
+        "Confini IAU"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ic",
+      "term": "Fondo del Cielo (IC)",
+      "category": "Astrology",
+      "definition": "Il punto più basso dell'eclittica in un tema natale, che segna la cuspide della 4ª Casa e si oppone direttamente al Medio Cielo. Il Fondo del Cielo rappresenta la vita privata, le radici emotive, l'eredità familiare e le fondamenta del mondo interiore di una persona.",
+      "aliases": [
+        "Imum Coeli",
+        "Nadir"
+      ],
+      "url": ""
+    },
+    {
+      "id": "incarnation-cross",
+      "term": "Croce di Incarnazione",
+      "category": "Foundation",
+      "definition": "Il tema principale dello scopo di vita in Human Design, determinato dalle posizioni del Sole e della Terra sia nella Personalità che nel Design. Esistono 192 Croci di Incarnazione di base, ognuna con un tema di vita unico.",
+      "aliases": [
+        "Croci di Incarnazione",
+        "Croce"
+      ],
+      "url": ""
+    },
+    {
+      "id": "individual-circuit",
+      "term": "Circuito Individuale",
+      "category": "Foundation",
+      "definition": "Contiene i Circuiti del Sapere e del Centraggio. Il tema è l'empowerment e la mutazione. Opera in impulsi di malinconia e ispirazione.",
+      "aliases": [
+        "Circuiteria Individuale"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ingress",
+      "term": "Ingresso",
+      "category": "Astrology",
+      "definition": "Il momento in cui un pianeta entra in un nuovo segno zodiacale, segnando un cambiamento nel modo in cui l'energia di quel pianeta si esprime. Gli ingressi sono significativi nell'astrologia mondiale, dove l'entrata del Sole nei segni cardinali (gli equinozi e i solstizi) viene utilizzata per prevedere i temi stagionali e nazionali.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "inner-vision",
+      "term": "Visione Interiore",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Cognizione (Tono 4). Elabora le informazioni attraverso immagini interne, visualizzazione e sogni.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "innocence-motivation",
+      "term": "Innocenza (Motivazione)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Motivazione (Colore 6). Guida la consapevolezza attraverso una percezione pura e senza filtri, senza agenda.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "integration-channels",
+      "term": "Canali di Integrazione",
+      "category": "Foundation",
+      "definition": "Quattro canali speciali che non appartengono ad alcun gruppo di circuiti. Auto-orientati, focalizzati sulla sopravvivenza: 20-57, 20-34, 10-57 e 34-57.",
+      "aliases": [
+        "Circuito di Integrazione"
+      ],
+      "url": ""
+    },
+    {
+      "id": "interception",
+      "term": "Intercettazione",
+      "category": "Astrology",
+      "definition": "Una condizione in certi sistemi di case in cui un intero segno zodiacale è contenuto all'interno di una casa senza apparire su nessuna delle due cuspidi. I segni intercettati e i loro governatori sono considerati bloccati o nascosti, richiedendo uno sforzo extra per accedere consciamente alle loro energie.",
+      "aliases": [
+        "Segno Intercettato"
+      ],
+      "url": ""
+    },
+    {
+      "id": "investigator-bg5",
+      "term": "Investigatore (BG5)",
+      "category": "BG5/Penta",
+      "definition": "Tipo di Carriera BG5 equivalente del Manifestatore. Iniziatore progettato per informare gli altri, eccelle in ruoli che richiedono visione indipendente.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "j2000-epoch",
+      "term": "Epoca J2000",
+      "category": "Astrology",
+      "definition": "Un punto di riferimento astronomico standard definito come 1° gennaio 2000 alle 12:00 Tempo Terrestre. Fornisce un sistema di coordinate fisso per misurare le posizioni celesti senza deriva precessionale continua. Nell'astrologia basata su J2000, le posizioni planetarie sono calcolate relative a questo quadro di riferimento fisso.",
+      "aliases": [
+        "J2000.0",
+        "Epoca J2000"
+      ],
+      "url": ""
+    },
+    {
+      "id": "j2000-zodiac",
+      "term": "Zodiaco J2000",
+      "category": "Astrology",
+      "definition": "Un sistema zodiacale che fissa i confini dei segni alle loro posizioni al momento dell'epoca J2000 (1° gennaio 2000). A differenza dello zodiaco tropicale, non si sposta con le stagioni, e a differenza dello zodiaco siderale tradizionale, non si basa su una stella specifica come punto di ancoraggio. Fornisce un quadro di coordinate stabile e astronomicamente definito per il calcolo delle carte.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "juno",
+      "term": "Giunone",
+      "category": "Astrology",
+      "definition": "Un asteroide che rappresenta le partnership impegnate, il matrimonio e l'equilibrio di potere nelle relazioni. Giunone indica ciò di cui una persona ha bisogno in un partner a lungo termine e come naviga i temi di lealtà, uguaglianza e compromesso.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "jupiter",
+      "term": "Giove",
+      "category": "Astrology",
+      "definition": "Il pianeta dell'espansione, della crescita, dell'abbondanza e della saggezza in astrologia. Giove governa il Sagittario e tradizionalmente co-governa i Pesci, rappresentando ottimismo, apprendimento superiore e buona fortuna.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "jupiter-return",
+      "term": "Ritorno di Giove",
+      "category": "Cycles",
+      "definition": "Approssimativamente ogni 12 anni. Ogni ritorno porta espansione, opportunità e un nuovo capitolo di crescita alle età di 12, 24, 36, 48, 60 anni.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "jyeshtha",
+      "term": "Jyeshtha",
+      "category": "Astrology",
+      "definition": "La diciottesima nakshatra nell'astrologia vedica, che si estende da 16 gradi e 40 minuti a 30 gradi dello Scorpione. La sua divinità governante è Indra (re degli dei), e il suo governatore planetario è Mercurio. È associata con l'anzianità, il potere protettivo e le responsabilità che derivano dall'autorità.",
+      "aliases": [
+        "Jyeshta",
+        "Kettai"
+      ],
+      "url": ""
+    },
+    {
+      "id": "jyotish",
+      "term": "Jyotish",
+      "category": "Astrology",
+      "definition": "Il sistema tradizionale indù di astrologia, conosciuto anche come astrologia vedica, radicato nelle antiche scritture indiane. Utilizza lo zodiaco siderale e incorpora tecniche uniche come le nakshatra, le dasha e le carte divisionali. Jyotish si traduce come 'scienza della luce' in sanscrito.",
+      "aliases": [
+        "Astrologia Vedica",
+        "Astrologia Indù",
+        "Astrologia Indiana"
+      ],
+      "url": ""
+    },
+    {
+      "id": "kaal-sarpa-dosha",
+      "term": "Kaal Sarpa Dosha",
+      "category": "Astrology",
+      "definition": "Una condizione nell'astrologia vedica in cui tutti e sette i pianeti visibili sono racchiusi tra Rahu e Ketu nel tema natale. Si crede che crei ostacoli ricorrenti, intensità karmica e improvvisi rovesci nella vita del nativo. La gravità varia a seconda di quali case occupano Rahu e Ketu.",
+      "aliases": [
+        "Kala Sarpa Dosha",
+        "Kala Sarpa Yoga"
+      ],
+      "url": ""
+    },
+    {
+      "id": "karana",
+      "term": "Karana",
+      "category": "Astrology",
+      "definition": "Metà di una tithi nel calendario vedico, rappresenta il tempo che impiega la Luna per guadagnare 6 gradi dal Sole. Ci sono 11 karana, con quattro fisse e sette che ruotano durante il mese lunare. Le karana sono uno dei cinque elementi del panchang e influenzano la qualità del tempo per iniziare attività.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "kendra-houses",
+      "term": "Case Kendra",
+      "category": "Astrology",
+      "definition": "La 1ª, 4ª, 7ª e 10ª casa nell'astrologia vedica, corrispondenti ai quattro angoli della carta. Sono i pilastri dell'oroscopo e rappresentano le aree più visibili e orientate all'azione della vita. Pianeti forti nelle case kendra danno al nativo potere, stabilità e la capacità di manifestare risultati.",
+      "aliases": [
+        "Case Angolari (Vediche)",
+        "Kendra Bhavas"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ketu",
+      "term": "Ketu",
+      "category": "Astrology",
+      "definition": "Il nodo lunare sud nell'astrologia vedica, considerato un pianeta ombra che rappresenta la liberazione spirituale, il distacco, la maestria delle vite passate e la dissoluzione degli attaccamenti materiali. La posizione di casa e segno di Ketu indica aree di abilità innata ma anche perdita, apatia o rinuncia. È sempre esattamente opposto a Rahu nella carta.",
+      "aliases": [
+        "Nodo Sud (Vedico)"
+      ],
+      "url": ""
+    },
+    {
+      "id": "kitchens",
+      "term": "Cucine",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Ambiente (Colore 3). Uno spazio di ritrovo caldo e comunitario centrato sul nutrimento e la trasformazione.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "kite",
+      "term": "Aquilone",
+      "category": "Astrology",
+      "definition": "Una configurazione di aspetti formata quando un grande trigono ha un pianeta che si oppone anche a un quarto pianeta, che forma sestili con gli altri due pianeti del trigono. L'aquilone aggiunge focus e direzione alla facilità di un grande trigono, incanalando il talento verso il raggiungimento produttivo attraverso l'opposizione.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "koch",
+      "term": "Koch",
+      "category": "Astrology",
+      "definition": "Un sistema di case sviluppato da Walter Koch che divide le case basandosi sul tempo che impiega il grado dell'Ascendente per raggiungere ogni cuspide di casa. È simile al Placidus ma utilizza un metodo diverso di divisione basata sul tempo. Come il Placidus, diventa problematico a latitudini molto elevate.",
+      "aliases": [
+        "Sistema di Case Koch",
+        "GOH"
+      ],
+      "url": ""
+    },
+    {
+      "id": "krishnamurti-ayanamsa",
+      "term": "Krishnamurti Ayanamsa",
+      "category": "Astrologia",
+      "definition": "Un ayanamsha sviluppato da K.S. Krishnamurti come parte del suo sistema Krishnamurti Paddhati (KP) di astrologia vedica. È molto simile all'ayanamsha Lahiri ma differisce di alcuni minuti d'arco. Il sistema KP utilizza questo ayanamsha insieme a un sistema unico di sotto-signori basato sulle suddivisioni delle nakshatra per previsioni precise.",
+      "aliases": [
+        "KP Ayanamsa"
+      ],
+      "url": ""
+    },
+    {
+      "id": "krittika",
+      "term": "Krittika",
+      "category": "Astrologia",
+      "definition": "La terza nakshatra nell'astrologia vedica, che si estende da 26 gradi e 40 minuti dell'Ariete a 10 gradi del Toro. La sua divinità reggente è Agni (dio del fuoco), e il suo pianeta governatore è il Sole. È associata alla purificazione, alla precisione e al taglio attraverso l'illusione.",
+      "aliases": [
+        "Karthika",
+        "Krttika"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lagna",
+      "term": "Lagna",
+      "category": "Astrologia",
+      "definition": "Il termine sanscrito per l'Ascendente o segno ascendente nell'astrologia vedica, che rappresenta il grado dello zodiaco che sorge all'orizzonte orientale al momento della nascita. È il punto più importante nel tema vedico, che determina la disposizione di tutte le case. Il lagna rappresenta il corpo fisico del nativo, la personalità e la direzione generale della vita.",
+      "aliases": [
+        "Ascendente Vedico"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lahiri-ayanamsa",
+      "term": "Lahiri Ayanamsa",
+      "category": "Astrologia",
+      "definition": "L'ayanamsha più comunemente utilizzato nell'astrologia vedica, ufficialmente adottato dal governo indiano nel 1956 basato sul lavoro dell'astronomo N.C. Lahiri. Posiziona il punto di partenza dello zodiaco siderale basato sulla stella Spica (Chitra) esattamente a 0 gradi della Bilancia. A partire dal 2024, l'ayanamsha Lahiri è di circa 24 gradi e 12 minuti.",
+      "aliases": [
+        "Chitrapaksha Ayanamsa"
+      ],
+      "url": ""
+    },
+    {
+      "id": "last-quarter",
+      "term": "Ultimo Quarto",
+      "category": "Astrologia",
+      "definition": "La fase lunare in cui la Luna è 90 gradi dietro il Sole e appare per metà illuminata sul lato sinistro. L'ultimo quarto rappresenta una crisi di coscienza, che invita alla riflessione, alla rivalutazione e al rilascio di ciò che non serve più.",
+      "aliases": [
+        "Luna all'Ultimo Quarto",
+        "Terzo Quarto"
+      ],
+      "url": ""
+    },
+    {
+      "id": "left-arrow",
+      "term": "Freccia Sinistra",
+      "category": "Variabili",
+      "definition": "Nella notazione delle Variabili, una freccia che punta a sinistra indica una qualità strategica, focalizzata e attiva. Rappresenta un modello consistente e affidabile che opera attraverso la concentrazione.",
+      "aliases": [
+        "Freccia Strategica"
+      ],
+      "url": ""
+    },
+    {
+      "id": "leo",
+      "term": "Leone",
+      "category": "Astrologia",
+      "definition": "Il quinto segno dello zodiaco, che si estende da 120 a 150 gradi dell'eclittica. Il Leone è un segno di fuoco fisso governato dal Sole, associato alla creatività, all'espressione di sé e alla leadership.",
+      "aliases": [
+        "Il Leone"
+      ],
+      "url": ""
+    },
+    {
+      "id": "libra",
+      "term": "Bilancia",
+      "category": "Astrologia",
+      "definition": "Il settimo segno dello zodiaco, che si estende da 180 a 210 gradi dell'eclittica. La Bilancia è un segno d'aria cardinale governato da Venere, associato alle relazioni, all'equilibrio e alla giustizia.",
+      "aliases": [
+        "Le Bilance"
+      ],
+      "url": ""
+    },
+    {
+      "id": "light-determination",
+      "term": "Luce (Determinazione)",
+      "category": "Variabili",
+      "definition": "Uno dei sei tipi di Determinazione (Colore 6). Le condizioni di illuminazione durante i pasti influenzano il modo in cui il corpo digerisce correttamente.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "light-field",
+      "term": "Campo di Luce",
+      "category": "Fondamenti",
+      "definition": "Uno degli stati di sogno nella comprensione del sonno di Human Design. Associato alla prima fase del sonno in cui la coscienza inizia a ritirarsi dallo stato di veglia.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "line",
+      "term": "Linea",
+      "category": "Fondamenti",
+      "definition": "Una delle sei posizioni all'interno di ogni Porta, corrispondente alle sei linee di un esagramma I Ching. Ogni Linea porta un tema distinto: 1-Investigatore, 2-Eremita, 3-Martire, 4-Opportunista, 5-Eretico, 6-Modello di Ruolo.",
+      "aliases": [
+        "Linee"
+      ],
+      "url": ""
+    },
+    {
+      "id": "line-1-investigator",
+      "term": "Linea 1 Investigatore",
+      "category": "Fondamenti",
+      "definition": "Il fondamento dell'esagramma. Un bisogno intrinseco di ricercare e costruire una base sicura di conoscenza prima di sentirsi a proprio agio. La sicurezza deriva dalla comprensione approfondita.",
+      "aliases": [
+        "Linea 1",
+        "Investigatore"
+      ],
+      "url": ""
+    },
+    {
+      "id": "line-2-hermit",
+      "term": "Linea 2 Eremita",
+      "category": "Fondamenti",
+      "definition": "Rappresenta il talento naturale e il bisogno di ritiro. Ha doni che potrebbe non riconoscere e richiede tempo da solo per sviluppare le abilità. Deve essere chiamato fuori dagli altri.",
+      "aliases": [
+        "Linea 2",
+        "Eremita"
+      ],
+      "url": ""
+    },
+    {
+      "id": "line-3-martyr",
+      "term": "Linea 3 Martire",
+      "category": "Fondamenti",
+      "definition": "Il processo di prova ed errore. Impara attraverso l'esperienza diretta, scoprendo cosa funziona e cosa no scontrandosi con la vita. Resilienza dalla saggezza pratica.",
+      "aliases": [
+        "Linea 3",
+        "Martire"
+      ],
+      "url": ""
+    },
+    {
+      "id": "line-4-opportunist",
+      "term": "Linea 4 Opportunista",
+      "category": "Fondamenti",
+      "definition": "Il fondamento del trigramma superiore e il potere delle relazioni. Trova opportunità attraverso la rete personale piuttosto che con estranei.",
+      "aliases": [
+        "Linea 4",
+        "Opportunista"
+      ],
+      "url": ""
+    },
+    {
+      "id": "line-5-heretic",
+      "term": "Linea 5 Eretico",
+      "category": "Fondamenti",
+      "definition": "Rappresenta l'universalizzazione e il campo di proiezione. Gli altri proiettano aspettative e qualità di salvatore. Visto come un risolutore pratico di problemi che può fornire soluzioni universali.",
+      "aliases": [
+        "Linea 5",
+        "Eretico"
+      ],
+      "url": ""
+    },
+    {
+      "id": "line-6-role-model",
+      "term": "Linea 6 Modello di Ruolo",
+      "category": "Fondamenti",
+      "definition": "Un processo di vita unico in tre fasi: prova ed errore fino ai 30 anni circa, osservazione dal tetto fino ai 50 anni circa, poi scendere come esempio vivente di autenticità.",
+      "aliases": [
+        "Linea 6",
+        "Modello di Ruolo"
+      ],
+      "url": ""
+    },
+    {
+      "id": "luminaries",
+      "term": "Luminari",
+      "category": "Astrologia",
+      "definition": "Il Sole e la Luna, i due corpi celesti più luminosi visti dalla Terra. In astrologia, i luminari sono considerati i fattori del tema più importanti, rappresentando il sé centrale (Sole) e la natura emotiva (Luna).",
+      "aliases": [
+        "Luci"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lunar-authority",
+      "term": "Autorità Lunare",
+      "category": "Fondamenti",
+      "definition": "Unica dei Riflettori, che non hanno centri definiti. Sono progettati per aspettare attraverso un ciclo lunare completo, circa 28,5 giorni, prima di prendere decisioni importanti.",
+      "aliases": [
+        "Autorità della Luna"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lunar-eclipse",
+      "term": "Eclissi Lunare",
+      "category": "Astrologia",
+      "definition": "Una luna piena che si verifica vicino a uno dei nodi lunari, dove la Terra passa tra il Sole e la Luna, proiettando la sua ombra sulla Luna. Le eclissi lunari sono associate a rivelazioni emotive, conclusioni, rilascio e culminazione di temi che si sono sviluppati nel corso dei mesi.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "lunar-return",
+      "term": "Rivoluzione Lunare",
+      "category": "Astrologia",
+      "definition": "Un tema eretto per il momento ogni mese in cui la Luna in transito ritorna alla sua posizione natale. Il tema della rivoluzione lunare prevede temi emotivi ed eventi per il ciclo lunare di circa 27,3 giorni a venire.",
+      "aliases": [
+        "Tema di Rivoluzione Lunare"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lunar-return-cycle",
+      "term": "Rivoluzione Lunare",
+      "category": "Cicli",
+      "definition": "Ciclo mensile ogni 27,3 giorni quando la Luna ritorna alla sua posizione natale. Istantanea dei temi emotivi per il mese a venire.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "magha",
+      "term": "Magha",
+      "category": "Astrologia",
+      "definition": "La decima nakshatra nell'astrologia vedica, che si estende da 0 a 13 gradi e 20 minuti del Leone. La sua divinità reggente sono i Pitris (spiriti ancestrali), e il suo pianeta governatore è Ketu. È associata alla regalità, all'autorità e al rispetto del proprio lignaggio.",
+      "aliases": [
+        "Makha"
+      ],
+      "url": ""
+    },
+    {
+      "id": "magnetic-monopole",
+      "term": "Monopolo Magnetico",
+      "category": "Fondamenti",
+      "definition": "Una particella unica nel Centro G che tiene insieme i Cristalli di Personalità e Design. Funziona come un motore che trascina l'individuo lungo la sua geometria corretta. Attrae soltanto, non respinge mai.",
+      "aliases": [
+        "Monopolo",
+        "Motore"
+      ],
+      "url": ""
+    },
+    {
+      "id": "mahadasha",
+      "term": "Mahadasha",
+      "category": "Astrologia",
+      "definition": "Il periodo planetario maggiore nel sistema Vimshottari Dasha, durante il quale un graha domina l'esperienza del nativo. Ogni mahadasha dura un numero specifico di anni (che varia dai 6 anni per il Sole ai 20 anni per Venere). Stabilisce il tema generale per quel capitolo della vita.",
+      "aliases": [
+        "Maha Dasha"
+      ],
+      "url": ""
+    },
+    {
+      "id": "malefic",
+      "term": "Malefic",
+      "category": "Astrology",
+      "definition": "Una classificazione per i pianeti considerati produttori di risultati impegnativi o difficili nell'astrologia tradizionale. Saturno è il Malefico Maggiore e Marte è il Malefico Minore, generalmente portando restrizione, conflitto o difficoltà alle aree che influenzano.",
+      "aliases": [
+        "Pianeti Malefici"
+      ],
+      "url": ""
+    },
+    {
+      "id": "maltreatment",
+      "term": "Maltreatment",
+      "category": "Astrology",
+      "definition": "Un concetto ellenistico in cui un pianeta malefico (Marte o Saturno) danneggia la condizione di un altro pianeta o casa attraverso aspetto duro, congiunzione o configurazione avversa. Le forme specifiche includono essere sopraffatto, recintato e colpito da un raggio. È la controparte negativa della bonificazione nel sistema ellenistico della condizione planetaria.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "mammal",
+      "term": "Mammal",
+      "category": "Foundation",
+      "definition": "Una delle quattro categorie animali nel sistema delle Variabili, determinata dai quattro orientamenti delle frecce. Ogni combinazione influenza l'architettura cognitiva e i bisogni alimentari.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "mandala",
+      "term": "Mandala",
+      "category": "Foundation",
+      "definition": "Il grafico circolare che mostra le 64 Porte disposte attorno al zodiaco. Il Mandala visualizza le posizioni planetarie nel contesto degli esagrammi dell'I Ching e la loro relazione al bodygraph.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "manglik-dosha",
+      "term": "Manglik Dosha",
+      "category": "Astrology",
+      "definition": "Una condizione nell'astrologia vedica causata da Marte che occupa la 1a, 2a, 4a, 7a, 8a o 12a casa dall'Ascendente, Luna o Venere. Si crede tradizionalmente che crei sfide nel matrimonio e nelle partnership. Varie condizioni di cancellazione possono mitigare i suoi effetti.",
+      "aliases": [
+        "Mangal Dosha",
+        "Kuja Dosha"
+      ],
+      "url": ""
+    },
+    {
+      "id": "manifesting-generator",
+      "term": "Generatore Manifestante",
+      "category": "Foundation",
+      "definition": "Uno dei cinque Tipi in Human Design. I Generatori Manifestanti hanno un Centro Sacrale definito e un motore connesso alla Gola. Sono progettati per rispondere e poi informare prima di agire, con la capacità di muoversi rapidamente tra i compiti.",
+      "aliases": [
+        "Generatori Manifestanti",
+        "MG"
+      ],
+      "url": "/celebrities/type/manifesting-generator/"
+    },
+    {
+      "id": "manifestor",
+      "term": "Manifestatore",
+      "category": "Foundation",
+      "definition": "Uno dei cinque Tipi in Human Design. I Manifestatori hanno un centro motore connesso alla Gola ma nessun Sacrale definito. Sono progettati per iniziare e informare gli altri prima di agire.",
+      "aliases": [
+        "Manifestatori"
+      ],
+      "url": "/celebrities/type/manifestor/"
+    },
+    {
+      "id": "markets",
+      "term": "Markets",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Ambiente (Colore 2). Uno spazio commerciale e vivace. Coloro che hanno questo Ambiente prosperano in aree affollate e popolate.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "mars",
+      "term": "Marte",
+      "category": "Astrology",
+      "definition": "Il pianeta dell'azione, del desiderio, dell'aggressività e dell'energia fisica in astrologia. Marte governa l'Ariete e tradizionalmente co-governa lo Scorpione, rappresentando la spinta, l'ambizione e come una persona si afferma.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "masculine-yang-polarity",
+      "term": "Polarità Maschile/Yang",
+      "category": "Astrology",
+      "definition": "Una delle due polarità in astrologia, assegnata ai segni di fuoco e aria. I segni maschili o yang (Ariete, Gemelli, Leone, Bilancia, Sagittario, Acquario) sono considerati estroversi, attivi e diretti verso l'esterno.",
+      "aliases": [
+        "Segni Positivi",
+        "Segni Yang",
+        "Segni Maschili"
+      ],
+      "url": ""
+    },
+    {
+      "id": "mental-authority",
+      "term": "Autorità Mentale",
+      "category": "Foundation",
+      "definition": "Si trova nei Proiettori senza centri definiti sotto la Gola eccetto possibilmente la Radice. Questi individui devono discutere le decisioni con altri di fiducia e prestare attenzione all'ambiente.",
+      "aliases": [
+        "Autorità Ambientale",
+        "Autorità di Confronto",
+        "Autorità Esterna"
+      ],
+      "url": ""
+    },
+    {
+      "id": "mercury",
+      "term": "Mercurio",
+      "category": "Astrology",
+      "definition": "Il pianeta della comunicazione, del pensiero e dei viaggi a breve distanza in astrologia. Mercurio governa i Gemelli e la Vergine e regola come una persona elabora le informazioni, impara ed esprime le idee.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "midheaven",
+      "term": "Medio Cielo",
+      "category": "Astrology",
+      "definition": "Il punto più alto dell'eclittica in un tema natale, che segna la cuspide della 10a Casa. Il Medio Cielo rappresenta l'immagine pubblica, la direzione della carriera, la reputazione e le aspirazioni più elevate nella vita.",
+      "aliases": [
+        "MC",
+        "Medium Coeli"
+      ],
+      "url": ""
+    },
+    {
+      "id": "moon",
+      "term": "Luna",
+      "category": "Astrology",
+      "definition": "Uno dei due luminari in astrologia, che rappresenta le emozioni, gli istinti, le abitudini e il sé interiore. La Luna cambia segno circa ogni due giorni e mezzo, rendendola il corpo più veloce utilizzato nell'interpretazione del tema.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "mountains",
+      "term": "Mountains",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Ambiente (Colore 4). Uno spazio elevato con vista ampia. Coloro che hanno questo Ambiente prosperano in luoghi alti.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "mrigashira",
+      "term": "Mrigashira",
+      "category": "Astrology",
+      "definition": "La quinta nakshatra nell'astrologia vedica, che si estende da 23 gradi e 20 minuti del Toro a 6 gradi e 40 minuti dei Gemelli. La sua divinità reggente è Soma (il dio Luna), e il suo governatore planetario è Marte. È associata alla ricerca, curiosità e alla ricerca della conoscenza.",
+      "aliases": [
+        "Mrigashirsha"
+      ],
+      "url": ""
+    },
+    {
+      "id": "mula",
+      "term": "Mula",
+      "category": "Astrology",
+      "definition": "La diciannovesima nakshatra nell'astrologia vedica, che si estende da 0 a 13 gradi e 20 minuti del Sagittario. La sua divinità reggente è Nirriti (dea della dissoluzione), e il suo governatore planetario è Ketu. È associata all'andare alla radice delle cose, allo sradicamento e alla trasformazione fondamentale.",
+      "aliases": [
+        "Moola"
+      ],
+      "url": ""
+    },
+    {
+      "id": "mundane-astrology",
+      "term": "Astrologia Mondiale",
+      "category": "Astrology",
+      "definition": "Il ramo dell'astrologia che si occupa degli eventi mondiali, della politica, delle nazioni e dell'esperienza collettiva piuttosto che delle vite individuali. L'astrologia mondiale esamina i temi di ingresso, le eclissi e i cicli planetari maggiori per comprendere i modelli storici e prevedere le tendenze geopolitiche.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "mutable",
+      "term": "Mobile",
+      "category": "Astrology",
+      "definition": "Una delle tre modalità in astrologia, che comprende Gemelli, Vergine, Sagittario e Pesci. I segni mobili adattano e fanno transitare l'energia alla fine di ogni stagione, rappresentando flessibilità e cambiamento.",
+      "aliases": [
+        "Segni Mobili",
+        "Modalità Mobile"
+      ],
+      "url": ""
+    },
+    {
+      "id": "mutual-reception",
+      "term": "Ricezione Mutua",
+      "category": "Astrology",
+      "definition": "Una condizione in cui due pianeti occupano ciascuno un segno governato dall'altro, creando uno scambio reciproco di dignità. Ad esempio, Marte in Toro e Venere in Ariete sono in ricezione mutua per domicilio, che rafforza entrambi i pianeti dando loro un collegamento cooperativo.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "mystic-rectangle",
+      "term": "Rettangolo Mistico",
+      "category": "Astrology",
+      "definition": "Un modello di aspetti formato da due opposizioni connesse da sestili e trigoni, creando una forma rettangolare nel tema. Il rettangolo mistico mescola la tensione delle opposizioni con la facilità di trigoni e sestili, offrendo sbocchi pratici per risolvere i conflitti interni.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "nakshatra-pada",
+      "term": "Pada della Nakshatra",
+      "category": "Astrology",
+      "definition": "Ogni nakshatra è divisa in quattro quarti uguali chiamati pada, ognuno che si estende per 3 gradi e 20 minuti. Ogni pada corrisponde a un segno del tema navamsa, aggiungendo uno strato di sfumatura all'espressione della nakshatra. I 108 pada totali (27 nakshatra x 4) si mappano sui 12 segni navamsa in un ciclo ripetuto.",
+      "aliases": [
+        "Pada"
+      ],
+      "url": ""
+    },
+    {
+      "id": "natal-chart",
+      "term": "Tema Natale",
+      "category": "Astrology",
+      "definition": "Una mappa del cielo al momento esatto e nel luogo di nascita di una persona, che mostra le posizioni di tutti i pianeti, segni e case. Il tema natale è lo strumento fondamentale dell'astrologia, servendo come progetto per la personalità, il potenziale e i temi di vita di un individuo.",
+      "aliases": [
+        "Tema di Nascita",
+        "Natività",
+        "Radix"
+      ],
+      "url": ""
+    },
+    {
+      "id": "navamsa",
+      "term": "Navamsa (D9)",
+      "category": "Astrology",
+      "definition": "Il più importante tema divisionale nell'astrologia vedica, creato dividendo ogni segno in nove parti uguali di 3 gradi e 20 minuti. È usato principalmente per valutare la forza dei pianeti, la qualità del matrimonio e lo scopo spirituale più profondo del nativo. Il posizionamento navamsa di un pianeta può confermare o modificare la sua promessa nel tema di nascita.",
+      "aliases": [
+        "Navamsha",
+        "Tema D9"
+      ],
+      "url": ""
+    },
+    {
+      "id": "need-motivation",
+      "term": "Need (Motivazione)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Motivazione (Colore 4). Guida la consapevolezza attraverso la necessità e il requisito pratico.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "neptune",
+      "term": "Nettuno",
+      "category": "Astrology",
+      "definition": "Il pianeta dei sogni, dell'illusione, della spiritualità e della trascendenza in astrologia. Nettuno è il governatore moderno dei Pesci e impiega circa 165 anni per orbitare intorno al Sole, trascorrendo circa 14 anni in ogni segno.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "neutrino",
+      "term": "Neutrino",
+      "category": "Foundation",
+      "definition": "Particelle subatomiche che fluiscono attraverso ogni cosa, trasportando una massa infinitesimalmente piccola e quindi informazioni. Circa il 70% del flusso di neutrini condizionanti proviene dal Sole.",
+      "aliases": [
+        "Flusso di Neutrini"
+      ],
+      "url": ""
+    },
+    {
+      "id": "new-moon",
+      "term": "Luna Nuova",
+      "category": "Astrology",
+      "definition": "La fase lunare in cui il Sole e la Luna sono congiunti nello stesso segno zodiacale, rendendo la Luna invisibile dalla Terra. La luna nuova rappresenta nuovi inizi, nuovi avvii e la semina di semi per intenzioni che si svilupperanno nel corso del ciclo lunare a venire.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "no-definition",
+      "term": "Nessuna Definizione",
+      "category": "Foundation",
+      "definition": "Il tipo di definizione dei Riflettori, che non hanno centri definiti. Tutti e nove i centri sono aperti, rendendoli completamente ricettivi al condizionamento del loro ambiente.",
+      "aliases": [
+        "Definizione Nulla"
+      ],
+      "url": ""
+    },
+    {
+      "id": "nocturnal-chart",
+      "term": "Tema Notturno",
+      "category": "Astrology",
+      "definition": "Un tema natale in cui il Sole è sotto l'orizzonte, indicando una nascita notturna. In un tema notturno, la Luna, Venere e Marte appartengono alla setta notturna e tendono ad esprimere le loro energie in modo più favorevole.",
+      "aliases": [
+        "Carta Notturna"
+      ],
+      "url": ""
+    },
+    {
+      "id": "nodal-return",
+      "term": "Ritorno Nodale",
+      "category": "Cycles",
+      "definition": "Ogni 18,6 anni quando i Nodi Lunari ritornano alle posizioni natali. Attiva temi di direzione di vita e scopo.",
+      "aliases": [
+        "Ritorno del Nodo Nord"
+      ],
+      "url": ""
+    },
+    {
+      "id": "north-node",
+      "term": "Nodo Nord",
+      "category": "Astrology",
+      "definition": "Uno dei due nodi lunari, rappresenta il punto in cui l'orbita della Luna attraversa l'eclittica muovendosi verso nord. Il Nodo Nord indica la direzione karmica, la crescita dell'anima e le qualità che una persona sta sviluppando in questa vita.",
+      "aliases": [
+        "Rahu",
+        "Nodo Vero",
+        "Nodo Medio",
+        "Testa del Drago"
+      ],
+      "url": ""
+    },
+    {
+      "id": "not-self",
+      "term": "Non-Sé",
+      "category": "Foundation",
+      "definition": "L'identità condizionata che sorge dalle decisioni prese dai centri aperti e indefiniti piuttosto che dall'Autorità. Il falso sé plasmato dal condizionamento esterno.",
+      "aliases": [
+        "Non Sé"
+      ],
+      "url": ""
+    },
+    {
+      "id": "oc16",
+      "term": "OC16",
+      "category": "BG5/Penta",
+      "definition": "Dinamica di gruppo per organizzazioni di 16 o più persone, rappresenta come i grandi gruppi funzionano come entità transpersonale con proprietà emergenti.",
+      "aliases": [
+        "OC-16"
+      ],
+      "url": ""
+    },
+    {
+      "id": "open-center",
+      "term": "Centro Aperto",
+      "category": "Foundation",
+      "definition": "Un centro senza Porte attivate, completamente ricettivo al condizionamento esterno. Amplifica l'energia ricevuta e rappresenta aree di potenziale saggezza.",
+      "aliases": [
+        "Centro Completamente Aperto"
+      ],
+      "url": ""
+    },
+    {
+      "id": "ophiuchus",
+      "term": "Ofiuco",
+      "category": "Astrology",
+      "definition": "Una costellazione che si trova lungo l'eclittica tra lo Scorpione e il Sagittario, a volte proposta come 13º segno zodiacale. Il Sole attraversa Ofiuco approssimativamente dal 30 novembre al 18 dicembre secondo i confini IAU. Non è riconosciuto nell'astrologia occidentale o vedica tradizionale, ma è incluso nei sistemi a 13 segni e in alcuni sistemi siderali reali.",
+      "aliases": [
+        "Portatore del Serpente"
+      ],
+      "url": ""
+    },
+    {
+      "id": "opposition",
+      "term": "Opposizione",
+      "category": "Astrology",
+      "definition": "Un aspetto maggiore formato quando due pianeti sono approssimativamente a 180 gradi di distanza nello zodiaco. Le opposizioni rappresentano tensione, polarità e il bisogno di bilanciare o integrare due aree competitive della vita.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "orb",
+      "term": "Orbe",
+      "category": "Astrology",
+      "definition": "Il grado di deviazione consentita da un angolo di aspetto esatto perché l'aspetto sia ancora considerato attivo. Ad esempio, una congiunzione è esatta a 0 gradi, ma con un orbe di 8 gradi, i pianeti entro 8 gradi l'uno dall'altro sarebbero ancora considerati congiunti.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "out-of-bounds",
+      "term": "Fuori Confine",
+      "category": "Astrology",
+      "definition": "Una condizione planetaria in cui la declinazione di un pianeta supera i 23 gradi e 27 minuti, oltre la declinazione massima del Sole. I pianeti fuori confine sono considerati operare al di fuori delle regole normali e dei confini, esprimendo le loro energie in modi estremi, non convenzionali o eccezionali.",
+      "aliases": [
+        "OOB"
+      ],
+      "url": ""
+    },
+    {
+      "id": "outer-vision",
+      "term": "Visione Esterna",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Cognizione (Tono 3). Elabora le informazioni attraverso l'osservazione visiva diretta dell'ambiente esterno.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "pallas",
+      "term": "Pallade",
+      "category": "Astrology",
+      "definition": "Un asteroide chiamato come Pallade Atena, rappresenta la saggezza, la strategia, l'intelligenza creativa e il riconoscimento di schemi in astrologia. Pallade indica come una persona percepisce gli schemi, combatte per la giustizia e applica il pensiero strategico.",
+      "aliases": [
+        "Pallade Atena"
+      ],
+      "url": ""
+    },
+    {
+      "id": "pancha-mahapurusha-yoga",
+      "term": "Pancha Mahapurusha Yoga",
+      "category": "Astrology",
+      "definition": "Un insieme di cinque potenti yoga nell'astrologia vedica formati quando Marte, Mercurio, Giove, Venere o Saturno occupa il proprio segno o il segno di esaltazione in una casa kendra. Ogni yoga ha un nome specifico: Ruchaka (Marte), Bhadra (Mercurio), Hamsa (Giove), Malavya (Venere) e Shasha (Saturno). Questi yoga producono individui di carattere eccezionale e realizzazioni.",
+      "aliases": [
+        "Panch Mahapurusha Yoga"
+      ],
+      "url": ""
+    },
+    {
+      "id": "panchang",
+      "term": "Panchang",
+      "category": "Astrology",
+      "definition": "L'almanacco tradizionale indù basato su cinque elementi del tempo: tithi (giorno lunare), vara (giorno della settimana), nakshatra (dimora lunare), yoga (relazione angolare Sole-Luna) e karana (metà tithi). È usato quotidianamente nell'astrologia vedica per muhurta (tempistica elettiva), programmazione di festival e determinazione della qualità di qualsiasi momento dato.",
+      "aliases": [
+        "Panchangam",
+        "Panchanga"
+      ],
+      "url": ""
+    },
+    {
+      "id": "part-of-fortune",
+      "term": "Parte di Fortuna",
+      "category": "Astrology",
+      "definition": "Una Parte Araba calcolata dalle posizioni del Sole, della Luna e dell'Ascendente che indica aree di talento naturale e successo mondano. La formula differisce per i temi diurni e notturni, riflettendo l'importanza della setta nell'astrologia tradizionale.",
+      "aliases": [
+        "Sorte di Fortuna",
+        "Fortuna"
+      ],
+      "url": ""
+    },
+    {
+      "id": "part-of-spirit",
+      "term": "Parte di Spirito",
+      "category": "Astrology",
+      "definition": "Una Parte Araba calcolata come formula inversa della Parte di Fortuna, scambiando le posizioni del Sole e della Luna nel calcolo. La Parte di Spirito si riferisce alla mente, all'intelletto, alle azioni professionali e alle questioni di scopo, volontà e direzione conscia nella vita.",
+      "aliases": [
+        "Sorte di Spirito"
+      ],
+      "url": ""
+    },
+    {
+      "id": "partile-aspect",
+      "term": "Aspetto Partile",
+      "category": "Astrology",
+      "definition": "Un aspetto che è esatto o entro un grado di esattezza. Gli aspetti partili sono considerati particolarmente potenti perché le energie planetarie sono nella loro connessione più stretta, producendo gli effetti più concentrati e evidenti.",
+      "aliases": [
+        "Aspetto Esatto"
+      ],
+      "url": ""
+    },
+    {
+      "id": "peace",
+      "term": "Pace",
+      "category": "Foundation",
+      "definition": "Il tema della Firma del Tipo Manifestatore. Quando informa correttamente prima di iniziare, incontra meno resistenza e sperimenta una pace profonda.",
+      "aliases": [
+        "Firma del Manifestatore"
+      ],
+      "url": ""
+    },
+    {
+      "id": "penta",
+      "term": "Penta",
+      "category": "BG5/Penta",
+      "definition": "Una forma transpersonale che emerge quando da tre a cinque persone si riuniscono. Il Penta ha le sue dinamiche meccaniche che influenzano come i piccoli gruppi funzionano, comunicano e lavorano insieme.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "penta-assimilation",
+      "term": "Assimilazione Penta",
+      "category": "BG5/Penta",
+      "definition": "Una delle tre aree funzionali del Penta che governa come un gruppo integra nuovi membri, idee e risorse.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "penta-communication",
+      "term": "Comunicazione Penta",
+      "category": "BG5/Penta",
+      "definition": "Una delle tre aree funzionali del Penta che governa come le informazioni fluiscono, le idee sono condivise e lo scambio verbale è mantenuto.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "penta-management",
+      "term": "Penta Management",
+      "category": "BG5/Penta",
+      "definition": "Una delle tre aree funzionali Penta che governa risorse, logistica, organizzazione delle attività e flusso di lavoro pratico.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "peregrine",
+      "term": "Peregrine",
+      "category": "Astrology",
+      "definition": "Una condizione planetaria in cui un pianeta non ha dignità essenziale nella sua posizione segnica attuale, il che significa che non detiene domicilio, esaltazione, triplicità, termine o volto. Un pianeta peregrine è considerato un vagabondo senza risorse, indebolito e meno capace di agire efficacemente.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "personal-perspective",
+      "term": "Personal (Perspective)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Prospettiva (Colore 6). Vede il mondo attraverso una lente profondamente soggettiva e individuale.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "personal-planets",
+      "term": "Pianeti Personali",
+      "category": "Astrology",
+      "definition": "I pianeti veloci più vicini al Sole che modellano i tratti individuali della personalità. I pianeti personali includono Sole, Luna, Mercurio, Venere e Marte, e cambiano segno abbastanza frequentemente da differenziare individui nati vicini nel tempo.",
+      "aliases": [
+        "Pianeti Interiori"
+      ],
+      "url": ""
+    },
+    {
+      "id": "personality",
+      "term": "Personalità",
+      "category": "Foundation",
+      "definition": "Il lato conscio di una carta di Human Design, calcolato dal momento della nascita. Le attivazioni della Personalità sono mostrate in nero nel bodygraph. Rappresentano qualità di cui la persona è consciamente consapevole e con cui si identifica.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "personality-crystal",
+      "term": "Cristallo della Personalità",
+      "category": "Foundation",
+      "definition": "L'aspetto di coscienza del sé, che entra nel corpo alla nascita. Corrisponde alle attivazioni nere sul lato destro del Bodygraph. Calcolato dal momento esatto della nascita.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "perspective",
+      "term": "Prospettiva",
+      "category": "Variables",
+      "definition": "L'aspetto di consapevolezza visiva delle Variabili in Human Design, derivato dalla Freccia in basso a destra. Indica come Lei è progettata per vedere e osservare il mondo intorno a Lei.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "phasis",
+      "term": "Phasis",
+      "category": "Astrology",
+      "definition": "Un concetto astrologico ellenistico che si riferisce all'apparizione o scomparsa visibile di un pianeta relativa ai raggi del Sole (tipicamente entro 15 gradi dal Sole). Un pianeta che fa la sua phasis (emergendo dai raggi del Sole) era considerato acquisire prominenza e potere. I pianeti sotto i raggi erano considerati indeboliti o nascosti.",
+      "aliases": [
+        "Apparizione"
+      ],
+      "url": ""
+    },
+    {
+      "id": "phs",
+      "term": "PHS",
+      "category": "Variables",
+      "definition": "Primary Health System, il ramo delle Variabili focalizzato sul corpo che si occupa di come mangiare e digerire. Derivato dal Tono e Colore del Design Sole/Terra.",
+      "aliases": [
+        "Primary Health System"
+      ],
+      "url": ""
+    },
+    {
+      "id": "pisces",
+      "term": "Pesci",
+      "category": "Astrology",
+      "definition": "Il dodicesimo segno dello zodiaco, che si estende da 330 a 360 gradi dell'eclittica. I Pesci sono un segno d'acqua mobile tradizionalmente governato da Giove e modernamente da Nettuno, associato all'intuizione, compassione e trascendenza.",
+      "aliases": [
+        "Il Pesce"
+      ],
+      "url": ""
+    },
+    {
+      "id": "placidus",
+      "term": "Placidus",
+      "category": "Astrology",
+      "definition": "Il sistema di case più ampiamente utilizzato nell'astrologia occidentale moderna, sviluppato dal matematico del XVII secolo Placidus de Titis. Divide le case basandosi sul tempo necessario a ogni grado dell'eclittica per sorgere dal nadir all'orizzonte. Può produrre case di dimensioni ineguali e diventa inaffidabile a latitudini estreme.",
+      "aliases": [
+        "Sistema di Case Placidus"
+      ],
+      "url": ""
+    },
+    {
+      "id": "planetary-days",
+      "term": "Giorni Planetari",
+      "category": "Astrology",
+      "definition": "L'assegnazione di ogni giorno della settimana a uno dei sette pianeti classici, un sistema riflesso nei nomi dei giorni in molte lingue. Domenica è governata dal Sole, lunedì dalla Luna, martedì da Marte, mercoledì da Mercurio, giovedì da Giove, venerdì da Venere e sabato da Saturno.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "planetary-hours",
+      "term": "Ore Planetarie",
+      "category": "Astrology",
+      "definition": "Un sistema tradizionale che divide ogni giorno e notte in segmenti, ciascuno governato da uno dei sette pianeti classici in una sequenza fissa. Le ore planetarie sono utilizzate nell'astrologia elettiva e oraria per selezionare momenti propizi per attività allineate con la natura di un pianeta specifico.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "planetary-joy",
+      "term": "Gioia Planetaria",
+      "category": "Astrology",
+      "definition": "Un sistema tradizionale che assegna a ciascuno dei sette pianeti classici una casa dove gioisce e si esprime più naturalmente. Ad esempio, Mercurio gioisce nella 1ª Casa, la Luna nella 3ª, Venere nella 5ª, Marte nella 6ª, il Sole nella 9ª, Giove nell'11ª e Saturno nella 12ª.",
+      "aliases": [
+        "Gioie Planetarie"
+      ],
+      "url": ""
+    },
+    {
+      "id": "planetary-speed",
+      "term": "Velocità Planetaria",
+      "category": "Astrology",
+      "definition": "La velocità con cui un pianeta si muove attraverso lo zodiaco, che varia durante la sua orbita. Nell'astrologia tradizionale, un pianeta veloce è considerato più attivo e capace, mentre un pianeta lento può indicare ritardi o efficacia ridotta.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "pluto",
+      "term": "Plutone",
+      "category": "Astrology",
+      "definition": "Il pianeta della trasformazione, potere, morte e rinascita, e dell'inconscio in astrologia. Plutone è il governatore moderno dello Scorpione e ha un'orbita irregolare di circa 248 anni, trascorrendo tra 12 e 31 anni in ogni segno.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "porphyry",
+      "term": "Porphyry",
+      "category": "Astrology",
+      "definition": "Un sistema di case attribuito al filosofo del III secolo Porfirio di Tiro che triseca gli archi tra i quattro angoli (Ascendente, IC, Discendente, MC). Ogni quadrante è diviso in tre parti uguali per creare le cuspidi delle case intermedie. È uno dei sistemi di case basati sui quadranti più semplici.",
+      "aliases": [
+        "Sistema di Case Porphyry"
+      ],
+      "url": ""
+    },
+    {
+      "id": "possibility-perspective",
+      "term": "Possibility (Perspective)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Prospettiva (Colore 2). Vede il mondo attraverso il potenziale e l'opportunità.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "power-perspective",
+      "term": "Power (Perspective)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Prospettiva (Colore 3). Vede il mondo attraverso le dinamiche di influenza e controllo.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "pratyantar-dasha",
+      "term": "Pratyantar Dasha",
+      "category": "Astrology",
+      "definition": "Il sotto-sotto-periodo all'interno di un antardasha nel sistema Vimshottari Dasha. Fornisce un livello ancora più fine di temporizzazione dividendo ulteriormente ogni antardasha in nove periodi più piccoli. I pratyantar dasha sono utilizzati per la previsione precisa degli eventi.",
+      "aliases": [
+        "Pratyantardasha"
+      ],
+      "url": ""
+    },
+    {
+      "id": "precession-of-the-equinoxes",
+      "term": "Precessione degli Equinozi",
+      "category": "Astrology",
+      "definition": "La lenta deriva verso ovest dei punti equinoziali lungo l'eclittica causata dall'oscillazione dell'asse di rotazione terrestre. Questo ciclo impiega circa 25.772 anni per completarsi ed è la ragione per cui gli zodiaci Tropicale e Siderale divergono nel tempo.",
+      "aliases": [
+        "Precessione Assiale"
+      ],
+      "url": ""
+    },
+    {
+      "id": "primary-directions",
+      "term": "Direzioni Primarie",
+      "category": "Astrology",
+      "definition": "Una delle tecniche predittive più antiche in astrologia, basata sulla rotazione diurna della Terra piuttosto che sul movimento planetario. Le direzioni primarie misurano il tempo necessario a un pianeta natale per raggiungere la posizione di un altro pianeta o angolo attraverso la rotazione giornaliera della Terra, utilizzando circa un grado uguale a un anno.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "probability-perspective",
+      "term": "Probability (Perspective)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Prospettiva (Colore 5). Vede il mondo attraverso probabilità e schemi, calcolando le possibilità.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "profile",
+      "term": "Profilo",
+      "category": "Foundation",
+      "definition": "Una combinazione di due Linee (una conscia, una inconscia) che descrive il Suo costume nella vita e come Lei interagisce con gli altri. Ci sono 12 Profili in Human Design, dal 1/3 al 6/3.",
+      "aliases": [
+        "Profili"
+      ],
+      "url": ""
+    },
+    {
+      "id": "program-field",
+      "term": "Campo del Programma",
+      "category": "Cycles",
+      "definition": "Il campo di condizionamento collettivo dal movimento planetario attraverso il Mandala. Definisce lo sfondo dell'esperienza collettiva in ogni dato momento.",
+      "aliases": [
+        "Il Programma"
+      ],
+      "url": ""
+    },
+    {
+      "id": "progressed-ascendant",
+      "term": "Ascendente Progredito",
+      "category": "Astrology",
+      "definition": "Il grado dell'Ascendente nel tema progredito secondario, che avanza attraverso lo zodiaco a una velocità determinata dalla latitudine e dall'ora di nascita. Quando l'Ascendente progredito cambia segno, la personalità esteriore e l'approccio alla vita del nativo subiscono un cambiamento notevole. Di solito occorrono molti anni per progredire attraverso un singolo segno.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "progressed-chart",
+      "term": "Tema Progredito",
+      "category": "Astrology",
+      "definition": "Un tema derivato dal tema natale utilizzando una scala temporale simbolica, più comunemente le progressioni secondarie dove ogni giorno dopo la nascita equivale a un anno di vita. Il tema progredito mostra l'evoluzione interna graduale del carattere e della direzione di vita di una persona nel tempo.",
+      "aliases": [
+        "Progressioni"
+      ],
+      "url": ""
+    },
+    {
+      "id": "progressed-lunar-return",
+      "term": "Rivoluzione Lunare Progredita",
+      "category": "Astrology",
+      "definition": "Il momento in cui la Luna progredita ritorna alla sua posizione natale esatta, che si verifica approssimativamente ogni 27-28 anni. Segna l'inizio di un nuovo ciclo emotivo e di sviluppo, simile per importanza a un ritorno di Saturno ma focalizzato sulla vita interiore e la maturità emotiva. La prima rivoluzione lunare progredita avviene intorno ai 27 anni.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "progressed-moon",
+      "term": "Luna Progredita",
+      "category": "Astrology",
+      "definition": "La posizione della Luna nel tema progredito secondario, che si muove approssimativamente di un grado per mese di tempo reale e completa un ciclo zodiacale completo ogni 27-28 anni. Il suo segno e posizionamento nelle case indicano il focus emotivo in evoluzione e i bisogni interiori del nativo. Gli aspetti della Luna progredita ai pianeti natali e progrediti segnano punti di svolta emotivi significativi.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "projector",
+      "term": "Proiettore",
+      "category": "Foundation",
+      "definition": "Uno dei cinque Tipi in Human Design. I Proiettori non hanno motori connessi alla Gola e non hanno il Centro Sacrale definito. Sono progettati per aspettare riconoscimento e invito prima di condividere la loro guida.",
+      "aliases": [
+        "Proiettori"
+      ],
+      "url": "/celebrities/type/projector/"
+    },
+    {
+      "id": "psychological-astrology",
+      "term": "Astrologia Psicologica",
+      "category": "Astrology",
+      "definition": "Un approccio all'astrologia che integra la psicologia junghiana e la psicologia del profondo con l'interpretazione tradizionale del tema. Sviluppata da astrologi come Dane Rudhyar, Liz Greene e Howard Sasportas, vede il tema natale come una mappa della psiche piuttosto che una mappa del destino deterministica. Enfatizza archetipi, individuazione e crescita personale.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "punarvasu",
+      "term": "Punarvasu",
+      "category": "Astrology",
+      "definition": "La settima nakshatra nell'astrologia vedica, che si estende da 20 gradi dei Gemelli a 3 gradi e 20 minuti del Cancro. La sua divinità reggente è Aditi (madre degli dei) e il suo pianeta reggente è Giove. È associata a restauro, rinnovamento e ritorno della luce.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "purva-ashadha",
+      "term": "Purva Ashadha",
+      "category": "Astrology",
+      "definition": "La ventesima nakshatra nell'astrologia vedica, che si estende da 13 gradi e 20 minuti a 26 gradi e 40 minuti del Sagittario. La sua divinità reggente è Apas (dea dell'acqua) e il suo pianeta reggente è Venere. È associata a invincibilità, purificazione e potere di ringiovanimento.",
+      "aliases": [
+        "Poorva Ashadha",
+        "Purvashada"
+      ],
+      "url": ""
+    },
+    {
+      "id": "purva-bhadrapada",
+      "term": "Purva Bhadrapada",
+      "category": "Astrology",
+      "definition": "La venticinquesima nakshatra nell'astrologia vedica, che si estende da 20 gradi dell'Acquario a 3 gradi e 20 minuti dei Pesci. La sua divinità reggente è Aja Ekapada (serpente a una gamba) e il suo pianeta reggente è Giove. È associata a intensità, penitenza e fuoco spirituale trasformativo.",
+      "aliases": [
+        "Poorva Bhadrapada",
+        "Poorattathi"
+      ],
+      "url": ""
+    },
+    {
+      "id": "purva-phalguni",
+      "term": "Purva Phalguni",
+      "category": "Astrology",
+      "definition": "L'undicesima nakshatra nell'astrologia vedica, che si estende da 13 gradi e 20 minuti a 26 gradi e 40 minuti del Leone. La sua divinità reggente è Bhaga (dio della fortuna) e il suo pianeta reggente è Venere. È associata a piacere, rilassamento, creatività e appagamento romantico.",
+      "aliases": [
+        "Poorva Phalguni",
+        "Pubba"
+      ],
+      "url": ""
+    },
+    {
+      "id": "pushkara-navamsa",
+      "term": "Pushkara Navamsa",
+      "category": "Astrology",
+      "definition": "Divisioni navamsa specifiche all'interno di certi segni che sono considerate particolarmente propizie e nutrienti nell'astrologia vedica. Un pianeta posizionato in una pushkara navamsa acquisisce forza benefica aggiuntiva indipendentemente dalle sue altre dignità. Queste divisioni speciali migliorano la capacità del pianeta di fornire risultati positivi.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "pushya",
+      "term": "Pushya",
+      "category": "Astrology",
+      "definition": "L'ottava nakshatra nell'astrologia vedica, che si estende da 3 gradi e 20 minuti a 16 gradi e 40 minuti del Cancro. La sua divinità reggente è Brihaspati (Giove come maestro divino) e il suo pianeta reggente è Saturno. È considerata una delle nakshatra più propizie, associata al nutrimento e alla crescita spirituale.",
+      "aliases": [
+        "Pushyami"
+      ],
+      "url": ""
+    },
+    {
+      "id": "quadruple-split-definition",
+      "term": "Quadrupla Divisione",
+      "category": "Foundation",
+      "definition": "Il tipo di definizione più raro con quattro aree separate. Meno dell'1% della popolazione. Natura molto fissa e resiliente, che necessita di tempo per l'elaborazione energetica complessa.",
+      "aliases": [
+        "Quad Split"
+      ],
+      "url": ""
+    },
+    {
+      "id": "quantum",
+      "term": "Quantum",
+      "category": "Foundation",
+      "definition": "Una vista del tema in Genetic Matrix che mostra insieme sia le attivazioni della Personalità (nero/conscio) che del Design (rosso/inconscio) sul bodygraph, fornendo il quadro completo del design di qualcuno.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "quarter-of-civilization",
+      "term": "Quarto di Civiltà",
+      "category": "Cycles",
+      "definition": "Secondo dei quattro Quarti. Proposito realizzato attraverso la Forma. Energia di costruzione, strutturazione e manifestazione.",
+      "aliases": [
+        "Quarto 2",
+        "Quarto della Forma"
+      ],
+      "url": ""
+    },
+    {
+      "id": "quarter-of-duality",
+      "term": "Quarto di Dualità",
+      "category": "Cycles",
+      "definition": "Terzo dei quattro Quarti. Proposito realizzato attraverso il Legame. Energia di relazioni e partnership.",
+      "aliases": [
+        "Quarto 3",
+        "Quarto del Legame"
+      ],
+      "url": ""
+    },
+    {
+      "id": "quarter-of-initiation",
+      "term": "Quarto di Iniziazione",
+      "category": "Cycles",
+      "definition": "Primo dei quattro Quarti nella Ruota HD. Proposito realizzato attraverso la Mente. Energia di inizio e avvio di nuovi cicli.",
+      "aliases": [
+        "Quarto 1",
+        "Quarto della Mente"
+      ],
+      "url": ""
+    },
+    {
+      "id": "quarter-of-mutation",
+      "term": "Quarto di Mutazione",
+      "category": "Cycles",
+      "definition": "Quarto dei quattro Quarti. Proposito realizzato attraverso la Trasformazione. Energia di cambiamento, evoluzione e trascendenza.",
+      "aliases": [
+        "Quarto 4",
+        "Quarto della Trasformazione"
+      ],
+      "url": ""
+    },
+    {
+      "id": "quincunx",
+      "term": "Quinconce",
+      "category": "Astrology",
+      "definition": "Un aspetto formato quando due pianeti sono approssimativamente a 150 gradi di distanza nello zodiaco. Il quinconce crea un senso di goffaggine o disallineamento tra due aree della vita che richiedono aggiustamento e adattamento continui.",
+      "aliases": [
+        "Incongiunto"
+      ],
+      "url": ""
+    },
+    {
+      "id": "quintile",
+      "term": "Quintile",
+      "category": "Astrology",
+      "definition": "Un aspetto minore formato quando due pianeti sono approssimativamente a 72 gradi di distanza nello zodiaco. Il quintile è associato al talento creativo, ai doni unici e alla capacità di produrre qualcosa di originale dalla combinazione di energie planetarie.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "rahu",
+      "term": "Rahu",
+      "category": "Astrology",
+      "definition": "Il nodo lunare nord nell'astrologia vedica, considerato un pianeta ombra (chhaya graha) che rappresenta il desiderio mondano, l'ossessione, l'amplificazione e le ricerche non convenzionali. Il posizionamento di Rahu per casa e segno indica aree dove il nativo sperimenta brama intensa e crescita karmica attraverso territorio non familiare. È sempre esattamente opposto a Ketu nel tema.",
+      "aliases": [
+        "Nodo Nord (Vedico)"
+      ],
+      "url": ""
+    },
+    {
+      "id": "raja-yoga",
+      "term": "Raja Yoga",
+      "category": "Astrology",
+      "definition": "Una combinazione potente nell'astrologia vedica formata quando i signori delle case kendra (angolari) e trikona (trigonali) si connettono attraverso congiunzione, aspetto reciproco o scambio. Significa ascesa in status, potere e autorità nella vita del nativo. La forza dello yoga dipende dalla dignità e posizionamento dei pianeti coinvolti.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "raman-ayanamsa",
+      "term": "Ayanamsha di Raman",
+      "category": "Astrology",
+      "definition": "Un ayanamsha sviluppato dal prominente astrologo indiano B.V. Raman, che differisce dall'ayanamsha di Lahiri di circa 2 gradi. È basato sui calcoli astronomici indipendenti di Raman del tasso precessionale. È meno ampiamente utilizzato di Lahiri ma ha un seguito dedicato tra i praticanti dell'approccio di Raman.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "rashi",
+      "term": "Rashi",
+      "category": "Astrology",
+      "definition": "Il termine sanscrito per un segno zodiacale nell'astrologia vedica. Ci sono 12 rashi, ognuno che si estende per 30 gradi dell'eclittica siderale. I rashi corrispondono agli stessi segni dell'astrologia occidentale ma sono misurati rispetto alle stelle fisse piuttosto che alle stagioni.",
+      "aliases": [
+        "Rasi"
+      ],
+      "url": ""
+    },
+    {
+      "id": "rave-chart",
+      "term": "Carta Rave",
+      "category": "Foundation",
+      "definition": "Il nome tecnico per il Bodygraph individuale di Human Design. Calcolato dai dati di nascita, mostra nove centri, 36 canali e 64 Porte.",
+      "aliases": [
+        "Carta HD"
+      ],
+      "url": ""
+    },
+    {
+      "id": "rave-new-year",
+      "term": "Rave New Year",
+      "category": "Foundation",
+      "definition": "L'inizio del ciclo solare di Human Design quando il Sole entra nella Porta 41 intorno al 22 gennaio. La Porta 41 è il codone che inizia e rappresenta la pressione di avviare nuove esperienze.",
+      "aliases": [
+        "HD New Year"
+      ],
+      "url": ""
+    },
+    {
+      "id": "reflector",
+      "term": "Riflettore",
+      "category": "Foundation",
+      "definition": "Uno dei cinque Tipi di Human Design. I Riflettori non hanno centri definiti. Sono progettati per aspettare un ciclo lunare completo (28 giorni) prima di prendere decisioni importanti, assaggiando e riflettendo l'energia circostante.",
+      "aliases": [
+        "Riflettori"
+      ],
+      "url": "/celebrities/type/reflector/"
+    },
+    {
+      "id": "regiomontanus",
+      "term": "Regiomontanus",
+      "category": "Astrology",
+      "definition": "Un sistema di case sviluppato dall'astronomo del XV secolo Johannes Muller (Regiomontanus) che divide l'equatore celeste in segmenti uguali di 30 gradi e li proietta sull'eclittica. È stato il sistema dominante nell'astrologia europea dal Rinascimento fino al XVII secolo. È ancora preferito da alcuni astrologi orari.",
+      "aliases": [
+        "Sistema di case Regiomontanus"
+      ],
+      "url": ""
+    },
+    {
+      "id": "regulus",
+      "term": "Regulus",
+      "category": "Astrology",
+      "definition": "Una delle quattro Stelle Reali di Persia, situata a circa 0 gradi della Vergine nell'astrologia tropicale moderna. Regulus è la stella più brillante della costellazione del Leone ed è associata alla gloria, alla fama, alla leadership e al successo, ma con un avvertimento contro la vendetta.",
+      "aliases": [
+        "Cor Leonis",
+        "Cuore del Leone"
+      ],
+      "url": ""
+    },
+    {
+      "id": "reptile",
+      "term": "Reptile",
+      "category": "Foundation",
+      "definition": "Una delle quattro categorie animali nel sistema delle Variabili. Una combinazione particolare di frecce sinistra/destra che modella come una persona è progettata per mangiare, pensare e interagire.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "retrograde",
+      "term": "Retrogrado",
+      "category": "Astrology",
+      "definition": "Il movimento apparentemente all'indietro di un pianeta osservato dalla Terra, causato dalle differenze di velocità orbitale. In astrologia, i periodi retrogradi sono associati a revisione, correzione, ritardi e interiorizzazione dei temi del pianeta.",
+      "aliases": [
+        "Rx"
+      ],
+      "url": ""
+    },
+    {
+      "id": "retrograde-shadow",
+      "term": "Ombra Retrograda",
+      "category": "Astrology",
+      "definition": "Il periodo prima e dopo il retrogrado di un pianeta quando attraversa gli stessi gradi che rivisiterà o ha rivisitato durante il retrogrado. La pre-ombra introduce temi che saranno rivisti durante il retrogrado, mentre la post-ombra completa il processo di integrazione.",
+      "aliases": [
+        "Periodo Ombra",
+        "Zona Retrograda"
+      ],
+      "url": ""
+    },
+    {
+      "id": "revati",
+      "term": "Revati",
+      "category": "Astrology",
+      "definition": "Il ventisettesimo e ultimo nakshatra nell'astrologia vedica, che si estende da 16 gradi e 40 minuti a 30 gradi dei Pesci. La sua divinità reggente è Pushan (il nutritore e protettore dei viaggiatori), e il suo reggente planetario è Mercurio. È associato a viaggi sicuri, completamento e trascendenza.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "right-arrow",
+      "term": "Freccia Destra",
+      "category": "Variables",
+      "definition": "Nella notazione delle Variabili, una freccia che punta a destra indica una qualità ricettiva, periferica e passiva. Rappresenta un modello flessibile di assaggiare attraverso l'apertura.",
+      "aliases": [
+        "Freccia Ricettiva"
+      ],
+      "url": ""
+    },
+    {
+      "id": "rohini",
+      "term": "Rohini",
+      "category": "Astrology",
+      "definition": "Il quarto nakshatra nell'astrologia vedica, che si estende da 10 gradi a 23 gradi e 20 minuti del Toro. La sua divinità reggente è Brahma (il creatore), e il suo reggente planetario è la Luna. È associato a crescita, bellezza, fertilità e abbondanza materiale.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "root-center",
+      "term": "Centro della Radice",
+      "category": "Foundation",
+      "definition": "Un centro di pressione e motore alla base del Bodygraph che crea pressione basata sull'adrenalina per agire e andare avanti. Alimenta la spinta per portare a termine le cose.",
+      "aliases": [
+        "Radice"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sacral-authority",
+      "term": "Autorità Sacrale",
+      "category": "Foundation",
+      "definition": "Appartiene ai Generatori e ai Generatori Manifestanti con il Sacrale definito ma il Plesso Solare indefinito. Il Sacrale risponde nel momento con suoni istintivi o sensazioni fisiche che indicano sì o no.",
+      "aliases": [
+        "Autorità dell'Istinto"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sacral-center",
+      "term": "Centro Sacrale",
+      "category": "Foundation",
+      "definition": "Il centro motore centrale del bodygraph, responsabile della forza vitale e dell'energia lavorativa. Un Sacrale definito è ciò che rende qualcuno un Generatore o un Generatore Manifestante.",
+      "aliases": [
+        "Sacrale"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sagittarius",
+      "term": "Sagittario",
+      "category": "Astrology",
+      "definition": "Il nono segno dello zodiaco, che si estende da 240 a 270 gradi dell'eclittica. Il Sagittario è un segno di fuoco mobile governato da Giove, associato all'esplorazione, alla filosofia e all'apprendimento superiore.",
+      "aliases": [
+        "L'Arciere"
+      ],
+      "url": ""
+    },
+    {
+      "id": "saros-cycle",
+      "term": "Ciclo Saros",
+      "category": "Astrology",
+      "definition": "Un ciclo di circa 18 anni, 11 giorni e 8 ore dopo il quale si ripetono eclissi quasi identiche. Gli astrologi usano i cicli Saros per collegare eclissi tematicamente correlate attraverso i decenni, tracciando schemi evolutivi a lungo termine e temi ricorrenti della vita.",
+      "aliases": [
+        "Serie Saros"
+      ],
+      "url": ""
+    },
+    {
+      "id": "satisfaction",
+      "term": "Soddisfazione",
+      "category": "Foundation",
+      "definition": "Il tema della Firma del Tipo Generatore. Quando aspetta di rispondere e usa l'energia Sacrale su cose che lo accendono, il risultato è una profonda soddisfazione.",
+      "aliases": [
+        "Firma del Generatore"
+      ],
+      "url": ""
+    },
+    {
+      "id": "saturn",
+      "term": "Saturno",
+      "category": "Astrology",
+      "definition": "Il pianeta della struttura, disciplina, limitazione e responsabilità in astrologia. Saturno governa il Capricorno e tradizionalmente co-governa l'Acquario, rappresentando lezioni di vita, confini e maturazione nel tempo.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "saturn-contacts-in-synastry",
+      "term": "Contatti di Saturno nella Sinastria",
+      "category": "Astrology",
+      "definition": "Aspetti dal Saturno di una persona ai pianeti personali di un'altra persona nella sinastria, associati a impegno, longevità e lezioni karmiche nelle relazioni. Le congiunzioni e trigoni di Saturno possono fornire stabilità e legami duraturi, mentre le quadrature e opposizioni di Saturno possono creare sentimenti di restrizione, critica o obbligo. Questi contatti si trovano spesso in partnership a lungo termine.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "saturn-return",
+      "term": "Ritorno di Saturno",
+      "category": "Cycles",
+      "definition": "Importante ciclo di vita intorno ai 29-30 anni quando Saturno in transito ritorna nella sua posizione natale. Segna la maturità e spesso porta una significativa ristrutturazione della vita.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "scorpio",
+      "term": "Scorpione",
+      "category": "Astrology",
+      "definition": "L'ottavo segno dello zodiaco, che si estende da 210 a 240 gradi dell'eclittica. Lo Scorpione è un segno d'acqua fisso tradizionalmente governato da Marte e modernamente da Plutone, associato a trasformazione, intensità e profondità.",
+      "aliases": [
+        "Lo Scorpione"
+      ],
+      "url": ""
+    },
+    {
+      "id": "second-saturn-return",
+      "term": "Secondo Ritorno di Saturno",
+      "category": "Cycles",
+      "definition": "Avviene intorno ai 58-60 anni. Segna la saggezza dell'anziano, la revisione dell'eredità e l'approfondimento della relazione con lo scopo della vita.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "secondary-progressions",
+      "term": "Progressioni Secondarie",
+      "category": "Astrology",
+      "definition": "Una tecnica predittiva dove ogni giorno dopo la nascita rappresenta simbolicamente un anno di vita. Le progressioni secondarie tracciano la lenta evoluzione interna della psiche, con la Luna progredita che cambia segno circa ogni due anni e mezzo e segna cambiamenti emotivi significativi.",
+      "aliases": [
+        "Progressioni Giorno-per-Anno"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sect",
+      "term": "Setta",
+      "category": "Astrology",
+      "definition": "Un concetto astrologico tradizionale che divide i pianeti in due squadre basato su se la carta è una nascita diurna o notturna. La setta determina quali pianeti benefici e malefici sono più di supporto o sfidanti in una data carta, modellando fondamentalmente come si comportano i pianeti.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "sect-light",
+      "term": "Luce della Setta",
+      "category": "Astrology",
+      "definition": "La luminaria che guida la setta di una carta. In una carta diurna la luce della setta è il Sole, e in una carta notturna la luce della setta è la Luna. La luce della setta porta un'importanza speciale nelle tecniche tradizionali incluse le profezioni e le sorti.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "self-projected-authority",
+      "term": "Autorità auto-proiettata",
+      "category": "Foundation",
+      "definition": "Si trova nei Proiettori con il Centro G connesso alla Gola. Il processo decisionale arriva attraverso il sentire se stessi parlare di identità e direzione con persone di fiducia.",
+      "aliases": [
+        "Autorità G",
+        "Autorità dell'Identità"
+      ],
+      "url": ""
+    },
+    {
+      "id": "semi-sextile",
+      "term": "Semisestile",
+      "category": "Astrology",
+      "definition": "Un aspetto minore formato quando due pianeti si trovano a circa 30 gradi di distanza nello zodiaco. Il semisestile collega segni adiacenti con elementi e modalità diverse, creando una tensione sottile che richiede un'integrazione consapevole.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "semi-square",
+      "term": "Semiquadrato",
+      "category": "Astrology",
+      "definition": "Un aspetto minore formato quando due pianeti si trovano a circa 45 gradi di distanza nello zodiaco. Il semiquadrato produce una lieve irritazione e attrito interno, simile a una quadratura ma meno intenso, stimolando aggiustamenti piccoli ma persistenti.",
+      "aliases": [
+        "Octile"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sense",
+      "term": "Sense",
+      "category": "Variables",
+      "definition": "La Cognizione derivata dal Tono della Personalità Sole/Terra. Il modo sensoriale specifico per assimilare le informazioni, che opera sotto la consapevolezza cosciente.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "separating-aspect",
+      "term": "Aspetto Separante",
+      "category": "Astrology",
+      "definition": "Un aspetto in cui il pianeta più veloce ha già superato il grado esatto dell'aspetto e si sta allontanando. Gli aspetti separanti sono considerati in calo di influenza, rappresentando energia che ha già raggiunto il picco e si sta dissipando.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "sesquiquadrate",
+      "term": "Sesquiquadrato",
+      "category": "Astrology",
+      "definition": "Un aspetto minore formato quando due pianeti si trovano a circa 135 gradi di distanza nello zodiaco. Il sesquiquadrato produce agitazione e irrequietezza simili a un semiquadrato, spesso manifestandosi come frustrazioni esterne o comportamento compulsivo.",
+      "aliases": [
+        "Sesquisquare",
+        "Trioctile"
+      ],
+      "url": ""
+    },
+    {
+      "id": "seven-year-cycle",
+      "term": "Ciclo di Sette Anni",
+      "category": "Cycles",
+      "definition": "La cronologia fondamentale del decondizionamento. Ra insegnava che occorrono sette anni di vita secondo Strategia e Autorità per rilasciare il condizionamento a livello cellulare.",
+      "aliases": [
+        "Ciclo di Decondizionamento"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sextile",
+      "term": "Sestile",
+      "category": "Astrology",
+      "definition": "Un aspetto maggiore formato quando due pianeti si trovano a circa 60 gradi di distanza nello zodiaco. I sestili rappresentano opportunità, cooperazione e supporto gentile che può essere attivato attraverso uno sforzo consapevole.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "shadbala",
+      "term": "Shadbala",
+      "category": "Astrology",
+      "definition": "Un sistema per calcolare la forza planetaria nell'astrologia vedica basato su sei fonti di potere: forza posizionale, direzionale, temporale, di moto, naturale e aspettuale. Il punteggio totale di shadbala determina l'efficacia con cui un pianeta può esprimere i suoi risultati. È misurato in unità chiamate rupa o shashtiamsa.",
+      "aliases": [
+        "Shad Bala"
+      ],
+      "url": ""
+    },
+    {
+      "id": "shatabhisha",
+      "term": "Shatabhisha",
+      "category": "Astrology",
+      "definition": "Il ventiquattresimo nakshatra nell'astrologia vedica, che si estende da 6 gradi e 40 minuti a 20 gradi dell'Acquario. La sua divinità reggente è Varuna (dio delle acque cosmiche), e il suo reggente planetario è Rahu. È associato con la guarigione, la segretezza e la capacità di contenere o velare qualcosa.",
+      "aliases": [
+        "Shatabhishak",
+        "Sadayam"
+      ],
+      "url": ""
+    },
+    {
+      "id": "shores",
+      "term": "Shores",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Ambiente (Colore 6). Uno spazio di transizione dove due elementi si incontrano, come terra e acqua.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "shravana",
+      "term": "Shravana",
+      "category": "Astrology",
+      "definition": "Il ventiduesimo nakshatra nell'astrologia vedica, che si estende da 10 gradi a 23 gradi e 20 minuti del Capricorno. La sua divinità reggente è Vishnu (il preservatore), e il suo reggente planetario è la Luna. È associato con l'ascolto, l'apprendimento e la trasmissione della conoscenza.",
+      "aliases": [
+        "Sravana",
+        "Thiruvonam"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sidereal-zodiac",
+      "term": "Zodiaco Siderale",
+      "category": "Astrology",
+      "definition": "Un sistema zodiacale basato sulle posizioni reali delle costellazioni di stelle fisse piuttosto che sulle stagioni. Tiene conto della precessione degli equinozi usando una correzione ayanamsa ed è il sistema principale utilizzato nell'astrologia vedica.",
+      "aliases": [
+        "Sistema Siderale"
+      ],
+      "url": ""
+    },
+    {
+      "id": "signature-theme",
+      "term": "Firma",
+      "category": "Foundation",
+      "definition": "Il sentimento che conferma che una persona sta vivendo correttamente secondo il proprio Tipo, Strategia e Autorità. Pace (Manifestatore), Soddisfazione (Generatore), Successo (Proiettore), Sorpresa (Riflettore).",
+      "aliases": [
+        "Tema della Firma"
+      ],
+      "url": ""
+    },
+    {
+      "id": "single-definition",
+      "term": "Definizione Singola",
+      "category": "Foundation",
+      "definition": "Tutti i centri definiti sono collegati in un circuito continuo unico. Circa il 41% della popolazione. Autosufficiente nel flusso energetico, non dipende da altri per colmare le lacune.",
+      "aliases": [
+        "Def Singola"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sirius",
+      "term": "Sirio",
+      "category": "Astrology",
+      "definition": "La stella più brillante del cielo notturno, situata a circa 14 gradi del Cancro nell'astrologia tropicale. Sirio è associata con ambizione, fama, devozione, ricchezza e onore, ed è stata una delle stelle più importanti in astrologia fin dai tempi dell'antico Egitto.",
+      "aliases": [
+        "Stella del Cane"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sleep-design",
+      "term": "Design del Sonno",
+      "category": "Foundation",
+      "definition": "L'importanza di dormire da soli nella propria aura, specialmente con centri indefiniti. Durante il sonno, il corpo elabora il condizionamento quotidiano. Ra sottolineava che dormire nell'aura di un altro condiziona profondamente i centri aperti.",
+      "aliases": [
+        "Sonno HD"
+      ],
+      "url": ""
+    },
+    {
+      "id": "smell-cognition",
+      "term": "Olfatto (Cognizione)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Cognizione (Tono 1). Elabora le informazioni attraverso un senso istintivo e primordiale di giusto o sbagliato.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "social-planets",
+      "term": "Pianeti Sociali",
+      "category": "Astrology",
+      "definition": "Giove e Saturno, che orbitano tra i pianeti personali e transpersonali. I pianeti sociali rappresentano temi sociali, valori culturali e tendenze generazionali su periodi più brevi rispetto ai pianeti esterni, con Giove che trascorre circa un anno in ogni segno e Saturno circa due anni e mezzo.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "solar-arc",
+      "term": "Arco Solare",
+      "category": "Astrology",
+      "definition": "Una tecnica predittiva che fa avanzare ogni pianeta e punto nel tema natale dello stesso arco, che equivale alla distanza che il Sole secondario progredito ha percorso dalla sua posizione natale. Questo significa che tutti i pianeti si muovono a circa un grado all'anno. Le direzioni dell'arco solare sono apprezzate per la loro semplicità e per determinare i tempi degli eventi importanti della vita.",
+      "aliases": [
+        "Direzioni dell'Arco Solare"
+      ],
+      "url": ""
+    },
+    {
+      "id": "solar-arc-directions",
+      "term": "Direzioni dell'Arco Solare",
+      "category": "Astrology",
+      "definition": "Una tecnica predittiva che fa avanzare ogni pianeta e punto nel tema natale dello stesso arco, uguale alla distanza che il Sole progredito ha percorso. Le direzioni dell'arco solare producono un'attivazione principale all'anno e sono ampiamente utilizzate per determinare i tempi di eventi significativi della vita.",
+      "aliases": [
+        "Arco Solare"
+      ],
+      "url": ""
+    },
+    {
+      "id": "solar-eclipse",
+      "term": "Eclissi Solare",
+      "category": "Astrology",
+      "definition": "Una luna nuova che si verifica vicino a uno dei nodi lunari, dove la Luna passa tra la Terra e il Sole, bloccando parzialmente o completamente la luce solare. Le eclissi solari sono considerate potenti catalizzatori per importanti nuovi inizi, eventi guidati dal destino e punti di svolta significativi che si sviluppano nell'arco di sei mesi a un anno.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "solar-plexus",
+      "term": "Centro del Plesso Solare",
+      "category": "Foundation",
+      "definition": "Il Centro della consapevolezza emotiva nel bodygraph. Quando definito, diventa l'Autorità Emotiva, operando in un pattern ondulatorio. Le decisioni dovrebbero essere prese nel tempo, non nel calore degli alti o bassi emotivi.",
+      "aliases": [
+        "Plesso Solare",
+        "Centro Emotivo"
+      ],
+      "url": ""
+    },
+    {
+      "id": "solar-return",
+      "term": "Rivoluzione Solare",
+      "category": "Astrology",
+      "definition": "Una carta calcolata per il momento esatto ogni anno in cui il Sole transitante ritorna alla sua posizione natale. La carta di rivoluzione solare è usata per prevedere temi, opportunità e sfide per l'anno a venire, da un compleanno al successivo.",
+      "aliases": [
+        "Carta di Rivoluzione Solare"
+      ],
+      "url": ""
+    },
+    {
+      "id": "solar-return-cycle",
+      "term": "Rivoluzione Solare",
+      "category": "Cycles",
+      "definition": "Ciclo annuale quando il Sole ritorna alla sua posizione natale esatta, nel giorno del compleanno o vicino a esso. Rivela i temi per l'anno a venire.",
+      "aliases": [
+        "Carta del Compleanno"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sound-determination",
+      "term": "Suono (Determinazione)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Determinazione (Colore 5). L'ambiente acustico durante i pasti è importante per una digestione appropriata.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "south-node",
+      "term": "Nodo Sud",
+      "category": "Astrology",
+      "definition": "Uno dei due nodi lunari, rappresenta il punto in cui l'orbita della Luna attraversa l'eclittica muovendosi verso sud. Il Nodo Sud indica tendenze di vite passate, doni innati e zone di comfort che potrebbero dover essere rilasciate per la crescita.",
+      "aliases": [
+        "Ketu",
+        "Coda del Drago"
+      ],
+      "url": ""
+    },
+    {
+      "id": "spica",
+      "term": "Spica",
+      "category": "Astrology",
+      "definition": "Una stella fissa luminosa nella costellazione della Vergine, situata a circa 24 gradi Bilancia nell'astrologia tropicale. Spica è considerata una delle stelle più fortunate, associata a brillantezza, fama, ricchezza, talento artistico e protezione dal male.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "spleen-center",
+      "term": "Centro della Milza",
+      "category": "Foundation",
+      "definition": "Il Centro della coscienza corporea nel Bodygraph, responsabile per l'intuizione, l'istinto, il gusto e la consapevolezza del sistema immunitario. La consapevolezza splenica è nel momento presente e non ripete i suoi segnali.",
+      "aliases": [
+        "Centro Splenico",
+        "Milza"
+      ],
+      "url": ""
+    },
+    {
+      "id": "splenic-authority",
+      "term": "Autorità Splenica",
+      "category": "Foundation",
+      "definition": "Opera attraverso il Centro della Milza, fornendo consapevolezza istantanea radicata nell'istinto di sopravvivenza e nell'intuizione. Parla solo una volta e molto silenziosamente.",
+      "aliases": [
+        "Autorità Intuitiva"
+      ],
+      "url": ""
+    },
+    {
+      "id": "split-definition",
+      "term": "Definizione Divisa",
+      "category": "Foundation",
+      "definition": "Due aree separate di definizione non connesse tra loro. Circa il 46% della popolazione. Attratte da persone e transiti che colmano il divario.",
+      "aliases": [
+        "Divisione Semplice"
+      ],
+      "url": ""
+    },
+    {
+      "id": "square",
+      "term": "Quadratura",
+      "category": "Astrology",
+      "definition": "Un aspetto maggiore formato quando due pianeti sono approssimativamente a 90 gradi di distanza nello zodiaco. Le quadrature rappresentano attrito, sfida e tensione dinamica che motiva l'azione e la crescita attraverso lo sforzo.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "station-direct",
+      "term": "Stazione Diretta",
+      "category": "Astrology",
+      "definition": "Il momento in cui un pianeta retrogrado sembra fermare il suo movimento all'indietro e riprende il movimento in avanti (diretto). Un pianeta in stazione diretta è considerato particolarmente potente, poiché concentra energia su un singolo grado prima di muoversi nuovamente in avanti.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "station-retrograde",
+      "term": "Stazione Retrograda",
+      "category": "Astrology",
+      "definition": "Il momento in cui un pianeta sembra fermare il suo movimento in avanti e inizia a muoversi all'indietro (retrogrado). Un pianeta in stazione retrograda è considerato intensamente focalizzato, segnando un punto di svolta cruciale nei temi governati da quel pianeta.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "stellium",
+      "term": "Stellium",
+      "category": "Astrology",
+      "definition": "Un raggruppamento di tre o più pianeti concentrati nello stesso segno zodiacale o casa. Uno stellium concentra intensamente l'energia in quell'area della vita, rendendola un tema dominante nella carta e spesso la caratteristica che definisce l'esperienza di una persona.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "strategy",
+      "term": "Strategia",
+      "category": "Foundation",
+      "definition": "Il modo corretto per ogni Tipo di prendere decisioni e impegnarsi con la vita. Ogni Tipo ha una Strategia unica: i Manifestatori informano, i Generatori e i Generatori Manifestanti rispondono, i Proiettori aspettano l'invito, e i Riflettori aspettano un ciclo lunare.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "succedent-houses",
+      "term": "Case Succedenti",
+      "category": "Astrology",
+      "definition": "La 2ª, 5ª, 8ª e 11ª casa, che seguono le case angolari. Le case succedenti sono associate a stabilità, risorse e consolidamento dell'energia iniziata dalle case angolari.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "success",
+      "term": "Successo",
+      "category": "Foundation",
+      "definition": "Il tema della Firma del Tipo Proiettore. Quando aspetta il riconoscimento e l'invito corretti prima di condividere la guida, segue un genuino successo.",
+      "aliases": [
+        "Firma del Proiettore"
+      ],
+      "url": ""
+    },
+    {
+      "id": "sun",
+      "term": "Sole",
+      "category": "Astrology",
+      "definition": "La luminaria centrale in astrologia, rappresenta l'identità centrale, l'ego, la vitalità e lo scopo di vita. Il posizionamento del segno del Sole è l'elemento più comunemente conosciuto di una carta natale e impiega circa un mese per transitare ogni segno zodiacale.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "surprise",
+      "term": "Sorpresa",
+      "category": "Foundation",
+      "definition": "Il tema della Firma del Tipo Riflettore. Quando aspetta attraverso un ciclo lunare completo e permette alla vita di svolgersi, sperimenta il piacere della sorpresa.",
+      "aliases": [
+        "Firma del Riflettore"
+      ],
+      "url": ""
+    },
+    {
+      "id": "survival-perspective",
+      "term": "Sopravvivenza (Prospettiva)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Prospettiva (Colore 1). Vede il mondo attraverso la sicurezza e l'autoconservazione.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "swati",
+      "term": "Swati",
+      "category": "Astrology",
+      "definition": "Il quindicesimo nakshatra nell'astrologia vedica, si estende da 6 gradi e 40 minuti a 20 gradi della Bilancia. La sua divinità governante è Vayu (dio del vento), e il suo governatore planetario è Rahu. È associato all'indipendenza, flessibilità e capacità di adattarsi e prosperare in condizioni mutevoli.",
+      "aliases": [
+        "Svati"
+      ],
+      "url": ""
+    },
+    {
+      "id": "synastry",
+      "term": "Sinastria",
+      "category": "Astrology",
+      "definition": "Una tecnica per analizzare la compatibilità relazionale sovrapponendo due temi natali ed esaminando gli aspetti tra loro. La sinastria rivela l'interazione dinamica tra due individui, evidenziando aree di armonia, attrazione e potenziale conflitto.",
+      "aliases": [
+        "Carta di Sinastria"
+      ],
+      "url": ""
+    },
+    {
+      "id": "synastry-aspects",
+      "term": "Aspetti di Sinastria",
+      "category": "Astrology",
+      "definition": "Le relazioni angolari formate tra pianeti nella carta di una persona e pianeti nella carta di un'altra persona, utilizzate per valutare la compatibilità e le dinamiche relazionali. Gli aspetti chiave includono congiunzioni, trigoni, quadrature e opposizioni tra pianeti personali. La sinastria è la tecnica più comune per analizzare partnership romantiche, di amicizia e d'affari.",
+      "aliases": [
+        "Sinastria"
+      ],
+      "url": ""
+    },
+    {
+      "id": "t-square",
+      "term": "T-Quadrato",
+      "category": "Astrology",
+      "definition": "Un pattern di aspetti formato quando due pianeti in opposizione entrambi formano una quadratura con un terzo pianeta, creando una forma a T nella carta. Il pianeta focale all'apice del T-Quadrato riceve tensione concentrata e diventa una forza motrice per l'azione e il raggiungimento.",
+      "aliases": [
+        "T Quadrato"
+      ],
+      "url": ""
+    },
+    {
+      "id": "taste-cognition",
+      "term": "Gusto (Cognizione)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Cognizione (Tono 2). Elabora le informazioni assaggiando e discernendo la qualità.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "taste-determination",
+      "term": "Gusto (Determinazione)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Determinazione (Colore 2). Il corpo seleziona il cibo basandosi su come ha sapore, usando il palato come guida primaria.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "taurus",
+      "term": "Toro",
+      "category": "Astrology",
+      "definition": "Il secondo segno dello zodiaco, si estende da 30 a 60 gradi dell'eclittica. Il Toro è un segno di terra fisso governato da Venere, associato a stabilità, sensualità e sicurezza materiale.",
+      "aliases": [
+        "Il Toro"
+      ],
+      "url": ""
+    },
+    {
+      "id": "terms-bounds",
+      "term": "Terms/Bounds",
+      "category": "Astrology",
+      "definition": "Un sistema di dignità essenziali che divide ogni segno zodiacale in segmenti disuguali, ciascuno governato da un pianeta diverso. I termini o confini forniscono un livello più fine di valutazione della dignità, con sistemi multipli (egiziano, tolemaico) che offrono divisioni leggermente diverse.",
+      "aliases": [
+        "Terms",
+        "Bounds"
+      ],
+      "url": ""
+    },
+    {
+      "id": "thema-mundi",
+      "term": "Thema Mundi",
+      "category": "Astrology",
+      "definition": "Una leggendaria carta mitica che rappresenta la nascita del mondo, utilizzata come strumento didattico nell'astrologia ellenistica. Il Thema Mundi colloca il Cancro sull'Ascendente con i pianeti classici nei loro domicili, illustrando la logica dietro i governatorati dei segni, gli aspetti e la struttura dello zodiaco.",
+      "aliases": [
+        "Carta del Mondo"
+      ],
+      "url": ""
+    },
+    {
+      "id": "thirst",
+      "term": "Sete",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Determinazione (Colore 3). L'idratazione corretta è fondamentale per la digestione, con l'assunzione di liquidi che gioca un ruolo centrale.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "throat-center",
+      "term": "Centro della Gola",
+      "category": "Foundation",
+      "definition": "Il centro della manifestazione, comunicazione ed espressione. È il fulcro attraverso cui tutta l'energia cerca di esprimersi, sia attraverso la parola che attraverso l'azione.",
+      "aliases": [
+        "Gola"
+      ],
+      "url": ""
+    },
+    {
+      "id": "time-lords",
+      "term": "Time Lords",
+      "category": "Astrology",
+      "definition": "Un termine collettivo per vari sistemi di periodi planetari usati nell'astrologia ellenistica e medievale per determinare quali pianeti sono più attivi durante specifici periodi di vita. Questi includono tecniche come i decenniali, il rilascio zodiacale e le profezioni annuali. I sistemi dei Time Lords condividono una somiglianza concettuale con il sistema Dasha vedico.",
+      "aliases": [
+        "Chronocrators"
+      ],
+      "url": ""
+    },
+    {
+      "id": "tithi",
+      "term": "Tithi",
+      "category": "Astrology",
+      "definition": "Un giorno lunare nel calendario vedico, definito come il tempo necessario alla Luna per guadagnare 12 gradi di separazione dal Sole. Ci sono 30 tithi in un mese lunare completo (15 nella metà crescente, 15 nella metà calante). I tithi sono un elemento fondamentale del panchang e vengono usati per il muhurta (timing elettivo).",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "tone",
+      "term": "Tono",
+      "category": "Variables",
+      "definition": "La frequenza specifica all'interno di un Colore che affina ulteriormente come opera l'energia. Ci sono sei Toni in ogni Colore, aggiungendo un altro livello di differenziazione alla struttura di Linea, Colore e Base di ogni attivazione.",
+      "aliases": [
+        "Toni"
+      ],
+      "url": ""
+    },
+    {
+      "id": "touch-cognition",
+      "term": "Touch (Cognizione)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Cognizione (Tono 6). Elabora le informazioni attraverso il contatto fisico e l'esperienza tattile e pratica.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "touch-determination",
+      "term": "Touch (Determinazione)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Determinazione (Colore 4). Il corpo è sensibile alla temperatura e alla consistenza del cibo.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "trajectory",
+      "term": "Trajectory",
+      "category": "Variables",
+      "definition": "L'orientamento complessivo sinistro o destro. Trajectory Sinistra significa strategico e focalizzato. Trajectory Destra significa ricettivo e aperto.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "transit",
+      "term": "Transito",
+      "category": "Foundation",
+      "definition": "Le posizioni planetarie attuali e il loro effetto sul campo di neutrini globale. I transiti influenzano tutti e creano una frequenza di sottofondo che può attivare temporaneamente Porte e Canali, influenzando i temi collettivi.",
+      "aliases": [
+        "Transiti"
+      ],
+      "url": ""
+    },
+    {
+      "id": "transit-chart",
+      "term": "Tema natale dei transiti",
+      "category": "Astrology",
+      "definition": "Una carta che mostra le posizioni attuali o future dei pianeti confrontate con un tema natale. I transiti sono la tecnica predittiva principale nell'astrologia moderna, rivelando come i movimenti planetari in corso attivano e influenzano i posizionamenti natali nel tempo.",
+      "aliases": [
+        "Transiti"
+      ],
+      "url": ""
+    },
+    {
+      "id": "transpersonal-planets",
+      "term": "Pianeti transpersonali",
+      "category": "Astrology",
+      "definition": "I pianeti esterni dal movimento lento Urano, Nettuno e Plutone, che rappresentano forze collettive e generazionali. Poiché trascorrono molti anni in ogni segno, i pianeti transpersonali plasmano le caratteristiche e le sfide di intere generazioni piuttosto che degli individui.",
+      "aliases": [
+        "Pianeti esterni",
+        "Pianeti generazionali"
+      ],
+      "url": ""
+    },
+    {
+      "id": "tribal-circuit",
+      "term": "Circuito Tribale",
+      "category": "Foundation",
+      "definition": "Contiene i Circuiti dell'Ego e della Difesa. Il tema è supporto, risorse, valori e legami comunitari. Opera attraverso il tatto e il mondo materiale.",
+      "aliases": [
+        "Circuiteria Tribale"
+      ],
+      "url": ""
+    },
+    {
+      "id": "trikona-houses",
+      "term": "Case Trikona",
+      "category": "Astrology",
+      "definition": "La 1ª, 5ª e 9ª casa nell'astrologia vedica, considerate le posizioni più propizie e dharmiche nella carta. I signori delle trikona sono benefici naturali per qualsiasi ascendente e la loro congiunzione con i signori delle kendra produce raja yoga. Queste case si relazionano al proposito (1ª), creatività e merito (5ª), e fortuna e saggezza superiore (9ª).",
+      "aliases": [
+        "Case trigonali",
+        "Trikona Bhavas"
+      ],
+      "url": ""
+    },
+    {
+      "id": "trine",
+      "term": "Trigono",
+      "category": "Astrology",
+      "definition": "Un aspetto maggiore formato quando due pianeti sono distanti approssimativamente 120 gradi, tipicamente collegando segni dello stesso elemento. I trigoni rappresentano armonia, talento naturale e un flusso facile di energia tra i pianeti coinvolti.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "triple-split-definition",
+      "term": "Tripla Divisione",
+      "category": "Foundation",
+      "definition": "Tre aree separate di definizione senza connessioni tra loro. Circa l'11% della popolazione. Ha bisogno di muoversi attraverso diversi ambienti per sperimentare il collegamento.",
+      "aliases": [
+        "Tripla Divisione"
+      ],
+      "url": ""
+    },
+    {
+      "id": "triplicity",
+      "term": "Triplicità",
+      "category": "Astrology",
+      "definition": "Un sistema di dignità essenziale che assegna governatori planetari a ciascuno dei quattro elementi (fuoco, terra, aria, acqua). I governatori delle triplicità variano secondo la setta, con diversi pianeti che governano un elemento di giorno e di notte, aggiungendo sfumature alla valutazione della forza planetaria.",
+      "aliases": [
+        "Governatori delle triplicità"
+      ],
+      "url": ""
+    },
+    {
+      "id": "tropical-zodiac",
+      "term": "Zodiaco tropicale",
+      "category": "Astrology",
+      "definition": "Il sistema zodiacale basato sulle stagioni, dove 0 gradi dell'Ariete si allinea con l'equinozio di primavera. È il quadro di riferimento standard usato nell'astrologia occidentale e non tiene conto della precessione degli equinozi.",
+      "aliases": [
+        "Sistema tropicale"
+      ],
+      "url": ""
+    },
+    {
+      "id": "true-sidereal-zodiac",
+      "term": "Zodiaco siderale reale",
+      "category": "Astrology",
+      "definition": "Un sistema zodiacale che allinea i confini dei segni con le effettive costellazioni astronomiche come definite dall'Unione Astronomica Internazionale (IAU). A differenza dello zodiaco siderale standard (che usa segni uguali di 30 gradi), il siderale reale tiene conto delle dimensioni disuguali delle costellazioni. Questo significa che alcuni segni si estendono per più o meno di 30 gradi.",
+      "aliases": [
+        "Zodiaco siderale astronomico"
+      ],
+      "url": ""
+    },
+    {
+      "id": "type",
+      "term": "Tipo",
+      "category": "Foundation",
+      "definition": "Uno dei cinque tipi energetici in Human Design che determina come una persona è progettata per interagire con il mondo. I cinque Tipi sono Manifestatore, Generatore, Generatore Manifestante, Proiettore e Riflettore.",
+      "aliases": [
+        "Tipi"
+      ],
+      "url": ""
+    },
+    {
+      "id": "undefined-center",
+      "term": "Centro Indefinito",
+      "category": "Foundation",
+      "definition": "Un centro bianco che contiene Porte attivate ma nessun canale completo. Riceve e amplifica l'energia dagli altri, creando aree di condizionamento e potenziale saggezza.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "under-the-beams",
+      "term": "Sotto i raggi",
+      "category": "Astrology",
+      "definition": "Una condizione planetaria dove un pianeta si trova entro circa 15-17 gradi dal Sole ma fuori dalla portata della combustione. Essere sotto i raggi è una debilità più lieve della combustione, dove le significazioni del pianeta sono in qualche modo oscurate ma non completamente sopraffatte.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "upachaya-houses",
+      "term": "Case Upachaya",
+      "category": "Astrology",
+      "definition": "La 3ª, 6ª, 10ª e 11ª casa nell'astrologia vedica, conosciute come case di crescita e miglioramento nel tempo. I malefici naturali (Sole, Marte, Saturno, Rahu, Ketu) funzionano bene nelle case upachaya perché la loro energia aggressiva è incanalata in uno sforzo produttivo. I risultati associati a queste case tendono a migliorare con l'età del nativo.",
+      "aliases": [
+        "Upachaya Bhavas"
+      ],
+      "url": ""
+    },
+    {
+      "id": "uranus",
+      "term": "Urano",
+      "category": "Astrology",
+      "definition": "Il pianeta della rivoluzione, innovazione, cambiamento improvviso e individualità nell'astrologia. Urano è il governatore moderno dell'Acquario e impiega approssimativamente 84 anni per orbitare intorno al Sole, trascorrendo circa sette anni in ogni segno.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "uranus-opposition",
+      "term": "Opposizione di Urano",
+      "category": "Cycles",
+      "definition": "Intorno ai 38-42 anni, il classico punto di crisi di mezza età. In Human Design, questo è quando la pressione per risvegliarsi al sé autentico raggiunge il picco.",
+      "aliases": [
+        "Crisi di mezza età"
+      ],
+      "url": ""
+    },
+    {
+      "id": "uttara-ashadha",
+      "term": "Uttara Ashadha",
+      "category": "Astrology",
+      "definition": "La ventunesima nakshatra nell'astrologia vedica, che si estende da 26 gradi e 40 minuti del Sagittario a 10 gradi del Capricorno. La sua divinità governatrice sono i Vishvadevas (dei universali) e il suo governatore planetario è il Sole. È associata alla vittoria finale, al risultato duraturo e all'autorità incontestabile.",
+      "aliases": [
+        "Uttarashada"
+      ],
+      "url": ""
+    },
+    {
+      "id": "uttara-bhadrapada",
+      "term": "Uttara Bhadrapada",
+      "category": "Astrology",
+      "definition": "La ventiseiesima nakshatra nell'astrologia vedica, che si estende da 3 gradi e 20 minuti a 16 gradi e 40 minuti dei Pesci. La sua divinità governatrice è Ahir Budhnya (serpente del profondo) e il suo governatore planetario è Saturno. È associata alla saggezza profonda, alla profondità spirituale e alla capacità di controllare l'energia kundalini.",
+      "aliases": [
+        "Uttarattathi"
+      ],
+      "url": ""
+    },
+    {
+      "id": "uttara-phalguni",
+      "term": "Uttara Phalguni",
+      "category": "Astrology",
+      "definition": "La dodicesima nakshatra nell'astrologia vedica, che si estende da 26 gradi 40 minuti del Leone a 10 gradi della Vergine. La sua divinità reggente è Aryaman (dio del patrocinio e dell'amicizia), e il suo reggente planetario è il Sole. È associata ai contratti sociali, al matrimonio e alla generosità utile.",
+      "aliases": [
+        "Uttara Phalguni",
+        "Uttara"
+      ],
+      "url": ""
+    },
+    {
+      "id": "vakri",
+      "term": "Vakri",
+      "category": "Astrology",
+      "definition": "Il termine sanscrito per il moto retrogrado nell'astrologia vedica, quando un pianeta sembra muoversi all'indietro attraverso lo zodiaco dalla prospettiva terrestre. Un pianeta vakri è considerato forte nella tradizione vedica (a differenza della visione occidentale dei pianeti retrogradi indeboliti) perché è più vicino alla Terra durante il retrogrado. Tuttavia, può fornire i suoi risultati in modi inaspettati, interiorizzati o ritardati.",
+      "aliases": [
+        "Vakra"
+      ],
+      "url": ""
+    },
+    {
+      "id": "valleys",
+      "term": "Valleys",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Ambiente (Colore 5). Uno spazio situato in basso e ricco acusticamente dove suono e vibrazioni si incanalano naturalmente.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "vargottama",
+      "term": "Vargottama",
+      "category": "Astrology",
+      "definition": "Un pianeta che occupa lo stesso segno sia nel tema natale (rashi) che nella carta navamsa (D9) nell'astrologia vedica. I pianeti vargottama sono considerati eccezionalmente forti perché la loro energia è coerente e rafforzata in entrambe le carte. Questa condizione è particolarmente potente per il grado dell'Ascendente.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "variable",
+      "term": "Variabili",
+      "category": "Variables",
+      "definition": "Un'area avanzata di Human Design che esamina le quattro Frecce nella parte superiore del bodygraph. Le Variabili determinano come Lei è progettata per assimilare la nutrizione (Determinazione), percepire il mondo (Cognizione), essere nel posto giusto (Ambiente) e vedere correttamente (Prospettiva).",
+      "aliases": [
+        "Variables",
+        "Variabili"
+      ],
+      "url": ""
+    },
+    {
+      "id": "variable-notation",
+      "term": "Variable Notation",
+      "category": "Variables",
+      "definition": "Abbreviazione per le quattro frecce delle Variabili: P (Personalità) e D (Design) combinate con R (Destra) e L (Sinistra). Esempi: PRL DRL, PLL DRR.",
+      "aliases": [
+        "Arrow Notation"
+      ],
+      "url": ""
+    },
+    {
+      "id": "venus",
+      "term": "Venere",
+      "category": "Astrology",
+      "definition": "Il pianeta dell'amore, della bellezza, dei valori e del piacere in astrologia. Venere governa il Toro e la Bilancia e rappresenta come una persona si avvicina alle relazioni, all'estetica e al comfort materiale.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "venus-mars-aspects",
+      "term": "Aspetti Venere-Marte",
+      "category": "Astrology",
+      "definition": "Aspetti tra Venere e Marte in sinastria che sono considerati indicatori primari di attrazione fisica e chimica sessuale tra due persone. Congiunzioni, trigoni e sestili tendono a produrre desiderio armonioso, mentre quadrature e opposizioni creano magnetismo intenso ma potenzialmente volatile. Questi aspetti sono tra quelli immediatamente percepiti nell'astrologia delle relazioni.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "vernal-point",
+      "term": "Punto Vernale",
+      "category": "Astrology",
+      "definition": "La posizione del Sole al momento dell'equinozio vernale (di primavera), che definisce 0 gradi dell'Ariete nello zodiaco tropicale. A causa della precessione, il punto vernale si muove lentamente all'indietro attraverso le costellazioni siderali nel corso di migliaia di anni.",
+      "aliases": [
+        "Punto dell'Equinozio Vernale"
+      ],
+      "url": ""
+    },
+    {
+      "id": "vertex",
+      "term": "Vertex",
+      "category": "Astrology",
+      "definition": "Un punto sensibile nell'emisfero occidentale del tema natale, spesso chiamato il punto del destino. Il Vertex è associato a incontri fatali, relazioni significative e punti di svolta che sembrano destinati piuttosto che scelti.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "vesta",
+      "term": "Vesta",
+      "category": "Astrology",
+      "definition": "Un asteroide che rappresenta devozione, concentrazione sacra e la fiamma interiore in astrologia. Vesta indica dove una persona dirige il suo impegno più profondo e come sperimenta la dedizione, il rituale e l'autosufficienza.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "view",
+      "term": "View",
+      "category": "Variables",
+      "definition": "La Prospettiva derivata dal Colore del Sole/Terra della Personalità. Come la mente è progettata per vedere e interpretare il mondo.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "vimshottari-dasha",
+      "term": "Vimshottari Dasha",
+      "category": "Astrology",
+      "definition": "Il sistema di periodi planetari più utilizzato nell'astrologia vedica, basato su un ciclo di 120 anni diviso tra nove graha. La sequenza e il punto di partenza sono determinati dalla nakshatra della Luna alla nascita. Il periodo di ogni pianeta attiva i temi delle case che governa e occupa nel tema natale.",
+      "aliases": [
+        "Vimshottari"
+      ],
+      "url": ""
+    },
+    {
+      "id": "virgo",
+      "term": "Vergine",
+      "category": "Astrology",
+      "definition": "Il sesto segno dello zodiaco, che si estende da 150 a 180 gradi dell'eclittica. La Vergine è un segno di terra mobile governato da Mercurio, associato all'analisi, al servizio e all'attenzione ai dettagli.",
+      "aliases": [
+        "La Vergine"
+      ],
+      "url": ""
+    },
+    {
+      "id": "vishakha",
+      "term": "Vishakha",
+      "category": "Astrology",
+      "definition": "La sedicesima nakshatra nell'astrologia vedica, che si estende da 20 gradi della Bilancia a 3 gradi 20 minuti dello Scorpione. Le sue divinità reggenti sono Indra e Agni, e il suo reggente planetario è Giove. È associata alla determinazione, alla concentrazione focalizzata e al raggiungimento degli obiettivi attraverso uno sforzo sostenuto.",
+      "aliases": [
+        "Visakha"
+      ],
+      "url": ""
+    },
+    {
+      "id": "void-of-course",
+      "term": "Void of Course",
+      "category": "Astrology",
+      "definition": "Una condizione in cui un pianeta, più comunemente la Luna, non forma più aspetti maggiori prima di lasciare il suo segno attuale. Una Luna void of course è tradizionalmente considerata sfavorevole per iniziare nuovi progetti, poiché le azioni intraprese durante questo periodo potrebbero non produrre i risultati desiderati.",
+      "aliases": [
+        "VOC"
+      ],
+      "url": ""
+    },
+    {
+      "id": "void-of-course-moon",
+      "term": "Luna Void of Course",
+      "category": "Astrology",
+      "definition": "Il periodo specifico in cui la Luna non forma più aspetti tolemaici maggiori prima di cambiare segno. Le azioni iniziate durante una Luna void of course sono tradizionalmente considerate improbabili a produrre risultati significativi, rendendolo un momento migliore per compiti di routine e riposo.",
+      "aliases": [
+        "Luna VOC"
+      ],
+      "url": ""
+    },
+    {
+      "id": "wa",
+      "term": "WA",
+      "category": "BG5/Penta",
+      "definition": "Il ruolo o modo di un individuo all'interno di una dinamica di gruppo, che descrive il suo contributo specifico all'interno di una Penta o struttura più ampia.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "waning-crescent",
+      "term": "Luna Calante",
+      "category": "Astrology",
+      "definition": "La fase lunare finale prima della luna nuova quando rimane visibile solo una sottile falce di luce. Chiamata anche luna balsamica, questa fase rappresenta riposo, resa, guarigione e preparazione per il prossimo ciclo di rinnovamento.",
+      "aliases": [
+        "Luna Balsamica"
+      ],
+      "url": ""
+    },
+    {
+      "id": "waning-gibbous",
+      "term": "Luna Gibbosa Calante",
+      "category": "Astrology",
+      "definition": "La fase lunare che segue la luna piena quando l'illuminazione inizia a diminuire. Chiamata anche fase disseminante, questo periodo è associato alla condivisione della conoscenza, alla distribuzione di ciò che è stato guadagnato e all'inizio del processo di rilascio.",
+      "aliases": [
+        "Luna Disseminante"
+      ],
+      "url": ""
+    },
+    {
+      "id": "wanting-perspective",
+      "term": "Wanting (Prospettiva)",
+      "category": "Variables",
+      "definition": "Uno dei sei tipi di Prospettiva (Colore 4). Vede il mondo attraverso ciò che manca o è necessario.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "water-element",
+      "term": "Elemento Acqua",
+      "category": "Astrology",
+      "definition": "Uno dei quattro elementi classici in astrologia, che comprende Cancro, Scorpione e Pesci. I segni d'acqua sono associati all'emozione, all'intuizione, alla sensibilità e alla profondità del sentimento.",
+      "aliases": [
+        "Segni d'Acqua"
+      ],
+      "url": ""
+    },
+    {
+      "id": "waxing-crescent",
+      "term": "Luna Crescente",
+      "category": "Astrology",
+      "definition": "La fase lunare che si verifica dopo la luna nuova quando una sottile falce di luce diventa prima visibile sul lato destro della Luna. Questa fase rappresenta l'intenzione emergente, l'accumulo di slancio e la spinta iniziale per andare avanti con nuovi piani.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "waxing-gibbous",
+      "term": "Luna Gibbosa Crescente",
+      "category": "Astrology",
+      "definition": "La fase lunare tra il primo quarto e la luna piena quando più della metà della Luna è illuminata e in crescita. Questa fase rappresenta raffinamento, analisi e messa a punto mentre gli sforzi si costruiscono verso il culmine della luna piena.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "whole-sign-houses",
+      "term": "Case Intere",
+      "category": "Astrology",
+      "definition": "Il sistema di case più antico conosciuto, originario dell'astrologia ellenistica, dove ogni casa corrisponde a un intero segno zodiacale. Il segno che contiene l'Ascendente diventa la prima casa, il segno successivo diventa la seconda casa, e così via. Ha visto una grande rinascita nella pratica moderna grazie alla sua semplicità e autenticità storica.",
+      "aliases": [
+        "Sistema Case Intere",
+        "WSH"
+      ],
+      "url": ""
+    },
+    {
+      "id": "yod",
+      "term": "Yod",
+      "category": "Astrology",
+      "definition": "Un modello di aspetti formato quando due pianeti formano un sestile tra loro ed entrambi formano un quinconce con un terzo pianeta, creando un triangolo stretto che punta verso il pianeta apicale. Conosciuto come il Dito di Dio, lo yod indica una qualità del destino o una missione speciale collegata al pianeta apicale.",
+      "aliases": [
+        "Finger of God",
+        "Finger of Fate",
+        "Dito di Dio",
+        "Dito del Destino"
+      ],
+      "url": ""
+    },
+    {
+      "id": "yukteshwar-ayanamsa",
+      "term": "Yukteshwar Ayanamsa",
+      "category": "Astrology",
+      "definition": "Un ayanamsha basato sui calcoli di Sri Yukteshwar Giri, il guru di Paramahansa Yogananda, come presentato nel suo libro La Scienza Sacra. Incorpora una teoria unica dei yuga ciclici (ere) e un ciclo precessionale più breve. Differisce significativamente dall'ayanamsha Lahiri ed è utilizzato principalmente dai seguaci del lignaggio del Kriya Yoga.",
+      "aliases": [],
+      "url": ""
+    },
+    {
+      "id": "zodiacal-releasing",
+      "term": "Zodiacal Releasing",
+      "category": "Astrology",
+      "definition": "Una tecnica di timing ellenistica attribuita a Vettius Valens che divide la vita in periodi maggiori e minori basati sulla Parte dello Spirito o Parte di Fortuna. Lo zodiacal releasing rivela i periodi di picco dell'attività professionale, del proposito e dei capitoli significativi della vita attraverso un sistema a cascata di periodi del signore del tempo.",
+      "aliases": [],
+      "url": ""
+    }
+  ],
+  "categories": [
+    "Foundation",
+    "Variables",
+    "Astrology",
+    "BG5/Penta",
+    "Cycles"
+  ],
+  "language": "it"
+}

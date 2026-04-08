@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+ <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Estrelas Fixas na Astrologia | Gráficos Estelares e Influência Estelar | Genetic Matrix</title>
+ <meta name="description" content="Explore o papel das estrelas fixas na astrologia. Saiba como estrelas como Regulus, Algol, Spica e Sirius influenciam o seu mapa natal. A Genetic Matrix oferece gráficos estelares detalhados com centenas de estrelas fixas.">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn/astrology/fixed-stars/">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ 'gm-purple': '#6E5898',
+ 'gm-purple-light': '#9080B1',
+ 'gm-purple-soft': '#AC94D8',
+ 'gm-dark': '#3C2864',
+ 'gm-darker': '#2e1f4d',
+ 'gm-green': '#54931E',
+ 'gm-green-dark': '#468018',
+ 'gm-green-light': '#8EB86A',
+ 'gm-pink': '#F66378',
+ 'gm-orange': '#E8961D',
+ 'gm-gray': '#707070',
+ 'gm-light': '#F7F8F9',
+ 'gm-card': '#FAFBFC',
+ 'gm-card-active': '#F4F0FC',
+ 'gm-border': '#D8D4E4',
+ 'gm-warning': '#F8F8E8',
+ 'gm-text-dark': '#1A1A2E',
+ 'gm-text': '#444444',
+ 'gm-text-light': '#949494',
+ }
+ }
+ }
+ }
+ </script>
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+ body { font-family: 'Inter', sans-serif; }
+ details summary { cursor: pointer; list-style: none; }
+ details summary::-webkit-details-marker { display: none; }
+ details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+ details[open] summary::after { content: '\2212'; }
+ details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+ @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+ </style>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Estrelas Fixas na Astrologia | Gráficos Estelares e Influência Estelar","description":"Explore o papel das estrelas fixas na astrologia. Saiba como estrelas como Regulus, Algol, Spica e Sirius influenciam o seu mapa natal. A Genetic Matrix oferece gráficos estelares detalhados com centenas de estrelas fixas.","publisher":{"@type":"Organization","name":"Genetic Matrix","url":"https://www.geneticmatrix.com"},"mainEntityOfPage":"https://www.geneticmatrix.com/learn/astrology/fixed-stars/","datePublished":"2025-01-15","dateModified":"2026-03-06"}
+</script>
+ <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"As estrelas fixas afectam toda a gente?","acceptedAnswer":{"@type":"Answer","text":"As estrelas fixas são mais significativas quando formam uma conjunção próxima (dentro de cerca de 1 grau) com um planeta, ângulo, ou ponto sensível no mapa natal. Se nenhum planeta ou ponto no mapa se alinha com uma determinada estrela, a sua influência é mínima a nível pessoal. No entanto, quando uma estrela está em conjunção próxima com uma colocação importante, os seus efeitos podem ser impressionantes."}},
+{"@type":"Question","name":"Quais são as estrelas fixas mais importantes?","acceptedAnswer":{"@type":"Answer","text":"As quatro Estrelas Reais (Aldebaran, Regulus, Antares, Fomalhaut) são tradicionalmente consideradas as mais poderosas. Para além dessas, Sirius, Spica e Algol estão entre as mais frequentemente citadas na interpretação astrológica. As estrelas de primeira magnitude geralmente têm mais peso do que as mais ténues."}},
+{"@type":"Question","name":"Algumas estrelas são sortudas e outras azaradas?","acceptedAnswer":{"@type":"Answer","text":"A astrologia tradicional classifica as estrelas pela sua natureza planetária, com algumas consideradas benéficas (como Spica, que tem natureza Vénus-Mercúrio) e outras consideradas maléficas (como Algol, que tem natureza Saturno-Júpiter). No entanto, os astrólogos modernos tendem a ver todas as estrelas como portadoras tanto de potencial como de desafio, dependendo de como a sua energia se expressa."}},
+{"@type":"Question","name":"A Genetic Matrix mostra as estrelas fixas no meu gráfico?","acceptedAnswer":{"@type":"Answer","text":"Sim. A Genetic Matrix Pro inclui um gráfico detalhado de estrelas fixas que mapeia centenas de estrelas no mapa natal, mostrando quais estrelas estão em conjunção com os planetas e ângulos. Esta é uma das características de gráfico estelar mais abrangentes disponíveis em qualquer plataforma de astrologia."}}
+]}
+</script>
+</head>
+<body class="bg-white text-gray-700">
+
+ <!-- ==================== NAV BAR ==================== -->
+ <nav class="bg-white border-b border-gray-200 sticky top-0 z-50" style="font-family: Bilo, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
+        <div class="w-full px-[30px] flex items-center h-[80px]">
+            <!-- Logo -->
+            <a href="/" class="flex-shrink-0">
+                <img src="/learn-hub/assets/logo.svg" alt="Genetic Matrix - Know you" class="h-8 md:h-14">
+            </a>
+
+            <!-- Mobile: Cart + Hamburger (right side) -->
+            <div class="lg:hidden flex items-center gap-4">
+                <a href="https://www.geneticmatrix.com/cart/" title="Cart" class="px-3 relative">
+                    <img src="/learn-hub/assets/icon-cart.svg" alt="Cart" class="h-5 w-auto">
+                    <span id="gm-cart-count-mobile" class="absolute top-[2px] left-[55%] -translate-x-1/2 text-gm-green font-bold text-[10px] leading-none hidden">0</span>
+                </a>
+                <button id="gm-hamburger" class="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition">
+                    <svg class="w-6 h-6 text-gm-gray" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+
+            <!-- Desktop Nav -->
+            <div class="hidden lg:flex flex-1 items-center justify-end">
+                <!-- Reports -->
+                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="mx-3 flex items-center justify-center w-9 h-9 rounded-lg border border-[#dee2e6] hover:border-gm-purple/30 hover:bg-gray-50 transition" title="Reports">
+                    <img src="/learn-hub/assets/icon-report.svg" alt="Reports" class="h-6 w-6">
+                </a>
+                <!-- Talking Charts -->
+                <a href="https://www.geneticmatrix.com/talking-charts/" class="mx-3 flex items-center justify-center w-9 h-9 rounded-lg border border-[#dee2e6] hover:border-gm-purple/30 hover:bg-gray-50 transition" title="Talking Charts">
+                    <img src="/learn-hub/assets/icon-talking-chart.svg" alt="Talking Charts" class="h-5 w-5">
+                </a>
+                <!-- Free Chart (hidden when logged in) -->
+                <a id="gm-free-chart" href="#" class="px-3 text-gm-gray hover:text-gray-900 text-base font-medium" data-action="free-chart-popup">Free Chart</a>
+                <!-- Learn Dropdown -->
+                <div class="relative group">
+                    <button class="px-3 text-gm-purple hover:text-gm-dark text-base font-semibold flex items-center gap-1">
+                        Learn
+                        <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[420px] bg-white rounded-xl shadow-xl border border-gray-100 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="grid grid-cols-2 gap-1">
+                            <a href="/learn-hub/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/Menu_Icon_ Hub.svg" alt="Learn Hub" class="w-6 h-6"></div>
+                                <div><div class="text-sm font-semibold text-gray-800">Learn Hub</div><div class="text-xs text-gm-text-light mt-0.5">HD and Astrology education</div></div>
+                            </a>
+                            <a href="/learn-hub/celebrities/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/Menu_Icon _celebrity .svg" alt="Celebrity Search" class="w-6 h-6"></div>
+                                <div><div class="text-sm font-semibold text-gray-800">Celebrity Search</div><div class="text-xs text-gm-text-light mt-0.5">88,600+ celebrity charts</div></div>
+                            </a>
+                            <a href="/dictionary/dictionary.html" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
+                                <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/Menu_Icon_ dictionary.svg" alt="Dictionary" class="w-6 h-6"></div>
+                                <div><div class="text-sm font-semibold text-gray-800">Dictionary</div><div class="text-xs text-gm-text-light mt-0.5">HD and Astrology terms</div></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Our Plans -->
+                <a href="https://www.geneticmatrix.com/plans-features/" class="px-3 text-gm-gray hover:text-gray-900 text-base font-medium">Our Plans</a>
+                <!-- Cart -->
+                <a href="https://www.geneticmatrix.com/cart/" title="Cart" class="px-3 relative">
+                    <img src="/learn-hub/assets/icon-cart.svg" alt="Cart" class="h-5 w-auto">
+                    <span id="gm-cart-count" class="absolute top-[2px] left-[55%] -translate-x-1/2 text-gm-green font-bold text-[10px] leading-none hidden">0</span>
+                </a>
+                <!-- Language Switcher -->
+                <div class="relative group px-3">
+                    <button class="flex items-center gap-1 text-gm-gray hover:text-gray-900 text-base">
+                        <span id="gm-lang-current">English</span>
+                        <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="absolute top-full right-0 mt-4 w-44 bg-white rounded-xl shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <a data-lang="en" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">English</a>
+                        <a data-lang="de" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Deutsch</a>
+                        <a data-lang="es" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Español</a>
+                        <a data-lang="fr" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Français</a>
+                        <a data-lang="it" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Italiano</a>
+                        <a data-lang="nl" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Nederlands</a>
+                        <a data-lang="pt" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Português</a>
+                    </div>
+                </div>
+                <!-- Logged OUT -->
+                <div id="gm-logged-out" class="flex items-center">
+                    <a href="https://www.geneticmatrix.com/my-account/" class="px-3 text-gm-gray hover:text-gray-900 text-base font-medium" class="px-3">Sign In</a>
+                    <a href="https://www.geneticmatrix.com/register/" class="bg-red-500 hover:bg-red-600 text-white text-base font-semibold px-5 py-2 rounded-full transition">Register</a>
+                </div>
+                <!-- Logged IN -->
+                <div id="gm-logged-in" class="hidden items-center">
+                    <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="px-3 text-gm-gray hover:text-gray-900 text-base font-medium" class="px-3">Log Out</a>
+                    <a href="https://www.geneticmatrix.com/user-home/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">My Hub</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="gm-mobile-menu" style="display:none" class="lg:hidden bg-white border-t border-gray-100 px-6 py-4">
+            <div class="flex flex-col gap-3">
+                <a href="/learn-hub/" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition">
+                    <img src="/learn-hub/assets/Menu_Icon_ Hub.svg" alt="" class="w-5 h-5"> Learn Hub
+                </a>
+                <a href="/learn-hub/celebrities/" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition">
+                    <img src="/learn-hub/assets/Menu_Icon _celebrity .svg" alt="" class="w-5 h-5"> Celebrity Search
+                </a>
+                <a href="/dictionary/dictionary.html" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition">
+                    <img src="/learn-hub/assets/Menu_Icon_ dictionary.svg" alt="" class="w-5 h-5"> Dictionary
+                </a>
+                <div class="border-t border-gray-100 my-1"></div>
+                <a href="#" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition" data-action="free-chart-popup">Free Chart</a>
+                <a href="https://www.geneticmatrix.com/plans-features/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Our Plans</a>
+                <div class="border-t border-gray-100 my-1"></div>
+                <a href="https://www.geneticmatrix.com/user-home/" class="py-2 text-sm font-semibold text-gm-green hover:text-gm-green-dark transition">My Hub</a>
+                <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition" class="px-3">Log Out</a>
+            </div>
+        </div>
+    </nav>
+    <script id="gm-lang-switcher">(function(){
+      var LANGS = {en:"English",de:"Deutsch",es:"Español",fr:"Français",it:"Italiano",nl:"Nederlands",pt:"Português"};
+      var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
+      var path = window.location.pathname;
+      var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
+      var current = m ? m[1] : "en";
+      var rest = m ? path.substring(("/learn-hub/" + current).length) : path.replace(/^\/learn-hub/, "");
+      if (!rest) rest = "/";
+
+      // Cookie helpers (shared with WordPress/WPML on .geneticmatrix.com)
+      function getCookie(name){
+        var v = ("; " + document.cookie).split("; " + name + "=");
+        return v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
+      }
+      function setCookie(name, value){
+        var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
+        var domain = location.hostname.indexOf("geneticmatrix.com") !== -1 ? "; domain=.geneticmatrix.com" : "";
+        document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/" + domain;
+      }
+
+      // Auto-redirect: if cookie says a different language than the URL, switch
+      var cookieLang = getCookie("gm_lang");
+      if (cookieLang && SUPPORTED.indexOf(cookieLang) !== -1 && cookieLang !== current) {
+        var target = cookieLang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + cookieLang + rest);
+        window.location.replace(target);
+        return;
+      }
+      // Sync cookie to current URL language (so first-visitor URL choice persists)
+      if (cookieLang !== current) setCookie("gm_lang", current);
+
+      var label = document.getElementById("gm-lang-current");
+      if (label) label.textContent = LANGS[current];
+
+      document.querySelectorAll('a[data-lang]').forEach(function(a){
+        var lang = a.getAttribute('data-lang');
+        a.href = lang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + lang + rest);
+        if (lang === current) a.classList.add('text-gm-purple','font-semibold');
+        a.addEventListener('click', function(){ setCookie("gm_lang", lang); });
+      });
+    })();</script>
+<!-- Breadcrumb -->
+    <div class="bg-gray-50 border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 py-2.5">
+            <a href="../../" class="text-sm text-gm-purple hover:text-gm-dark font-medium transition">&larr; Voltar ao Learn Hub</a>
+        </div>
+    </div>
+
+ <!-- ==================== HERO BANNER ==================== -->
+ <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+     <div class="max-w-3xl mx-auto px-6">
+         <span class="inline-block bg-gm-purple text-white text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">Astrologia</span>
+         <h1 class="text-3xl md:text-4xl font-bold mb-3">Estrelas Fixas na Astrologia</h1>
+         <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-xl mx-auto">Explore o papel das estrelas fixas na astrologia. Saiba como estrelas como Regulus, Algol, Spica e Sirius influenciam o seu mapa natal.</p>
+     </div>
+ </section>
+
+ <!-- ==================== WHAT ARE FIXED STARS IN ASTROLOGY? ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="what-are-fixed-stars">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> O que são Estrelas Fixas na Astrologia?</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">As estrelas fixas são os sóis distantes que formam o pano de fundo do zodíaco. Ao contrário dos planetas, que se movem através dos signos ao longo de semanas, meses ou anos, as estrelas fixas deslocam-se tão lentamente (cerca de 1 grau a cada 72 anos devido à precessão) que parecem quase estacionárias contra o céu. É por isso que são chamadas "fixas".</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Na astrologia tradicional, as estrelas fixas eram consideradas modificadores poderosos de qualquer planeta ou ângulo que tocassem. Embora os signos zodiacais e os planetas formem o núcleo de um mapa natal, as estrelas fixas acrescentam uma camada de especificidade e intensidade que pode alterar dramaticamente uma colocação. Um planeta em conjunção com uma estrela importante assume qualidades que vão além do signo e da casa que ocupa.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">O uso de estrelas fixas na astrologia remonta aos primeiros observadores do céu mesopotâmicos e foi parte central da prática astrológica helenística, medieval e renascentista. Muitos astrólogos consideram as estrelas fixas essenciais para compreender resultados extremos: talento extraordinário, fama súbita, desafios significativos ou eventos marcantes na vida que os factores normais do mapa não explicam completamente.</p>
+     </div>
+ </section>
+
+ <!-- ==================== HOW FIXED STARS WORK IN A CHART ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="how-fixed-stars-work">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Como as Estrelas Fixas Funcionam num Gráfico</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">O método principal para usar as estrelas fixas é a <strong class="text-gray-800">conjunção</strong>, quando uma estrela ocupa o mesmo grau do zodíaco que um planeta ou ângulo no gráfico. A maioria dos astrólogos usa uma orbe apertada de 1 grau ou menos para as estrelas fixas, embora alguns estendam para 2 graus para as estrelas mais brilhantes. Quanto mais próxima a conjunção, mais forte o efeito.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Cada estrela fixa tem uma <strong class="text-gray-800">natureza</strong> descrita em termos dos planetas que se assemelha. Por exemplo, uma estrela descrita como tendo uma "natureza Marte-Júpiter" expressa energia semelhante a uma conjunção Marte-Júpiter: ousada, expansiva, militarista e ambiciosa. Estas naturezas planetárias foram atribuídas por Ptolemeu e outros astrólogos antigos e permanecem a referência padrão.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">A <strong class="text-gray-800">magnitude</strong> (brilho) de uma estrela também importa. Estrelas de primeira magnitude como Sirius, Regulus e Spica são as mais poderosas. Estrelas mais ténues ainda têm significado, mas os seus efeitos são mais subtis. Quando uma estrela brilhante se posiciona exatamente num ponto natal chave, especialmente o Ascendente, Meio do Céu, Sol ou Lua, a sua influência pode ser definidora.</p>
+     </div>
+ </section>
+
+ <!-- ==================== NOTABLE FIXED STARS ==================== -->
+ <section class="py-10 md:py-14 bg-white" id="notable-fixed-stars">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Estrelas Fixas Notáveis</h2>
+
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Estrelas Reais (Os Quatro Guardiões)</h3>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">As quatro Estrelas Reais estão entre as estrelas fixas mais importantes na astrologia. Identificadas pelos antigos persas como os Guardiões dos Céus, cada uma guarda uma direção cardinal e uma estação.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Aldebaran</strong> (atualmente a aproximadamente 10 graus de Gémeos). O Guardião do Oriente. O olho do Touro na constelação de Touro. Natureza: Marte. Aldebaran está associada à honra, coragem e sucesso material, mas traz um aviso contra a corrupção e desonestidade. O sucesso através da integridade é a condição.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Regulus</strong> (atualmente a aproximadamente 0 graus de Virgem). O Guardião do Norte. O coração do Leão. Natureza: Marte-Júpiter. Regulus é a mais real das estrelas, associada à fama, poder, liderança e sucesso militar. A condição: a vingança e a arrogância vão desfazer tudo o que foi conquistado.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Antares</strong> (atualmente a aproximadamente 10 graus de Sagitário). O Guardião do Ocidente. O coração do Escorpião. Natureza: Marte-Júpiter. Antares dá intensidade, brilhantismo estratégico e o poder de destruir e regenerar. A condição: a obsessão e a imprudência trazem a queda.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Fomalhaut</strong> (atualmente a aproximadamente 4 graus de Peixes). O Guardião do Sul. A boca do Peixe do Sul. Natureza: Vénus-Mercúrio. Fomalhaut está associada ao idealismo, visão mística e sucesso artístico ou espiritual. A condição: o sonho deve permanecer puro. A corrupção do ideal leva à ruína.</p>
+
+         <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-lg p-5 my-6">
+             <p class="text-xs font-semibold text-gm-purple uppercase tracking-widest mb-2">Perceção Chave</p>
+             <p class="text-gm-text text-sm leading-relaxed italic">Os antigos persas identificaram quatro Estrelas Reais como os Guardiões dos Céus, cada uma guardando um quarto do céu. Estas estão entre as estrelas fixas mais poderosas na astrologia, e cada uma promete sucesso, mas com uma condição que deve ser honrada.</p>
+         </div>
+
+         <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-3">Outras Estrelas Proeminentes</h3>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Sirius</strong> (atualmente a aproximadamente 14 graus de Caranguejo). A estrela mais brilhante no céu nocturno. Natureza: Júpiter-Marte. Conhecida como a "Escaldante" e a "Estrela do Cão", Sirius está associada ao brilhantismo, fama, riqueza e devoção. Amplifica tudo o que toca e foi reverenciada por praticamente todas as civilizações antigas. Conjunções com Sirius podem indicar talento excecional ou reconhecimento público.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Spica</strong> (atualmente a aproximadamente 24 graus de Balança). A estrela mais brilhante em Virgem, localizada no feixe de trigo que a Virgem segura. Natureza: Vénus-Marte. Spica é considerada uma das estrelas mais afortunadas no céu. Confere sucesso, fama, riqueza e amor pela arte e ciência. É protetora e frequentemente mitiga aspectos difíceis próximos.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Algol</strong> (atualmente a aproximadamente 26 graus de Touro). A "Estrela Demónio", representando a cabeça cortada da Medusa segurada por Perseu. Natureza: Saturno-Júpiter. Algol é a estrela mais temida na astrologia tradicional, associada à violência, perda e intensidade extrema. No entanto, astrólogos modernos notam que Algol também representa poder feminino bruto, transformação através da crise e a capacidade de enfrentar aquilo que outros não conseguem suportar ver.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Vega</strong> (atualmente a aproximadamente 15 graus de Capricórnio). Uma das estrelas mais brilhantes no céu do norte, na constelação da Lira. Natureza: Vénus-Mercúrio. Vega está associada ao talento artístico, carisma, idealismo e refinamento. Dá charme e graça social mas pode também indicar frieza ou tendência para a fantasia sobre a realidade.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Polaris</strong> (atualmente a aproximadamente 28 graus de Gémeos). A Estrela Polar, na constelação da Ursa Menor. Natureza: Saturno-Vénus. Polaris está associada à orientação, navegação e capacidade de encontrar a direção. Dá foco e propósito mas pode também indicar doença ou problemas quando mal aspectada. Simbolicamente, representa o ponto fixo à volta do qual tudo o resto gira.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Betelgeuse</strong> (atualmente a aproximadamente 29 graus de Gémeos). A estrela vermelha brilhante no ombro de Orionte. Natureza: Marte-Mercúrio. Betelgeuse está associada à honra marcial, sucesso rápido e inteligência estratégica. Favorece aqueles nas áreas militar, atlética ou competitiva e dá uma qualidade ousada e assertiva a qualquer planeta que toque.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Rigel</strong> (atualmente a aproximadamente 17 graus de Gémeos). A estrela azul-branca brilhante no pé de Orionte. Natureza: Júpiter-Saturno. Rigel está associada à educação, ensino, benevolência e habilidade mecânica ou técnica. Dá ambição com disciplina e frequentemente aparece proeminentemente nos mapas de educadores, engenheiros e construtores.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Capella</strong> (atualmente a aproximadamente 22 graus de Gémeos). A estrela mais brilhante na constelação de Auriga, o Cocheiro. Natureza: Marte-Mercúrio. Capella está associada à curiosidade, amor pela aprendizagem, honra cívica e riqueza. Tem uma qualidade alegre e inquisitiva e favorece aqueles envolvidos na educação, comunicação e serviço público.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Procyon</strong> (atualmente a aproximadamente 26 graus de Caranguejo). A estrela mais brilhante em Canis Minor, o Cão Pequeno. Natureza: Marte-Mercúrio. Procyon está associada ao sucesso rápido, atividade e uma natureza ousada, por vezes imprudente. Dá energia e iniciativa mas adverte contra ação precipitada. O sucesso com Procyon frequentemente vem cedo e através de esforço em vez de sorte.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4"><strong class="text-gray-800">Achernar</strong> (atualmente a aproximadamente 15 graus de Peixes). A estrela mais brilhante na constelação de Eridanus, o Rio. Natureza: Júpiter. Achernar está associada ao sucesso na vida pública, inclinação religiosa ou filosófica e integridade moral. Confere felicidade e boa fortuna, particularmente através de atividades espirituais ou intelectuais.</p>
+     </div>
+ </section>
+
+ <!-- ==================== STARS IN GENETIC MATRIX ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light" id="stars-in-genetic-matrix">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6"><span class="text-gm-purple">|</span> Estrelas na Genetic Matrix</h2>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">A Genetic Matrix Pro inclui um gráfico abrangente de estrelas fixas que mapeia centenas de estrelas no mapa natal. O gráfico identifica quais estrelas estão em conjunção com os planetas e ângulos, proporcionando uma imagem detalhada das influências estelares em jogo no gráfico.</p>
+
+         <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Esta funcionalidade vai além do que a maioria das plataformas de astrologia oferece. Em vez de listar apenas um punhado de estrelas conhecidas, o gráfico de estrelas da Genetic Matrix inclui um catálogo amplo de estrelas com as suas posições zodiacais, magnitudes e naturezas planetárias tradicionais, tornando-se uma das ferramentas de estrelas fixas mais completas disponíveis para análise de mapas natais.</p>
+     </div>
+ </section>
+
+ <!-- ==================== FAQ ACCORDION ==================== -->
+ <section class="py-10 md:py-14 bg-white">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Perguntas Frequentes</h2>
+         <div class="space-y-3">
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">As estrelas fixas afectam toda a gente?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">As estrelas fixas são mais significativas quando formam uma conjunção próxima (dentro de cerca de 1 grau) com um planeta, ângulo, ou ponto sensível no mapa natal. Se nenhum planeta ou ponto no mapa se alinha com uma determinada estrela, a sua influência é mínima a nível pessoal. No entanto, quando uma estrela está em conjunção próxima com uma colocação importante, os seus efeitos podem ser impressionantes.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Quais são as estrelas fixas mais importantes?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">As quatro Estrelas Reais (Aldebaran, Regulus, Antares, Fomalhaut) são tradicionalmente consideradas as mais poderosas. Para além dessas, Sirius, Spica e Algol estão entre as mais frequentemente citadas na interpretação astrológica. As estrelas de primeira magnitude geralmente têm mais peso do que as mais ténues.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">Algumas estrelas são sortudas e outras azaradas?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">A astrologia tradicional classifica as estrelas pela sua natureza planetária, com algumas consideradas benéficas (como Spica, que tem natureza Vénus-Mercúrio) e outras consideradas maléficas (como Algol, que tem natureza Saturno-Júpiter). No entanto, os astrólogos modernos tendem a ver todas as estrelas como portadoras tanto de potencial como de desafio, dependendo de como a sua energia se expressa.</div>
+             </details>
+             <details class="bg-white rounded-lg border border-gm-border">
+                 <summary class="py-4 px-6 text-sm font-semibold text-gray-800">A Genetic Matrix mostra as estrelas fixas no meu gráfico?</summary>
+                 <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Sim. A Genetic Matrix Pro inclui um gráfico detalhado de estrelas fixas que mapeia centenas de estrelas no mapa natal, mostrando quais estrelas estão em conjunção com os planetas e ângulos. Esta é uma das características de gráfico estelar mais abrangentes disponíveis em qualquer plataforma de astrologia.</div>
+             </details>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== CONTINUE LEARNING ==================== -->
+ <section class="py-10 md:py-14 bg-gm-light">
+     <div class="max-w-4xl mx-auto px-6">
+         <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8"><span class="text-gm-purple">|</span> Outros Tópicos de Aprendizagem</h2>
+         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+             <a href="/astrology/zodiac-signs/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Signos Zodiacais &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Os 12 signos mais o 13º signo.</p>
+             </a>
+             <a href="/astrology/planets/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Planetas &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Do Sol a Plutão, Quíron e Lilith.</p>
+             </a>
+             <a href="/astrology/houses/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Casas &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">12 casas e 10 sistemas de casas explicados.</p>
+             </a>
+             <a href="/astrology/aspects/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Aspectos e Orbes &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Conjunções, trígonos, quadraturas e mais.</p>
+             </a>
+             <a href="/astrology/asteroids/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+                 <h3 class="text-sm font-bold text-gm-purple mb-1">Asteróides &rarr;</h3>
+                 <p class="text-gray-400 text-xs leading-relaxed">Ceres, Pallas, Juno, Vesta e além.</p>
+             </a>
+         </div>
+     </div>
+ </section>
+
+ <!-- ==================== CTA BANNER ==================== -->
+ <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+     <div class="max-w-2xl mx-auto px-6">
+         <h2 class="text-2xl md:text-3xl font-bold mb-4">Explore o Seu Gráfico</h2>
+         <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">Veja o seu gráfico completo de astrologia incluindo posições de estrelas fixas, aspectos planetários e muito mais.</p>
+        <a href="https://www.geneticmatrix.com/pricing/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+            Get Pro &rarr;
+        </a>
+</div>
+ </section>
+
+ <!-- ==================== FOOTER ==================== -->
+ <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+                <div class="text-center md:text-left">
+                    <img src="../../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">Todos os direitos reservados.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Privacidade, Termos e Condições</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Subscreva a Nossa Newsletter</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Inscreva-se na nossa newsletter para receber atualizações, ofertas, novos lançamentos e tudo relacionado com a Genetic Matrix.</p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input type="email" placeholder="O Seu Endereço de Email" class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400">
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Conecte-se Connosco</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener"><img src="../../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10"></a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener"><img src="../../assets/icon-x.svg" alt="X" class="w-10 h-10"></a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener"><img src="../../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10"></a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener"><img src="../../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10"></a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Entre em Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+(function() {
+    fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            var badge = document.getElementById('gm-cart-count');
+            if (badge && data.cart_count > 0) {
+                badge.textContent = data.cart_count;
+                badge.classList.remove('hidden');
+            }
+            var loggedOut = document.getElementById('gm-logged-out');
+            var loggedIn = document.getElementById('gm-logged-in');
+            if (data.logged_in) {
+                if (loggedOut) loggedOut.classList.add('hidden');
+                if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
+            }
+        })
+        .catch(function() {});
+})();
+</script>
+<script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
+</body>
+</html>
