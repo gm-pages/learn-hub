@@ -128,27 +128,36 @@ function gm_lang_write_cookie() {
 
     // ASYMMETRIC PROTECTION for non-default languages.
     // English is the default: hitting / reports wpml=en even for background
-    // requests. Protect existing non-en cookies UNLESS the referer indicates
-    // the user deliberately navigated from their current language to English.
+    // requests (XHR/fetch/image/prefetch). Protect existing non-en cookies
+    // UNLESS this is a real top-level document navigation AND the referer
+    // indicates the user deliberately navigated from their current language.
     if ($lang === 'en' && !empty($existing) && $existing !== 'en') {
+        $sec_fetch_dest = isset($_SERVER['HTTP_SEC_FETCH_DEST']) ? $_SERVER['HTTP_SEC_FETCH_DEST'] : '';
+        $sec_fetch_mode = isset($_SERVER['HTTP_SEC_FETCH_MODE']) ? $_SERVER['HTTP_SEC_FETCH_MODE'] : '';
         $referer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '';
         $referer_path = $referer ? parse_url($referer, PHP_URL_PATH) : '';
         $referer_host = $referer ? parse_url($referer, PHP_URL_HOST) : '';
         $current_host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '';
 
-        // Deliberate switch = same host, referer path starts with /{existing}/
-        $deliberate = false;
+        // Requirement A: this must be a real top-level page navigation,
+        // not an XHR, image, prefetch, or other subresource request.
+        $is_top_nav = ($sec_fetch_dest === 'document' && $sec_fetch_mode === 'navigate');
+
+        // Requirement B: referer must point to the user's current language.
+        $referer_matches_lang = false;
         if ($referer_host === $current_host && $referer_path) {
             if ($referer_path === '/' . $existing || strpos($referer_path, '/' . $existing . '/') === 0) {
-                $deliberate = true;
+                $referer_matches_lang = true;
             }
         }
 
+        $deliberate = $is_top_nav && $referer_matches_lang;
+
         if (!$deliberate) {
-            gm_lang_log("Part1 protect: WPML en but cookie=$existing (non-default), referer=$referer not deliberate, preserving");
+            gm_lang_log("Part1 protect: WPML en but cookie=$existing (non-default), sec_fetch_dest=$sec_fetch_dest sec_fetch_mode=$sec_fetch_mode referer=$referer top_nav=" . ($is_top_nav?'y':'n') . " ref_match=" . ($referer_matches_lang?'y':'n') . ", preserving");
             return;
         }
-        gm_lang_log("Part1 allow: deliberate EN switch from $existing (referer=$referer)");
+        gm_lang_log("Part1 allow: deliberate EN switch from $existing (top nav, referer=$referer)");
     }
 
     gm_lang_log("Part1 WRITING cookie: " . ($existing ?: 'none') . " -> $lang");
