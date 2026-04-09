@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script id="gm-lang-redirect">(function(){
+    <link id="gm-flag-icons" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css">
+<script id="gm-lang-redirect">(function(){
   var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
   var path = window.location.pathname;
   var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
@@ -144,18 +145,19 @@
                 </a>
                 <!-- Language Switcher -->
                 <div class="relative group px-3">
-                    <button class="flex items-center gap-1 text-gm-gray hover:text-gray-900 text-base">
-                        <span id="gm-lang-current">English</span>
+                    <button class="flex items-center gap-2 text-gm-gray hover:text-gray-900 text-base">
                         <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        <span id="gm-lang-current">English</span>
+                        <span id="gm-lang-flag" class="flag-icon flag-icon-gb"></span>
                     </button>
                     <div class="absolute top-full right-0 mt-4 w-44 bg-white rounded-xl shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                        <a data-lang="en" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">English</a>
-                        <a data-lang="de" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Deutsch</a>
-                        <a data-lang="es" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Español</a>
-                        <a data-lang="fr" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Français</a>
-                        <a data-lang="it" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Italiano</a>
-                        <a data-lang="nl" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Nederlands</a>
-                        <a data-lang="pt" href="#" class="block px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition">Português</a>
+                        <a data-lang="pt" href="#" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-pt"></span> Português</a>
+                        <a data-lang="nl" href="#" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-nl"></span> Nederland</a>
+                        <a data-lang="it" href="#" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-it"></span> Italiano</a>
+                        <a data-lang="fr" href="#" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-fr"></span> Français</a>
+                        <a data-lang="es" href="#" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-es"></span> Español</a>
+                        <a data-lang="de" href="#" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-de"></span> Deutsch</a>
+                        <a data-lang="en" href="#" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-gb"></span> English</a>
                     </div>
                 </div>
                 <!-- Logged OUT -->
@@ -194,7 +196,8 @@
         </div>
     </nav>
     <script id="gm-lang-switcher">(function(){
-      var LANGS = {en:"English",de:"Deutsch",es:"Español",fr:"Français",it:"Italiano",nl:"Nederlands",pt:"Português"};
+      var LANGS = {en:"English",de:"Deutsch",es:"Español",fr:"Français",it:"Italiano",nl:"Nederland",pt:"Português"};
+      var FLAGS = {en:"gb",de:"de",es:"es",fr:"fr",it:"it",nl:"nl",pt:"pt"};
       var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
       var path = window.location.pathname;
       var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
@@ -220,6 +223,8 @@
 
       var label = document.getElementById("gm-lang-current");
       if (label) label.textContent = LANGS[current];
+      var flagEl = document.getElementById("gm-lang-flag");
+      if (flagEl) flagEl.className = "flag-icon flag-icon-" + (FLAGS[current] || "gb");
 
       document.querySelectorAll('a[data-lang]').forEach(function(a){
         var lang = a.getAttribute('data-lang');
