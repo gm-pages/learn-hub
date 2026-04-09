@@ -39,11 +39,19 @@
     <title>Human Design Variable: The Four Arrows Explained | Genetic Matrix</title>
     <meta name="description" content="Variable is the four-arrow system at the top of the Human Design Bodygraph. Learn how Determination, Environment, Motivation, and Perspective combine into 16 Variable configurations that describe how your body and mind are oriented.">
     <meta name="keywords" content="human design variable, human design arrows, human design determination, human design environment, human design motivation, human design perspective, 16 variables, left right variable, variable configuration, human design PHS, variable arrows, bodygraph arrows">
-    <link rel="canonical" href="https://www.geneticmatrix.com/learn/variables/">
-    <meta property="og:title" content="Human Design Variable: The Four Arrows Explained">
+    <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/variables/index.php">
+        <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/variables/index.php">
+    <link rel="alternate" hreflang="de" href="https://www.geneticmatrix.com/learn-hub/de/variables/index.php">
+    <link rel="alternate" hreflang="es" href="https://www.geneticmatrix.com/learn-hub/es/variables/index.php">
+    <link rel="alternate" hreflang="fr" href="https://www.geneticmatrix.com/learn-hub/fr/variables/index.php">
+    <link rel="alternate" hreflang="it" href="https://www.geneticmatrix.com/learn-hub/it/variables/index.php">
+    <link rel="alternate" hreflang="nl" href="https://www.geneticmatrix.com/learn-hub/nl/variables/index.php">
+    <link rel="alternate" hreflang="pt" href="https://www.geneticmatrix.com/learn-hub/pt/variables/index.php">
+    <link rel="alternate" hreflang="x-default" href="https://www.geneticmatrix.com/learn-hub/variables/index.php">
+<meta property="og:title" content="Human Design Variable: The Four Arrows Explained">
     <meta property="og:description" content="Variable is the four-arrow system at the top of the Bodygraph. Learn what left and right orientation mean and how the four arrows combine into 16 configurations.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://www.geneticmatrix.com/learn/variables/">
+    <meta property="og:url" content="https://www.geneticmatrix.com/learn-hub/variables/index.php">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -104,7 +112,7 @@
             "name": "Genetic Matrix",
             "url": "https://www.geneticmatrix.com"
         },
-        "mainEntityOfPage": "https://www.geneticmatrix.com/learn/variables/",
+        "mainEntityOfPage": "https://www.geneticmatrix.com/learn-hub/variables/index.php",
         "datePublished": "2025-01-15",
         "dateModified": "2026-03-12"
     }

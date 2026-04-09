@@ -38,8 +38,16 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>6/3 Profile in Human Design - Role Model / Martyr | Genetic Matrix</title>
  <meta name="description" content="The wise example shaped through deep experience. 6/3s spend the first part of life in an especially intense trial-and-error process before maturing into role model energy.">
- <link rel="canonical" href="https://www.geneticmatrix.com/learn/profiles/6/3/">
- <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-6-3.php">
+     <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-6-3.php">
+    <link rel="alternate" hreflang="de" href="https://www.geneticmatrix.com/learn-hub/de/profiles/profile-6-3.php">
+    <link rel="alternate" hreflang="es" href="https://www.geneticmatrix.com/learn-hub/es/profiles/profile-6-3.php">
+    <link rel="alternate" hreflang="fr" href="https://www.geneticmatrix.com/learn-hub/fr/profiles/profile-6-3.php">
+    <link rel="alternate" hreflang="it" href="https://www.geneticmatrix.com/learn-hub/it/profiles/profile-6-3.php">
+    <link rel="alternate" hreflang="nl" href="https://www.geneticmatrix.com/learn-hub/nl/profiles/profile-6-3.php">
+    <link rel="alternate" hreflang="pt" href="https://www.geneticmatrix.com/learn-hub/pt/profiles/profile-6-3.php">
+    <link rel="alternate" hreflang="x-default" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-6-3.php">
+<script src="https://cdn.tailwindcss.com"></script>
  <script>
  tailwind.config = {
  theme: {
@@ -93,7 +101,7 @@
  "name": "Genetic Matrix",
  "url": "https://www.geneticmatrix.com"
  },
- "mainEntityOfPage": "https://www.geneticmatrix.com/learn/profiles/6/3/",
+ "mainEntityOfPage": "https://www.geneticmatrix.com/learn-hub/profiles/profile-6-3.php",
  "datePublished": "2025-01-15",
  "dateModified": "2026-03-06"
  }

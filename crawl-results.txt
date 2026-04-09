@@ -128,6 +128,9 @@
 200	https://www.staginggm.com/learn-hub/astrology/zodiac-signs.html	text/html
 200	https://www.staginggm.com/learn-hub/bg5/index.html	text/html
 200	https://www.staginggm.com/learn-hub/calculations/13-sign-sidereal.html	text/html
+200	https://www.staginggm.com/learn-hub/calculations/draconic.html	text/html
+200	https://www.staginggm.com/learn-hub/calculations/j2000.html	text/html
+200	https://www.staginggm.com/learn-hub/calculations/sidereal.html	text/html
 200	https://www.staginggm.com/learn-hub/calculations/tropical.html	text/html
 200	https://www.staginggm.com/learn-hub/calculations/true-sidereal.html	text/html
 200	https://www.staginggm.com/learn-hub/celebrities/	text/html
