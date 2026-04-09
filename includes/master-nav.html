@@ -125,8 +125,9 @@
       }
       function setCookie(name, value){
         var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
-        var domain = location.hostname.indexOf("geneticmatrix.com") !== -1 ? "; domain=.geneticmatrix.com" : "";
-        document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/" + domain;
+        var parts = location.hostname.split('.');
+        var domain = parts.length >= 2 ? "; domain=." + parts.slice(-2).join('.') : "";
+        document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
       }
 
       // Sync cookie to current URL language (head script handles redirect before render)
