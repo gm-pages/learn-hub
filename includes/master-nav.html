@@ -18,6 +18,10 @@
 
             <!-- Desktop Nav -->
             <div class="hidden lg:flex flex-1 items-center justify-end">
+                <!-- Calendar (shown when logged in) -->
+                <a id="gm-calendar-icon" href="https://www.geneticmatrix.com/calendar/" class="hidden mx-3 items-center justify-center w-9 h-9 rounded-lg border border-[#dee2e6] hover:border-gm-purple/30 hover:bg-gray-50 transition" title="Calendar">
+                    <img src="/learn-hub/assets/icon-calendar.svg" alt="Calendar" class="h-5 w-5">
+                </a>
                 <!-- Reports -->
                 <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="mx-3 flex items-center justify-center w-9 h-9 rounded-lg border border-[#dee2e6] hover:border-gm-purple/30 hover:bg-gray-50 transition" title="Reports">
                     <img src="/learn-hub/assets/icon-report.svg" alt="Reports" class="h-6 w-6">
@@ -110,6 +114,19 @@
             </div>
         </div>
     </nav>
+    <script id="gm-calendar-auth">(function(){
+      // Show calendar icon in nav when user is logged in. Fetches user state
+      // once per page load (browser caches the response so cost is minimal).
+      fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r){ return r.json(); })
+        .then(function(data){
+          if (data && data.logged_in) {
+            var cal = document.getElementById('gm-calendar-icon');
+            if (cal) { cal.classList.remove('hidden'); cal.classList.add('flex'); }
+          }
+        })
+        .catch(function(){});
+    })();</script>
     <script id="gm-lang-switcher">(function(){
       var LANGS = {en:"English",de:"Deutsch",es:"Español",fr:"Français",it:"Italiano",nl:"Nederland",pt:"Português"};
       var FLAGS = {en:"gb",de:"de",es:"es",fr:"fr",it:"it",nl:"nl",pt:"pt"};
