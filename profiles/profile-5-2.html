@@ -439,7 +439,7 @@ How the 5 and 2 Work Together
  </h2>
  <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">On <strong class="text-gray-800">Genetic Matrix</strong>, generate a free Foundation Chart to discover your Profile. The chart shows which lines your conscious and unconscious Sun and Earth occupy, creating your Profile combination. Advanced and Pro Charts reveal how your Profile interacts with your Type, Centers, Channels, and Variable.</p>
  <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">You can also explore other 5/2 Profiles in Genetic Matrix's celebrity database of more than 88,600 charts. Seeing how this profile appears across different Types and life paths can help you understand how the Heretic and Hermit dynamic expresses itself in the real world.</p>
- <a href="/celebrities/" class="inline-block text-gm-pink font-semibold text-sm hover:underline">Search Celebrities →</a>
+ <a href="/learn-hub/celebrities/index.html" class="inline-block text-gm-pink font-semibold text-sm hover:underline">Search Celebrities →</a>
  </div>
  </section>
  <!-- ==================== FAQ ACCORDION ==================== -->
@@ -475,23 +475,23 @@ How the 5 and 2 Work Together
 Other Learn Topics
  </h2>
  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-<a href="/profiles/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+<a href="/learn-hub/profiles/index.html" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
  <h3 class="text-sm font-bold text-gm-purple mb-1">All 12 Profiles →</h3>
  <p class="text-gray-600 text-xs leading-relaxed">Overview of all Profile combinations and the 6 Lines.</p>
 </a>
-<a href="/profiles/#the-6-profile-lines" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+<a href="/learn-hub/profiles/index.html#the-6-profile-lines" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
  <h3 class="text-sm font-bold text-gm-purple mb-1">The 6 Profile Lines →</h3>
  <p class="text-gray-600 text-xs leading-relaxed">The six lines that shape every Profile, from Investigator to Role Model.</p>
 </a>
-<a href="/profiles/profile-2-5/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+<a href="/learn-hub/profiles/profile-2-5.html" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
  <h3 class="text-sm font-bold text-gm-purple mb-1">2/5 Hermit / Heretic →</h3>
  <p class="text-gray-600 text-xs leading-relaxed">Natural talent that draws expectations and projection from others.</p>
 </a>
-<a href="/profiles/profile-5-1/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+<a href="/learn-hub/profiles/profile-5-1.html" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
  <h3 class="text-sm font-bold text-gm-purple mb-1">5/1 Heretic / Investigator →</h3>
  <p class="text-gray-600 text-xs leading-relaxed">Projected reputation backed by deep investigative preparation.</p>
 </a>
-<a href="/profiles/profile-2-4/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+<a href="/learn-hub/profiles/profile-2-4.html" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
  <h3 class="text-sm font-bold text-gm-purple mb-1">2/4 Hermit / Opportunist →</h3>
  <p class="text-gray-600 text-xs leading-relaxed">Natural gifts that develop in solitude, shared through close connections.</p>
 </a>
@@ -502,11 +502,11 @@ Other Learn Topics
  <!-- ==================== PROFILE NAVIGATION ==================== -->
  <section class="py-8 bg-gm-light border-t border-gm-border">
  <div class="max-w-4xl mx-auto px-6 flex justify-between items-center gap-3">
- <a href="/profiles/profile-5-1/" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-xs md:text-sm font-semibold">
+ <a href="/learn-hub/profiles/profile-5-1.html" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-xs md:text-sm font-semibold">
  <span>&larr;</span> 5/1 Heretic / Investigator
  </a>
- <a href="/profiles/index/" class="text-gray-600 hover:text-gm-dark transition text-sm font-medium">All Profiles</a>
- <a href="/profiles/profile-6-2/" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-xs md:text-sm font-semibold">
+ <a href="/learn-hub/profiles/index.html" class="text-gray-600 hover:text-gm-dark transition text-sm font-medium">All Profiles</a>
+ <a href="/learn-hub/profiles/profile-6-2.html" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-xs md:text-sm font-semibold">
  6/2 Role Model / Hermit <span>&rarr;</span>
  </a>
  </div>

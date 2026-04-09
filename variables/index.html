@@ -475,10 +475,10 @@
                 These Variable mechanics have dedicated pages of their own. Here, they matter because they form the structure of Variable in Human Design. Explore each one in more detail below:
             </p>
             <ul class="list-disc list-inside text-gm-text text-sm md:text-base leading-relaxed space-y-2">
-                <li>Brain Style in Human Design — <a href="/learn/deeper-mechanics/determination/" class="text-gm-purple hover:underline">Determination</a></li>
-                <li>Environment Style in Human Design — <a href="/learn/deeper-mechanics/environment/" class="text-gm-purple hover:underline">Environment</a></li>
-                <li>Perspective in Human Design — <a href="/learn/deeper-mechanics/perspective/" class="text-gm-purple hover:underline">View</a></li>
-                <li>Mind Style in Human Design — <a href="/learn/deeper-mechanics/motivation/" class="text-gm-purple hover:underline">Motivation</a></li>
+                <li>Brain Style in Human Design — <a href="/learn-hub/deeper-mechanics/determination.html" class="text-gm-purple hover:underline">Determination</a></li>
+                <li>Environment Style in Human Design — <a href="/learn-hub/deeper-mechanics/environment.html" class="text-gm-purple hover:underline">Environment</a></li>
+                <li>Perspective in Human Design — <a href="/learn-hub/deeper-mechanics/perspective.html" class="text-gm-purple hover:underline">View</a></li>
+                <li>Mind Style in Human Design — <a href="/learn-hub/deeper-mechanics/motivation.html" class="text-gm-purple hover:underline">Motivation</a></li>
             </ul>
         </div>
     </section>
@@ -738,7 +738,7 @@
                 <span class="text-gm-purple">|</span> Variable and the Deeper Mechanics
             </h2>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
-                Variable is closely related to the deeper mechanics of Human Design, but it should not be confused with them. The arrows point to major advanced domains such as Tonal Cognition, Determination, Environment, Perspective, and Motivation. Those topics can and should be studied in their own right. This page is about the Variable system itself rather than trying to teach all of those mechanics in full. See the <a href="/learn/deeper-mechanics/" class="text-gm-purple hover:underline">Deeper Mechanics</a> section for deeper insight into these areas.
+                Variable is closely related to the deeper mechanics of Human Design, but it should not be confused with them. The arrows point to major advanced domains such as Tonal Cognition, Determination, Environment, Perspective, and Motivation. Those topics can and should be studied in their own right. This page is about the Variable system itself rather than trying to teach all of those mechanics in full. See the <a href="/learn-hub/deeper-mechanics/index.html" class="text-gm-purple hover:underline">Deeper Mechanics</a> section for deeper insight into these areas.
             </p>
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
                 That distinction matters. If a Variable page tries to become a complete guide to PHS, Environment, Motivation, and Perspective all at once, it loses topical clarity and becomes weaker for both search and serious users.
@@ -834,23 +834,23 @@
                 <span class="text-gm-purple">|</span> Related Topics
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <a href="/learn/deeper-mechanics/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                <a href="/learn-hub/deeper-mechanics/index.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
                     <h3 class="text-sm font-bold text-gm-purple mb-1">Deeper Mechanics &rarr;</h3>
                     <p class="text-gray-400 text-xs leading-relaxed">Advanced mechanics beyond the foundational chart.</p>
                 </a>
-                <a href="/learn/deeper-mechanics/determination/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                <a href="/learn-hub/deeper-mechanics/determination.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
                     <h3 class="text-sm font-bold text-gm-purple mb-1">Determination &rarr;</h3>
                     <p class="text-gray-400 text-xs leading-relaxed">How the body and brain are designed to take in and process information.</p>
                 </a>
-                <a href="/learn/deeper-mechanics/environment/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                <a href="/learn-hub/deeper-mechanics/environment.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
                     <h3 class="text-sm font-bold text-gm-purple mb-1">Environment &rarr;</h3>
                     <p class="text-gray-400 text-xs leading-relaxed">How the body integrates within the correct environment.</p>
                 </a>
-                <a href="/learn/deeper-mechanics/motivation/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                <a href="/learn-hub/deeper-mechanics/motivation.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
                     <h3 class="text-sm font-bold text-gm-purple mb-1">Motivation &rarr;</h3>
                     <p class="text-gray-400 text-xs leading-relaxed">The deeper mechanic connected to Mind Style and mental awareness.</p>
                 </a>
-                <a href="/learn/deeper-mechanics/perspective/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                <a href="/learn-hub/deeper-mechanics/perspective.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
                     <h3 class="text-sm font-bold text-gm-purple mb-1">Perspective &rarr;</h3>
                     <p class="text-gray-400 text-xs leading-relaxed">How the mind is designed to view the environment correctly.</p>
                 </a>

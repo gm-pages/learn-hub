@@ -445,7 +445,7 @@ How to Explore Your 1/3 Profile in Your Chart
  </h2>
  <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">On Genetic Matrix, generate a free Foundation Chart to discover your Profile. The chart shows which lines your conscious and unconscious Sun and Earth occupy, creating your Profile combination. Advanced and Pro Charts reveal how your Profile interacts with your Type, Centers, Channels, and Variable.</p>
  <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">You can also explore other 1/3 Profiles in Genetic Matrix's celebrity database of more than 88,600 charts. Seeing how this profile appears across different Types and life paths can help you understand how the Investigator and third-line experimental process expresses itself in the real world.</p>
- <a href="/celebrities/" class="inline-block text-gm-pink font-semibold text-sm hover:underline">Search Celebrities →</a>
+ <a href="/learn-hub/celebrities/index.html" class="inline-block text-gm-pink font-semibold text-sm hover:underline">Search Celebrities →</a>
  </div>
  </section>
  <!-- ==================== FAQ ACCORDION ==================== -->
@@ -482,23 +482,23 @@ Frequently Asked Questions
 Other Learn Topics
  </h2>
  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-<a href="/profiles/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+<a href="/learn-hub/profiles/index.html" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
  <h3 class="text-sm font-bold text-gm-purple mb-1">All 12 Profiles →</h3>
  <p class="text-gray-600 text-xs leading-relaxed">Overview of all Profile combinations and the 6 Lines.</p>
 </a>
-<a href="/profiles/#the-6-profile-lines" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+<a href="/learn-hub/profiles/index.html#the-6-profile-lines" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
  <h3 class="text-sm font-bold text-gm-purple mb-1">The 6 Profile Lines →</h3>
  <p class="text-gray-600 text-xs leading-relaxed">The six lines that shape every Profile, from Investigator to Role Model.</p>
 </a>
-<a href="/profiles/profile-1-4/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+<a href="/learn-hub/profiles/profile-1-4.html" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
  <h3 class="text-sm font-bold text-gm-purple mb-1">1/4 Investigator / Opportunist →</h3>
  <p class="text-gray-600 text-xs leading-relaxed">Deep researcher who shares discoveries through their trusted network.</p>
 </a>
-<a href="/profiles/profile-3-5/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+<a href="/learn-hub/profiles/profile-3-5.html" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
  <h3 class="text-sm font-bold text-gm-purple mb-1">3/5 Martyr / Heretic →</h3>
  <p class="text-gray-600 text-xs leading-relaxed">Learns by experience, then offers practical solutions with broad impact.</p>
 </a>
-<a href="/profiles/profile-6-3/" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
+<a href="/learn-hub/profiles/profile-6-3.html" class="bg-gm-light rounded-lg border border-gm-border p-4 hover:shadow-md transition">
  <h3 class="text-sm font-bold text-gm-purple mb-1">6/3 Role Model / Martyr →</h3>
  <p class="text-gray-600 text-xs leading-relaxed">Early experiential process builds the wisdom of a future role model.</p>
 </a>
@@ -509,11 +509,11 @@ Other Learn Topics
  <!-- ==================== PROFILE NAVIGATION ==================== -->
  <section class="py-8 bg-gm-light border-t border-gm-border">
  <div class="max-w-4xl mx-auto px-6 flex justify-between items-center gap-3">
- <a href="/profiles/profile-6-3/" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-xs md:text-sm font-semibold">
+ <a href="/learn-hub/profiles/profile-6-3.html" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-xs md:text-sm font-semibold">
  <span>&larr;</span> 6/3 Role Model / Martyr
  </a>
- <a href="/profiles/index/" class="text-gray-600 hover:text-gm-dark transition text-sm font-medium">All Profiles</a>
- <a href="/profiles/profile-1-4/" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-xs md:text-sm font-semibold">
+ <a href="/learn-hub/profiles/index.html" class="text-gray-600 hover:text-gm-dark transition text-sm font-medium">All Profiles</a>
+ <a href="/learn-hub/profiles/profile-1-4.html" class="flex items-center gap-2 text-gm-purple hover:text-gm-dark transition text-xs md:text-sm font-semibold">
  1/4 Investigator / Opportunist <span>&rarr;</span>
  </a>
  </div>
