@@ -111,7 +111,7 @@
                     <nav class="bg-white border-b border-gray-200 sticky top-0 z-50" style="font-family: Bilo, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
         <div class="w-full px-[30px] flex items-center h-[80px]">
             <!-- Logo -->
-            <a href="/" class="flex-shrink-0">
+            <a id="gm-logo-link" href="/" class="flex-shrink-0">
                 <img src="/learn-hub/assets/logo.svg" alt="Genetic Matrix - Know you" class="h-8 md:h-14">
             </a>
 
@@ -225,6 +225,61 @@
         </div>
     </nav>
     <script id="gm-calendar-auth">(function(){
+      // Show calendar icon in nav when user is logged in. Fetches user state
+      // once per page load (browser caches the response so cost is minimal).
+      fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r){ return r.json(); })
+        .then(function(data){
+          if (data && data.logged_in) {
+            var cal = document.getElementById('gm-calendar-icon');
+            if (cal) { cal.classList.remove('hidden'); cal.classList.add('flex'); }
+          }
+        })
+        .catch(function(){});
+    })();</script>
+    <script id="gm-lang-switcher">(function(){
+      var LANGS = {en:"English",de:"Deutsch",es:"Español",fr:"Français",it:"Italiano",nl:"Nederland",pt:"Português"};
+      var FLAGS = {en:"gb",de:"de",es:"es",fr:"fr",it:"it",nl:"nl",pt:"pt"};
+      var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
+      var path = window.location.pathname;
+      var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
+      var current = m ? m[1] : "en";
+      var rest = m ? path.substring(("/learn-hub/" + current).length) : path.replace(/^\/learn-hub/, "");
+      if (!rest) rest = "/";
+
+      // Cookie helpers (shared with WordPress/WPML on .geneticmatrix.com)
+      function getCookie(name){
+        var v = ("; " + document.cookie).split("; " + name + "=");
+        return v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
+      }
+      function setCookie(name, value){
+        var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
+        var parts = location.hostname.split('.');
+        var domain = parts.length >= 2 ? "; domain=." + parts.slice(-2).join('.') : "";
+        document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
+      }
+
+      // Sync cookie to current URL language (head script handles redirect before render)
+      var cookieLang = getCookie("gm_lang");
+      if (cookieLang !== current) setCookie("gm_lang", current);
+
+      var label = document.getElementById("gm-lang-current");
+      if (label) label.textContent = LANGS[current];
+      var flagEl = document.getElementById("gm-lang-flag");
+      if (flagEl) flagEl.className = "flag-icon flag-icon-" + (FLAGS[current] || "gb");
+      // Point logo at the matching WordPress language root so clicking it
+      // doesn't trigger a cross-language redirect hop through PHP.
+      var logo = document.getElementById("gm-logo-link");
+      if (logo) logo.href = current === "en" ? "/" : ("/" + current + "/");
+
+      document.querySelectorAll('a[data-lang]').forEach(function(a){
+        var lang = a.getAttribute('data-lang');
+        a.href = lang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + lang + rest);
+        if (lang === current) a.classList.add('text-gm-purple','font-semibold');
+        a.addEventListener('click', function(){ setCookie("gm_lang", lang); });
+      });
+    })();</script>
+<script id="gm-calendar-auth">(function(){
       // Show calendar icon in nav when user is logged in. Fetches user state
       // once per page load (browser caches the response so cost is minimal).
       fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
@@ -734,7 +789,7 @@
             <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2">A differenza del Suo Bodygraph da sveglio, questa carta riflette la matrice notturna ridotta che opera sotto la programmazione lunare. Le dà un modo pratico per esplorare le Sue attivazioni del sonno, le Porte portale e gli schemi inconsci che influenzano come Lei inizia ogni nuovo giorno.</p>
             <p class="text-gm-purple text-sm font-semibold mb-6">Disponibile in Advanced / Pro</p>
             <div class="cursor-pointer group" onclick="document.getElementById('sleepChartModal').classList.remove('hidden')">
-                <img src="../../assets/sleep-chart-example.webp" alt="Esempio di carta del Design del Sonno da Genetic Matrix che mostra i tre domini notturni e le attivazioni del sonno" class="w-full rounded-xl shadow-md border border-gray-200 group-hover:shadow-lg transition-shadow" loading="lazy">
+                <img src="/learn-hub/assets/sleep-chart-example.webp" alt="Esempio di carta del Design del Sonno da Genetic Matrix che mostra i tre domini notturni e le attivazioni del sonno" class="w-full rounded-xl shadow-md border border-gray-200 group-hover:shadow-lg transition-shadow" loading="lazy">
                 <p class="text-center text-gm-text-light text-xs mt-3">Esempio di carta del Design del Sonno. Clicchi per ingrandire.</p>
             </div>
         </div>
@@ -742,7 +797,7 @@
 
     <!-- Sleep Chart Lightbox -->
     <div id="sleepChartModal" class="hidden fixed inset-0 bg-black/80 z-[9999] flex items-center justify-center p-4 cursor-pointer" onclick="this.classList.add('hidden')">
-        <img src="../../assets/sleep-chart-example.webp" alt="Carta del Design del Sonno ingrandita" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl">
+        <img src="/learn-hub/assets/sleep-chart-example.webp" alt="Carta del Design del Sonno ingrandita" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl">
     </div>
 
     <!-- ==================== FAQ ==================== -->
@@ -806,7 +861,7 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
                 <div class="text-center md:text-left">
-                    <img src="../../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <img src="/learn-hub/assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
                     <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
                     <p class="text-sm text-gray-600 mb-2">All right reserved.</p>
                     <p class="text-sm">
@@ -828,10 +883,10 @@
                 <div class="text-center md:text-right">
                     <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connect With Us</h3>
                     <div class="flex justify-center md:justify-end gap-3 mb-4">
-                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener"><img src="../../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10"></a>
-                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener"><img src="../../assets/icon-x.svg" alt="X" class="w-10 h-10"></a>
-                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener"><img src="../../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10"></a>
-                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener"><img src="../../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10"></a>
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-fb.svg" alt="Facebook" class="w-10 h-10"></a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-x.svg" alt="X" class="w-10 h-10"></a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-insta.svg" alt="Instagram" class="w-10 h-10"></a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-yt.svg" alt="YouTube" class="w-10 h-10"></a>
                     </div>
                     <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Get in Touch</a>
                 </div>

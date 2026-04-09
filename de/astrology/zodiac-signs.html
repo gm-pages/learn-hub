@@ -219,7 +219,7 @@
  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50" style="font-family: Bilo, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
         <div class="w-full px-[30px] flex items-center h-[80px]">
             <!-- Logo -->
-            <a href="/" class="flex-shrink-0">
+            <a id="gm-logo-link" href="/" class="flex-shrink-0">
                 <img src="/learn-hub/assets/logo.svg" alt="Genetic Matrix - Know you" class="h-8 md:h-14">
             </a>
 
@@ -333,6 +333,61 @@
         </div>
     </nav>
     <script id="gm-calendar-auth">(function(){
+      // Show calendar icon in nav when user is logged in. Fetches user state
+      // once per page load (browser caches the response so cost is minimal).
+      fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r){ return r.json(); })
+        .then(function(data){
+          if (data && data.logged_in) {
+            var cal = document.getElementById('gm-calendar-icon');
+            if (cal) { cal.classList.remove('hidden'); cal.classList.add('flex'); }
+          }
+        })
+        .catch(function(){});
+    })();</script>
+    <script id="gm-lang-switcher">(function(){
+      var LANGS = {en:"English",de:"Deutsch",es:"Español",fr:"Français",it:"Italiano",nl:"Nederland",pt:"Português"};
+      var FLAGS = {en:"gb",de:"de",es:"es",fr:"fr",it:"it",nl:"nl",pt:"pt"};
+      var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
+      var path = window.location.pathname;
+      var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
+      var current = m ? m[1] : "en";
+      var rest = m ? path.substring(("/learn-hub/" + current).length) : path.replace(/^\/learn-hub/, "");
+      if (!rest) rest = "/";
+
+      // Cookie helpers (shared with WordPress/WPML on .geneticmatrix.com)
+      function getCookie(name){
+        var v = ("; " + document.cookie).split("; " + name + "=");
+        return v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
+      }
+      function setCookie(name, value){
+        var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
+        var parts = location.hostname.split('.');
+        var domain = parts.length >= 2 ? "; domain=." + parts.slice(-2).join('.') : "";
+        document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
+      }
+
+      // Sync cookie to current URL language (head script handles redirect before render)
+      var cookieLang = getCookie("gm_lang");
+      if (cookieLang !== current) setCookie("gm_lang", current);
+
+      var label = document.getElementById("gm-lang-current");
+      if (label) label.textContent = LANGS[current];
+      var flagEl = document.getElementById("gm-lang-flag");
+      if (flagEl) flagEl.className = "flag-icon flag-icon-" + (FLAGS[current] || "gb");
+      // Point logo at the matching WordPress language root so clicking it
+      // doesn't trigger a cross-language redirect hop through PHP.
+      var logo = document.getElementById("gm-logo-link");
+      if (logo) logo.href = current === "en" ? "/" : ("/" + current + "/");
+
+      document.querySelectorAll('a[data-lang]').forEach(function(a){
+        var lang = a.getAttribute('data-lang');
+        a.href = lang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + lang + rest);
+        if (lang === current) a.classList.add('text-gm-purple','font-semibold');
+        a.addEventListener('click', function(){ setCookie("gm_lang", lang); });
+      });
+    })();</script>
+<script id="gm-calendar-auth">(function(){
       // Show calendar icon in nav when user is logged in. Fetches user state
       // once per page load (browser caches the response so cost is minimal).
       fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
@@ -551,7 +606,7 @@
              <!-- Aries -->
              <a href="#aries-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="fire">
                  <div class="w-14 h-14 mx-auto mb-3">
-                     <img src="../../assets/zodiac/Aries.svg" alt="Widder" class="sign-icon w-full h-full">
+                     <img src="/learn-hub/assets/zodiac/Aries.svg" alt="Widder" class="sign-icon w-full h-full">
                  </div>
                  <h3 class="text-base font-bold text-gray-800 mb-1">Widder</h3>
                  <p class="text-gm-text-light text-xs mb-2">21. März - 19. April</p>
@@ -561,7 +616,7 @@
              <!-- Taurus -->
              <a href="#taurus-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="earth">
                  <div class="w-14 h-14 mx-auto mb-3">
-                     <img src="../../assets/zodiac/Taurus.svg" alt="Stier" class="sign-icon w-full h-full">
+                     <img src="/learn-hub/assets/zodiac/Taurus.svg" alt="Stier" class="sign-icon w-full h-full">
                  </div>
                  <h3 class="text-base font-bold text-gray-800 mb-1">Stier</h3>
                  <p class="text-gm-text-light text-xs mb-2">20. April - 20. Mai</p>
@@ -571,7 +626,7 @@
              <!-- Gemini -->
              <a href="#gemini-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="air">
                  <div class="w-14 h-14 mx-auto mb-3">
-                     <img src="../../assets/zodiac/Gemini.svg" alt="Zwillinge" class="sign-icon w-full h-full">
+                     <img src="/learn-hub/assets/zodiac/Gemini.svg" alt="Zwillinge" class="sign-icon w-full h-full">
                  </div>
                  <h3 class="text-base font-bold text-gray-800 mb-1">Zwillinge</h3>
                  <p class="text-gm-text-light text-xs mb-2">21. Mai - 20. Juni</p>
@@ -581,7 +636,7 @@
              <!-- Cancer -->
              <a href="#cancer-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="water">
                  <div class="w-14 h-14 mx-auto mb-3">
-                     <img src="../../assets/zodiac/Cancer.svg" alt="Krebs" class="sign-icon w-full h-full">
+                     <img src="/learn-hub/assets/zodiac/Cancer.svg" alt="Krebs" class="sign-icon w-full h-full">
                  </div>
                  <h3 class="text-base font-bold text-gray-800 mb-1">Krebs</h3>
                  <p class="text-gm-text-light text-xs mb-2">21. Juni - 22. Juli</p>
@@ -591,7 +646,7 @@
              <!-- Leo -->
              <a href="#leo-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="fire">
                  <div class="w-14 h-14 mx-auto mb-3">
-                     <img src="../../assets/zodiac/Leo.svg" alt="Löwe" class="sign-icon w-full h-full">
+                     <img src="/learn-hub/assets/zodiac/Leo.svg" alt="Löwe" class="sign-icon w-full h-full">
                  </div>
                  <h3 class="text-base font-bold text-gray-800 mb-1">Löwe</h3>
                  <p class="text-gm-text-light text-xs mb-2">23. Juli - 22. August</p>
@@ -601,7 +656,7 @@
              <!-- Virgo -->
              <a href="#virgo-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="earth">
                  <div class="w-14 h-14 mx-auto mb-3">
-                     <img src="../../assets/zodiac/Virgo.svg" alt="Jungfrau" class="sign-icon w-full h-full">
+                     <img src="/learn-hub/assets/zodiac/Virgo.svg" alt="Jungfrau" class="sign-icon w-full h-full">
                  </div>
                  <h3 class="text-base font-bold text-gray-800 mb-1">Jungfrau</h3>
                  <p class="text-gm-text-light text-xs mb-2">23. August - 22. September</p>
@@ -611,7 +666,7 @@
              <!-- Libra -->
              <a href="#libra-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="air">
                  <div class="w-14 h-14 mx-auto mb-3">
-                     <img src="../../assets/zodiac/Libra.svg" alt="Waage" class="sign-icon w-full h-full">
+                     <img src="/learn-hub/assets/zodiac/Libra.svg" alt="Waage" class="sign-icon w-full h-full">
                  </div>
                  <h3 class="text-base font-bold text-gray-800 mb-1">Waage</h3>
                  <p class="text-gm-text-light text-xs mb-2">23. September - 22. Oktober</p>
@@ -621,7 +676,7 @@
              <!-- Scorpio -->
              <a href="#scorpio-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="water">
                  <div class="w-14 h-14 mx-auto mb-3">
-                     <img src="../../assets/zodiac/Scorpio.svg" alt="Skorpion" class="sign-icon w-full h-full">
+                     <img src="/learn-hub/assets/zodiac/Scorpio.svg" alt="Skorpion" class="sign-icon w-full h-full">
                  </div>
                  <h3 class="text-base font-bold text-gray-800 mb-1">Skorpion</h3>
                  <p class="text-gm-text-light text-xs mb-2">23. Oktober - 21. November</p>
@@ -631,7 +686,7 @@
              <!-- Sagittarius -->
              <a href="#sagittarius-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="fire">
                  <div class="w-14 h-14 mx-auto mb-3">
-                     <img src="../../assets/zodiac/Sagittarius.svg" alt="Schütze" class="sign-icon w-full h-full">
+                     <img src="/learn-hub/assets/zodiac/Sagittarius.svg" alt="Schütze" class="sign-icon w-full h-full">
                  </div>
                  <h3 class="text-base font-bold text-gray-800 mb-1">Schütze</h3>
                  <p class="text-gm-text-light text-xs mb-2">22. November - 21. Dezember</p>
@@ -641,7 +696,7 @@
              <!-- Capricorn -->
              <a href="#capricorn-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="earth">
                  <div class="w-14 h-14 mx-auto mb-3">
-                     <img src="../../assets/zodiac/Capricorn.svg" alt="Steinbock" class="sign-icon w-full h-full">
+                     <img src="/learn-hub/assets/zodiac/Capricorn.svg" alt="Steinbock" class="sign-icon w-full h-full">
                  </div>
                  <h3 class="text-base font-bold text-gray-800 mb-1">Steinbock</h3>
                  <p class="text-gm-text-light text-xs mb-2">22. Dezember - 19. Januar</p>
@@ -651,7 +706,7 @@
              <!-- Aquarius -->
              <a href="#aquarius-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="air">
                  <div class="w-14 h-14 mx-auto mb-3">
-                     <img src="../../assets/zodiac/Aquarius.svg" alt="Wassermann" class="sign-icon w-full h-full">
+                     <img src="/learn-hub/assets/zodiac/Aquarius.svg" alt="Wassermann" class="sign-icon w-full h-full">
                  </div>
                  <h3 class="text-base font-bold text-gray-800 mb-1">Wassermann</h3>
                  <p class="text-gm-text-light text-xs mb-2">20. Januar - 18. Februar</p>
@@ -661,7 +716,7 @@
              <!-- Pisces -->
              <a href="#pisces-detail" class="sign-card filtered-in bg-gm-card rounded-xl border border-gm-border p-5 text-center" data-element="water">
                  <div class="w-14 h-14 mx-auto mb-3">
-                     <img src="../../assets/zodiac/Pisces.svg" alt="Fische" class="sign-icon w-full h-full">
+                     <img src="/learn-hub/assets/zodiac/Pisces.svg" alt="Fische" class="sign-icon w-full h-full">
                  </div>
                  <h3 class="text-base font-bold text-gray-800 mb-1">Fische</h3>
                  <p class="text-gm-text-light text-xs mb-2">19. Februar - 20. März</p>
@@ -683,7 +738,7 @@
      <div class="max-w-4xl mx-auto px-6">
          <div id="aries-detail" class="mb-10">
              <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
-                 <img src="../../assets/zodiac/Aries.svg" alt="Widder" class="w-7 h-7 flex-shrink-0">
+                 <img src="/learn-hub/assets/zodiac/Aries.svg" alt="Widder" class="w-7 h-7 flex-shrink-0">
                  Widder (21. März - 19. April)
              </h3>
              <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Feuer | <strong class="text-gray-800">Modalität:</strong> Kardinal | <strong class="text-gray-800">Herrscher:</strong> Mars</p>
@@ -692,7 +747,7 @@
 
          <div id="taurus-detail" class="mb-10">
              <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
-                 <img src="../../assets/zodiac/Taurus.svg" alt="Stier" class="w-7 h-7 flex-shrink-0">
+                 <img src="/learn-hub/assets/zodiac/Taurus.svg" alt="Stier" class="w-7 h-7 flex-shrink-0">
                  Stier (20. April - 20. Mai)
              </h3>
              <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Erde | <strong class="text-gray-800">Modalität:</strong> Fix | <strong class="text-gray-800">Herrscher:</strong> Venus</p>
@@ -701,7 +756,7 @@
 
          <div id="gemini-detail" class="mb-10">
              <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
-                 <img src="../../assets/zodiac/Gemini.svg" alt="Zwillinge" class="w-7 h-7 flex-shrink-0">
+                 <img src="/learn-hub/assets/zodiac/Gemini.svg" alt="Zwillinge" class="w-7 h-7 flex-shrink-0">
                  Zwillinge (21. Mai - 20. Juni)
              </h3>
              <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Luft | <strong class="text-gray-800">Modalität:</strong> Veränderlich | <strong class="text-gray-800">Herrscher:</strong> Merkur</p>
@@ -710,7 +765,7 @@
 
          <div id="cancer-detail" class="mb-10">
              <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
-                 <img src="../../assets/zodiac/Cancer.svg" alt="Krebs" class="w-7 h-7 flex-shrink-0">
+                 <img src="/learn-hub/assets/zodiac/Cancer.svg" alt="Krebs" class="w-7 h-7 flex-shrink-0">
                  Krebs (21. Juni - 22. Juli)
              </h3>
              <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Wasser | <strong class="text-gray-800">Modalität:</strong> Kardinal | <strong class="text-gray-800">Herrscher:</strong> Mond</p>
@@ -719,7 +774,7 @@
 
          <div id="leo-detail" class="mb-10">
              <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
-                 <img src="../../assets/zodiac/Leo.svg" alt="Löwe" class="w-7 h-7 flex-shrink-0">
+                 <img src="/learn-hub/assets/zodiac/Leo.svg" alt="Löwe" class="w-7 h-7 flex-shrink-0">
                  Löwe (23. Juli - 22. August)
              </h3>
              <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Feuer | <strong class="text-gray-800">Modalität:</strong> Fix | <strong class="text-gray-800">Herrscher:</strong> Sonne</p>
@@ -728,7 +783,7 @@
 
          <div id="virgo-detail" class="mb-10">
              <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
-                 <img src="../../assets/zodiac/Virgo.svg" alt="Jungfrau" class="w-7 h-7 flex-shrink-0">
+                 <img src="/learn-hub/assets/zodiac/Virgo.svg" alt="Jungfrau" class="w-7 h-7 flex-shrink-0">
                  Jungfrau (23. August - 22. September)
              </h3>
              <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Erde | <strong class="text-gray-800">Modalität:</strong> Veränderlich | <strong class="text-gray-800">Herrscher:</strong> Merkur</p>
@@ -737,7 +792,7 @@
 
          <div id="libra-detail" class="mb-10">
              <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
-                 <img src="../../assets/zodiac/Libra.svg" alt="Waage" class="w-7 h-7 flex-shrink-0">
+                 <img src="/learn-hub/assets/zodiac/Libra.svg" alt="Waage" class="w-7 h-7 flex-shrink-0">
                  Waage (23. September - 22. Oktober)
              </h3>
              <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Luft | <strong class="text-gray-800">Modalität:</strong> Kardinal | <strong class="text-gray-800">Herrscher:</strong> Venus</p>
@@ -746,7 +801,7 @@
 
          <div id="scorpio-detail" class="mb-10">
              <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
-                 <img src="../../assets/zodiac/Scorpio.svg" alt="Skorpion" class="w-7 h-7 flex-shrink-0">
+                 <img src="/learn-hub/assets/zodiac/Scorpio.svg" alt="Skorpion" class="w-7 h-7 flex-shrink-0">
                  Skorpion (23. Oktober - 21. November)
              </h3>
              <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Wasser | <strong class="text-gray-800">Modalität:</strong> Fix | <strong class="text-gray-800">Herrscher:</strong> Mars (traditionell), Pluto (modern)</p>
@@ -755,7 +810,7 @@
 
          <div id="sagittarius-detail" class="mb-10">
              <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
-                 <img src="../../assets/zodiac/Sagittarius.svg" alt="Schütze" class="w-7 h-7 flex-shrink-0">
+                 <img src="/learn-hub/assets/zodiac/Sagittarius.svg" alt="Schütze" class="w-7 h-7 flex-shrink-0">
                  Schütze (22. November - 21. Dezember)
              </h3>
              <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Feuer | <strong class="text-gray-800">Modalität:</strong> Veränderlich | <strong class="text-gray-800">Herrscher:</strong> Jupiter</p>
@@ -764,7 +819,7 @@
 
          <div id="capricorn-detail" class="mb-10">
              <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
-                 <img src="../../assets/zodiac/Capricorn.svg" alt="Steinbock" class="w-7 h-7 flex-shrink-0">
+                 <img src="/learn-hub/assets/zodiac/Capricorn.svg" alt="Steinbock" class="w-7 h-7 flex-shrink-0">
                  Steinbock (22. Dezember - 19. Januar)
              </h3>
              <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Erde | <strong class="text-gray-800">Modalität:</strong> Kardinal | <strong class="text-gray-800">Herrscher:</strong> Saturn</p>
@@ -773,7 +828,7 @@
 
          <div id="aquarius-detail" class="mb-10">
              <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
-                 <img src="../../assets/zodiac/Aquarius.svg" alt="Wassermann" class="w-7 h-7 flex-shrink-0">
+                 <img src="/learn-hub/assets/zodiac/Aquarius.svg" alt="Wassermann" class="w-7 h-7 flex-shrink-0">
                  Wassermann (20. Januar - 18. Februar)
              </h3>
              <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Luft | <strong class="text-gray-800">Modalität:</strong> Fix | <strong class="text-gray-800">Herrscher:</strong> Saturn (traditionell), Uranus (modern)</p>
@@ -782,7 +837,7 @@
 
          <div id="pisces-detail" class="mb-4">
              <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-3">
-                 <img src="../../assets/zodiac/Pisces.svg" alt="Fische" class="w-7 h-7 flex-shrink-0">
+                 <img src="/learn-hub/assets/zodiac/Pisces.svg" alt="Fische" class="w-7 h-7 flex-shrink-0">
                  Fische (19. Februar - 20. März)
              </h3>
              <p class="text-gm-text text-sm md:text-base leading-relaxed mb-2"><strong class="text-gray-800">Element:</strong> Wasser | <strong class="text-gray-800">Modalität:</strong> Veränderlich | <strong class="text-gray-800">Herrscher:</strong> Jupiter (traditionell), Neptun (modern)</p>
@@ -944,7 +999,7 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
                 <div class="text-center md:text-left">
-                    <img src="../../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <img src="/learn-hub/assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
                     <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
                     <p class="text-sm text-gray-600 mb-2">Alle Rechte vorbehalten.</p>
                     <p class="text-sm">
@@ -966,10 +1021,10 @@
                 <div class="text-center md:text-right">
                     <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Verbinden Sie sich mit uns</h3>
                     <div class="flex justify-center md:justify-end gap-3 mb-4">
-                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener"><img src="../../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10"></a>
-                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener"><img src="../../assets/icon-x.svg" alt="X" class="w-10 h-10"></a>
-                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener"><img src="../../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10"></a>
-                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener"><img src="../../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10"></a>
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-fb.svg" alt="Facebook" class="w-10 h-10"></a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-x.svg" alt="X" class="w-10 h-10"></a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-insta.svg" alt="Instagram" class="w-10 h-10"></a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-yt.svg" alt="YouTube" class="w-10 h-10"></a>
                     </div>
                     <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Kontakt aufnehmen</a>
                 </div>

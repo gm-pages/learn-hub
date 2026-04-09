@@ -175,7 +175,7 @@
         <nav class="bg-white border-b border-gray-200 sticky top-0 z-50" style="font-family: Bilo, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
         <div class="w-full px-[30px] flex items-center h-[80px]">
             <!-- Logo -->
-            <a href="/" class="flex-shrink-0">
+            <a id="gm-logo-link" href="/" class="flex-shrink-0">
                 <img src="/learn-hub/assets/logo.svg" alt="Genetic Matrix - Know you" class="h-8 md:h-14">
             </a>
 
@@ -331,6 +331,61 @@
       if (label) label.textContent = LANGS[current];
       var flagEl = document.getElementById("gm-lang-flag");
       if (flagEl) flagEl.className = "flag-icon flag-icon-" + (FLAGS[current] || "gb");
+      // Point logo at the matching WordPress language root so clicking it
+      // doesn't trigger a cross-language redirect hop through PHP.
+      var logo = document.getElementById("gm-logo-link");
+      if (logo) logo.href = current === "en" ? "/" : ("/" + current + "/");
+
+      document.querySelectorAll('a[data-lang]').forEach(function(a){
+        var lang = a.getAttribute('data-lang');
+        a.href = lang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + lang + rest);
+        if (lang === current) a.classList.add('text-gm-purple','font-semibold');
+        a.addEventListener('click', function(){ setCookie("gm_lang", lang); });
+      });
+    })();</script>
+<script id="gm-calendar-auth">(function(){
+      // Show calendar icon in nav when user is logged in. Fetches user state
+      // once per page load (browser caches the response so cost is minimal).
+      fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r){ return r.json(); })
+        .then(function(data){
+          if (data && data.logged_in) {
+            var cal = document.getElementById('gm-calendar-icon');
+            if (cal) { cal.classList.remove('hidden'); cal.classList.add('flex'); }
+          }
+        })
+        .catch(function(){});
+    })();</script>
+    <script id="gm-lang-switcher">(function(){
+      var LANGS = {en:"English",de:"Deutsch",es:"Español",fr:"Français",it:"Italiano",nl:"Nederland",pt:"Português"};
+      var FLAGS = {en:"gb",de:"de",es:"es",fr:"fr",it:"it",nl:"nl",pt:"pt"};
+      var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
+      var path = window.location.pathname;
+      var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
+      var current = m ? m[1] : "en";
+      var rest = m ? path.substring(("/learn-hub/" + current).length) : path.replace(/^\/learn-hub/, "");
+      if (!rest) rest = "/";
+
+      // Cookie helpers (shared with WordPress/WPML on .geneticmatrix.com)
+      function getCookie(name){
+        var v = ("; " + document.cookie).split("; " + name + "=");
+        return v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
+      }
+      function setCookie(name, value){
+        var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
+        var parts = location.hostname.split('.');
+        var domain = parts.length >= 2 ? "; domain=." + parts.slice(-2).join('.') : "";
+        document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
+      }
+
+      // Sync cookie to current URL language (head script handles redirect before render)
+      var cookieLang = getCookie("gm_lang");
+      if (cookieLang !== current) setCookie("gm_lang", current);
+
+      var label = document.getElementById("gm-lang-current");
+      if (label) label.textContent = LANGS[current];
+      var flagEl = document.getElementById("gm-lang-flag");
+      if (flagEl) flagEl.className = "flag-icon flag-icon-" + (FLAGS[current] || "gb");
 
       document.querySelectorAll('a[data-lang]').forEach(function(a){
         var lang = a.getAttribute('data-lang');
@@ -428,7 +483,7 @@
                 <!-- Type Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-type.svg" alt="Tipo" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-type.svg" alt="Tipo" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Tipo</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -442,7 +497,7 @@
                 <!-- Profile Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-profile.svg" alt="Profilo" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-profile.svg" alt="Profilo" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Profilo</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -456,7 +511,7 @@
                 <!-- Centers Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-rhombus.svg" alt="Centri" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-rhombus.svg" alt="Centri" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Centri</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -470,7 +525,7 @@
                 <!-- Definition Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-definition.svg" alt="Definizione" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-definition.svg" alt="Definizione" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Definizione</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -484,7 +539,7 @@
                 <!-- Channels Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-channels.svg" alt="Canali" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-channels.svg" alt="Canali" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Canali</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -498,7 +553,7 @@
                 <!-- Gates & Lines Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-gates.svg" alt="Porte e Linee" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-gates.svg" alt="Porte e Linee" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Porte e Linee</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -512,7 +567,7 @@
                 <!-- HD Planets Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-planets.svg" alt="Pianeti HD" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-planets.svg" alt="Pianeti HD" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Pianeti</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -536,7 +591,7 @@
                 <!-- Incarnation Cross Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-incarnation.svg" alt="Croce di Incarnazione" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-incarnation.svg" alt="Croce di Incarnazione" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Croce di Incarnazione</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -550,7 +605,7 @@
                 <!-- Circuits Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-circuits.svg" alt="Circuiti" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-circuits.svg" alt="Circuiti" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Circuiti</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -564,7 +619,7 @@
                 <!-- Deeper Mechanics Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-deeper-mechanics.svg" alt="Meccaniche profonde" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-deeper-mechanics.svg" alt="Meccaniche profonde" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Meccaniche profonde</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -578,7 +633,7 @@
                 <!-- Variables & Arrows Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-arrows.svg" alt="Frecce delle Variabili" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-arrows.svg" alt="Frecce delle Variabili" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Frecce delle Variabili</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -592,7 +647,7 @@
                 <!-- Homo Solaris Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-homo-solaris.svg" alt="Homo Solaris" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-homo-solaris.svg" alt="Homo Solaris" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Homo Solaris</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -613,7 +668,7 @@
                 <!-- Life Cycles Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-cycles.svg" alt="Cicli di vita" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-cycles.svg" alt="Cicli di vita" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Cicli di vita</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -627,7 +682,7 @@
                 <!-- Transits Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-transits.svg" alt="Transiti" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-transits.svg" alt="Transiti" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Transiti</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -648,7 +703,7 @@
                 <!-- Connection Chart Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-connection.svg" alt="Carta di connessione" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-connection.svg" alt="Carta di connessione" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Carta di connessione</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -662,7 +717,7 @@
                 <!-- Family Penta Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-penta.svg" alt="Penta familiare" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-penta.svg" alt="Penta familiare" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Penta familiare</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -676,7 +731,7 @@
                 <!-- Business Penta (BG5) Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-penta.svg" alt="Penta aziendale (BG5)" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-penta.svg" alt="Penta aziendale (BG5)" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Penta aziendale (BG5)</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -690,7 +745,7 @@
                 <!-- OC16 (WA) Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-oc16.svg" alt="WA (OC16)" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-oc16.svg" alt="WA (OC16)" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">WA (OC16)</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -711,7 +766,7 @@
                 <!-- Sleep Design Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-moon.svg" alt="Design del Sonno" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-moon.svg" alt="Design del Sonno" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Design del Sonno</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -725,7 +780,7 @@
                 <!-- Animal Design Card -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-paw.svg" alt="Design animale" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-paw.svg" alt="Design animale" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Design animale</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -759,7 +814,7 @@
                 <!-- Carta Tropicale -->
                 <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-gm-purple flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-centres.svg" alt="Tropicale" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-centres.svg" alt="Tropicale" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <span class="text-xs font-semibold tracking-widest text-gm-purple uppercase">Tropicale</span>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Zodiaco Tropicale</h3>
@@ -774,7 +829,7 @@
                 <!-- Carta J2000 -->
                 <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-gm-pink flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-j2k.svg" alt="J2000" class="w-20 h-20 flex-shrink-0 -ml-2">
+                        <img src="/learn-hub/assets/icon-j2k.svg" alt="J2000" class="w-20 h-20 flex-shrink-0 -ml-2">
                         <div>
                             <span class="text-xs font-semibold tracking-widest text-gm-pink uppercase">Tropicale</span>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Sistema di Riferimento J2000</h3>
@@ -789,7 +844,7 @@
                 <!-- Carta Calcolo Siderale -->
                 <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#2ea89e] flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-windrose.svg" alt="Siderale" class="w-16 h-16 flex-shrink-0 icon-tint-teal">
+                        <img src="/learn-hub/assets/icon-windrose.svg" alt="Siderale" class="w-16 h-16 flex-shrink-0 icon-tint-teal">
                         <div>
                             <span class="text-xs font-semibold tracking-widest text-[#2ea89e] uppercase">Siderale</span>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Calcolo Siderale</h3>
@@ -804,7 +859,7 @@
                 <!-- Carta Zodiaco Draconico -->
                 <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#c94040] flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-dragon.svg" alt="Draconico" class="w-16 h-16 flex-shrink-0 icon-tint-red">
+                        <img src="/learn-hub/assets/icon-dragon.svg" alt="Draconico" class="w-16 h-16 flex-shrink-0 icon-tint-red">
                         <div>
                             <span class="text-xs font-semibold tracking-widest text-[#c94040] uppercase">Draconico</span>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Zodiaco Draconico</h3>
@@ -819,7 +874,7 @@
                 <!-- Carta Varianti Siderale Reale -->
                 <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#d46ba3] flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-star.svg" alt="Siderale Reale" class="w-16 h-16 flex-shrink-0 icon-tint-pink">
+                        <img src="/learn-hub/assets/icon-star.svg" alt="Siderale Reale" class="w-16 h-16 flex-shrink-0 icon-tint-pink">
                         <div>
                             <span class="text-xs font-semibold tracking-widest text-[#d46ba3] uppercase">Siderale Reale</span>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Varianti Siderale Reale</h3>
@@ -834,7 +889,7 @@
                 <!-- Carta 13 Segni Siderale -->
                 <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#3d5a96] flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-ophiuchus.svg" alt="13 Segni Siderale" class="w-16 h-16 flex-shrink-0 icon-tint-navy">
+                        <img src="/learn-hub/assets/icon-ophiuchus.svg" alt="13 Segni Siderale" class="w-16 h-16 flex-shrink-0 icon-tint-navy">
                         <div>
                             <span class="text-xs font-semibold tracking-widest text-[#3d5a96] uppercase">Siderale Reale</span>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">13 Segni Siderale Reale</h3>
@@ -849,7 +904,7 @@
                 <!-- Carta Calcolo Ibrido -->
                 <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-[#e8961d] flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-circuits.svg" alt="Ibrido" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-circuits.svg" alt="Ibrido" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <span class="text-xs font-semibold tracking-widest text-[#e8961d] uppercase">Ibrido</span>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Calcolo Ibrido</h3>
@@ -943,7 +998,7 @@
                 <!-- Carta Segni Zodiacali -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-zodiac.svg" alt="Segni Zodiacali" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-zodiac.svg" alt="Segni Zodiacali" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Segni Zodiacali</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -957,7 +1012,7 @@
                 <!-- Carta Pianeti -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-planets.svg" alt="Pianeti" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-planets.svg" alt="Pianeti" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Pianeti</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -971,7 +1026,7 @@
                 <!-- Carta Case -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-houses.svg" alt="Case" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-houses.svg" alt="Case" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Case e Sistemi di Case</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -985,7 +1040,7 @@
                 <!-- Carta Aspetti -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-aspects.svg" alt="Aspetti" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-aspects.svg" alt="Aspetti" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Aspetti e Orbi</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -999,7 +1054,7 @@
                 <!-- Carta Asteroidi -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-asteroids.svg" alt="Asteroidi" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-asteroids.svg" alt="Asteroidi" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Asteroidi e Planetoidi</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -1013,7 +1068,7 @@
                 <!-- Carta Stelle Fisse -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-fixed-stars.svg" alt="Stelle Fisse" class="w-16 h-16 flex-shrink-0 icon-twinkle">
+                        <img src="/learn-hub/assets/icon-fixed-stars.svg" alt="Stelle Fisse" class="w-16 h-16 flex-shrink-0 icon-twinkle">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Stelle Fisse</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -1027,7 +1082,7 @@
                 <!-- Carta Ayanamsha -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-ayanamsha.svg" alt="Ayanamsha" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-ayanamsha.svg" alt="Ayanamsha" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Sistemi Ayanamsha</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -1041,7 +1096,7 @@
                 <!-- Carta Sinastria -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-synastry.svg" alt="Sinastria" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-synastry.svg" alt="Sinastria" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Sinastria</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -1055,7 +1110,7 @@
                 <!-- Carta Progressioni -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-progression.svg" alt="Progressioni" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-progression.svg" alt="Progressioni" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Progressioni</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -1076,7 +1131,7 @@
                 <!-- Carta Simboli sabiani -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-sabian.svg" alt="Simboli sabiani" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-sabian.svg" alt="Simboli sabiani" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Simboli sabiani</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -1090,7 +1145,7 @@
                 <!-- Carta Gradi di Charubel -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-charubel.svg" alt="Gradi di Charubel" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-charubel.svg" alt="Gradi di Charubel" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Gradi di Charubel</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -1104,7 +1159,7 @@
                 <!-- Carta Gradi La Volasfera (Sepharial) -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-volasfera.svg" alt="Gradi La Volasfera" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-volasfera.svg" alt="Gradi La Volasfera" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">La Volasfera (Sepharial)</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -1118,7 +1173,7 @@
                 <!-- Carta Astro Tarocchi -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-tarot.svg" alt="Astro Tarocchi" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-tarot.svg" alt="Astro Tarocchi" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Astro Tarocchi</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -1132,7 +1187,7 @@
                 <!-- Carta Astrologia Cinese -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-chinese.svg" alt="Astrologia Cinese" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-chinese.svg" alt="Astrologia Cinese" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Astrologia Cinese</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -1146,7 +1201,7 @@
                 <!-- Carta Astrologia Vedica -->
                 <div class="card-reveal card-link bg-white rounded-lg border border-gm-border p-6 hover:shadow-md hover:-translate-y-1 hover:border-gray-300 hover:bg-[#F5F3F8] transition-all duration-300 flex flex-col">
                     <div class="flex items-start gap-4 mb-4 flex-1">
-                        <img src="assets/icon-vedic.svg" alt="Astrologia Vedica" class="w-16 h-16 flex-shrink-0">
+                        <img src="/learn-hub/assets/icon-vedic.svg" alt="Astrologia Vedica" class="w-16 h-16 flex-shrink-0">
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Astrologia Vedica</h3>
                             <p class="text-gray-500 text-sm leading-relaxed">
@@ -1166,7 +1221,7 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="bg-gm-dark rounded-2xl p-10 md:p-14 text-center">
                 <!-- Icona Stella -->
-                <img src="assets/icon-celebrity.svg" alt="" class="w-14 h-14 mb-4 brightness-0 invert mx-auto">
+                <img src="/learn-hub/assets/icon-celebrity.svg" alt="" class="w-14 h-14 mb-4 brightness-0 invert mx-auto">
                 <span class="text-xs font-semibold tracking-widest text-gm-pink uppercase mb-3 block">Carte Celebrità</span>
                 <h2 class="text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
                     Esplori 88.600+ Carte Human Design di Celebrità
@@ -1299,7 +1354,7 @@
 
                 <!-- Sinistra: Logo e Copyright -->
                 <div class="text-center md:text-left">
-                    <img src="assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <img src="/learn-hub/assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
                     <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
                     <p class="text-sm text-gray-600 mb-2">Tutti i diritti riservati.</p>
                     <p class="text-sm">
@@ -1335,16 +1390,16 @@
                     <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Si Connetta con Noi</h3>
                     <div class="flex justify-center md:justify-end gap-3 mb-4">
                         <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener" class="hover:-translate-y-1 hover:opacity-70 transition-all duration-300">
-                            <img src="assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
+                            <img src="/learn-hub/assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
                         </a>
                         <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener" class="hover:-translate-y-1 hover:opacity-70 transition-all duration-300">
-                            <img src="assets/icon-x.svg" alt="X" class="w-10 h-10">
+                            <img src="/learn-hub/assets/icon-x.svg" alt="X" class="w-10 h-10">
                         </a>
                         <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener" class="hover:-translate-y-1 hover:opacity-70 transition-all duration-300">
-                            <img src="assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
+                            <img src="/learn-hub/assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
                         </a>
                         <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener" class="hover:-translate-y-1 hover:opacity-70 transition-all duration-300">
-                            <img src="assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
+                            <img src="/learn-hub/assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
                         </a>
                     </div>
                     <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Ci Contatti</a>
