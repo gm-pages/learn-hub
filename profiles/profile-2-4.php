@@ -38,14 +38,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>2/4 Profile in Human Design - Hermit / Opportunist | Genetic Matrix</title>
  <meta name="description" content="The naturally gifted introvert whose life opens through trusted relationships. 2/4s often carry talents they may not fully see in themselves, needing the right people to recognize and call them out.">
- <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-2-4.php">
-     <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-2-4.php">
-    <link rel="alternate" hreflang="de" href="https://www.geneticmatrix.com/learn-hub/de/profiles/profile-2-4.php">
-    <link rel="alternate" hreflang="es" href="https://www.geneticmatrix.com/learn-hub/es/profiles/profile-2-4.php">
-    <link rel="alternate" hreflang="fr" href="https://www.geneticmatrix.com/learn-hub/fr/profiles/profile-2-4.php">
-    <link rel="alternate" hreflang="it" href="https://www.geneticmatrix.com/learn-hub/it/profiles/profile-2-4.php">
-    <link rel="alternate" hreflang="nl" href="https://www.geneticmatrix.com/learn-hub/nl/profiles/profile-2-4.php">
-    <link rel="alternate" hreflang="pt" href="https://www.geneticmatrix.com/learn-hub/pt/profiles/profile-2-4.php">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-2-4.php">    <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-2-4.php">
     <link rel="alternate" hreflang="x-default" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-2-4.php">
 <script src="https://cdn.tailwindcss.com"></script>
  <script>

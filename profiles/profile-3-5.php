@@ -38,14 +38,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>3/5 Profile in Human Design - Martyr / Heretic | Genetic Matrix</title>
  <meta name="description" content="The experiential learner with a universalizing impact. 3/5s discover through trial and error, then offer practical solutions that can transform others.">
- <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-3-5.php">
-     <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-3-5.php">
-    <link rel="alternate" hreflang="de" href="https://www.geneticmatrix.com/learn-hub/de/profiles/profile-3-5.php">
-    <link rel="alternate" hreflang="es" href="https://www.geneticmatrix.com/learn-hub/es/profiles/profile-3-5.php">
-    <link rel="alternate" hreflang="fr" href="https://www.geneticmatrix.com/learn-hub/fr/profiles/profile-3-5.php">
-    <link rel="alternate" hreflang="it" href="https://www.geneticmatrix.com/learn-hub/it/profiles/profile-3-5.php">
-    <link rel="alternate" hreflang="nl" href="https://www.geneticmatrix.com/learn-hub/nl/profiles/profile-3-5.php">
-    <link rel="alternate" hreflang="pt" href="https://www.geneticmatrix.com/learn-hub/pt/profiles/profile-3-5.php">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-3-5.php">    <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-3-5.php">
     <link rel="alternate" hreflang="x-default" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-3-5.php">
 <script src="https://cdn.tailwindcss.com"></script>
  <script>

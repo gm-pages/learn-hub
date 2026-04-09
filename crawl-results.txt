@@ -124,8 +124,15 @@
 200	https://www.staginggm.com/learn-hub/astrology/chinese-astrology.html	text/html
 200	https://www.staginggm.com/learn-hub/astrology/fixed-stars.html	text/html
 200	https://www.staginggm.com/learn-hub/astrology/houses.html	text/html
+200	https://www.staginggm.com/learn-hub/astrology/la-volasfera-degrees.html	text/html
 200	https://www.staginggm.com/learn-hub/astrology/planets.html	text/html
+200	https://www.staginggm.com/learn-hub/astrology/progressions.html	text/html
+200	https://www.staginggm.com/learn-hub/astrology/sabian-symbols.html	text/html
+200	https://www.staginggm.com/learn-hub/astrology/sepharial-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/astrology/synastry.html	text/html
+200	https://www.staginggm.com/learn-hub/astrology/vedic.html	text/html
 200	https://www.staginggm.com/learn-hub/astrology/zodiac-signs.html	text/html
+200	https://www.staginggm.com/learn-hub/astrology/zodiac-signs.php	text/html; charset=UTF-8
 200	https://www.staginggm.com/learn-hub/bg5/index.html	text/html
 200	https://www.staginggm.com/learn-hub/calculations/13-sign-sidereal.html	text/html
 200	https://www.staginggm.com/learn-hub/calculations/draconic.html	text/html
@@ -134,12 +141,102 @@
 200	https://www.staginggm.com/learn-hub/calculations/tropical.html	text/html
 200	https://www.staginggm.com/learn-hub/calculations/true-sidereal.html	text/html
 200	https://www.staginggm.com/learn-hub/celebrities/	text/html
+200	https://www.staginggm.com/learn-hub/celebrities/generate-sitemaps.html	text/html
 200	https://www.staginggm.com/learn-hub/celebrities/index.html	text/html
+200	https://www.staginggm.com/learn-hub/celebrities/test-celeb-methods.html	text/html
 200	https://www.staginggm.com/learn-hub/centers/index.html	text/html
 200	https://www.staginggm.com/learn-hub/channels/index.html	text/html
+200	https://www.staginggm.com/learn-hub/channels/index_preview.html	text/html
 200	https://www.staginggm.com/learn-hub/circuits/index.html	text/html
+200	https://www.staginggm.com/learn-hub/connection/index.html	text/html
 200	https://www.staginggm.com/learn-hub/cycles/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/animals/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/astrology/aspects.html	text/html
+200	https://www.staginggm.com/learn-hub/de/astrology/asteroids.html	text/html
+200	https://www.staginggm.com/learn-hub/de/astrology/astro-tarot.html	text/html
+200	https://www.staginggm.com/learn-hub/de/astrology/ayanamsha.html	text/html
+200	https://www.staginggm.com/learn-hub/de/astrology/charubel-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/de/astrology/chinese-astrology.html	text/html
+200	https://www.staginggm.com/learn-hub/de/astrology/fixed-stars.html	text/html
+200	https://www.staginggm.com/learn-hub/de/astrology/houses.html	text/html
+200	https://www.staginggm.com/learn-hub/de/astrology/la-volasfera-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/de/astrology/planets.html	text/html
+200	https://www.staginggm.com/learn-hub/de/astrology/progressions.html	text/html
+200	https://www.staginggm.com/learn-hub/de/astrology/sabian-symbols.html	text/html
+200	https://www.staginggm.com/learn-hub/de/astrology/sepharial-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/de/astrology/synastry.html	text/html
+200	https://www.staginggm.com/learn-hub/de/astrology/vedic.html	text/html
+200	https://www.staginggm.com/learn-hub/de/astrology/zodiac-signs.html	text/html
+404	https://www.staginggm.com/learn-hub/de/astrology/zodiac-signs.php	
+200	https://www.staginggm.com/learn-hub/de/bg5/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/calculations/13-sign-sidereal.html	text/html
+200	https://www.staginggm.com/learn-hub/de/calculations/draconic.html	text/html
+200	https://www.staginggm.com/learn-hub/de/calculations/j2000.html	text/html
+200	https://www.staginggm.com/learn-hub/de/calculations/sidereal.html	text/html
+200	https://www.staginggm.com/learn-hub/de/calculations/tropical.html	text/html
+200	https://www.staginggm.com/learn-hub/de/calculations/true-sidereal.html	text/html
+404	https://www.staginggm.com/learn-hub/de/celebrities/generate-sitemaps.html	
+200	https://www.staginggm.com/learn-hub/de/celebrities/index.html	text/html
+404	https://www.staginggm.com/learn-hub/de/celebrities/test-celeb-methods.html	
+200	https://www.staginggm.com/learn-hub/de/centers/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/channels/index.html	text/html
+404	https://www.staginggm.com/learn-hub/de/channels/index_preview.html	
+200	https://www.staginggm.com/learn-hub/de/circuits/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/connection/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/cycles/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/deeper-mechanics/determination.html	text/html
+200	https://www.staginggm.com/learn-hub/de/deeper-mechanics/environment.html	text/html
+200	https://www.staginggm.com/learn-hub/de/deeper-mechanics/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/deeper-mechanics/motivation.html	text/html
+200	https://www.staginggm.com/learn-hub/de/deeper-mechanics/perspective.html	text/html
+200	https://www.staginggm.com/learn-hub/de/definition/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/dictionary/dictionary.html	text/html
+200	https://www.staginggm.com/learn-hub/de/gates/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/homo-solaris/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/incarnation-cross/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/index.php	text/html
+404	https://www.staginggm.com/learn-hub/de/index_preview.html	
+200	https://www.staginggm.com/learn-hub/de/oc16/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/penta/index.html	text/html
 200	https://www.staginggm.com/learn-hub/de/profiles/	text/html
+200	https://www.staginggm.com/learn-hub/de/profiles/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/profiles/index.php	text/html
+200	https://www.staginggm.com/learn-hub/de/profiles/profile-1-3.html	text/html
+404	https://www.staginggm.com/learn-hub/de/profiles/profile-1-3.php	
+200	https://www.staginggm.com/learn-hub/de/profiles/profile-1-4.html	text/html
+404	https://www.staginggm.com/learn-hub/de/profiles/profile-1-4.php	
+200	https://www.staginggm.com/learn-hub/de/profiles/profile-2-4.html	text/html
+404	https://www.staginggm.com/learn-hub/de/profiles/profile-2-4.php	
+200	https://www.staginggm.com/learn-hub/de/profiles/profile-2-5.html	text/html
+404	https://www.staginggm.com/learn-hub/de/profiles/profile-2-5.php	
+200	https://www.staginggm.com/learn-hub/de/profiles/profile-3-5.html	text/html
+404	https://www.staginggm.com/learn-hub/de/profiles/profile-3-5.php	
+200	https://www.staginggm.com/learn-hub/de/profiles/profile-3-6.html	text/html
+404	https://www.staginggm.com/learn-hub/de/profiles/profile-3-6.php	
+200	https://www.staginggm.com/learn-hub/de/profiles/profile-4-1.html	text/html
+404	https://www.staginggm.com/learn-hub/de/profiles/profile-4-1.php	
+200	https://www.staginggm.com/learn-hub/de/profiles/profile-4-6.html	text/html
+404	https://www.staginggm.com/learn-hub/de/profiles/profile-4-6.php	
+200	https://www.staginggm.com/learn-hub/de/profiles/profile-5-1.html	text/html
+404	https://www.staginggm.com/learn-hub/de/profiles/profile-5-1.php	
+200	https://www.staginggm.com/learn-hub/de/profiles/profile-5-2.html	text/html
+404	https://www.staginggm.com/learn-hub/de/profiles/profile-5-2.php	
+200	https://www.staginggm.com/learn-hub/de/profiles/profile-6-2.html	text/html
+404	https://www.staginggm.com/learn-hub/de/profiles/profile-6-2.php	
+200	https://www.staginggm.com/learn-hub/de/profiles/profile-6-3.html	text/html
+404	https://www.staginggm.com/learn-hub/de/profiles/profile-6-3.php	
+200	https://www.staginggm.com/learn-hub/de/sleep-design/index.html	text/html
+404	https://www.staginggm.com/learn-hub/de/template.html	
+200	https://www.staginggm.com/learn-hub/de/transits/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/types/generator.html	text/html
+200	https://www.staginggm.com/learn-hub/de/types/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/types/manifesting-generator.html	text/html
+200	https://www.staginggm.com/learn-hub/de/types/manifestor.html	text/html
+200	https://www.staginggm.com/learn-hub/de/types/projector.html	text/html
+200	https://www.staginggm.com/learn-hub/de/types/reflector.html	text/html
+200	https://www.staginggm.com/learn-hub/de/variables/index.html	text/html
+200	https://www.staginggm.com/learn-hub/de/variables/index.php	text/html
 200	https://www.staginggm.com/learn-hub/deeper-mechanics/	text/html
 200	https://www.staginggm.com/learn-hub/deeper-mechanics/determination-glance.svg	image/svg+xml
 200	https://www.staginggm.com/learn-hub/deeper-mechanics/determination.html	text/html
@@ -151,11 +248,361 @@
 200	https://www.staginggm.com/learn-hub/deeper-mechanics/perspective-glance.svg	image/svg+xml
 200	https://www.staginggm.com/learn-hub/deeper-mechanics/perspective.html	text/html
 200	https://www.staginggm.com/learn-hub/definition/index.html	text/html
+200	https://www.staginggm.com/learn-hub/dictionary/dictionary.html	text/html
+200	https://www.staginggm.com/learn-hub/es/animals/index.html	text/html
+200	https://www.staginggm.com/learn-hub/es/astrology/aspects.html	text/html
+200	https://www.staginggm.com/learn-hub/es/astrology/asteroids.html	text/html
+200	https://www.staginggm.com/learn-hub/es/astrology/astro-tarot.html	text/html
+200	https://www.staginggm.com/learn-hub/es/astrology/ayanamsha.html	text/html
+200	https://www.staginggm.com/learn-hub/es/astrology/charubel-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/es/astrology/chinese-astrology.html	text/html
+200	https://www.staginggm.com/learn-hub/es/astrology/fixed-stars.html	text/html
+200	https://www.staginggm.com/learn-hub/es/astrology/houses.html	text/html
+200	https://www.staginggm.com/learn-hub/es/astrology/la-volasfera-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/es/astrology/planets.html	text/html
+200	https://www.staginggm.com/learn-hub/es/astrology/progressions.html	text/html
+200	https://www.staginggm.com/learn-hub/es/astrology/sabian-symbols.html	text/html
+200	https://www.staginggm.com/learn-hub/es/astrology/sepharial-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/es/astrology/synastry.html	text/html
+200	https://www.staginggm.com/learn-hub/es/astrology/vedic.html	text/html
+200	https://www.staginggm.com/learn-hub/es/astrology/zodiac-signs.html	text/html
+404	https://www.staginggm.com/learn-hub/es/astrology/zodiac-signs.php	
+200	https://www.staginggm.com/learn-hub/es/bg5/index.html	text/html
+200	https://www.staginggm.com/learn-hub/es/calculations/13-sign-sidereal.html	text/html
+200	https://www.staginggm.com/learn-hub/es/calculations/draconic.html	text/html
+200	https://www.staginggm.com/learn-hub/es/calculations/j2000.html	text/html
+200	https://www.staginggm.com/learn-hub/es/calculations/sidereal.html	text/html
+200	https://www.staginggm.com/learn-hub/es/calculations/tropical.html	text/html
+200	https://www.staginggm.com/learn-hub/es/calculations/true-sidereal.html	text/html
+404	https://www.staginggm.com/learn-hub/es/celebrities/generate-sitemaps.html	
+200	https://www.staginggm.com/learn-hub/es/celebrities/index.html	text/html
+404	https://www.staginggm.com/learn-hub/es/celebrities/test-celeb-methods.html	
+200	https://www.staginggm.com/learn-hub/es/centers/index.html	text/html
+200	https://www.staginggm.com/learn-hub/es/channels/index.html	text/html
+404	https://www.staginggm.com/learn-hub/es/channels/index_preview.html	
+200	https://www.staginggm.com/learn-hub/es/circuits/index.html	text/html
+200	https://www.staginggm.com/learn-hub/es/connection/index.html	text/html
+200	https://www.staginggm.com/learn-hub/es/cycles/index.html	text/html
+200	https://www.staginggm.com/learn-hub/es/deeper-mechanics/determination.html	text/html
+200	https://www.staginggm.com/learn-hub/es/deeper-mechanics/environment.html	text/html
+200	https://www.staginggm.com/learn-hub/es/deeper-mechanics/index.html	text/html
+200	https://www.staginggm.com/learn-hub/es/deeper-mechanics/motivation.html	text/html
+200	https://www.staginggm.com/learn-hub/es/deeper-mechanics/perspective.html	text/html
+200	https://www.staginggm.com/learn-hub/es/definition/index.html	text/html
+200	https://www.staginggm.com/learn-hub/es/dictionary/dictionary.html	text/html
+200	https://www.staginggm.com/learn-hub/es/gates/index.html	text/html
+200	https://www.staginggm.com/learn-hub/es/homo-solaris/index.html	text/html
+200	https://www.staginggm.com/learn-hub/es/incarnation-cross/index.html	text/html
+200	https://www.staginggm.com/learn-hub/es/index.html	text/html
+200	https://www.staginggm.com/learn-hub/es/index.php	text/html
+404	https://www.staginggm.com/learn-hub/es/index_preview.html	
+200	https://www.staginggm.com/learn-hub/es/oc16/index.html	text/html
+200	https://www.staginggm.com/learn-hub/es/penta/index.html	text/html
 200	https://www.staginggm.com/learn-hub/es/profiles/	text/html
+200	https://www.staginggm.com/learn-hub/es/profiles/index.html	text/html
+200	https://www.staginggm.com/learn-hub/es/profiles/index.php	text/html
+200	https://www.staginggm.com/learn-hub/es/profiles/profile-1-3.html	text/html
+404	https://www.staginggm.com/learn-hub/es/profiles/profile-1-3.php	
+200	https://www.staginggm.com/learn-hub/es/profiles/profile-1-4.html	text/html
+404	https://www.staginggm.com/learn-hub/es/profiles/profile-1-4.php	
+200	https://www.staginggm.com/learn-hub/es/profiles/profile-2-4.html	text/html
+404	https://www.staginggm.com/learn-hub/es/profiles/profile-2-4.php	
+200	https://www.staginggm.com/learn-hub/es/profiles/profile-2-5.html	text/html
+404	https://www.staginggm.com/learn-hub/es/profiles/profile-2-5.php	
+200	https://www.staginggm.com/learn-hub/es/profiles/profile-3-5.html	text/html
+404	https://www.staginggm.com/learn-hub/es/profiles/profile-3-5.php	
+200	https://www.staginggm.com/learn-hub/es/profiles/profile-3-6.html	text/html
+404	https://www.staginggm.com/learn-hub/es/profiles/profile-3-6.php	
+200	https://www.staginggm.com/learn-hub/es/profiles/profile-4-1.html	text/html
+404	https://www.staginggm.com/learn-hub/es/profiles/profile-4-1.php	
+200	https://www.staginggm.com/learn-hub/es/profiles/profile-4-6.html	text/html
+404	https://www.staginggm.com/learn-hub/es/profiles/profile-4-6.php	
+200	https://www.staginggm.com/learn-hub/es/profiles/profile-5-1.html	text/html
+404	https://www.staginggm.com/learn-hub/es/profiles/profile-5-1.php	
+200	https://www.staginggm.com/learn-hub/es/profiles/profile-5-2.html	text/html
+404	https://www.staginggm.com/learn-hub/es/profiles/profile-5-2.php	
+200	https://www.staginggm.com/learn-hub/es/profiles/profile-6-2.html	text/html
+404	https://www.staginggm.com/learn-hub/es/profiles/profile-6-2.php	
+200	https://www.staginggm.com/learn-hub/es/profiles/profile-6-3.html	text/html
+404	https://www.staginggm.com/learn-hub/es/profiles/profile-6-3.php	
+200	https://www.staginggm.com/learn-hub/es/sleep-design/index.html	text/html
+404	https://www.staginggm.com/learn-hub/es/template.html	
+200	https://www.staginggm.com/learn-hub/es/transits/index.html	text/html
+200	https://www.staginggm.com/learn-hub/es/types/generator.html	text/html
+200	https://www.staginggm.com/learn-hub/es/types/index.html	text/html
+200	https://www.staginggm.com/learn-hub/es/types/manifesting-generator.html	text/html
+200	https://www.staginggm.com/learn-hub/es/types/manifestor.html	text/html
+200	https://www.staginggm.com/learn-hub/es/types/projector.html	text/html
+200	https://www.staginggm.com/learn-hub/es/types/reflector.html	text/html
+200	https://www.staginggm.com/learn-hub/es/variables/index.html	text/html
+200	https://www.staginggm.com/learn-hub/es/variables/index.php	text/html
+200	https://www.staginggm.com/learn-hub/fr/animals/index.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/astrology/aspects.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/astrology/asteroids.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/astrology/astro-tarot.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/astrology/ayanamsha.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/astrology/charubel-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/astrology/chinese-astrology.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/astrology/fixed-stars.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/astrology/houses.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/astrology/la-volasfera-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/astrology/planets.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/astrology/progressions.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/astrology/sabian-symbols.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/astrology/sepharial-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/astrology/synastry.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/astrology/vedic.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/astrology/zodiac-signs.html	text/html
+404	https://www.staginggm.com/learn-hub/fr/astrology/zodiac-signs.php	
+200	https://www.staginggm.com/learn-hub/fr/bg5/index.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/calculations/13-sign-sidereal.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/calculations/draconic.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/calculations/j2000.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/calculations/sidereal.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/calculations/tropical.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/calculations/true-sidereal.html	text/html
+404	https://www.staginggm.com/learn-hub/fr/celebrities/generate-sitemaps.html	
+200	https://www.staginggm.com/learn-hub/fr/celebrities/index.html	text/html
+404	https://www.staginggm.com/learn-hub/fr/celebrities/test-celeb-methods.html	
+200	https://www.staginggm.com/learn-hub/fr/centers/index.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/channels/index.html	text/html
+404	https://www.staginggm.com/learn-hub/fr/channels/index_preview.html	
+200	https://www.staginggm.com/learn-hub/fr/circuits/index.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/connection/index.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/cycles/index.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/deeper-mechanics/determination.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/deeper-mechanics/environment.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/deeper-mechanics/index.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/deeper-mechanics/motivation.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/deeper-mechanics/perspective.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/definition/index.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/dictionary/dictionary.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/gates/index.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/homo-solaris/index.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/incarnation-cross/index.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/index.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/index.php	text/html
+404	https://www.staginggm.com/learn-hub/fr/index_preview.html	
+200	https://www.staginggm.com/learn-hub/fr/oc16/index.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/penta/index.html	text/html
 200	https://www.staginggm.com/learn-hub/fr/profiles/	text/html
+200	https://www.staginggm.com/learn-hub/fr/profiles/index.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/profiles/index.php	text/html
+200	https://www.staginggm.com/learn-hub/fr/profiles/profile-1-3.html	text/html
+404	https://www.staginggm.com/learn-hub/fr/profiles/profile-1-3.php	
+200	https://www.staginggm.com/learn-hub/fr/profiles/profile-1-4.html	text/html
+404	https://www.staginggm.com/learn-hub/fr/profiles/profile-1-4.php	
+200	https://www.staginggm.com/learn-hub/fr/profiles/profile-2-4.html	text/html
+404	https://www.staginggm.com/learn-hub/fr/profiles/profile-2-4.php	
+200	https://www.staginggm.com/learn-hub/fr/profiles/profile-2-5.html	text/html
+404	https://www.staginggm.com/learn-hub/fr/profiles/profile-2-5.php	
+200	https://www.staginggm.com/learn-hub/fr/profiles/profile-3-5.html	text/html
+404	https://www.staginggm.com/learn-hub/fr/profiles/profile-3-5.php	
+200	https://www.staginggm.com/learn-hub/fr/profiles/profile-3-6.html	text/html
+404	https://www.staginggm.com/learn-hub/fr/profiles/profile-3-6.php	
+200	https://www.staginggm.com/learn-hub/fr/profiles/profile-4-1.html	text/html
+404	https://www.staginggm.com/learn-hub/fr/profiles/profile-4-1.php	
+200	https://www.staginggm.com/learn-hub/fr/profiles/profile-4-6.html	text/html
+404	https://www.staginggm.com/learn-hub/fr/profiles/profile-4-6.php	
+200	https://www.staginggm.com/learn-hub/fr/profiles/profile-5-1.html	text/html
+404	https://www.staginggm.com/learn-hub/fr/profiles/profile-5-1.php	
+200	https://www.staginggm.com/learn-hub/fr/profiles/profile-5-2.html	text/html
+404	https://www.staginggm.com/learn-hub/fr/profiles/profile-5-2.php	
+200	https://www.staginggm.com/learn-hub/fr/profiles/profile-6-2.html	text/html
+404	https://www.staginggm.com/learn-hub/fr/profiles/profile-6-2.php	
+200	https://www.staginggm.com/learn-hub/fr/profiles/profile-6-3.html	text/html
+404	https://www.staginggm.com/learn-hub/fr/profiles/profile-6-3.php	
+200	https://www.staginggm.com/learn-hub/fr/sleep-design/index.html	text/html
+404	https://www.staginggm.com/learn-hub/fr/template.html	
+200	https://www.staginggm.com/learn-hub/fr/transits/index.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/types/generator.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/types/index.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/types/manifesting-generator.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/types/manifestor.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/types/projector.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/types/reflector.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/variables/index.html	text/html
+200	https://www.staginggm.com/learn-hub/fr/variables/index.php	text/html
 200	https://www.staginggm.com/learn-hub/gates/index.html	text/html
+200	https://www.staginggm.com/learn-hub/homo-solaris/index.html	text/html
+200	https://www.staginggm.com/learn-hub/incarnation-cross/index.html	text/html
+200	https://www.staginggm.com/learn-hub/index.html	text/html
+200	https://www.staginggm.com/learn-hub/index.php	text/html; charset=UTF-8
+200	https://www.staginggm.com/learn-hub/index_preview.html	text/html
+200	https://www.staginggm.com/learn-hub/it/animals/index.html	text/html
+200	https://www.staginggm.com/learn-hub/it/astrology/aspects.html	text/html
+200	https://www.staginggm.com/learn-hub/it/astrology/asteroids.html	text/html
+200	https://www.staginggm.com/learn-hub/it/astrology/astro-tarot.html	text/html
+200	https://www.staginggm.com/learn-hub/it/astrology/ayanamsha.html	text/html
+200	https://www.staginggm.com/learn-hub/it/astrology/charubel-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/it/astrology/chinese-astrology.html	text/html
+200	https://www.staginggm.com/learn-hub/it/astrology/fixed-stars.html	text/html
+200	https://www.staginggm.com/learn-hub/it/astrology/houses.html	text/html
+200	https://www.staginggm.com/learn-hub/it/astrology/la-volasfera-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/it/astrology/planets.html	text/html
+200	https://www.staginggm.com/learn-hub/it/astrology/progressions.html	text/html
+200	https://www.staginggm.com/learn-hub/it/astrology/sabian-symbols.html	text/html
+200	https://www.staginggm.com/learn-hub/it/astrology/sepharial-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/it/astrology/synastry.html	text/html
+200	https://www.staginggm.com/learn-hub/it/astrology/vedic.html	text/html
+200	https://www.staginggm.com/learn-hub/it/astrology/zodiac-signs.html	text/html
+404	https://www.staginggm.com/learn-hub/it/astrology/zodiac-signs.php	
+200	https://www.staginggm.com/learn-hub/it/bg5/index.html	text/html
+200	https://www.staginggm.com/learn-hub/it/calculations/13-sign-sidereal.html	text/html
+200	https://www.staginggm.com/learn-hub/it/calculations/draconic.html	text/html
+200	https://www.staginggm.com/learn-hub/it/calculations/j2000.html	text/html
+200	https://www.staginggm.com/learn-hub/it/calculations/sidereal.html	text/html
+200	https://www.staginggm.com/learn-hub/it/calculations/tropical.html	text/html
+200	https://www.staginggm.com/learn-hub/it/calculations/true-sidereal.html	text/html
+404	https://www.staginggm.com/learn-hub/it/celebrities/generate-sitemaps.html	
+200	https://www.staginggm.com/learn-hub/it/celebrities/index.html	text/html
+404	https://www.staginggm.com/learn-hub/it/celebrities/test-celeb-methods.html	
+200	https://www.staginggm.com/learn-hub/it/centers/index.html	text/html
+200	https://www.staginggm.com/learn-hub/it/channels/index.html	text/html
+404	https://www.staginggm.com/learn-hub/it/channels/index_preview.html	
+200	https://www.staginggm.com/learn-hub/it/circuits/index.html	text/html
+200	https://www.staginggm.com/learn-hub/it/connection/index.html	text/html
+200	https://www.staginggm.com/learn-hub/it/cycles/index.html	text/html
+200	https://www.staginggm.com/learn-hub/it/deeper-mechanics/determination.html	text/html
+200	https://www.staginggm.com/learn-hub/it/deeper-mechanics/environment.html	text/html
+200	https://www.staginggm.com/learn-hub/it/deeper-mechanics/index.html	text/html
+200	https://www.staginggm.com/learn-hub/it/deeper-mechanics/motivation.html	text/html
+200	https://www.staginggm.com/learn-hub/it/deeper-mechanics/perspective.html	text/html
+200	https://www.staginggm.com/learn-hub/it/definition/index.html	text/html
+200	https://www.staginggm.com/learn-hub/it/dictionary/dictionary.html	text/html
+200	https://www.staginggm.com/learn-hub/it/gates/index.html	text/html
+200	https://www.staginggm.com/learn-hub/it/homo-solaris/index.html	text/html
+200	https://www.staginggm.com/learn-hub/it/incarnation-cross/index.html	text/html
+200	https://www.staginggm.com/learn-hub/it/index.html	text/html
+200	https://www.staginggm.com/learn-hub/it/index.php	text/html
+404	https://www.staginggm.com/learn-hub/it/index_preview.html	
+200	https://www.staginggm.com/learn-hub/it/oc16/index.html	text/html
+200	https://www.staginggm.com/learn-hub/it/penta/index.html	text/html
 200	https://www.staginggm.com/learn-hub/it/profiles/	text/html
+200	https://www.staginggm.com/learn-hub/it/profiles/index.html	text/html
+200	https://www.staginggm.com/learn-hub/it/profiles/index.php	text/html
+200	https://www.staginggm.com/learn-hub/it/profiles/profile-1-3.html	text/html
+404	https://www.staginggm.com/learn-hub/it/profiles/profile-1-3.php	
+200	https://www.staginggm.com/learn-hub/it/profiles/profile-1-4.html	text/html
+404	https://www.staginggm.com/learn-hub/it/profiles/profile-1-4.php	
+200	https://www.staginggm.com/learn-hub/it/profiles/profile-2-4.html	text/html
+404	https://www.staginggm.com/learn-hub/it/profiles/profile-2-4.php	
+200	https://www.staginggm.com/learn-hub/it/profiles/profile-2-5.html	text/html
+404	https://www.staginggm.com/learn-hub/it/profiles/profile-2-5.php	
+200	https://www.staginggm.com/learn-hub/it/profiles/profile-3-5.html	text/html
+404	https://www.staginggm.com/learn-hub/it/profiles/profile-3-5.php	
+200	https://www.staginggm.com/learn-hub/it/profiles/profile-3-6.html	text/html
+404	https://www.staginggm.com/learn-hub/it/profiles/profile-3-6.php	
+200	https://www.staginggm.com/learn-hub/it/profiles/profile-4-1.html	text/html
+404	https://www.staginggm.com/learn-hub/it/profiles/profile-4-1.php	
+200	https://www.staginggm.com/learn-hub/it/profiles/profile-4-6.html	text/html
+404	https://www.staginggm.com/learn-hub/it/profiles/profile-4-6.php	
+200	https://www.staginggm.com/learn-hub/it/profiles/profile-5-1.html	text/html
+404	https://www.staginggm.com/learn-hub/it/profiles/profile-5-1.php	
+200	https://www.staginggm.com/learn-hub/it/profiles/profile-5-2.html	text/html
+404	https://www.staginggm.com/learn-hub/it/profiles/profile-5-2.php	
+200	https://www.staginggm.com/learn-hub/it/profiles/profile-6-2.html	text/html
+404	https://www.staginggm.com/learn-hub/it/profiles/profile-6-2.php	
+200	https://www.staginggm.com/learn-hub/it/profiles/profile-6-3.html	text/html
+404	https://www.staginggm.com/learn-hub/it/profiles/profile-6-3.php	
+200	https://www.staginggm.com/learn-hub/it/sleep-design/index.html	text/html
+404	https://www.staginggm.com/learn-hub/it/template.html	
+200	https://www.staginggm.com/learn-hub/it/transits/index.html	text/html
+200	https://www.staginggm.com/learn-hub/it/types/generator.html	text/html
+200	https://www.staginggm.com/learn-hub/it/types/index.html	text/html
+200	https://www.staginggm.com/learn-hub/it/types/manifesting-generator.html	text/html
+200	https://www.staginggm.com/learn-hub/it/types/manifestor.html	text/html
+200	https://www.staginggm.com/learn-hub/it/types/projector.html	text/html
+200	https://www.staginggm.com/learn-hub/it/types/reflector.html	text/html
+200	https://www.staginggm.com/learn-hub/it/variables/index.html	text/html
+200	https://www.staginggm.com/learn-hub/it/variables/index.php	text/html
+200	https://www.staginggm.com/learn-hub/nl/animals/index.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/astrology/aspects.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/astrology/asteroids.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/astrology/astro-tarot.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/astrology/ayanamsha.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/astrology/charubel-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/astrology/chinese-astrology.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/astrology/fixed-stars.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/astrology/houses.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/astrology/la-volasfera-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/astrology/planets.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/astrology/progressions.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/astrology/sabian-symbols.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/astrology/sepharial-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/astrology/synastry.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/astrology/vedic.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/astrology/zodiac-signs.html	text/html
+404	https://www.staginggm.com/learn-hub/nl/astrology/zodiac-signs.php	
+200	https://www.staginggm.com/learn-hub/nl/bg5/index.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/calculations/13-sign-sidereal.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/calculations/draconic.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/calculations/j2000.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/calculations/sidereal.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/calculations/tropical.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/calculations/true-sidereal.html	text/html
+404	https://www.staginggm.com/learn-hub/nl/celebrities/generate-sitemaps.html	
+200	https://www.staginggm.com/learn-hub/nl/celebrities/index.html	text/html
+404	https://www.staginggm.com/learn-hub/nl/celebrities/test-celeb-methods.html	
+200	https://www.staginggm.com/learn-hub/nl/centers/index.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/channels/index.html	text/html
+404	https://www.staginggm.com/learn-hub/nl/channels/index_preview.html	
+200	https://www.staginggm.com/learn-hub/nl/circuits/index.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/connection/index.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/cycles/index.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/deeper-mechanics/determination.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/deeper-mechanics/environment.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/deeper-mechanics/index.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/deeper-mechanics/motivation.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/deeper-mechanics/perspective.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/definition/index.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/dictionary/dictionary.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/gates/index.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/homo-solaris/index.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/incarnation-cross/index.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/index.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/index.php	text/html
+404	https://www.staginggm.com/learn-hub/nl/index_preview.html	
+200	https://www.staginggm.com/learn-hub/nl/oc16/index.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/penta/index.html	text/html
 200	https://www.staginggm.com/learn-hub/nl/profiles/	text/html
+200	https://www.staginggm.com/learn-hub/nl/profiles/index.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/profiles/index.php	text/html
+200	https://www.staginggm.com/learn-hub/nl/profiles/profile-1-3.html	text/html
+404	https://www.staginggm.com/learn-hub/nl/profiles/profile-1-3.php	
+200	https://www.staginggm.com/learn-hub/nl/profiles/profile-1-4.html	text/html
+404	https://www.staginggm.com/learn-hub/nl/profiles/profile-1-4.php	
+200	https://www.staginggm.com/learn-hub/nl/profiles/profile-2-4.html	text/html
+404	https://www.staginggm.com/learn-hub/nl/profiles/profile-2-4.php	
+200	https://www.staginggm.com/learn-hub/nl/profiles/profile-2-5.html	text/html
+404	https://www.staginggm.com/learn-hub/nl/profiles/profile-2-5.php	
+200	https://www.staginggm.com/learn-hub/nl/profiles/profile-3-5.html	text/html
+404	https://www.staginggm.com/learn-hub/nl/profiles/profile-3-5.php	
+200	https://www.staginggm.com/learn-hub/nl/profiles/profile-3-6.html	text/html
+404	https://www.staginggm.com/learn-hub/nl/profiles/profile-3-6.php	
+200	https://www.staginggm.com/learn-hub/nl/profiles/profile-4-1.html	text/html
+404	https://www.staginggm.com/learn-hub/nl/profiles/profile-4-1.php	
+200	https://www.staginggm.com/learn-hub/nl/profiles/profile-4-6.html	text/html
+404	https://www.staginggm.com/learn-hub/nl/profiles/profile-4-6.php	
+200	https://www.staginggm.com/learn-hub/nl/profiles/profile-5-1.html	text/html
+404	https://www.staginggm.com/learn-hub/nl/profiles/profile-5-1.php	
+200	https://www.staginggm.com/learn-hub/nl/profiles/profile-5-2.html	text/html
+404	https://www.staginggm.com/learn-hub/nl/profiles/profile-5-2.php	
+200	https://www.staginggm.com/learn-hub/nl/profiles/profile-6-2.html	text/html
+404	https://www.staginggm.com/learn-hub/nl/profiles/profile-6-2.php	
+200	https://www.staginggm.com/learn-hub/nl/profiles/profile-6-3.html	text/html
+404	https://www.staginggm.com/learn-hub/nl/profiles/profile-6-3.php	
+200	https://www.staginggm.com/learn-hub/nl/sleep-design/index.html	text/html
+404	https://www.staginggm.com/learn-hub/nl/template.html	
+200	https://www.staginggm.com/learn-hub/nl/transits/index.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/types/generator.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/types/index.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/types/manifesting-generator.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/types/manifestor.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/types/projector.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/types/reflector.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/variables/index.html	text/html
+200	https://www.staginggm.com/learn-hub/nl/variables/index.php	text/html
 200	https://www.staginggm.com/learn-hub/oc16/index.html	text/html
 200	https://www.staginggm.com/learn-hub/penta/index.html	text/html
 200	https://www.staginggm.com/learn-hub/profiles/	text/html; charset=UTF-8
@@ -173,89 +620,135 @@
 200	https://www.staginggm.com/learn-hub/profiles/images/6-3-Marc-Chagall.png	image/png
 200	https://www.staginggm.com/learn-hub/profiles/index.html	text/html
 200	https://www.staginggm.com/learn-hub/profiles/index.html#the-6-profile-lines	text/html
+200	https://www.staginggm.com/learn-hub/profiles/index.php	text/html; charset=UTF-8
 200	https://www.staginggm.com/learn-hub/profiles/profile-1-3.html	text/html
+200	https://www.staginggm.com/learn-hub/profiles/profile-1-3.php	text/html; charset=UTF-8
 200	https://www.staginggm.com/learn-hub/profiles/profile-1-4.html	text/html
+200	https://www.staginggm.com/learn-hub/profiles/profile-1-4.php	text/html; charset=UTF-8
 200	https://www.staginggm.com/learn-hub/profiles/profile-2-4.html	text/html
+200	https://www.staginggm.com/learn-hub/profiles/profile-2-4.php	text/html; charset=UTF-8
 200	https://www.staginggm.com/learn-hub/profiles/profile-2-5.html	text/html
+200	https://www.staginggm.com/learn-hub/profiles/profile-2-5.php	text/html; charset=UTF-8
 200	https://www.staginggm.com/learn-hub/profiles/profile-3-5.html	text/html
+200	https://www.staginggm.com/learn-hub/profiles/profile-3-5.php	text/html; charset=UTF-8
 200	https://www.staginggm.com/learn-hub/profiles/profile-3-6.html	text/html
+200	https://www.staginggm.com/learn-hub/profiles/profile-3-6.php	text/html; charset=UTF-8
 200	https://www.staginggm.com/learn-hub/profiles/profile-4-1.html	text/html
+200	https://www.staginggm.com/learn-hub/profiles/profile-4-1.php	text/html; charset=UTF-8
 200	https://www.staginggm.com/learn-hub/profiles/profile-4-6.html	text/html
+200	https://www.staginggm.com/learn-hub/profiles/profile-4-6.php	text/html; charset=UTF-8
 200	https://www.staginggm.com/learn-hub/profiles/profile-5-1.html	text/html
+200	https://www.staginggm.com/learn-hub/profiles/profile-5-1.php	text/html; charset=UTF-8
 200	https://www.staginggm.com/learn-hub/profiles/profile-5-2.html	text/html
+200	https://www.staginggm.com/learn-hub/profiles/profile-5-2.php	text/html; charset=UTF-8
 200	https://www.staginggm.com/learn-hub/profiles/profile-6-2.html	text/html
+200	https://www.staginggm.com/learn-hub/profiles/profile-6-2.php	text/html; charset=UTF-8
 200	https://www.staginggm.com/learn-hub/profiles/profile-6-3.html	text/html
+200	https://www.staginggm.com/learn-hub/profiles/profile-6-3.php	text/html; charset=UTF-8
+200	https://www.staginggm.com/learn-hub/pt/animals/index.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/astrology/aspects.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/astrology/asteroids.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/astrology/astro-tarot.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/astrology/ayanamsha.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/astrology/charubel-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/astrology/chinese-astrology.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/astrology/fixed-stars.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/astrology/houses.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/astrology/la-volasfera-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/astrology/planets.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/astrology/progressions.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/astrology/sabian-symbols.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/astrology/sepharial-degrees.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/astrology/synastry.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/astrology/vedic.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/astrology/zodiac-signs.html	text/html
+404	https://www.staginggm.com/learn-hub/pt/astrology/zodiac-signs.php	
+200	https://www.staginggm.com/learn-hub/pt/bg5/index.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/calculations/13-sign-sidereal.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/calculations/draconic.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/calculations/j2000.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/calculations/sidereal.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/calculations/tropical.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/calculations/true-sidereal.html	text/html
+404	https://www.staginggm.com/learn-hub/pt/celebrities/generate-sitemaps.html	
+200	https://www.staginggm.com/learn-hub/pt/celebrities/index.html	text/html
+404	https://www.staginggm.com/learn-hub/pt/celebrities/test-celeb-methods.html	
+200	https://www.staginggm.com/learn-hub/pt/centers/index.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/channels/index.html	text/html
+404	https://www.staginggm.com/learn-hub/pt/channels/index_preview.html	
+200	https://www.staginggm.com/learn-hub/pt/circuits/index.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/connection/index.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/cycles/index.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/deeper-mechanics/determination.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/deeper-mechanics/environment.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/deeper-mechanics/index.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/deeper-mechanics/motivation.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/deeper-mechanics/perspective.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/definition/index.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/dictionary/dictionary.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/gates/index.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/homo-solaris/index.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/incarnation-cross/index.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/index.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/index.php	text/html
+404	https://www.staginggm.com/learn-hub/pt/index_preview.html	
+200	https://www.staginggm.com/learn-hub/pt/oc16/index.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/penta/index.html	text/html
 200	https://www.staginggm.com/learn-hub/pt/profiles/	text/html
+200	https://www.staginggm.com/learn-hub/pt/profiles/index.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/profiles/index.php	text/html
+200	https://www.staginggm.com/learn-hub/pt/profiles/profile-1-3.html	text/html
+404	https://www.staginggm.com/learn-hub/pt/profiles/profile-1-3.php	
+200	https://www.staginggm.com/learn-hub/pt/profiles/profile-1-4.html	text/html
+404	https://www.staginggm.com/learn-hub/pt/profiles/profile-1-4.php	
+200	https://www.staginggm.com/learn-hub/pt/profiles/profile-2-4.html	text/html
+404	https://www.staginggm.com/learn-hub/pt/profiles/profile-2-4.php	
+200	https://www.staginggm.com/learn-hub/pt/profiles/profile-2-5.html	text/html
+404	https://www.staginggm.com/learn-hub/pt/profiles/profile-2-5.php	
+200	https://www.staginggm.com/learn-hub/pt/profiles/profile-3-5.html	text/html
+404	https://www.staginggm.com/learn-hub/pt/profiles/profile-3-5.php	
+200	https://www.staginggm.com/learn-hub/pt/profiles/profile-3-6.html	text/html
+404	https://www.staginggm.com/learn-hub/pt/profiles/profile-3-6.php	
+200	https://www.staginggm.com/learn-hub/pt/profiles/profile-4-1.html	text/html
+404	https://www.staginggm.com/learn-hub/pt/profiles/profile-4-1.php	
+200	https://www.staginggm.com/learn-hub/pt/profiles/profile-4-6.html	text/html
+404	https://www.staginggm.com/learn-hub/pt/profiles/profile-4-6.php	
+200	https://www.staginggm.com/learn-hub/pt/profiles/profile-5-1.html	text/html
+404	https://www.staginggm.com/learn-hub/pt/profiles/profile-5-1.php	
+200	https://www.staginggm.com/learn-hub/pt/profiles/profile-5-2.html	text/html
+404	https://www.staginggm.com/learn-hub/pt/profiles/profile-5-2.php	
+200	https://www.staginggm.com/learn-hub/pt/profiles/profile-6-2.html	text/html
+404	https://www.staginggm.com/learn-hub/pt/profiles/profile-6-2.php	
+200	https://www.staginggm.com/learn-hub/pt/profiles/profile-6-3.html	text/html
+404	https://www.staginggm.com/learn-hub/pt/profiles/profile-6-3.php	
+200	https://www.staginggm.com/learn-hub/pt/sleep-design/index.html	text/html
+404	https://www.staginggm.com/learn-hub/pt/template.html	
+200	https://www.staginggm.com/learn-hub/pt/transits/index.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/types/generator.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/types/index.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/types/manifesting-generator.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/types/manifestor.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/types/projector.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/types/reflector.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/variables/index.html	text/html
+200	https://www.staginggm.com/learn-hub/pt/variables/index.php	text/html
 200	https://www.staginggm.com/learn-hub/sleep-design/index.html	text/html
+200	https://www.staginggm.com/learn-hub/template.html	text/html
 200	https://www.staginggm.com/learn-hub/transits/index.html	text/html
 200	https://www.staginggm.com/learn-hub/types/	text/html
+200	https://www.staginggm.com/learn-hub/types/generator.html	text/html
 200	https://www.staginggm.com/learn-hub/types/images/Manifestor.png	image/png
 200	https://www.staginggm.com/learn-hub/types/images/generator.png	image/png
 200	https://www.staginggm.com/learn-hub/types/images/manifesting-generator.png	image/png
 200	https://www.staginggm.com/learn-hub/types/images/projector.png	image/png
 200	https://www.staginggm.com/learn-hub/types/images/reflector.png	image/png
+200	https://www.staginggm.com/learn-hub/types/index.html	text/html
+200	https://www.staginggm.com/learn-hub/types/manifesting-generator.html	text/html
+200	https://www.staginggm.com/learn-hub/types/manifestor.html	text/html
+200	https://www.staginggm.com/learn-hub/types/projector.html	text/html
 200	https://www.staginggm.com/learn-hub/types/reflector.html	text/html
 200	https://www.staginggm.com/learn-hub/variables/index.html	text/html
-404	https://www.staginggm.com/learn/animals/	
-404	https://www.staginggm.com/learn/astrology/aspects/	
-404	https://www.staginggm.com/learn/astrology/asteroids/	
-404	https://www.staginggm.com/learn/astrology/astro-tarot/	
-404	https://www.staginggm.com/learn/astrology/ayanamsha/	
-404	https://www.staginggm.com/learn/astrology/charubel-degrees/	
-404	https://www.staginggm.com/learn/astrology/chinese-astrology/	
-404	https://www.staginggm.com/learn/astrology/fixed-stars/	
-404	https://www.staginggm.com/learn/astrology/houses/	
-404	https://www.staginggm.com/learn/astrology/la-volasfera-degrees/	
-404	https://www.staginggm.com/learn/astrology/planets/	
-404	https://www.staginggm.com/learn/astrology/progressions/	
-404	https://www.staginggm.com/learn/astrology/sabian-symbols/	
-404	https://www.staginggm.com/learn/astrology/sepharial-degrees/	
-404	https://www.staginggm.com/learn/astrology/synastry/	
-404	https://www.staginggm.com/learn/astrology/vedic/	
-404	https://www.staginggm.com/learn/astrology/zodiac-signs/	
-404	https://www.staginggm.com/learn/bg5/	
-404	https://www.staginggm.com/learn/calculations/13-sign-sidereal/	
-200	https://www.staginggm.com/learn/calculations/draconic/	text/html; charset=UTF-8
-200	https://www.staginggm.com/learn/calculations/j2000/	text/html; charset=UTF-8
-200	https://www.staginggm.com/learn/calculations/sidereal/	text/html; charset=UTF-8
-404	https://www.staginggm.com/learn/calculations/tropical/	
-404	https://www.staginggm.com/learn/calculations/true-sidereal/	
-404	https://www.staginggm.com/learn/centers/	
-404	https://www.staginggm.com/learn/channels/	
-404	https://www.staginggm.com/learn/circuits/	
-200	https://www.staginggm.com/learn/connection/	text/html; charset=UTF-8
-404	https://www.staginggm.com/learn/cycles/	
-404	https://www.staginggm.com/learn/deeper-mechanics/	
-404	https://www.staginggm.com/learn/deeper-mechanics/determination/	
-404	https://www.staginggm.com/learn/deeper-mechanics/environment/	
-404	https://www.staginggm.com/learn/deeper-mechanics/motivation/	
-404	https://www.staginggm.com/learn/deeper-mechanics/perspective/	
-404	https://www.staginggm.com/learn/definition/	
-404	https://www.staginggm.com/learn/gates/	
-404	https://www.staginggm.com/learn/incarnation-cross/	
-404	https://www.staginggm.com/learn/oc16/	
-404	https://www.staginggm.com/learn/penta/	
-404	https://www.staginggm.com/learn/profiles/	
-404	https://www.staginggm.com/learn/profiles/1/3/	
-404	https://www.staginggm.com/learn/profiles/1/4/	
-404	https://www.staginggm.com/learn/profiles/2/4/	
-404	https://www.staginggm.com/learn/profiles/2/5/	
-404	https://www.staginggm.com/learn/profiles/3/5/	
-404	https://www.staginggm.com/learn/profiles/3/6/	
-404	https://www.staginggm.com/learn/profiles/4/1/	
-404	https://www.staginggm.com/learn/profiles/4/6/	
-404	https://www.staginggm.com/learn/profiles/5/1/	
-404	https://www.staginggm.com/learn/profiles/5/2/	
-404	https://www.staginggm.com/learn/profiles/6/2/	
-404	https://www.staginggm.com/learn/profiles/6/3/	
-404	https://www.staginggm.com/learn/sleep-design/	
-404	https://www.staginggm.com/learn/transits/	
-200	https://www.staginggm.com/learn/types/	text/html; charset=UTF-8
-404	https://www.staginggm.com/learn/types/generator/	
-404	https://www.staginggm.com/learn/types/manifesting-generator/	
-404	https://www.staginggm.com/learn/types/manifestor/	
-404	https://www.staginggm.com/learn/types/projector/	
-404	https://www.staginggm.com/learn/variables/	
+200	https://www.staginggm.com/learn-hub/variables/index.php	text/html; charset=UTF-8
 200	https://www.staginggm.com/my-account/	text/html; charset=UTF-8
 404	https://www.staginggm.com/our-plans/	
 200	https://www.staginggm.com/plans-features/	text/html; charset=UTF-8

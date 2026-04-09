@@ -38,14 +38,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>The 12 Zodiac Signs (Plus the 13th Sign) | Astrology Signs Explained | Genetic Matrix</title>
  <meta name="description" content="Explore all 12 zodiac signs plus the controversial 13th sign Ophiuchus. Learn what each sign means, how planets express differently in each sign, and what it means to have planets in specific houses.">
- <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/astrology/zodiac-signs.php">
-     <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/astrology/zodiac-signs.php">
-    <link rel="alternate" hreflang="de" href="https://www.geneticmatrix.com/learn-hub/de/astrology/zodiac-signs.php">
-    <link rel="alternate" hreflang="es" href="https://www.geneticmatrix.com/learn-hub/es/astrology/zodiac-signs.php">
-    <link rel="alternate" hreflang="fr" href="https://www.geneticmatrix.com/learn-hub/fr/astrology/zodiac-signs.php">
-    <link rel="alternate" hreflang="it" href="https://www.geneticmatrix.com/learn-hub/it/astrology/zodiac-signs.php">
-    <link rel="alternate" hreflang="nl" href="https://www.geneticmatrix.com/learn-hub/nl/astrology/zodiac-signs.php">
-    <link rel="alternate" hreflang="pt" href="https://www.geneticmatrix.com/learn-hub/pt/astrology/zodiac-signs.php">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/astrology/zodiac-signs.php">    <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/astrology/zodiac-signs.php">
     <link rel="alternate" hreflang="x-default" href="https://www.geneticmatrix.com/learn-hub/astrology/zodiac-signs.php">
 <script src="https://cdn.tailwindcss.com"></script>
  <script>

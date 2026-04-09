@@ -38,14 +38,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>4/1 Profile in Human Design - Opportunist / Investigator | Genetic Matrix</title>
  <meta name="description" content="The networker with deep foundational knowledge. 4/1s influence through relationships while building on a solid base of investigation and understanding.">
- <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-4-1.php">
-     <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-4-1.php">
-    <link rel="alternate" hreflang="de" href="https://www.geneticmatrix.com/learn-hub/de/profiles/profile-4-1.php">
-    <link rel="alternate" hreflang="es" href="https://www.geneticmatrix.com/learn-hub/es/profiles/profile-4-1.php">
-    <link rel="alternate" hreflang="fr" href="https://www.geneticmatrix.com/learn-hub/fr/profiles/profile-4-1.php">
-    <link rel="alternate" hreflang="it" href="https://www.geneticmatrix.com/learn-hub/it/profiles/profile-4-1.php">
-    <link rel="alternate" hreflang="nl" href="https://www.geneticmatrix.com/learn-hub/nl/profiles/profile-4-1.php">
-    <link rel="alternate" hreflang="pt" href="https://www.geneticmatrix.com/learn-hub/pt/profiles/profile-4-1.php">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-4-1.php">    <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-4-1.php">
     <link rel="alternate" hreflang="x-default" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-4-1.php">
 <script src="https://cdn.tailwindcss.com"></script>
  <script>

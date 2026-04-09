@@ -38,14 +38,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>5/1 Profile in Human Design - Heretic / Investigator | Genetic Matrix</title>
  <meta name="description" content="The practical problem-solver with deep foundational research. 5/1s attract projections and offer widely useful solutions backed by thorough investigation.">
- <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-5-1.php">
-     <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-5-1.php">
-    <link rel="alternate" hreflang="de" href="https://www.geneticmatrix.com/learn-hub/de/profiles/profile-5-1.php">
-    <link rel="alternate" hreflang="es" href="https://www.geneticmatrix.com/learn-hub/es/profiles/profile-5-1.php">
-    <link rel="alternate" hreflang="fr" href="https://www.geneticmatrix.com/learn-hub/fr/profiles/profile-5-1.php">
-    <link rel="alternate" hreflang="it" href="https://www.geneticmatrix.com/learn-hub/it/profiles/profile-5-1.php">
-    <link rel="alternate" hreflang="nl" href="https://www.geneticmatrix.com/learn-hub/nl/profiles/profile-5-1.php">
-    <link rel="alternate" hreflang="pt" href="https://www.geneticmatrix.com/learn-hub/pt/profiles/profile-5-1.php">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-5-1.php">    <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-5-1.php">
     <link rel="alternate" hreflang="x-default" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-5-1.php">
 <script src="https://cdn.tailwindcss.com"></script>
  <script>

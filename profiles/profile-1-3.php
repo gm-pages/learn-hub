@@ -38,14 +38,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>1/3 Profile in Human Design - Investigator / Martyr | Genetic Matrix</title>
  <meta name="description" content="The deep researcher who learns through trial and error. 1/3s build foundations of knowledge and then test everything through direct experience.">
- <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-1-3.php">
-     <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-1-3.php">
-    <link rel="alternate" hreflang="de" href="https://www.geneticmatrix.com/learn-hub/de/profiles/profile-1-3.php">
-    <link rel="alternate" hreflang="es" href="https://www.geneticmatrix.com/learn-hub/es/profiles/profile-1-3.php">
-    <link rel="alternate" hreflang="fr" href="https://www.geneticmatrix.com/learn-hub/fr/profiles/profile-1-3.php">
-    <link rel="alternate" hreflang="it" href="https://www.geneticmatrix.com/learn-hub/it/profiles/profile-1-3.php">
-    <link rel="alternate" hreflang="nl" href="https://www.geneticmatrix.com/learn-hub/nl/profiles/profile-1-3.php">
-    <link rel="alternate" hreflang="pt" href="https://www.geneticmatrix.com/learn-hub/pt/profiles/profile-1-3.php">
+ <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-1-3.php">    <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-1-3.php">
     <link rel="alternate" hreflang="x-default" href="https://www.geneticmatrix.com/learn-hub/profiles/profile-1-3.php">
 <script src="https://cdn.tailwindcss.com"></script>
  <script>

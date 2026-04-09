@@ -163,14 +163,7 @@
         .btn-scale { transition: transform 0.2s ease; }
         .btn-scale:hover { transform: scale(1.02); }
         .btn-scale:active { transform: scale(0.97); }
-    </style>
-    <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/index.php">
-    <link rel="alternate" hreflang="de" href="https://www.geneticmatrix.com/learn-hub/de/index.php">
-    <link rel="alternate" hreflang="es" href="https://www.geneticmatrix.com/learn-hub/es/index.php">
-    <link rel="alternate" hreflang="fr" href="https://www.geneticmatrix.com/learn-hub/fr/index.php">
-    <link rel="alternate" hreflang="it" href="https://www.geneticmatrix.com/learn-hub/it/index.php">
-    <link rel="alternate" hreflang="nl" href="https://www.geneticmatrix.com/learn-hub/nl/index.php">
-    <link rel="alternate" hreflang="pt" href="https://www.geneticmatrix.com/learn-hub/pt/index.php">
+    </style>    <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/index.php">
     <link rel="alternate" hreflang="x-default" href="https://www.geneticmatrix.com/learn-hub/index.php">
 </head>
 <body class="bg-white text-gray-700">

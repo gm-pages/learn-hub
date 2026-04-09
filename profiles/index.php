@@ -38,14 +38,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The 12 Profiles in Human Design - Lines, Roles & Life Purpose | Genetic Matrix</title>
     <meta name="description" content="Explore all 12 Human Design Profiles - from 1/3 Investigator/Martyr to 6/3 Role Model/Martyr. Learn how the 6 Profile Lines shape your personality, role, and life purpose.">
-    <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/profiles/index.php">
-        <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/profiles/index.php">
-    <link rel="alternate" hreflang="de" href="https://www.geneticmatrix.com/learn-hub/de/profiles/index.php">
-    <link rel="alternate" hreflang="es" href="https://www.geneticmatrix.com/learn-hub/es/profiles/index.php">
-    <link rel="alternate" hreflang="fr" href="https://www.geneticmatrix.com/learn-hub/fr/profiles/index.php">
-    <link rel="alternate" hreflang="it" href="https://www.geneticmatrix.com/learn-hub/it/profiles/index.php">
-    <link rel="alternate" hreflang="nl" href="https://www.geneticmatrix.com/learn-hub/nl/profiles/index.php">
-    <link rel="alternate" hreflang="pt" href="https://www.geneticmatrix.com/learn-hub/pt/profiles/index.php">
+    <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/profiles/index.php">    <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/profiles/index.php">
     <link rel="alternate" hreflang="x-default" href="https://www.geneticmatrix.com/learn-hub/profiles/index.php">
 <script src="https://cdn.tailwindcss.com"></script>
     <script>
