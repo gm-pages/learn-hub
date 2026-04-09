@@ -43,3 +43,9 @@ translate-remaining.py
 run-celebrities.bat
 translate-celebrities.py
 translate-dictionary.py
+crawl.py
+crawl-results.txt
+urls.txt
+link-fixes.json
+fix-broken-links.py
+apply-link-fixes.py
