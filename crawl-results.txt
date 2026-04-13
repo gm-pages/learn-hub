@@ -34,9 +34,6 @@
 200	https://www.staginggm.com/learn-hub/assets/Defense-Circuit.svg	image/svg+xml
 200	https://www.staginggm.com/learn-hub/assets/Integration-Channels-Circuit.svg	image/svg+xml
 200	https://www.staginggm.com/learn-hub/assets/Knowing-Individual-Circuit.svg	image/svg+xml
-0	https://www.staginggm.com/learn-hub/assets/Menu_Icon _celebrity .svg	URL can't contain control characters. '/learn-hub/assets/Menu_Icon _celebrity .s
-0	https://www.staginggm.com/learn-hub/assets/Menu_Icon_ Hub.svg	URL can't contain control characters. '/learn-hub/assets/Menu_Icon_ Hub.svg' (fo
-0	https://www.staginggm.com/learn-hub/assets/Menu_Icon_ dictionary.svg	URL can't contain control characters. '/learn-hub/assets/Menu_Icon_ dictionary.s
 200	https://www.staginggm.com/learn-hub/assets/Sensing-Abstract-Circuit.svg	image/svg+xml
 200	https://www.staginggm.com/learn-hub/assets/Tribal-Circuit.svg	image/svg+xml
 200	https://www.staginggm.com/learn-hub/assets/Understanding-Logical-Circuit.svg	image/svg+xml
@@ -98,6 +95,9 @@
 200	https://www.staginggm.com/learn-hub/assets/life-cycle-chart-example.webp	image/webp
 200	https://www.staginggm.com/learn-hub/assets/logo-footer.svg	image/svg+xml
 200	https://www.staginggm.com/learn-hub/assets/logo.svg	image/svg+xml
+200	https://www.staginggm.com/learn-hub/assets/menu-icon-celebrity.svg	image/svg+xml
+200	https://www.staginggm.com/learn-hub/assets/menu-icon-dictionary.svg	image/svg+xml
+200	https://www.staginggm.com/learn-hub/assets/menu-icon-hub.svg	image/svg+xml
 200	https://www.staginggm.com/learn-hub/assets/penta-chart-example.webp	image/webp
 200	https://www.staginggm.com/learn-hub/assets/profiles-hero.webp	image/webp
 200	https://www.staginggm.com/learn-hub/assets/sleep-chart-example.webp	image/webp
@@ -620,10 +620,8 @@
 200	https://www.staginggm.com/learn-hub/variables/index.html	text/html
 200	https://www.staginggm.com/learn-hub/variables/index.php	text/html; charset=UTF-8
 200	https://www.staginggm.com/my-account/	text/html; charset=UTF-8
-404	https://www.staginggm.com/our-plans/	
 200	https://www.staginggm.com/plans-features/	text/html; charset=UTF-8
-404	https://www.staginggm.com/pricing/	
-404	https://www.staginggm.com/privacy-policy/	
+200	https://www.staginggm.com/privacy/	text/html; charset=UTF-8
 200	https://www.staginggm.com/register/	text/html; charset=UTF-8
 200	https://www.staginggm.com/talking-charts/	text/html; charset=UTF-8
 200	https://www.staginggm.com/types/	text/html; charset=UTF-8

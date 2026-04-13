@@ -36,6 +36,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Hub | Genetic Matrix</title>
+    <meta name="description" content="Free Human Design and Astrology education. Explore types, centers, channels, gates, profiles, calculations, and more on Genetic Matrix.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
