@@ -1,3 +1,151 @@
+<!--
+============================================================
+SHAFIK: BORN TODAY — WIRING INSTRUCTIONS
+============================================================
+
+This mockup shows the new Celebrity Charts landing page.
+The "Born Today" section replaces "Browse by Category."
+Celebrity data is hardcoded below for mockup purposes.
+You need to wire it to a live DB query.
+
+DATABASE QUERY
+──────────────
+The Born Today section needs ONE simple query per page load:
+
+    SELECT slug, name, profession, birth_year, type, profile, sun_sign
+    FROM celebrities
+    WHERE birth_month = MONTH(CURDATE())
+      AND birth_day = DAY(CURDATE())
+    ORDER BY name ASC
+    LIMIT 20
+
+That's it. One query, max 20 rows, two indexed columns (birth_month, birth_day).
+Fast on any table size.
+
+If the table doesn't have birth_month / birth_day as separate columns,
+derive them:
+
+    WHERE MONTH(birth_date) = MONTH(CURDATE())
+      AND DAY(birth_date) = DAY(CURDATE())
+
+But this is slower (no index). Better to add birth_month + birth_day columns
+and index them: ALTER TABLE celebrities ADD INDEX idx_birthday (birth_month, birth_day);
+
+PHP IMPLEMENTATION
+──────────────────
+In your celebrities landing template (the page that serves /celebrities/ or
+/learn-hub/celebrities/):
+
+<?php
+// Born Today query
+$today_month = (int) date('n');
+$today_day   = (int) date('j');
+
+$born_today = $wpdb->get_results($wpdb->prepare(
+    "SELECT slug, name, profession, birth_year, type, profile, sun_sign
+     FROM {$wpdb->prefix}celebrities
+     WHERE birth_month = %d AND birth_day = %d
+     ORDER BY name ASC
+     LIMIT 20",
+    $today_month, $today_day
+));
+
+// Aura colors by type
+$aura_colors = [
+    'Generator'              => '#E2574C',
+    'Manifesting Generator'  => '#C24A6B',
+    'Projector'              => '#5F7F80',
+    'Manifestor'             => '#5A7BB5',
+    'Reflector'              => '#7662A8',
+];
+
+// Zodiac season (same logic as the JS in this mockup, server-side version)
+$zodiac_seasons = [
+    [1,20,'Capricorn'],[2,19,'Aquarius'],[3,21,'Pisces'],[4,20,'Aries'],
+    [5,21,'Taurus'],[6,21,'Gemini'],[7,23,'Cancer'],[8,23,'Leo'],
+    [9,23,'Virgo'],[10,23,'Libra'],[11,22,'Scorpio'],[12,22,'Sagittarius']
+];
+$season = 'Capricorn';
+for ($i = count($zodiac_seasons)-1; $i >= 0; $i--) {
+    if ($today_month > $zodiac_seasons[$i][0] ||
+       ($today_month === $zodiac_seasons[$i][0] && $today_day >= $zodiac_seasons[$i][1])) {
+        $season = $zodiac_seasons[$i][2];
+        break;
+    }
+}
+$month_name = date('F');
+?>
+
+Then in your HTML:
+
+<h2>Born Today</h2>
+<p><?php echo $month_name . ' ' . $today_day . ' — ' . $season . ' Season'; ?></p>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<?php foreach ($born_today as $celeb): ?>
+    <a href="/celebrity/<?php echo esc_attr($celeb->slug); ?>/" class="...card classes...">
+        <h3><?php echo esc_html($celeb->name); ?></h3>
+        <p><?php echo esc_html($celeb->profession); ?></p>
+        <span><?php echo esc_html($celeb->birth_year); ?></span>
+        <span style="background:<?php echo esc_attr($aura_colors[$celeb->type] ?? '#707070'); ?>">
+            <?php echo esc_html($celeb->type); ?>
+        </span>
+        <span><?php echo esc_html($celeb->profile); ?></span>
+        <span><?php echo esc_html($celeb->sun_sign); ?></span>
+    </a>
+<?php endforeach; ?>
+</div>
+
+"VIEW ALL" LINK
+───────────────
+The "View all" link goes to a page showing ALL celebrities born today
+(not capped at 20). This is safe because any given day will have fewer
+than ~500 celebrities. URL: /celebrities/born-today/ or similar.
+
+CACHING
+───────
+This query changes daily. Cache the result for 24 hours (midnight expiry)
+so the DB only gets hit once per day, not on every page load:
+
+    $cache_key = 'born_today_' . date('Y-m-d');
+    $born_today = wp_cache_get($cache_key);
+    if (false === $born_today) {
+        $born_today = $wpdb->get_results(...);
+        wp_cache_set($cache_key, $born_today, '', DAY_IN_SECONDS);
+    }
+
+Or use a transient:
+    $born_today = get_transient('born_today');
+    if (false === $born_today) {
+        $born_today = $wpdb->get_results(...);
+        set_transient('born_today', $born_today, DAY_IN_SECONDS);
+    }
+
+TABLE / COLUMN NAMES
+────────────────────
+Adapt the query to match your actual table and column names.
+The key fields needed per celebrity card:
+  - slug (for the URL)
+  - name (display name)
+  - profession (display text, not clickable yet)
+  - birth_year (just the year, e.g. 1977)
+  - type (Generator, Manifesting Generator, Projector, Manifestor, Reflector)
+  - profile (e.g. "4/6")
+  - sun_sign (e.g. "Aries") — Tropical default
+
+CARD DESIGN
+───────────
+Copy the card HTML from the mockup below. Key design elements:
+  - Type badge uses aura color as background, white text
+  - Profile and Sun Sign are gray-bordered pills
+  - Profession is small gray text under the name
+  - Year is right-aligned, light gray
+  - Card hover: purple border + shadow
+
+============================================================
+END OF INSTRUCTIONS — MOCKUP FOLLOWS
+============================================================
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
