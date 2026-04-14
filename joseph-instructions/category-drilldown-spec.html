@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Drill-Down Spec — Shafik Reference</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'gm-purple': '#6E5898', 'gm-purple-light': '#9080B1', 'gm-purple-soft': '#AC94D8',
+                    'gm-dark': '#3C2864', 'gm-darker': '#2e1f4d', 'gm-green': '#54931E', 'gm-green-dark': '#468018',
+                    'gm-pink': '#F66378', 'gm-orange': '#E8961D', 'gm-gray': '#707070', 'gm-light': '#F7F8F9',
+                    'gm-card': '#FAFBFC', 'gm-card-active': '#F4F0FC', 'gm-border': '#D8D4E4',
+                    'gm-text-dark': '#1A1A2E', 'gm-text': '#444444', 'gm-text-light': '#949494'
+                }
+            }
+        }
+    }
+    </script>
+    <style>
+        body { font-family: Inter, Bilo, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif; }
+        .tab-active { background: #6E5898; color: white; }
+        .tab-inactive { background: white; color: #707070; border: 1px solid #D8D4E4; }
+        .tab-inactive:hover { border-color: #6E5898; color: #6E5898; }
+    </style>
+</head>
+<body class="bg-white text-gm-text">
+
+<!-- ============================================================
+     INSTRUCTIONS FOR SHAFIK
+     ============================================================
+     This is a visual mockup showing the DRILL-DOWN behavior for
+     celebrity category pages. Open in browser to see the layout.
+
+     LOGIC (in your PHP template):
+     ─────────────────────────────
+     if (empty($_GET['type'])) {
+         // Show the sub-category grid below (Step 1)
+     } else {
+         // Show filtered celebrity results (existing code, Step 2)
+     }
+
+     Same pattern for all categories:
+     - /celebrities/type/              → show Type grid
+     - /celebrities/type/?type=generator → show Generator results
+     - /celebrities/profile/           → show Profile grid
+     - /celebrities/profile/?profile=1-3 → show 1/3 results
+
+     The sub-category data is HARDCODED (no DB query).
+     Only the filtered results page hits the database.
+
+     IMPORTANT: Never show a flat list of all celebrities.
+     Always require at least one filter before querying.
+     ============================================================ -->
+
+<!-- STEP 1: Category Browse (no filter selected) -->
+<!-- URL: /celebrities/type/ -->
+
+<div class="max-w-6xl mx-auto px-6 py-4">
+    <nav class="text-sm text-gm-gray">
+        <a href="/" class="hover:text-gm-purple">Home</a>
+        <span class="mx-1">›</span>
+        <a href="/learn-hub/celebrities/" class="hover:text-gm-purple">Celebrities</a>
+        <span class="mx-1">›</span>
+        <span class="text-gm-text-dark font-medium">Type</span>
+    </nav>
+</div>
+
+<!-- ==================== EXAMPLE 1: BY TYPE ==================== -->
+<section class="py-12 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center mb-10">
+            <p class="text-xs font-semibold uppercase tracking-widest text-gm-purple mb-2">Human Design</p>
+            <h1 class="text-3xl md:text-4xl font-bold text-gm-text-dark mb-3">Celebrity Charts by Type</h1>
+            <p class="text-gm-gray max-w-xl mx-auto">Select a type to explore celebrity charts. Every chart is available in all 7 calculation methods.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+
+            <a href="/celebrities/type/?type=generator" class="group block bg-gm-light rounded-xl p-6 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition text-center">
+                <div class="w-14 h-14 rounded-full bg-gm-purple/10 flex items-center justify-center mx-auto mb-3">
+                    <svg class="w-7 h-7 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gm-text-dark group-hover:text-gm-purple transition mb-1">Generator</h3>
+                <p class="text-sm text-gm-gray">The life force of the planet. Defined Sacral Center with strategy to respond.</p>
+            </a>
+
+            <a href="/celebrities/type/?type=manifesting-generator" class="group block bg-gm-light rounded-xl p-6 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition text-center">
+                <div class="w-14 h-14 rounded-full bg-gm-purple/10 flex items-center justify-center mx-auto mb-3">
+                    <svg class="w-7 h-7 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gm-text-dark group-hover:text-gm-purple transition mb-1">Manifesting Generator</h3>
+                <p class="text-sm text-gm-gray">Multi-passionate energy type. Defined Sacral with a motor to the Throat.</p>
+            </a>
+
+            <a href="/celebrities/type/?type=projector" class="group block bg-gm-light rounded-xl p-6 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition text-center">
+                <div class="w-14 h-14 rounded-full bg-gm-purple/10 flex items-center justify-center mx-auto mb-3">
+                    <svg class="w-7 h-7 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gm-text-dark group-hover:text-gm-purple transition mb-1">Projector</h3>
+                <p class="text-sm text-gm-gray">Natural guides and advisors. No defined Sacral, strategy to wait for the invitation.</p>
+            </a>
+
+            <a href="/celebrities/type/?type=manifestor" class="group block bg-gm-light rounded-xl p-6 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition text-center">
+                <div class="w-14 h-14 rounded-full bg-gm-purple/10 flex items-center justify-center mx-auto mb-3">
+                    <svg class="w-7 h-7 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gm-text-dark group-hover:text-gm-purple transition mb-1">Manifestor</h3>
+                <p class="text-sm text-gm-gray">Initiators and catalysts. Motor to Throat, no defined Sacral, strategy to inform.</p>
+            </a>
+
+            <a href="/celebrities/type/?type=reflector" class="group block bg-gm-light rounded-xl p-6 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition text-center">
+                <div class="w-14 h-14 rounded-full bg-gm-purple/10 flex items-center justify-center mx-auto mb-3">
+                    <svg class="w-7 h-7 text-gm-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gm-text-dark group-hover:text-gm-purple transition mb-1">Reflector</h3>
+                <p class="text-sm text-gm-gray">Mirrors of the community. All centers open, strategy to wait a full lunar cycle.</p>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<hr class="my-8 border-gm-border max-w-5xl mx-auto">
+
+<!-- ==================== EXAMPLE 2: BY PROFILE ==================== -->
+<section class="py-12 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center mb-10">
+            <p class="text-xs font-semibold uppercase tracking-widest text-gm-purple mb-2">Human Design</p>
+            <h1 class="text-3xl md:text-4xl font-bold text-gm-text-dark mb-3">Celebrity Charts by Profile</h1>
+            <p class="text-gm-gray max-w-xl mx-auto">Select a profile to explore celebrity charts.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+
+            <a href="/celebrities/profile/?profile=1-3" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-sm">1/3</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">1/3 Profile</h3>
+                    <p class="text-xs text-gm-gray">Investigator / Martyr</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/profile/?profile=1-4" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-sm">1/4</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">1/4 Profile</h3>
+                    <p class="text-xs text-gm-gray">Investigator / Opportunist</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/profile/?profile=2-4" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-sm">2/4</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">2/4 Profile</h3>
+                    <p class="text-xs text-gm-gray">Hermit / Opportunist</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/profile/?profile=2-5" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-sm">2/5</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">2/5 Profile</h3>
+                    <p class="text-xs text-gm-gray">Hermit / Heretic</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/profile/?profile=3-5" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-sm">3/5</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">3/5 Profile</h3>
+                    <p class="text-xs text-gm-gray">Martyr / Heretic</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/profile/?profile=3-6" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-sm">3/6</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">3/6 Profile</h3>
+                    <p class="text-xs text-gm-gray">Martyr / Role Model</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/profile/?profile=4-1" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-sm">4/1</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">4/1 Profile</h3>
+                    <p class="text-xs text-gm-gray">Opportunist / Investigator</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/profile/?profile=4-6" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-sm">4/6</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">4/6 Profile</h3>
+                    <p class="text-xs text-gm-gray">Opportunist / Role Model</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/profile/?profile=5-1" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-sm">5/1</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">5/1 Profile</h3>
+                    <p class="text-xs text-gm-gray">Heretic / Investigator</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/profile/?profile=5-2" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-sm">5/2</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">5/2 Profile</h3>
+                    <p class="text-xs text-gm-gray">Heretic / Hermit</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/profile/?profile=6-2" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-sm">6/2</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">6/2 Profile</h3>
+                    <p class="text-xs text-gm-gray">Role Model / Hermit</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/profile/?profile=6-3" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-sm">6/3</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">6/3 Profile</h3>
+                    <p class="text-xs text-gm-gray">Role Model / Martyr</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<hr class="my-8 border-gm-border max-w-5xl mx-auto">
+
+<!-- ==================== EXAMPLE 3: BY SUN SIGN ==================== -->
+<section class="py-12 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center mb-10">
+            <p class="text-xs font-semibold uppercase tracking-widest text-gm-orange mb-2">Astrology</p>
+            <h1 class="text-3xl md:text-4xl font-bold text-gm-text-dark mb-3">Celebrity Charts by Sun Sign</h1>
+            <p class="text-gm-gray max-w-xl mx-auto">Select a zodiac sign to explore celebrity charts.</p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+
+            <a href="/celebrities/sun-sign/?sun-sign=aries" class="group flex items-center gap-3 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-orange/20 hover:shadow-md transition">
+                <span class="text-2xl">&#9800;</span>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-orange transition text-sm">Aries</h3>
+                    <p class="text-xs text-gm-gray">Mar 21 - Apr 19</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/sun-sign/?sun-sign=taurus" class="group flex items-center gap-3 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-orange/20 hover:shadow-md transition">
+                <span class="text-2xl">&#9801;</span>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-orange transition text-sm">Taurus</h3>
+                    <p class="text-xs text-gm-gray">Apr 20 - May 20</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/sun-sign/?sun-sign=gemini" class="group flex items-center gap-3 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-orange/20 hover:shadow-md transition">
+                <span class="text-2xl">&#9802;</span>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-orange transition text-sm">Gemini</h3>
+                    <p class="text-xs text-gm-gray">May 21 - Jun 20</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/sun-sign/?sun-sign=cancer" class="group flex items-center gap-3 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-orange/20 hover:shadow-md transition">
+                <span class="text-2xl">&#9803;</span>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-orange transition text-sm">Cancer</h3>
+                    <p class="text-xs text-gm-gray">Jun 21 - Jul 22</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/sun-sign/?sun-sign=leo" class="group flex items-center gap-3 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-orange/20 hover:shadow-md transition">
+                <span class="text-2xl">&#9804;</span>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-orange transition text-sm">Leo</h3>
+                    <p class="text-xs text-gm-gray">Jul 23 - Aug 22</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/sun-sign/?sun-sign=virgo" class="group flex items-center gap-3 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-orange/20 hover:shadow-md transition">
+                <span class="text-2xl">&#9805;</span>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-orange transition text-sm">Virgo</h3>
+                    <p class="text-xs text-gm-gray">Aug 23 - Sep 22</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/sun-sign/?sun-sign=libra" class="group flex items-center gap-3 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-orange/20 hover:shadow-md transition">
+                <span class="text-2xl">&#9806;</span>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-orange transition text-sm">Libra</h3>
+                    <p class="text-xs text-gm-gray">Sep 23 - Oct 22</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/sun-sign/?sun-sign=scorpio" class="group flex items-center gap-3 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-orange/20 hover:shadow-md transition">
+                <span class="text-2xl">&#9807;</span>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-orange transition text-sm">Scorpio</h3>
+                    <p class="text-xs text-gm-gray">Oct 23 - Nov 21</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/sun-sign/?sun-sign=sagittarius" class="group flex items-center gap-3 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-orange/20 hover:shadow-md transition">
+                <span class="text-2xl">&#9808;</span>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-orange transition text-sm">Sagittarius</h3>
+                    <p class="text-xs text-gm-gray">Nov 22 - Dec 21</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/sun-sign/?sun-sign=capricorn" class="group flex items-center gap-3 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-orange/20 hover:shadow-md transition">
+                <span class="text-2xl">&#9809;</span>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-orange transition text-sm">Capricorn</h3>
+                    <p class="text-xs text-gm-gray">Dec 22 - Jan 19</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/sun-sign/?sun-sign=aquarius" class="group flex items-center gap-3 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-orange/20 hover:shadow-md transition">
+                <span class="text-2xl">&#9810;</span>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-orange transition text-sm">Aquarius</h3>
+                    <p class="text-xs text-gm-gray">Jan 20 - Feb 18</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/sun-sign/?sun-sign=pisces" class="group flex items-center gap-3 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-orange/20 hover:shadow-md transition">
+                <span class="text-2xl">&#9811;</span>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-orange transition text-sm">Pisces</h3>
+                    <p class="text-xs text-gm-gray">Feb 19 - Mar 20</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<hr class="my-8 border-gm-border max-w-5xl mx-auto">
+
+<!-- ==================== EXAMPLE 4: BY AUTHORITY ==================== -->
+<section class="py-12 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center mb-10">
+            <p class="text-xs font-semibold uppercase tracking-widest text-gm-purple mb-2">Human Design</p>
+            <h1 class="text-3xl md:text-4xl font-bold text-gm-text-dark mb-3">Celebrity Charts by Authority</h1>
+            <p class="text-gm-gray max-w-xl mx-auto">Select an authority type to explore celebrity charts.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+
+            <a href="/celebrities/authority/?authority=emotional" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple text-lg">&#9829;</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">Emotional Authority</h3>
+                    <p class="text-xs text-gm-gray">Solar Plexus defined. Clarity over time.</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/authority/?authority=sacral" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple text-lg">&#9737;</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">Sacral Authority</h3>
+                    <p class="text-xs text-gm-gray">Gut response. In the moment.</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/authority/?authority=splenic" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple text-lg">&#9733;</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">Splenic Authority</h3>
+                    <p class="text-xs text-gm-gray">Instinctive awareness. Spontaneous knowing.</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/authority/?authority=ego" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple text-lg">&#9830;</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">Ego / Heart Authority</h3>
+                    <p class="text-xs text-gm-gray">Willpower-driven decisions.</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/authority/?authority=self-projected" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple text-lg">&#9672;</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">Self-Projected Authority</h3>
+                    <p class="text-xs text-gm-gray">Identity-based. Hear yourself speak.</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/authority/?authority=mental" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple text-lg">&#9670;</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">Mental / Environmental</h3>
+                    <p class="text-xs text-gm-gray">No inner authority. Talk it through.</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/authority/?authority=lunar" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple text-lg">&#9789;</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">Lunar Authority</h3>
+                    <p class="text-xs text-gm-gray">Reflectors only. Wait a full lunar cycle.</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<hr class="my-8 border-gm-border max-w-5xl mx-auto">
+
+<!-- ==================== EXAMPLE 5: BY DEFINITION ==================== -->
+<section class="py-12 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center mb-10">
+            <p class="text-xs font-semibold uppercase tracking-widest text-gm-purple mb-2">Human Design</p>
+            <h1 class="text-3xl md:text-4xl font-bold text-gm-text-dark mb-3">Celebrity Charts by Definition</h1>
+            <p class="text-gm-gray max-w-xl mx-auto">Select a definition type to explore celebrity charts.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+
+            <a href="/celebrities/definition/?definition=single" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-xs">1</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">Single Definition</h3>
+                    <p class="text-xs text-gm-gray">All defined centers connected in one circuit.</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/definition/?definition=split-small" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-xs">2s</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">Split Definition (Small)</h3>
+                    <p class="text-xs text-gm-gray">Two separate areas of definition, close gap.</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/definition/?definition=split-large" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-xs">2L</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">Split Definition (Large)</h3>
+                    <p class="text-xs text-gm-gray">Two separate areas, wide gap between them.</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/definition/?definition=triple-split" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-xs">3</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">Triple Split</h3>
+                    <p class="text-xs text-gm-gray">Three separate areas of definition.</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/definition/?definition=quadruple-split" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-xs">4</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">Quadruple Split</h3>
+                    <p class="text-xs text-gm-gray">Four separate areas of definition. Very rare.</p>
+                </div>
+            </a>
+
+            <a href="/celebrities/definition/?definition=none" class="group flex items-center gap-4 bg-gm-light rounded-xl px-5 py-4 border border-transparent hover:border-gm-purple/20 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-full bg-gm-purple/10 flex items-center justify-center flex-shrink-0">
+                    <span class="text-gm-purple font-bold text-xs">0</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gm-text-dark group-hover:text-gm-purple transition text-sm">No Definition</h3>
+                    <p class="text-xs text-gm-gray">Reflectors. All centers open.</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- ==================== IMPLEMENTATION NOTES FOR SHAFIK ==================== -->
+<section class="py-12 bg-red-50 border-t-4 border-red-400">
+    <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-red-700 mb-4">SHAFIK: Implementation Notes (delete this section)</h2>
+
+        <div class="space-y-6 text-sm text-gray-800">
+
+            <div class="bg-white rounded-lg p-4 border border-red-200">
+                <h3 class="font-bold text-red-600 mb-2">PHP Logic</h3>
+                <pre class="bg-gray-100 rounded p-3 text-xs overflow-x-auto">
+// In your category template (e.g. celebrities-type.php):
+
+$filter = isset($_GET['type']) ? sanitize_text_field($_GET['type']) : '';
+
+if (empty($filter)) {
+    // STEP 1: Show the sub-category grid (hardcoded HTML above)
+    // NO database query. Just static cards linking to ?type=generator etc.
+    get_template_part('partials/category-browse', 'type');
+} else {
+    // STEP 2: Show filtered results (your existing code)
+    // This is the only place that hits the database
+    $celebrities = get_celebrities_by_type($filter, $page, $per_page);
+    get_template_part('partials/celebrity-results');
+}
+                </pre>
+            </div>
+
+            <div class="bg-white rounded-lg p-4 border border-red-200">
+                <h3 class="font-bold text-red-600 mb-2">Same Pattern for ALL Categories</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li><strong>/celebrities/type/</strong> → 5 type cards (above)</li>
+                    <li><strong>/celebrities/profile/</strong> → 12 profile cards (above)</li>
+                    <li><strong>/celebrities/sun-sign/</strong> → 12 zodiac cards (above). Same layout for Moon, Rising, MC, DC, IC</li>
+                    <li><strong>/celebrities/authority/</strong> → 7 authority cards (above)</li>
+                    <li><strong>/celebrities/strategy/</strong> → 4 strategy cards</li>
+                    <li><strong>/celebrities/definition/</strong> → 6 definition cards (above)</li>
+                    <li><strong>/celebrities/incarnation-cross/</strong> → ~192 cross cards (group by RAX/LAX/JXP)</li>
+                    <li><strong>/celebrities/variables/</strong> → 16 variable combination cards</li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-lg p-4 border border-red-200">
+                <h3 class="font-bold text-red-600 mb-2">Key Rules</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>NEVER show a flat list of all celebrities. Always require at least one filter.</li>
+                    <li>NO record counts displayed anywhere (no "34,521 Generators").</li>
+                    <li>NO pagination showing total ("Page 1 of 600") — just "Next >" / "Previous".</li>
+                    <li>Sub-category data is HARDCODED in the template. No DB query for the browse page.</li>
+                    <li>Only the filtered results page (?type=generator) hits the database.</li>
+                    <li>Remove the duplicate "Browse by Type" / "Type" sections in the sidebar.</li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-lg p-4 border border-red-200">
+                <h3 class="font-bold text-red-600 mb-2">Design Tokens</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>HD categories use <code>gm-purple</code> (#6E5898) accent</li>
+                    <li>Astrology categories use <code>gm-orange</code> (#E8961D) accent</li>
+                    <li>Cards: <code>bg-gm-light rounded-xl</code> with hover border + shadow</li>
+                    <li>Grid: <code>grid-cols-1 sm:grid-cols-2 lg:grid-cols-3</code> (or 4 for zodiac)</li>
+                    <li>Font: Inter / Bilo stack (same as Learn Hub nav)</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
