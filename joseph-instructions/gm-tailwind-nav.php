@@ -143,7 +143,7 @@ $t = isset($nav_strings[$current_lang]) ? $nav_strings[$current_lang] : $nav_str
                                 <div class="w-7 h-7 bg-[#F4F0FC] rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-hub.svg" alt="" class="w-6 h-6"></div>
                                 <div><div class="text-sm font-semibold text-gray-800"><?php echo esc_html($t['learn_hub']); ?></div><div class="text-xs text-[#949494] mt-0.5"><?php echo esc_html($t['hd_edu']); ?></div></div>
                             </a>
-                            <a href="/learn-hub/celebrities/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-[#F7F8F9] transition">
+                            <a href="/celebrities/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-[#F7F8F9] transition">
                                 <div class="w-7 h-7 bg-[#F4F0FC] rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-celebrity.svg" alt="" class="w-6 h-6"></div>
                                 <div><div class="text-sm font-semibold text-gray-800"><?php echo esc_html($t['celeb_search']); ?></div><div class="text-xs text-[#949494] mt-0.5"><?php echo esc_html($t['celeb_desc']); ?></div></div>
                             </a>
@@ -205,7 +205,7 @@ $t = isset($nav_strings[$current_lang]) ? $nav_strings[$current_lang] : $nav_str
                 <a href="/learn-hub/" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-[#6E5898] transition">
                     <img src="/learn-hub/assets/menu-icon-hub.svg" alt="" class="w-5 h-5"> <?php echo esc_html($t['learn_hub']); ?>
                 </a>
-                <a href="/learn-hub/celebrities/" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-[#6E5898] transition">
+                <a href="/celebrities/" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-[#6E5898] transition">
                     <img src="/learn-hub/assets/menu-icon-celebrity.svg" alt="" class="w-5 h-5"> <?php echo esc_html($t['celeb_search']); ?>
                 </a>
                 <a href="/dictionary/dictionary.html" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-[#6E5898] transition">

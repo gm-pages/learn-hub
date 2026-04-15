@@ -3,11 +3,54 @@
 **Audience:** Shafik (database + WordPress celeb pages)
 **Goal:** Replace the current dirty `profession` string field (e.g. "Doctor and Chess player", "Art : Fine art artist (Painter)", "Politics : Party Affiliation") with a controlled canonical taxonomy, using Wikidata as the cleanup source of truth. Unlocks Phase 1 SEO: `/celebrities/profession/politician/`, `/profession/actor/`, etc.
 
-**Status:** Spec ready. Blocked on:
-1. Shafik exports current celeb data as CSV (format below)
-2. Cleanup pass runs against Wikidata
-3. Schema migration applied
-4. Category pages switch over
+**Status:** Spec ready. No deadline — this work is decoupled from the celebrities go-live. All 88K+ celebs launch publicly with existing (dirty) data. Wikidata cleanup runs in the background afterward.
+
+**Execution strategy — two-tier, no rush:**
+
+```
+Phase 2a (post-launch, no deadline):
+  Wikidata cleanup pass runs inside Client Hub (paid tier)
+  → Fix 27K birth-year tags, normalize ~13K unique strings to taxonomy, populate missing
+  → Mark each record is_cleaned = 1 when done
+  → Work through ~89K at our own pace, in batches, with manual review
+
+Phase 2b (when Phase 2a is ~80%+ done):
+  Expose profession filter on public /celebrities/
+  → Filter UI queries add WHERE is_cleaned = 1
+  → Dirty rows still appear on individual celeb pages (no band-aid needed, subtitle is low-visibility)
+  → Only excluded from the faceted category browse
+```
+
+Tracking column to add to the celebs table:
+```sql
+ALTER TABLE celebs ADD COLUMN is_cleaned TINYINT(1) DEFAULT 0;
+ALTER TABLE celebs ADD COLUMN cleaned_at DATETIME NULL;
+ALTER TABLE celebs ADD COLUMN cleaned_source VARCHAR(20) NULL;  -- 'wikidata', 'manual', 'llm_fallback'
+```
+
+Steps below still apply. Main change is: `is_cleaned` flag replaces the big-bang migration, giving us gradual rollout.
+
+---
+
+## 0. Data audit (April 2026)
+
+Full analysis of `wp_people_profile` export (89,024 rows) reveals the scope is larger than initially assumed:
+
+| Status | Count | % |
+|---|---|---|
+| **Real profession** (e.g. "Actor", "Singer", "Footballer") | 61,421 | 69.0% |
+| **Birth-year tag** (e.g. "1926-births") | 26,785 | 30.1% |
+| **"Notable-Famous-Royal-family"** | 803 | 0.9% |
+| **"Nationality-YYYY-births"** variants | 15 | 0.0% |
+| **Empty / blank** | 0 | 0.0% |
+
+**31% of celebrities have no usable profession data at all.** The original Wikipedia import pulled birth-year categories into the profession field for tens of thousands of entries (Samuel Colt, Queen Victoria, Marie Antoinette, etc. confirmed real people). Wikidata backfill must populate profession for these, not just normalize existing strings.
+
+Also: **13,222 unique profession strings** across the good 69%, **1,573 rows** with whitespace issues.
+
+**Short-term band-aid:** `celeb-profession-display-shafik.md` fixes the user-visible symptom (the 27K junk tags showing as celebrity subtitles) at the template layer, without touching the DB. Lets us ship `/celebrities/` without waiting for the full migration.
+
+**This spec (below) is the permanent fix.**
 
 ---
 

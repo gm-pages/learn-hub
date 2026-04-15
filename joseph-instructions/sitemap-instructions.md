@@ -71,7 +71,7 @@ https://www.geneticmatrix.com/learn-hub/types/projector.html
 https://www.geneticmatrix.com/learn-hub/centers/index.html
 https://www.geneticmatrix.com/learn-hub/astrology/zodiac-signs.html
 https://www.geneticmatrix.com/learn-hub/dictionary/dictionary.html
-https://www.geneticmatrix.com/learn-hub/celebrities/index.html
+https://www.geneticmatrix.com/celebrities/
 ```
 
 **Other languages (e.g. German):**
