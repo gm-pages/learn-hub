@@ -85,16 +85,19 @@
         scanAll() {
             if (!this.regex || this.config.selectors.length === 0) return;
 
+            // Page-wide first-match-only: one shared Set across all scanned elements.
+            const matched = new Set();
             this.config.selectors.forEach(selector => {
                 const els = document.querySelectorAll(selector);
-                els.forEach(el => this.scanElement(el));
+                els.forEach(el => this.scanElement(el, matched));
             });
         },
 
-        scanElement(el) {
+        scanElement(el, matched) {
             if (!this.regex) return;
 
-            const matched = new Set(); // track matched terms for first-match-only
+            // Use shared Set if passed (page-wide dedup); otherwise local (back-compat).
+            if (!matched) matched = new Set();
             const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null);
             const textNodes = [];
 
@@ -135,7 +138,7 @@
                     span.className = this.config.tooltipClass;
                     span.textContent = match[0];
                     span.dataset.termId = termData.id;
-                    span.style.cssText = 'border-bottom: 1px dotted #6E5898; color: #6E5898; cursor: help;';
+                    span.style.cssText = 'border-bottom: 1px dotted #6E5898; cursor: help;';
 
                     // Hover events
                     span.addEventListener('mouseenter', (e) => this.showTooltip(e, termData));
