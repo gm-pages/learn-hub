@@ -424,7 +424,7 @@
       "id": "appetite",
       "term": "Appetite",
       "category": "Variables",
-      "definition": "One of six Determination types (Color 1). Both types eat one thing at a time — Left Tone Appetite is sequential, finishing one food before starting the next; Right Tone Appetite alternates, switching between foods bite by bite.",
+      "definition": "Einer von sechs Determinationstypen (Color 1). Beide Typen essen eine Sache nach der anderen — Left Tone Appetite isst sequenziell und beendet ein Lebensmittel, bevor das nächste beginnt; Right Tone Appetite wechselt ab, Bissen für Bissen zwischen den Lebensmitteln.",
       "aliases": [],
       "url": ""
     },
@@ -1994,7 +1994,7 @@
       "id": "light-determination",
       "term": "Licht",
       "category": "Variables",
-      "definition": "One of six Determination types (Color 6). Digestion is regulated by exposure to sunlight during meals. Left Tone Light must eat during daylight hours for UV and direct sun exposure; Right Tone Light must eat only after sundown, never while the sun is up.",
+      "definition": "Einer von sechs Determinationstypen (Color 6). Die Verdauung wird durch Sonnenlicht während der Mahlzeiten reguliert. Left Tone Light muss während der Tageslichtstunden essen für UV- und direkte Sonneneinstrahlung; Right Tone Light darf nur nach Sonnenuntergang essen, niemals während die Sonne am Himmel steht.",
       "aliases": [],
       "url": ""
     },
@@ -3561,7 +3561,7 @@
       "id": "sound-determination",
       "term": "Klang",
       "category": "Variables",
-      "definition": "One of six Determination types (Color 5). Digestion is regulated by both the acoustic environment and ambient electromagnetic frequencies at meals. Left Tone has High Sound — handles loud music like heavy metal and tolerates electronic smog. Right Tone has Low Sound — needs quiet and minimal electronic frequencies like wireless.",
+      "definition": "Einer von sechs Determinationstypen (Color 5). Die Verdauung wird sowohl durch die akustische Umgebung als auch durch elektromagnetische Frequenzen bei Mahlzeiten reguliert. Left Tone hat High Sound — verträgt laute Musik wie Heavy Metal und toleriert Elektrosmog. Right Tone hat Low Sound — braucht Ruhe und minimale elektromagnetische Frequenzen wie WLAN.",
       "aliases": [],
       "url": ""
     },
@@ -3764,7 +3764,7 @@
       "id": "taste-determination",
       "term": "Taste",
       "category": "Variables",
-      "definition": "One of six Determination types (Color 2). Left Tone Taste is Open — gradually expanding its menu to new tastes over time. Right Tone Taste is Closed — born with a zipper, sticking to familiar foods and resisting new tastes (the kid who wants spaghetti every meal).",
+      "definition": "Einer von sechs Determinationstypen (Color 2). Left Tone Taste ist Open — erweitert sein Menü allmählich um neue Geschmäcker. Right Tone Taste ist Closed — wie mit einem Reißverschluss geboren, hält an vertrauten Speisen fest und wehrt sich gegen neue Geschmäcker (das Kind, das zu jeder Mahlzeit Spaghetti will).",
       "aliases": [],
       "url": ""
     },
@@ -3804,7 +3804,7 @@
       "id": "thirst",
       "term": "Thirst",
       "category": "Variables",
-      "definition": "One of six Determination types (Color 3). Essentially about Temperature — despite the misleading name 'Thirst', this Color refers to the temperature of food at meals. Left Tone Thirst digests best with food above body temperature (hot food); Right Tone Thirst digests best with food below body temperature (cold food).",
+      "definition": "Einer von sechs Determinationstypen (Color 3). Im Wesentlichen geht es um Temperatur — trotz des irreführenden Namens 'Thirst' bezieht sich diese Color auf die Temperatur der Nahrung bei Mahlzeiten. Left Tone Thirst verdaut am besten bei Nahrung über Körpertemperatur (heiße Speisen); Right Tone Thirst bei Nahrung unter Körpertemperatur (kalte Speisen).",
       "aliases": [],
       "url": ""
     },
@@ -3858,7 +3858,7 @@
       "id": "touch-determination",
       "term": "Touch",
       "category": "Variables",
-      "definition": "One of six Determination types (Color 4). Essentially about Social Setting — despite the name 'Touch', this Color refers to the social context of meals. Left Tone is Calm Touch — needs to eat alone, away from other people's drama. Right Tone is Nervous Touch — needs the drama of people, digesting best breaking bread at a family or communal table.",
+      "definition": "Einer von sechs Determinationstypen (Color 4). Im Wesentlichen geht es um das soziale Umfeld — trotz des Namens 'Touch' bezieht sich diese Color auf den sozialen Kontext von Mahlzeiten. Left Tone ist Calm Touch — muss allein essen, abseits vom Drama anderer Menschen. Right Tone ist Nervous Touch — braucht das Drama von Menschen, verdaut am besten beim gemeinsamen Essen am Familien- oder Gemeinschaftstisch.",
       "aliases": [],
       "url": ""
     },
