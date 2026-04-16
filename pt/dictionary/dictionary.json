@@ -1036,7 +1036,8 @@
       "category": "Foundation",
       "definition": "O lado inconsciente de um gráfico de Human Design, calculado aproximadamente 88 dias antes do nascimento. As ativações do Design são mostradas a vermelho no bodygraph. Estas representam qualidades que operam inconscientemente e são frequentemente mais visíveis aos outros.",
       "aliases": [],
-      "url": ""
+      "url": "",
+      "noAutoLink": true
     },
     {
       "id": "design-crystal",

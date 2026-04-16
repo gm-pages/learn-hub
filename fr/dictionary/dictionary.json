@@ -1074,7 +1074,8 @@
       "category": "Foundation",
       "definition": "Le côté inconscient d'un thème Human Design, calculé environ 88 jours avant la naissance. Les activations Design sont montrées en rouge sur le Bodygraph. Elles représentent des qualités qui opèrent inconsciemment et sont souvent plus visibles pour les autres.",
       "aliases": [],
-      "url": ""
+      "url": "",
+      "noAutoLink": true
     },
     {
       "id": "design-crystal",

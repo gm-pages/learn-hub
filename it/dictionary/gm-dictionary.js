@@ -46,6 +46,7 @@
             this.termMap = {};
 
             this.terms.forEach(t => {
+                if (t.noAutoLink) return;  // term opted out of inline auto-linking
                 const phrases = [t.term, ...(t.aliases || [])].filter(p => p);
                 phrases.forEach(phrase => {
                     allPhrases.push(phrase);

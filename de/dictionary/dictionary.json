@@ -1036,7 +1036,8 @@
       "category": "Foundation",
       "definition": "Die unbewusste Seite eines Human Design Charts, berechnet etwa 88 Tage vor der Geburt. Design-Aktivierungen werden rot im Bodygraph angezeigt. Diese repräsentieren Qualitäten, die unbewusst operieren und oft für andere sichtbarer sind.",
       "aliases": [],
-      "url": ""
+      "url": "",
+      "noAutoLink": true
     },
     {
       "id": "design-crystal",

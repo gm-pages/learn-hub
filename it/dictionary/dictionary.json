@@ -1036,7 +1036,8 @@
       "category": "Foundation",
       "definition": "Il lato inconscio di una carta Human Design, calcolato circa 88 giorni prima della nascita. Le attivazioni Design sono mostrate in rosso sul bodygraph. Queste rappresentano qualità che operano inconsciamente e sono spesso più visibili agli altri.",
       "aliases": [],
-      "url": ""
+      "url": "",
+      "noAutoLink": true
     },
     {
       "id": "design-crystal",

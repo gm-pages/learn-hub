@@ -1036,7 +1036,8 @@
       "category": "Foundation",
       "definition": "The unconscious side of a Human Design chart, calculated approximately 88 days before birth. Design activations are shown in red on the bodygraph. These represent qualities that operate unconsciously and are often more visible to others.",
       "aliases": [],
-      "url": ""
+      "url": "",
+      "noAutoLink": true
     },
     {
       "id": "design-crystal",

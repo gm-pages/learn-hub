@@ -1036,7 +1036,8 @@
       "category": "Foundation",
       "definition": "El lado inconsciente de una carta de Diseño Humano, calculado aproximadamente 88 días antes del nacimiento. Las activaciones del Diseño se muestran en rojo en el bodygraph. Estas representan cualidades que operan inconscientemente y son a menudo más visibles para otros.",
       "aliases": [],
-      "url": ""
+      "url": "",
+      "noAutoLink": true
     },
     {
       "id": "design-crystal",

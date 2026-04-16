@@ -1048,7 +1048,8 @@
       "category": "Foundation",
       "definition": "De onbewuste kant van een Human Design Chart, berekend ongeveer 88 dagen voor de geboorte. Design activeringen worden in rood getoond op de Bodygraph. Deze vertegenwoordigen kwaliteiten die onbewust werken en vaak meer zichtbaar zijn voor anderen.",
       "aliases": [],
-      "url": ""
+      "url": "",
+      "noAutoLink": true
     },
     {
       "id": "design-crystal",
