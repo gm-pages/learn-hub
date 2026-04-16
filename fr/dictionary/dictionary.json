@@ -2031,7 +2031,7 @@
     },
     {
       "id": "light-determination",
-      "term": "Lumière (Détermination)",
+      "term": "Lumière",
       "category": "Variables",
       "definition": "Un des six types de Détermination (Couleur 6). Les conditions d'éclairage pendant les repas affectent la façon dont le corps digère correctement.",
       "aliases": [],
@@ -3598,7 +3598,7 @@
     },
     {
       "id": "sound-determination",
-      "term": "Son (Détermination)",
+      "term": "Son",
       "category": "Variables",
       "definition": "Un des six types de Détermination (Couleur 5). L'environnement acoustique pendant les repas importe pour une digestion appropriée.",
       "aliases": [],
@@ -3808,7 +3808,7 @@
     },
     {
       "id": "taste-determination",
-      "term": "Goût (Détermination)",
+      "term": "Goût",
       "category": "Variables",
       "definition": "L'un des six types de Détermination (Couleur 2). Le corps sélectionne la nourriture selon son goût, utilisant le palais comme guide principal.",
       "aliases": [
@@ -3908,7 +3908,7 @@
     },
     {
       "id": "touch-determination",
-      "term": "Toucher (Détermination)",
+      "term": "Toucher",
       "category": "Variables",
       "definition": "Un des six types de Détermination (Couleur 4). Le corps est sensible à la température et à la texture de la nourriture.",
       "aliases": [],

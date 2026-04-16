@@ -1992,7 +1992,7 @@
     },
     {
       "id": "light-determination",
-      "term": "Determinación de Luz",
+      "term": "Luz",
       "category": "Variables",
       "definition": "Uno de los seis tipos de Determinación (Color 6). Las condiciones de iluminación durante las comidas afectan la forma en que el cuerpo digiere correctamente.",
       "aliases": [],
@@ -3588,7 +3588,7 @@
     },
     {
       "id": "sound-determination",
-      "term": "Sonido (Determinación)",
+      "term": "Sonido",
       "category": "Variables",
       "definition": "Uno de seis tipos de Determinación (Color 5). El entorno acústico durante las comidas importa para la digestión apropiada.",
       "aliases": [],
@@ -3778,7 +3778,7 @@
     },
     {
       "id": "taste-determination",
-      "term": "Gusto (Determinación)",
+      "term": "Gusto",
       "category": "Variables",
       "definition": "Uno de seis tipos de Determinación (Color 2). El cuerpo selecciona alimento basándose en cómo sabe, usando el paladar como la guía principal.",
       "aliases": [],
@@ -3876,7 +3876,7 @@
     },
     {
       "id": "touch-determination",
-      "term": "Touch (Determination)",
+      "term": "Touch",
       "category": "Variables",
       "definition": "Uno de los seis tipos de Determinación (Color 4). El cuerpo es sensible a la temperatura y textura de los alimentos.",
       "aliases": [],

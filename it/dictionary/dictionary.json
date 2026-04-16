@@ -2023,7 +2023,7 @@
     },
     {
       "id": "light-determination",
-      "term": "Luce (Determinazione)",
+      "term": "Luce",
       "category": "Variabili",
       "definition": "Uno dei sei tipi di Determinazione (Colore 6). Le condizioni di illuminazione durante i pasti influenzano il modo in cui il corpo digerisce correttamente.",
       "aliases": [],
@@ -3590,7 +3590,7 @@
     },
     {
       "id": "sound-determination",
-      "term": "Suono (Determinazione)",
+      "term": "Suono",
       "category": "Variables",
       "definition": "Uno dei sei tipi di Determinazione (Colore 5). L'ambiente acustico durante i pasti è importante per una digestione appropriata.",
       "aliases": [],
@@ -3780,7 +3780,7 @@
     },
     {
       "id": "taste-determination",
-      "term": "Gusto (Determinazione)",
+      "term": "Gusto",
       "category": "Variables",
       "definition": "Uno dei sei tipi di Determinazione (Colore 2). Il corpo seleziona il cibo basandosi su come ha sapore, usando il palato come guida primaria.",
       "aliases": [],
@@ -3873,7 +3873,7 @@
     },
     {
       "id": "touch-determination",
-      "term": "Touch (Determinazione)",
+      "term": "Touch",
       "category": "Variables",
       "definition": "Uno dei sei tipi di Determinazione (Colore 4). Il corpo è sensibile alla temperatura e alla consistenza del cibo.",
       "aliases": [],

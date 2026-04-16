@@ -1992,7 +1992,7 @@
     },
     {
       "id": "light-determination",
-      "term": "Light (Determination)",
+      "term": "Light",
       "category": "Variables",
       "definition": "One of six Determination types (Color 6). Lighting conditions during meals affect how the body digests correctly.",
       "aliases": [],
@@ -3559,7 +3559,7 @@
     },
     {
       "id": "sound-determination",
-      "term": "Sound (Determination)",
+      "term": "Sound",
       "category": "Variables",
       "definition": "One of six Determination types (Color 5). The acoustic environment during meals matters for proper digestion.",
       "aliases": [],
@@ -3749,7 +3749,7 @@
     },
     {
       "id": "taste-determination",
-      "term": "Taste (Determination)",
+      "term": "Taste",
       "category": "Variables",
       "definition": "One of six Determination types (Color 2). The body selects food based on how it tastes, using the palate as the primary guide.",
       "aliases": [],
@@ -3842,7 +3842,7 @@
     },
     {
       "id": "touch-determination",
-      "term": "Touch (Determination)",
+      "term": "Touch",
       "category": "Variables",
       "definition": "One of six Determination types (Color 4). The body is sensitive to temperature and texture of food.",
       "aliases": [],

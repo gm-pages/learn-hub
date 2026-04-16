@@ -1992,7 +1992,7 @@
     },
     {
       "id": "light-determination",
-      "term": "Licht (Determination)",
+      "term": "Licht",
       "category": "Variables",
       "definition": "Eine von sechs Determination-Typen (Farbe 6). Lichtverhältnisse während der Mahlzeiten beeinflussen, wie der Körper korrekt verdaut.",
       "aliases": [],
@@ -3559,7 +3559,7 @@
     },
     {
       "id": "sound-determination",
-      "term": "Klang (Determination)",
+      "term": "Klang",
       "category": "Variables",
       "definition": "Einer von sechs Determinationstypen (Farbe 5). Die akustische Umgebung während der Mahlzeiten ist wichtig für die ordnungsgemäße Verdauung.",
       "aliases": [],
@@ -3762,7 +3762,7 @@
     },
     {
       "id": "taste-determination",
-      "term": "Taste (Determination)",
+      "term": "Taste",
       "category": "Variables",
       "definition": "Einer von sechs Determination-Typen (Farbe 2). Der Körper wählt Nahrung basierend auf ihrem Geschmack aus und nutzt den Gaumen als primären Wegweiser.",
       "aliases": [],
@@ -3856,7 +3856,7 @@
     },
     {
       "id": "touch-determination",
-      "term": "Touch (Determination)",
+      "term": "Touch",
       "category": "Variables",
       "definition": "Einer von sechs Determinationstypen (Farbe 4). Der Körper ist empfindlich für Temperatur und Textur der Nahrung.",
       "aliases": [],

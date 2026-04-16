@@ -2038,7 +2038,7 @@
     },
     {
       "id": "light-determination",
-      "term": "Licht (Determinatie)",
+      "term": "Licht",
       "category": "Variables",
       "definition": "Een van zes Determinatie types (Kleur 6). Lichtomstandigheden tijdens maaltijden beïnvloeden hoe het lichaam correct verteert.",
       "aliases": [],
@@ -3604,7 +3604,7 @@
     },
     {
       "id": "sound-determination",
-      "term": "Geluid (Determinatie)",
+      "term": "Geluid",
       "category": "Variables",
       "definition": "Een van zes Determinatietypes (Kleur 5). De akoestische omgeving tijdens maaltijden is belangrijk voor een goede spijsvertering.",
       "aliases": [],
@@ -3795,7 +3795,7 @@
     },
     {
       "id": "taste-determination",
-      "term": "Taste (Determinatie)",
+      "term": "Taste",
       "category": "Variables",
       "definition": "Een van zes Determinatietypes (Kleur 2). Het lichaam selecteert voedsel gebaseerd op hoe het smaakt, waarbij het gehemelte als primaire gids wordt gebruikt.",
       "aliases": [],
@@ -3888,7 +3888,7 @@
     },
     {
       "id": "touch-determination",
-      "term": "Aanraking (Determinatie)",
+      "term": "Aanraking",
       "category": "Variables",
       "definition": "Een van de zes Determinatietypes (Kleur 4). Het lichaam is gevoelig voor temperatuur en textuur van voedsel.",
       "aliases": [],
