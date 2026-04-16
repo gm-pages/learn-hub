@@ -573,6 +573,16 @@
                 );
             }
 
+            // Wraps query matches in <mark> for visual highlight. Case-insensitive.
+            // Definitions are plain text in dictionary.json (no HTML), so naive
+            // regex replace is safe.
+            const highlight = (text) => {
+                if (!query || !text) return text;
+                const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                return text.replace(new RegExp('(' + escaped + ')', 'gi'),
+                    '<mark class="bg-yellow-200 text-gray-900 px-0.5 rounded">$1</mark>');
+            };
+
             terms.sort((a, b) => a.term.localeCompare(b.term));
 
             document.getElementById('resultCount').textContent = `${terms.length} term${terms.length !== 1 ? 's' : ''}`;
@@ -599,18 +609,18 @@
                     <div class="space-y-3">
                         ${grouped[letter].map(t => {
                             const catClass = 'cat-' + t.category.replace('/', '-');
-                            const aliasText = t.aliases && t.aliases.length ? `<span class="text-gray-400 text-xs ml-2">(${t.aliases.join(', ')})</span>` : '';
+                            const aliasText = t.aliases && t.aliases.length ? `<span class="text-gray-400 text-xs ml-2">(${t.aliases.map(highlight).join(', ')})</span>` : '';
                             const urlLink = t.url ? `<a href="${t.url}" class="text-gm-green text-xs hover:underline ml-2">View on GM &rarr;</a>` : '';
                             return `
                             <div class="bg-white rounded-lg border border-gray-200 p-4" id="term-${t.id}">
                                 <div class="flex items-start justify-between mb-1">
                                     <div>
-                                        <h3 class="font-bold text-gray-800">${t.term}</h3>
+                                        <h3 class="font-bold text-gray-800">${highlight(t.term)}</h3>
                                         ${aliasText}
                                     </div>
                                     <span class="category-badge ${catClass} flex-shrink-0">${t.category}</span>
                                 </div>
-                                <p class="text-sm text-gray-600 leading-relaxed mt-2">${t.definition}</p>
+                                <p class="text-sm text-gray-600 leading-relaxed mt-2">${highlight(t.definition)}</p>
                                 ${urlLink}
                             </div>`;
                         }).join('')}
