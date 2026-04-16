@@ -109,7 +109,9 @@
                     parent.classList.contains(this.config.tooltipClass) ||
                     parent.tagName === 'SCRIPT' ||
                     parent.tagName === 'STYLE' ||
-                    parent.closest('.' + this.config.tooltipClass)
+                    parent.closest('.' + this.config.tooltipClass) ||
+                    parent.closest('a') ||
+                    parent.closest('h1, h2, h3, h4, h5, h6')
                 )) continue;
                 textNodes.push(walker.currentNode);
             }

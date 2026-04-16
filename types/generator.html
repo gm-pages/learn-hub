@@ -784,7 +784,7 @@
   s.src = basePath + '/gm-dictionary.js';
   s.onload = function(){
     if (window.GMDictionary) {
-      GMDictionary.init({ selectors: ['section'], dictionaryUrl: basePath + '/dictionary.json' });
+      GMDictionary.init({ selectors: ['section p, section li, section blockquote'], dictionaryUrl: basePath + '/dictionary.json' });
     }
   };
   document.body.appendChild(s);
