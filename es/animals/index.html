@@ -967,5 +967,19 @@
 })();
 </script>
 <script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
+<script id="gm-dict-tooltip-loader">(function(){
+  // Auto-detect language from URL so the same snippet works on all 7 language versions.
+  var parts = window.location.pathname.split('/');
+  var lang = (parts[1] === 'learn-hub' && ['de','es','fr','it','nl','pt'].indexOf(parts[2]) !== -1) ? '/' + parts[2] : '';
+  var basePath = '/learn-hub' + lang + '/dictionary';
+  var s = document.createElement('script');
+  s.src = basePath + '/gm-dictionary.js';
+  s.onload = function(){
+    if (window.GMDictionary) {
+      GMDictionary.init({ selectors: ['section p, section li, section blockquote'], dictionaryUrl: basePath + '/dictionary.json' });
+    }
+  };
+  document.body.appendChild(s);
+})();</script>
 </body>
 </html>
