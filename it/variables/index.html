@@ -3,40 +3,32 @@
 <head>
     <link id="gm-flag-icons" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css">
 <script id="gm-lang-redirect">(function(){
-  // WPML on WordPress uses short codes for most langs (de/es/fr/it/nl) but
-  // "pt-pt" for Portuguese (to distinguish from pt-br Brazilian). Our
-  // Learn Hub URL folders use the short code "pt", so we map on cookie
-  // read/write so the gm_lang cookie is WPML-compatible.
-  var URL_TO_COOKIE = {pt: "pt-pt"};
-  var COOKIE_TO_URL = {"pt-pt": "pt"};
-  var SUPPORTED_URL = ["en","de","es","fr","it","nl","pt"];
-  var SUPPORTED_COOKIE = ["en","de","es","fr","it","nl","pt-pt"];
-
+  var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
   var path = window.location.pathname;
   var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
-  var urlLang = m ? m[1] : "en";
-  var expectedCookie = URL_TO_COOKIE[urlLang] || urlLang;
-
+  var current = m ? m[1] : "en";
   var v = ("; " + document.cookie).split("; gm_lang=");
   var cookieLang = v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
 
-  // URL has explicit language prefix: trust URL, update cookie to match (WPML form).
-  if (urlLang !== "en") {
-    if (cookieLang !== expectedCookie) {
+  // URL is the source of truth on direct navigation. If the URL has an
+  // explicit language prefix, trust it and update the cookie to match.
+  // Only redirect when the URL is the default (English, no prefix) AND
+  // the cookie indicates a non-default language preference.
+  if (current !== "en") {
+    if (cookieLang !== current) {
       var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
       var parts = location.hostname.split('.');
       var domain = parts.length >= 2 ? "; domain=." + parts.slice(-2).join('.') : "";
-      document.cookie = "gm_lang=" + expectedCookie + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
+      document.cookie = "gm_lang=" + current + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
     }
     return;
   }
 
-  // urlLang === "en". Redirect to cookie-preferred language, mapping pt-pt → pt folder.
-  if (cookieLang && SUPPORTED_COOKIE.indexOf(cookieLang) !== -1 && cookieLang !== "en") {
-    var targetFolder = COOKIE_TO_URL[cookieLang] || cookieLang;
+  // current === "en" (no language prefix in URL). Honor cookie if non-en.
+  if (cookieLang && SUPPORTED.indexOf(cookieLang) !== -1 && cookieLang !== "en") {
     var rest = path.replace(/^\/learn-hub/, "");
     if (!rest) rest = "/";
-    var target = "/learn-hub/" + targetFolder + rest;
+    var target = "/learn-hub/" + cookieLang + rest;
     window.location.replace(target + window.location.search + window.location.hash);
   }
 })();</script>
@@ -296,6 +288,73 @@
         </div>
     </nav>
     <script id="gm-calendar-auth">(function(){
+      // Show calendar icon in nav when user is logged in. Fetches user state
+      // once per page load (browser caches the response so cost is minimal).
+      // Also hides any element marked .gm-logged-out-only (e.g. signup CTAs
+      // on the Learn Hub landing that shouldn't show to existing members).
+      fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r){ return r.json(); })
+        .then(function(data){
+          if (data && data.logged_in) {
+            var cal = document.getElementById('gm-calendar-icon');
+            if (cal) { cal.classList.remove('hidden'); cal.classList.add('flex'); }
+            var loggedOutOnly = document.querySelectorAll('.gm-logged-out-only');
+            loggedOutOnly.forEach(function(el){ el.style.display = 'none'; });
+          }
+        })
+        .catch(function(){});
+    })();</script>
+    <script id="gm-lang-switcher">(function(){
+      var LANGS = {en:"English",de:"Deutsch",es:"Español",fr:"Français",it:"Italiano",nl:"Nederland",pt:"Português"};
+      var FLAGS = {en:"gb",de:"de",es:"es",fr:"fr",it:"it",nl:"nl",pt:"pt"};
+      var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
+      // WPML on WordPress uses short codes for de/es/fr/it/nl but "pt-pt" for
+      // Portuguese URLs. Cookie value stays as short code "pt" to match the
+      // WP mu-plugin convention. Only the logo href needs the long form.
+      var URL_TO_WP = {pt: "pt-pt"};
+
+      var path = window.location.pathname;
+      var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
+      var current = m ? m[1] : "en";
+      var rest = m ? path.substring(("/learn-hub/" + current).length) : path.replace(/^\/learn-hub/, "");
+      if (!rest) rest = "/";
+
+      // Cookie helpers (shared with WordPress/WPML on .geneticmatrix.com)
+      function getCookie(name){
+        var v = ("; " + document.cookie).split("; " + name + "=");
+        return v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
+      }
+      function setCookie(name, value){
+        var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
+        var parts = location.hostname.split('.');
+        var domain = parts.length >= 2 ? "; domain=." + parts.slice(-2).join('.') : "";
+        document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
+      }
+
+      // Sync cookie to current URL language (head script handles redirect before render)
+      var cookieLang = getCookie("gm_lang");
+      if (cookieLang !== current) setCookie("gm_lang", current);
+
+      var label = document.getElementById("gm-lang-current");
+      if (label) label.textContent = LANGS[current];
+      var flagEl = document.getElementById("gm-lang-flag");
+      if (flagEl) flagEl.className = "flag-icon flag-icon-" + (FLAGS[current] || "gb");
+      // Point logo at the matching WordPress language root. WPML uses pt-pt
+      // for Portuguese URLs; short codes for the other 5 languages.
+      var logo = document.getElementById("gm-logo-link");
+      if (logo) {
+        var wpLang = URL_TO_WP[current] || current;
+        logo.href = current === "en" ? "/" : ("/" + wpLang + "/");
+      }
+
+      document.querySelectorAll('a[data-lang]').forEach(function(a){
+        var lang = a.getAttribute('data-lang');
+        a.href = lang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + lang + rest);
+        if (lang === current) a.classList.add('text-gm-purple','font-semibold');
+        a.addEventListener('click', function(){ setCookie("gm_lang", lang); });
+      });
+    })();</script>
+<script id="gm-calendar-auth">(function(){
       // Show calendar icon in nav when user is logged in. Fetches user state
       // once per page load (browser caches the response so cost is minimal).
       // Also hides any element marked .gm-logged-out-only (e.g. signup CTAs
