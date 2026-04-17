@@ -135,6 +135,11 @@
       var LANGS = {en:"English",de:"Deutsch",es:"Español",fr:"Français",it:"Italiano",nl:"Nederland",pt:"Português"};
       var FLAGS = {en:"gb",de:"de",es:"es",fr:"fr",it:"it",nl:"nl",pt:"pt"};
       var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
+      // WPML uses "pt-pt" for Portuguese. We map pt ↔ pt-pt at the cookie layer
+      // and for the WordPress logo destination so WPML + Learn Hub stay in sync.
+      var URL_TO_COOKIE = {pt: "pt-pt"};
+      var URL_TO_WP = {pt: "pt-pt"};
+
       var path = window.location.pathname;
       var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
       var current = m ? m[1] : "en";
@@ -153,23 +158,29 @@
         document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
       }
 
-      // Sync cookie to current URL language (head script handles redirect before render)
+      // Sync cookie to current URL language (WPML form; head script handles redirect before render)
+      var expectedCookie = URL_TO_COOKIE[current] || current;
       var cookieLang = getCookie("gm_lang");
-      if (cookieLang !== current) setCookie("gm_lang", current);
+      if (cookieLang !== expectedCookie) setCookie("gm_lang", expectedCookie);
 
       var label = document.getElementById("gm-lang-current");
       if (label) label.textContent = LANGS[current];
       var flagEl = document.getElementById("gm-lang-flag");
       if (flagEl) flagEl.className = "flag-icon flag-icon-" + (FLAGS[current] || "gb");
-      // Point logo at the matching WordPress language root so clicking it
-      // doesn't trigger a cross-language redirect hop through PHP.
+      // Point logo at the matching WordPress language root. WPML uses pt-pt
+      // for Portuguese, short codes for the others.
       var logo = document.getElementById("gm-logo-link");
-      if (logo) logo.href = current === "en" ? "/" : ("/" + current + "/");
+      if (logo) {
+        var wpLang = URL_TO_WP[current] || current;
+        logo.href = current === "en" ? "/" : ("/" + wpLang + "/");
+      }
 
       document.querySelectorAll('a[data-lang]').forEach(function(a){
         var lang = a.getAttribute('data-lang');
         a.href = lang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + lang + rest);
         if (lang === current) a.classList.add('text-gm-purple','font-semibold');
-        a.addEventListener('click', function(){ setCookie("gm_lang", lang); });
+        a.addEventListener('click', function(){
+          setCookie("gm_lang", URL_TO_COOKIE[lang] || lang);
+        });
       });
     })();</script>

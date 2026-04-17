@@ -1,31 +1,39 @@
 <link id="gm-flag-icons" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css">
 <script id="gm-lang-redirect">(function(){
-  var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
+  // WPML on WordPress uses short codes for most langs (de/es/fr/it/nl) but
+  // "pt-pt" for Portuguese (to distinguish from pt-br Brazilian). Our
+  // Learn Hub URL folders use the short code "pt", so we map on cookie
+  // read/write so the gm_lang cookie is WPML-compatible.
+  var URL_TO_COOKIE = {pt: "pt-pt"};
+  var COOKIE_TO_URL = {"pt-pt": "pt"};
+  var SUPPORTED_URL = ["en","de","es","fr","it","nl","pt"];
+  var SUPPORTED_COOKIE = ["en","de","es","fr","it","nl","pt-pt"];
+
   var path = window.location.pathname;
   var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
-  var current = m ? m[1] : "en";
+  var urlLang = m ? m[1] : "en";
+  var expectedCookie = URL_TO_COOKIE[urlLang] || urlLang;
+
   var v = ("; " + document.cookie).split("; gm_lang=");
   var cookieLang = v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
 
-  // URL is the source of truth on direct navigation. If the URL has an
-  // explicit language prefix, trust it and update the cookie to match.
-  // Only redirect when the URL is the default (English, no prefix) AND
-  // the cookie indicates a non-default language preference.
-  if (current !== "en") {
-    if (cookieLang !== current) {
+  // URL has explicit language prefix: trust URL, update cookie to match (WPML form).
+  if (urlLang !== "en") {
+    if (cookieLang !== expectedCookie) {
       var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
       var parts = location.hostname.split('.');
       var domain = parts.length >= 2 ? "; domain=." + parts.slice(-2).join('.') : "";
-      document.cookie = "gm_lang=" + current + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
+      document.cookie = "gm_lang=" + expectedCookie + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
     }
     return;
   }
 
-  // current === "en" (no language prefix in URL). Honor cookie if non-en.
-  if (cookieLang && SUPPORTED.indexOf(cookieLang) !== -1 && cookieLang !== "en") {
+  // urlLang === "en". Redirect to cookie-preferred language, mapping pt-pt → pt folder.
+  if (cookieLang && SUPPORTED_COOKIE.indexOf(cookieLang) !== -1 && cookieLang !== "en") {
+    var targetFolder = COOKIE_TO_URL[cookieLang] || cookieLang;
     var rest = path.replace(/^\/learn-hub/, "");
     if (!rest) rest = "/";
-    var target = "/learn-hub/" + cookieLang + rest;
+    var target = "/learn-hub/" + targetFolder + rest;
     window.location.replace(target + window.location.search + window.location.hash);
   }
 })();</script>
