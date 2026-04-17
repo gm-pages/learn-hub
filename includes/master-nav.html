@@ -117,12 +117,16 @@
     <script id="gm-calendar-auth">(function(){
       // Show calendar icon in nav when user is logged in. Fetches user state
       // once per page load (browser caches the response so cost is minimal).
+      // Also hides any element marked .gm-logged-out-only (e.g. signup CTAs
+      // on the Learn Hub landing that shouldn't show to existing members).
       fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
         .then(function(r){ return r.json(); })
         .then(function(data){
           if (data && data.logged_in) {
             var cal = document.getElementById('gm-calendar-icon');
             if (cal) { cal.classList.remove('hidden'); cal.classList.add('flex'); }
+            var loggedOutOnly = document.querySelectorAll('.gm-logged-out-only');
+            loggedOutOnly.forEach(function(el){ el.style.display = 'none'; });
           }
         })
         .catch(function(){});

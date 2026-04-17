@@ -299,6 +299,65 @@
     <script id="gm-calendar-auth">(function(){
       // Show calendar icon in nav when user is logged in. Fetches user state
       // once per page load (browser caches the response so cost is minimal).
+      // Also hides any element marked .gm-logged-out-only (e.g. signup CTAs
+      // on the Learn Hub landing that shouldn't show to existing members).
+      fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r){ return r.json(); })
+        .then(function(data){
+          if (data && data.logged_in) {
+            var cal = document.getElementById('gm-calendar-icon');
+            if (cal) { cal.classList.remove('hidden'); cal.classList.add('flex'); }
+            var loggedOutOnly = document.querySelectorAll('.gm-logged-out-only');
+            loggedOutOnly.forEach(function(el){ el.style.display = 'none'; });
+          }
+        })
+        .catch(function(){});
+    })();</script>
+    <script id="gm-lang-switcher">(function(){
+      var LANGS = {en:"English",de:"Deutsch",es:"Español",fr:"Français",it:"Italiano",nl:"Nederland",pt:"Português"};
+      var FLAGS = {en:"gb",de:"de",es:"es",fr:"fr",it:"it",nl:"nl",pt:"pt"};
+      var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
+      var path = window.location.pathname;
+      var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
+      var current = m ? m[1] : "en";
+      var rest = m ? path.substring(("/learn-hub/" + current).length) : path.replace(/^\/learn-hub/, "");
+      if (!rest) rest = "/";
+
+      // Cookie helpers (shared with WordPress/WPML on .geneticmatrix.com)
+      function getCookie(name){
+        var v = ("; " + document.cookie).split("; " + name + "=");
+        return v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
+      }
+      function setCookie(name, value){
+        var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
+        var parts = location.hostname.split('.');
+        var domain = parts.length >= 2 ? "; domain=." + parts.slice(-2).join('.') : "";
+        document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
+      }
+
+      // Sync cookie to current URL language (head script handles redirect before render)
+      var cookieLang = getCookie("gm_lang");
+      if (cookieLang !== current) setCookie("gm_lang", current);
+
+      var label = document.getElementById("gm-lang-current");
+      if (label) label.textContent = LANGS[current];
+      var flagEl = document.getElementById("gm-lang-flag");
+      if (flagEl) flagEl.className = "flag-icon flag-icon-" + (FLAGS[current] || "gb");
+      // Point logo at the matching WordPress language root so clicking it
+      // doesn't trigger a cross-language redirect hop through PHP.
+      var logo = document.getElementById("gm-logo-link");
+      if (logo) logo.href = current === "en" ? "/" : ("/" + current + "/");
+
+      document.querySelectorAll('a[data-lang]').forEach(function(a){
+        var lang = a.getAttribute('data-lang');
+        a.href = lang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + lang + rest);
+        if (lang === current) a.classList.add('text-gm-purple','font-semibold');
+        a.addEventListener('click', function(){ setCookie("gm_lang", lang); });
+      });
+    })();</script>
+<script id="gm-calendar-auth">(function(){
+      // Show calendar icon in nav when user is logged in. Fetches user state
+      // once per page load (browser caches the response so cost is minimal).
       fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
         .then(function(r){ return r.json(); })
         .then(function(data){
@@ -1484,13 +1543,13 @@
 
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="https://www.geneticmatrix.com/register/" class="btn-glow btn-scale bg-gm-green hover:bg-gm-green-dark text-white text-center font-semibold py-3.5 px-10 rounded-xl transition text-sm md:text-base min-w-[240px]">
+                    <a href="https://www.geneticmatrix.com/register/" class="btn-glow btn-scale gm-logged-out-only bg-gm-green hover:bg-gm-green-dark text-white text-center font-semibold py-3.5 px-10 rounded-xl transition text-sm md:text-base min-w-[240px]">
                         Créer un Compte Gratuit
                     </a>
                     <a href="/celebrities/" class="btn-scale bg-gm-pink hover:bg-[#e04d63] text-white text-center font-semibold py-3.5 px-10 rounded-xl transition text-sm md:text-base min-w-[240px]">
                         Rechercher Ici
                     </a>
-                    <a href="https://www.geneticmatrix.com/plans-features/" class="btn-scale border-2 border-white text-white text-center font-semibold py-3.5 px-10 rounded-xl hover:bg-white hover:text-gm-dark transition text-sm md:text-base min-w-[240px]">
+                    <a href="https://www.geneticmatrix.com/plans-features/" class="btn-scale gm-logged-out-only border-2 border-white text-white text-center font-semibold py-3.5 px-10 rounded-xl hover:bg-white hover:text-gm-dark transition text-sm md:text-base min-w-[240px]">
                         Voir Nos Forfaits
                     </a>
                 </div>
@@ -1499,7 +1558,7 @@
     </section>
 
     <!-- ==================== START WITH YOUR OWN CHART ==================== -->
-    <section class="pb-14 md:pb-20 pt-4 bg-white">
+    <section class="gm-logged-out-only pb-14 md:pb-20 pt-4 bg-white">
         <div class="max-w-6xl mx-auto px-6">
             <div class="bg-[#ede8f5] rounded-2xl p-10 md:p-14 text-center">
                 <h2 class="text-2xl md:text-3xl font-bold text-gm-dark mb-4">Commencez avec Votre Propre Carte</h2>
