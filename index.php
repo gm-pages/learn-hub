@@ -1487,10 +1487,10 @@
 
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="https://www.geneticmatrix.com/register/" class="btn-glow btn-scale bg-gm-green hover:bg-gm-green-dark text-white text-center font-semibold py-3.5 px-10 rounded-xl transition text-sm md:text-base min-w-[240px]">
+                    <a href="https://www.geneticmatrix.com/register/" class="btn-glow btn-scale gm-logged-out-only bg-gm-green hover:bg-gm-green-dark text-white text-center font-semibold py-3.5 px-10 rounded-xl transition text-sm md:text-base min-w-[240px]">
                         Create Free Account
                     </a>
-                    <a href="https://www.geneticmatrix.com/plans-features/" class="btn-scale border-2 border-white text-white text-center font-semibold py-3.5 px-10 rounded-xl hover:bg-white hover:text-gm-dark transition text-sm md:text-base min-w-[240px]">
+                    <a href="https://www.geneticmatrix.com/plans-features/" class="btn-scale gm-logged-out-only border-2 border-white text-white text-center font-semibold py-3.5 px-10 rounded-xl hover:bg-white hover:text-gm-dark transition text-sm md:text-base min-w-[240px]">
                         See Our Plans
                     </a>
                 </div>
@@ -1499,7 +1499,7 @@
     </section>
 
     <!-- ==================== START WITH YOUR OWN CHART ==================== -->
-    <section class="pb-14 md:pb-20 pt-4 bg-white">
+    <section class="gm-logged-out-only pb-14 md:pb-20 pt-4 bg-white">
         <div class="max-w-6xl mx-auto px-6">
             <div class="bg-[#ede8f5] rounded-2xl p-10 md:p-14 text-center">
                 <h2 class="text-2xl md:text-3xl font-bold text-gm-dark mb-4">Start With Your Own Chart</h2>
