@@ -189,7 +189,7 @@
         <div id="gm-mobile-menu" style="display:none" class="lg:hidden bg-white border-t border-gray-100 px-6 py-4">
             <div class="flex flex-col gap-3">
                 <a href="/learn-hub/" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition">
-                    <img src="/learn-hub/assets/menu-icon-hub.svg" alt="" class="w-5 h-5"> Learn Hub
+                    <img src="/learn-hub/assets/menu-icon-hub.svg" alt="" class="w-5 h-5"> Centro de Aprendizagem
                 </a>
                 <a href="/celebrities/" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition">
                     <img src="/learn-hub/assets/menu-icon-celebrity.svg" alt="" class="w-5 h-5"> Pesquisa de Celebridades
@@ -675,7 +675,7 @@
     })();</script>
 <!-- Breadcrumb -->
     <div class="max-w-5xl mx-auto px-6 pt-4 pb-2">
-        <a href="/learn-hub/" class="text-sm text-gm-purple hover:text-gm-dark font-medium transition">&larr; Voltar ao Learn Hub</a>
+        <a href="/learn-hub/" class="text-sm text-gm-purple hover:text-gm-dark font-medium transition">&larr; Voltar ao Centro de Aprendizagem</a>
     </div>
 
     <!-- Hero -->
@@ -727,16 +727,16 @@
                 <div class="text-center md:text-left">
                     <img src="/learn-hub/assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
                     <p class="text-sm text-gray-600 mb-1">&copy; <script>document.write(new Date().getFullYear())</script> Genetic Matrix LLC.</p>
-                    <p class="text-sm text-gray-600 mb-2">All rights reserved.</p>
+                    <p class="text-sm text-gray-600 mb-2">Todos os direitos reservados.</p>
                     <p class="text-sm">
-                        <a href="https://www.geneticmatrix.com/privacy/" class="text-gray-700 underline hover:text-gray-900">Privacy, Terms and Conditions</a>
+                        <a href="https://www.geneticmatrix.com/privacy/" class="text-gray-700 underline hover:text-gray-900">Privacidade, Termos e Condições</a>
                         <span class="mx-1">&bull;</span>
                         <a href="https://www.geneticmatrix.com/faq/" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
                     </p>
                 </div>
                 <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
-                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Subscribe to Our Newsletter</h3>
-                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Sign up to our newsletter to receive updates, offers, new releases, and everything related to Genetic Matrix.</p>
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Subscreva a nossa newsletter</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Inscreva-se para receber atualizações, ofertas, novos lançamentos e tudo o que está relacionado com Genetic Matrix.</p>
                     <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
                         <input type="email" placeholder="Your Email Address" class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400">
                         <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
@@ -745,14 +745,14 @@
                     </form>
                 </div>
                 <div class="text-center md:text-right">
-                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connect With Us</h3>
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Ligue-se a nós</h3>
                     <div class="flex justify-center md:justify-end gap-3 mb-4">
                         <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-fb.svg" alt="Facebook" class="w-10 h-10"></a>
                         <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-x.svg" alt="X" class="w-10 h-10"></a>
                         <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-insta.svg" alt="Instagram" class="w-10 h-10"></a>
                         <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-yt.svg" alt="YouTube" class="w-10 h-10"></a>
                     </div>
-                    <a href="https://www.geneticmatrix.com/contact/" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Get in Touch</a>
+                    <a href="https://www.geneticmatrix.com/contact/" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Entre em contacto</a>
                 </div>
             </div>
         </div>
@@ -862,7 +862,7 @@
                         ${grouped[letter].map(t => {
                             const catClass = 'cat-' + t.category.replace('/', '-');
                             const aliasText = t.aliases && t.aliases.length ? `<span class="text-gray-400 text-xs ml-2">(${t.aliases.map(highlight).join(', ')})</span>` : '';
-                            const urlLink = t.url ? `<a href="${t.url}" class="text-gm-green text-xs hover:underline ml-2">View on GM &rarr;</a>` : '';
+                            const urlLink = t.url ? `<a href="${t.url}" class="text-gm-green text-xs hover:underline ml-2">Ver na GM &rarr;</a>` : '';
                             return `
                             <div class="bg-white rounded-lg border border-gray-200 p-4" id="term-${t.id}">
                                 <div class="flex items-start justify-between mb-1">
