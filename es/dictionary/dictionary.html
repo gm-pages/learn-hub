@@ -759,6 +759,7 @@
     </footer>
 
     <script>
+        window.GM_DICT_CATS = {'Foundation': 'Fundamental', 'Variables': 'Variables', 'Astrology': 'Astrología', 'BG5/Penta': 'BG5/Penta', 'Cycles': 'Ciclos'};
         let dictionary = { terms: [], categories: [] };
         let activeCategory = '';
 
@@ -779,7 +780,8 @@
             container.innerHTML = dictionary.categories.map(cat => {
                 const count = dictionary.terms.filter(t => t.category === cat).length;
                 const catClass = 'cat-' + cat.replace('/', '-');
-                return `<button onclick="setCategory('${cat}')" class="dict-cat-btn category-badge ${catClass} cursor-pointer hover:opacity-80" data-cat="${cat}">${cat} (${count})</button>`;
+                const label = (window.GM_DICT_CATS && window.GM_DICT_CATS[cat]) || cat;
+                return `<button onclick="setCategory('${cat}')" class="dict-cat-btn category-badge ${catClass} cursor-pointer hover:opacity-80" data-cat="${cat}">${label} (${count})</button>`;
             }).join('');
         }
 
@@ -835,7 +837,7 @@
 
             terms.sort((a, b) => a.term.localeCompare(b.term));
 
-            document.getElementById('resultCount').textContent = `${terms.length} term${terms.length !== 1 ? 's' : ''}`;
+            document.getElementById('resultCount').textContent = terms.length + ' ' + (terms.length === 1 ? 'término' : 'términos');
             document.getElementById('noResults').classList.toggle('hidden', terms.length > 0);
 
             const grouped = {};
@@ -868,7 +870,7 @@
                                         <h3 class="font-bold text-gray-800">${highlight(t.term)}</h3>
                                         ${aliasText}
                                     </div>
-                                    <span class="category-badge ${catClass} flex-shrink-0">${t.category}</span>
+                                    <span class="category-badge ${catClass} flex-shrink-0">${(window.GM_DICT_CATS && window.GM_DICT_CATS[t.category]) || t.category}</span>
                                 </div>
                                 <p class="text-sm text-gray-600 leading-relaxed mt-2">${highlight(t.definition)}</p>
                                 ${urlLink}
