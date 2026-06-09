@@ -263,123 +263,219 @@
 <body class="bg-white text-gray-700">
 
  <!-- ==================== NAV BAR ==================== -->
-                 <nav class="bg-white border-b border-gray-200 sticky top-0 z-50" style="font-family: Bilo, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;">
-        <div class="w-full px-[30px] flex items-center h-[80px]">
-            <!-- Logo -->
-            <a id="gm-logo-link" href="/" class="flex-shrink-0">
-                <img src="/learn-hub/assets/logo.svg" alt="Genetic Matrix - Know you" class="h-8 md:h-14">
-            </a>
-
-            <!-- Mobile: Cart + Hamburger (right side) -->
-            <div class="lg:hidden flex items-center gap-4">
-                <a href="https://www.geneticmatrix.com/cart/" title="Carrinho" class="px-3 relative">
-                    <img src="/learn-hub/assets/icon-cart.svg" alt="Carrinho" class="h-5 w-auto">
-                    <span id="gm-cart-count-mobile" class="absolute top-[2px] left-[55%] -translate-x-1/2 text-gm-green font-bold text-[10px] leading-none hidden">0</span>
-                </a>
-                <button id="gm-hamburger" class="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition">
-                    <svg class="w-6 h-6 text-gm-gray" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                 <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-[1400px] mx-auto px-[30px] flex items-center h-[80px]">
+        <a href="https://www.geneticmatrix.com/pt-pt/" class="flex-shrink-0 mr-auto">
+            <img src="/learn-hub/assets/logo.svg" alt="Genetic Matrix" class="h-11">
+        </a>
+        <div class="lg:hidden flex items-center gap-4">
+            <button id="gm-hamburger" class="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition">
+                <svg class="w-6 h-6 text-gm-gray" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+        <div class="hidden lg:flex items-center gap-4">
+            <!-- Products dropdown: Talking Charts + Reports (future Career, Sleep, etc. land here) -->
+            <div class="relative group">
+                <button class="text-gm-gray hover:text-gray-900 text-xl font-medium transition whitespace-nowrap flex items-center gap-1">
+                    Produtos <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                 </button>
+                <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-[320px] bg-white rounded-xl shadow-xl border border-gray-100 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div class="flex flex-col gap-1">
+                        <a href="https://www.geneticmatrix.com/pt-pt/relatorios-geneticmatrix/" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
+                            <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="https://www.geneticmatrix.com/wp-content/themes/geneticmatrix/assets/icons/report%20icon%20(2).svg" alt="" class="w-5 h-5"></div>
+                            <div><div class="text-sm font-semibold text-gray-800">Relatórios</div><div class="text-xs text-gm-text-light mt-0.5">Guias escritos aprofundados para a sua carta</div></div>
+                        </a>
+                        <a href="https://www.geneticmatrix.com/pt-pt/graficos-falantes/" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
+                            <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="https://www.geneticmatrix.com/wp-content/themes/geneticmatrix/assets/icons/GM%20Icon%20Talking%20Chart.svg" alt="" class="w-5 h-5"></div>
+                            <div><div class="text-sm font-semibold text-gray-800">Gráficos Falantes</div><div class="text-xs text-gm-text-light mt-0.5">Interpretações em áudio para a sua carta</div></div>
+                        </a>
+                                                <a href="https://www.geneticmatrix.com/pt-pt/free-foundation-chart/" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition gm-logged-out-only">
+                            <div class="w-7 h-7 bg-gm-green/15 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-4 h-4 text-gm-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+                            <div class="flex-1"><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Carta Gratuita</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratuito</span></div><div class="text-xs text-gm-text-light mt-0.5">Crie a sua carta em segundos</div></div>
+                        </a>
+                                            </div>
+                </div>
             </div>
-
-            <!-- Desktop Nav -->
-            <div class="hidden lg:flex flex-1 items-center justify-end">
-                <!-- Calendar (shown when logged in) -->
-                <a id="gm-calendar-icon" href="https://www.geneticmatrix.com/calendar/" class="hidden mx-3 items-center justify-center w-9 h-9 rounded-lg border border-[#dee2e6] hover:border-gm-purple/30 hover:bg-gray-50 transition" title="Calendar">
-                    <img src="/learn-hub/assets/icon-calendar.svg" alt="Calendar" class="h-5 w-5">
-                </a>
-                <!-- Reports -->
-                <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="mx-3 flex items-center justify-center w-9 h-9 rounded-lg border border-[#dee2e6] hover:border-gm-purple/30 hover:bg-gray-50 transition" title="Relatórios">
-                    <img src="/learn-hub/assets/icon-report.svg" alt="Relatórios" class="h-6 w-6">
-                </a>
-                <!-- Talking Charts -->
-                <a href="https://www.geneticmatrix.com/talking-charts/" class="mx-3 flex items-center justify-center w-9 h-9 rounded-lg border border-[#dee2e6] hover:border-gm-purple/30 hover:bg-gray-50 transition" title="Talking Charts">
-                    <img src="/learn-hub/assets/icon-talking-chart.svg" alt="Talking Charts" class="h-5 w-5">
-                </a>
-                <!-- Free Chart (hidden when logged in) -->
-                <a id="gm-free-chart" href="#" class="px-3 text-gm-gray hover:text-gray-900 text-base font-medium" data-action="free-chart-popup">Gráfico Grátis</a>
-                <!-- Learn Dropdown -->
-                <div class="relative group">
-                    <button class="px-3 text-gm-purple hover:text-gm-dark text-base font-semibold flex items-center gap-1">
-                        Aprender
-                        <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </button>
-                    <div class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[420px] bg-white rounded-xl shadow-xl border border-gray-100 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                        <div class="grid grid-cols-2 gap-1">
-                            <a href="/learn-hub/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
-                                <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-hub.svg" alt="Centro de Aprendizagem" class="w-6 h-6"></div>
-                                <div><div class="text-sm font-semibold text-gray-800">Centro de Aprendizagem</div><div class="text-xs text-gm-text-light mt-0.5">Educação HD e Astrologia</div></div>
-                            </a>
-                            <a href="/celebrities/" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
-                                <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-celebrity.svg" alt="Pesquisa de Celebridades" class="w-6 h-6"></div>
-                                <div><div class="text-sm font-semibold text-gray-800">Pesquisa de Celebridades</div><div class="text-xs text-gm-text-light mt-0.5">Mais de 88.600 cartas de celebridades</div></div>
-                            </a>
-                            <a href="/learn-hub/pt/dictionary/dictionary.html" class="flex items-start gap-3 p-1 rounded-lg hover:bg-gm-light transition">
-                                <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-dictionary.svg" alt="Dicionário" class="w-6 h-6"></div>
-                                <div><div class="text-sm font-semibold text-gray-800">Dicionário</div><div class="text-xs text-gm-text-light mt-0.5">Termos HD e Astrologia</div></div>
-                            </a>
-                        </div>
+                                    <div class="relative group">
+                <button class="text-gm-gray hover:text-gray-900 text-xl font-medium transition whitespace-nowrap flex items-center gap-1">
+                    Explorar <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div style="width: 560px;" class="absolute top-full left-1/2 -translate-x-1/2 pt-4 bg-white rounded-xl shadow-xl border border-gray-100 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div class="grid grid-cols-2 gap-1">
+                        <a href="/learn-hub/" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
+                            <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-hub.svg" alt="" class="w-5 h-5"></div>
+                            <div><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Centro de aprendizagem</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratuito</span></div><div class="text-xs text-gm-text-light mt-0.5">70+ guias aprofundados, gratuitos para todos</div></div>
+                        </a>
+                        <a href="/celebrities/" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
+                            <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-celebrity.svg" alt="" class="w-5 h-5"></div>
+                            <div><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Pesquisa de Celebridades</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratuito</span></div><div class="text-xs text-gm-text-light mt-0.5">90.000+ cartas de celebridades, livres para explorar</div></div>
+                        </a>
+                        <a href="/learn-hub/dictionary/dictionary.html" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
+                            <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-dictionary.svg" alt="" class="w-5 h-5"></div>
+                            <div><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Dicionário</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratuito</span></div><div class="text-xs text-gm-text-light mt-0.5">Todos os termos HD e de Astrologia explicados</div></div>
+                        </a>
                     </div>
                 </div>
-                <!-- Our Plans -->
-                <a href="https://www.geneticmatrix.com/plans-features/" class="px-3 text-gm-gray hover:text-gray-900 text-base font-medium">Os Nossos Planos</a>
-                <!-- Cart -->
-                <a href="https://www.geneticmatrix.com/cart/" title="Carrinho" class="px-3 relative">
-                    <img src="/learn-hub/assets/icon-cart.svg" alt="Carrinho" class="h-5 w-auto">
-                    <span id="gm-cart-count" class="absolute top-[2px] left-[55%] -translate-x-1/2 text-gm-green font-bold text-[10px] leading-none hidden">0</span>
-                </a>
-                <!-- Language Switcher -->
+            </div>
+            <a href="https://www.geneticmatrix.com/pt-pt/caracteristicas-dos-planos/" class="text-gm-gray hover:text-gray-900 text-xl font-medium transition whitespace-nowrap">Os Nossos Planos</a>
+            <!-- Language Switcher -->
                 <div class="relative group px-3">
-                    <button class="flex items-center gap-2 text-gm-gray hover:text-gray-900 text-base">
+                                        <button class="flex items-center gap-2 text-gm-gray hover:text-gray-900 text-base">
+                        <span class="flag-icon flag-icon-pt"></span>
+                        <span>Português</span>
                         <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                        <span id="gm-lang-current">English</span>
-                        <span id="gm-lang-flag" class="flag-icon flag-icon-gb"></span>
                     </button>
-                    <div class="absolute top-full right-0 mt-4 w-44 bg-white rounded-xl shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                        <a data-lang="pt" href="#" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-pt"></span> Português</a>
-                        <a data-lang="nl" href="#" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-nl"></span> Nederland</a>
-                        <a data-lang="it" href="#" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-it"></span> Italiano</a>
-                        <a data-lang="fr" href="#" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-fr"></span> Français</a>
-                        <a data-lang="es" href="#" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-es"></span> Español</a>
-                        <a data-lang="de" href="#" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-de"></span> Deutsch</a>
-                        <a data-lang="en" href="#" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-gb"></span> English</a>
+                     
+                    <div class="absolute top-full left-0 mt-4 w-44 bg-white rounded-xl shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                       
+                        <a data-lang="pt" href="https://www.geneticmatrix.com/pt-pt/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-pt"></span> Português</a>
+                            
+                        <a data-lang="nl" href="https://www.geneticmatrix.com/nl/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-nl"></span> Nederlands</a>
+                            
+                        <a data-lang="it" href="https://www.geneticmatrix.com/it/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-it"></span> Italiano</a>
+                            
+                        <a data-lang="fr" href="https://www.geneticmatrix.com/fr/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-fr"></span> Français</a>
+                            
+                        <a data-lang="es" href="https://www.geneticmatrix.com/es/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-es"></span> Español</a>
+                            
+                        <a data-lang="de" href="https://www.geneticmatrix.com/de/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-de"></span> Deutsch</a>
+                            
+                        <a data-lang="en" href="https://www.geneticmatrix.com/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-gb"></span> English</a>
+                                             </div>
+                </div>
+                                                    <a href="https://www.geneticmatrix.com/pt-pt/conecte-se/" class="text-gm-gray hover:text-gray-900 text-xl font-medium transition whitespace-nowrap gm-logged-out-only">Entrar</a>
+                <a href="https://www.geneticmatrix.com/pt-pt/registrar/" class="bg-gm-green hover:bg-gm-green-dark text-white text-base font-semibold px-5 py-2 rounded-full transition cursor-pointer gm-logged-out-only">Registar</a>
+                <a href="https://www.geneticmatrix.com/cart/"
+                   class="gm-logged-in-only flex items-center pl-1 pr-3 -ml-2 text-gm-gray hover:text-gm-purple transition"
+                   style="display:none" aria-label="Carrinho" title="Carrinho">
+                    <span class="relative inline-block" style="line-height: 0;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 36.334 28.226" aria-hidden="true">
+                            <g transform="translate(-1096.613 -119.196)">
+                                <g transform="translate(1109.379 141.823)">
+                                    <path d="M1.55-1A2.55,2.55,0,1,1-1,1.55,2.553,2.553,0,0,1,1.55-1Z" transform="translate(1 1)" fill="currentColor"/>
+                                    <path d="M1.55-1.5A3.05,3.05,0,1,1-1.5,1.55,3.053,3.053,0,0,1,1.55-1.5Zm0,5.1A2.05,2.05,0,1,0-.5,1.55,2.052,2.052,0,0,0,1.55,3.6Z" transform="translate(1 1)" fill="currentColor"/>
+                                    <path d="M1.55-1A2.55,2.55,0,1,1-1,1.55,2.553,2.553,0,0,1,1.55-1Z" transform="translate(15.025 1)" fill="currentColor"/>
+                                    <path d="M1.55-1.5A3.05,3.05,0,1,1-1.5,1.55,3.053,3.053,0,0,1,1.55-1.5Zm0,5.1A2.05,2.05,0,1,0-.5,1.55,2.052,2.052,0,0,0,1.55,3.6Z" transform="translate(15.025 1)" fill="currentColor"/>
+                                </g>
+                                <g transform="translate(1096.773 119.356)">
+                                    <path d="M31.491,22.4H14.555a1.5,1.5,0,0,1-1.4-.959L6.406,4H2.5a1.5,1.5,0,0,1,0-3H7.434a1.5,1.5,0,0,1,1.4.959L15.583,19.4h14.9l3.962-9.737a1.5,1.5,0,1,1,2.779,1.131L32.88,21.467A1.5,1.5,0,0,1,31.491,22.4Z" transform="translate(-1.16 -1.16)" fill="currentColor"/>
+                                </g>
+                            </g>
+                        </svg>
+                        <span id="gm-cart-count" class="absolute text-gm-pink text-xs font-bold leading-none" style="left:60%; top:40%; transform:translate(-50%,-50%); display:none;"></span>
+                    </span>
+                </a>
+                <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="gm-logged-in-only text-gm-gray hover:text-gray-900 text-xl font-medium transition whitespace-nowrap" style="display:none">Terminar Sessão</a>
+                <a href="https://www.geneticmatrix.com/user-home/" class="gm-logged-in-only bg-gm-green hover:bg-gm-green-dark text-white text-base font-semibold px-5 py-2 rounded-full transition" style="display:none">O Meu Hub</a>
+
                     </div>
-                </div>
-                <!-- Logged OUT -->
-                <div id="gm-logged-out" class="flex items-center">
-                    <a href="https://www.geneticmatrix.com/my-account/" class="px-3 text-gm-gray hover:text-gray-900 text-base font-medium" class="px-3">Iniciar Sessão</a>
-                    <a href="https://www.geneticmatrix.com/register/" class="bg-red-500 hover:bg-red-600 text-white text-base font-semibold px-5 py-2 rounded-full transition">Registar</a>
-                </div>
-                <!-- Logged IN -->
-                <div id="gm-logged-in" class="hidden items-center">
-                    <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="px-3 text-gm-gray hover:text-gray-900 text-base font-medium" class="px-3">Terminar Sessão</a>
-                    <a href="https://www.geneticmatrix.com/user-home/" class="bg-gm-green hover:bg-gm-green-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition">O Meu Hub</a>
-                </div>
-            </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="gm-mobile-menu" style="display:none" class="lg:hidden bg-white border-t border-gray-100 px-6 py-4">
+        <div class="flex flex-col gap-3">
+            <!-- Auth block FIRST so returning users don't hunt for Sign In (2026-05-29) -->
+                            <a href="https://www.geneticmatrix.com/pt-pt/registrar/" class="inline-block bg-gm-green text-white text-sm font-semibold px-5 py-2 rounded-full transition text-center cursor-pointer gm-logged-out-only">Registar</a>
+                <a href="https://www.geneticmatrix.com/pt-pt/conecte-se/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition gm-logged-out-only">Entrar</a>
+                <a href="https://www.geneticmatrix.com/user-home/" class="gm-logged-in-only inline-block bg-gm-green text-white text-sm font-semibold px-5 py-2 rounded-full transition text-center" style="display:none">O Meu Hub</a>
+                <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="gm-logged-in-only py-2 text-sm text-gm-gray hover:text-gray-900 transition" style="display:none">Terminar Sessão</a>
 
+                        <div class="border-t border-gray-100 my-1"></div>
+            <a href="https://www.geneticmatrix.com/pt-pt/relatorios-geneticmatrix/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Relatórios</a>
+            <a href="https://www.geneticmatrix.com/pt-pt/graficos-falantes/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Gráficos Falantes</a>
+                        <a href="https://www.geneticmatrix.com/free-foundation-chart/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition gm-logged-out-only">Carta Gratuita</a>
+                                    <div class="border-t border-gray-100 my-1"></div>
+            <a href="/learn-hub/" class="py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition flex items-center gap-1.5">Centro de aprendizagem<span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratuito</span></a>
+            <a href="/celebrities/" class="py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition flex items-center gap-1.5">Pesquisa de Celebridades<span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratuito</span></a>
+            <a href="/learn-hub/dictionary/dictionary.html" class="py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition flex items-center gap-1.5">Dicionário<span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratuito</span></a>
+            <div class="border-t border-gray-100 my-1"></div>
+            <a href="https://www.geneticmatrix.com/pt-pt/caracteristicas-dos-planos/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Os Nossos Planos</a>
+            <!-- Language Switcher -->
+                <div class="relative group px-3">
+                                        <button class="flex items-center gap-2 text-gm-gray hover:text-gray-900 text-base">
+                        <span class="flag-icon flag-icon-pt"></span>
+                        <span>Português</span>
+                        <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                     
+                    <div class="absolute top-full left-0 mt-4 w-44 bg-white rounded-xl shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                            <a data-lang="pt" href="https://www.geneticmatrix.com/pt-pt/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-pt"></span> Português</a>
+                                                 <a data-lang="nl" href="https://www.geneticmatrix.com/nl/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-nl"></span> Nederlands</a>
+                                                 <a data-lang="it" href="https://www.geneticmatrix.com/it/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-it"></span> Italiano</a>
+                                                 <a data-lang="fr" href="https://www.geneticmatrix.com/fr/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-fr"></span> Français</a>
+                                                 <a data-lang="es" href="https://www.geneticmatrix.com/es/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-es"></span> Español</a>
+                                                 <a data-lang="de" href="https://www.geneticmatrix.com/de/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-de"></span> Deutsch</a>
+                                                 <a data-lang="en" href="https://www.geneticmatrix.com/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-gb"></span> English</a>
+                                             </div>
+                </div>
         </div>
+    </div>
+</nav>
+<script id="gm-calendar-auth">(function(){
+  // Toggle nav between logged-in and logged-out views via /learn-hub/api/user-state.php.
+  // .gm-logged-out-only: visible by default, hidden when logged in.
+  // .gm-logged-in-only:  hidden  by default (inline display:none), shown when logged in.
+  fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      if (data && data.logged_in) {
+        document.querySelectorAll('.gm-logged-out-only').forEach(function(el){ el.style.display = 'none'; });
+        document.querySelectorAll('.gm-logged-in-only').forEach(function(el){ el.style.display = ''; });
+      }
+    })
+    .catch(function(){});
+})();</script>
+<script id="gm-lang-switcher">(function(){
+  var LANGS = {en:"English",de:"Deutsch",es:"Español",fr:"Français",it:"Italiano",nl:"Nederlands",pt:"Português"};
+  var FLAGS = {en:"gb",de:"de",es:"es",fr:"fr",it:"it",nl:"nl",pt:"pt"};
+  var URL_TO_WP = {pt: "pt-pt"};
 
-        <!-- Mobile Menu -->
-        <div id="gm-mobile-menu" style="display:none" class="lg:hidden bg-white border-t border-gray-100 px-6 py-4">
-            <div class="flex flex-col gap-3">
-                <a href="/learn-hub/" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition">
-                    <img src="/learn-hub/assets/menu-icon-hub.svg" alt="" class="w-5 h-5"> Learn Hub
-                </a>
-                <a href="/celebrities/" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition">
-                    <img src="/learn-hub/assets/menu-icon-celebrity.svg" alt="" class="w-5 h-5"> Pesquisa de Celebridades
-                </a>
-                <a href="/learn-hub/pt/dictionary/dictionary.html" class="flex items-center gap-3 py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition">
-                    <img src="/learn-hub/assets/menu-icon-dictionary.svg" alt="" class="w-5 h-5"> Dicionário
-                </a>
-                <div class="border-t border-gray-100 my-1"></div>
-                <a href="#" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition" data-action="free-chart-popup">Gráfico Grátis</a>
-                <a href="https://www.geneticmatrix.com/plans-features/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Os Nossos Planos</a>
-                <div class="border-t border-gray-100 my-1"></div>
-                <a href="https://www.geneticmatrix.com/user-home/" class="py-2 text-sm font-semibold text-gm-green hover:text-gm-green-dark transition">O Meu Hub</a>
-                <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition" class="px-3">Terminar Sessão</a>
-            </div>
-        </div>
-    </nav>
-    <script id="gm-calendar-auth">(function(){
+  var path = window.location.pathname;
+  var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
+  var current = m ? m[1] : "en";
+  var rest = m ? path.substring(("/learn-hub/" + current).length) : path.replace(/^\/learn-hub/, "");
+  if (!rest) rest = "/";
+
+  function getCookie(name){
+    var v = ("; " + document.cookie).split("; " + name + "=");
+    return v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
+  }
+  function setCookie(name, value){
+    var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
+    var parts = location.hostname.split('.');
+    var domain = parts.length >= 2 ? "; domain=." + parts.slice(-2).join('.') : "";
+    document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
+  }
+
+  var cookieLang = getCookie("gm_lang");
+  if (cookieLang !== current) setCookie("gm_lang", current);
+
+  document.querySelectorAll('.flag-icon').forEach(function(flag){
+    if (flag.parentElement && flag.parentElement.tagName === 'BUTTON') {
+      flag.className = "flag-icon flag-icon-" + (FLAGS[current] || "gb");
+      var sib = flag.nextElementSibling;
+      while (sib && sib.tagName !== 'SPAN') sib = sib.nextElementSibling;
+      if (sib) sib.textContent = LANGS[current];
+    }
+  });
+
+  var logo = document.getElementById("gm-logo-link");
+  if (logo) {
+    var wpLang = URL_TO_WP[current] || current;
+    logo.href = current === "en" ? "/" : ("/" + wpLang + "/");
+  }
+
+  document.querySelectorAll('a[data-lang]').forEach(function(a){
+    var lang = a.getAttribute('data-lang');
+    a.href = lang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + lang + rest);
+    if (lang === current) a.classList.add('text-gm-purple','font-semibold');
+    a.addEventListener('click', function(){ setCookie("gm_lang", lang); });
+  });
+
+  var btn = document.getElementById('gm-hamburger');
+  var menu = document.getElementById('gm-mobile-menu');
+  if (btn && menu) btn.addEventListener('click', function(){ menu.style.display = menu.style.display === 'none' ? 'block' : 'none'; });
+})();</script>
+<script id="gm-calendar-auth">(function(){
       // Show calendar icon in nav when user is logged in. Fetches user state
       // once per page load (browser caches the response so cost is minimal).
       // Also hides any element marked .gm-logged-out-only (e.g. signup CTAs
