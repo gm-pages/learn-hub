@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link id="gm-flag-icons" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css">
+<script id="gm-lang-redirect">(function(){
+  var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
+  var path = window.location.pathname;
+  var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
+  var current = m ? m[1] : "en";
+  var v = ("; " + document.cookie).split("; gm_lang=");
+  var cookieLang = v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
+
+  // URL is the source of truth on direct navigation. If the URL has an
+  // explicit language prefix, trust it and update the cookie to match.
+  // Only redirect when the URL is the default (English, no prefix) AND
+  // the cookie indicates a non-default language preference.
+  if (current !== "en") {
+    if (cookieLang !== current) {
+      var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
+      var parts = location.hostname.split('.');
+      var domain = parts.length >= 2 ? "; domain=." + parts.slice(-2).join('.') : "";
+      document.cookie = "gm_lang=" + current + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
+    }
+    return;
+  }
+
+  // current === "en" (no language prefix in URL). Honor cookie if non-en.
+  if (cookieLang && SUPPORTED.indexOf(cookieLang) !== -1 && cookieLang !== "en") {
+    var rest = path.replace(/^\/learn-hub/, "");
+    if (!rest) rest = "/";
+    var target = "/learn-hub/" + cookieLang + rest;
+    window.location.replace(target + window.location.search + window.location.hash);
+  }
+})();</script>
+
+    <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Hybride | Positions Sidérales + Éléments Tropicaux Human Design - Genetic Matrix</title>
+    <meta name="description" content="Le Calcul Hybride sur Genetic Matrix garde vos Planètes, Portes et Lignes dans le cadre Tropical sur lequel Human Design a été construit, et superpose les Signes Sidéraux par-dessus. Mêmes mécaniques HD, vraies étiquettes de signe du ciel. Unique à Genetic Matrix.">
+    <meta name="keywords" content="calcul hybride, human design hybride, human design sidéral, hybride sidéral tropical, positions sidérales portes tropicales, genetic matrix hybride, méthode de thème hybride, enthousiasmes sidéraux, positions sidérales human design, positions du ciel réel">
+    <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/calculations/hybrid-calculation.html">    <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/calculations/hybrid-calculation.html">
+    <link rel="alternate" hreflang="de" href="https://www.geneticmatrix.com/learn-hub/de/calculations/hybrid-calculation.html">
+    <link rel="alternate" hreflang="es" href="https://www.geneticmatrix.com/learn-hub/es/calculations/hybrid-calculation.html">
+    <link rel="alternate" hreflang="fr" href="https://www.geneticmatrix.com/learn-hub/fr/calculations/hybrid-calculation.html">
+    <link rel="alternate" hreflang="it" href="https://www.geneticmatrix.com/learn-hub/it/calculations/hybrid-calculation.html">
+    <link rel="alternate" hreflang="nl" href="https://www.geneticmatrix.com/learn-hub/nl/calculations/hybrid-calculation.html">
+    <link rel="alternate" hreflang="pt" href="https://www.geneticmatrix.com/learn-hub/pt/calculations/hybrid-calculation.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.geneticmatrix.com/learn-hub/calculations/hybrid-calculation.html">
+<meta property="og:title" content="Calcul Hybride - Positions Sidérales + Éléments Tropicaux Human Design | Genetic Matrix">
+    <meta property="og:description" content="Planètes Tropicales, Portes et Lignes, mêmes mécaniques Human Design, avec Signes Sidéraux par-dessus. Unique à Genetic Matrix.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.geneticmatrix.com/learn-hub/calculations/hybrid-calculation.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gm-purple': '#6E5898',
+                        'gm-purple-light': '#9080B1',
+                        'gm-purple-soft': '#AC94D8',
+                        'gm-dark': '#3C2864',
+                        'gm-darker': '#2e1f4d',
+                        'gm-green': '#54931E',
+                        'gm-green-dark': '#468018',
+                        'gm-green-light': '#8EB86A',
+                        'gm-pink': '#F66378',
+                        'gm-orange': '#E8961D',
+                        'gm-gray': '#707070',
+                        'gm-light': '#F7F8F9',
+                        'gm-card': '#FAFBFC',
+                        'gm-card-active': '#F4F0FC',
+                        'gm-border': '#D8D4E4',
+                        'gm-warning': '#F8F8E8',
+                        'gm-text-dark': '#1A1A2E',
+                        'gm-text': '#444444',
+                        'gm-text-light': '#949494',
+                    },
+                    fontFamily: {
+                        'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        details summary { cursor: pointer; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+        details[open] summary::after { content: '\2212'; }
+        details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+
+    <!-- Article JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Calcul Hybride - Planètes, Portes et Lignes Tropicaux avec Signes Sidéraux",
+        "description": "Le Calcul Hybride sur Genetic Matrix garde vos Planètes, Portes et Lignes dans le cadre Tropical sur lequel Human Design a été construit, et superpose les Signes Sidéraux par-dessus. Mêmes mécaniques Human Design, vraies étiquettes de signe. Unique à Genetic Matrix.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Genetic Matrix",
+            "url": "https://www.geneticmatrix.com"
+        },
+        "mainEntityOfPage": "https://www.geneticmatrix.com/learn-hub/calculations/hybrid-calculation.html",
+        "datePublished": "2026-07-06",
+        "dateModified": "2026-07-06"
+    }
+    </script>
+
+    <!-- FAQ JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Qu'est-ce que le Calcul Hybride ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le Calcul Hybride est une méthode Genetic Matrix qui garde les Planètes, Portes et Lignes dans le cadre Tropical sur lequel Human Design a été construit, et affiche les Signes Sidéraux par-dessus. Les mécaniques Human Design sont identiques à un thème Tropical, seules les étiquettes de signe changent vers celles que vous verriez dans un thème Sidéral."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Qu'est-ce qui change et qu'est-ce qui reste pareil dans le Hybride ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tout ce qui est Human Design, le Type, l'Autorité, la Définition, le Profil, les Portes, les Lignes, les Canaux, la Croix d'Incarnation, reste exactement comme dans votre thème Tropical. Ce qui change, c'est le Signe auquel chaque planète est assignée. Là où le Tropical dit Soleil en Bélier, le Hybride peut montrer Soleil en Poissons, parce que les signes Sidéraux sont décalés d'environ 24 degrés par rapport au Tropical."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "En quoi le Hybride est-il différent du Sidéral ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le Sidéral standard recalcule tout, les Planètes, Portes et Lignes se décalent tous d'environ 24 degrés. Votre Type, Définition, Profil et Bodygraph peuvent changer complètement. Le Hybride ne fait pas cela. Il garde les Planètes, Portes et Lignes Tropicaux, donc les mécaniques Human Design sont les mêmes que dans votre thème Tropical, et change seulement les étiquettes de Signe vers le Sidéral."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "En quoi le Hybride est-il différent du Tropical ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le contenu Human Design, les Planètes, Portes, Lignes, tout, est identique entre le Tropical et le Hybride. La seule différence est les Signes. Le Tropical étiquette les planètes avec les Signes Tropicaux (Soleil en Bélier à 5 degrés). Le Hybride étiquette la même planète avec son Signe Sidéral (Soleil en Poissons). Rien dans votre thème Human Design ne change, seulement le contexte du Signe astrologique."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Pour qui est le Calcul Hybride ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le Hybride est pour toute personne qui travaille avec l'astrologie Sidérale, les praticiens Védiques, les enthousiastes du sidéral, ceux dont le Soleil se sent plus précis dans le Signe Sidéral, mais qui ne veulent pas perdre les mécaniques Human Design que seul le cadre Tropical produit. Vous obtenez l'histoire du Signe avec laquelle vous résonnez, et le Bodygraph original."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Le Calcul Hybride est-il unique à Genetic Matrix ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui. Le Calcul Hybride est une méthode Genetic Matrix. Ce n'est pas quelque chose que vous trouverez dans la plupart des autres outils Human Design. Nous l'avons créé comme une option pour les praticiens et enthousiastes qui travaillent avec l'astrologie Sidérale mais ne veulent pas perdre les éléments Human Design que seul le cadre Tropical produit."
+                }
+            }
+        ]
+    }
+    </script>
+
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- ==================== NAV BAR ==================== -->
+                                <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-[1400px] mx-auto px-[30px] flex items-center h-[80px]">
+        <a id="gm-logo-link" href="/" class="flex-shrink-0 mr-auto">
+            <img src="/learn-hub/assets/logo.svg" alt="Genetic Matrix" class="h-11">
+        </a>
+        <div class="lg:hidden flex items-center gap-4">
+            <button id="gm-hamburger" class="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition">
+                <svg class="w-6 h-6 text-gm-gray" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+        <div class="hidden lg:flex items-center gap-4">
+            <!-- Products dropdown: Talking Charts + Reports (future Career, Sleep, etc. land here) -->
+            <div class="relative group">
+                <button class="text-gm-gray hover:text-gray-900 text-xl font-medium transition whitespace-nowrap flex items-center gap-1">
+                    Produits <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-[320px] bg-white rounded-xl shadow-xl border border-gray-100 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div class="flex flex-col gap-1">
+                        <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
+                            <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="https://www.geneticmatrix.com/wp-content/themes/geneticmatrix/assets/icons/report%20icon%20(2).svg" alt="" class="w-5 h-5"></div>
+                            <div><div class="text-sm font-semibold text-gray-800">Rapports</div><div class="text-xs text-gm-text-light mt-0.5">Guides écrits approfondis pour votre thème</div></div>
+                        </a>
+                        <a href="https://www.geneticmatrix.com/talking-charts/" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
+                            <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="https://www.geneticmatrix.com/wp-content/themes/geneticmatrix/assets/icons/GM%20Icon%20Talking%20Chart.svg" alt="" class="w-5 h-5"></div>
+                            <div><div class="text-sm font-semibold text-gray-800">Talking Charts</div><div class="text-xs text-gm-text-light mt-0.5">Interprétations audio pour votre thème</div></div>
+                        </a>
+                                                <a href="https://www.geneticmatrix.com/free-foundation-chart/" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition gm-logged-out-only">
+                            <div class="w-7 h-7 bg-gm-green/15 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-4 h-4 text-gm-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+                            <div class="flex-1"><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Thème gratuit</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratuit</span></div><div class="text-xs text-gm-text-light mt-0.5">Générez votre thème en quelques secondes</div></div>
+                        </a>
+                                            </div>
+                </div>
+            </div>
+                        <div class="relative group">
+                <button class="text-gm-gray hover:text-gray-900 text-xl font-medium transition whitespace-nowrap flex items-center gap-1">
+                    Explorez <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div style="width: 560px;" class="absolute top-full left-1/2 -translate-x-1/2 pt-4 bg-white rounded-xl shadow-xl border border-gray-100 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div class="grid grid-cols-2 gap-1">
+                        <a href="/learn-hub/" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
+                            <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-hub.svg" alt="" class="w-5 h-5"></div>
+                            <div><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Learn Hub</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratuit</span></div><div class="text-xs text-gm-text-light mt-0.5">70+ guides approfondis, gratuit pour tous</div></div>
+                        </a>
+                        <a href="/celebrities/" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
+                            <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-celebrity.svg" alt="" class="w-6 h-6"></div>
+                            <div><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Recherche de Célébrités</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratuit</span></div><div class="text-xs text-gm-text-light mt-0.5">90 000+ thèmes de célébrités, gratuit à consulter</div></div>
+                        </a>
+                        <a href="/learn-hub/dictionary/dictionary.html" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
+                            <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-dictionary.svg" alt="" class="w-5 h-5"></div>
+                            <div><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Dictionnaire</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratuit</span></div><div class="text-xs text-gm-text-light mt-0.5">Chaque terme HD et Astrologie expliqué</div></div>
+                        </a>
+                                                <a href="https://www.geneticmatrix.com/astro-calendar/?lang=en" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
+                            <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="https://www.geneticmatrix.com/wp-content/themes/geneticmatrix/assets/icon-transits.svg" alt="" class="w-6 h-6"></div>
+                            <div><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Calendrier Astro</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratuit</span></div><div class="text-xs text-gm-text-light mt-0.5">Transits quotidiens entre l'Astrologie Occidentale, Védique et Human Design</div></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.geneticmatrix.com/plans-features/" class="text-gm-gray hover:text-gray-900 text-xl font-medium transition whitespace-nowrap">Nos plans</a>
+            <!-- Language Switcher -->
+                <div class="relative group px-3">
+                                        <button class="flex items-center gap-2 text-gm-gray hover:text-gray-900 text-base">
+                        <span class="flag-icon flag-icon-gb"></span>
+                        <span>English</span>
+                        <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                     
+                    <div class="absolute top-full left-0 mt-4 w-44 bg-white rounded-xl shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                       
+                        <a data-lang="pt" href="https://www.geneticmatrix.com/pt-pt/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-pt"></span> Português</a>
+                            
+                        <a data-lang="nl" href="https://www.geneticmatrix.com/nl/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-nl"></span> Nederlands</a>
+                            
+                        <a data-lang="it" href="https://www.geneticmatrix.com/it/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-it"></span> Italiano</a>
+                            
+                        <a data-lang="fr" href="https://www.geneticmatrix.com/fr/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-fr"></span> Français</a>
+                            
+                        <a data-lang="es" href="https://www.geneticmatrix.com/es/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-es"></span> Español</a>
+                            
+                        <a data-lang="de" href="https://www.geneticmatrix.com/de/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-de"></span> Deutsch</a>
+                            
+                        <a data-lang="en" href="https://www.geneticmatrix.com/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-gb"></span> English</a>
+                                             </div>
+                </div>
+                                                    <a href="https://www.geneticmatrix.com/login/" class="text-gm-gray hover:text-gray-900 text-xl font-medium transition whitespace-nowrap gm-logged-out-only">Se connecter</a>
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-base font-semibold px-5 py-2 rounded-full transition cursor-pointer gm-logged-out-only">S'inscrire</a>
+                <a href="https://www.geneticmatrix.com/cart/"
+                   class="gm-logged-in-only flex items-center pl-1 pr-3 -ml-2 text-gm-gray hover:text-gm-purple transition"
+                   style="display:none" aria-label="Panier" title="Panier">
+                    <span class="relative inline-block" style="line-height: 0;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 36.334 28.226" aria-hidden="true">
+                            <g transform="translate(-1096.613 -119.196)">
+                                <g transform="translate(1109.379 141.823)">
+                                    <path d="M1.55-1A2.55,2.55,0,1,1-1,1.55,2.553,2.553,0,0,1,1.55-1Z" transform="translate(1 1)" fill="currentColor"/>
+                                    <path d="M1.55-1.5A3.05,3.05,0,1,1-1.5,1.55,3.053,3.053,0,0,1,1.55-1.5Zm0,5.1A2.05,2.05,0,1,0-.5,1.55,2.052,2.052,0,0,0,1.55,3.6Z" transform="translate(1 1)" fill="currentColor"/>
+                                    <path d="M1.55-1A2.55,2.55,0,1,1-1,1.55,2.553,2.553,0,0,1,1.55-1Z" transform="translate(15.025 1)" fill="currentColor"/>
+                                    <path d="M1.55-1.5A3.05,3.05,0,1,1-1.5,1.55,3.053,3.053,0,0,1,1.55-1.5Zm0,5.1A2.05,2.05,0,1,0-.5,1.55,2.052,2.052,0,0,0,1.55,3.6Z" transform="translate(15.025 1)" fill="currentColor"/>
+                                </g>
+                                <g transform="translate(1096.773 119.356)">
+                                    <path d="M31.491,22.4H14.555a1.5,1.5,0,0,1-1.4-.959L6.406,4H2.5a1.5,1.5,0,0,1,0-3H7.434a1.5,1.5,0,0,1,1.4.959L15.583,19.4h14.9l3.962-9.737a1.5,1.5,0,1,1,2.779,1.131L32.88,21.467A1.5,1.5,0,0,1,31.491,22.4Z" transform="translate(-1.16 -1.16)" fill="currentColor"/>
+                                </g>
+                            </g>
+                        </svg>
+                        <span id="gm-cart-count" class="absolute text-gm-pink text-xs font-bold leading-none" style="left:60%; top:40%; transform:translate(-50%,-50%); display:none;"></span>
+                    </span>
+                </a>
+                <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="gm-logged-in-only text-gm-gray hover:text-gray-900 text-xl font-medium transition whitespace-nowrap" style="display:none">Se déconnecter</a>
+                <a href="https://www.geneticmatrix.com/user-home/" class="gm-logged-in-only bg-gm-green hover:bg-gm-green-dark text-white text-base font-semibold px-5 py-2 rounded-full transition" style="display:none">Mon Hub</a>
+
+                    </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="gm-mobile-menu" style="display:none" class="lg:hidden bg-white border-t border-gray-100 px-6 py-4">
+        <div class="flex flex-col gap-3">
+            <!-- Auth block FIRST so returning users don't hunt for Sign In (2026-05-29) -->
+                            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-green text-white text-sm font-semibold px-5 py-2 rounded-full transition text-center cursor-pointer gm-logged-out-only">S'inscrire</a>
+                <a href="https://www.geneticmatrix.com/login/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition gm-logged-out-only">Se connecter</a>
+                <a href="https://www.geneticmatrix.com/user-home/" class="gm-logged-in-only inline-block bg-gm-green text-white text-sm font-semibold px-5 py-2 rounded-full transition text-center" style="display:none">Mon Hub</a>
+                <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="gm-logged-in-only py-2 text-sm text-gm-gray hover:text-gray-900 transition" style="display:none">Se déconnecter</a>
+
+                        <div class="border-t border-gray-100 my-1"></div>
+            <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Rapports</a>
+            <a href="https://www.geneticmatrix.com/talking-charts/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Talking Charts</a>
+                        <a href="https://www.geneticmatrix.com/free-foundation-chart/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition gm-logged-out-only">Thème gratuit</a>
+                                    <div class="border-t border-gray-100 my-1"></div>
+            <a href="/learn-hub/" class="py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition flex items-center gap-1.5">Learn Hub<span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratuit</span></a>
+            <a href="/celebrities/" class="py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition flex items-center gap-1.5">Recherche de Célébrités<span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratuit</span></a>
+            <a href="https://www.geneticmatrix.com/astro-calendar/?lang=en" class="py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition flex items-center gap-1.5">Calendrier Astro<span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratuit</span></a>
+            <a href="/learn-hub/dictionary/dictionary.html" class="py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition flex items-center gap-1.5">Dictionnaire<span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratuit</span></a>
+            <div class="border-t border-gray-100 my-1"></div>
+            <a href="https://www.geneticmatrix.com/plans-features/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Nos plans</a>
+            <!-- Language Switcher -->
+                <div class="relative group px-3">
+                                        <button class="flex items-center gap-2 text-gm-gray hover:text-gray-900 text-base">
+                        <span class="flag-icon flag-icon-gb"></span>
+                        <span>English</span>
+                        <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                     
+                    <div class="absolute top-full left-0 mt-4 w-44 bg-white rounded-xl shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                            <a data-lang="pt" href="https://www.geneticmatrix.com/pt-pt/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-pt"></span> Português</a>
+                                                 <a data-lang="nl" href="https://www.geneticmatrix.com/nl/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-nl"></span> Nederlands</a>
+                                                 <a data-lang="it" href="https://www.geneticmatrix.com/it/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-it"></span> Italiano</a>
+                                                 <a data-lang="fr" href="https://www.geneticmatrix.com/fr/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-fr"></span> Français</a>
+                                                 <a data-lang="es" href="https://www.geneticmatrix.com/es/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-es"></span> Español</a>
+                                                 <a data-lang="de" href="https://www.geneticmatrix.com/de/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-de"></span> Deutsch</a>
+                                                 <a data-lang="en" href="https://www.geneticmatrix.com/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-gb"></span> English</a>
+                                             </div>
+                </div>
+        </div>
+    </div>
+</nav>
+<script id="gm-calendar-auth">(function(){
+  // Toggle nav between logged-in and logged-out views via /learn-hub/api/user-state.php.
+  // .gm-logged-out-only: visible by default, hidden when logged in.
+  // .gm-logged-in-only:  hidden  by default (inline display:none), shown when logged in.
+  fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      if (data && data.logged_in) {
+        document.querySelectorAll('.gm-logged-out-only').forEach(function(el){ el.style.display = 'none'; });
+        document.querySelectorAll('.gm-logged-in-only').forEach(function(el){ el.style.display = ''; });
+      }
+    })
+    .catch(function(){});
+})();</script>
+<script id="gm-lang-switcher">(function(){
+  var LANGS = {en:"English",de:"Deutsch",es:"Español",fr:"Français",it:"Italiano",nl:"Nederlands",pt:"Português"};
+  var FLAGS = {en:"gb",de:"de",es:"es",fr:"fr",it:"it",nl:"nl",pt:"pt"};
+  var URL_TO_WP = {pt: "pt-pt"};
+
+  var path = window.location.pathname;
+  var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
+  var current = m ? m[1] : "en";
+  var rest = m ? path.substring(("/learn-hub/" + current).length) : path.replace(/^\/learn-hub/, "");
+  if (!rest) rest = "/";
+
+  function getCookie(name){
+    var v = ("; " + document.cookie).split("; " + name + "=");
+    return v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
+  }
+  function setCookie(name, value){
+    var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
+    var parts = location.hostname.split('.');
+    var domain = parts.length >= 2 ? "; domain=." + parts.slice(-2).join('.') : "";
+    document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
+  }
+
+  var cookieLang = getCookie("gm_lang");
+  if (cookieLang !== current) setCookie("gm_lang", current);
+
+  document.querySelectorAll('.flag-icon').forEach(function(flag){
+    if (flag.parentElement && flag.parentElement.tagName === 'BUTTON') {
+      flag.className = "flag-icon flag-icon-" + (FLAGS[current] || "gb");
+      var sib = flag.nextElementSibling;
+      while (sib && sib.tagName !== 'SPAN') sib = sib.nextElementSibling;
+      if (sib) sib.textContent = LANGS[current];
+    }
+  });
+
+  var logo = document.getElementById("gm-logo-link");
+  if (logo) {
+    var wpLang = URL_TO_WP[current] || current;
+    logo.href = current === "en" ? "/" : ("/" + wpLang + "/");
+  }
+
+  document.querySelectorAll('a[data-lang]').forEach(function(a){
+    var lang = a.getAttribute('data-lang');
+    a.href = lang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + lang + rest);
+    if (lang === current) a.classList.add('text-gm-purple','font-semibold');
+    a.addEventListener('click', function(){ setCookie("gm_lang", lang); });
+  });
+
+  var btn = document.getElementById('gm-hamburger');
+  var menu = document.getElementById('gm-mobile-menu');
+  if (btn && menu) btn.addEventListener('click', function(){ menu.style.display = menu.style.display === 'none' ? 'block' : 'none'; });
+})();</script>
+<!-- ==================== BREADCRUMB ==================== -->
+    <div class="bg-gm-light border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-6 py-3">
+            <a href="/learn-hub/" class="text-gm-purple hover:text-gm-dark text-sm font-medium transition">&larr; Retour au Learn Hub</a>
+        </div>
+    </div>
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+        <div class="max-w-3xl mx-auto px-6">
+            <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Méthodes de Calcul &middot; Hybride</p>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Calcul Hybride</h1>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
+                Le meilleur des deux mondes. Planètes, Portes et Lignes Tropicaux, de sorte que les mécaniques Human Design restent intactes, avec Signes Sidéraux par-dessus. Unique à Genetic Matrix.
+            </p>
+        </div>
+    </section>
+    <!-- ==================== INTRO ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="intro">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Les astrologues Sidéraux et les praticiens Védiques ressentent souvent que leur Soleil se situe dans un Signe différent de celui que le zodiaque Tropical indique. Mais basculer un thème Human Design vers un Sidéral complet casse les mécaniques, les Planètes, Portes et Lignes se décalent tous d'environ 24 degrés, et le Bodygraph que vous connaissez disparaît. Le Calcul Hybride est la réponse de Genetic Matrix : gardez les Planètes, Portes et Lignes Tropicaux sur lesquels Human Design a été construit, et étiquetez les Signes de la manière que vous les voyez déjà dans le ciel.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== AVAILABLE CALCULATION METHODS ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="available-methods">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Méthodes de Calcul Disponibles
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                <a href="/learn-hub/calculations/tropical.html" class="bg-white rounded-xl border border-gm-border p-4 hover:shadow-md hover:border-gm-purple transition">
+                    <div class="text-sm font-bold text-gm-dark mb-1">Tropical</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Zodiaque saisonnier traditionnel</p>
+                </a>
+                <a href="/learn-hub/calculations/j2000.html" class="bg-white rounded-xl border border-gm-border p-4 hover:shadow-md hover:border-gm-purple transition">
+                    <div class="text-sm font-bold text-gm-dark mb-1">Tropical (J2000)</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Cadre de référence fixe</p>
+                </a>
+                <a href="/learn-hub/calculations/sidereal.html" class="bg-white rounded-xl border border-gm-border p-4 hover:shadow-md hover:border-gm-purple transition">
+                    <div class="text-sm font-bold text-gm-dark mb-1">Sidéral</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Zodiaque basé sur les étoiles</p>
+                </a>
+                <a href="/learn-hub/calculations/13-sign-sidereal.html" class="bg-white rounded-xl border border-gm-border p-4 hover:shadow-md hover:border-gm-purple transition">
+                    <div class="text-sm font-bold text-gm-dark mb-1">Sidéral 13 Signes</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Inclut Ophiuchus</p>
+                </a>
+                <a href="/learn-hub/calculations/true-sidereal.html" class="bg-white rounded-xl border border-gm-border p-4 hover:shadow-md hover:border-gm-purple transition">
+                    <div class="text-sm font-bold text-gm-dark mb-1">Vrai Sidéral</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Kanatas, Chimenti, ayanamsas Midpoint</p>
+                </a>
+                <div class="bg-gm-card-active rounded-xl border-2 border-gm-purple p-4">
+                    <div class="text-sm font-bold text-gm-dark mb-1">Hybride</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Planètes, Portes, Lignes Tropical + Signes Sidéraux</p>
+                    <span class="inline-block bg-gm-green text-white text-[10px] font-bold rounded px-2 py-0.5 mt-2 uppercase">Cette page</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT IS HYBRID CALCULATION? ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="what-is-hybrid">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Qu'est-ce que le Calcul Hybride ?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Le Hybride est des Planètes, Portes et Lignes Tropicaux avec des Signes Sidéraux. Les mécaniques Human Design, le Bodygraph, le Type, l'Autorité, la Définition, les Portes, les Lignes, le Profil, la Croix d'Incarnation, sont identiques à ce qu'un calcul Tropical vous donne. La seule chose qui change est l'<strong>étiquette de Signe</strong> sur chaque planète.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Donc un Soleil qui se situe en Bélier sur votre thème Tropical peut s'afficher en Poissons sur votre thème Hybride. Même Porte. Même Ligne. Même Bodygraph. Juste un nom de Signe différent, celui que l'astrologie Sidérale assigne à cette portion du ciel.
+            </p>
+
+            <!-- Two Layers Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <div class="bg-white rounded-xl border border-gm-border p-6">
+                    <p class="text-xs font-bold tracking-widest text-gm-orange uppercase mb-2">Tropical (inchangé)</p>
+                    <div class="text-lg font-bold text-gm-dark mb-2">Planètes, Portes, Lignes</div>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Chaque élément Human Design, positions des Planètes, Portes, Lignes, Canaux, Centres, Type, Autorité, Profil, Croix d'Incarnation, reste exactement comme spécifié dans le cadre Tropical.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-6">
+                    <p class="text-xs font-bold tracking-widest text-gm-purple uppercase mb-2">Sidéral (inséré)</p>
+                    <div class="text-lg font-bold text-gm-dark mb-2">Signes</div>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Le Signe affiché à côté de chaque planète est le Sidéral, la constellation dans laquelle la planète se situe vraiment, décalée du Signe Tropical d'environ 24 degrés.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Everyday Example -->
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-xs font-bold tracking-widest text-gm-green uppercase mb-2">Exemple du Quotidien</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Pensez à votre thème Human Design comme une maison. Le Tropical est la maison elle-même, les murs, les pièces, l'électricité. Cela ne change pas. Le Sidéral est la plaque de rue devant. Le Hybride garde la maison exactement comme elle est, mais accroche la plaque de rue Sidérale à la porte, de sorte que vous puissiez la trouver par l'adresse que vous connaissez déjà.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY HYBRID? ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="why-hybrid">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Pourquoi Hybride ?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Les personnes qui travaillent avec l'astrologie Sidérale ressentent souvent que leur Soleil se situe vraiment dans un Signe différent de celui que le zodiaque Tropical indique, généralement le Signe précédent. Cette résonance est réelle, et elle compte. Mais basculer un thème Human Design vers un Sidéral complet est un bien plus grand compromis que la plupart des gens ne veulent faire : Planètes, Portes et Lignes se décalent tous d'environ 24 degrés, et votre Type, Définition, Profil et Bodygraph peuvent changer entièrement.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Le Hybride sépare les deux questions. Human Design utilise le Tropical, et nous l'honorons, les Planètes, Portes et Lignes restent Tropicaux. Mais nous laissons les Signes flotter vers le Sidéral, de sorte que les personnes qui lisent le ciel Sidéralement puissent continuer à le faire sans abandonner le Bodygraph qu'elles connaissent.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== TROPICAL VS SIDEREAL ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="hybrid-vs-others">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Hybride vs Tropical vs Sidéral
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                La façon la plus claire de voir ce que fait le Hybride est de l'aligner par rapport aux deux cadres dont il tire ses sources. Tout ce qui concerne Human Design provient du Tropical. Seules les étiquettes de Signe proviennent du Sidéral.
+            </p>
+
+            <!-- Comparison Table -->
+            <div class="overflow-x-auto rounded-xl border border-gm-border mb-8">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="bg-gm-purple text-white">
+                            <th class="text-left py-3 px-5 font-semibold">Élément</th>
+                            <th class="text-left py-3 px-5 font-semibold">Tropical</th>
+                            <th class="text-left py-3 px-5 font-semibold">Sidéral</th>
+                            <th class="text-left py-3 px-5 font-semibold">Hybride</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gm-text">
+                        <tr class="bg-white">
+                            <td class="py-3 px-5 font-semibold border-b border-gm-border">Planètes</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Tropical</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Sidéral</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Tropical</td>
+                        </tr>
+                        <tr class="bg-gm-card">
+                            <td class="py-3 px-5 font-semibold border-b border-gm-border">Portes</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Tropical</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Sidéral</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Tropical</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-3 px-5 font-semibold border-b border-gm-border">Lignes</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Tropical</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Sidéral</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Tropical</td>
+                        </tr>
+                        <tr class="bg-gm-card">
+                            <td class="py-3 px-5 font-semibold border-b border-gm-border">Signes</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Tropical</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Sidéral</td>
+                            <td class="py-3 px-5 border-b border-gm-border"><strong>Sidéral</strong></td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-3 px-5 font-semibold border-b border-gm-border">Type, Autorité, Définition, Profil</td>
+                            <td class="py-3 px-5 border-b border-gm-border">HD Standard</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Se décale avec les positions</td>
+                            <td class="py-3 px-5 border-b border-gm-border">HD Standard</td>
+                        </tr>
+                        <tr class="bg-gm-card">
+                            <td class="py-3 px-5 font-semibold">Disponible sur</td>
+                            <td class="py-3 px-5">Partout</td>
+                            <td class="py-3 px-5">Outils Védiques + Genetic Matrix</td>
+                            <td class="py-3 px-5">Genetic Matrix uniquement</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Everyday Example -->
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-xs font-bold tracking-widest text-gm-green uppercase mb-2">Exemple du Quotidien</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Si votre thème Tropical appelle votre Soleil "Bélier", et un thème Sidéral complet l'appelle "Poissons" et le place dans une Porte entièrement différente, le Hybride le garde dans la même Porte que le Tropical, car Human Design est Tropical, mais l'appelle "Poissons". Même Human Design, étiquette de Signe différente.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HOW HYBRID WORKS IN YOUR CHART ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="how-it-works">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Comment le Hybride Fonctionne dans Votre Thème
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Quand Genetic Matrix calcule votre thème en mode Hybride, il commence par le calcul Tropical standard, le calcul Human Design standard. Chaque élément Human Design provient de cela : Planètes, Portes, Lignes, Canaux, Centres, Type, Autorité, Définition, Profil, Croix d'Incarnation. Rien au sujet du contenu Human Design ne change par rapport à votre thème Tropical.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Ensuite, par-dessus, l'étiquette de Signe attachée à chaque planète est échangée du Signe Tropical au Signe Sidéral. C'est la seule différence. Votre Soleil qui s'affiche en Bélier sur Tropical peut s'afficher en Poissons sur Hybride, mais sa Porte, sa Ligne, et tous les autres détails Human Design restent exactement les mêmes.
+            </p>
+
+            <!-- What stays / what changes -->
+            <div class="bg-gm-card-active rounded-xl border border-gm-border p-6 md:p-8 mb-8">
+                <p class="text-sm font-bold text-gm-dark mb-4">Sur un thème Hybride, comparé à votre thème Tropical :</p>
+                <div class="text-sm text-gm-text leading-relaxed space-y-3">
+                    <p><strong class="text-gm-orange">Inchangé (Tropical) :</strong> Positions des planètes, Porte, Ligne, Canal, Centre, Type, Autorité, Définition, Profil, Croix d'Incarnation, chaque élément Human Design</p>
+                    <p><strong class="text-gm-purple">Changé (Sidéral) :</strong> Le Signe auquel chaque planète est étiquetée, généralement le Signe avant le Signe Tropical, décalé d'environ 24 degrés</p>
+                </div>
+            </div>
+
+            <!-- Blockquote -->
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    "Même thème Human Design. Signes Sidéraux par-dessus. Meilleur des deux mondes."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ACCORDION ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Questions Fréquemment Posées
+            </h2>
+            <div class="space-y-3">
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Qu'est-ce que le Calcul Hybride ?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Le Calcul Hybride est une méthode Genetic Matrix qui garde les Planètes, Portes et Lignes dans le cadre Tropical sur lequel Human Design a été construit, et affiche les Signes Sidéraux par-dessus. Les mécaniques Human Design sont identiques à un thème Tropical, seules les étiquettes de Signe changent vers celles que vous verriez dans un thème Sidéral.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Qu'est-ce qui change et qu'est-ce qui reste pareil dans le Hybride ?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Tout ce qui est Human Design, le Type, l'Autorité, la Définition, le Profil, les Portes, les Lignes, les Canaux, la Croix d'Incarnation, reste exactement comme dans votre thème Tropical. Ce qui change, c'est le Signe auquel chaque planète est assignée. Là où le Tropical dit Soleil en Bélier, le Hybride peut montrer Soleil en Poissons, parce que les Signes Sidéraux sont décalés d'environ 24 degrés par rapport au Tropical.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        En quoi le Hybride est-il différent du Sidéral ?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Le Sidéral standard recalcule tout, les Planètes, Portes et Lignes se décalent tous d'environ 24 degrés. Votre Type, Définition, Profil et Bodygraph peuvent changer complètement. Le Hybride ne fait pas cela. Il garde les Planètes, Portes et Lignes Tropicaux, donc les mécaniques Human Design sont les mêmes que dans votre thème Tropical, et change seulement les étiquettes de Signe vers le Sidéral.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        En quoi le Hybride est-il différent du Tropical ?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Le contenu Human Design, les Planètes, Portes, Lignes, tout, est identique entre le Tropical et le Hybride. La seule différence est les Signes. Le Tropical étiquette les planètes avec les Signes Tropicaux (Soleil en Bélier à 5 degrés). Le Hybride étiquette la même planète avec son Signe Sidéral (Soleil en Poissons). Rien dans votre thème Human Design ne change, seulement le contexte du Signe astrologique.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Pour qui est le Calcul Hybride ?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Le Hybride est pour toute personne qui travaille avec l'astrologie Sidérale, les praticiens Védiques, les enthousiastes du sidéral, ceux dont le Soleil se sent plus précis dans le Signe Sidéral, mais qui ne veulent pas perdre les mécaniques Human Design que seul le cadre Tropical produit. Vous obtenez l'histoire du Signe avec laquelle vous résonnez, et le Bodygraph original.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Le Calcul Hybride est-il unique à Genetic Matrix ?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Oui. Le Calcul Hybride est une méthode Genetic Matrix. Ce n'est pas quelque chose que vous trouverez dans la plupart des autres outils Human Design. Nous l'avons créé comme une option pour les praticiens et enthousiastes qui travaillent avec l'astrologie Sidérale mais ne veulent pas perdre les éléments Human Design que seul le cadre Tropical produit.
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTINUE LEARNING ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Autres Thèmes d'Apprentissage
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="/learn-hub/calculations/tropical.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Tropical &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">La fondation saisonnière sur laquelle Human Design a été construit, et le cadre que le Hybride garde intact pour chaque élément Human Design.</p>
+                </a>
+                <a href="/learn-hub/calculations/sidereal.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Sidéral &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Zodiaque ancré aux étoiles utilisé en astrologie Védique, et d'où le Hybride emprunte ses étiquettes de Signe.</p>
+                </a>
+                <a href="/learn-hub/calculations/true-sidereal.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Vrai Sidéral &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Positions réelles du ciel utilisant les tailles réelles des constellations, variantes Kanatas, Chimenti et Midpoint.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Essayez Votre Thème en Hybride</h2>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+                Le thème Human Design original, Planètes, Portes et Lignes Tropicaux, avec Signes Sidéraux par-dessus. Uniquement sur Genetic Matrix.
+            </p>
+            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+                Get Pro &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+
+                <!-- Left: Logo & Copyright -->
+                <div class="text-center md:text-left">
+                    <img src="../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">Tous droits réservés.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Confidentialité, Conditions</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+
+                <!-- Center: Newsletter (Shafik to wire up form backend) -->
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Abonnez-vous à Notre Infolettre</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Inscrivez-vous à notre infolettre pour recevoir des mises à jour, des offres,
+                        de nouvelles versions et tout ce qui concerne Genetic Matrix.
+                    </p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input
+                            type="email"
+                            placeholder="Votre Adresse E-mail"
+                            class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400"
+                        >
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Social & Contact -->
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connectez-vous avec Nous</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener">
+                            <img src="../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
+                        </a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener">
+                            <img src="../assets/icon-x.svg" alt="X" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener">
+                            <img src="../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener">
+                            <img src="../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
+                        </a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Nous Contacter</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+<script>
+(function() {
+    fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            var badge = document.getElementById('gm-cart-count');
+            if (badge && data.cart_count > 0) {
+                badge.textContent = data.cart_count;
+                badge.classList.remove('hidden');
+            }
+            var loggedOut = document.getElementById('gm-logged-out');
+            var loggedIn = document.getElementById('gm-logged-in');
+            if (data.logged_in) {
+                var freeChart = document.getElementById("gm-free-chart");
+                if (freeChart) freeChart.classList.add("hidden");
+                if (loggedOut) loggedOut.classList.add('hidden');
+                if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
+            }
+        })
+        .catch(function() {});
+})();
+</script>
+<script id="gm-hamburger-script">(function(){var h=document.getElementById("gm-hamburger");var m=document.getElementById("gm-mobile-menu");if(h&&m){h.onclick=function(){if(m.style.display==="block"){m.style.display="none";}else{m.style.display="block";}};}})()</script>
+<script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
+<script id="gm-dict-tooltip-loader">(function(){
+  // Auto-detect language from URL so the same snippet works on all 7 language versions.
+  var parts = window.location.pathname.split('/');
+  var lang = (parts[1] === 'learn-hub' && ['de','es','fr','it','nl','pt'].indexOf(parts[2]) !== -1) ? '/' + parts[2] : '';
+  var basePath = '/learn-hub' + lang + '/dictionary';
+  var s = document.createElement('script');
+  s.src = basePath + '/gm-dictionary.js';
+  s.onload = function(){
+    if (window.GMDictionary) {
+      GMDictionary.init({ selectors: ['section p, section li, section blockquote'], dictionaryUrl: basePath + '/dictionary.json' });
+    }
+  };
+  document.body.appendChild(s);
+})();</script>
+</body>
+</html>

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <link id="gm-flag-icons" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css">
+<script id="gm-lang-redirect">(function(){
+  var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
+  var path = window.location.pathname;
+  var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
+  var current = m ? m[1] : "en";
+  var v = ("; " + document.cookie).split("; gm_lang=");
+  var cookieLang = v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
+
+  // URL is the source of truth on direct navigation. If the URL has an
+  // explicit language prefix, trust it and update the cookie to match.
+  // Only redirect when the URL is the default (English, no prefix) AND
+  // the cookie indicates a non-default language preference.
+  if (current !== "en") {
+    if (cookieLang !== current) {
+      var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
+      var parts = location.hostname.split('.');
+      var domain = parts.length >= 2 ? "; domain=." + parts.slice(-2).join('.') : "";
+      document.cookie = "gm_lang=" + current + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
+    }
+    return;
+  }
+
+  // current === "en" (no language prefix in URL). Honor cookie if non-en.
+  if (cookieLang && SUPPORTED.indexOf(cookieLang) !== -1 && cookieLang !== "en") {
+    var rest = path.replace(/^\/learn-hub/, "");
+    if (!rest) rest = "/";
+    var target = "/learn-hub/" + cookieLang + rest;
+    window.location.replace(target + window.location.search + window.location.hash);
+  }
+})();</script>
+
+    <meta charset="UTF-8">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybride Berekening | Siderische Posities + Tropische HD-elementen - Genetic Matrix</title>
+    <meta name="description" content="Hybride Berekening op Genetic Matrix houdt uw Planeten, Poorten en Lijnen in het Tropische raamwerk waarop Human Design is gebouwd, en legt Siderische Tekens erop. Dezelfde HD-mechanica, echte hemeltekenenlabels. Uniek voor Genetic Matrix.">
+    <meta name="keywords" content="hybride berekening, hybride human design, siderisch human design, siderisch tropisch hybrid, siderische posities tropische poorten, genetic matrix hybrid, hybride chartmethode, siderische enthousiasmelingen, siderische posities human design, echte hemelpositie">
+    <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/calculations/hybrid-calculation.html">    <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/calculations/hybrid-calculation.html">
+    <link rel="alternate" hreflang="de" href="https://www.geneticmatrix.com/learn-hub/de/calculations/hybrid-calculation.html">
+    <link rel="alternate" hreflang="es" href="https://www.geneticmatrix.com/learn-hub/es/calculations/hybrid-calculation.html">
+    <link rel="alternate" hreflang="fr" href="https://www.geneticmatrix.com/learn-hub/fr/calculations/hybrid-calculation.html">
+    <link rel="alternate" hreflang="it" href="https://www.geneticmatrix.com/learn-hub/it/calculations/hybrid-calculation.html">
+    <link rel="alternate" hreflang="nl" href="https://www.geneticmatrix.com/learn-hub/nl/calculations/hybrid-calculation.html">
+    <link rel="alternate" hreflang="pt" href="https://www.geneticmatrix.com/learn-hub/pt/calculations/hybrid-calculation.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.geneticmatrix.com/learn-hub/calculations/hybrid-calculation.html">
+<meta property="og:title" content="Hybride Berekening - Siderische Posities + Tropische HD-elementen | Genetic Matrix">
+    <meta property="og:description" content="Tropische Planeten, Poorten en Lijnen, dezelfde Human Design-mechanica, met Siderische Tekens erop. Uniek voor Genetic Matrix.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.geneticmatrix.com/learn-hub/calculations/hybrid-calculation.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gm-purple': '#6E5898',
+                        'gm-purple-light': '#9080B1',
+                        'gm-purple-soft': '#AC94D8',
+                        'gm-dark': '#3C2864',
+                        'gm-darker': '#2e1f4d',
+                        'gm-green': '#54931E',
+                        'gm-green-dark': '#468018',
+                        'gm-green-light': '#8EB86A',
+                        'gm-pink': '#F66378',
+                        'gm-orange': '#E8961D',
+                        'gm-gray': '#707070',
+                        'gm-light': '#F7F8F9',
+                        'gm-card': '#FAFBFC',
+                        'gm-card-active': '#F4F0FC',
+                        'gm-border': '#D8D4E4',
+                        'gm-warning': '#F8F8E8',
+                        'gm-text-dark': '#1A1A2E',
+                        'gm-text': '#444444',
+                        'gm-text-light': '#949494',
+                    },
+                    fontFamily: {
+                        'sans': ['Bilo', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        details summary { cursor: pointer; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+        details[open] summary::after { content: '\2212'; }
+        details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+
+    <!-- Article JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Hybride Berekening - Tropische Planeten, Poorten en Lijnen met Siderische Tekens",
+        "description": "Hybride Berekening op Genetic Matrix houdt uw Planeten, Poorten en Lijnen in het Tropische raamwerk waarop Human Design is gebouwd, en legt Siderische Tekens erop. Dezelfde Human Design-mechanica, echte hemeltekenenlabels. Uniek voor Genetic Matrix.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Genetic Matrix",
+            "url": "https://www.geneticmatrix.com"
+        },
+        "mainEntityOfPage": "https://www.geneticmatrix.com/learn-hub/calculations/hybrid-calculation.html",
+        "datePublished": "2026-07-06",
+        "dateModified": "2026-07-06"
+    }
+    </script>
+
+    <!-- FAQ JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Wat is hybride berekening?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Hybride berekening is een Genetic Matrix-methode die Planeten, Poorten en Lijnen in het Tropische raamwerk houdt waarop Human Design is gebouwd, en geeft Siderische Tekens weer bovenop. De Human Design-mechanica zijn identiek aan een Tropische chart, alleen de tekenlabels veranderen naar de tekens die u in een Siderische chart zou zien."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wat verandert en wat blijft hetzelfde in Hybrid?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Alles in Human Design - Type, Autoriteit, Definitie, Profiel, Poorten, Lijnen, Kanalen, Incarnatiekruis - blijft exact hetzelfde als in uw Tropische chart. Wat verandert is het Teken waarmee elke planeet wordt gelabeld. Waar Tropisch zegt Zon in Ram, kan Hybrid Zon in Vissen tonen, omdat de Siderische tekens ongeveer 24 graden verschuiven van Tropisch."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Hoe verschilt Hybrid van Siderisch?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Standaard Siderisch herberekent alles - Planeten, Poorten en Lijnen verschuiven allemaal ongeveer 24 graden. Uw Type, Definitie, Profiel en Bodygraph kunnen volledig veranderen. Hybrid doet dat niet. Het houdt Planeten, Poorten en Lijnen Tropisch, dus de Human Design-mechanica zijn hetzelfde als uw Tropische chart, en wisselt alleen de Tekenlabels naar Siderisch."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Hoe verschilt Hybrid van Tropisch?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "De Human Design-inhoud - Planeten, Poorten, Lijnen, alles - is identiek tussen Tropisch en Hybrid. Het enige verschil is de Tekens. Tropisch labelt planeten met Tropische Tekens (Zon in Ram op 5 graden). Hybrid labelt dezelfde planeet met zijn Siderische Teken (Zon in Vissen). Niets aan uw Human Design-chart verandert, alleen de astrologische Tekencontext."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Voor wie is hybride berekening?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Hybrid is voor iedereen die met Siderische astrologie werkt: Vedische beoefenaars, siderische enthousiastelingen, iedereen wiens Zon nauwkeuriger aanvoelt in het Siderische Teken, maar die niet de Human Design-mechanica wil verliezen die alleen het Tropische raamwerk voortbrengt. U krijgt het Tekenverhaal waar u mee resoneert, en de originele Bodygraph."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is hybride berekening uniek voor Genetic Matrix?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja. Hybride berekening is een Genetic Matrix-methode. Dit is iets wat u in de meeste andere Human Design-tools niet zult vinden. We hebben het gebouwd als optie voor beoefenaars en enthousiastelingen die met Siderische astrologie werken maar niet de Human Design-elementen willen verliezen die alleen het Tropische raamwerk voortbrengt."
+                }
+            }
+        ]
+    }
+    </script>
+
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- ==================== NAV BAR ==================== -->
+                                <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-[1400px] mx-auto px-[30px] flex items-center h-[80px]">
+        <a id="gm-logo-link" href="/" class="flex-shrink-0 mr-auto">
+            <img src="/learn-hub/assets/logo.svg" alt="Genetic Matrix" class="h-11">
+        </a>
+        <div class="lg:hidden flex items-center gap-4">
+            <button id="gm-hamburger" class="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition">
+                <svg class="w-6 h-6 text-gm-gray" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+        <div class="hidden lg:flex items-center gap-4">
+            <!-- Products dropdown: Talking Charts + Reports (future Career, Sleep, etc. land here) -->
+            <div class="relative group">
+                <button class="text-gm-gray hover:text-gray-900 text-xl font-medium transition whitespace-nowrap flex items-center gap-1">
+                    Producten <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-[320px] bg-white rounded-xl shadow-xl border border-gray-100 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div class="flex flex-col gap-1">
+                        <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
+                            <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="https://www.geneticmatrix.com/wp-content/themes/geneticmatrix/assets/icons/report%20icon%20(2).svg" alt="" class="w-5 h-5"></div>
+                            <div><div class="text-sm font-semibold text-gray-800">Rapporten</div><div class="text-xs text-gm-text-light mt-0.5">Gedetailleerde schriftelijke gidsen voor uw chart</div></div>
+                        </a>
+                        <a href="https://www.geneticmatrix.com/talking-charts/" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
+                            <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="https://www.geneticmatrix.com/wp-content/themes/geneticmatrix/assets/icons/GM%20Icon%20Talking%20Chart.svg" alt="" class="w-5 h-5"></div>
+                            <div><div class="text-sm font-semibold text-gray-800">Talking Charts</div><div class="text-xs text-gm-text-light mt-0.5">Audiointerpretaties voor uw chart</div></div>
+                        </a>
+                                                <a href="https://www.geneticmatrix.com/free-foundation-chart/" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition gm-logged-out-only">
+                            <div class="w-7 h-7 bg-gm-green/15 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-4 h-4 text-gm-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+                            <div class="flex-1"><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Gratis Chart</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratis</span></div><div class="text-xs text-gm-text-light mt-0.5">Genereer uw chart in seconden</div></div>
+                        </a>
+                                            </div>
+                </div>
+            </div>
+                        <div class="relative group">
+                <button class="text-gm-gray hover:text-gray-900 text-xl font-medium transition whitespace-nowrap flex items-center gap-1">
+                    Verkennen <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div style="width: 560px;" class="absolute top-full left-1/2 -translate-x-1/2 pt-4 bg-white rounded-xl shadow-xl border border-gray-100 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div class="grid grid-cols-2 gap-1">
+                        <a href="/learn-hub/" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
+                            <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-hub.svg" alt="" class="w-5 h-5"></div>
+                            <div><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Learn Hub</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratis</span></div><div class="text-xs text-gm-text-light mt-0.5">70+ diepgaande gidsen, gratis voor iedereen</div></div>
+                        </a>
+                        <a href="/celebrities/" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
+                            <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-celebrity.svg" alt="" class="w-6 h-6"></div>
+                            <div><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Celebrity Search</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratis</span></div><div class="text-xs text-gm-text-light mt-0.5">90.000+ beroemdheidscharts, gratis te doorzoeken</div></div>
+                        </a>
+                        <a href="/learn-hub/dictionary/dictionary.html" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
+                            <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-dictionary.svg" alt="" class="w-5 h-5"></div>
+                            <div><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Woordenboek</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratis</span></div><div class="text-xs text-gm-text-light mt-0.5">Elke HD- en astrologiterm uitgelegd</div></div>
+                        </a>
+                                                <a href="https://www.geneticmatrix.com/astro-calendar/?lang=en" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
+                            <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="https://www.geneticmatrix.com/wp-content/themes/geneticmatrix/assets/icon-transits.svg" alt="" class="w-6 h-6"></div>
+                            <div><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Astro Calendar</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratis</span></div><div class="text-xs text-gm-text-light mt-0.5">Dagelijkse transits over Westers, Vedisch en Human Design</div></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.geneticmatrix.com/plans-features/" class="text-gm-gray hover:text-gray-900 text-xl font-medium transition whitespace-nowrap">Onze Plannen</a>
+            <!-- Language Switcher -->
+                <div class="relative group px-3">
+                                        <button class="flex items-center gap-2 text-gm-gray hover:text-gray-900 text-base">
+                        <span class="flag-icon flag-icon-gb"></span>
+                        <span>English</span>
+                        <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                     
+                    <div class="absolute top-full left-0 mt-4 w-44 bg-white rounded-xl shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                       
+                        <a data-lang="pt" href="https://www.geneticmatrix.com/pt-pt/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-pt"></span> Português</a>
+                            
+                        <a data-lang="nl" href="https://www.geneticmatrix.com/nl/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-nl"></span> Nederlands</a>
+                            
+                        <a data-lang="it" href="https://www.geneticmatrix.com/it/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-it"></span> Italiano</a>
+                            
+                        <a data-lang="fr" href="https://www.geneticmatrix.com/fr/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-fr"></span> Français</a>
+                            
+                        <a data-lang="es" href="https://www.geneticmatrix.com/es/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-es"></span> Español</a>
+                            
+                        <a data-lang="de" href="https://www.geneticmatrix.com/de/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-de"></span> Deutsch</a>
+                            
+                        <a data-lang="en" href="https://www.geneticmatrix.com/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-gb"></span> English</a>
+                                             </div>
+                </div>
+                                                    <a href="https://www.geneticmatrix.com/login/" class="text-gm-gray hover:text-gray-900 text-xl font-medium transition whitespace-nowrap gm-logged-out-only">Inloggen</a>
+                <a href="https://www.geneticmatrix.com/register/" class="bg-gm-green hover:bg-gm-green-dark text-white text-base font-semibold px-5 py-2 rounded-full transition cursor-pointer gm-logged-out-only">Registreren</a>
+                <a href="https://www.geneticmatrix.com/cart/"
+                   class="gm-logged-in-only flex items-center pl-1 pr-3 -ml-2 text-gm-gray hover:text-gm-purple transition"
+                   style="display:none" aria-label="Winkelwagen" title="Winkelwagen">
+                    <span class="relative inline-block" style="line-height: 0;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 36.334 28.226" aria-hidden="true">
+                            <g transform="translate(-1096.613 -119.196)">
+                                <g transform="translate(1109.379 141.823)">
+                                    <path d="M1.55-1A2.55,2.55,0,1,1-1,1.55,2.553,2.553,0,0,1,1.55-1Z" transform="translate(1 1)" fill="currentColor"/>
+                                    <path d="M1.55-1.5A3.05,3.05,0,1,1-1.5,1.55,3.053,3.053,0,0,1,1.55-1.5Zm0,5.1A2.05,2.05,0,1,0-.5,1.55,2.052,2.052,0,0,0,1.55,3.6Z" transform="translate(1 1)" fill="currentColor"/>
+                                    <path d="M1.55-1A2.55,2.55,0,1,1-1,1.55,2.553,2.553,0,0,1,1.55-1Z" transform="translate(15.025 1)" fill="currentColor"/>
+                                    <path d="M1.55-1.5A3.05,3.05,0,1,1-1.5,1.55,3.053,3.053,0,0,1,1.55-1.5Zm0,5.1A2.05,2.05,0,1,0-.5,1.55,2.052,2.052,0,0,0,1.55,3.6Z" transform="translate(15.025 1)" fill="currentColor"/>
+                                </g>
+                                <g transform="translate(1096.773 119.356)">
+                                    <path d="M31.491,22.4H14.555a1.5,1.5,0,0,1-1.4-.959L6.406,4H2.5a1.5,1.5,0,0,1,0-3H7.434a1.5,1.5,0,0,1,1.4.959L15.583,19.4h14.9l3.962-9.737a1.5,1.5,0,1,1,2.779,1.131L32.88,21.467A1.5,1.5,0,0,1,31.491,22.4Z" transform="translate(-1.16 -1.16)" fill="currentColor"/>
+                                </g>
+                            </g>
+                        </svg>
+                        <span id="gm-cart-count" class="absolute text-gm-pink text-xs font-bold leading-none" style="left:60%; top:40%; transform:translate(-50%,-50%); display:none;"></span>
+                    </span>
+                </a>
+                <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="gm-logged-in-only text-gm-gray hover:text-gray-900 text-xl font-medium transition whitespace-nowrap" style="display:none">Uitloggen</a>
+                <a href="https://www.geneticmatrix.com/user-home/" class="gm-logged-in-only bg-gm-green hover:bg-gm-green-dark text-white text-base font-semibold px-5 py-2 rounded-full transition" style="display:none">Mijn Hub</a>
+
+                    </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="gm-mobile-menu" style="display:none" class="lg:hidden bg-white border-t border-gray-100 px-6 py-4">
+        <div class="flex flex-col gap-3">
+            <!-- Auth block FIRST so returning users don't hunt for Sign In (2026-05-29) -->
+                            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-green text-white text-sm font-semibold px-5 py-2 rounded-full transition text-center cursor-pointer gm-logged-out-only">Registreren</a>
+                <a href="https://www.geneticmatrix.com/login/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition gm-logged-out-only">Inloggen</a>
+                <a href="https://www.geneticmatrix.com/user-home/" class="gm-logged-in-only inline-block bg-gm-green text-white text-sm font-semibold px-5 py-2 rounded-full transition text-center" style="display:none">Mijn Hub</a>
+                <a href="https://www.geneticmatrix.com/wp-login.php?action=logout&redirect_to=%2Flogout-1%2F" class="gm-logged-in-only py-2 text-sm text-gm-gray hover:text-gray-900 transition" style="display:none">Uitloggen</a>
+
+                        <div class="border-t border-gray-100 my-1"></div>
+            <a href="https://www.geneticmatrix.com/geneticmatrix-reports/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Rapporten</a>
+            <a href="https://www.geneticmatrix.com/talking-charts/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Talking Charts</a>
+                        <a href="https://www.geneticmatrix.com/free-foundation-chart/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition gm-logged-out-only">Gratis Chart</a>
+                                    <div class="border-t border-gray-100 my-1"></div>
+            <a href="/learn-hub/" class="py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition flex items-center gap-1.5">Learn Hub<span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratis</span></a>
+            <a href="/celebrities/" class="py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition flex items-center gap-1.5">Celebrity Search<span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratis</span></a>
+            <a href="https://www.geneticmatrix.com/astro-calendar/?lang=en" class="py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition flex items-center gap-1.5">Astro Calendar<span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratis</span></a>
+            <a href="/learn-hub/dictionary/dictionary.html" class="py-2 text-sm font-semibold text-gray-800 hover:text-gm-purple transition flex items-center gap-1.5">Woordenboek<span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Gratis</span></a>
+            <div class="border-t border-gray-100 my-1"></div>
+            <a href="https://www.geneticmatrix.com/plans-features/" class="py-2 text-sm text-gm-gray hover:text-gray-900 transition">Onze Plannen</a>
+            <!-- Language Switcher -->
+                <div class="relative group px-3">
+                                        <button class="flex items-center gap-2 text-gm-gray hover:text-gray-900 text-base">
+                        <span class="flag-icon flag-icon-gb"></span>
+                        <span>English</span>
+                        <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                     
+                    <div class="absolute top-full left-0 mt-4 w-44 bg-white rounded-xl shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                            <a data-lang="pt" href="https://www.geneticmatrix.com/pt-pt/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-pt"></span> Português</a>
+                                                 <a data-lang="nl" href="https://www.geneticmatrix.com/nl/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-nl"></span> Nederlands</a>
+                                                 <a data-lang="it" href="https://www.geneticmatrix.com/it/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-it"></span> Italiano</a>
+                                                 <a data-lang="fr" href="https://www.geneticmatrix.com/fr/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-fr"></span> Français</a>
+                                                 <a data-lang="es" href="https://www.geneticmatrix.com/es/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-es"></span> Español</a>
+                                                 <a data-lang="de" href="https://www.geneticmatrix.com/de/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-de"></span> Deutsch</a>
+                                                 <a data-lang="en" href="https://www.geneticmatrix.com/" class="flex items-center gap-3 px-4 py-2 text-sm text-gm-gray hover:bg-gm-light hover:text-gm-purple transition"><span class="flag-icon flag-icon-gb"></span> English</a>
+                                             </div>
+                </div>
+        </div>
+    </div>
+</nav>
+<script id="gm-calendar-auth">(function(){
+  // Toggle nav between logged-in and logged-out views via /learn-hub/api/user-state.php.
+  // .gm-logged-out-only: visible by default, hidden when logged in.
+  // .gm-logged-in-only:  hidden  by default (inline display:none), shown when logged in.
+  fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      if (data && data.logged_in) {
+        document.querySelectorAll('.gm-logged-out-only').forEach(function(el){ el.style.display = 'none'; });
+        document.querySelectorAll('.gm-logged-in-only').forEach(function(el){ el.style.display = ''; });
+      }
+    })
+    .catch(function(){});
+})();</script>
+<script id="gm-lang-switcher">(function(){
+  var LANGS = {en:"English",de:"Deutsch",es:"Español",fr:"Français",it:"Italiano",nl:"Nederlands",pt:"Português"};
+  var FLAGS = {en:"gb",de:"de",es:"es",fr:"fr",it:"it",nl:"nl",pt:"pt"};
+  var URL_TO_WP = {pt: "pt-pt"};
+
+  var path = window.location.pathname;
+  var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
+  var current = m ? m[1] : "en";
+  var rest = m ? path.substring(("/learn-hub/" + current).length) : path.replace(/^\/learn-hub/, "");
+  if (!rest) rest = "/";
+
+  function getCookie(name){
+    var v = ("; " + document.cookie).split("; " + name + "=");
+    return v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
+  }
+  function setCookie(name, value){
+    var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
+    var parts = location.hostname.split('.');
+    var domain = parts.length >= 2 ? "; domain=." + parts.slice(-2).join('.') : "";
+    document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
+  }
+
+  var cookieLang = getCookie("gm_lang");
+  if (cookieLang !== current) setCookie("gm_lang", current);
+
+  document.querySelectorAll('.flag-icon').forEach(function(flag){
+    if (flag.parentElement && flag.parentElement.tagName === 'BUTTON') {
+      flag.className = "flag-icon flag-icon-" + (FLAGS[current] || "gb");
+      var sib = flag.nextElementSibling;
+      while (sib && sib.tagName !== 'SPAN') sib = sib.nextElementSibling;
+      if (sib) sib.textContent = LANGS[current];
+    }
+  });
+
+  var logo = document.getElementById("gm-logo-link");
+  if (logo) {
+    var wpLang = URL_TO_WP[current] || current;
+    logo.href = current === "en" ? "/" : ("/" + wpLang + "/");
+  }
+
+  document.querySelectorAll('a[data-lang]').forEach(function(a){
+    var lang = a.getAttribute('data-lang');
+    a.href = lang === "en" ? ("/learn-hub" + rest) : ("/learn-hub/" + lang + rest);
+    if (lang === current) a.classList.add('text-gm-purple','font-semibold');
+    a.addEventListener('click', function(){ setCookie("gm_lang", lang); });
+  });
+
+  var btn = document.getElementById('gm-hamburger');
+  var menu = document.getElementById('gm-mobile-menu');
+  if (btn && menu) btn.addEventListener('click', function(){ menu.style.display = menu.style.display === 'none' ? 'block' : 'none'; });
+})();</script>
+<!-- ==================== BREADCRUMB ==================== -->
+    <div class="bg-gm-light border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-6 py-3">
+            <a href="/learn-hub/" class="text-gm-purple hover:text-gm-dark text-sm font-medium transition">&larr; Terug naar Learn Hub</a>
+        </div>
+    </div>
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+        <div class="max-w-3xl mx-auto px-6">
+            <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Berekeningsmethoden &middot; Hybrid</p>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Hybride Berekening</h1>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
+                Het beste van twee werelden. Tropische Planeten, Poorten en Lijnen, zodat de Human Design-mechanica intact blijven, met Siderische Tekens erop. Uniek voor Genetic Matrix.
+            </p>
+        </div>
+    </section>
+    <!-- ==================== INTRO ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="intro">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Siderische astrologen en Vedische beoefenaars voelen vaak dat hun Zon in een ander Teken zit dan wat de Tropische dierenriem zegt. Maar het overschakelen van een Human Design-chart naar volledig Siderisch breekt de mechanica: Planeten, Poorten en Lijnen verschuiven allemaal ongeveer 24 graden, en de Bodygraph die u kent is verdwenen. Hybride Berekening is het Genetic Matrix-antwoord: houd de Tropische Planeten, Poorten en Lijnen waarop Human Design is gebouwd, en label de Tekens zoals u ze al aan de hemel ziet.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== AVAILABLE CALCULATION METHODS ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="available-methods">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Beschikbare Berekeningsmethoden
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                <a href="/learn-hub/calculations/tropical.html" class="bg-white rounded-xl border border-gm-border p-4 hover:shadow-md hover:border-gm-purple transition">
+                    <div class="text-sm font-bold text-gm-dark mb-1">Tropisch</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Traditionele seizoenale dierenriem</p>
+                </a>
+                <a href="/learn-hub/calculations/j2000.html" class="bg-white rounded-xl border border-gm-border p-4 hover:shadow-md hover:border-gm-purple transition">
+                    <div class="text-sm font-bold text-gm-dark mb-1">Tropisch (J2000)</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Vast referentiekader</p>
+                </a>
+                <a href="/learn-hub/calculations/sidereal.html" class="bg-white rounded-xl border border-gm-border p-4 hover:shadow-md hover:border-gm-purple transition">
+                    <div class="text-sm font-bold text-gm-dark mb-1">Siderisch</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Op sterren gebaseerde dierenriem</p>
+                </a>
+                <a href="/learn-hub/calculations/13-sign-sidereal.html" class="bg-white rounded-xl border border-gm-border p-4 hover:shadow-md hover:border-gm-purple transition">
+                    <div class="text-sm font-bold text-gm-dark mb-1">13-Teken Siderisch</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Omvat Ophiuchus</p>
+                </a>
+                <a href="/learn-hub/calculations/true-sidereal.html" class="bg-white rounded-xl border border-gm-border p-4 hover:shadow-md hover:border-gm-purple transition">
+                    <div class="text-sm font-bold text-gm-dark mb-1">True Sidereal</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Kanatas, Chimenti, Midpoint ayanamshas</p>
+                </a>
+                <div class="bg-gm-card-active rounded-xl border-2 border-gm-purple p-4">
+                    <div class="text-sm font-bold text-gm-dark mb-1">Hybrid</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">Tropische Planeten, Poorten, Lijnen + Siderische Tekens</p>
+                    <span class="inline-block bg-gm-green text-white text-[10px] font-bold rounded px-2 py-0.5 mt-2 uppercase">Deze pagina</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT IS HYBRID CALCULATION? ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="what-is-hybrid">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Wat Is Hybride Berekening?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Hybrid is Tropische Planeten, Poorten en Lijnen met Siderische Tekens. De Human Design-mechanica, de Bodygraph, het Type, de Autoriteit, de Definitie, de Poorten, de Lijnen, het Profiel, het Incarnatiekruis, zijn identiek aan wat een Tropische berekening u geeft. Het enige wat verandert is het <strong>Tekenlabel</strong> op elke planeet.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Een Zon die op uw Tropische chart in Ram zit, kan dus op uw Hybride chart als Vissen verschijnen. Dezelfde Poort. Dezelfde Lijn. Dezelfde Bodygraph. Alleen een ander Tekennaam, degene die de Siderische astrologie aan dat stuk hemel toewijst.
+            </p>
+
+            <!-- Two Layers Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <div class="bg-white rounded-xl border border-gm-border p-6">
+                    <p class="text-xs font-bold tracking-widest text-gm-orange uppercase mb-2">Tropisch (onveranderd)</p>
+                    <div class="text-lg font-bold text-gm-dark mb-2">Planeten, Poorten, Lijnen</div>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Elk Human Design-element - Planetposities, Poorten, Lijnen, Kanalen, Centra, Type, Autoriteit, Profiel, Incarnatiekruis, blijft exact zoals gespecificeerd in het Tropische raamwerk.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-6">
+                    <p class="text-xs font-bold tracking-widest text-gm-purple uppercase mb-2">Siderisch (ingewisseld)</p>
+                    <div class="text-lg font-bold text-gm-dark mb-2">Tekens</div>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Het Teken dat naast elke planeet wordt weergegeven, is het Siderische, het sterrenbeeld waarin de planeet werkelijk zit, verschoven van het Tropische Teken met ongeveer 24 graden.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Everyday Example -->
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-xs font-bold tracking-widest text-gm-green uppercase mb-2">Alledaags Voorbeeld</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Denk aan uw Human Design-chart als een huis. Tropisch is het huis zelf, de muren, de kamers, de bedrading. Dat verandert niet. Siderisch is het straatnaambord buiten. Hybrid houdt het huis exact zoals het is, maar hangt het Siderische straatnaambord aan de deur, zodat u het kunt vinden via het adres dat u al kent.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY HYBRID? ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="why-hybrid">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Waarom Hybrid?
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Mensen die met Siderische astrologie werken, voelen vaak dat hun Zon werkelijk in een ander Teken zit dan wat de Tropische dierenriem zegt, meestal het Teken ervoor. Die resonantie is echt en die telt. Maar het overschakelen van een Human Design-chart naar volledig Siderisch is een veel groter compromis dan de meeste mensen willen maken: Planeten, Poorten en Lijnen verschuiven allemaal ongeveer 24 graden, en uw Type, Definitie, Profiel en Bodygraph kunnen volledig veranderen.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed">
+                Hybrid scheidt de twee vragen. Human Design gebruikt Tropisch en we respecteren dat, Planeten, Poorten en Lijnen blijven Tropisch. Maar we laten de Tekens naar Siderisch gaan, zodat mensen die hun hemel Siderisch lezen dat kunnen blijven doen zonder de Bodygraph op te geven die ze kennen.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== TROPICAL VS SIDEREAL ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light" id="hybrid-vs-others">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Hybrid versus Tropisch versus Siderisch
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                De schoonste manier om te zien wat Hybrid doet, is het op een rij zetten tegen de twee raamwerken waaruit het put. Alles in Human Design komt van Tropisch. Alleen de Tekenlabels komen van Siderisch.
+            </p>
+
+            <!-- Comparison Table -->
+            <div class="overflow-x-auto rounded-xl border border-gm-border mb-8">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="bg-gm-purple text-white">
+                            <th class="text-left py-3 px-5 font-semibold">Element</th>
+                            <th class="text-left py-3 px-5 font-semibold">Tropisch</th>
+                            <th class="text-left py-3 px-5 font-semibold">Siderisch</th>
+                            <th class="text-left py-3 px-5 font-semibold">Hybrid</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gm-text">
+                        <tr class="bg-white">
+                            <td class="py-3 px-5 font-semibold border-b border-gm-border">Planeten</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Tropisch</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Siderisch</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Tropisch</td>
+                        </tr>
+                        <tr class="bg-gm-card">
+                            <td class="py-3 px-5 font-semibold border-b border-gm-border">Poorten</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Tropisch</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Siderisch</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Tropisch</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-3 px-5 font-semibold border-b border-gm-border">Lijnen</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Tropisch</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Siderisch</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Tropisch</td>
+                        </tr>
+                        <tr class="bg-gm-card">
+                            <td class="py-3 px-5 font-semibold border-b border-gm-border">Tekens</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Tropisch</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Siderisch</td>
+                            <td class="py-3 px-5 border-b border-gm-border"><strong>Siderisch</strong></td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-3 px-5 font-semibold border-b border-gm-border">Type, Autoriteit, Definitie, Profiel</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Standaard HD</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Verschuift met de posities</td>
+                            <td class="py-3 px-5 border-b border-gm-border">Standaard HD</td>
+                        </tr>
+                        <tr class="bg-gm-card">
+                            <td class="py-3 px-5 font-semibold">Beschikbaar op</td>
+                            <td class="py-3 px-5">Overal</td>
+                            <td class="py-3 px-5">Vedische tools + Genetic Matrix</td>
+                            <td class="py-3 px-5">Alleen Genetic Matrix</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Everyday Example -->
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-xs font-bold tracking-widest text-gm-green uppercase mb-2">Alledaags Voorbeeld</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Als uw Tropische chart uw Zon "Ram" noemt en een volledig Siderische chart "Vissen" zegt en deze in een volledig ander Poort plaatst, houdt Hybrid dit in dezelfde Poort als Tropisch omdat Human Design Tropisch is, maar noemt het "Vissen". Dezelfde Human Design, ander Tekenlabel.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HOW HYBRID WORKS IN YOUR CHART ==================== -->
+    <section class="py-10 md:py-14 bg-white" id="how-it-works">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Hoe Hybrid in Uw Chart Werkt
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Wanneer Genetic Matrix uw chart in Hybrid-modus berekent, begint het met de standaard Tropische berekening, de standaard Human Design-berekening. Elk Human Design-element komt daarvan: Planeten, Poorten, Lijnen, Kanalen, Centra, Type, Autoriteit, Definitie, Profiel, Incarnatiekruis. Niets aan de Human Design-inhoud verandert van uw Tropische chart.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-8">
+                Daarna wordt het Tekenlabel dat aan elke planeet is gekoppeld, van het Tropische Teken naar het Siderische gewisseld. Dat is het enige verschil. Uw Zon die op Tropisch als Ram verschijnt, kan op Hybrid als Vissen verschijnen, maar zijn Poort, Lijn en elk ander Human Design-detail blijft exact hetzelfde.
+            </p>
+
+            <!-- What stays / what changes -->
+            <div class="bg-gm-card-active rounded-xl border border-gm-border p-6 md:p-8 mb-8">
+                <p class="text-sm font-bold text-gm-dark mb-4">Op een Hybrid-chart in vergelijking met uw Tropische chart:</p>
+                <div class="text-sm text-gm-text leading-relaxed space-y-3">
+                    <p><strong class="text-gm-orange">Onveranderd (Tropisch):</strong> Planetposities, Poort, Lijn, Kanaal, Centrum, Type, Autoriteit, Definitie, Profiel, Incarnatiekruis - elk Human Design-element</p>
+                    <p><strong class="text-gm-purple">Gewijzigd (Siderisch):</strong> Het Teken waarmee elke planeet wordt gelabeld, ongeveer het Teken vóór het Tropische, verschuiven met ongeveer 24 graden</p>
+                </div>
+            </div>
+
+            <!-- Blockquote -->
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5">
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    "Dezelfde Human Design-chart. Siderische Tekens erop. Beste van beide werelden."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ACCORDION ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Veelgestelde Vragen
+            </h2>
+            <div class="space-y-3">
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Wat is hybride berekening?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Hybride berekening is een Genetic Matrix-methode die Planeten, Poorten en Lijnen in het Tropische raamwerk houdt waarop Human Design is gebouwd, en geeft Siderische Tekens weer bovenop. De Human Design-mechanica zijn identiek aan een Tropische chart, alleen de tekenlabels veranderen naar de tekens die u in een Siderische chart zou zien.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Wat verandert en wat blijft hetzelfde in Hybrid?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Alles in Human Design, Type, Autoriteit, Definitie, Profiel, Poorten, Lijnen, Kanalen, Incarnatiekruis, blijft exact hetzelfde als in uw Tropische chart. Wat verandert is het Teken waarmee elke planeet wordt gelabeld. Waar Tropisch zegt Zon in Ram, kan Hybrid Zon in Vissen tonen, omdat de Siderische Tekens ongeveer 24 graden verschuiven van Tropisch.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Hoe verschilt Hybrid van Siderisch?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Standaard Siderisch herberekent alles, Planeten, Poorten en Lijnen verschuiven allemaal ongeveer 24 graden. Uw Type, Definitie, Profiel en Bodygraph kunnen volledig veranderen. Hybrid doet dat niet. Het houdt Planeten, Poorten en Lijnen Tropisch, dus de Human Design-mechanica zijn hetzelfde als uw Tropische chart, en wisselt alleen de Tekenlabels naar Siderisch.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Hoe verschilt Hybrid van Tropisch?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        De Human Design-inhoud, Planeten, Poorten, Lijnen, alles, is identiek tussen Tropisch en Hybrid. Het enige verschil is de Tekens. Tropisch labelt planeten met Tropische Tekens (Zon in Ram op 5 graden). Hybrid labelt dezelfde planeet met zijn Siderische Teken (Zon in Vissen). Niets aan uw Human Design-chart verandert, alleen de astrologische Tekencontext.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Voor wie is hybride berekening?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Hybrid is voor iedereen die met Siderische astrologie werkt, Vedische beoefenaars, siderische enthousiastelingen, iedereen wiens Zon nauwkeuriger aanvoelt in het Siderische Teken, maar die niet de Human Design-mechanica wil verliezen die alleen het Tropische raamwerk voortbrengt. U krijgt het Tekenverhaal waar u mee resoneert, en de originele Bodygraph.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Is hybride berekening uniek voor Genetic Matrix?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Ja. Hybride berekening is een Genetic Matrix-methode. Dit is iets wat u in de meeste andere Human Design-tools niet zult vinden. We hebben het gebouwd als optie voor beoefenaars en enthousiastelingen die met Siderische astrologie werken maar niet de Human Design-elementen willen verliezen die alleen het Tropische raamwerk voortbrengt.
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTINUE LEARNING ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Andere Learn-onderwerpen
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="/learn-hub/calculations/tropical.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Tropisch &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Het seizoenale fundament waarop Human Design is gebouwd, en het raamwerk dat Hybrid intact houdt voor elk Human Design-element.</p>
+                </a>
+                <a href="/learn-hub/calculations/sidereal.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Siderisch &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Sterrengebonden dierenriem gebruikt in Vedische astrologie, en waar Hybrid zijn Tekenlabels van ontleent.</p>
+                </a>
+                <a href="/learn-hub/calculations/true-sidereal.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">True Sidereal &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Werkelijke hemelposities gebruikmakend van echte sterrenbeeldgroottes, Kanatas, Chimenti en Midpoint-varianten.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Probeer Uw Chart in Hybrid</h2>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+                De originele Human Design-chart, Tropische Planeten, Poorten en Lijnen, met Siderische Tekens erop. Alleen op Genetic Matrix.
+            </p>
+            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+                Get Pro &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+
+                <!-- Left: Logo & Copyright -->
+                <div class="text-center md:text-left">
+                    <img src="../assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">Alle rechten voorbehouden.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Privacy, Algemene voorwaarden en Voorwaarden</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Veelgestelde Vragen</a>
+                    </p>
+                </div>
+
+                <!-- Center: Newsletter (Shafik to wire up form backend) -->
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Abonneer u op onze nieuwsbrief</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Meld u aan voor onze nieuwsbrief om updates, aanbiedingen,
+                        nieuwe uitgaven en alles gerelateerd aan Genetic Matrix te ontvangen.
+                    </p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input
+                            type="email"
+                            placeholder="Uw e-mailadres"
+                            class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400"
+                        >
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Social & Contact -->
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connect Met Ons</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener">
+                            <img src="../assets/icon-fb.svg" alt="Facebook" class="w-10 h-10">
+                        </a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener">
+                            <img src="../assets/icon-x.svg" alt="X" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener">
+                            <img src="../assets/icon-insta.svg" alt="Instagram" class="w-10 h-10">
+                        </a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener">
+                            <img src="../assets/icon-yt.svg" alt="YouTube" class="w-10 h-10">
+                        </a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Neem contact op</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+<script>
+(function() {
+    fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            var badge = document.getElementById('gm-cart-count');
+            if (badge && data.cart_count > 0) {
+                badge.textContent = data.cart_count;
+                badge.classList.remove('hidden');
+            }
+            var loggedOut = document.getElementById('gm-logged-out');
+            var loggedIn = document.getElementById('gm-logged-in');
+            if (data.logged_in) {
+                var freeChart = document.getElementById("gm-free-chart");
+                if (freeChart) freeChart.classList.add("hidden");
+                if (loggedOut) loggedOut.classList.add('hidden');
+                if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
+            }
+        })
+        .catch(function() {});
+})();
+</script>
+<script id="gm-hamburger-script">(function(){var h=document.getElementById("gm-hamburger");var m=document.getElementById("gm-mobile-menu");if(h&&m){h.onclick=function(){if(m.style.display==="block"){m.style.display="none";}else{m.style.display="block";}};}})()</script>
+<script>document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("copy",e=>e.preventDefault());document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&(e.key==="c"||e.key==="u"||e.key==="a"))e.preventDefault()});</script>
+<script id="gm-dict-tooltip-loader">(function(){
+  // Auto-detect language from URL so the same snippet works on all 7 language versions.
+  var parts = window.location.pathname.split('/');
+  var lang = (parts[1] === 'learn-hub' && ['de','es','fr','it','nl','pt'].indexOf(parts[2]) !== -1) ? '/' + parts[2] : '';
+  var basePath = '/learn-hub' + lang + '/dictionary';
+  var s = document.createElement('script');
+  s.src = basePath + '/gm-dictionary.js';
+  s.onload = function(){
+    if (window.GMDictionary) {
+      GMDictionary.init({ selectors: ['section p, section li, section blockquote'], dictionaryUrl: basePath + '/dictionary.json' });
+    }
+  };
+  document.body.appendChild(s);
+})();</script>
+</body>
+</html>
