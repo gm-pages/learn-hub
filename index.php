@@ -215,7 +215,7 @@
                         </a>
                         <a href="/celebrities/" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
                             <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-celebrity.svg" alt="" class="w-6 h-6"></div>
-                            <div><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Celebrity Search</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Free</span></div><div class="text-xs text-gm-text-light mt-0.5">90,000+ celebrity charts, free to browse</div></div>
+                            <div><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Celebrity Search</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Free</span></div><div class="text-xs text-gm-text-light mt-0.5">92,000+ celebrity charts, free to browse</div></div>
                         </a>
                         <a href="/learn-hub/dictionary/dictionary.html" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
                             <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-dictionary.svg" alt="" class="w-5 h-5"></div>
@@ -1171,7 +1171,7 @@
                 <img src="assets/icon-celebrity.svg" alt="" class="w-14 h-14 mb-4 brightness-0 invert mx-auto">
                 <span class="text-xs font-semibold tracking-widest text-gm-pink uppercase mb-3 block">Celebrity Charts</span>
                 <h2 class="text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
-                    Explore 88,600+ Celebrity Human Design Charts
+                    Explore 92,000+ Celebrity Human Design Charts
                 </h2>
                 <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-2xl mx-auto">
                     The largest celebrity Human Design database. Every chart calculated
