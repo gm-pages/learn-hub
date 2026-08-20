@@ -215,7 +215,7 @@
                         </a>
                         <a href="/celebrities/" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
                             <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-celebrity.svg" alt="" class="w-6 h-6"></div>
-                            <div><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Celebrity Search</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Free</span></div><div class="text-xs text-gm-text-light mt-0.5">92,000+ celebrity charts, free to browse</div></div>
+                            <div><div class="flex items-center gap-1.5"><span class="text-sm font-semibold text-gray-800">Celebrity Search</span><span class="text-[10px] font-semibold text-gm-green bg-gm-green/10 px-1.5 py-0.5 rounded-full">Free</span></div><div class="text-xs text-gm-text-light mt-0.5"><span data-gm-stat="celeb-count-rounded">92,000+</span> celebrity charts, free to browse</div></div>
                         </a>
                         <a href="/learn-hub/dictionary/dictionary.html" class="flex items-start gap-3 p-2 rounded-lg hover:bg-gm-light transition">
                             <div class="w-7 h-7 bg-gm-card-active rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><img src="/learn-hub/assets/menu-icon-dictionary.svg" alt="" class="w-5 h-5"></div>
@@ -1171,7 +1171,7 @@
                 <img src="assets/icon-celebrity.svg" alt="" class="w-14 h-14 mb-4 brightness-0 invert mx-auto">
                 <span class="text-xs font-semibold tracking-widest text-gm-pink uppercase mb-3 block">Celebrity Charts</span>
                 <h2 class="text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
-                    Explore 92,000+ Celebrity Human Design Charts
+                    Explore <span data-gm-stat="celeb-count-rounded">92,000+</span> Celebrity Human Design Charts
                 </h2>
                 <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-2xl mx-auto">
                     The largest celebrity Human Design database. Every chart calculated
@@ -1243,7 +1243,7 @@
                 <!-- Stats -->
                 <div class="flex justify-center gap-8 md:gap-16 mb-10">
                     <div>
-                        <div class="text-2xl md:text-3xl font-bold text-gm-pink">88,600+</div>
+                        <div class="text-2xl md:text-3xl font-bold text-gm-pink"><span data-gm-stat="celeb-count-rounded">88,600+</span></div>
                         <div class="text-xs text-white uppercase tracking-wider mt-1">Celebrities</div>
                     </div>
                     <div>
@@ -1412,6 +1412,42 @@
     }
   };
   document.body.appendChild(s);
+})();</script>
+<script id="gm-celeb-count">(function(){
+  /* Live celebrity total. The weekly SEO routine publishes /sitemaps/celeb-count.json; this fills
+     every data-gm-stat="celeb-count-*" span from it. Same origin, so no CORS. If the file is
+     unreachable the number baked into the span simply stays - a page is never wrong, only stale.
+
+     GUARD: apply-master-nav.py may later inject a second copy of this from the master nav include.
+     The flag makes the duplicate a no-op rather than a second fetch.
+
+     LOCALE: GM's own thousands separators, deliberately NOT Intl/toLocaleString. es-ES would
+     render "92.000" but every GM Spanish page ships "92,000". This must not restyle published
+     copy. Add a language here when GM adds one. */
+  if (window.__gmCelebCountWired) return;
+  window.__gmCelebCountWired = 1;
+  var SEP = { en: ',', es: ',', de: '.', it: '.', nl: '.', pt: '.', fr: ' ' };
+  function sep(){
+    var l = (document.documentElement.getAttribute('lang') || 'en').slice(0, 2).toLowerCase();
+    return SEP[l] != null ? SEP[l] : ',';
+  }
+  function group(n, s){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, s); }
+  function fill(d){
+    if (!d) return;
+    var s = sep();
+    var rounded = d.count ? group(Math.floor(d.count / 1000) * 1000, s) + '+' : d.rounded;
+    var exact   = d.count ? group(d.count, s) : d.exact;
+    document.querySelectorAll('[data-gm-stat="celeb-count-rounded"]').forEach(function(el){ if (rounded) el.textContent = rounded; });
+    document.querySelectorAll('[data-gm-stat="celeb-count-exact"]').forEach(function(el){ if (exact) el.textContent = exact; });
+  }
+  function run(){
+    fetch('/sitemaps/celeb-count.json', { cache: 'no-store' })
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(fill)
+      .catch(function(){});
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run);
+  else run();
 })();</script>
 </body>
 </html>
