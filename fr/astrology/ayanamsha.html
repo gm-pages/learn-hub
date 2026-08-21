@@ -102,7 +102,14 @@
 <body class="bg-white text-gray-700">
 
  <!-- ==================== NAV BAR ==================== -->
- <div id="gm-nav"><!--#include virtual="/_nav/fr.html" --></div>
+ <div id="gm-nav"><!--#config errmsg="" --><!--#include virtual="/_nav/fr.html" --></div>
+<script>/* Nav fail-safe. If SSI is disabled the include above degrades to an inert HTML
+   comment and the nav vanishes silently, with nothing in the response to say so. If that
+   happens, or the include is empty for any other reason, fetch the SAME file over HTTP.
+   One source of truth either way. Never edit a nav into this page. */
+(function(){var n=document.getElementById("gm-nav");if(!n||n.children.length)return;
+fetch("/_nav/fr.html").then(function(r){return r.ok?r.text():null})
+.then(function(h){if(h)n.innerHTML=h}).catch(function(){});})();</script>
 <!-- Breadcrumb -->
     <div class="bg-gray-50 border-b border-gray-100">
         <div class="max-w-[1400px] mx-auto px-6 py-2.5">
