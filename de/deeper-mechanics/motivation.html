@@ -582,8 +582,11 @@
   function fill(d){
     if (!d) return;
     var s = sep();
-    var rounded = d.count ? group(Math.floor(d.count / 1000) * 1000, s) + '+' : d.rounded;
-    var exact   = d.count ? group(d.count, s) : d.exact;
+    /* The published file is {month, total}, not the routine's {count, rounded, exact}.
+       Accept either rather than silently doing nothing. (Joseph, 2026-08-21.) */
+    var n = d.count || d.total;
+    var rounded = n ? group(Math.floor(n / 1000) * 1000, s) + '+' : d.rounded;
+    var exact   = n ? group(n, s) : d.exact;
     document.querySelectorAll('[data-gm-stat="celeb-count-rounded"]').forEach(function(el){ if (rounded) el.textContent = rounded; });
     document.querySelectorAll('[data-gm-stat="celeb-count-exact"]').forEach(function(el){ if (exact) el.textContent = exact; });
   }
