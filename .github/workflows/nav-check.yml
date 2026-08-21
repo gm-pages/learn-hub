@@ -1,0 +1,26 @@
+# Fails the build rather than the website.
+#
+# The site nav is ONE Apache SSI include at /_nav/{lang}.html. That means a single bad commit can
+# break every page at once, so this runs on every push and PR. See tools/check-nav.py for what it
+# enforces and why the baked-nav test looks for the nav's signature rather than a <nav> tag.
+#
+# The nav files themselves ship from the web repo, so --nav-dir is not passed here: this checks the
+# pages. Whether /_nav/{lang}.html is actually on the server is the deploy check's job, and the
+# reason nav files must be deployed BEFORE the pages that include them.
+name: nav check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  nav:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Every page has exactly one correct, hardened nav include
+        run: python tools/check-nav.py
