@@ -1,0 +1,7 @@
+/* Input for the Learn Hub Tailwind build. See tailwind.learnhub.config.js for the command.
+ *
+ * Nothing but the three directives: the Play CDN this replaces also emitted only base, components
+ * and utilities. Every page's own styling stays where it is, in that page's inline <style> block. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
