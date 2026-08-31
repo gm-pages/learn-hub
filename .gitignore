@@ -54,3 +54,6 @@ apply-link-fixes.py
 # server each weekly run; not version-controlled. categories.json is source and stays tracked.
 celebrities/data/*.json
 !celebrities/data/categories.json
+
+# Scratch output from the translation runs, not part of the site.
+translation-progress-*.json
