@@ -23,6 +23,11 @@ assets/*.png
 *.pdf
 *.zip
 *.py
+# ...except the CI scripts. tools/check-nav.py is what .github/workflows/nav-check.yml runs,
+# and the blanket *.py above meant it was never committed: CI checked out, could not find the
+# file, and Python exited 2. The workflow was added 2026-08-21 and had never once run.
+# A check that cannot run is worse than no check, because it looks like cover.
+!tools/*.py
 translation-glossary-research.md
 maja-spec/
 
