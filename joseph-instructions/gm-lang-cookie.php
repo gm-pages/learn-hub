@@ -2,7 +2,7 @@
 /**
  * Plugin Name: GM Language Cookie Sync
  * Description: Bidirectional language sync between WPML (WordPress) and Learn Hub (static HTML) via shared gm_lang cookie on .geneticmatrix.com.
- * Version: 1.0
+ * Version: 1.1
  * Author: Genetic Matrix
  *
  * INSTALLATION (Joseph):
@@ -11,8 +11,44 @@
  *   2. No activation, no configuration. Works on page load.
  *   3. Test: switch language on WordPress, check browser cookies for gm_lang.
  *   4. Test: switch language on Learn Hub, reload a WordPress page, should follow.
+ *   5. Test THE ENGLISH RULE (new in 1.1, and the reason for it):
+ *        - clear cookies, visit /de/astro-calendar/  -> gm_lang becomes de
+ *        - now visit /plans-features/
+ *        - it MUST serve /plans-features/ in English and reset gm_lang to en.
+ *          Landing on /de/plaene-merkmale/ means this file did not deploy.
  *
  * STAGING: change '.geneticmatrix.com' below to '.staginggm.com' for the staging install only.
+ *
+ * CHANGELOG
+ *   1.1  2026-09-09  An English WordPress URL now always serves English. Previously a single click
+ *                    on a non-English link locked a visitor into that language site-wide, because
+ *                    the English URL could neither be served nor clear the cookie. Owner's rule:
+ *                    "We dont want real english users goign to a foreign page EVER" /
+ *                    "Yes serve english when in doubt".
+ *
+ *                    The two decisions are now deliberately asymmetric, via gm_lang_is_top_nav():
+ *                      SERVING  is permissive - anything not positively a subresource gets
+ *                               English, so absent or stripped Sec-Fetch headers fall towards
+ *                               English rather than towards a foreign page.
+ *                      WRITING  is strict - only a positive document+navigate, never a prefetch,
+ *                               overwrites a visitor's stored language. This is what keeps
+ *                               db379128 intact for clients that send no Sec-Fetch headers.
+ *                    Speculative prefetch and prerender are excluded from both, via Sec-Purpose /
+ *                    Purpose / X-Moz. WordPress 6.8 ships Speculative Loading on by default, so
+ *                    without that check a page the member never opened would reset their language.
+ *
+ *                    KNOWN TRADE-OFF, accepted by the owner: switching language on the static
+ *                    Learn Hub no longer drags WordPress along when the next click is an English
+ *                    URL. Learn Hub links that point at /{lang}/ URLs are unaffected, because the
+ *                    URL itself carries the language.
+ *
+ *                    NOT FIXED HERE, and it is the other half of the same fault: the 482 static
+ *                    Learn Hub pages carry their OWN cookie router in a head script that does
+ *                    window.location.replace() from an English URL into /learn-hub/{cookie}/.
+ *                    /learn-hub/ is blacklisted below, so nothing in this file can reach it.
+ *                    An English visitor with a stale non-en cookie is still redirected there,
+ *                    and location.replace means Back cannot escape it. Separate job.
+ *   1.0             Bidirectional sync via the shared cookie.
  */
 
 if (!defined('ABSPATH')) exit;
@@ -29,6 +65,56 @@ function gm_lang_supported() {
 function gm_lang_normalize($lang) {
     if ($lang === 'pt-pt' || $lang === 'pt-br') return 'pt';
     return $lang;
+}
+
+/**
+ * Is this request a real top-level page load - a click, or a typed URL - rather than a
+ * subresource or a speculative prefetch?
+ *
+ * TWO ANSWERS, DELIBERATELY DIFFERENT, because the two decisions carry different risk:
+ *
+ *   $strict = true   used before OVERWRITING the visitor's stored language. Requires a positive
+ *                    document+navigate signal. Getting this wrong destroys a real German
+ *                    member's preference, so absence of evidence is not evidence of a click.
+ *
+ *   $strict = false  used before deciding what to SERVE. Treats anything that is not positively
+ *                    a subresource as a page load. Getting this wrong sends an English speaker
+ *                    to a foreign page, and John's rule is "serve english when in doubt", so
+ *                    here the unknown case must fall towards English.
+ *
+ * Splitting them is what lets us satisfy the English rule without re-opening db379128 for
+ * browsers that send no Sec-Fetch headers at all: they are served English, but their stored
+ * language is not overwritten by a background request.
+ */
+function gm_lang_is_top_nav($strict) {
+    $dest = isset($_SERVER['HTTP_SEC_FETCH_DEST']) ? $_SERVER['HTTP_SEC_FETCH_DEST'] : '';
+    $mode = isset($_SERVER['HTTP_SEC_FETCH_MODE']) ? $_SERVER['HTTP_SEC_FETCH_MODE'] : '';
+
+    // Speculative prefetch and prerender send dest=document + mode=navigate with the visitor's
+    // cookies, but the visitor has not gone anywhere and may never do so. WordPress 6.8 ships
+    // Speculative Loading on by default and Cloudflare Speed Brain prefetches on hover, so this
+    // is ordinary traffic, not an edge case. Never count one as a click, in either mode.
+    $purpose = '';
+    foreach (array('HTTP_SEC_PURPOSE', 'HTTP_PURPOSE', 'HTTP_X_MOZ') as $h) {
+        if (!empty($_SERVER[$h])) { $purpose = (string) $_SERVER[$h]; break; }
+    }
+    if ($purpose !== '' && (stripos($purpose, 'prefetch') !== false || stripos($purpose, 'prerender') !== false)) {
+        return false;
+    }
+
+    if ($strict) {
+        return ($dest === 'document' && $mode === 'navigate');
+    }
+
+    // Permissive. A subresource always names itself in Sec-Fetch-Dest, so anything NOT on this
+    // list - including an absent header, a header stripped by a proxy, or a value we do not
+    // recognise - is treated as a page load and gets English.
+    $subresource = array(
+        'empty', 'image', 'script', 'style', 'font', 'audio', 'video', 'track', 'manifest',
+        'object', 'embed', 'worker', 'sharedworker', 'serviceworker', 'xslt', 'report',
+        'paintworklet', 'audioworklet', 'webidentity', 'speculationrules',
+    );
+    return !in_array($dest, $subresource, true);
 }
 
 // Toggle debug logging (writes to PHP error log). Set to true only when troubleshooting.
@@ -123,41 +209,45 @@ function gm_lang_write_cookie() {
 
     if (!in_array($lang, gm_lang_supported(), true)) { gm_lang_log("Part1 skip: lang $lang not supported"); return; }
 
-    $existing = isset($_COOKIE['gm_lang']) ? $_COOKIE['gm_lang'] : null;
+    // Normalize BOTH sides. Part 2 already does; Part 1 did not, and line 219 below is now the
+    // gate on the English guarantee, so a raw 'pt-pt' cookie comparing unequal to 'pt' there
+    // would matter. Harmless today, load-bearing the moment gm_lang_normalize gains a mapping
+    // that collapses to 'en'.
+    $existing = isset($_COOKIE['gm_lang']) ? gm_lang_normalize($_COOKIE['gm_lang']) : null;
     if ($existing === $lang) { gm_lang_log("Part1 noop: cookie already $lang"); return; }
 
     // ASYMMETRIC PROTECTION for non-default languages.
     // English is the default: hitting / reports wpml=en even for background
     // requests (XHR/fetch/image/prefetch). Protect existing non-en cookies
-    // UNLESS this is a real top-level document navigation AND the referer
-    // indicates the user deliberately navigated from their current language.
+    // UNLESS this is a real top-level document navigation.
+    //
+    // JOHN'S RULE, 2026-09-09: "We dont want real english users goign to a foreign
+    // page EVER" and "Yes serve english when in doubt." A real page load of an
+    // English URL MUST serve English and MUST reset the cookie. Anything else
+    // traps an English speaker in a language they did not choose, because Part 2
+    // below then redirects every English URL they try.
+    //
+    // The referer test that used to sit here (requirement B: referer must already
+    // be inside the user's current language) is GONE, deliberately. It only ever
+    // fired for visitors arriving from OUTSIDE the site - a Google result, a link
+    // in a mass mail, or a typed URL with no referer at all - which is exactly the
+    // population of real English users the rule protects. One click on a German
+    // link locked them into German site-wide, with no way back but the switcher.
+    //
+    // Removing it restores nothing that db379128 fixed. That commit added the
+    // Sec-Fetch test BECAUSE the referer test was not doing the job: background
+    // XHR from /de/ to / carried referer=/de/ and passed requirement B. Sec-Fetch
+    // is the guard that actually distinguishes a page load from a background
+    // request, and it is kept in full.
     if ($lang === 'en' && !empty($existing) && $existing !== 'en') {
-        $sec_fetch_dest = isset($_SERVER['HTTP_SEC_FETCH_DEST']) ? $_SERVER['HTTP_SEC_FETCH_DEST'] : '';
-        $sec_fetch_mode = isset($_SERVER['HTTP_SEC_FETCH_MODE']) ? $_SERVER['HTTP_SEC_FETCH_MODE'] : '';
-        $referer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '';
-        $referer_path = $referer ? parse_url($referer, PHP_URL_PATH) : '';
-        $referer_host = $referer ? parse_url($referer, PHP_URL_HOST) : '';
-        $current_host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '';
-
-        // Requirement A: this must be a real top-level page navigation,
-        // not an XHR, image, prefetch, or other subresource request.
-        $is_top_nav = ($sec_fetch_dest === 'document' && $sec_fetch_mode === 'navigate');
-
-        // Requirement B: referer must point to the user's current language.
-        $referer_matches_lang = false;
-        if ($referer_host === $current_host && $referer_path) {
-            if ($referer_path === '/' . $existing || strpos($referer_path, '/' . $existing . '/') === 0) {
-                $referer_matches_lang = true;
-            }
-        }
-
-        $deliberate = $is_top_nav && $referer_matches_lang;
-
-        if (!$deliberate) {
-            gm_lang_log("Part1 protect: WPML en but cookie=$existing (non-default), sec_fetch_dest=$sec_fetch_dest sec_fetch_mode=$sec_fetch_mode referer=$referer top_nav=" . ($is_top_nav?'y':'n') . " ref_match=" . ($referer_matches_lang?'y':'n') . ", preserving");
+        // STRICT here. Overwriting a real German member's stored language on a guess is its own
+        // fault, and it is not needed to satisfy the English rule: Part 2 below serves English
+        // whatever this decides. So a positive document+navigate signal, or we leave it alone.
+        if (!gm_lang_is_top_nav(true)) {
+            gm_lang_log("Part1 protect: WPML en but cookie=$existing (non-default), not a positive top-level navigation, preserving");
             return;
         }
-        gm_lang_log("Part1 allow: deliberate EN switch from $existing (top nav, referer=$referer)");
+        gm_lang_log("Part1 allow: real page load of an EN url, resetting cookie from $existing");
     }
 
     gm_lang_log("Part1 WRITING cookie: " . ($existing ?: 'none') . " -> $lang");
@@ -199,6 +289,21 @@ function gm_lang_follow_cookie() {
 
     gm_lang_log("Part2 cookie=$cookie_lang wpml=$wpml_lang");
     if ($cookie_lang === $wpml_lang) return; // already in sync
+
+    // JOHN'S RULE, 2026-09-09: "We dont want real english users goign to a foreign page EVER."
+    // A real page load of an English URL is never redirected into another language, whatever the
+    // cookie says. Part 1 normally resets the cookie before we get here, so this rarely fires -
+    // it is the backstop for the cases where Part 1 returned early (headers already sent, for
+    // one), which is precisely when the guarantee would otherwise quietly fail.
+    // PERMISSIVE here, the opposite of Part 1. Every request that is not positively a
+    // subresource gets English, including ones with absent or stripped Sec-Fetch headers and
+    // ones carrying a header value we do not recognise. That is "serve english when in doubt"
+    // written as code. This block only ever RETURNS - it writes no cookie and sends no header -
+    // so being generous with it costs nothing and cannot damage a German member's preference.
+    if ($wpml_lang === 'en' && gm_lang_is_top_nav(false)) {
+        gm_lang_log("Part2 HOLD: english url, cookie=$cookie_lang, serving english");
+        return;
+    }
 
     // Get the current post's translated URL
     global $post;

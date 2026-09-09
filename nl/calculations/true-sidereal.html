@@ -24,13 +24,22 @@
     return;
   }
 
-  // current === "en" (no language prefix in URL). Honor cookie if non-en.
-  if (cookieLang && SUPPORTED.indexOf(cookieLang) !== -1 && cookieLang !== "en") {
-    var rest = path.replace(/^\/learn-hub/, "");
-    if (!rest) rest = "/";
-    var target = "/learn-hub/" + cookieLang + rest;
-    window.location.replace(target + window.location.search + window.location.hash);
-  }
+  // current === "en" (no language prefix in URL). SERVE ENGLISH. Do not redirect.
+  //
+  // JOHN'S RULE, 2026-09-09: "We dont want real english users goign to a foreign page
+  // EVER" / "Yes serve english when in doubt".
+  //
+  // This used to hard-replace the location with whatever language the gm_lang cookie
+  // held. One click on a German link anywhere on the site set that cookie, and from then
+  // on every English Learn Hub URL - a Google result, a link in a mail - bounced the
+  // visitor to the German page. Because it replaced rather than assigned, the Back
+  // button could not get them out of it either.
+  //
+  // The URL is the language. A localized visitor reaches their hub through the localized
+  // nav, which now links /learn-hub/{lang}/ directly, so nothing needs the cookie to
+  // route it. The cookie is left alone here on purpose: the WordPress side resets it on
+  // a real page load, and writing it from a page that may be a speculative prerender
+  // would clobber a genuine member's stored language.
 })();</script>
 
     <meta charset="UTF-8">
@@ -195,7 +204,7 @@ fetch("/_nav/nl.html").then(function(r){return r.ok?r.text():null})
 <!-- ==================== BREADCRUMB ==================== -->
     <div class="bg-gm-light border-b border-gray-200">
         <div class="max-w-4xl mx-auto px-6 py-3">
-            <a href="/learn-hub/" class="text-gm-purple hover:text-gm-dark text-sm font-medium transition">&larr; Terug naar Leren Hub</a>
+            <a href="/learn-hub/nl/" class="text-gm-purple hover:text-gm-dark text-sm font-medium transition">&larr; Terug naar Leren Hub</a>
         </div>
     </div>
 
