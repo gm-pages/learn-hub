@@ -30,9 +30,15 @@
  *                      SERVING  is permissive - anything not positively a subresource gets
  *                               English, so absent or stripped Sec-Fetch headers fall towards
  *                               English rather than towards a foreign page.
- *                      WRITING  is strict - only a positive document+navigate, never a prefetch,
- *                               overwrites a visitor's stored language. This is what keeps
- *                               db379128 intact for clients that send no Sec-Fetch headers.
+ *                      WRITING  is strict, and strict in BOTH directions - only a positive
+ *                               document+navigate, never a prefetch and never a background
+ *                               request, may change a visitor's stored language, whatever the
+ *                               languages involved. This keeps db379128 intact for clients that
+ *                               send no Sec-Fetch headers, and it closes the reverse hole found
+ *                               2026-09-09: three background fetch() calls to /de/ URLs, from a
+ *                               page the visitor never left, silently switched the whole site to
+ *                               German. An img, an XHR, a prefetch or a link-preview crawler
+ *                               pointing at any /de/ URL was enough.
  *                    Speculative prefetch and prerender are excluded from both, via Sec-Purpose /
  *                    Purpose / X-Moz. WordPress 6.8 ships Speculative Loading on by default, so
  *                    without that check a page the member never opened would reset their language.
@@ -239,15 +245,32 @@ function gm_lang_write_cookie() {
     // XHR from /de/ to / carried referer=/de/ and passed requirement B. Sec-Fetch
     // is the guard that actually distinguishes a page load from a background
     // request, and it is kept in full.
-    if ($lang === 'en' && !empty($existing) && $existing !== 'en') {
-        // STRICT here. Overwriting a real German member's stored language on a guess is its own
-        // fault, and it is not needed to satisfy the English rule: Part 2 below serves English
-        // whatever this decides. So a positive document+navigate signal, or we leave it alone.
-        if (!gm_lang_is_top_nav(true)) {
-            gm_lang_log("Part1 protect: WPML en but cookie=$existing (non-default), not a positive top-level navigation, preserving");
-            return;
-        }
-        gm_lang_log("Part1 allow: real page load of an EN url, resetting cookie from $existing");
+    /*  ONLY A REAL PAGE LOAD MAY CHANGE A VISITOR'S STORED LANGUAGE. BOTH DIRECTIONS.
+     *
+     *  This guard used to apply only when WPML said 'en' and the cookie said something else -
+     *  it protected a German reader from being reset to English, and left the reverse wide open.
+     *  Found 2026-09-09 by accident: three background fetch() calls to /de/ URLs, from a page
+     *  the visitor never left, silently set gm_lang AND wp-wpml_current_language to 'de'. No
+     *  navigation, no click. An <img>, an XHR, a prefetch, a link-preview crawler or an embedded
+     *  iframe pointing at any /de/ URL was enough to change what language the whole site served.
+     *
+     *  That is the same fault as the one this file was opened to fix, running the other way, and
+     *  it is the more dangerous direction: it moves an English speaker INTO a foreign language,
+     *  which is precisely what John's rule forbids.
+     *
+     *  So the test is now symmetric. Changing stored language is a deliberate act and requires a
+     *  positive document+navigate signal, whatever the languages involved. A first visit still
+     *  writes freely - there is nothing to protect yet - and re-affirming the same language is a
+     *  no-op handled above.
+     *
+     *  Serving is untouched and stays permissive: Part 2 still hands out English whenever the
+     *  signal is unclear. Strict about WRITING, generous about SERVING.                        */
+    if (!empty($existing) && $existing !== $lang && !gm_lang_is_top_nav(true)) {
+        gm_lang_log("Part1 protect: background request would change cookie $existing -> $lang, preserving");
+        return;
+    }
+    if (!empty($existing) && $existing !== $lang) {
+        gm_lang_log("Part1 allow: real page load, changing cookie $existing -> $lang");
     }
 
     gm_lang_log("Part1 WRITING cookie: " . ($existing ?: 'none') . " -> $lang");
