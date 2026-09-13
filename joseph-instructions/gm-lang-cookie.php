@@ -2,7 +2,7 @@
 /**
  * Plugin Name: GM Language Cookie Sync
  * Description: Bidirectional language sync between WPML (WordPress) and Learn Hub (static HTML) via shared gm_lang cookie on .geneticmatrix.com.
- * Version: 1.1
+ * Version: 1.2
  * Author: Genetic Matrix
  *
  * INSTALLATION (Joseph):
@@ -17,9 +17,11 @@
  *        - it MUST serve /plans-features/ in English and reset gm_lang to en.
  *          Landing on /de/plaene-merkmale/ means this file did not deploy.
  *
- * STAGING: change '.geneticmatrix.com' below to '.staginggm.com' for the staging install only.
+ * STAGING: nothing to change. The cookie domain follows the request host (1.2).
  *
  * CHANGELOG
+ *   1.2  2026-09-13  Cookie domain derived from the request host, so one file deploys to staging
+ *                    and live unedited. Behaviour otherwise identical to 1.1.
  *   1.1  2026-09-09  An English WordPress URL now always serves English. Previously a single click
  *                    on a non-English link locked a visitor into that language site-wide, because
  *                    the English URL could neither be served nor clear the cookie. Owner's rule:
@@ -59,8 +61,17 @@
 
 if (!defined('ABSPATH')) exit;
 
-// Change this ONE constant for staging vs live.
-define('GM_LANG_COOKIE_DOMAIN', '.geneticmatrix.com');
+// The cookie domain follows the host, so the SAME file deploys to staging and live with no
+// hand edit (a hand edit per environment is how live and the repo drift apart). Two labels of
+// the request host: www.staginggm.com -> .staginggm.com, www.geneticmatrix.com -> .geneticmatrix.com.
+// Anything without a dot (localhost) gets no domain attribute, which is what a cookie on a
+// bare host needs.
+if (!defined('GM_LANG_COOKIE_DOMAIN')) {
+    $gm_lang_host = isset($_SERVER['HTTP_HOST']) ? strtolower(preg_replace('/:\d+$/', '', (string) $_SERVER['HTTP_HOST'])) : '';
+    $gm_lang_parts = explode('.', $gm_lang_host);
+    define('GM_LANG_COOKIE_DOMAIN', count($gm_lang_parts) >= 2 ? '.' . implode('.', array_slice($gm_lang_parts, -2)) : '');
+    unset($gm_lang_host, $gm_lang_parts);
+}
 
 // Supported languages (must match Learn Hub master-nav.html SUPPORTED array)
 function gm_lang_supported() {
