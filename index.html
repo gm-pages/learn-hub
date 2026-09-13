@@ -225,12 +225,55 @@ fetch("/_nav/en.html").then(function(r){return r.ok?r.text():null})
     <div class="bg-gray-50 border-b border-gray-300 sticky top-[80px] z-40 shadow-sm" id="section-nav">
         <div class="max-w-6xl mx-auto px-6">
             <nav class="flex items-center gap-6 md:gap-8 overflow-x-auto scrollbar-hide py-3.5" aria-label="Section navigation">
+                <a href="#topocentric" class="section-nav-link text-sm font-bold text-gray-500 hover:text-gm-purple whitespace-nowrap border-b-2 border-transparent hover:border-gm-purple pb-3 -mb-[15px] transition">Topocentric</a>
                 <a href="#human-design" class="section-nav-link text-sm font-bold text-gray-500 hover:text-gm-purple whitespace-nowrap border-b-2 border-transparent hover:border-gm-purple pb-3 -mb-[15px] transition">Human Design</a>
                 <a href="#chart-methods" class="section-nav-link text-sm font-bold text-gray-500 hover:text-gm-purple whitespace-nowrap border-b-2 border-transparent hover:border-gm-purple pb-3 -mb-[15px] transition">Chart Methods</a>
                 <a href="#astrology" class="section-nav-link text-sm font-bold text-gray-500 hover:text-gm-purple whitespace-nowrap border-b-2 border-transparent hover:border-gm-purple pb-3 -mb-[15px] transition">Astrology</a>
             </nav>
         </div>
     </div>
+
+    <!-- ==================== TOPOCENTRIC FEATURE ==================== -->
+    <style>
+        .topo-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); }
+        .topo-card:hover { background: rgba(255,255,255,0.14); border-color: rgba(255,255,255,0.45); }
+    </style>
+    <section id="topocentric" class="bg-gm-dark text-white py-12 md:py-16 scroll-mt-[128px]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-2">
+                <span class="text-xs font-semibold tracking-widest text-gm-purple-soft uppercase">New &middot; Topocentric Human Design</span>
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold mb-3">
+                Your chart has always known <em>when</em> you were born. Now it knows <em>where</em>.
+            </h2>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-3xl mb-8">
+                Every Human Design chart ever calculated measures the planets from the center of the Earth. Two people born at the same instant in Bogot&aacute; and Munich get an identical bodygraph. Topocentric calculates the sky from the place you were actually born, and in a system that reads the sky to the arc-second, that can move the Moon by a whole Line. Geocentric stays the standard. Topocentric is the correction.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <a href="topocentric/index.html#easy-path" class="topo-card rounded-xl p-6 block transition">
+                    <span class="text-xs font-semibold tracking-widest text-gm-purple-soft uppercase">The Easy View</span>
+                    <h3 class="text-lg font-bold text-white mb-1">For everyone</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">Parallax with a street sign, altitude with two cities, and why a geocentric Moon can be two hours out. No math.</p>
+                </a>
+                <a href="topocentric/index.html#hd-path" class="topo-card rounded-xl p-6 block transition">
+                    <span class="text-xs font-semibold tracking-widest text-gm-purple-soft uppercase">The Human Design Layer</span>
+                    <h3 class="text-lg font-bold text-white mb-1">For students and practitioners</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">Gate to Base, the Moon's role in the sub-lines, and what topocentric can move in a chart. Can, not will.</p>
+                </a>
+                <a href="topocentric/index.html#quant-path" class="topo-card rounded-xl p-6 block transition">
+                    <span class="text-xs font-semibold tracking-widest text-gm-purple-soft uppercase">The Quant Version</span>
+                    <h3 class="text-lg font-bold text-white mb-1">For developers and researchers</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">Swiss Ephemeris, the parallax math, and the three reference frames side by side. No spiritual language.</p>
+                </a>
+            </div>
+            <div class="flex flex-wrap items-center gap-4">
+                <a href="topocentric/index.html" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-3 px-8 rounded-xl transition">
+                    Explore Topocentric &rarr;
+                </a>
+                <span class="text-xs font-semibold text-gray-400">Available with Plus and above</span>
+            </div>
+        </div>
+    </section>
 
     <!-- ==================== HUMAN DESIGN SECTION ==================== -->
     <section id="human-design" class="bg-gm-light pt-8 md:pt-10 pb-12 md:pb-16 scroll-mt-[132px]">
@@ -687,6 +730,21 @@ fetch("/_nav/en.html").then(function(r){return r.ok?r.text():null})
                         </div>
                     </div>
                     <a href="calculations/hybrid-calculation.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
+                </div>
+
+                <!-- Topocentric Card -->
+                <div class="card-reveal card-link bg-gm-light rounded-lg border border-gm-border p-6 hover:shadow-lg hover:-translate-y-2 hover:bg-white transition-all duration-300 border-t-4 border-t-gm-purple flex flex-col">
+                    <div class="flex items-start gap-4 mb-4 flex-1">
+                        <img src="assets/icon-moon.svg" alt="Topocentric" class="w-16 h-16 flex-shrink-0">
+                        <div>
+                            <span class="text-xs font-semibold tracking-widest text-gm-green uppercase">Topocentric</span>
+                            <h3 class="text-lg font-bold text-gray-800 mb-1">Geocentric vs Topocentric</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Geocentric calculates every planet from the center of the Earth. Topocentric calculates them from the place you were born, so the Moon can shift by up to a full Line. The first Human Design calculation that lets your birthplace into the chart. Plus and above.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="topocentric/index.html" class="text-gm-purple text-sm font-semibold hover:underline mt-auto card-link-target">Explore →</a>
                 </div>
 
             </div>

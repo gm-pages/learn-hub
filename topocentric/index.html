@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link id="gm-flag-icons" rel="stylesheet" href="/assets/flags/flags.css">
+<script id="gm-lang-redirect">(function(){
+  var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
+  var path = window.location.pathname;
+  var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
+  var current = m ? m[1] : "en";
+  var v = ("; " + document.cookie).split("; gm_lang=");
+  var cookieLang = v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
+  if (current !== "en") {
+    if (cookieLang !== current) {
+      var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
+      var parts = location.hostname.split('.');
+      var domain = parts.length >= 2 ? "; domain=." + parts.slice(-2).join('.') : "";
+      document.cookie = "gm_lang=" + current + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
+    }
+    return;
+  }
+  // English URL: serve English. Never redirect on the cookie (John, 2026-09-09).
+})();</script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geocentric vs Topocentric Human Design | Genetic Matrix</title>
+    <meta name="description" content="Geocentric Human Design calculates every chart from the center of the Earth. Topocentric calculates it from the place you were born. Learn what the difference is, why it matters more in Human Design than in astrology, and what can change in your chart.">
+    <meta name="keywords" content="topocentric human design, geocentric vs topocentric, topocentric chart, parallax human design, moon parallax, human design calculation methods, birth location human design, sub-line color tone base, genetic matrix topocentric">
+    <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/topocentric/">
+    <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/topocentric/">
+    <link rel="alternate" hreflang="x-default" href="https://www.geneticmatrix.com/learn-hub/topocentric/">
+    <meta property="og:title" content="Geocentric vs Topocentric Human Design">
+    <meta property="og:description" content="Your chart has always known when you were born. Topocentric is the first Human Design calculation that also knows where.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.geneticmatrix.com/learn-hub/topocentric/">
+    <link rel="stylesheet" href="/learn-hub/assets/css/learn-hub.min.css">
+
+    <style>
+        @import url('/learn-hub/assets/css/bilo.css');
+        body { font-family: 'bilo', sans-serif; }
+        details summary { cursor: pointer; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+        details[open] summary::after { content: '\2212'; }
+        details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+        /* Page-local utilities not in the purged Learn Hub build */
+        .topo-card-dark { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); }
+        .topo-card-dark:hover { background: rgba(255,255,255,0.14); border-color: rgba(255,255,255,0.4); }
+        .topo-table { width: 100%; border-collapse: collapse; }
+        .topo-table th, .topo-table td { padding: 0.65rem 1rem; text-align: left; font-size: 0.875rem; }
+        .topo-table th { background: #3C2864; color: #fff; font-weight: 600; }
+        .topo-table tr:nth-child(even) td { background: #F7F8F9; }
+        .topo-table td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+        .topo-figure { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.8rem; line-height: 1.5; white-space: pre; overflow-x: auto; }
+        .topo-pill-soon { background: #E8961D; color: #fff; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 2px 8px; border-radius: 9999px; }
+    </style>
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Geocentric vs Topocentric Human Design",
+    "description": "Geocentric Human Design calculates every chart from the center of the Earth. Topocentric calculates it from the place you were born. Learn what the difference is, why it matters more in Human Design than in astrology, and what can change in your chart.",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Genetic Matrix",
+        "url": "https://www.geneticmatrix.com"
+    },
+    "mainEntityOfPage": "https://www.geneticmatrix.com/learn-hub/topocentric/",
+    "datePublished": "2026-09-13",
+    "dateModified": "2026-09-13"
+}
+    </script>
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Is my geocentric chart wrong?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Geocentric is the method Human Design has used since the beginning, it is what every other platform calculates, and it remains the default on Genetic Matrix. Topocentric adds one thing geocentric leaves out: the exact place on Earth you were born. For most people most activations stay the same. The question is whether any of yours sit close enough to a boundary to move."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can topocentric change my Type or Authority?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It can, and for most people it does not. Type and Authority depend on which Gates are activated and which channels they complete. An activation only moves to a neighboring Gate when it already sits within the parallax shift of that Gate's edge, and the Sun, the body Profile is built on, barely moves at all. The Moon is the body that moves, by up to about one Line. Where the Moon happens to sit at a Gate edge, a channel and a Center can change, and with them Type or Authority. We say can, never will."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Why has nobody done this before?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Because in astrology it does not matter. Astrology reads the sky in whole degrees and 30-degree signs, so a shift of one degree is rounding error there, and the software Human Design inherited was astrology software. Human Design reads the same sky down to arc-seconds, sixty times finer than the arc-minutes astrology works in. The same shift that astrology can ignore crosses real Human Design boundaries."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Which method should I use?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Run both on the same birth data and look at what moves. If nothing moves, you have your answer and your chart is unchanged. If something moves, you have a real question to sit with. Do not mix outputs from the two methods in one reading."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Does topocentric apply to transits as well?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, and in some ways it matters more there. A natal chart is one moment; transits are a stream of moments, and the Moon crosses a Line about every hour and three-quarters. Calculating the transiting Moon from where you actually are keeps its Gate and Line changes in step with the sky above you rather than with the center of the Earth."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do I need my birth altitude?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It helps but it is the smallest part of the picture. Latitude and longitude do almost all of the work because they decide where in your sky each planet was. Genetic Matrix resolves altitude from the birth location automatically; you do not need to know it."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is topocentric included with a free account?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Topocentric is available on Plus and above. Free accounts calculate geocentric charts, which is the Human Design standard."
+            }
+        }
+    ]
+}
+    </script>
+
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- ==================== NAV BAR ==================== -->
+    <div id="gm-nav"><!--#config errmsg="" --><!--#include virtual="/_nav/en.html" --></div>
+<script>/* Nav fail-safe. If SSI is disabled the include above degrades to an inert HTML
+   comment and the nav vanishes silently. If that happens, fetch the SAME file over HTTP.
+   One source of truth either way. Never edit a nav into this page. */
+(function(){var n=document.getElementById("gm-nav");if(!n||n.children.length)return;
+fetch("/_nav/en.html").then(function(r){return r.ok?r.text():null})
+.then(function(h){if(h)n.innerHTML=h}).catch(function(){});})();</script>
+<!-- ==================== BREADCRUMB ==================== -->
+    <div class="bg-gm-light border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-6 py-3">
+            <a href="/learn-hub/" class="text-gm-purple hover:text-gm-dark text-sm font-medium transition">&larr; Back to Learn Hub</a>
+        </div>
+    </div>
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+        <div class="max-w-3xl mx-auto px-6">
+            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-green hover:bg-gm-green-dark text-white text-xs font-semibold tracking-wide px-5 py-2 rounded-full mb-6 transition">
+                Available with Plus and above
+            </a>
+            <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">Topocentric Human Design</p>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Geocentric vs Topocentric</h1>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
+                Your chart has always known <em>when</em> you were born. Topocentric is the first Human Design calculation that also knows <em>where</em>.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> What This Is
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Every Human Design chart is built from the positions of the planets at the moment of birth. What is rarely said is <strong>where those positions are measured from</strong>. Every chart you have ever seen, on any platform, measures them from the center of the Earth. That is what geocentric means.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Topocentric measures them from the point on the Earth's surface where you were born: your latitude, your longitude and your height above sea level. It is the same sky, the same planets, the same moment. The only thing that changes is the vantage point. Because the Moon is close to us, that change of vantage point moves the Moon by up to about one degree, which in Human Design is about one full Line.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                <strong>Topocentric is available with a Genetic Matrix Plus subscription and above.</strong> Geocentric remains the default and the standard.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Two Ways to Ask the Same Question
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                The question is always <em>where was the Moon at the moment you were born?</em> The two methods answer it from two different places.
+            </p>
+            <div class="grid sm:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white rounded-xl border border-gm-border p-6">
+                    <h3 class="text-sm font-bold text-gm-purple mb-2">Geocentric</h3>
+                    <p class="text-gm-text text-sm leading-relaxed">Planet positions are calculated as seen from the center of the Earth, about 6,371 km below your feet. One vantage point for every person alive. Your birthplace is used for one thing only: to work out which time zone converts your birth time to universal time.</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-6">
+                    <h3 class="text-sm font-bold text-gm-purple mb-2">Topocentric</h3>
+                    <p class="text-gm-text text-sm leading-relaxed">Planet positions are calculated as seen from your actual birthplace on the Earth's surface. Latitude and longitude decide where each planet sat in your sky; altitude adds the last few meters. Two people born at the same instant in different places get two different Moons.</p>
+                </div>
+            </div>
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5 mb-8">
+                <p class="text-gm-purple font-bold text-xs tracking-wide uppercase mb-2">The Bogot&aacute; and Munich Problem</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Imagine two babies born at exactly the same instant, one in Bogot&aacute; and one in Munich. Under geocentric calculation their bodygraphs are identical, activation for activation, down to the last Base. Not similar. Identical. Human Design has always taught that the place of birth is part of the design, but with a geocentric calculation the place does nothing except set the clock. Topocentric is the calculation that lets the place actually enter the chart.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 md:py-14 bg-gm-light" id="why-it-matters">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Why It Matters More in Human Design Than in Astrology
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Astrology reads the sky in whole degrees. A sign is 30 degrees wide, an aspect is allowed several degrees of orb, and a one-degree shift in the Moon changes almost nothing. That is why astrologers have never worried about parallax, and why the software Human Design inherited from astrology never bothered with it.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Human Design reads the same sky with a far finer instrument. Each Gate is divided into Lines, each Line into Colors, each Color into Tones, each Tone into Bases. The table shows how narrow those layers are and how quickly the Sun and Moon move through them.
+            </p>
+            <div class="bg-white rounded-lg border border-gm-border overflow-x-auto mb-4">
+                <table class="topo-table">
+                    <thead><tr><th>Layer</th><th>Width</th><th>In arc-seconds</th><th>Sun crosses one in</th><th>Moon crosses one in</th></tr></thead>
+                    <tbody>
+                        <tr><td class="">Gate</td><td class="num">5.6250&deg;</td><td class="num">20,250&Prime;</td><td class="num">137.0 h</td><td class="num">615 min</td></tr>
+                        <tr><td class="">Line</td><td class="num">0.9375&deg;</td><td class="num">3,375&Prime;</td><td class="num">22.8 h</td><td class="num">102 min</td></tr>
+                        <tr><td class="">Color</td><td class="num">0.15625&deg;</td><td class="num">562.5&Prime;</td><td class="num">3.8 h</td><td class="num">17.1 min</td></tr>
+                        <tr><td class="">Tone</td><td class="num">0.02604&deg;</td><td class="num">93.75&Prime;</td><td class="num">38 min</td><td class="num">2.8 min</td></tr>
+                        <tr><td class="">Base</td><td class="num">0.00521&deg;</td><td class="num">18.75&Prime;</td><td class="num">7.6 min</td><td class="num">34 sec</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-gray-400 text-xs mt-3">Widths follow from the wheel: 360&deg; divided into 64 Gates, 6 Lines, 6 Colors, 6 Tones and 5 Bases. Crossing times use the mean motions of the Sun and Moon.</p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                The Moon's parallax averages about 0.95&deg;, roughly 1 Line, 6 Colors, 37 Tones or 183 Bases. A shift that astrology can round away is, in Human Design, wider than an entire Line. That is the whole argument in one sentence: Human Design chose a microscope and has been reading it with the naked eye.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-10 md:py-14 bg-white" id="what-can-move">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> What Can Move, and What Usually Does Not
+            </h2>
+            <h3 class="text-base md:text-lg font-bold text-gm-purple mb-3">The Moon is the body that moves</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                The Moon is close, about 384,400 km away, so the Earth's width is a meaningful fraction of the distance and the change of vantage point shows. Its position can differ by up to about 1.0&deg; between the center of the Earth and a point on the surface. The shift is largest when the Moon is near the horizon and close to zero when it is overhead, which is why both the place and the time of day decide the result. In practice the Moon's Color, Tone and Base will very often differ between geocentric and topocentric, its Line fairly often, and its Gate when the Moon sits near a Gate boundary.
+            </p>
+            <h3 class="text-base md:text-lg font-bold text-gm-purple mb-3">The Sun barely moves, so Profile holds</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                The Sun is so far away that its parallax is under 9 arc-seconds. That is far too small to move the Sun's Gate or Line, so your Profile, which is built from the Sun and Earth Lines, does not change under topocentric. It is, however, about half the width of a Base (47%), so the Sun's Base can flip when it sits close to a Base boundary. The deepest layer moves even on the steadiest body.
+            </p>
+            <h3 class="text-base md:text-lg font-bold text-gm-purple mb-3">Inner planets sometimes, outer planets almost never</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Mercury, Venus and Mars have parallaxes of tens of arc-seconds at most, so they can change Base or Tone when they sit close to a boundary. Jupiter and beyond move by less than a Base and can be treated as fixed.
+            </p>
+            <h3 class="text-base md:text-lg font-bold text-gm-purple mb-3">The Lunar Nodes</h3>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                The Nodes are not bodies. They are the points where the Moon's orbit crosses the ecliptic, a piece of orbital geometry rather than something seen from a place. On first principles they are expected to hold under topocentric. We report what the calculation engine measures rather than assume it, and the results will be published on this page.
+            </p>
+            <div class="bg-gm-warning border-l-4 border-gm-orange rounded-r-xl p-6 mb-4">
+                <p class="text-gm-orange font-bold text-xs tracking-wide uppercase mb-3">The cascade, and why we say can, not will</p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Every Gate has two edge Lines, the 1st and the 6th. When an activation sits on an edge Line and the parallax shift nudges it across, it lands in the neighboring Gate. A new Gate can complete a channel, a new channel defines a Center, and a newly defined Center can change your Type or your Authority. Most charts do not have a Moon on a Gate edge, so most charts keep their Type. Some do. Topocentric <strong>can</strong> change Type or Authority; it does not <strong>will</strong>. Nobody knows which group they are in until they run both.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4 mb-0">
+                A stranger result is possible too: because Profile comes from the Sun, a person can keep their Profile and still change Type. Same costume, different engine.
+            </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 md:py-14 bg-gm-light" id="paths">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Three Ways In
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Pick the path that matches how you like to learn. They all lead to the same place.
+            </p>
+            <div class="grid grid-cols-1 gap-6">
+                <div class="bg-white rounded-xl border border-gm-border p-6 md:p-8" id="easy-path">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="flex items-center justify-center w-14 h-14 rounded-full bg-purple-100 text-gm-purple font-bold text-lg flex-shrink-0">E</div>
+                        <div>
+                            <div class="text-lg md:text-xl font-bold text-gray-800">The Easy View</div>
+                            <div class="text-sm font-semibold text-gray-500">For everyone</div>
+                        </div>
+                    </div>
+                    <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Plain-language explanations with everyday pictures. No math, no jargon, just what changes and why.</p>
+                    <ul class="text-sm leading-relaxed space-y-2">
+                        <li class="flex gap-3"><span class="text-gm-purple">&#9679;</span><a href="parallax.html" class="text-gm-purple font-semibold hover:underline">What Is Parallax? The Street Sign Illusion</a></li>
+                        <li class="flex gap-3"><span class="text-gm-purple">&#9679;</span><a href="altitude.html" class="text-gm-purple font-semibold hover:underline">The Altitude Factor: Amsterdam vs Mexico City</a></li>
+                        <li class="flex gap-3"><span class="text-gm-purple">&#9679;</span><a href="moon-timing.html" class="text-gm-purple font-semibold hover:underline">Why a Geocentric Moon Can Be Almost Two Hours Off</a></li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-6 md:p-8" id="hd-path">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="flex items-center justify-center w-14 h-14 rounded-full bg-green-100 text-green-800 font-bold text-lg flex-shrink-0">H</div>
+                        <div>
+                            <div class="text-lg md:text-xl font-bold text-gray-800">The Human Design Layer</div>
+                            <div class="text-sm font-semibold text-gray-500">For students and practitioners</div>
+                        </div>
+                    </div>
+                    <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">The sub-line mechanics: Gate to Base, the Moon's role, and what topocentric can move in a chart.</p>
+                    <ul class="text-sm leading-relaxed space-y-2">
+                        <li class="flex gap-3 items-center"><span class="text-gray-300">&#9679;</span><span class="text-gray-500">Deconstructing the Sub-Line: From Gates Down to Bases</span> <span class="topo-pill-soon">Coming soon</span></li>
+                        <li class="flex gap-3 items-center"><span class="text-gray-300">&#9679;</span><span class="text-gray-500">The Moon Mapping Gap</span> <span class="topo-pill-soon">Coming soon</span></li>
+                        <li class="flex gap-3 items-center"><span class="text-gray-300">&#9679;</span><span class="text-gray-500">The Sun's Color Layer and Motivation</span> <span class="topo-pill-soon">Coming soon</span></li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl border border-gm-border p-6 md:p-8" id="quant-path">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="flex items-center justify-center w-14 h-14 rounded-full bg-orange-100 text-orange-800 font-bold text-lg flex-shrink-0">Q</div>
+                        <div>
+                            <div class="text-lg md:text-xl font-bold text-gray-800">The Quant Version</div>
+                            <div class="text-sm font-semibold text-gray-500">For developers and researchers</div>
+                        </div>
+                    </div>
+                    <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">Swiss Ephemeris, the parallax math, and how the three reference frames differ. No spiritual language.</p>
+                    <ul class="text-sm leading-relaxed space-y-2">
+                        <li class="flex gap-3 items-center"><span class="text-gray-300">&#9679;</span><span class="text-gray-500">Topocentric Positions in the Swiss Ephemeris</span> <span class="topo-pill-soon">Coming soon</span></li>
+                        <li class="flex gap-3 items-center"><span class="text-gray-300">&#9679;</span><span class="text-gray-500">The Parallax Math</span> <span class="topo-pill-soon">Coming soon</span></li>
+                        <li class="flex gap-3 items-center"><span class="text-gray-300">&#9679;</span><span class="text-gray-500">Heliocentric, Geocentric, Topocentric</span> <span class="topo-pill-soon">Coming soon</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 md:py-14 bg-white" id="study">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Measured, Not Argued
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Rather than argue about how often a chart changes, we are measuring it. Genetic Matrix is running the same births through both calculations across a very large sample and counting what moves at every layer: Base, Tone, Color, Line, Gate, and the rate at which Type, Authority and the Variables change. The results will be published here when the run is complete. Until then this page makes no claim about how many charts change, only about how they can.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-gm-card-active rounded-2xl p-8 border-l-4 border-gm-purple">
+                <p class="text-gm-purple text-lg italic leading-relaxed">
+                    &ldquo;Two people born at the same instant in Bogot&aacute; and Munich have the same geocentric chart. They did not have the same sky.&rdquo;
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Frequently Asked Questions
+            </h2>
+            <div class="space-y-3">
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Is my geocentric chart wrong?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        No. Geocentric is the method Human Design has used since the beginning, it is what every other platform calculates, and it remains the default on Genetic Matrix. Topocentric adds one thing geocentric leaves out: the exact place on Earth you were born. For most people most activations stay the same. The question is whether any of yours sit close enough to a boundary to move.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Can topocentric change my Type or Authority?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        It can, and for most people it does not. Type and Authority depend on which Gates are activated and which channels they complete. An activation only moves to a neighboring Gate when it already sits within the parallax shift of that Gate's edge, and the Sun, the body Profile is built on, barely moves at all. The Moon is the body that moves, by up to about one Line. Where the Moon happens to sit at a Gate edge, a channel and a Center can change, and with them Type or Authority. We say <em>can</em>, never <em>will</em>.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Why has nobody done this before?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Because in astrology it does not matter. Astrology reads the sky in whole degrees and 30-degree signs, so a shift of one degree is rounding error there, and the software Human Design inherited was astrology software. Human Design reads the same sky down to arc-seconds, sixty times finer than the arc-minutes astrology works in. The same shift that astrology can ignore crosses real Human Design boundaries.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Which method should I use?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Run both on the same birth data and look at what moves. If nothing moves, you have your answer and your chart is unchanged. If something moves, you have a real question to sit with. Do not mix outputs from the two methods in one reading.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Does topocentric apply to transits as well?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Yes, and in some ways it matters more there. A natal chart is one moment; transits are a stream of moments, and the Moon crosses a Line about every hour and three-quarters. Calculating the transiting Moon from where you actually are keeps its Gate and Line changes in step with the sky above you rather than with the center of the Earth.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Do I need my birth altitude?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        It helps but it is the smallest part of the picture. Latitude and longitude do almost all of the work because they decide where in your sky each planet was. Genetic Matrix resolves altitude from the birth location automatically; you do not need to know it.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Is topocentric included with a free account?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Topocentric is available on Plus and above. Free accounts calculate geocentric charts, which is the Human Design standard.
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTINUE LEARNING ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Continue Learning
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="/learn-hub/topocentric/parallax.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">What Is Parallax? &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">The street sign illusion, and why the Moon is the body that moves.</p>
+                </a>
+                <a href="/learn-hub/deeper-mechanics/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Deeper Mechanics &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Color, Tone and the Variables: the layers topocentric reaches.</p>
+                </a>
+                <a href="/learn-hub/calculations/tropical.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Tropical &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">The standard zodiac frame Human Design is built on.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">See What Moves in Your Chart</h2>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+                Run your chart geocentric and topocentric on the same birth data and compare them side by side. If nothing moves, you know. If something does, you know that too.
+            </p>
+            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+                Get Plus &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+                <div class="text-center md:text-left">
+                    <img src="/learn-hub/assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">All right reserved.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Privacy, Terms and Conditions</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Subscribe to Our Newsletter</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Sign up to our newsletter to receive updates, offers,
+                        new releases, and everything related to Genetic Matrix.
+                    </p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input type="email" placeholder="Your Email Address" class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400">
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connect With Us</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-fb.svg" alt="Facebook" class="w-10 h-10"></a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-x.svg" alt="X" class="w-10 h-10"></a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-insta.svg" alt="Instagram" class="w-10 h-10"></a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-yt.svg" alt="YouTube" class="w-10 h-10"></a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+(function() {
+    fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            var badge = document.getElementById('gm-cart-count');
+            if (badge && data.cart_count > 0) { badge.textContent = data.cart_count; badge.classList.remove('hidden'); }
+            var loggedOut = document.getElementById('gm-logged-out');
+            var loggedIn = document.getElementById('gm-logged-in');
+            if (data.logged_in) {
+                var freeChart = document.getElementById("gm-free-chart");
+                if (freeChart) freeChart.classList.add("hidden");
+                if (loggedOut) loggedOut.classList.add('hidden');
+                if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
+            }
+        })
+        .catch(function() {});
+})();
+</script>
+<script id="gm-hamburger-script">(function(){var h=document.getElementById("gm-hamburger");var m=document.getElementById("gm-mobile-menu");if(h&&m){h.onclick=function(){if(m.style.display==="block"){m.style.display="none";}else{m.style.display="block";}};}})()</script>
+<script id="gm-dict-tooltip-loader">(function(){
+  var parts = window.location.pathname.split('/');
+  var lang = (parts[1] === 'learn-hub' && ['de','es','fr','it','nl','pt'].indexOf(parts[2]) !== -1) ? '/' + parts[2] : '';
+  var basePath = '/learn-hub' + lang + '/dictionary';
+  var s = document.createElement('script');
+  s.src = basePath + '/gm-dictionary.js';
+  s.onload = function(){
+    if (window.GMDictionary) {
+      GMDictionary.init({ selectors: ['section p, section li, section blockquote'], dictionaryUrl: basePath + '/dictionary.json' });
+    }
+  };
+  document.body.appendChild(s);
+})();</script>
+</body>
+</html>

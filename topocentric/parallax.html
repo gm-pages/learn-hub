@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link id="gm-flag-icons" rel="stylesheet" href="/assets/flags/flags.css">
+<script id="gm-lang-redirect">(function(){
+  var SUPPORTED = ["en","de","es","fr","it","nl","pt"];
+  var path = window.location.pathname;
+  var m = path.match(/^\/learn-hub\/(de|es|fr|it|nl|pt)(\/|$)/);
+  var current = m ? m[1] : "en";
+  var v = ("; " + document.cookie).split("; gm_lang=");
+  var cookieLang = v.length === 2 ? decodeURIComponent(v.pop().split(";").shift()) : null;
+  if (current !== "en") {
+    if (cookieLang !== current) {
+      var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
+      var parts = location.hostname.split('.');
+      var domain = parts.length >= 2 ? "; domain=." + parts.slice(-2).join('.') : "";
+      document.cookie = "gm_lang=" + current + "; expires=" + d.toUTCString() + "; path=/; samesite=lax" + domain;
+    }
+    return;
+  }
+  // English URL: serve English. Never redirect on the cookie (John, 2026-09-09).
+})();</script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Is Parallax? The Street Sign Illusion | Genetic Matrix</title>
+    <meta name="description" content="Parallax is why an object seems to shift against its background when you change where you stand. The Moon does it too, by up to a degree between two places on Earth. Here is the everyday picture behind topocentric Human Design.">
+    <meta name="keywords" content="what is parallax, astronomical parallax, moon parallax, parallax explained simply, topocentric human design, geocentric vs topocentric, street sign analogy parallax, genetic matrix">
+    <link rel="canonical" href="https://www.geneticmatrix.com/learn-hub/topocentric/parallax.html">
+    <link rel="alternate" hreflang="en" href="https://www.geneticmatrix.com/learn-hub/topocentric/parallax.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.geneticmatrix.com/learn-hub/topocentric/parallax.html">
+    <meta property="og:title" content="What Is Parallax? The Street Sign Illusion">
+    <meta property="og:description" content="Why where you stand changes the sky, explained with a street sign, a car window and the Moon.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.geneticmatrix.com/learn-hub/topocentric/parallax.html">
+    <link rel="stylesheet" href="/learn-hub/assets/css/learn-hub.min.css">
+
+    <style>
+        @import url('/learn-hub/assets/css/bilo.css');
+        body { font-family: 'bilo', sans-serif; }
+        details summary { cursor: pointer; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: '+'; float: right; font-size: 1.25rem; font-weight: 600; color: #6e5898; transition: transform 0.2s; }
+        details[open] summary::after { content: '\2212'; }
+        details[open] > div { animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+        /* Page-local utilities not in the purged Learn Hub build */
+        .topo-card-dark { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); }
+        .topo-card-dark:hover { background: rgba(255,255,255,0.14); border-color: rgba(255,255,255,0.4); }
+        .topo-table { width: 100%; border-collapse: collapse; }
+        .topo-table th, .topo-table td { padding: 0.65rem 1rem; text-align: left; font-size: 0.875rem; }
+        .topo-table th { background: #3C2864; color: #fff; font-weight: 600; }
+        .topo-table tr:nth-child(even) td { background: #F7F8F9; }
+        .topo-table td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+        .topo-figure { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.8rem; line-height: 1.5; white-space: pre; overflow-x: auto; }
+        .topo-pill-soon { background: #E8961D; color: #fff; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 2px 8px; border-radius: 9999px; }
+    </style>
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "What Is Parallax? The Street Sign Illusion",
+    "description": "Parallax is why an object seems to shift against its background when you change where you stand. The Moon does it too, by up to a degree between two places on Earth. Here is the everyday picture behind topocentric Human Design.",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Genetic Matrix",
+        "url": "https://www.geneticmatrix.com"
+    },
+    "mainEntityOfPage": "https://www.geneticmatrix.com/learn-hub/topocentric/parallax.html",
+    "datePublished": "2026-09-13",
+    "dateModified": "2026-09-13"
+}
+    </script>
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Is parallax a theory or a measurement?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A measurement, and a very old one. Astronomers have used the Moon's parallax since antiquity to work out how far away it is, and every modern ephemeris, the Swiss Ephemeris included, can calculate positions for a specific point on the Earth's surface. Topocentric is the standard name for that calculation."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Does parallax affect every planet?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every body, but by very different amounts. The Moon shifts by up to about 1.0 degree because it is close. The Sun shifts by under 9 arc-seconds. The planets sit in between, measured in arc-seconds rather than degrees. In Human Design terms the Moon can move a whole Line; everything else moves at most a Base or a Tone."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Why does the time of day matter?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Because parallax is largest when a body is near the horizon and close to zero when it is straight overhead. Two people in the same city born twelve hours apart see the Moon in different parts of the sky, so the parallax shift on their Moons is different too. Place decides which sky you had; time decides where the Moon was in it."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Does this mean geocentric charts are inaccurate?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Geocentric charts are exactly what they claim to be: the sky as seen from the center of the Earth. They are accurate to that vantage point. What they leave out is the difference between that vantage point and yours. For a slow planet the difference is nothing. For the Moon it can be a Line."
+            }
+        }
+    ]
+}
+    </script>
+
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- ==================== NAV BAR ==================== -->
+    <div id="gm-nav"><!--#config errmsg="" --><!--#include virtual="/_nav/en.html" --></div>
+<script>/* Nav fail-safe. If SSI is disabled the include above degrades to an inert HTML
+   comment and the nav vanishes silently. If that happens, fetch the SAME file over HTTP.
+   One source of truth either way. Never edit a nav into this page. */
+(function(){var n=document.getElementById("gm-nav");if(!n||n.children.length)return;
+fetch("/_nav/en.html").then(function(r){return r.ok?r.text():null})
+.then(function(h){if(h)n.innerHTML=h}).catch(function(){});})();</script>
+<!-- ==================== BREADCRUMB ==================== -->
+    <div class="bg-gm-light border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-6 py-3">
+            <a href="/learn-hub/" class="text-gm-purple hover:text-gm-dark text-sm font-medium transition">Learn Hub</a><span class="text-gray-400 text-sm mx-1">/</span><a href="/learn-hub/topocentric/" class="text-gm-purple hover:text-gm-dark text-sm font-medium transition">Topocentric Human Design</a>
+        </div>
+    </div>
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="bg-gm-dark text-white text-center py-12 md:py-16">
+        <div class="max-w-3xl mx-auto px-6">
+            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-green hover:bg-gm-green-dark text-white text-xs font-semibold tracking-wide px-5 py-2 rounded-full mb-6 transition">
+                Available with Plus and above
+            </a>
+            <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-4">The Easy View &middot; 1 of 3</p>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">What Is Parallax?</h1>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic">
+                The street sign illusion: why where you stand changes the sky.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> The Street Sign
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Imagine you are in the passenger seat of a car, parked at the curb, looking out of your window at a street sign on the sidewalk. Across the street, behind the sign, is a row of buildings.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                From your seat the sign lines up perfectly with a blue front door on the far side of the street. Now ask the driver what they see. The driver is sitting a few feet to your left, so their line of sight is different. To the driver, the very same sign lines up with a red brick chimney further down the block.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                The sign did not move. The buildings did not move. You and the driver simply looked from two different places, and so the sign appeared to sit in front of two different backgrounds. That apparent shift is called <strong>parallax</strong>.
+            </p>
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5 mb-8">
+                <p class="text-gm-purple font-bold text-xs tracking-wide uppercase mb-2">Try it now</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    Hold a finger up at arm's length and look at it against the far wall. Close your left eye, then your right. Your finger jumps sideways against the wall. Your two eyes are only a few centimeters apart, and that is enough. The closer the finger, the bigger the jump.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> The Moon Is Our Street Sign
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                The same thing happens in the sky, every second of every day. The Moon is the closest thing to us, so it plays the street sign. The distant stars, and the 64 Gates of the Human Design wheel laid over them, play the row of buildings.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Two observers on opposite sides of the Earth are about 12,742 km apart, and the Moon is about 384,400 km away. That is like two people about one meter apart looking at a sign 30 meters down the street. The shift is small, but it is real and it is measurable: seen from two distant places at the same instant, the Moon sits against the background sky up to about <strong>1.0 degree</strong> apart, roughly twice the Moon's own width.
+            </p>
+            <div class="bg-gm-card-active border-l-4 border-gm-purple rounded-r-xl p-5 mb-8">
+                <p class="text-gm-purple font-bold text-xs tracking-wide uppercase mb-2">London and Sydney</p>
+                <p class="text-gm-text text-sm leading-relaxed italic">
+                    If someone in London and someone in Sydney look at the Moon at exactly the same second, they see it against slightly different background stars. Neither of them is wrong. They are the passenger and the driver.
+                </p>
+            </div>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                There is one more twist. The shift is biggest when the Moon is low near the horizon and shrinks to almost nothing when the Moon is straight overhead. So the shift depends on where you are <em>and</em> on the time of day, because time decides where the Moon sits in your sky.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Where a Geocentric Chart Stands
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Traditional astrology software, and the Human Design software built on it, calculates every planet from one vantage point: the exact center of the Earth, about 6,371 km below your feet. That is what <strong>geocentric</strong> means. It is as if everybody who has ever been born stood in the same room at the center of the planet and looked up together.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Calculated that way, parallax cannot exist, because there is only one observer. If a program does not know where on the surface you actually stood, it cannot tell you where the Moon actually was from your line of sight. It can only tell you where the Moon was from the middle of the Earth.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                For a slow, distant planet the difference between the center of the Earth and your birthplace is too small to matter in any system. For the Moon, in a system as finely divided as Human Design, it can be a whole Line.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+                <span class="text-gm-purple">|</span> Where a Topocentric Chart Stands
+            </h2>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                <strong>Topocentric</strong> means calculated from your actual coordinates on the surface: your latitude, your longitude and your height above sea level. Genetic Matrix calculates the sky as you would have seen it, not as the center of the Earth would have.
+            </p>
+            <p class="text-gm-text text-sm md:text-base leading-relaxed mb-4">
+                Because the Moon moves quickly, about 0.55 degrees an hour, a one-degree parallax difference is the same as the Moon being almost two hours ahead of or behind its geocentric position. In Human Design that is more than a Line, and it is dozens of Tones. The next two pages in this path look at the two ingredients of "where": your height above sea level, and what the Moon's speed does to timing.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-gm-card-active rounded-2xl p-8 border-l-4 border-gm-purple">
+                <p class="text-gm-purple text-lg italic leading-relaxed">
+                    &ldquo;The sign did not move. You did.&rdquo;
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="py-10 md:py-14 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Frequently Asked Questions
+            </h2>
+            <div class="space-y-3">
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Is parallax a theory or a measurement?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        A measurement, and a very old one. Astronomers have used the Moon's parallax since antiquity to work out how far away it is, and every modern ephemeris, the Swiss Ephemeris included, can calculate positions for a specific point on the Earth's surface. Topocentric is the standard name for that calculation.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Does parallax affect every planet?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Every body, but by very different amounts. The Moon shifts by up to about 1.0 degree because it is close. The Sun shifts by under 9 arc-seconds. The planets sit in between, measured in arc-seconds rather than degrees. In Human Design terms the Moon can move a whole Line; everything else moves at most a Base or a Tone.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Why does the time of day matter?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Because parallax is largest when a body is near the horizon and close to zero when it is straight overhead. Two people in the same city born twelve hours apart see the Moon in different parts of the sky, so the parallax shift on their Moons is different too. Place decides which sky you had; time decides where the Moon was in it.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-lg border border-gm-border">
+                    <summary class="py-4 px-6 text-sm font-semibold text-gray-800">
+                        Does this mean geocentric charts are inaccurate?
+                    </summary>
+                    <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
+                        Geocentric charts are exactly what they claim to be: the sky as seen from the center of the Earth. They are accurate to that vantage point. What they leave out is the difference between that vantage point and yours. For a slow planet the difference is nothing. For the Moon it can be a Line.
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTINUE LEARNING ==================== -->
+    <section class="py-10 md:py-14 bg-gm-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-8">
+                <span class="text-gm-purple">|</span> Continue the Easy View
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="/learn-hub/topocentric/" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">Geocentric vs Topocentric &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">The hub: what changes when a chart is calculated from where you were born.</p>
+                </a>
+                <a href="/learn-hub/topocentric/altitude.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">The Altitude Factor &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Amsterdam vs Mexico City: what height above sea level does and does not change.</p>
+                </a>
+                <a href="/learn-hub/topocentric/moon-timing.html" class="bg-white rounded-lg border border-gm-border p-5 hover:shadow-md hover:border-gm-purple transition">
+                    <h3 class="text-sm font-bold text-gm-purple mb-1">The Two-Hour Moon &rarr;</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">Why a geocentric Moon can run almost two hours ahead or behind the one above you.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="py-14 md:py-20 bg-gm-dark text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">See the Sky You Were Born Under</h2>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+                Run your chart topocentric and compare it with your geocentric chart. Available on Plus and above.
+            </p>
+            <a href="https://www.geneticmatrix.com/register/" class="inline-block bg-gm-orange hover:bg-[#d07d18] text-white font-bold py-4 px-10 rounded-xl transition text-lg">
+                Get Plus &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#d5d5d5] py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+                <div class="text-center md:text-left">
+                    <img src="/learn-hub/assets/logo-footer.svg" alt="Genetic Matrix" class="h-9 mb-4 mx-auto md:mx-0">
+                    <p class="text-sm text-gray-600 mb-1">&copy; 2026 Genetic Matrix LLC.</p>
+                    <p class="text-sm text-gray-600 mb-2">All right reserved.</p>
+                    <p class="text-sm">
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">Privacy, Terms and Conditions</a>
+                        <span class="mx-1">&bull;</span>
+                        <a href="#" class="text-gray-700 underline hover:text-gray-900">FAQ</a>
+                    </p>
+                </div>
+                <div class="bg-[#c5c5c5] rounded-lg p-6 text-center">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-2">Subscribe to Our Newsletter</h3>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Sign up to our newsletter to receive updates, offers,
+                        new releases, and everything related to Genetic Matrix.
+                    </p>
+                    <form class="flex items-center bg-white rounded-full overflow-hidden border border-gray-400 max-w-sm mx-auto" data-action="newsletter-signup">
+                        <input type="email" placeholder="Your Email Address" class="flex-1 px-4 py-2.5 text-sm text-gray-700 bg-transparent outline-none placeholder:text-gray-400">
+                        <button type="submit" class="px-4 py-2.5 bg-gray-500 text-white hover:bg-gray-600 transition rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="text-center md:text-right">
+                    <h3 class="text-base font-bold text-gray-800 uppercase tracking-wide mb-4">Connect With Us</h3>
+                    <div class="flex justify-center md:justify-end gap-3 mb-4">
+                        <a href="https://www.facebook.com/GeneticMatrixx" title="Facebook" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-fb.svg" alt="Facebook" class="w-10 h-10"></a>
+                        <a href="https://x.com/GeneticMatrix" title="X" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-x.svg" alt="X" class="w-10 h-10"></a>
+                        <a href="https://www.instagram.com/genetic_matrix/" title="Instagram" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-insta.svg" alt="Instagram" class="w-10 h-10"></a>
+                        <a href="https://www.youtube.com/@geneticmatrixhd" title="YouTube" target="_blank" rel="noopener"><img src="/learn-hub/assets/icon-yt.svg" alt="YouTube" class="w-10 h-10"></a>
+                    </div>
+                    <a href="#" class="text-sm font-semibold text-gray-800 underline hover:text-gm-dark uppercase tracking-wide">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+(function() {
+    fetch('/learn-hub/api/user-state.php', { credentials: 'same-origin' })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            var badge = document.getElementById('gm-cart-count');
+            if (badge && data.cart_count > 0) { badge.textContent = data.cart_count; badge.classList.remove('hidden'); }
+            var loggedOut = document.getElementById('gm-logged-out');
+            var loggedIn = document.getElementById('gm-logged-in');
+            if (data.logged_in) {
+                var freeChart = document.getElementById("gm-free-chart");
+                if (freeChart) freeChart.classList.add("hidden");
+                if (loggedOut) loggedOut.classList.add('hidden');
+                if (loggedIn) { loggedIn.classList.remove('hidden'); loggedIn.classList.add('flex'); }
+            }
+        })
+        .catch(function() {});
+})();
+</script>
+<script id="gm-hamburger-script">(function(){var h=document.getElementById("gm-hamburger");var m=document.getElementById("gm-mobile-menu");if(h&&m){h.onclick=function(){if(m.style.display==="block"){m.style.display="none";}else{m.style.display="block";}};}})()</script>
+<script id="gm-dict-tooltip-loader">(function(){
+  var parts = window.location.pathname.split('/');
+  var lang = (parts[1] === 'learn-hub' && ['de','es','fr','it','nl','pt'].indexOf(parts[2]) !== -1) ? '/' + parts[2] : '';
+  var basePath = '/learn-hub' + lang + '/dictionary';
+  var s = document.createElement('script');
+  s.src = basePath + '/gm-dictionary.js';
+  s.onload = function(){
+    if (window.GMDictionary) {
+      GMDictionary.init({ selectors: ['section p, section li, section blockquote'], dictionaryUrl: basePath + '/dictionary.json' });
+    }
+  };
+  document.body.appendChild(s);
+})();</script>
+</body>
+</html>
