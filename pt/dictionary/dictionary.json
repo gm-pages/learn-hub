@@ -561,7 +561,7 @@
       "id": "authority",
       "term": "Autoridade",
       "category": "Foundation",
-      "definition": "O mecanismo interno de tomada de decisão do corpo no Human Design. A Autoridade indica como tomar decisões corretas para si próprio. Os tipos de Autoridade incluem Emocional, Sacral, Esplénica, do Coração, Autoprojetada, Mental e Lunar.",
+      "definition": "O mecanismo interno de tomada de decisão do corpo no Human Design. A Autoridade indica como tomar decisões corretas para si próprio. Os tipos de Autoridade incluem Emocional, Sacral, Esplénica, do Coração, Autoprojetada, Ambiental e Lunar.",
       "aliases": [
         "Autoridade Interna"
       ],
@@ -2277,12 +2277,12 @@
       "url": ""
     },
     {
-      "id": "mental-authority",
-      "term": "Autoridade Mental",
+      "id": "environmental-authority",
+      "term": "Autoridade Ambiental",
       "category": "Foundation",
       "definition": "Encontrada em Projetores sem centros definidos abaixo da Garganta, exceto possivelmente a Raiz. Estes indivíduos devem discutir decisões com outros de confiança e prestar atenção ao ambiente.",
       "aliases": [
-        "Autoridade Ambiental",
+        "Autoridade Mental",
         "Autoridade de Conselho",
         "Autoridade Externa"
       ],

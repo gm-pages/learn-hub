@@ -561,7 +561,7 @@
       "id": "authority",
       "term": "Autorität",
       "category": "Foundation",
-      "definition": "Der innere Entscheidungsmechanismus des Körpers im Human Design. Die Autorität zeigt Ihnen, wie Sie richtige Entscheidungen für sich selbst treffen. Arten der Autorität umfassen Emotionale, Sakrale, Milz-, Ego-, Selbst-projizierte, Mentale und Lunare Autorität.",
+      "definition": "Der innere Entscheidungsmechanismus des Körpers im Human Design. Die Autorität zeigt Ihnen, wie Sie richtige Entscheidungen für sich selbst treffen. Arten der Autorität umfassen Emotionale, Sakrale, Milz-, Ego-, Selbst-projizierte, Umgebungs- und Lunare Autorität.",
       "aliases": [
         "Innere Autorität"
       ],
@@ -2254,12 +2254,12 @@
       "url": ""
     },
     {
-      "id": "mental-authority",
-      "term": "Mentale Autorität",
+      "id": "environmental-authority",
+      "term": "Umgebungsautorität",
       "category": "Foundation",
       "definition": "Findet sich bei Projektoren, die keine Zentren unterhalb des Kehlzentrums definiert haben, außer möglicherweise dem Wurzelzentrum. Diese Personen müssen Entscheidungen mit vertrauenswürdigen anderen besprechen und auf die Umgebung achten.",
       "aliases": [
-        "Umgebungsautorität",
+        "Mentale Autorität",
         "Resonanzboden-Autorität",
         "Äußere Autorität"
       ],

@@ -599,7 +599,7 @@
       "id": "authority",
       "term": "Autorité",
       "category": "Foundation",
-      "definition": "Le mécanisme intérieur de prise de décision du corps en Human Design. L'Autorité vous indique comment prendre les bonnes décisions pour vous-même. Les types d'Autorité incluent l'Émotionnelle, la Sacrée, la Splénique, du Cœur, auto-projetée, Mentale et Lunaire.",
+      "definition": "Le mécanisme intérieur de prise de décision du corps en Human Design. L'Autorité vous indique comment prendre les bonnes décisions pour vous-même. Les types d'Autorité incluent l'Émotionnelle, la Sacrée, la Splénique, du Cœur, auto-projetée, de l'Environnement et Lunaire.",
       "aliases": [
         "Autorité intérieure"
       ],
@@ -2293,12 +2293,12 @@
       "url": ""
     },
     {
-      "id": "mental-authority",
-      "term": "Autorité Mentale",
+      "id": "environmental-authority",
+      "term": "Autorité de l'Environnement",
       "category": "Foundation",
       "definition": "Se trouve chez les Projecteurs sans centres définis sous la Gorge sauf possiblement la Racine. Ces individus doivent discuter des décisions avec des personnes de confiance et porter attention à l'environnement.",
       "aliases": [
-        "Autorité de l'Environnement",
+        "Autorité Mentale",
         "Autorité Sounding Board",
         "Autorité Extérieure"
       ],

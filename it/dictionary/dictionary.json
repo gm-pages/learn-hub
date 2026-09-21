@@ -561,7 +561,7 @@
       "id": "authority",
       "term": "Autorità",
       "category": "Foundation",
-      "definition": "Il meccanismo decisionale interiore del corpo in Human Design. L'Autorità Le dice come prendere decisioni corrette per se stessa. I tipi di Autorità includono Emotiva, Sacrale, Splenica, del Cuore, auto-proiettata, Mentale e Lunare.",
+      "definition": "Il meccanismo decisionale interiore del corpo in Human Design. L'Autorità Le dice come prendere decisioni corrette per se stessa. I tipi di Autorità includono Emotiva, Sacrale, Splenica, del Cuore, auto-proiettata, Ambientale e Lunare.",
       "aliases": [
         "Autorità interiore"
       ],
@@ -2285,12 +2285,12 @@
       "url": ""
     },
     {
-      "id": "mental-authority",
-      "term": "Autorità Mentale",
+      "id": "environmental-authority",
+      "term": "Autorità Ambientale",
       "category": "Foundation",
       "definition": "Si trova nei Proiettori senza centri definiti sotto la Gola eccetto possibilmente la Radice. Questi individui devono discutere le decisioni con altri di fiducia e prestare attenzione all'ambiente.",
       "aliases": [
-        "Autorità Ambientale",
+        "Autorità Mentale",
         "Autorità di Confronto",
         "Autorità Esterna"
       ],

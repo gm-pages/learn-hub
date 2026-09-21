@@ -573,7 +573,7 @@
       "id": "authority",
       "term": "Autoriteit",
       "category": "Foundation",
-      "definition": "Het innerlijke besluitvormingsmechanisme van het lichaam in Human Design. Autoriteit vertelt u hoe u correcte beslissingen voor uzelf kunt nemen. Typen Autoriteit omvatten Emotionele, Sacrale, Milt-, Hart-, Zelfgeprojecteerde, Mentale en Maanautoriteit.",
+      "definition": "Het innerlijke besluitvormingsmechanisme van het lichaam in Human Design. Autoriteit vertelt u hoe u correcte beslissingen voor uzelf kunt nemen. Typen Autoriteit omvatten Emotionele, Sacrale, Milt-, Hart-, Zelfgeprojecteerde, Omgevings- en Maanautoriteit.",
       "aliases": [
         "Innerlijke Autoriteit"
       ],
@@ -2300,12 +2300,12 @@
       "url": ""
     },
     {
-      "id": "mental-authority",
-      "term": "Mentale Autoriteit",
+      "id": "environmental-authority",
+      "term": "Omgevingsautoriteit",
       "category": "Foundation",
       "definition": "Wordt gevonden bij Projectors zonder centra gedefinieerd onder het Keelcentrum behalve mogelijk het Wortelcentrum. Deze individuen moeten beslissingen bespreken met vertrouwde anderen en aandacht besteden aan de omgeving.",
       "aliases": [
-        "Omgevingsautoriteit",
+        "Mentale Autoriteit",
         "Klankbord Autoriteit",
         "Buitenautoriteit"
       ],

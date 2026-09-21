@@ -561,7 +561,7 @@
       "id": "authority",
       "term": "Autoridad",
       "category": "Fundamentos",
-      "definition": "El mecanismo interno de toma de decisiones del cuerpo en Diseño Humano. La Autoridad le dice cómo tomar decisiones correctas para usted mismo. Los tipos de Autoridad incluyen Emocional, Sacral, Esplénica, del Ego, del Ser, Mental y Lunar.",
+      "definition": "El mecanismo interno de toma de decisiones del cuerpo en Diseño Humano. La Autoridad le dice cómo tomar decisiones correctas para usted mismo. Los tipos de Autoridad incluyen Emocional, Sacral, Esplénica, del Ego, del Ser, Ambiental y Lunar.",
       "aliases": [
         "Autoridad Interna"
       ],
@@ -2254,12 +2254,12 @@
       "url": ""
     },
     {
-      "id": "mental-authority",
-      "term": "Autoridad Mental",
+      "id": "environmental-authority",
+      "term": "Autoridad Ambiental",
       "category": "Foundation",
       "definition": "Se encuentra en Proyectores sin centros definidos debajo de la Garganta excepto posiblemente la Raíz. Estos individuos deben discutir las decisiones con otros de confianza y prestar atención al entorno.",
       "aliases": [
-        "Autoridad Ambiental",
+        "Autoridad Mental",
         "Autoridad de Caja de Resonancia",
         "Autoridad Externa"
       ],
